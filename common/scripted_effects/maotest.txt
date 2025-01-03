@@ -1,0 +1,520 @@
+taihai_test_1 = {
+
+			if = {
+				limit = {
+					NOT = { has_idea = taihaijingji_idea_25  }
+				}
+				activate_mission = PRC_taiwan_war_countdown_1
+				}
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_25
+    }
+								country_event = {
+									id = PRC_MAO.72
+								}
+
+}
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_24
+    }
+								country_event = {
+									id = PRC_MAO.71
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_24
+        add_idea = taihaijingji_idea_25
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_23
+    }
+								country_event = {
+									id = PRC_MAO.70
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_23
+        add_idea = taihaijingji_idea_24
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_22
+    }
+								country_event = {
+									id = PRC_MAO.69
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_22
+        add_idea = taihaijingji_idea_23
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_21
+    }
+								country_event = {
+									id = PRC_MAO.68
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_21
+        add_idea = taihaijingji_idea_22
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_20
+    }
+								country_event = {
+									id = PRC_MAO.67
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_20
+        add_idea = taihaijingji_idea_21
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_19
+    }
+								country_event = {
+									id = PRC_MAO.66
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_19
+        add_idea = taihaijingji_idea_20
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_18
+    }
+								country_event = {
+									id = PRC_MAO.65
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_18
+        add_idea = taihaijingji_idea_19
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_17
+    }
+								country_event = {
+									id = PRC_MAO.64
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_17
+        add_idea = taihaijingji_idea_18
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_16
+    }
+								country_event = {
+									id = PRC_MAO.63
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_16
+        add_idea = taihaijingji_idea_17
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_15
+    }
+								country_event = {
+									id = PRC_MAO.62
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_15
+        add_idea = taihaijingji_idea_16
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_14
+    }
+								country_event = {
+									id = PRC_MAO.61
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_14
+        add_idea = taihaijingji_idea_15
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_13
+    }
+								country_event = {
+									id = PRC_MAO.60
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_13
+        add_idea = taihaijingji_idea_14
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_12
+    }
+								country_event = {
+									id = PRC_MAO.58
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_12
+        add_idea = taihaijingji_idea_13
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_11
+    }
+								country_event = {
+									id = PRC_MAO.57
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_11
+        add_idea = taihaijingji_idea_12
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_10
+    }
+								country_event = {
+									id = PRC_MAO.56
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_10
+        add_idea = taihaijingji_idea_11
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_9
+    }
+								country_event = {
+									id = PRC_MAO.55
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_9
+        add_idea = taihaijingji_idea_10
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_8
+    }
+								country_event = {
+									id = PRC_MAO.54
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_8
+        add_idea = taihaijingji_idea_9
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_7
+    }
+								country_event = {
+									id = PRC_MAO.53
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_7
+        add_idea = taihaijingji_idea_8
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_6
+    }
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_6
+        add_idea = taihaijingji_idea_7
+    }
+								country_event = {
+									id = PRC_MAO.49
+								}	
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_5
+    }
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_5
+        add_idea = taihaijingji_idea_6
+    }
+								country_event = {
+									id = PRC_MAO.48
+								}	
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_4
+    }
+								country_event = {
+									id = PRC_MAO.52
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_4
+        add_idea = taihaijingji_idea_5
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_3
+    }
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_3
+        add_idea = taihaijingji_idea_4
+    }
+								country_event = {
+									id = PRC_MAO.47
+								}	
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_2
+    }
+								country_event = {
+									id = PRC_MAO.50
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_2
+        add_idea = taihaijingji_idea_3
+    }
+}
+
+if = {
+    limit = {
+        has_idea = taihaijingji_idea_1
+    }
+								country_event = {
+									id = PRC_MAO.51
+								}	
+    swap_ideas = {
+        remove_idea = taihaijingji_idea_1
+        add_idea = taihaijingji_idea_2
+    }
+}
+			if = {
+				limit = {
+					NOT = { has_country_flag = taihaijingji_1  }
+				}
+				set_country_flag = taihaijingji_1
+			add_ideas = taihaijingji_idea_1	
+
+								country_event = {
+									id = PRC_MAO.46
+								}	
+				}
+
+}
+
+alb_test_1 = {
+	    hidden_effect = {	
+									KUR = {add_state_core = 676
+								add_state_core = 1176
+								add_state_core = 1177}
+SYR = {release = ROJ}
+IRQ = {release = KUR}
+PER = {release = KUR}
+XIN = {release = ROJ}
+XIN = {release = KUR}
+	
+			PRC = {set_autonomy = {
+			target = ROJ
+			autonomy_state = autonomy_tongzhi
+			}}
+
+ROJ = {
+
+				set_cosmetic_tag = ROJ_XIN
+				set_party_name = { ideology = libertarian_socialist long_name = KURCCC_party_long name = KURCCC_party }
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+set_country_leader_ideology = anarchist_maoism
+annex_country = {
+								target = KUR
+								transfer_troops = yes
+							}
+
+							}
+							}
+XIN = {annex_country = {
+								target = IRQ
+								transfer_troops = yes
+							}
+							}
+XIN = {annex_country = {
+								target = JOR
+								transfer_troops = yes
+							}
+							}
+	    hidden_effect = {	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {ROJ = {has_idea = PRC_neomaoism111_idea}}
+					}
+						ROJ = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {ROJ = {has_idea = PRC_yuuki_4}}
+					}
+						ROJ = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {ROJ= {has_idea = PRC_socialist_dream_idea}}
+					}
+						ROJ = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {ROJ = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						ROJ = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+				}
+				}
+XIN = {
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {XIN = {has_idea = PRC_neomaoism111_idea}}
+					}
+						XIN = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {XIN = {has_idea = PRC_yuuki_4}}
+					}
+						XIN = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {XIN= {has_idea = PRC_socialist_dream_idea}}
+					}
+						XIN = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {XIN = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						XIN = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+
+				}
+
+
+
+
+
+annex_country = {
+								target = SYR
+								transfer_troops = yes
+							}
+
+							}
+	    hidden_effect = {	
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    add_core_of = ROJ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    remove_core_of = KUR
+		    }
+	}
+			every_state = {
+				limit = {
+					is_core_of = SYR
+				}
+			    add_core_of = XIN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = JOR
+				}
+			    add_core_of = XIN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = IRQ
+				}
+			    add_core_of = XIN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = SAU
+				}
+			    add_core_of = XIN
+		    }
+
+
+}

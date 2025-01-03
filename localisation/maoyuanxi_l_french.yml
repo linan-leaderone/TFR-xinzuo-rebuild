@@ -1,0 +1,26 @@
+﻿l_french:
+PRC_HACHIMI:0 "Volksrepublik China"
+PRC_HACHIMI_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_ADJ:0 "Volksrepublik China"
+PRC_HACHIMI_FLAG:0 "Volksrepublik China"
+PRC_HACHIMI_FLAG_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_FLAG_ADJ:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGS:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGS_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGS_ADJ:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGT:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGT_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGT_ADJ:0 "Volksrepublik China"
+china.294.b:0 "111 Können wir zu Hakimis Lieblingsflagge wechseln (Gelber-Fluss-Flagge)?"
+china.294.c:0 "111 Können wir zu Hakimis Lieblingsflagge wechseln (Gelber-Fluss- und Jangtse-Flagge)?"
+china.294.e:0 "111 Können wir zu Hakimis Lieblingsflagge wechseln (Gelber-Fluss-, Jangtse- und Perlfluss-Flagge)?"
+rev_canxiang: "Écho de la Révolution"
+
+rev_canxiang_desc: "--------------\n§YEn tant que seul survivant de l’affaire Lin-Jiang, Mao Yuanxin incarne non seulement les braises de l’époque révolutionnaire, mais porte également une obsession profonde pour son héritage. Il est l’‘écho’ de la révolution, un rappel pour le peuple que le spectre de la révolution n’est jamais loin.§!\n--------------"
+PRC_mao_yuanxin: "Mao Yuanxin"
+
+PRC_mao_yuanxin_DESC: "Mao Yuanxin, neveu de Mao Zedong, est né en 1941 et appartient à une famille influente au sein du Parti communiste chinois. Sa carrière politique a été marquée par de nombreux hauts et bas, étroitement liés à la Révolution culturelle. Pendant cette période, Mao Yuanxin fut chargé de responsabilités importantes en tant que secrétaire du Comité du Parti de la province de Liaoning. Jeune leader des Gardes rouges, il s’est autoproclamé ‘successeur de la révolution’ et a appliqué les politiques radicales de Mao dans le nord-est de la Chine, renforçant progressivement son influence au sein du Parti.\n\nCependant, après la fin de la Révolution culturelle, le destin de Mao Yuanxin changea radicalement. Après la chute de la Bande des Quatre, il fut accusé de participation aux activités de l’extrême-gauche et purgé, se retrouvant finalement en prison. Pour certains, Mao Yuanxin représentait la jeune génération de la gauche, et sa chute symbolisait la fin de la voie ultra-gauche de Mao. Après le décès de Jiang Tengjiao le 8 mai 2009, Mao Yuanxin est devenu le dernier survivant impliqué dans l’affaire du Groupe contre-révolutionnaire Lin Biao-Jiang Qing. Bien qu’il ne détienne plus d’influence, il reste un adepte fidèle de l’idéologie maoïste au 21e siècle, s’opposant au retour de la Chine au capitalisme.\n\nAujourd’hui, Mao Yuanxin dirige une nouvelle vague de ‘petits gardes rouges’ et a repris le pouvoir pour raviver les idéaux rouges. Il brandit la bannière de l’‘anti-révisionnisme,’ prônant un retour aux principes fondamentaux de Mao, afin de refaçonner un pays révolutionnaire axé sur la lutte des classes et l’opposition au privilège bureaucratique. Malgré son âge avancé, Mao Yuanxin est déterminé à repeindre cette terre fanée en rouge.\n\n§RLa révolution est juste ; la rébellion est légitime !§!"
+
+rev_houdai: "Descendance rouge"
+
+rev_houdai_desc: "--------------\n§YPour beaucoup, l'extrême-gauche peut être quelque chose qu’on préfère éviter, mais le statut de Mao en tant que ‘neveu du Président Mao’ lui a valu un soutien plus large au sein du public et du Parti. Cette identité unique lui confère un héritage révolutionnaire sacré, qui réduit l’opposition et facilite la mise en œuvre des réformes. Il n’est pas seulement un leader politique, mais est également vu comme la continuité vivante de l’esprit de Mao. Cette descendance rouge apporte une influence unique et une autorité inébranlable à sa direction.\n\n§RSeul le temps nous dira si ce culte spontané de la personnalité est une bénédiction ou une malédiction pour la Chine...§!§!\n--------------"

@@ -1,0 +1,4705 @@
+spriteTypes = {	
+	frameAnimatedSpriteType = {
+            name = "GFX_SMSY"
+            texturefile = "gfx/MAOYUANXIN/Yuuki.dds"
+            noOfFrames = 63
+            animation_rate_fps = 30
+            looping = yes
+            play_on_show = yes
+		}	
+	SpriteType = {
+		name = "GFX_KMGJ_faction"
+		texturefile = "gfx/MAOYUANXIN/GFX_KMGJ_faction.png"
+	}			
+	SpriteType = {
+		name = "PRC_renda_ANQ_PR"
+		texturefile = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	}			
+	SpriteType = {
+		name = "GFX_idea_PRC_shuzihuaminzhu"
+		texturefile = "gfx/MAOYUANXIN/shuzihuaminzhu.png"
+	}		
+	SpriteType = {
+		name = "yuuki_4"
+		texturefile = "gfx/MAOYUANXIN/yuuki_4.png"
+	}		
+	SpriteType = {
+		name = "GFX_idea_PRC_yuuki_4"
+		texturefile = "gfx/MAOYUANXIN/yuuki_4.png"
+	}	
+	SpriteType = {
+		name = "yuuki_4"
+		texturefile = "gfx/MAOYUANXIN/yuuki_4.png"
+	}						
+	SpriteType = {
+		name = "GFX_PRC_yuuki_1"
+		texturefile = "gfx/MAOYUANXIN/yuuki_1.png"
+	}										
+	SpriteType = {
+		name = "GFX_PRC_yuuki_2"
+		texturefile = "gfx/MAOYUANXIN/yuuki_2.png"
+	}													
+	SpriteType = {
+		name = "GFX_PRC_yuuki_3"
+		texturefile = "gfx/MAOYUANXIN/yuuki_3.png"
+	}								
+	SpriteType = {
+		name = "GFX_PRC_yuuki_5"
+		texturefile = "gfx/MAOYUANXIN/yuuki_5.png"
+	}							
+	SpriteType = {
+		name = "GFX_bop_PRC_konfus_side"
+		texturefile = "gfx/MAOYUANXIN/bop_PRC_kqd.png"
+	}							
+	SpriteType = {
+		name = "GFX_bop_PRC_maoism_side"
+		texturefile = "gfx/MAOYUANXIN/bop_PRC_whw.png"
+	}						
+	SpriteType = {
+		name = "GFX_modifiers_ai_governed_city"
+		texturefile = "gfx/MAOYUANXIN/PRC_peoples_capitalism_idea.png"
+	}						
+	SpriteType = {
+		name = "GFX_modifiers_PRC_model_socialist_city"
+		texturefile = "gfx/MAOYUANXIN/SOV_centralized_planning.png"
+	}						
+	SpriteType = {
+		name = "GFX_modifiers_peoples_commune"
+		texturefile = "gfx/MAOYUANXIN/SOV_peoples_democracy_idea.png"
+	}					
+	SpriteType = {
+		name = "GFX_modifiers_digitalized_region"
+		texturefile = "gfx/MAOYUANXIN/SOV_economic_committees_idea.png"
+	}					
+	spriteType = {
+		name = "GFX_idea_PRC_revival_of_neomaoism_idea"
+		textureFile = "gfx/MAOYUANXIN/PRC_maopai.png"
+	}							
+	spriteType = {
+		name = "GFX_idea_PRC_neomaoism_idea"
+		textureFile = "gfx/MAOYUANXIN/PRC_maopai.png"
+	}						
+	spriteType = {
+		name = "GFX_idea_PRC_future_of_cyber_communism_idea"
+		textureFile = "gfx/MAOYUANXIN/SOV_ogas.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_PRC_expanding_supercomuter_stations_idea"
+		textureFile = "gfx/MAOYUANXIN/PRC_the_long_march_idea.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_PRC_asian_bulwark_of_revolution_idea"
+		textureFile = "gfx/MAOYUANXIN/PRC_marxist_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_autonomy_zizhiqu_icon"
+		textureFile = "gfx/MAOYUANXIN/autonomy_zizhiqu_icon.png"
+	}
+	spriteType = {
+		name = "GFX_autonomy_tongzhi_icon"
+		textureFile = "gfx/MAOYUANXIN/autonomy_zizhiqu_icon.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_xiong_hou_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_xiong_hou_xiao.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_PRC_li_jinjin_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_li_jinjin_xiao.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_PRC_song_yongyi_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_song_yongyi_xiao.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_PRC_kong_qingdong_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_kong_qingdong_xiao.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_PRC_han_deqiang_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_han_deqiang_xiao.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_PRC_han_deqiang_hog_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_han_deqiang_xiao.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_PRC_mao_yuanxin_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_yuanxin_xiao.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_PRC_mao_yuanxin_hog_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_yuanxin_xiao.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_PRC_mao_yuanxin_hog_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_yuanxin_xiao.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_PRC_yang_heping_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_yang_heping_xiao.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_PRC_ma_houzhi_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_ma_houzhi_xiao.png"
+	}	
+
+
+	spriteType = {
+		name = "GFX_ideology_anarchist_maoism"
+		texturefile = "gfx/MAOYUANXIN/anarchist_maoism.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_marxism_lenin_maoism"
+		texturefile = "gfx/MAOYUANXIN/marxism_lenin_maoism.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_Esoteric_Maoism"
+		texturefile = "gfx/MAOYUANXIN/ezmaoism_PRC.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_left_accelerationist_1"
+		texturefile = "gfx/MAOYUANXIN/left_accelerationist_1.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_reformist_socialism_1"
+		texturefile = "gfx/MAOYUANXIN/reformist_socialism_1.png"
+	}		
+	spriteType = {
+		name = "GFX_Ideology_ezmaoism"
+		texturefile = "gfx/MAOYUANXIN/Ideology_ezmaoism.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_Ideology_marxism_lenin_maoism1"
+		texturefile = "gfx/MAOYUANXIN/Ideology_marxism_lenin_maoism.png"
+		legacy_lazy_load = no
+	}		
+	spriteType = {
+		name = "GFX_Ideology_anarchist_maoism1"
+		texturefile = "gfx/MAOYUANXIN/Ideology_anarchist_maoism.png"
+		legacy_lazy_load = no
+	}		
+spriteType = {
+    name = "GFX_PRC_MAO_event_16"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_16.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_17"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_17.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_18"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_18.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_19"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_19.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_20"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_20.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_21"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_21.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_22"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_22.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_23"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_23.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_24"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_24.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_25"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_25.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_26"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_26.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_27"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_27.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_28"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_28.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_29"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_29.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_30"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_30.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_31"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_31.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_32"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_32.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_33"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_33.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_34"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_34.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_35"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_35.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_36"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_36.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_37"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_37.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_38"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_38.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_39"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_39.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_40"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_40.png"
+}		
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_41"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_41.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_42"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_42.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_43"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_43.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_44"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_44.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_45"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_45.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_46"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_46.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_47"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_47.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_48"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_48.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_49"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_49.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_50"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_50.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_51"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_51.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_52"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_52.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_53"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_53.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_54"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_54.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_55"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_55.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_56"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_56.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_57"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_57.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_58"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_58.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_59"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_59.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_60"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_60.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_61"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_61.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_62"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_62.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_63"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_63.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_64"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_64.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_65"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_65.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_66"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_66.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_67"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_67.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_68"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_68.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_69"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_69.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_70"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_70.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_71"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_71.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_72"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_72.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_73"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_73.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_74"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_74.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_75"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_75.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_76"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_76.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_77"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_77.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_78"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_78.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_79"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_79.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_80"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_80.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_81"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_81.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_82"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_82.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_83"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_83.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_84"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_84.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_85"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_85.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_86"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_86.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_87"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_87.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_88"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_88.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_89"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_89.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_90"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_90.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_91"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_91.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_92"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_92.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_93"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_93.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_94"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_94.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_95"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_95.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_96"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_96.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_97"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_97.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_98"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_98.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_99"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_99.png"
+}
+
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_100"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_100.png"
+}
+				
+	spriteType = {
+		name = "GFX_PRC_MAO_event_15"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_15.png"
+	}								
+	spriteType = {
+		name = "GFX_PRC_MAO_event_14"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_14.png"
+	}								
+	spriteType = {
+		name = "GFX_PRC_MAO_event_13"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_13.png"
+	}									
+	spriteType = {
+		name = "GFX_PRC_MAO_event_12"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_12.png"
+	}								
+	spriteType = {
+		name = "GFX_PRC_MAO_event_11"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_11.png"
+	}								
+	spriteType = {
+		name = "GFX_PRC_MAO_event_10"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_10.png"
+	}						
+	spriteType = {
+		name = "GFX_PRC_MAO_event_9"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_9.png"
+	}						
+	spriteType = {
+		name = "GFX_PRC_MAO_event_8"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_8.png"
+	}				
+	spriteType = {
+		name = "GFX_PRC_MAO_event_7"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_7.png"
+	}		
+	spriteType = {
+		name = "GFX_PRC_MAO_event_6"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_6.png"
+	}	
+	spriteType = {
+		name = "GFX_PRC_MAO_event_5"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_5.png"
+	}	
+	spriteType = {
+		name = "GFX_PRC_MAO_event_4"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_4.png"
+	}	
+	spriteType = {
+		name = "GFX_PRC_MAO_event_3"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_3.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_MAO_event_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_2.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_MAO_event_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_1.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_MAO_event_294"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_294.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_quminzuha.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_minzuzijue.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_4"
+		texturefile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_4.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_7"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_7.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_8"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_8.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_9"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_9.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_10"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_11"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_11.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_12"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_12.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_13"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_13.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_14"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_14.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_15"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_15.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_16"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_16.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_17"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_17.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_18"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_18.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_19"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_19.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_20"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_20.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_6"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_6.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_5"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_5.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_finilize_korean_revolution_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_4"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_4.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_revenge_for_nanking_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_revenge_for_nanking_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_advanced_economic_planning_3"
+		texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_3.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_advanced_economic_planning_3_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_advanced_economic_planning_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_2.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_advanced_economic_planning_2_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_the_Flower_of_Freedom"
+		texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_the_Flower_of_Freedom_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PRC_revenge_for_nanking_1_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_revenge_for_nanking_1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_revenge_for_nanking_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_revenge_for_nanking_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_5"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_5.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_5_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_5.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_4"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_4.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_4_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_4.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_3"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_3.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_3_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_2.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_2_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_1.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_baihuaqifang_1_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang_1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_revive_peoples_war_mindset_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_anti_fix.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_revive_peoples_war_mindset_1_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_anti_fix.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_anti_fix.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_anti_fix.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_10_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_11_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_11.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_11.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_11.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_12_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_12.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_12.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_12.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_13_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_13.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_13.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_13.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_14_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_14.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_14.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_14.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_15_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_15.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_15.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_15.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_16_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_16.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_16.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_16.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_17_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_17.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_17.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_17.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_18_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_18.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_18.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_18.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_19_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_19.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_19.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_19.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_20_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_20.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_20.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_20.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_10_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_10.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_9_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_9.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_9.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_9.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_8_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_8.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_8.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_8.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_7_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_7.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_7.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_7.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_6_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_6.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_6.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_6.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_5_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_5.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_5.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_4_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_4.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_3"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_3.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_3_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_2.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_2_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_finilize_korean_revolution_2"
+		texturefile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_2.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_finilize_korean_revolution_2_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_2.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_finilize_korean_revolution_1_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_finilize_korean_revolution_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_masters_of_asia_1_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_masters_of_asia_1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_masters_of_asia_1.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_4_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_4.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_4.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_3"
+		texturefile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_3.png"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_3_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_expand_provincial_autonomy_3.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_2_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_minzuzijue.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_minzuzijue.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_minzuzijue.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_nbaihuaqifang"
+		textureFile = "gfx/MAOYUANXIN/PRC_baihuaqifang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_rumaojiehe"
+		textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe.png"
+	}
+	spriteType = {
+		name = "GFX_focus_yangbanxi"
+		textureFile = "gfx/MAOYUANXIN/PRC_yangbanxi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_wenhuazhuanzheng"
+		textureFile = "gfx/MAOYUANXIN/PRC_wenhuazhuanzheng.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_wenhuazhuanzheng_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_wenhuazhuanzheng.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_wenhuazhuanzheng.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_wenhuazhuanzheng.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_yangbanxi_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_yangbanxi.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_yangbanxi.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_yangbanxi.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_rumaojiehe_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_expand_provincial_autonomy_1_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_quminzuha.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_quminzuha.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_quminzuha.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_nbaihuaqifang_shine"
+		texturefile = "gfx/MAOYUANXIN/PRC_baihuaqifang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_baihuaqifang.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_1"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_1.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_1_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_1.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_2"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_2.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_2_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_2.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_3"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_3.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_3_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_3.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_3.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_3.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_4"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_4.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_4_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_4.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_5"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_5.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_5_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_5.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_6"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_6.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_6_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_6.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_7"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_7.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_7_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_7.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_8"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_8.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_8_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_8.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_9"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_9.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_9_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_9.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_10"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_10.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_10_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_10.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_11"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_11.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_11_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_11.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_12"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_12.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_12_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_12.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_13"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_13.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_13_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_13.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_14"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_14.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_14_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_14.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_15"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_15.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_15_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_15.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_16"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_16.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_16_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_16.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_17"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_17.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_17_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_17.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_18"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_18.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_18_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_18.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_19"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_19.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_19_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_19.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_20"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_20.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_20_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_20.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_21"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_21.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_21_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_21.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_22"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_22.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_22_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_22.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_23"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_23.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_23_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_23.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_24"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_24.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_24_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_24.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_25"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_25.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_25_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_25.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_26"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_26.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_26_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_26.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_27"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_27.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_27_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_27.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_28"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_28.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_28_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_28.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_29"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_29.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_29_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_29.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_30"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_30.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_30_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_30.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_31"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_31.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_31_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_31.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_31.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_31.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_32"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_32.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_32_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_32.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_32.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_32.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_33"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_33.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_33_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_33.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_33.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_33.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_34"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_34.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_34_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_34.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_34.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_34.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_35"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_35.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_35_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_35.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_35.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_35.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_36"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_36.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_36_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_36.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_36.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_36.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_37"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_37.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_37_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_37.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_37.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_37.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_38"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_38.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_38_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_38.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_38.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_38.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_39"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_39.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_39_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_39.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_39.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_39.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "GFX_focus_PRC_revive_iron_rice_bowl_1"
+    texturefile = "gfx/MAOYUANXIN/PRC_revive_iron_rice_bowl_1.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_revive_iron_rice_bowl_1_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_revive_iron_rice_bowl_1.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_revive_iron_rice_bowl_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_revive_iron_rice_bowl_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_40"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_40.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_Flower_of_Freedom_40_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_40.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_40.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_40.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_4"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_4.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_4_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_4.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_5"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_5.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_5_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_5.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_6"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_6.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_6_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_6.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_7"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_7.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_7_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_7.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_8"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_8.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_8_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_8.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_9"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_9.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_9_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_9.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_10"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_10.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_10_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_10.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_11"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_11.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_11_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_11.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_12"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_12.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_12_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_12.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_13"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_13.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_13_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_13.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_14"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_14.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_14_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_14.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_15"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_15.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_15_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_15.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_16"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_16.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_16_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_16.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_17"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_17.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_17_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_17.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_18"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_18.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_18_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_18.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_19"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_19.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_19_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_19.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_20"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_20.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_20_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_20.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_21"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_21.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_21_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_21.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_22"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_22.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_22_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_22.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_23"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_23.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_23_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_23.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_24"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_24.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_24_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_24.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_25"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_25.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_25_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_25.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_26"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_26.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_26_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_26.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_27"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_27.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_27_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_27.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_28"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_28.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_28_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_28.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_29"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_29.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_29_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_29.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_30"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_30.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_advanced_economic_planning_30_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_30.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_advanced_economic_planning_30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+}

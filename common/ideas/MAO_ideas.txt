@@ -1,0 +1,1294 @@
+ideas = {	
+	country = {
+								
+taihaijingji_idea_1 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.03
+        war_support_factor = -0.03
+        consumer_goods_factor = 0.02
+        poverty_development_monthly = -0.005
+        society_development_monthly = -0.005
+        income_growth_factor = -0.02
+        inflation_monthly_factor = 0.02
+        production_speed_buildings_factor = -0.02
+        business_value_factor = -0.02
+        personal_value_factor = -0.02
+    }
+}
+
+taihaijingji_idea_2 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.06        # = -0.03 * 2
+        war_support_factor = -0.06      # = -0.03 * 2
+        consumer_goods_factor = 0.04    # =  0.02 * 2
+        poverty_development_monthly = -0.01     # = -0.005 * 2
+        society_development_monthly = -0.01     # = -0.005 * 2
+        income_growth_factor = -0.04            # = -0.02 * 2
+        inflation_monthly_factor = 0.04         # =  0.02 * 2
+        production_speed_buildings_factor = -0.04
+        business_value_factor = -0.04
+        personal_value_factor = -0.04
+    }
+}
+
+taihaijingji_idea_3 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.09        # = -0.03 * 3
+        war_support_factor = -0.09
+        consumer_goods_factor = 0.06    # =  0.02 * 3
+        poverty_development_monthly = -0.015
+        society_development_monthly = -0.015
+        income_growth_factor = -0.06
+        inflation_monthly_factor = 0.06
+        production_speed_buildings_factor = -0.06
+        business_value_factor = -0.06
+        personal_value_factor = -0.06
+    }
+}
+
+taihaijingji_idea_4 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.12
+        war_support_factor = -0.12
+        consumer_goods_factor = 0.08
+        poverty_development_monthly = -0.02
+        society_development_monthly = -0.02
+        income_growth_factor = -0.08
+        inflation_monthly_factor = 0.08
+        production_speed_buildings_factor = -0.08
+        business_value_factor = -0.08
+        personal_value_factor = -0.08
+    }
+}
+
+taihaijingji_idea_5 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.15
+        war_support_factor = -0.15
+        consumer_goods_factor = 0.10
+        poverty_development_monthly = -0.025
+        society_development_monthly = -0.025
+        income_growth_factor = -0.10
+        inflation_monthly_factor = 0.10
+        production_speed_buildings_factor = -0.10
+        business_value_factor = -0.10
+        personal_value_factor = -0.10
+    }
+}
+
+taihaijingji_idea_6 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.18
+        war_support_factor = -0.18
+        consumer_goods_factor = 0.12
+        poverty_development_monthly = -0.03
+        society_development_monthly = -0.03
+        income_growth_factor = -0.12
+        inflation_monthly_factor = 0.12
+        production_speed_buildings_factor = -0.12
+        business_value_factor = -0.12
+        personal_value_factor = -0.12
+    }
+}
+
+taihaijingji_idea_7 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.21
+        war_support_factor = -0.21
+        consumer_goods_factor = 0.14
+        poverty_development_monthly = -0.035
+        society_development_monthly = -0.035
+        income_growth_factor = -0.14
+        inflation_monthly_factor = 0.14
+        production_speed_buildings_factor = -0.14
+        business_value_factor = -0.14
+        personal_value_factor = -0.14
+    }
+}
+
+taihaijingji_idea_8 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.24
+        war_support_factor = -0.24
+        consumer_goods_factor = 0.16
+        poverty_development_monthly = -0.04
+        society_development_monthly = -0.04
+        income_growth_factor = -0.16
+        inflation_monthly_factor = 0.16
+        production_speed_buildings_factor = -0.16
+        business_value_factor = -0.16
+        personal_value_factor = -0.16
+    }
+}
+
+taihaijingji_idea_9 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.27
+        war_support_factor = -0.27
+        consumer_goods_factor = 0.18
+        poverty_development_monthly = -0.045
+        society_development_monthly = -0.045
+        income_growth_factor = -0.18
+        inflation_monthly_factor = 0.18
+        production_speed_buildings_factor = -0.18
+        business_value_factor = -0.18
+        personal_value_factor = -0.18
+    }
+}
+
+taihaijingji_idea_10 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.30
+        war_support_factor = -0.30
+        consumer_goods_factor = 0.20
+        poverty_development_monthly = -0.05
+        society_development_monthly = -0.05
+        income_growth_factor = -0.20
+        inflation_monthly_factor = 0.20
+        production_speed_buildings_factor = -0.20
+        business_value_factor = -0.20
+        personal_value_factor = -0.20
+    }
+}
+
+taihaijingji_idea_11 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.33
+        war_support_factor = -0.33
+        consumer_goods_factor = 0.22
+        poverty_development_monthly = -0.055
+        society_development_monthly = -0.055
+        income_growth_factor = -0.22
+        inflation_monthly_factor = 0.22
+        production_speed_buildings_factor = -0.22
+        business_value_factor = -0.22
+        personal_value_factor = -0.22
+    }
+}
+
+taihaijingji_idea_12 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.36
+        war_support_factor = -0.36
+        consumer_goods_factor = 0.24
+        poverty_development_monthly = -0.06
+        society_development_monthly = -0.06
+        income_growth_factor = -0.24
+        inflation_monthly_factor = 0.24
+        production_speed_buildings_factor = -0.24
+        business_value_factor = -0.24
+        personal_value_factor = -0.24
+    }
+}
+
+taihaijingji_idea_13 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.39
+        war_support_factor = -0.39
+        consumer_goods_factor = 0.26
+        poverty_development_monthly = -0.065
+        society_development_monthly = -0.065
+        income_growth_factor = -0.26
+        inflation_monthly_factor = 0.26
+        production_speed_buildings_factor = -0.26
+        business_value_factor = -0.26
+        personal_value_factor = -0.26
+    }
+}
+
+taihaijingji_idea_14 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.42
+        war_support_factor = -0.42
+        consumer_goods_factor = 0.28
+        poverty_development_monthly = -0.07
+        society_development_monthly = -0.07
+        income_growth_factor = -0.28
+        inflation_monthly_factor = 0.28
+        production_speed_buildings_factor = -0.28
+        business_value_factor = -0.28
+        personal_value_factor = -0.28
+    }
+}
+
+taihaijingji_idea_15 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.45
+        war_support_factor = -0.45
+        consumer_goods_factor = 0.30
+        poverty_development_monthly = -0.075
+        society_development_monthly = -0.075
+        income_growth_factor = -0.30
+        inflation_monthly_factor = 0.30
+        production_speed_buildings_factor = -0.30
+        business_value_factor = -0.30
+        personal_value_factor = -0.30
+    }
+}
+
+taihaijingji_idea_16 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.48
+        war_support_factor = -0.48
+        consumer_goods_factor = 0.32
+        poverty_development_monthly = -0.08
+        society_development_monthly = -0.08
+        income_growth_factor = -0.32
+        inflation_monthly_factor = 0.32
+        production_speed_buildings_factor = -0.32
+        business_value_factor = -0.32
+        personal_value_factor = -0.32
+    }
+}
+
+taihaijingji_idea_17 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.51
+        war_support_factor = -0.51
+        consumer_goods_factor = 0.34
+        poverty_development_monthly = -0.085
+        society_development_monthly = -0.085
+        income_growth_factor = -0.34
+        inflation_monthly_factor = 0.34
+        production_speed_buildings_factor = -0.34
+        business_value_factor = -0.34
+        personal_value_factor = -0.34
+    }
+}
+
+taihaijingji_idea_18 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.54
+        war_support_factor = -0.54
+        consumer_goods_factor = 0.36
+        poverty_development_monthly = -0.09
+        society_development_monthly = -0.09
+        income_growth_factor = -0.36
+        inflation_monthly_factor = 0.36
+        production_speed_buildings_factor = -0.36
+        business_value_factor = -0.36
+        personal_value_factor = -0.36
+    }
+}
+
+taihaijingji_idea_19 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.57
+        war_support_factor = -0.57
+        consumer_goods_factor = 0.38
+        poverty_development_monthly = -0.095
+        society_development_monthly = -0.095
+        income_growth_factor = -0.38
+        inflation_monthly_factor = 0.38
+        production_speed_buildings_factor = -0.38
+        business_value_factor = -0.38
+        personal_value_factor = -0.38
+    }
+}
+
+taihaijingji_idea_20 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.60
+        war_support_factor = -0.60
+        consumer_goods_factor = 0.40
+        poverty_development_monthly = -0.10
+        society_development_monthly = -0.10
+        income_growth_factor = -0.40
+        inflation_monthly_factor = 0.40
+        production_speed_buildings_factor = -0.40
+        business_value_factor = -0.40
+        personal_value_factor = -0.40
+    }
+}
+
+taihaijingji_idea_21 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.63
+        war_support_factor = -0.63
+        consumer_goods_factor = 0.42
+        poverty_development_monthly = -0.105
+        society_development_monthly = -0.105
+        income_growth_factor = -0.42
+        inflation_monthly_factor = 0.42
+        production_speed_buildings_factor = -0.42
+        business_value_factor = -0.42
+        personal_value_factor = -0.42
+    }
+}
+
+taihaijingji_idea_22 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.66
+        war_support_factor = -0.66
+        consumer_goods_factor = 0.44
+        poverty_development_monthly = -0.11
+        society_development_monthly = -0.11
+        income_growth_factor = -0.44
+        inflation_monthly_factor = 0.44
+        production_speed_buildings_factor = -0.44
+        business_value_factor = -0.44
+        personal_value_factor = -0.44
+    }
+}
+
+taihaijingji_idea_23 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.69
+        war_support_factor = -0.69
+        consumer_goods_factor = 0.46
+        poverty_development_monthly = -0.115
+        society_development_monthly = -0.115
+        income_growth_factor = -0.46
+        inflation_monthly_factor = 0.46
+        production_speed_buildings_factor = -0.46
+        business_value_factor = -0.46
+        personal_value_factor = -0.46
+    }
+}
+
+taihaijingji_idea_24 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.72
+        war_support_factor = -0.72
+        consumer_goods_factor = 0.48
+        poverty_development_monthly = -0.12
+        society_development_monthly = -0.12
+        income_growth_factor = -0.48
+        inflation_monthly_factor = 0.48
+        production_speed_buildings_factor = -0.48
+        business_value_factor = -0.48
+        personal_value_factor = -0.48
+    }
+}
+
+taihaijingji_idea_25 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_taihaijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.75
+        war_support_factor = -0.75
+        consumer_goods_factor = 0.50
+        poverty_development_monthly = -0.13
+        society_development_monthly = -0.13
+        income_growth_factor = -0.50
+        inflation_monthly_factor = 0.50
+        production_speed_buildings_factor = -0.50
+        business_value_factor = -0.50
+        personal_value_factor = -0.50
+    }
+}
+			
+		PRC_shuzihuaminzhu = { 
+			picture = GFX_idea_PRC_shuzihuaminzhu
+			name = PRC_shuzihuaminzhu
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.75
+				war_support_factor = 0.75
+	production_speed_buildings_factor = 0.2
+	industrial_capacity_factory = 0.2
+	industrial_capacity_dockyard = 0.2
+	expense_growth_factor = -0.5
+	business_value_factor = 0.25
+	income_growth_factor = 0.25
+	poverty_development_monthly = 0.02
+	society_development_monthly = 0.05
+			}
+		}							
+		PRC_made_in_china_PRC_MAO_39 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.05
+				research_speed_factor = 0.05
+				business_value_factor = -0.1
+				personal_value_factor = 0.2
+				production_factory_start_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_speed_buildings_factor = 0.3
+				expense_growth_factor = 0.3
+				society_development_monthly = 0.01
+			}
+		}					
+		PRC_made_in_china_PRC_MAO_38 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.03
+				expense_growth_factor = 0.05
+				poverty_development_monthly = 0.01
+			}
+		}									
+		PRC_made_in_china_PRC_MAO_37 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.02
+				research_speed_factor = 0.05
+				society_development_monthly = 0.01
+			}
+		}							
+		PRC_made_in_china_PRC_MAO_36 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.02
+				personal_expense_factor = 0.02
+				personal_value_factor = 0.02
+			}
+		}							
+		PRC_made_in_china_PRC_MAO_35 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.03
+				society_development_monthly = 0.01
+				poverty_development_monthly = 0.01
+			}
+		}					
+		PRC_made_in_china_PRC_advanced_economic_planning_5 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				expense_growth_factor = 0.02
+				stability_factor = -0.02
+				poverty_development_monthly = 0.02
+			}
+		}				
+		PRC_made_in_china_PRC_anti_corruption_technology_1 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				misc_income = 50
+				expense_growth_factor = -0.25
+				stability_factor = -0.05
+				production_cost_industrial_complex_factor = -0.2
+				poverty_development_monthly = 0.01
+			}
+		}	
+		PRC_future_of_cyber_communism_idea_1 = {
+			picture = PRC_future_of_cyber_communism_idea
+			name = PRC_future_of_cyber_communism_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor = -0.35
+				income_growth_factor = 0.35
+				stability_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.15
+				production_speed_office_park_factor = 0.075
+				production_factory_max_efficiency_factor = 0.2
+				consumer_goods_factor = -0.025
+				conscription_factor = 0.25
+				expense_growth_factor = -0.05
+				production_speed_nuclear_reactor_factor = 0.05
+				poverty_development_monthly = 0.015
+				academic_development_monthly = 0.005
+				industrial_development_monthly = 0.01
+				personal_expense_factor = 0.25
+				expense_growth_factor = -0.25
+			}
+		}
+		PRC_made_in_china_PRC_advanced_economic_planning_3 = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				personal_value_factor = 0.1
+				business_value_factor = 0.2
+				personal_expense_factor = 0.1
+				income_growth_factor = 0.15
+				industrial_capacity_factory = 0.05
+				production_cost_industrial_complex_factor = -0.15
+			}
+		}		
+		PRC_made_in_china_dummy_idea_advanced_economic_planning_6 = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				society_development_monthly = 0.02
+				income_growth_factor = -0.03
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+		}			
+		PRC_made_in_china_PRC_advanced_economic_planning_1 = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				business_value_factor = 0.2
+				personal_expense_factor = 0.2
+				consumer_goods_factor = -0.05
+				income_growth_factor = 0.1
+				industrial_capacity_factory = 0.025
+				production_cost_industrial_complex_factor = -0.075
+			}
+		}		
+		PRC_yuuki_4 = { 
+			picture = GFX_idea_PRC_yuuki_4
+			name = PRC_yuuki_4
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+	production_factory_start_efficiency_factor = 1
+	research_speed_factor = 0.5
+	local_resources_factor = 0.2
+	production_speed_buildings_factor = 0.2
+	command_power_gain = 0.5
+	training_time_army_factor = -0.2
+	attrition = -0.2
+	army_org_factor = 0.3
+	army_morale_factor = 0.3
+	org_loss_when_moving = -0.2
+	military_leader_cost_factor = -0.50
+	army_leader_start_level = 3
+	line_change_production_efficiency_factor = 1
+	industrial_capacity_factory = 0.2
+	industrial_capacity_dockyard = 0.2
+	production_factory_max_efficiency_factor = 1
+	army_attack_factor = 0.3
+	army_defence_factor = 0.3
+	experience_loss_factor = -0.3
+	experience_gain_army_factor = 0.5
+	navy_org = 1
+	navy_screen_attack_factor = 1
+	navy_screen_defence_factor = 1
+	navy_capital_ship_attack_factor = 1
+	air_mission_efficiency = 1
+	invasion_preparation = -0.5
+	planning_speed = 0.5
+	max_command_power = 500
+	business_value_factor = 0.2
+	income_growth_factor = 0.2
+			}
+		}		
+		PRC_made_in_china_PRC_revive_iron_rice_bowl_1 = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				personal_value_factor = 0.1
+				personal_expense_factor = 0.1
+				society_development_monthly = 0.02
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				monthly_population = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				poverty_development_monthly = 0.03
+				income_growth_factor = -0.05
+			}
+		}	
+		PRC_neomaoism111_idea = {
+			picture = PRC_neomaoism_idea
+			allowed = {
+				original_tag = PRC
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				conscription_factor = 0.1
+				personal_value_factor = -0.1
+				totalitarian_socialist_drift = 0.03
+				libertarian_socialist_drift = 0.02
+				consumer_goods_factor = -0.1
+				poverty_development_monthly = 0.05
+				breakthrough_factor = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}		
+
+
+}
+	head_minister = {
+
+		PRC_song_yongyi_hog = {
+			picture = PRC_song_yongyi_hog
+			name = PRC_song_yongyi
+			allowed = { original_tag = PRC}
+			visible = {
+has_country_leader = {
+	character = PRC_qin_hui
+}
+			}
+			traits = { 
+				hog_song_yongyi
+			}
+		}
+		PRC_li_jinjin_hog = {
+			picture = PRC_li_jinjin_hog
+			name = PRC_li_jinjin
+			allowed = { original_tag = PRC}
+			visible = {
+			or = {
+has_country_leader = {
+	character = PRC_han_dongfang
+}
+has_country_leader = {
+	character = PRC_renda
+}
+			}
+			}
+			traits = { 
+				hog_li_jinjin
+			}
+		}
+		PRC_xiong_hou_hog = {
+			picture = PRC_xiong_hou_hog
+			name = PRC_xiong_hou
+			allowed = { original_tag = PRC}
+			visible = {
+has_country_leader = {
+	character = PRC_ren_chonghao
+}
+			}
+			traits = { 
+				hog_xiong_hou
+			}
+		}
+		PRC_han_deqiang_hog_1 = {
+			picture = PRC_han_deqiang_hog_1
+			name = PRC_han_deqiang
+			allowed = { original_tag = PRC}
+			visible = {
+								has_country_flag = PRC_new_left_win
+			}
+			traits = { 
+				hog_han_deqiang
+			}
+		}
+		PRC_mao_yuanxin_hog = {
+			picture = PRC_mao_yuanxin_hog
+			name = PRC_mao_yuanxin_hog
+			allowed = { original_tag = PRC}
+
+			visible = {
+				has_country_flag = PRC_new_left_win
+has_country_leader = {
+	character = PRC_mao_yuanxin
+}
+			}
+
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_PRC_mao_yuanxin_statesman
+			}
+		}	
+		PRC_mao_yuanxin_hog_2 = {
+			picture = PRC_mao_yuanxin_hog_2
+			name = PRC_mao_yuanxin_hog
+			allowed = { original_tag = PRC}
+
+			visible = {
+				has_country_flag = PRC_new_left_win
+has_country_leader = {
+	character = PRC_Hu_Chunhua
+}
+			}
+
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_PRC_mao_yuanxin_start
+			}
+		}		
+		PRC_mao_yuanxin_hog_1 = {
+			picture = PRC_mao_yuanxin_hog_1
+			name = PRC_mao_yuanxin_hog
+			allowed = { original_tag = PRC}
+
+			visible = {
+				has_country_flag = PRC_new_left_win
+has_country_leader = {
+	character = PRC_renda
+}
+			}
+
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_PRC_mao_yuanxin_finish
+			}
+		}
+}
+
+
+
+
+
+
+
+	foreign_minister = {		
+		PRC_yang_heping_hog = {
+			picture = PRC_yang_heping_hog
+			name = PRC_yang_heping_hog
+			allowed = {
+				original_tag = PRC
+			}
+			
+			visible = {
+				has_country_flag = PRC_new_left_win
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+			
+			traits = {
+				for_yang_heping
+			}
+		}
+}
+
+
+
+
+	
+	interior_minister = {
+		PRC_ma_houzhi_hog = {
+			picture = PRC_ma_houzhi_hog
+			name = PRC_ma_houzhi_hog
+			allowed = {
+				original_tag = PRC
+			}
+			
+			visible = {
+				has_country_flag = PRC_new_left_win
+			}
+
+			#allowed_to_remove = {
+			#	always = no
+			#}
+			
+			traits = {
+				sec_ma_houzhi
+			}
+		}
+		PRC_kong_qingdong_hog = {
+			picture = PRC_kong_qingdong_hog
+			name = PRC_kong_qingdong
+			allowed = {
+				original_tag = PRC
+			}
+			
+			visible = {
+				has_country_flag = PRC_new_left_win
+			}
+
+			#allowed_to_remove = {
+			#	always = no
+			#}
+			
+			traits = {
+				sec_kong_qingdong
+			}
+		}
+
+}
+
+	
+	intelligence_minister = {
+		PRC_han_deqiang_hog = {
+			picture = PRC_han_deqiang_hog
+			name = PRC_han_deqiang
+			allowed = { original_tag = PRC}
+			visible = {
+								has_country_flag = PRC_new_left_win
+			}
+			traits = { 
+				int_han_deqiang
+			}
+		}
+}
+
+
+
+
+}

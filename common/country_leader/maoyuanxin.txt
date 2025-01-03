@@ -1,0 +1,153 @@
+leader_traits = {
+	hdq_zhengdaolingxiu = {
+		random = no
+		political_power_gain = 2
+		stability_factor = 1
+		war_support_factor = 1
+		army_attack_factor = 0.2
+		army_morale_factor = 0.2
+		planning_speed = 0.2
+		army_core_attack_factor = 0.5
+		army_core_defence_factor = 0.5
+		opinion_gain_monthly_factor = -1
+		totalitarian_socialist_drift = 0.01
+		national_socialist_drift = 0.05
+		fascist_drift = 0.03
+	 custom_modifier_tooltip = hdq_zhengdaolingxiu_desc
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rev_canxiang = {
+		random = no
+		political_power_gain = 0.5
+		opinion_gain_monthly_factor = -0.5
+		totalitarian_socialist_drift = 0.02
+		national_socialist_drift = -0.02
+		fascist_drift = -0.02
+		market_liberal_drift = -0.02
+		authoritarian_democrat = -0.02
+		conservative_drift = -0.02
+		social_liberal_drift = -0.02
+		nationalist_drift = -0.02
+	 custom_modifier_tooltip = rev_canxiang_desc
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rev_houdai  = {
+		random = no
+		totalitarian_socialist_drift = 0.02
+		political_power_gain = 0.5
+		stability_factor = 0.2
+	 custom_modifier_tooltip = rev_houdai_desc	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hog_PRC_mao_yuanxin_start  = {
+		random = no
+		totalitarian_socialist_drift = 0.05
+		stability_factor = 0.2
+		political_power_gain = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sec_ma_houzhi  = {
+		random = no
+		totalitarian_socialist_drift = 0.02
+		political_power_gain = 0.2
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	sec_kong_qingdong  = {
+		random = no
+		national_socialist_drift = 0.02
+		fascist_drift = 0.04
+		national_socialist_drift = 0.01
+		political_power_gain = 0.2
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	for_yang_heping  = {
+		random = no
+		totalitarian_socialist_drift = 0.02
+		political_power_gain = 0.15
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hog_xiong_hou  = {
+		random = no
+		stability_factor = -0.3
+		war_support_factor = -0.3
+		political_power_gain = 1
+		libertarian_socialist_drift = 0.01
+		totalitarian_socialist_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hog_li_jinjin  = {
+		random = no
+		stability_factor = 0.1
+		political_power_gain = 0.4
+		libertarian_socialist_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hog_song_yongyi  = {
+		random = no
+		stability_factor = 0.1
+		political_power_gain = 0.15
+		research_speed_factor = 0.05
+		social_liberal_drift = 0.01
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hog_han_deqiang  = {
+		random = no
+		national_socialist_drift = 0.05
+		fascist_drift = 0.03
+		national_socialist_drift = 0.01
+		political_power_gain = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	int_han_deqiang  = {
+		random = no
+		national_socialist_drift = 0.05
+		fascist_drift = 0.03
+		national_socialist_drift = 0.01
+		stability_factor = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hog_PRC_mao_yuanxin_statesman  = {
+		random = no
+		totalitarian_socialist_drift = 0.02
+		political_power_gain = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hog_PRC_mao_yuanxin_finish  = {
+		random = no
+		political_power_gain = 0.5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

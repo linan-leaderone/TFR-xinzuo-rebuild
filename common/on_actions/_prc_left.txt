@@ -1,0 +1,1382 @@
+on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+
+			if = { 
+				limit = {
+						BUK = {has_war_with = IRQ}
+ 						NOT = {BUK = {has_country_flag = IRQQQDDD} } 
+					FROM.FROM = { 
+						OR = {
+							state = 1178
+						} 
+					}
+						FROM = { tag = IRQ}
+
+						ROOT = {
+					OR = {
+ tag = BUK  
+tag = FIA
+tag = ABK
+}
+}
+}
+BUK = {set_country_flag = IRQQQDDD}
+					KUR = {
+						delete_unit = {}
+					}
+					KUW = {
+						delete_unit = {}
+					}
+					FIA = {
+						delete_unit = {}
+					}
+					IRQ = {
+						delete_unit = {}
+					}
+					ABK = {
+add_ideas = 	BRM_civil_war_idea1
+					}
+
+
+
+}
+
+
+
+			if = { #GAW_militia_jap2
+				limit = {
+
+				PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+					FROM.FROM = { 
+						OR = {
+							state = 1043
+							state = 1050
+						} 
+					}
+					OR = {
+						FROM = { tag = PRC}
+						FROM = { tag = PRK }
+					}
+					OR = {
+						ROOT = { tag = PRC }
+						ROOT = { tag = PRK }
+					}
+				}
+						PRC = {white_peace = PRK}
+											PRC = {
+							country_event = { id = PRC_MAO.5  }
+}
+
+			PRC = {release_autonomy = {
+			target = PRK
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						PRK = {
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {ROOT = {has_idea = PRC_neomaoism111_idea}}
+					}
+						ROOT = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {PRK = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						PRK = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {PRK = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						PRK = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {PRK = {has_idea = PRC_yuuki_4}}
+					}
+						PRK = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {PRK = {has_idea = PRC_socialist_dream_idea}}
+					}
+						PRK = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {PRK = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						PRK = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+
+				}
+									set_cosmetic_tag = PRK_XIN
+                inherit_technology = PRC
+								
+				set_party_name = { ideology = totalitarian_socialist long_name = CXCPPPCCC_party_long name = CXCPPPCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "朝鲜革命委员会"
+	                desc = "POLITICS_CXGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRK_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+							
+						}
+			}
+}
+}
+
+
+
+
+	on_startup = {
+		effect = {
+	PRC = {
+recruit_character = PRC_han_dongfang
+recruit_character = PRC_ren_chonghao
+recruit_character = PRC_zhang_hongliang
+recruit_character = PRC_qin_hui
+recruit_character = PRC_yao_xinzhong
+recruit_character = PRC_kong_qingdong
+recruit_character = PRC_han_deqiang
+recruit_character = PRC_renda
+recruit_character = PRC_mao_yuanxin
+}
+				}
+			}
+
+
+	on_capitulation = {
+		effect = {
+
+				if = {
+					limit = {
+	
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+	
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = PRC_yuuki_4}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas = PRC_yuuki_4
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+	
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+						
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+				if = {
+					limit = {
+						
+				PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = KOR
+						}
+					}
+
+							PRK = {	
+							annex_country = {
+								target = KOR
+								transfer_troops = no
+							}}
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    add_core_of = PRK
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    remove_core_of = KOR
+		    }
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+				if = {
+					limit = {
+				PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = TAL
+						}
+					}
+					FROM = {
+							PRC = {	
+							annex_country = {
+								target = TAL
+								transfer_troops = no
+							}}
+						PRC = {
+			release_autonomy = {
+			target = TAL
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+							}
+						}
+						TAL = {			
+			transfer_state = 1355			
+			transfer_state = 267			
+			transfer_state = 824			
+			transfer_state = 837		
+			transfer_state = 415			
+			transfer_state = 1051			
+			transfer_state = 1052			
+			transfer_state = 1053			
+			transfer_state = 1054			
+			transfer_state = 1055			
+			transfer_state = 1056			
+			transfer_state = 1057			
+			transfer_state = 1058			
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally			
+				set_cosmetic_tag = AFG_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = AFGCCC_party_long name = AFGCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "阿富汗革命委员会"
+	                desc = "POLITICS_AFGGW_DESC"
+	                picture = "gfx/MAOYUANXIN/AFG_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+
+				PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = BRM
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = BRM
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = BRM
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}
+			}
+						BRM = {
+annex_country = {
+								target = MND
+								transfer_troops = yes
+							}
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = BRM_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = BRMCCC_party_long name = BRMCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "缅甸革命委员会"
+	                desc = "POLITICS_MDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/BRM_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+				PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SIA
+						}
+					}
+					FROM = {
+						puppet = ROOT
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+			PRC = {
+				release_autonomy = {
+			target = SIA
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			} 
+			}
+						SIA = {
+                inherit_technology = PRC
+				load_oob = SIA_reserves
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = SIA_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = SIACCC_party_long name = SIACCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "暹罗革命委员会"
+	                desc = "POLITICS_XLGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+					
+
+				PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = MON
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+PRC = {annex_country = {
+								target = MON
+								transfer_troops = no
+							}
+
+							}
+
+
+
+					if = {
+						limit = {
+						PRC = {has_completed_focus =PRC_expand_provincial_autonomy_4}
+				}
+
+				every_state = {
+				limit = {
+					is_core_of = MON
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = MON
+				}
+			    remove_core_of = MON
+		    }	
+				}
+
+
+
+
+					if = {
+						limit = {
+						PRC = {has_completed_focus =PRC_expand_provincial_autonomy_2}
+				}
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+			    add_core_of = INM
+		    }
+			PRC = {release_autonomy = {
+			target = INM
+			autonomy_state = autonomy_zizhiqu
+			freedom_level = 0.1
+			}}
+						INM = {
+							
+			every_controlled_state = {
+				limit = {
+					NOT = {has_dynamic_modifier = {
+						modifier = PRC_peoples_commune
+					}}
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_peoples_commune
+				}
+			}	
+				set_cosmetic_tag = INM_XIN_XIN
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "蒙古革命委员会"
+	                desc = "POLITICS_MGGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+				}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = CAM
+						}
+					}
+					FROM = {
+						puppet = ROOT
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+			PRC = {release_autonomy = {
+			target = CAM
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						CAM = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+				load_oob = CAM_2000
+							
+				set_cosmetic_tag = CAM_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = CAMCCC_party_long name = CAMCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "柬埔寨革命委员会"
+	                desc = "POLITICS_JPZGW_DESC"
+	                picture = "gfx/MAOYUANXIN/JPZ_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = LAO
+						}
+					}
+					FROM = {
+						puppet = ROOT
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+			PRC = {
+				release_autonomy = {
+			target = LAO
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}
+			}
+						LAO = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+				load_oob = LAO_2020
+							
+				set_cosmetic_tag = LAO_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = LAOCCC_party_long name = LAOCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "老挝革命委员会"
+	                desc = "POLITICS_LWGW_DESC"
+	                picture = "gfx/MAOYUANXIN/LW_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = JAP
+						}
+					}
+					FROM = {
+			PRC = {
+annex_country = {
+								target = JAP
+								transfer_troops = no
+							}
+unlock_national_focus = PRC_rebuild_japan
+release_autonomy = {
+			target = JAP
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}
+}
+						JAP = {
+						load_focus_tree = generic_focus
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = JAP_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = JAPCCC_party_long name = JAPCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "日本革命委员会"
+	                desc = "POLITICS_JAPGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+				if = {
+					limit = {
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = CHI
+						}
+					}
+					
+			PRC = {
+			remove_ideas = PRC_the_separatist_problem	
+			remove_ideas = PRC_the_separatist_problem_2	
+			remove_ideas = PRC_the_separatist_problem_3		
+			remove_ideas = PRC_the_separatist_problem_4		
+}
+				
+					if = {
+						limit = {
+			PRC = {has_completed_focus = PRC_expand_provincial_autonomy_4}
+				}
+
+				every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    remove_core_of = CHI
+		    }	
+				}	
+
+	
+					if = {
+						limit = {
+			PRC = {has_completed_focus = PRC_expand_provincial_autonomy_3}
+				}
+
+							PRC = {annex_country = {
+								target = CHI
+								transfer_troops = no
+							}
+			release_autonomy = {
+			target = CHF
+			autonomy_state = autonomy_zizhiqu
+			freedom_level = 0.5
+			}
+				every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    add_core_of = IMA
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    remove_core_of = CHI
+		    }	
+			release_autonomy = {
+			target = IMA
+			autonomy_state = autonomy_zizhiqu
+			freedom_level = 0.5
+			}		
+			}	
+			IMA = {
+                inherit_technology = PRC
+				load_oob = CHI_PRC_puppet
+			add_ideas = PRC_future_of_cyber_communism_idea
+			add_ideas = PRC_neomaoism111_idea
+				set_capital = {state = 1148}
+				set_cosmetic_tag = IMA_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = TWW1_party_long name = TWW1_party }
+				set_party_name = { ideology = communist long_name = TWW2_party_long name = TWW2_party }
+				set_party_name = { ideology = libertarian_socialist long_name = TWW3_party_long name = TWW3_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+set_popularities = {
+	totalitarian_socialist = 50
+	communist = 30
+	libertarian_socialist = 20
+}
+				create_country_leader = {
+	                name = "台湾革命委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+				}
+				}	
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PHI
+						}
+					}
+					FROM = {
+			PRC = {
+
+							annex_country = {
+								target = PHI
+								transfer_troops = no
+							}
+
+release_autonomy = {
+			target = PHI
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						PHI = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = PHI_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = PHICCC_party_long name = PHICCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "菲律宾革命委员会"
+	                desc = "POLITICS_ASTGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = AST
+						}
+					}
+					FROM = {
+			PRC = {
+
+							annex_country = {
+								target = AST
+								transfer_troops = no
+							}
+release_autonomy = {
+			target = AST
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						AST = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = AST_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = ASTCCC_party_long name = ASTCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "澳大拉西亚革命委员会"
+	                desc = "POLITICS_ASTGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = INS
+						}
+					}
+					FROM = {
+			PRC = {
+
+							annex_country = {
+								target = INS
+								transfer_troops = no
+							}
+release_autonomy = {
+			target = INS
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						INS = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = INS_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = INSCCC_party_long name = INSCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "印度尼西亚革命委员会"
+	                desc = "POLITICS_YDNXYGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = VIN
+						}
+					}
+					FROM = {
+						puppet = ROOT
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+			PRC = {release_autonomy = {
+			target = VIN
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						VIN = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+				load_oob = VIN_reserves
+							
+				set_cosmetic_tag = VIN_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = VINCCC_party_long name = VINCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "越南革命委员会"
+	                desc = "POLITICS_YNGW_DESC"
+	                picture = "gfx/MAOYUANXIN/YN_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = MAL
+						}
+					}
+					FROM = {
+			every_state = {
+				limit = {
+					is_core_of = MAL
+				}
+			    add_core_of = SIG
+		    }
+			every_state = {
+				limit = {
+					is_core_of = MAL
+				}
+			    remove_core_of = MAL
+		    }
+						SIG = {
+							annex_country = {
+								target = MAL
+								transfer_troops = yes
+							}
+
+						}
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PNG
+						}
+					}
+									INS = {
+							annex_country = {
+								target = PNG
+								transfer_troops = no
+							}
+			every_state = {
+				limit = {
+					is_core_of = PNG
+				}
+			    add_core_of = INS
+		    }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = NZL
+						}
+					}
+									AST = {
+							annex_country = {
+								target = NZL
+								transfer_troops = no
+							}
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+			    add_core_of = AST
+		    }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = RAJ
+						}
+					}
+			PRC = {release_autonomy = {
+			target = NAX
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+						NAX = {
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+									set_cosmetic_tag = NAX_XIN
+				set_capital = {state = 1379}
+                inherit_technology = PRC
+			remove_ideas = RAJ_indian_civil_war_idea			
+			transfer_state = 431			
+			transfer_state = 1373			
+			transfer_state = 439			
+			transfer_state = 1381			
+			transfer_state = 1366			
+			transfer_state = 1368
+							annex_country = {
+								target = PRJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = SLJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = MPJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = LRJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RAJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RJN
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = SAJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RSS
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = DRV
+								transfer_troops = yes
+							}
+				set_capital = {state = 1379}
+						}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+}
+
+
+
+}

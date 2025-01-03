@@ -1,0 +1,450 @@
+	scripted_gui = {
+		TFR_asian_cold_war_gui = {
+			context_type = decision_category
+			window_name = "TFR_asian_cold_war_container"
+			properties = {
+			}
+			triggers = {
+				asian_cold_war_bhutan_pro_eadi_visible = {
+					BHU = {
+						is_in_faction = no
+					}
+				}
+				asian_cold_war_bhutan_pro_eadi_in_faction_visible = {
+				OR = {
+					BHU = {
+						is_in_faction = yes
+					}
+					NOT = {country_exists = BHU}
+				}
+					}
+				asian_cold_war_cambodia_pro_eadi_in_faction_visible = {
+					CAM = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_cambodia_pro_eadi_visible = {
+					CAM = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_CAM_var > global.JAP_influence_CAM_var
+					}
+				}
+				asian_cold_war_cambodia_neutral_visible = {
+					CAM = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_CAM_var = global.JAP_influence_CAM_var
+					}
+				}
+				asian_cold_war_cambodia_pro_pdto_visible = {
+					CAM = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_CAM_var < global.JAP_influence_CAM_var
+					}
+				}
+				asian_cold_war_cambodia_pro_pdto_in_faction_visible = {
+					CAM = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				asian_cold_war_india_pro_pdto_visible = {
+					RAJ = {
+						is_in_faction = no
+					}
+				}	
+				asian_cold_war_india_pro_pdto_in_faction_visible = {
+					RAJ = {
+						is_in_faction = yes
+					}
+				}
+				
+				asian_cold_war_indonesia_pro_eadi_in_faction_visible = {
+					INS = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_indonesia_pro_eadi_visible = {
+					INS = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_INS_var > global.JAP_influence_INS_var
+					}
+				}
+				asian_cold_war_indonesia_neutral_visible = {
+					INS = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_INS_var = global.JAP_influence_INS_var
+					}
+				}
+				asian_cold_war_indonesia_pro_pdto_visible = {
+					INS = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_INS_var < global.JAP_influence_INS_var
+					}
+				}
+				asian_cold_war_indonesia_pro_pdto_in_faction_visible = {
+					INS = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				asian_cold_war_laos_pro_eadi_in_faction_visible = {
+					LAO = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_laos_pro_eadi_visible = {
+					LAO = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_LAO_var > global.JAP_influence_LAO_var
+					}
+				}
+				asian_cold_war_laos_neutral_visible = {
+					LAO = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_LAO_var = global.JAP_influence_LAO_var
+					}
+				}
+				asian_cold_war_laos_pro_pdto_visible = {
+					LAO = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_LAO_var < global.JAP_influence_LAO_var
+					}
+				}
+				asian_cold_war_laos_pro_pdto_in_faction_visible = {
+					LAO = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				#Malaysia
+				asian_cold_war_malaysia_pro_eadi_in_faction_visible = {
+				OR = {
+					MAL = {
+						is_in_faction_with = PRC
+					}
+						NOT = {country_exists = MAL}
+				}
+				}
+				asian_cold_war_malaysia_pro_eadi_visible = {
+					MAL = {
+						is_in_faction = no
+					}
+					country_exists = MAL
+					check_variable = {
+						global.PRC_influence_MAL_var > global.JAP_influence_MAL_var
+					}
+				}
+				asian_cold_war_malaysia_neutral_visible = {
+					MAL = {
+						is_in_faction = no
+					}
+					country_exists = MAL
+					check_variable = {
+						global.PRC_influence_MAL_var = global.JAP_influence_MAL_var
+					}
+				}
+				asian_cold_war_malaysia_pro_pdto_visible = {
+					MAL = {
+						is_in_faction = no
+					}
+					country_exists = MAL
+					check_variable = {
+						global.PRC_influence_MAL_var < global.JAP_influence_MAL_var
+					}
+				}
+				asian_cold_war_malaysia_pro_pdto_in_faction_visible = {
+					MAL = {
+						is_in_faction_with = JAP
+					}
+
+				}
+				
+				#Myanmar
+				asian_cold_war_myanmar_pro_eadi_in_faction_visible = {
+					BRM = {
+						is_in_faction_with = PRC
+						NOT = {
+							has_country_flag = BRM_civil_war_flag
+						}
+					}
+				}
+				asian_cold_war_myanmar_pro_eadi_visible = {
+					BRM = {
+						is_in_faction = no
+						NOT = {
+							has_country_flag = BRM_civil_war_flag
+						}
+					}
+					check_variable = {
+						global.PRC_influence_BRM_var > global.JAP_influence_BRM_var
+					}
+				}
+				asian_cold_war_myanmar_neutral_visible = {
+					BRM = {
+						is_in_faction = no
+						NOT = {
+							has_country_flag = BRM_civil_war_flag
+						}
+					}
+					check_variable = {
+						global.PRC_influence_BRM_var = global.JAP_influence_BRM_var
+					}
+				}
+				asian_cold_war_myanmar_pro_pdto_visible = {
+					BRM = {
+						is_in_faction = no
+						NOT = {
+							has_country_flag = BRM_civil_war_flag
+						}
+					}
+					check_variable = {
+						global.PRC_influence_BRM_var < global.JAP_influence_BRM_var
+					}
+				}
+				asian_cold_war_myanmar_pro_pdto_in_faction_visible = {
+					BRM = {
+						is_in_faction_with = JAP
+						NOT = {
+							has_country_flag = BRM_civil_war_flag
+						}
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				asian_cold_war_myanmar_civil_war_visible = {
+					BRM = {
+						has_country_flag = BRM_civil_war_flag
+					}
+				}
+				
+				#Papua New Guinea
+				asian_cold_war_papua_new_guinea_pro_pdto_in_faction_visible = {
+					PNG = {
+						is_in_faction = yes
+					}
+				}
+				asian_cold_war_papua_new_guinea_pro_pdto_visible = {
+					PNG = {
+						is_in_faction = no
+						OR = {
+							has_idea = JAP_PEC_member
+							has_idea = JAP_PEC_member_2
+						}
+					}
+				}
+				asian_cold_war_papua_new_guinea_neutral_visible = {
+					PNG = {
+						is_in_faction = no
+						NOT = {
+							OR = {
+								has_idea = JAP_PEC_member
+								has_idea = JAP_PEC_member_2
+							}
+						}
+					}
+				}
+				
+				#Philippines
+				asian_cold_war_philippines_pro_eadi_in_faction_visible = {
+					PHI = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_philippines_pro_eadi_visible = {
+					PHI = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_PHI_var > global.JAP_influence_PHI_var
+					}
+				}
+				asian_cold_war_philippines_neutral_visible = {
+					PHI = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_PHI_var = global.JAP_influence_PHI_var
+					}
+				}
+				asian_cold_war_philippines_pro_pdto_visible = {
+					PHI = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_PHI_var < global.JAP_influence_PHI_var
+					}
+				}
+				asian_cold_war_philippines_pro_pdto_in_faction_visible = {
+					PHI = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				#Singapore
+				asian_cold_war_singapore_pro_eadi_in_faction_visible = {
+					SIG = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_singapore_pro_eadi_visible = {
+					SIG = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_SIG_var > global.JAP_influence_SIG_var
+					}
+				}
+				asian_cold_war_singapore_neutral_visible = {
+					SIG = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_SIG_var = global.JAP_influence_SIG_var
+					}
+				}
+				asian_cold_war_singapore_pro_pdto_visible = {
+					SIG = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_SIG_var < global.JAP_influence_SIG_var
+					}
+				}
+				asian_cold_war_singapore_pro_pdto_in_faction_visible = {
+					SIG = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				#Thailand
+				asian_cold_war_thailand_pro_eadi_in_faction_visible = {
+					SIA = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_thailand_pro_eadi_visible = {
+					SIA = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_SIA_var > global.JAP_influence_SIA_var
+					}
+				}
+				asian_cold_war_thailand_neutral_visible = {
+					SIA = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_SIA_var = global.JAP_influence_SIA_var
+					}
+				}
+				asian_cold_war_thailand_pro_pdto_visible = {
+					SIA = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_SIA_var < global.JAP_influence_SIA_var
+					}
+				}
+				asian_cold_war_thailand_pro_pdto_in_faction_visible = {
+					SIA = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				#Vietnam
+				asian_cold_war_vietnam_pro_eadi_in_faction_visible = {
+					VIN = {
+						is_in_faction_with = PRC
+					}
+				}
+				asian_cold_war_vietnam_pro_eadi_visible = {
+					VIN = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_VIN_var > global.JAP_influence_VIN_var
+					}
+				}
+				asian_cold_war_vietnam_neutral_visible = {
+					VIN = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_VIN_var = global.JAP_influence_VIN_var
+					}
+				}
+				asian_cold_war_vietnam_pro_pdto_visible = {
+					VIN = {
+						is_in_faction = no
+					}
+					check_variable = {
+						global.PRC_influence_VIN_var < global.JAP_influence_VIN_var
+					}
+				}
+				asian_cold_war_vietnam_pro_pdto_in_faction_visible = {
+					VIN = {
+						is_in_faction_with = JAP
+					}
+					NOT = {
+						JAP= {is_in_faction_with = PRC}
+					}
+				}
+				
+				#Taiwan
+				asian_cold_war_taiwan_pro_eadi_in_faction_visible = {
+					CHI = {
+						OR = {
+							exists = NO
+							is_ally_with = PRC
+						}
+					}
+				}
+				asian_cold_war_taiwan_pro_pdto_in_faction_visible = {
+					CHI = {
+						exists = yes
+						NOT = {
+							is_ally_with = PRC
+						}
+					}
+				}
+			}
+		}
+	}

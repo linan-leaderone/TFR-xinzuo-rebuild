@@ -1,0 +1,132 @@
+characters={
+PRC_han_dongfang ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_han_dongfang.png"
+			}
+		}
+		country_leader={
+			desc = PRC_han_dongfang_DESC
+			ideology=reformist_socialism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_ren_chonghao ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_ren_chonghao.png"
+			}
+		}
+		country_leader={
+			desc = PRC_ren_chonghao_DESC
+			ideology=neo_socialism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_zhang_hongliang ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_zhang_hongliang.png"
+			}
+		}
+		country_leader={
+			desc = PRC_zhang_hongliang_DESC
+			ideology=social_fascism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_qin_hui ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_qin_hui.png"
+			}
+		}
+		country_leader={
+			desc = PRC_qin_hui_DESC
+			ideology=liberal_socialism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_yao_xinzhong ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_yao_xinzhong.png"
+			}
+		}
+		country_leader={
+			desc = PRC_yao_xinzhong_DESC
+			ideology=conservative_socialism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+
+PRC_kong_qingdong ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_kong_qingdong.png"
+			}
+		}
+		country_leader={
+			desc = PRC_kong_qingdong_DESC
+			ideology=chinese_exceptionalism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_han_deqiang ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_han_deqiang.png"
+			}
+		}
+		country_leader={
+			ideology=Esoteric_Maoism
+			desc = PRC_han_deqiang_DESC
+			traits={ hdq_zhengdaolingxiu }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}	
+PRC_renda ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_renda.png"
+			}
+		}
+		country_leader={
+			ideology=maoism
+			desc = PRC_renda_DESC
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}	
+PRC_mao_yuanxin ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PRC_MAO_yuanxin.png"
+			}
+		}
+		country_leader={
+			ideology=maoism
+			desc = PRC_mao_yuanxin_DESC
+			traits={
+ rev_canxiang 
+ rev_houdai 
+}
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}	

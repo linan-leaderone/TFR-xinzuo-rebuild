@@ -1,0 +1,215 @@
+PRC_maoism_power_balance = {
+	initial_value = 0
+	left_side = PRC_maoism_side
+	right_side = PRC_konfus_side
+	decision_category = PRC_balance_of_maoism_power_category
+	#Middle
+	range = {
+		id = PRC_balance_1_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+	 custom_modifier_tooltip = PRC_maoism_power_balance_1_desc
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+	#Nationalization Side
+	side = {
+		id = PRC_maoism_side
+		icon = GFX_bop_PRC_maoism_side
+		range = {
+			id = PRC_maoism_1_range
+			min = -1
+			max = -0.8
+			modifier = {
+				political_power_gain = 0.4
+				production_speed_buildings_factor = 0.4
+				production_factory_max_efficiency_factor = 0.4
+				poverty_development_monthly = 0.08
+				society_development_monthly = 0.04
+				research_speed_factor = 0.4
+				personal_expense_factor = 0.2
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				totalitarian_socialist_drift = 0.1
+	 custom_modifier_tooltip = PRC_maoism_power_balance_2_desc
+
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = PRC_maoism_2_range
+			min = -0.8
+			max = -0.6
+			modifier = {
+				political_power_gain = 0.3
+				production_speed_buildings_factor = 0.3
+				production_factory_max_efficiency_factor = 0.3
+				poverty_development_monthly = 0.06
+				society_development_monthly = 0.03
+				research_speed_factor = 0.3
+				personal_expense_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				totalitarian_socialist_drift = 0.05
+				libertarian_socialist_drift = 0.05
+	 custom_modifier_tooltip = PRC_maoism_power_balance_2_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = PRC_maoism_3_range
+			min = -0.6
+			max = -0.4
+			modifier = {
+				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				poverty_development_monthly = 0.04
+				society_development_monthly = 0.02
+				research_speed_factor = 0.2
+				personal_expense_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				totalitarian_socialist_drift = 0.04
+				libertarian_socialist_drift = 0.04
+				social_democrat_drift = 0.02
+	 custom_modifier_tooltip = PRC_maoism_power_balance_2_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = PRC_maoism_4_range
+			min = -0.4
+			max = -0.2
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				poverty_development_monthly = 0.02
+				society_development_monthly = 0.01
+				research_speed_factor = 0.1
+				personal_expense_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				totalitarian_socialist_drift = 0.03
+				libertarian_socialist_drift = 0.03
+				social_democrat_drift = 0.02
+				social_liberal_drift = 0.02
+	 custom_modifier_tooltip = PRC_maoism_power_balance_2_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+	#Centralization Side
+	side = {
+		id = PRC_konfus_side
+		icon = GFX_bop_PRC_konfus_side
+		range = {
+			id = PRC_konfus_1_range
+			min = 0.2
+			max = 0.4
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.2
+				war_support_factor = 0.1
+				conscription_factor = 0.1
+				industrial_capacity_factory = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				communist_drift = 0.02
+				conservative_drift = 0.01
+				nationalist_drift = 0.02
+				authoritarian_democrat_drift = 0.01
+				fascist_drift = 0.02
+				national_socialist_drift = 0.02
+	 custom_modifier_tooltip = PRC_maoism_power_balance_3_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = PRC_konfus_2_range
+			min = 0.4
+			max = 0.6
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.4
+				war_support_factor = 0.2
+				conscription_factor = 0.2
+				industrial_capacity_factory = 0.2
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				communist_drift = 0.03
+				nationalist_drift = 0.02
+				fascist_drift = 0.02
+				national_socialist_drift = 0.03
+	 custom_modifier_tooltip = PRC_maoism_power_balance_3_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = PRC_konfus_3_range
+			min = 0.6
+			max = 0.8
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.6
+				war_support_factor = 0.3
+				conscription_factor = 0.3
+				industrial_capacity_factory = 0.3
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+				communist_drift = 0.02
+				fascist_drift = 0.03
+				national_socialist_drift = 0.05
+	 custom_modifier_tooltip = PRC_maoism_power_balance_3_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = PRC_konfus_4_range
+			min = 0.8
+			max = 1
+			modifier = {
+				political_power_gain = 0.4
+				stability_factor = 0.8
+				war_support_factor = 0.4
+				conscription_factor = 0.4
+				industrial_capacity_factory = 0.4
+				army_core_attack_factor = 0.4
+				army_core_defence_factor = 0.4
+				fascist_drift = 0.04
+				national_socialist_drift = 0.06
+	 custom_modifier_tooltip = PRC_maoism_power_balance_3_desc
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+}

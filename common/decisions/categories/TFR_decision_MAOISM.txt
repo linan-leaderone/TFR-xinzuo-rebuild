@@ -1,0 +1,15 @@
+PRC_balance_of_maoism_power_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    visible_when_empty = no
+
+    allowed = {
+    	tag = PRC
+    }
+    
+    visible = {
+    	has_completed_focus = PRC_legacy_of_mao
+
+    }
+    
+    priority = 4
+}

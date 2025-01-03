@@ -1,0 +1,27 @@
+﻿l_german:
+PRC_HACHIMI:0 "Volksrepublik China"
+PRC_HACHIMI_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_ADJ:0 "Volksrepublik China"
+PRC_HACHIMI_FLAG:0 "Volksrepublik China"
+PRC_HACHIMI_FLAG_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_FLAG_ADJ:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGS:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGS_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGS_ADJ:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGT:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGT_DEF:0 "Volksrepublik China"
+PRC_HACHIMI_FLAGT_ADJ:0 "Volksrepublik China"
+china.294.b:0 "111 Können wir zu Hakimis Lieblingsflagge wechseln (Gelber-Fluss-Flagge)?"
+china.294.c:0 "111 Können wir zu Hakimis Lieblingsflagge wechseln (Gelber-Fluss- und Jangtse-Flagge)?"
+china.294.e:0 "111 Können wir zu Hakimis Lieblingsflagge wechseln (Gelber-Fluss-, Jangtse- und Perlfluss-Flagge)?"
+rev_canxiang: "Echo der Revolution"
+
+rev_canxiang_desc: "--------------\n§YAls einziger Überlebender des Lin-Jiang-Falls verkörpert Mao Yuanxin nicht nur die Glut der revolutionären Ära, sondern trägt auch eine tief verwurzelte Obsession für ihr Erbe. Er ist das 'Echo' der Revolution und erinnert das Volk daran, dass der Geist der Revolution niemals weit entfernt ist.§!\n--------------"
+
+PRC_mao_yuanxin: "Mao Yuanxin"
+
+PRC_mao_yuanxin_DESC: "Mao Yuanxin, Neffe von Mao Zedong, wurde 1941 geboren und gehört zu einer prominenten Familie innerhalb der Kommunistischen Partei Chinas. Seine politische Karriere war von vielen Höhen und Tiefen geprägt und eng mit der Kulturrevolution verbunden. Während dieser Zeit wurde Mao Yuanxin als Sekretär des Parteikomitees der Provinz Liaoning mit bedeutenden Aufgaben betraut. Als junger Führer der Roten Garden nahm er die Rolle des 'revolutionären Nachfolgers' an und setzte Maos radikale Politik in Nordostchina um, wodurch er allmählich seinen Einfluss in der Partei stärkte.\n\nDoch nach dem Ende der Kulturrevolution nahm Maos Schicksal eine dramatische Wende. Nach dem Sturz der Viererbande wurde ihm die Beteiligung an extrem linken Aktivitäten vorgeworfen, und er wurde schließlich inhaftiert. Für einige verkörperte Mao Yuanxin die junge linksgerichtete Generation, und sein Fall symbolisierte das Ende von Maos ultralinker Linie. Nach dem Tod von Jiang Tengjiao am 8. Mai 2009 wurde Mao Yuanxin zum letzten lebenden Teilnehmer des Lin-Biao-Jiang-Qing-konterrevolutionären Gruppenfalls. Obwohl er keinen Einfluss mehr hat, bleibt er ein standhafter Anhänger der Mao-Ideologie im 21. Jahrhundert und lehnt die Rückkehr Chinas zum Kapitalismus ab.\n\nHeute führt Mao Yuanxin eine neue Welle von 'kleinen Roten Garden' an und hat die Macht wiedererlangt, um die roten Ideale zu erneuern. Er erhebt das Banner des 'Anti-Revisionismus' und fordert eine Rückkehr zu den Kernprinzipien Maos, um ein revolutionäres Land mit Schwerpunkt auf Klassenkampf und Kampf gegen Bürokratie neu zu gestalten. Trotz seines hohen Alters ist Mao Yuanxin entschlossen, dieses verblasste Land erneut rot zu färben.\n\n§RRevolution ist gerechtfertigt; Rebellion ist berechtigt!§!"
+
+rev_houdai: "Rote Nachkommenschaft"
+
+rev_houdai_desc: "--------------\n§YFür viele mag die extreme Linke etwas sein, dem man lieber aus dem Weg geht, aber Maos Status als 'Neffe des Vorsitzenden Mao' hat ihm eine breitere Unterstützung sowohl in der Bevölkerung als auch innerhalb der Partei verschafft. Diese einzigartige Identität verleiht ihm ein heiliges revolutionäres Erbe, das die Opposition schwächt und den Weg für Reformen erleichtert. Er ist nicht nur ein politischer Führer, sondern wird auch als lebendige Fortsetzung des Mao-Geistes angesehen. Diese rote Abstammung bringt eine einzigartige Macht und einen unerschütterlichen Autoritätsstatus in seine Führung.\n\n§RNur die Zeit wird zeigen, ob dieser spontane Personenkult für China ein Segen oder ein Fluch ist...§!§!\n--------------"

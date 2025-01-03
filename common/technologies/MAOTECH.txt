@@ -1,0 +1,13 @@
+technologies = {
+
+	yuuki_4 = {
+		
+		allow = {
+			always = no
+		}
+
+	research_cost = 1
+	start_year = 2100
+	
+	}
+}

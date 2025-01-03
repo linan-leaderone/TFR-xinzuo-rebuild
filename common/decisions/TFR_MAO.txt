@@ -1,0 +1,775 @@
+
+PRC_balance_of_maoism_power_category = {
+	PRC_pingfan_1 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_4
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.40
+			}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
+	PRC_pingfan_4 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_5
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.42
+			}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
+	PRC_balance_of_maoism_power_1 = {
+		icon = GFX_PRC_new_left_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			NOT = {has_completed_focus = PRC_reliable_politburo}
+			NOT = {has_completed_focus = PRC_reconcile_with_militarists}
+		}
+		available = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
+			OR = {
+			PRC_hu_chunhua = {is_country_leader = yes}
+			PRC_mao_yuanxin = {is_country_leader = yes}
+			AND = {
+						PRC_renda = {is_country_leader = yes}
+						has_government = totalitarian_socialist
+					}
+
+					}
+			
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+	PRC_pingfan_5 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_5
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.43
+			}
+
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.03
+			}
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}
+
+	PRC_pingfan_2 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_4
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.41
+			}
+
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.03
+			}
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}
+	PRC_balance_of_maoism_power_2 = {
+		icon = GFX_PRC_liberal_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			NOT = {has_completed_focus = PRC_reliable_politburo}
+			NOT = {has_completed_focus = PRC_reconcile_with_militarists}
+		}
+		available = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
+			OR = {
+			PRC_hu_chunhua = {is_country_leader = yes}
+			PRC_han_dongfang = {is_country_leader = yes}
+			AND = {
+						PRC_renda = {is_country_leader = yes}
+						has_government = libertarian_socialist
+					}
+					}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.03
+			}
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+	PRC_pingfan_6 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_5
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+
+			country_event = {
+				id = PRC_MAO.13
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}
+	PRC_pingfan_3 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_4
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.34
+			}
+
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}
+	PRC_balance_of_maoism_power_3 = {
+		icon = GFX_PRC_liberal_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			NOT = {has_completed_focus = PRC_reliable_politburo}
+			NOT = {has_completed_focus = PRC_reconcile_with_militarists}
+		}
+		available = {
+
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
+			OR = {
+			PRC_hu_chunhua = {is_country_leader = yes}
+			PRC_han_dongfang = {is_country_leader = yes}
+			PRC_qin_hui = {is_country_leader = yes}
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+	PRC_balance_of_maoism_power_4 = {
+		icon = GFX_PRC_new_left_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			OR = {
+			PRC_han_dongfang = {is_country_leader = yes}
+			PRC_ren_chonghao = {is_country_leader = yes}
+			PRC_mao_yuanxin = {is_country_leader = yes}
+			}
+			NOT = {PRC_hu_chunhua = {is_country_leader = yes}}
+		}
+		available = {
+			
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > -0.1
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < -0.1
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+	PRC_balance_of_maoism_power_5 = {
+		icon = GFX_PRC_centrist_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			NOT = {has_completed_focus = PRC_reconcile_with_militarists}
+			NOT = {has_completed_focus = PRC_rejuvinate_cpc_cadres}
+			NOT = {PRC_han_dongfang = {is_country_leader = yes}}
+			NOT = {PRC_qin_hui = {is_country_leader = yes}}
+			NOT = {PRC_ren_chonghao = {is_country_leader = yes}}
+			NOT = {PRC_mao_yuanxin = {is_country_leader = yes}}
+			NOT = {PRC_yao_xinzhong = {is_country_leader = yes}}
+			NOT = {PRC_renda = {is_country_leader = yes}}
+		}
+		available = {
+			has_completed_focus = PRC_reliable_politburo
+			
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > 0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < 0.6
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.01
+			}
+
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+	PRC_balance_of_maoism_power_6 = {
+		icon = GFX_PRC_nationalist_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			NOT = {has_completed_focus = PRC_reconcile_with_militarists}
+			NOT = {has_completed_focus = PRC_rejuvinate_cpc_cadres}
+		OR = {
+			PRC_hu_chunhua = {is_country_leader = yes}
+			PRC_yao_xinzhong = {is_country_leader = yes}					
+		}
+		}
+		available = {
+			has_completed_focus = PRC_reliable_politburo
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > 0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < 0.3
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+	PRC_balance_of_maoism_power_7 = {
+		icon = GFX_PRC_nationalist_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			NOT = {has_completed_focus = PRC_reliable_politburo}
+			NOT = {has_completed_focus = PRC_rejuvinate_cpc_cadres}
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+		}
+		available = {
+
+			has_completed_focus = PRC_reconcile_with_militarists
+		OR = {
+			PRC_hu_chunhua = {is_country_leader = yes}
+			PRC_kong_qingdong = {is_country_leader = yes}
+					
+		}
+			
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value > 0.7
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.05
+			}
+			}
+			if = {
+				limit = {
+				power_balance_value = {
+				id = PRC_maoism_power_balance
+				value < 0.7
+				}
+				}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+			}
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.05
+			}
+
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+	PRC_balance_of_maoism_power_8 = {
+		icon = GFX_PRC_nationalist_decision
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+			has_completed_focus = PRC_legacy_of_mao
+			NOT = {has_completed_focus = PRC_reliable_politburo}
+			NOT = {has_completed_focus = PRC_rejuvinate_cpc_cadres}
+
+		}
+		available = {
+
+			has_completed_focus = PRC_reconcile_with_militarists
+		OR = {
+			PRC_hu_chunhua = {is_country_leader = yes}
+			PRC_han_deqiang = {is_country_leader = yes}
+			
+			
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = 0.05
+			}
+
+			add_popularity = {
+				ideology = national_socialist
+				popularity = 0.05
+			}
+
+
+			
+		}
+		ai_will_do = {
+		base = 1
+		}
+	}
+
+}
+

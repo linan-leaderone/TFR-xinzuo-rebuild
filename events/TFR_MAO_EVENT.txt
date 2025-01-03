@@ -1,0 +1,2664 @@
+add_namespace = PRC_MAO
+country_event = {
+	id = PRC_MAO.1
+	title = PRC_MAO.1.t
+	desc = PRC_MAO.1.d
+	picture = GFX_PRC_MAO_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = PRC_MAO.1.a
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		hidden_effect = {
+			set_politics = {
+				ruling_party = totalitarian_socialist
+				elections_allowed = yes
+			}
+			add_ideas = PRC_mao_yuanxin_hog_1
+		}
+
+	}
+}
+country_event = {
+	id = PRC_MAO.2
+	title = PRC_MAO.2.t
+	desc = PRC_MAO.2.d
+	picture = GFX_PRC_MAO_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = PRC_MAO.2.a
+		
+		hidden_effect = {
+		
+
+		}
+
+	}
+}
+country_event = {
+	id = PRC_MAO.3
+	title = PRC_MAO.3.t
+	desc = PRC_MAO.3.d
+	picture = GFX_PRC_MAO_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = PRC_MAO.3.a
+		
+			set_politics = {
+				ruling_party = national_socialist
+				elections_allowed = no
+			}
+			add_stability = -0.25
+			add_political_power = -100
+			add_popularity = {
+				ideology = communist
+				popularity = -0.1
+			}
+		hidden_effect = {
+
+		end_coalition = yes
+
+
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+
+set_cosmetic_tag = PRC_HACHIMI_FLAG	
+		
+
+		}
+
+	}
+}
+news_event = {
+	id = PRC_MAO.4
+	title = PRC_MAO.4.t
+	desc = PRC_MAO.4.d
+	picture = GFX_PRC_MAO_event_4
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.4.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.4.b
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+country_event = {
+	id = PRC_MAO.5
+	title = PRC_MAO.5.t
+	desc = PRC_MAO.5.d
+	picture = GFX_PRC_MAO_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = PRC_MAO.5.a
+		country_event = { id = PRC_MAO.6  }
+		PRK = {
+		remove_ideas = PRK_heavy_sanctions_idea
+		remove_ideas = PRK_Total_Control_idea
+		remove_ideas = PRK_Total_Control_idea2
+		remove_ideas = PRK_korean_thaw_idea		
+}
+
+	}
+}
+news_event = {
+	id = PRC_MAO.6
+	title = PRC_MAO.6.t
+	desc = PRC_MAO.6.d
+	picture = GFX_PRC_MAO_event_6
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.6.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.6.b
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+news_event = {
+	id = PRC_MAO.7
+	title = PRC_MAO.7.t
+	desc = PRC_MAO.7.d
+	picture = GFX_PRC_MAO_event_7
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.7.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.7.b
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+news_event = {
+	id = PRC_MAO.8
+	title = PRC_MAO.8.t
+	desc = PRC_MAO.8.d
+	picture = GFX_PRC_MAO_event_8
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.8.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.8.b
+		trigger = {
+			tag = PRC
+		}
+		set_global_flag = pan_asian_war_ongoing
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO.9
+	title = PRC_MAO.9.t
+	desc = PRC_MAO.9.d
+	picture = GFX_PRC_MAO_event_9
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+				1041 = {
+					is_fully_controlled_by = PRK
+				}	
+			PRC = {has_government = totalitarian_socialist }
+	}
+	option = {
+		name = PRC_MAO.9.a
+
+}
+}
+
+country_event = {
+	id = PRC_MAO.10
+	title = PRC_MAO.10.t
+	desc = PRC_MAO.10.d
+	picture = GFX_PRC_MAO_event_10
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+PRC = {has_completed_focus = PRC_expand_provincial_autonomy_3}
+	NOT = { country_exists = KOR }
+	}
+	option = {
+		name = PRC_MAO.10.a
+		MST = {
+				set_cosmetic_tag = MST_XIN_XIN
+annex_country = {
+				target = PRK
+				transfer_troops = yes
+		}}
+				MST = {set_capital = {state = 1041}}
+			every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    add_core_of = MST
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    remove_core_of = PRK
+		    }
+
+
+}
+	option = {
+		name = PRC_MAO.10.b
+
+}
+	option = {
+		name = PRC_MAO.10.c
+		PRK = {annex_country = {
+				target = MST
+				transfer_troops = yes
+		}}
+			every_state = {
+				limit = {
+					is_core_of = MST
+				}
+			    add_core_of = PRK
+		    }
+			every_state = {
+				limit = {
+					is_core_of = MST
+				}
+			    remove_core_of = MST
+		    }
+
+}
+}
+
+country_event = {
+	id = PRC_MAO.11
+	title = PRC_MAO.11.t
+	desc = PRC_MAO.11.d
+	picture = GFX_PRC_MAO_event_11
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.11.a
+	
+			set_politics = {
+				ruling_party = libertarian_socialist
+				elections_allowed = no
+			}
+			add_ideas = PRC_li_jinjin_hog
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_the_Flower_of_Freedom_1
+		end_coalition = yes
+
+			set_country_flag = PRC_handongfang_hog
+		add_country_leader_role = {
+			character = PRC_ren_chonghao
+			promote_leader = yes
+			country_leader = {
+				ideology = left_accelerationist_1
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_communist_social_democrat_party_long
+				name = PRC_communist_social_democrat_party
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			add_stability = -0.25
+			add_political_power = -100
+			add_popularity = {
+				ideology = communist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.3
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.2
+			}
+}
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.12
+	title = PRC_MAO.12.t
+	desc = PRC_MAO.12.d
+	picture = GFX_PRC_MAO_event_12
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.12.a
+	
+		
+
+
+}
+
+
+}
+
+
+country_event = {
+	id = PRC_MAO.13
+	title = PRC_MAO.13.t
+	desc = PRC_MAO.13.d
+	picture = GFX_PRC_MAO_event_13
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.13.a
+	
+		
+
+
+}
+
+
+}
+
+
+
+country_event = {
+	id = PRC_MAO.14
+	title = PRC_MAO.14.t
+	desc = PRC_MAO.14.d
+	picture = GFX_PRC_MAO_event_14
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.14.a
+	
+			
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+			}
+			add_ideas = PRC_song_yongyi_hog
+		hidden_effect = {
+set_cosmetic_tag = PRC_GH	
+		end_coalition = yes
+
+}
+
+}
+
+
+}
+
+
+country_event = {
+	id = PRC_MAO.15
+	title = PRC_MAO.15.t
+	desc = PRC_MAO.15.d
+	picture = GFX_PRC_MAO_event_15
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.15.a
+	
+			
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			add_ideas = PRC_xiong_hou_hog
+		hidden_effect = {
+set_cosmetic_tag = PRC_HACHIMI	
+		end_coalition = yes
+
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}	
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}	
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+
+}
+
+}
+
+
+}
+
+
+country_event = {
+	id = PRC_MAO.16
+	title = PRC_MAO.16.t
+	desc = PRC_MAO.16.d
+	picture = GFX_PRC_MAO_event_16
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.16.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.17
+	title = PRC_MAO.17.t
+	desc = PRC_MAO.17.d
+	picture = GFX_PRC_MAO_event_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.17.a
+	
+			complete_national_focus = PRC_the_Flower_of_Freedom_3
+	
+		hidden_effect = {
+
+set_cosmetic_tag = PRC_GH	
+		set_politics = {
+			ruling_party = libertarian_socialist
+			elections_allowed = yes
+		}	
+}
+		
+
+
+}
+	option = {
+		name = PRC_MAO.17.b
+	
+			complete_national_focus = PRC_the_Flower_of_Freedom_4
+	
+		hidden_effect = {
+
+set_cosmetic_tag = PRC_GH	
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}	
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_communist1_social_democrat_party_long
+				name = PRC_communist1_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_social_democrat1_party_long
+				name = PRC_cpc_social_democrat1_party
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_cpc_social_liberal1_party_long
+				name = PRC_cpc_social_liberal1_party
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_cpc_conservative1_party_long
+				name = PRC_cpc_conservative1_party
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_cpc_authoritarian_democrat1_party_long
+				name = PRC_cpc_authoritarian_democrat1_party
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_cpc_nationalist1_party_long
+				name = PRC_cpc_nationalist1_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc1
+				name = PRC_cpc_rad1_maoist_tot_soc1_short
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialist_libsoc1
+				name = PRC_cpc_libertarian_socialist_libsoc1_short
+			}
+			}
+
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.18
+	title = PRC_MAO.18.t
+	desc = PRC_MAO.18.d
+	picture = GFX_PRC_MAO_event_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.18.a
+	
+		
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.19
+	title = PRC_MAO.19.t
+	desc = PRC_MAO.19.d
+	picture = GFX_PRC_MAO_event_19
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.19.a
+	
+		
+
+
+}
+}
+country_event = {
+	id = PRC_MAO.20
+	title = PRC_MAO.20.t
+	desc = PRC_MAO.20.d
+	picture = GFX_PRC_MAO_event_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.20.a
+	
+		
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.21
+	title = PRC_MAO.21.t
+	desc = PRC_MAO.21.d
+	picture = GFX_PRC_MAO_event_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.21.a
+	
+		hidden_effect = {
+			country_event = {
+				id = PRC_MAO.22
+				days = 100
+			}
+			country_event = {
+				id = PRC_MAO.23
+				days = 200
+			}
+			country_event = {
+				id = PRC_MAO.24
+				days = 300
+			}
+			country_event = {
+				id = PRC_MAO.25
+				days = 400
+			}
+			country_event = {
+				id = PRC_MAO.26
+				days = 500
+			}
+
+}
+	
+		
+
+
+}
+	option = {
+		name = PRC_MAO.21.b
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.22
+	title = PRC_MAO.22.t
+	desc = PRC_MAO.22.d
+	picture = GFX_PRC_MAO_event_22
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.22.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.23
+	title = PRC_MAO.23.t
+	desc = PRC_MAO.23.d
+	picture = GFX_PRC_MAO_event_23
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.23.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.24
+	title = PRC_MAO.24.t
+	desc = PRC_MAO.24.d
+	picture = GFX_PRC_MAO_event_24
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.24.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.25
+	title = PRC_MAO.25.t
+	desc = PRC_MAO.25.d
+	picture = GFX_PRC_MAO_event_25
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.25.a
+	
+		
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.26
+	title = PRC_MAO.26.t
+	desc = PRC_MAO.26.d
+	picture = GFX_PRC_MAO_event_26
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.26.a
+	
+		
+
+
+}
+
+	option = {
+		trigger = {
+			has_tech = yuuki_4
+		}
+		name = PRC_MAO.26.b
+
+			country_event = {
+				id = PRC_MAO.27
+				days = 2
+			}
+		
+
+
+}
+
+}
+
+
+
+country_event = {
+	id = PRC_MAO.27
+	title = PRC_MAO.27.t
+	desc = PRC_MAO.27.d
+	picture = GFX_PRC_MAO_event_27
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.27.a
+	
+
+create_corps_commander = {
+name = "绀野木棉季" 
+desc = "POLITICS_YUKI_DESC"
+portrait_path = "GFX_SMSY"
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+traits = { 
+}
+} 		
+
+
+}
+
+
+}
+
+
+country_event = {
+	id = PRC_MAO.28
+	title = PRC_MAO.28.t
+	desc = PRC_MAO.28.d
+	picture = GFX_PRC_MAO_event_28
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+										GER = {
+	has_war_with = SOV
+		}
+										PRC = {
+	has_war_with = SOV
+		}
+	}
+
+	option = {
+		name = PRC_MAO.28.a
+	PRC = {set_country_flag = RUS_EUO_PRC}		
+}	
+}
+
+country_event = {
+	id = PRC_MAO.29
+	title = PRC_MAO.29.t
+	desc = PRC_MAO.29.d
+	picture = GFX_PRC_MAO_event_29
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	PRC = {has_country_flag = RUS_EUO_PRC}	
+
+	SOV = {surrender_progress > 0.65}
+	}
+
+	option = {
+		name = PRC_MAO.29.a
+					SOV = {
+						dismantle_faction = yes
+					}
+}	
+}
+news_event = {
+	id = PRC_MAO.30
+	title = PRC_MAO.30.t
+	desc = PRC_MAO.30.d
+	picture = GFX_PRC_MAO_event_30
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.30.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.30.b
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+country_event = {
+	id = PRC_MAO.31
+	title = PRC_MAO.31.t
+	desc = PRC_MAO.31.d
+	picture = GFX_PRC_MAO_event_31
+	is_triggered_only = no
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = PRC_MAO.31.a
+
+PRC = {	
+	diplomatic_relation = {
+    country = ROOT
+    relation = non_aggression_pact
+    active = yes
+}	
+	diplomatic_relation = {
+    country = ROOT
+    relation = guarantee
+    active = yes
+}		
+	diplomatic_relation = {
+    country = ROOT
+    relation = military_access
+    active = yes
+}
+}
+			country_event = {
+				id = PRC_MAO.32
+				days = 1
+			}
+	diplomatic_relation = {
+    country = PRC
+    relation = non_aggression_pact
+    active = yes
+}	
+	diplomatic_relation = {
+    country = PRC
+    relation = guarantee
+    active = yes
+}		
+	diplomatic_relation = {
+    country = PRC
+    relation = military_access
+    active = yes
+}
+			every_country = {
+				limit = {				
+				is_in_faction_with = GER
+}
+
+	diplomatic_relation = {
+    country = PRC
+    relation = non_aggression_pact
+    active = yes
+}	
+	diplomatic_relation = {
+    country = PRC
+    relation = guarantee
+    active = yes
+}		
+	diplomatic_relation = {
+    country = PRC
+    relation = military_access
+    active = yes
+}
+PRC = {	
+	diplomatic_relation = {
+    country = ROOT
+    relation = non_aggression_pact
+    active = yes
+}	
+	diplomatic_relation = {
+    country = ROOT
+    relation = guarantee
+    active = yes
+}		
+	diplomatic_relation = {
+    country = ROOT
+    relation = military_access
+    active = yes
+}
+}
+}
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+
+}	
+
+}
+news_event = {
+	id = PRC_MAO.32
+	title = PRC_MAO.32.t
+	desc = PRC_MAO.32.d
+	picture = GFX_PRC_MAO_event_32
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.32.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.32.b
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+
+country_event = {
+	id = PRC_MAO.33
+	title = PRC_MAO.33.t
+	desc = PRC_MAO.33.d
+	picture = GFX_PRC_MAO_event_33
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	PRC = {has_country_flag = RUS_EUO_PRC}	
+
+	SOV = {surrender_progress > 0.75}
+	}
+
+	option = {
+		name = PRC_MAO.33.a
+
+	
+		hidden_effect = {
+										every_country = {
+						white_peace = SOV
+					}
+					SOV = {
+						if = {
+							limit = {
+								GER = {
+									OR = {
+										has_government = communist
+										has_government = libertarian_socialist
+									}
+								}
+							}
+							SOV_Zhir_defeat_in_2nd_European_War = yes
+							GER = {
+								puppet = SOV
+							}
+						}
+						else_if = {
+							limit = {
+								GER = {
+									OR = {
+										has_government = fascist
+										has_government = national_socialist
+										has_government = nationalist
+									}
+								}
+							}
+							SOV_USSR_defeat_in_2nd_European_War = yes
+							GER = {
+								puppet = SOV
+							}
+						}
+						else_if = {
+							limit = {
+								GER = {
+									OR = {
+										has_completed_focus = GER_democracy_falters
+										has_cosmetic_tag = EUU
+									}
+								}
+							}
+							SOV_Medv_defeat_in_2nd_European_War = yes
+						}
+						else_if = {
+							limit = {
+								GER = {
+									OR = {
+										has_completed_focus = GER_democracy_falters
+										has_government = conservative
+									}
+								}
+								GER = {
+									exists = yes
+								}
+							}
+							news_event = {
+								id = news.256
+							}
+							BEL = {
+								set_autonomy = {
+									target = SOV
+									autonomous_state = autonomy_supervised_state
+									freedom_level = 0.4
+								}
+							}
+							SOV = {
+								set_cosmetic_tag = SOV_nato
+								set_politics = {
+									ruling_party = social_liberal
+									last_election = "2013.5.12"
+									election_frequency = 48
+									elections_allowed = no
+								}
+								add_popularity = {
+									ideology = social_liberal
+									popularity = 0.35
+								}
+								create_country_leader = {
+									name = NATO_mandate_council
+									picture = "NATO Mandate Council.dds"
+									ideology = supervised_democracy_liberal
+									traits = {
+									}
+								}
+								country_event = {
+									id = russia.143
+									days = 176
+								}
+								country_event = {
+									id = russia.208
+								}
+							}
+							UKR = {
+								add_state_core = 137
+								add_state_core = 1059
+								add_state_core = 853
+								add_state_core = 218
+								add_state_core = 240
+								add_state_core = 1283
+								transfer_state = 137
+								transfer_state = 1059
+								transfer_state = 853
+								transfer_state = 218
+								transfer_state = 240
+								transfer_state = 1283
+							}
+							NOA = {
+								add_state_core = 237
+								add_state_core = 217
+								add_state_core = 236
+								transfer_state = 236
+								transfer_state = 217
+								transfer_state = 237
+								set_cosmetic_tag = NOA_volga
+								set_politics = {
+									ruling_party = authoritarian_democrat
+									last_election = "2013.5.12"
+									election_frequency = 48
+									elections_allowed = no
+								}
+								add_popularity = {
+									ideology = authoritarian_democrat
+									popularity = 0.15
+								}
+								create_country_leader = {
+									name = GER_richard_rossmanith
+									picture = "Richard_Rossmanith.dds"
+									ideology = military_democracy
+									traits = {
+									}
+								}
+								load_oob = "NOA_volga"
+							}
+							TAN = {
+								add_state_core = 329
+								transfer_state = 329
+							}
+							GLC = {
+								add_state_core = 582
+								add_state_core = 653
+								add_state_core = 652
+								add_state_core = 572
+								add_state_core = 403
+								add_state_core = 398
+								transfer_state = 582
+								transfer_state = 653
+								transfer_state = 652
+								transfer_state = 572
+								transfer_state = 403
+								transfer_state = 398
+							}
+							NAV = {
+								add_state_core = 195
+								add_state_core = 146
+								add_state_core = 216
+								add_state_core = 214
+								add_state_core = 215
+								add_state_core = 213
+								add_state_core = 147
+								add_state_core = 722
+								transfer_state = 195
+								transfer_state = 146
+								transfer_state = 216
+								transfer_state = 214
+								transfer_state = 215
+								transfer_state = 213
+								transfer_state = 147
+								transfer_state = 722
+								set_cosmetic_tag = NAV_nato
+							}
+							KKP = {
+								add_state_core = 239
+								add_state_core = 401
+								add_state_core = 250
+								add_state_core = 251
+								transfer_state = 239
+								transfer_state = 250
+								transfer_state = 251
+								transfer_state = 401
+								set_cosmetic_tag = KKP_ssr
+								set_politics = {
+									ruling_party = communist
+									last_election = "2013.5.12"
+									election_frequency = 48
+									elections_allowed = no
+								}
+								add_popularity = {
+									ideology = communist
+									popularity = 0.35
+								}
+							}
+							YAM = {
+								add_state_core = 580
+								add_state_core = 579
+								add_state_core = 403
+								transfer_state = 580
+								transfer_state = 579
+								transfer_state = 403
+								set_cosmetic_tag = YAM_military
+								set_politics = {
+									ruling_party = nationalist
+									last_election = "2013.5.12"
+									election_frequency = 48
+									elections_allowed = no
+								}
+								add_popularity = {
+									ideology = nationalist
+									popularity = 0.35
+								}
+								create_country_leader = {
+									name = SOV_viktor_zolotov
+									picture = "Viktor Zolotov.dds"
+									ideology = military_junta
+									traits = {
+									}
+								}
+							}
+							BLR = {
+								transfer_state = 94
+								transfer_state = 808
+								transfer_state = 95
+								transfer_state = 206
+								transfer_state = 194
+								transfer_state = 204
+								transfer_state = 194
+								transfer_state = 241
+								transfer_state = 207
+							}
+							KIR = {
+								add_state_core = 563
+								add_state_core = 566
+								add_state_core = 567
+								add_state_core = 574
+								transfer_state = 563
+								transfer_state = 566
+								transfer_state = 567
+								transfer_state = 574
+							}
+							OCC = {
+								add_state_core = 564
+								add_state_core = 565
+								transfer_state = 564
+								transfer_state = 565
+							}
+							FLN = {
+								add_state_core = 516
+								add_state_core = 577
+								add_state_core = 576
+								add_state_core = 578
+								add_state_core = 568
+								add_state_core = 571
+								add_state_core = 570
+								add_state_core = 40
+								add_state_core = 569
+								add_state_core = 654
+								transfer_state = 516
+								transfer_state = 577
+								transfer_state = 576
+								transfer_state = 578
+								transfer_state = 568
+								transfer_state = 571
+								transfer_state = 570
+								transfer_state = 40
+								transfer_state = 569
+								transfer_state = 654
+							}
+							STL = {
+								add_state_core = 260
+								add_state_core = 265
+								transfer_state = 260
+								transfer_state = 265
+								load_oob = "STL_2020"
+							}
+							STV = {
+								add_state_core = 397
+								transfer_state = 397
+							}
+							SOL = {
+								add_state_core = 256
+								add_state_core = 249
+								transfer_state = 256
+								transfer_state = 249
+							}
+							BSK = {
+								add_state_core = 651
+								transfer_state = 651
+								set_cosmetic_tag = BSK_bashkiria
+								set_politics = {
+									ruling_party = authoritarian_democrat
+									elections_allowed = no
+								}
+								set_popularities = {
+									communist = 25
+									libertarian_socialist = 5
+									nationalist = 20
+									authoritarian_democrat = 40
+									fascist = 10
+								}
+							}
+							UDM = {
+								add_state_core = 399
+								transfer_state = 399
+								set_cosmetic_tag = UDM_udmurtia
+								set_politics = {
+									ruling_party = authoritarian_democrat
+									elections_allowed = no
+								}
+								set_popularities = {
+									communist = 25
+									libertarian_socialist = 10
+									nationalist = 5
+									authoritarian_democrat = 40
+									social_liberal = 10
+								}
+							}
+							CKK = {
+								add_state_core = 408
+								add_state_core = 637
+								add_state_core = 655
+								add_state_core = 537
+								add_state_core = 555
+								transfer_state = 408
+								transfer_state = 637
+								transfer_state = 655
+								transfer_state = 537
+								transfer_state = 555
+							}
+							SEY = {
+								add_state_core = 644
+								transfer_state = 644
+							}
+							NAU = {
+								add_state_core = 409
+								add_state_core = 657
+								add_state_core = 560
+								add_state_core = 562
+								add_state_core = 561
+								transfer_state = 409
+								transfer_state = 657
+								transfer_state = 560
+								transfer_state = 562
+								transfer_state = 561
+							}
+							NFJ = {
+								add_state_core = 262
+								transfer_state = 262
+							}
+							PUR = {
+								add_state_core = 400
+								add_state_core = 351
+								add_state_core = 264
+								transfer_state = 400
+								transfer_state = 351
+								transfer_state = 264
+							}
+							CHU = {
+								add_state_core = 256
+								add_state_core = 581
+								transfer_state = 256
+								transfer_state = 581
+							}
+							KYR = {
+								set_politics = {
+									ruling_party = totalitarian_socialist
+									elections_allowed = no
+								}
+								set_popularities = {
+									communist = 25
+									totalitarian_socialist = 70
+									nationalist = 5
+								}
+							}
+							TAJ = {
+								set_politics = {
+									ruling_party = nationalist
+									elections_allowed = no
+								}
+								set_popularities = {
+									nationalist = 100
+								}
+							}
+							YAK = {
+								set_politics = {
+									ruling_party = nationalist
+									elections_allowed = no
+								}
+								set_popularities = {
+									nationalist = 100
+								}
+								add_state_core = 587
+								add_state_core = 804
+								transfer_state = 587
+								transfer_state = 804
+							}
+							TAT = {
+								set_politics = {
+									ruling_party = nationalist
+									elections_allowed = no
+								}
+								set_popularities = {
+									nationalist = 100
+								}
+								add_state_core = 821
+								add_state_core = 585
+								transfer_state = 821
+								transfer_state = 585
+							}
+							KAZ = {
+								country_event = {
+									id = russia.131
+									days = 30
+								}
+							}
+						}
+					}
+
+	NAU = {
+		transfer_state = 1328
+		transfer_state = 560
+		transfer_state = 657
+		transfer_state = 408
+		transfer_state = 409
+		transfer_state = 537
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {ROOT = {has_idea = PRC_neomaoism111_idea}}
+					}
+						ROOT = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {ROOT = {has_idea = PRC_yuuki_4}}
+					}
+						ROOT = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {ROOT = {has_idea = PRC_socialist_dream_idea}}
+					}
+						ROOT = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {ROOT = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						ROOT = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+
+				}
+		add_state_core = 1328
+		add_state_core = 560
+		add_state_core = 657
+		add_state_core = 408
+		add_state_core = 409
+		add_state_core = 537
+		add_state_core = 644
+		add_state_core = 574
+		transfer_state = 644
+		transfer_state = 574
+		add_state_core = 644
+		transfer_state = 1293
+		add_state_core = 1293
+		transfer_state = 561
+		add_state_core = 561
+		transfer_state = 562
+		add_state_core = 562
+		transfer_state = 637
+		add_state_core = 637
+		transfer_state = 655
+		add_state_core = 655
+		add_state_core = 555
+		transfer_state = 555
+		add_state_core = 566
+		add_state_core = 565
+		add_state_core = 567
+		transfer_state = 566
+		transfer_state = 565
+		transfer_state = 567
+		add_state_core = 568
+		add_state_core = 575
+		add_state_core = 654
+		add_state_core = 576
+		add_state_core = 568
+		add_state_core = 569
+		add_state_core = 40
+		add_state_core = 570
+		add_state_core = 578
+		add_state_core = 563
+		add_state_core = 564
+		transfer_state = 568
+		transfer_state = 563
+		transfer_state = 564
+		transfer_state = 575
+		transfer_state = 654
+		transfer_state = 576
+		transfer_state = 568
+		transfer_state = 569
+		transfer_state = 40
+		transfer_state = 570
+		transfer_state = 578
+			PRC = {set_autonomy = {
+			target = NAU
+			autonomy_state = autonomy_tongzhi
+			}}
+		create_country_leader = {
+			name = SOV_rcpm
+			picture = "gfx/MAOYUANXIN/SEY_GWH.png"
+			ideology = maoism
+		}
+		set_politics = {
+			ruling_party = totalitarian_socialist
+			last_election = "2022.5.12"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		set_party_name = {
+			ideology = totalitarian_socialist
+			long_name = SOV_stalinist_bloc_rcpm
+			name = SOV_stalinist_bloc_short_rcpm
+		}
+
+
+							}
+			
+
+		
+
+
+
+
+
+							TAL = {
+			PRC = {set_autonomy = {
+			target = TAL
+			autonomy_state = autonomy_tongzhi
+			}}
+		set_politics = {
+			ruling_party = totalitarian_socialist
+			last_election = "2022.5.12"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+				set_cosmetic_tag = AFG_TJG_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = TJGCCC_party_long name = TJGCCC_party }
+				create_country_leader = {
+	                name = "突厥革命委员会"
+	                desc = "POLITICS_TJGGW_DESC"
+	                picture = "gfx/MAOYUANXIN/AFG_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				} 
+								transfer_state = 799
+								transfer_state = 802
+								transfer_state = 803
+								transfer_state = 801
+								transfer_state = 732
+								transfer_state = 821
+								transfer_state = 804
+								transfer_state = 587
+								transfer_state = 406
+								transfer_state = 407
+								transfer_state = 404
+								transfer_state = 402
+								transfer_state = 805
+								transfer_state = 822
+								transfer_state = 823
+								transfer_state = 405
+								transfer_state = 586
+								transfer_state = 588
+								transfer_state = 589
+								transfer_state = 590
+								transfer_state = 583
+								transfer_state = 585
+								transfer_state = 584
+			every_state = {
+				limit = {
+					is_core_of = TAJ
+				}
+			    add_core_of = TAL
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = KYR
+				}
+			    add_core_of = TAL
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = KHI
+				}
+			    add_core_of = TAL
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = NWY
+				}
+			    add_core_of = TAL
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = TMS
+				}
+			    add_core_of = TAL
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = KAZ
+				}
+			    add_core_of = TAL
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = UZB
+				}
+			    add_core_of = TAL
+		    }
+		    }
+							PRC = {
+								transfer_state = 329
+
+				if = {
+					limit = {
+						PRC = {has_completed_focus =PRC_expand_provincial_autonomy_2}
+					}
+
+							INM = {
+								transfer_state = 329
+								add_state_core = 329
+							}
+						}
+						}
+
+					}
+
+					set_global_flag = skip_default_capitulation
+				}
+				}
+
+
+
+}	
+}
+
+
+
+country_event = {
+	id = PRC_MAO.34
+	title = PRC_MAO.34.t
+	desc = PRC_MAO.34.d
+	picture = GFX_PRC_MAO_event_34
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.34.a
+	
+		
+
+
+}
+
+
+}
+
+
+
+country_event = {
+	id = PRC_MAO.35
+	title = PRC_MAO.35.t
+	desc = PRC_MAO.35.d
+	picture = GFX_PRC_MAO_event_35
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.35.a	
+			add_political_power = 50
+			add_stability = -0.05		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_35
+				}
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_mic_stability_weekly_dynamic_var
+					value = 0.03
+				}	
+				add_to_variable = {
+					var = PRC_mic_society_development_monthly_dynamic_var
+					value = 0.01
+				}	
+				add_to_variable = {
+					var = PRC_mic_poverty_development_monthly_dynamic_var
+					value = 0.01
+				}
+			}
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.36
+	title = PRC_MAO.36.t
+	desc = PRC_MAO.36.d
+	picture = GFX_PRC_MAO_event_36
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.36.a
+			add_political_power = 50
+			add_stability = -0.02		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_36
+				}
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_mic_stability_weekly_dynamic_var
+					value = 0.02
+				}	
+				add_to_variable = {
+					var = PRC_mic_personal_expense_factor_dynamic_var
+					value = -0.02
+				}	
+				add_to_variable = {
+					var = PRC_mic_personal_value_factor_dynamic_var
+					value = 0.02
+				}
+			}
+	
+		
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.37
+	title = PRC_MAO.37.t
+	desc = PRC_MAO.37.d
+	picture = GFX_PRC_MAO_event_37
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.37.a
+			add_political_power = 50
+			add_stability = -0.1		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_37
+				}
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_mic_stability_weekly_dynamic_var
+					value = 0.02
+				}	
+				add_to_variable = {
+					var = PRC_mic_research_speed_factor_dynamic_var
+					value = 0.05
+				}	
+				add_to_variable = {
+					var = PRC_mic_society_development_monthly_dynamic_var
+					value = 0.01
+				}
+			}
+	
+	
+		
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.38
+	title = PRC_MAO.38.t
+	desc = PRC_MAO.38.d
+	picture = GFX_PRC_MAO_event_38
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.38.a
+			add_political_power = 50
+			add_stability = -0.1		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_38
+				}
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_mic_stability_weekly_dynamic_var
+					value = 0.03
+				}	
+				add_to_variable = {
+					var = PRC_mic_expense_growth_factor_dynamic_var
+					value = -0.05
+				}	
+				add_to_variable = {
+					var = PRC_mic_poverty_development_monthly_dynamic_var
+					value = 0.01
+				}
+			}
+	
+		
+
+
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.39
+	title = PRC_MAO.39.t
+	desc = PRC_MAO.39.d
+	picture = GFX_PRC_MAO_event_39
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.39.a
+			add_political_power = 50
+			add_stability = -0.1		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_39
+				}
+			}
+			
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_mic_stability_weekly_dynamic_var
+					value = 0.05
+				}	
+				add_to_variable = {
+					var = PRC_mic_expense_growth_factor_dynamic_var
+					value = 0.3
+				}	
+				add_to_variable = {
+					var = PRC_mic_personal_value_factor_dynamic_var
+					value = 0.2
+				}	
+				add_to_variable = {
+					var = PRC_mic_business_value_factor_dynamic_var
+					value = -0.1
+				}		
+				add_to_variable = {
+					var = PRC_mic_research_speed_factor_dynamic_var
+					value = 0.05
+				}	
+				add_to_variable = {
+					var = PRC_mic_production_factory_start_efficiency_factor_dynamic_var
+					value = 0.2
+				}	
+				add_to_variable = {
+					var = PRC_mic_production_factory_efficiency_gain_factor_dynamic_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = PRC_mic_industrial_capacity_factory_dynamic_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = PRC_mic_industrial_capacity_dockyard_dynamic_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = PRC_mic_production_factory_max_efficiency_factor_dynamic_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = PRC_mic_production_speed_buildings_factor_dynamic_var
+					value = 0.3
+				}	
+				add_to_variable = {
+					var = PRC_mic_society_development_monthly_dynamic_var
+					value = 0.01
+				}
+
+			}
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.40
+	title = PRC_MAO.40.t
+	desc = PRC_MAO.40.d
+	picture = GFX_PRC_MAO_event_40
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.40.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.41
+	title = PRC_MAO.41.t
+	desc = PRC_MAO.41.d
+	picture = GFX_PRC_MAO_event_41
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.41.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.42
+	title = PRC_MAO.42.t
+	desc = PRC_MAO.42.d
+	picture = GFX_PRC_MAO_event_42
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.42.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.43
+	title = PRC_MAO.43.t
+	desc = PRC_MAO.43.d
+	picture = GFX_PRC_MAO_event_43
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.43.a
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.44
+	title = PRC_MAO.44.t
+	desc = PRC_MAO.44.d
+	picture = GFX_PRC_MAO_event_44
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.44.a
+			complete_national_focus = PRC_the_Flower_of_Freedom_7
+	
+		
+
+
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.45
+	title = PRC_MAO.45.t
+	desc = PRC_MAO.45.d
+	picture = GFX_PRC_MAO_event_45
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.45.a
+			complete_national_focus = PRC_the_Flower_of_Freedom_7
+}
+	option = {
+		name = PRC_MAO.45.b
+			complete_national_focus = PRC_the_Flower_of_Freedom_8
+	
+		
+
+
+}
+
+
+}
+news_event = {
+	id = PRC_MAO.46
+	title = PRC_MAO.46.t
+	desc = PRC_MAO.46.d
+	picture = GFX_PRC_MAO_event_46
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.46.b
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.46.a
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+
+country_event = {
+	id = PRC_MAO.47
+	title = PRC_MAO.47.t
+	desc = PRC_MAO.47.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.47.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.48
+	title = PRC_MAO.48.t
+	desc = PRC_MAO.48.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.48.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.49
+	title = PRC_MAO.49.t
+	desc = PRC_MAO.49.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.49.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.50
+	title = PRC_MAO.50.t
+	desc = PRC_MAO.50.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.50.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.51
+	title = PRC_MAO.51.t
+	desc = PRC_MAO.51.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.51.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.52
+	title = PRC_MAO.52.t
+	desc = PRC_MAO.52.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.52.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.53
+	title = PRC_MAO.53.t
+	desc = PRC_MAO.53.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.53.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.54
+	title = PRC_MAO.54.t
+	desc = PRC_MAO.54.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.54.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.55
+	title = PRC_MAO.55.t
+	desc = PRC_MAO.55.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.55.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.56
+	title = PRC_MAO.56.t
+	desc = PRC_MAO.56.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.56.a
+}
+
+
+}
+
+country_event = {
+	id = PRC_MAO.57
+	title = PRC_MAO.57.t
+	desc = PRC_MAO.57.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.57.a
+				custom_effect_tooltip = PRC_PRC_MAO_57_tt
+set_country_flag = taihai_cansheng
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.58
+	title = PRC_MAO.58.t
+	desc = PRC_MAO.58.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.58.a
+
+}
+
+
+}
+#Taiwan war victory
+country_event = {
+	id = PRC_MAO.59
+	title = PRC_MAO.59.t
+	desc = PRC_MAO.59.d
+	picture = GFX_event_taiwanwarwin
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	immediate = {
+		hidden_effect = {
+			remove_ideas = taihaijingji_idea_1	
+			remove_ideas = taihaijingji_idea_2
+			remove_ideas = taihaijingji_idea_3
+			remove_ideas = taihaijingji_idea_4
+			remove_ideas = taihaijingji_idea_5
+			remove_ideas = taihaijingji_idea_6
+			remove_ideas = taihaijingji_idea_7
+			remove_ideas = taihaijingji_idea_8
+			remove_ideas = taihaijingji_idea_9
+			remove_ideas = taihaijingji_idea_10
+			remove_ideas = taihaijingji_idea_11
+			remove_ideas = taihaijingji_idea_12
+			remove_ideas = taihaijingji_idea_13
+			remove_ideas = taihaijingji_idea_14
+			remove_ideas = taihaijingji_idea_15
+			remove_ideas = taihaijingji_idea_16
+			remove_ideas = taihaijingji_idea_17
+			remove_ideas = taihaijingji_idea_18
+			remove_ideas = taihaijingji_idea_19
+			remove_ideas = taihaijingji_idea_20	
+			remove_ideas = taihaijingji_idea_21	
+			remove_ideas = taihaijingji_idea_22	
+			remove_ideas = taihaijingji_idea_23	
+			remove_ideas = taihaijingji_idea_24	
+			remove_ideas = taihaijingji_idea_25
+			transfer_state = 524
+			transfer_state = 1150
+			transfer_state = 1149
+			transfer_state = 1148
+			if = {
+				limit = {
+					controls_state = 876
+				}
+				transfer_state = 876
+			}
+
+			add_war_support = -0.25
+			add_stability = -0.25
+			set_global_flag = PRC_taiwan_war_won
+			PRC_end_taiwan_war = yes
+			annex_country = {
+				target = CHI
+				transfer_troops = no
+			}
+
+			set_portraits = {
+			    character = PRC_li_zuocheng
+			    army = { large ="GFX_portrait_PRC_Li_Zuocheng_leader" }
+			    civilian = { large ="GFX_portrait_PRC_Li_Zuocheng_leader" }
+			}
+
+			news_event = {
+				id = news.356
+				hours = 12
+			}
+			country_event = {
+				id = china.85
+				days = 10
+			}
+			country_event = {
+				id = china.41
+				days = 20
+			}
+			country_event = {
+				id = china.39
+				days = 45
+			}
+			news_event = {
+				id = china.80
+				days = 70
+			}
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_shameful_display_1
+			AST = {
+				country_event = {
+					id = Australia.1
+					days = 15
+				}
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CHI
+					NOT = {
+						state = 524
+						state = 1150
+						state = 1149
+						state = 1148
+					}
+				}
+				remove_claim_by = CHI
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.59.a
+		effect_tooltip = {
+			focus_unlock = yes
+			add_war_support = -0.25
+			add_stability = -0.25
+		}
+	}
+}
+
+country_event = {
+    id = PRC_MAO.60
+    title = PRC_MAO.60.t
+    desc = PRC_MAO.60.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.60.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.61
+    title = PRC_MAO.61.t
+    desc = PRC_MAO.61.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.61.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.62
+    title = PRC_MAO.62.t
+    desc = PRC_MAO.62.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.62.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.63
+    title = PRC_MAO.63.t
+    desc = PRC_MAO.63.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.63.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.64
+    title = PRC_MAO.64.t
+    desc = PRC_MAO.64.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.64.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.65
+    title = PRC_MAO.65.t
+    desc = PRC_MAO.65.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.65.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.66
+    title = PRC_MAO.66.t
+    desc = PRC_MAO.66.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.66.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.67
+    title = PRC_MAO.67.t
+    desc = PRC_MAO.67.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.67.a
+	set_country_flag = taihai_cansheng_1
+			country_event = {
+				id = china.24
+			}	
+			hidden_effect = {
+				JAP = {
+					country_event = { id = jap.9 days = 3 }
+				}
+			}
+
+    }
+    option = {
+        name = PRC_MAO.67.b
+				custom_effect_tooltip = PRC_PRC_MAO_67_tt
+
+    }
+}
+
+country_event = {
+    id = PRC_MAO.68
+    title = PRC_MAO.68.t
+    desc = PRC_MAO.68.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.68.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.69
+    title = PRC_MAO.69.t
+    desc = PRC_MAO.69.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.69.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.70
+    title = PRC_MAO.70.t
+    desc = PRC_MAO.70.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.70.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.71
+    title = PRC_MAO.71.t
+    desc = PRC_MAO.71.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.71.a
+    }
+}
+
+country_event = {
+    id = PRC_MAO.72
+    title = PRC_MAO.72.t
+    desc = PRC_MAO.72.d
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = PRC_MAO.72.a	
+			hidden_effect = {
+						load_focus_tree = generic_focus
+			CHI = {
+				country_event = {
+					id = taiwan.11
+					days = 480
+				}
+				remove_ideas = {
+					CHI_lower_mainland_influence_idea
+					CHI_low_mainland_influence_idea
+					CHI_medium_mainland_influence_idea
+					CHI_high_mainland_influence_idea
+					CHI_higher_mainland_influence_idea
+				}
+			}
+			}
+set_global_flag = PRC_taiwan_war_lost
+			news_event = {
+				id = news.357
+				hours = 12
+			}
+		hidden_effect = {
+			remove_ideas = taihaijingji_idea_1	
+			remove_ideas = taihaijingji_idea_2
+			remove_ideas = taihaijingji_idea_3
+			remove_ideas = taihaijingji_idea_4
+			remove_ideas = taihaijingji_idea_5
+			remove_ideas = taihaijingji_idea_6
+			remove_ideas = taihaijingji_idea_7
+			remove_ideas = taihaijingji_idea_8
+			remove_ideas = taihaijingji_idea_9
+			remove_ideas = taihaijingji_idea_10
+			remove_ideas = taihaijingji_idea_11
+			remove_ideas = taihaijingji_idea_12
+			remove_ideas = taihaijingji_idea_13
+			remove_ideas = taihaijingji_idea_14
+			remove_ideas = taihaijingji_idea_15
+			remove_ideas = taihaijingji_idea_16
+			remove_ideas = taihaijingji_idea_17
+			remove_ideas = taihaijingji_idea_18
+			remove_ideas = taihaijingji_idea_19
+			remove_ideas = taihaijingji_idea_20	
+			remove_ideas = taihaijingji_idea_21	
+			remove_ideas = taihaijingji_idea_22	
+			remove_ideas = taihaijingji_idea_23	
+			remove_ideas = taihaijingji_idea_24	
+			remove_ideas = taihaijingji_idea_25
+			PRC_end_taiwan_war = yes
+			country_event = {
+				id = china.248
+				days = 1
+			}
+			country_event = {
+				id = china.249
+				days = 2
+			}
+			country_event = {
+				id = china.44
+				days = 3
+			}
+			country_event = {
+				id = china.45
+				days = 4
+			}
+			country_event = {
+				id = china.46
+				days = 5
+			}
+			country_event = {
+				id = china.47
+				days = 6
+			}
+			country_event = {
+				id = china.48
+				days = 7
+			}
+			country_event = {
+				id = china.49
+				days = 8
+			}
+			country_event = {
+				id = china.50
+				days = 9
+			}
+			country_event = {
+				id = china.51
+				days = 10
+			}
+		}
+			hidden_effect = {
+				JAP = {
+					country_event = { id = jap.9 days = 3 }
+				}
+			}
+    }
+}

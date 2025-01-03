@@ -1,0 +1,53 @@
+MEX_mexican_civil_war_category = {
+	MEX_reunify_decision = {
+		icon = generic_ignite_civil_war
+		fire_only_once = yes
+		visible = {
+			MEX_is_civil_war_faction = yes
+		}
+		available = {
+			has_war = no
+			NOT = {
+				tag = CAS
+			}
+	  if = {
+			limit = {
+				PRC = {has_country_flag = PRC_new_left_win}
+			}
+			NOT = {
+				tag = ZAP
+			}
+		}
+		}
+		complete_effect = {
+			country_event = mexico.12
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	CAS_reunify_decision = {
+		icon = generic_ignite_civil_war
+		fire_only_once = yes
+		visible = {
+			MEX_is_civil_war_faction = yes
+		}
+		available = {
+			has_war = no
+			tag = CAS
+			NOT = {
+				country_exists = MEX
+			}
+		}
+		complete_effect = {
+			release = MEX
+			news_event = {
+				id = news.359
+				hours = 6
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
