@@ -2662,3 +2662,29 @@ set_global_flag = PRC_taiwan_war_lost
 			}
     }
 }
+
+country_event = {
+	id = PRC_MAO.73
+	title = PRC_MAO.73.t
+	desc = PRC_MAO.73.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.73.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.74
+	title = PRC_MAO.74.t
+	desc = PRC_MAO.74.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.74.a
+}
+
+
+}
+
