@@ -1258,9 +1258,8 @@ set_cosmetic_tag = PRC_AM
     retire_character = PRC_Shen_Jinlong
     retire_character = PRC_Dong_Jun
     retire_character = PRC_yuan_yubai
-
 create_corps_commander = {
-	name = "第一智能联合人民指挥部"
+	name = "北京智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1271,7 +1270,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二智能联合人民指挥部"
+	name = "天津智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1282,7 +1281,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三智能联合人民指挥部"
+	name = "上海智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1293,7 +1292,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第四智能联合人民指挥部"
+	name = "唐山智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1304,7 +1303,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第五智能联合人民指挥部"
+	name = "太原智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1315,7 +1314,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第六智能联合人民指挥部"
+	name = "济南智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1326,7 +1325,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第七智能联合人民指挥部"
+	name = "青岛智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1337,7 +1336,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第八智能联合人民指挥部"
+	name = "开封智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1348,7 +1347,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第九智能联合人民指挥部"
+	name = "沈阳智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1359,7 +1358,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十智能联合人民指挥部"
+	name = "长春智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1370,7 +1369,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十一智能联合人民指挥部"
+	name = "哈尔滨智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1381,7 +1380,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十二智能联合人民指挥部"
+	name = "合肥智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1392,7 +1391,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十三智能联合人民指挥部"
+	name = "南京智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1403,7 +1402,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十四智能联合人民指挥部"
+	name = "杭州智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1414,7 +1413,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十五智能联合人民指挥部"
+	name = "南昌智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1425,7 +1424,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十六智能联合人民指挥部"
+	name = "厦门智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1436,7 +1435,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十七智能联合人民指挥部"
+	name = "广州智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1447,7 +1446,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十八智能联合人民指挥部"
+	name = "深圳智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1458,7 +1457,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第十九智能联合人民指挥部"
+	name = "桂林智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1469,7 +1468,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十智能联合人民指挥部"
+	name = "长沙智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1480,7 +1479,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十一智能联合人民指挥部"
+	name = "武昌智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1491,7 +1490,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十二智能联合人民指挥部"
+	name = "贵阳智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1502,7 +1501,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十三智能联合人民指挥部"
+	name = "昆明智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1513,7 +1512,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十四智能联合人民指挥部"
+	name = "重庆智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1524,7 +1523,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十五智能联合人民指挥部"
+	name = "成都智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1535,7 +1534,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十六智能联合人民指挥部"
+	name = "西安智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1546,7 +1545,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十七智能联合人民指挥部"
+	name = "延安智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1557,7 +1556,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十八智能联合人民指挥部"
+	name = "兰州智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1568,7 +1567,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第二十九智能联合人民指挥部"
+	name = "银川智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1579,7 +1578,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十智能联合人民指挥部"
+	name = "呼和浩特智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1590,7 +1589,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十一智能联合人民指挥部"
+	name = "乌兰巴托智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1601,7 +1600,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十二智能联合人民指挥部"
+	name = "西宁智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1612,7 +1611,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十三智能联合人民指挥部"
+	name = "乌鲁木齐智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1623,7 +1622,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十四智能联合人民指挥部"
+	name = "伊犁智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1634,7 +1633,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十五智能联合人民指挥部"
+	name = "拉萨智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1645,7 +1644,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十六智能联合人民指挥部"
+	name = "台北智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1656,7 +1655,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十七智能联合人民指挥部"
+	name = "海口智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1667,7 +1666,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十八智能联合人民指挥部"
+	name = "连云港智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1678,7 +1677,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第三十九智能联合人民指挥部"
+	name = "苏州智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1689,7 +1688,7 @@ create_corps_commander = {
 	traits = { }
 }
 create_corps_commander = {
-	name = "第四十智能联合人民指挥部"
+	name = "洛阳智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
@@ -1699,121 +1698,116 @@ create_corps_commander = {
 	logistics_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十一智能联合人民指挥部"
+create_navy_leader = {
+	name = "桂林智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十二智能联合人民指挥部"
+create_navy_leader = {
+	name = "大连智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十三智能联合人民指挥部"
+create_navy_leader = {
+	name = "香港智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十四智能联合人民指挥部"
+create_navy_leader = {
+	name = "澳门联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十五智能联合人民指挥部"
+create_navy_leader = {
+	name = "石家庄智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十六智能联合人民指挥部"
+create_navy_leader = {
+	name = "福州智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十七智能联合人民指挥部"
+create_navy_leader = {
+	name = "六盘水智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十八智能联合人民指挥部"
+create_navy_leader = {
+	name = "临汾智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第四十九智能联合人民指挥部"
+create_navy_leader = {
+	name = "芜湖智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-create_corps_commander = {
-	name = "第五十智能联合人民指挥部"
+create_navy_leader = {
+	name = "张家界智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
 	portrait_path = "GFX_AICOM"
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
 	traits = { }
 }
-
-
-
-
-
 
 
 
@@ -2463,6 +2457,10 @@ create_corps_commander = {
 			country_event = {
 				id = PRC_MAO.35
 				days = 30
+			}
+			country_event = {
+				id = PRC_MAO.78
+				days = 45
 			}
 			country_event = {
 				id = PRC_MAO.36

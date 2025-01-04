@@ -2728,4 +2728,22 @@ country_event = {
 
 
 }
+country_event = {
+	id = PRC_MAO.78
+	title = PRC_MAO.78.t
+	desc = PRC_MAO.78.d
+	picture = GFX_PRC_MAO_event_78
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.78.a
+		effect_tooltip = {
+			focus_unlock = yes
+		}
+			set_country_flag = daliangshangaizao
+			mark_focus_tree_layout_dirty = yes
+}
+
+
+}
 
