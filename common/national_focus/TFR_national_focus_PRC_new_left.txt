@@ -986,7 +986,7 @@ set_cosmetic_tag = PRC_AM
 		id = PRC_fuel_chinese_nationalism
 		icon = GFX_focus_PRC_fuel_chinese_nationalism
 		relative_position_id = PRC_reconcile_with_militarists
-		x = 1
+		x = 2
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -1139,6 +1139,89 @@ set_cosmetic_tag = PRC_AM
 			}
 		}
 	}
+	focus = {
+		id = PRC_revive_peoples_war_mindset_2
+		icon = GFX_focus_PRC_revive_peoples_war_mindset_2
+		relative_position_id = PRC_fuel_chinese_nationalism
+		x = 0
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+            focus = PRC_revive_peoples_war_mindset
+        }
+		mutually_exclusive = {
+			focus = PRC_revive_peoples_war_mindset_3
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		}
+		}
+		completion_reward = {
+		
+			
+		}
+	}
+	focus = {
+		id = PRC_revive_peoples_war_mindset_3
+		icon = GFX_focus_PRC_revive_peoples_war_mindset_3
+		relative_position_id = PRC_fuel_chinese_nationalism
+		x = -2
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+            focus = PRC_revive_peoples_war_mindset
+        }
+		mutually_exclusive = {
+			focus = PRC_revive_peoples_war_mindset_2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		OR = {
+						PRC_renda = {is_country_leader = yes}
+			has_completed_focus = PRC_the_Flower_of_Freedom_8
+		}
+		}
+		completion_reward = {
+		
+			
+		}
+	}
+	focus = {
+		id = PRC_revive_peoples_war_mindset_4
+		icon = GFX_focus_PRC_revive_peoples_war_mindset_4
+		relative_position_id = PRC_fuel_chinese_nationalism
+		x = -1
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+            focus = PRC_revive_peoples_war_mindset_3
+            focus = PRC_revive_peoples_war_mindset_2
+        }
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = PRC_anti_corruption_technology
+		}
+		completion_reward = {
+		
+			
+		}
+	}
+	
 	
 	focus = {
 		id = PRC_reliable_politburo
@@ -1596,7 +1679,7 @@ set_cosmetic_tag = PRC_AM
 		id = PRC_rumaojiehe
 		icon = GFX_focus_rumaojiehe
 		relative_position_id = PRC_exonorate_neo_maoists
-		x = 7
+		x = 8
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -1631,7 +1714,7 @@ set_cosmetic_tag = PRC_AM
 		id = PRC_yangbanxi
 		icon = GFX_focus_yangbanxi
 		relative_position_id = PRC_exonorate_neo_maoists
-		x = 7
+		x = 8
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
@@ -1666,7 +1749,7 @@ set_cosmetic_tag = PRC_AM
 		id = PRC_wenhuazhuanzheng
 		icon = GFX_focus_wenhuazhuanzheng
 		relative_position_id = PRC_exonorate_neo_maoists
-		x = 7
+		x = 8
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
@@ -1765,6 +1848,7 @@ set_cosmetic_tag = PRC_AM
 			factor = 25
 		}
 		available = {
+			has_completed_focus = PRC_revive_peoples_war_mindset_4
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
@@ -1888,6 +1972,58 @@ set_cosmetic_tag = PRC_AM
 			country_event = {
 				id = PRC_MAO.12
 			}
+			
+		}
+	}				
+	focus = {
+		id = PRC_baihuaqifang_6
+		icon = GFX_focus_PRC_baihuaqifang_6
+		relative_position_id = PRC_exonorate_neo_maoists
+		x = -3
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+            focus = PRC_baihuaqifang_2
+        }
+		prerequisite = {
+            focus = PRC_baihuaqifang_3
+        }
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+
+		}
+		completion_reward = {
+
+			
+		}
+	}						
+	focus = {
+		id = PRC_baihuaqifang_7
+		icon = GFX_focus_PRC_baihuaqifang_7
+		relative_position_id = PRC_exonorate_neo_maoists
+		x = -1
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+            focus = PRC_baihuaqifang_2
+        }
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_completed_focus = PRC_advanced_economic_planning_1
+
+		}
+		completion_reward = {
+
 			
 		}
 	}			
