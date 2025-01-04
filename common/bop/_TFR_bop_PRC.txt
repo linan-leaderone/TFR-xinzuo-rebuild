@@ -34,7 +34,8 @@ PRC_maoism_power_balance = {
 				personal_expense_factor = 0.2
 				army_attack_factor = 0.2
 				army_defence_factor = 0.2
-				totalitarian_socialist_drift = 0.1
+				totalitarian_socialist_drift = 0.03
+				libertarian_socialist_drift = 0.02
 	 custom_modifier_tooltip = PRC_maoism_power_balance_2_desc
 
 			}

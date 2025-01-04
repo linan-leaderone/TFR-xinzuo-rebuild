@@ -816,7 +816,49 @@ taihaijingji_idea_25 = {
 				personal_expense_factor = 0.02
 				personal_value_factor = 0.02
 			}
-		}							
+		}									
+		PRC_made_in_china_PRC_MAO_77 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				expense_growth_factor = -0.2
+				research_speed_factor = 0.3
+				society_development_monthly = 0.01
+				academic_development_monthly = 0.01
+			}
+		}									
+		PRC_made_in_china_PRC_MAO_75 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				expense_growth_factor = 0.2
+				personal_value_factor = 0.1
+				society_development_monthly = 0.01
+				academic_development_monthly = 0.01
+			}
+		}								
 		PRC_made_in_china_PRC_MAO_35 = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
@@ -1089,6 +1131,9 @@ taihaijingji_idea_25 = {
 			picture = PRC_song_yongyi_hog
 			name = PRC_song_yongyi
 			allowed = { original_tag = PRC}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
 			visible = {
 has_country_leader = {
 	character = PRC_qin_hui
@@ -1102,6 +1147,9 @@ has_country_leader = {
 			picture = PRC_li_jinjin_hog
 			name = PRC_li_jinjin
 			allowed = { original_tag = PRC}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
 			visible = {
 			or = {
 has_country_leader = {
@@ -1125,6 +1173,9 @@ has_country_leader = {
 	character = PRC_ren_chonghao
 }
 			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
 			traits = { 
 				hog_xiong_hou
 			}
@@ -1135,6 +1186,9 @@ has_country_leader = {
 			allowed = { original_tag = PRC}
 			visible = {
 								has_country_flag = PRC_new_left_win
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
 			}
 			traits = { 
 				hog_han_deqiang
@@ -1287,7 +1341,21 @@ has_country_leader = {
 			}
 		}
 }
-
+	theorist_minister = {	
+		PRC_ai_security1_core = {
+			picture = PRC_ai_core
+			allowed = { original_tag = PRC }
+			visible = {
+				has_completed_focus = PRC_revive_peoples_war_mindset_4
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				sec_ai_anti_11113dd
+			}
+		}
+	}
 
 
 

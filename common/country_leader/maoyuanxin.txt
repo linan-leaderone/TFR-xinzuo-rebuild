@@ -1,4 +1,14 @@
 leader_traits = {
+	sec_ai_anti_11113dd = {
+		random = no
+		expense_growth_factor = -0.2
+	planning_speed = 0.5
+	no_supply_grace = 96
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	hdq_zhengdaolingxiu = {
 		random = no
 		political_power_gain = 2

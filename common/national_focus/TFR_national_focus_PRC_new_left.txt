@@ -1217,8 +1217,606 @@ set_cosmetic_tag = PRC_AM
 			has_completed_focus = PRC_anti_corruption_technology
 		}
 		completion_reward = {
-		
-			
+			add_ideas = PRC_ai_security1_core
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+    retire_character = PRC_li_zuocheng
+    retire_character = PRC_Zhang_Youxia
+    retire_character = PRC_Xu_Qiliang
+    retire_character = PRC_Han_Weiguo
+    retire_character = PRC_Wang_Xiubin
+    retire_character = PRC_Wu_Yanan
+    retire_character = PRC_Huang_Ming
+    retire_character = PRC_He_Weidong
+    retire_character = PRC_Li_Qiaoming
+    retire_character = PRC_Ding_Laihang
+    retire_character = PRC_Wang_Qiang
+    retire_character = PRC_Chang_Dingqiu
+    retire_character = PRC_Yi_Xiaoguang
+    retire_character = PRC_Li_Shangfu
+    retire_character = PRC_Lin_Xiangyang
+    retire_character = PRC_Liu_Zhenli
+    retire_character = PRC_Wang_Haijiang
+    retire_character = PRC_Wu_Shenzhou
+    retire_character = PRC_Li_Yuchao
+    retire_character = PRC_Xu_Deqing
+    retire_character = PRC_Xu_Qiling
+    retire_character = PRC_Zhang_Shengmin
+    retire_character = PRC_Zhao_Zongqi
+    retire_character = PRC_Zhu_Shengling
+    retire_character = PRC_li_xianyu
+    retire_character = PRC_wei_fenghe
+    retire_character = PRC_wang_ning
+    retire_character = PRC_Miao_Hua
+    retire_character = PRC_Hu_Zhongming
+    retire_character = PRC_Qin_Shengxiang
+    retire_character = PRC_Li_Yujie
+    retire_character = PRC_Wang_Hai
+    retire_character = PRC_Shen_Jinlong
+    retire_character = PRC_Dong_Jun
+    retire_character = PRC_yuan_yubai
+
+create_corps_commander = {
+	name = "第一智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第五智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第六智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第七智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第八智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第九智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十一智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十二智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十三智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十四智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十五智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十六智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十七智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十八智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第十九智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十一智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十二智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十三智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十四智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十五智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十六智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十七智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十八智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第二十九智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十一智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十二智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十三智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十四智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十五智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十六智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十七智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十八智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第三十九智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十一智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十二智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十三智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十四智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十五智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十六智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十七智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十八智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第四十九智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_corps_commander = {
+	name = "第五十智能联合人民指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+
+
+
+
+
+
+
+
 		}
 	}
 	
