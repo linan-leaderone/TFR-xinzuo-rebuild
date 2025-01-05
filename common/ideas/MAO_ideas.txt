@@ -816,7 +816,51 @@ taihaijingji_idea_25 = {
 				personal_expense_factor = 0.02
 				personal_value_factor = 0.02
 			}
+		}										
+		PRC_made_in_china_PRC_MAO_79 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				expense_growth_factor = -0.3
+				society_development_monthly = 0.01
+				academic_development_monthly = 0.01
+			}
 		}									
+		PRC_made_in_china_PRC_MAO_80 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				expense_growth_factor = -0.2
+				research_speed_factor = 0.3
+				political_power_gain = 0.5
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				society_development_monthly = 0.01
+				academic_development_monthly = 0.01
+			}
+		}											
 		PRC_made_in_china_PRC_MAO_77 = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea

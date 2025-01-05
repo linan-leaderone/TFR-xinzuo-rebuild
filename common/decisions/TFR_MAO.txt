@@ -1,5 +1,162 @@
 
 PRC_balance_of_maoism_power_category = {
+	PRC_jiaogai_4 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_7
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.79
+			}
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_79
+				}
+			}
+add_to_variable = {
+    var = PRC_mic_expense_growth_factor_dynamic_var  
+    value = 0.3  # 增加支出以支持新体制
+}
+add_to_variable = {
+    var = PRC_mic_society_development_monthly_dynamic_var  # 社会发展月度
+    value = 0.01  # 提高社会发展
+}
+add_to_variable = {
+    var = PRC_mic_academic_development_monthly_dynamic_var  # 学术发展月度
+    value = 0.01  # 提高学术研究和创新
+}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.03
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
+	PRC_jiaogai_5 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_7
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 2000
+			}
+			add_debt = yes
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.80
+			}
+			country_event = {
+				id = PRC_MAO.81
+				days = 7
+			}
+			country_event = {
+				id = PRC_MAO.82
+				days = 14
+			}
+			country_event = {
+				id = PRC_MAO.83
+				days = 21
+			}
+			country_event = {
+				id = PRC_MAO.84
+				days = 28
+			}
+			country_event = {
+				id = PRC_MAO.85
+				days = 35
+			}
+			country_event = {
+				id = PRC_MAO.86
+				days = 42
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_MAO_80
+				}
+			}
+add_to_variable = {
+    var = PRC_mic_expense_growth_factor_dynamic_var  
+    value = -0.2  
+}
+add_to_variable = {
+    var = PRC_mic_industrial_capacity_factory_dynamic_var
+    value = 0.2  
+}
+add_to_variable = {
+    var = PRC_mic_industrial_capacity_dockyard_dynamic_var
+    value = 0.2  
+}
+add_to_variable = {
+    var = PRC_mic_research_speed_factor_dynamic_var
+    value = 0.3
+}
+add_to_variable = {
+    var = PRC_mic_political_power_gain_dynamic_var
+    value = 0.5
+}
+add_to_variable = {
+    var = PRC_mic_society_development_monthly_dynamic_var  # 社会发展月度
+    value = 0.01  # 提高社会发展
+}
+add_to_variable = {
+    var = PRC_mic_academic_development_monthly_dynamic_var  # 学术发展月度
+    value = 0.01  # 提高学术研究和创新
+}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.03
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
 	PRC_jiaogai_3 = {
 		allowed = {
 			original_tag = PRC
@@ -13,14 +170,15 @@ PRC_balance_of_maoism_power_category = {
 		days_remove = 14
 		fire_only_once = yes
 		complete_effect = {
-			
-		}
-		remove_effect = {
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 1500
 			}
 			add_debt = yes
+			
+		}
+		remove_effect = {
+
 			country_event = {
 				id = PRC_MAO.77
 			}

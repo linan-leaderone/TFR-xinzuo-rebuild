@@ -2594,6 +2594,7 @@ create_navy_leader = {
 
 		}
 		completion_reward = {
+		unlock_decision_tooltip = PRC_pidoutjp_1
 
 			
 		}
@@ -2619,6 +2620,11 @@ create_navy_leader = {
 
 		}
 		completion_reward = {
+		unlock_decision_tooltip = PRC_jiaogai_1
+		unlock_decision_tooltip = PRC_jiaogai_2
+		unlock_decision_tooltip = PRC_jiaogai_3
+		unlock_decision_tooltip = PRC_jiaogai_4
+		unlock_decision_tooltip = PRC_jiaogai_5
 
 			
 		}
