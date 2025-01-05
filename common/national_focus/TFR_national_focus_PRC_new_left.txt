@@ -2600,6 +2600,35 @@ create_navy_leader = {
 		}
 	}						
 	focus = {
+		id = PRC_baihuaqifang_8
+		icon = GFX_focus_PRC_baihuaqifang_8
+		relative_position_id = PRC_exonorate_neo_maoists
+		x = -4
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+            focus = PRC_baihuaqifang_2
+        }
+		
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+
+		}
+		completion_reward = {
+		unlock_decision_tooltip = PRC_jiaogai_1
+		unlock_decision_tooltip = PRC_jiaogai_2
+		unlock_decision_tooltip = PRC_jiaogai_3
+		unlock_decision_tooltip = PRC_jiaogai_4
+		unlock_decision_tooltip = PRC_jiaogai_5
+
+			
+		}
+	}								
+	focus = {
 		id = PRC_baihuaqifang_7
 		icon = GFX_focus_PRC_baihuaqifang_7
 		relative_position_id = PRC_exonorate_neo_maoists
