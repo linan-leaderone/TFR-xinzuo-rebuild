@@ -10545,6 +10545,32 @@ PRC_military_intervention_cha_1 = {
         }
     }
 }
+PRC_military_intervention_bia_1 = {
+		icon = GFX_PRC_new_left_decision
+    available = {
+
+    }
+    visible = {
+        hidden_trigger = {
+country_exists = BIA
+            has_completed_focus = PRC_masters_of_asia_13
+        }
+    }
+    fire_only_once = yes
+    days_remove = 30
+    cancel_if_not_visible = yes
+    remove_effect = {
+        PRC = {
+            declare_war_on = { 
+                target = BIA
+                type = annex_everything 
+            }
+        }
+        CAR = {
+            add_ideas = VIN_determined_defenders
+        }
+    }
+}
 
 PRC_military_intervention_car_1 = {
 		icon = GFX_PRC_new_left_decision

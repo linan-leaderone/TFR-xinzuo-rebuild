@@ -215,12 +215,12 @@ original_tag = MLW
 original_tag = ANG
 original_tag = EQG
 original_tag = CAR
+original_tag = BIA
 						}
 						}
 					}
 
 
-						PRC = {white_peace = ROOT}
 EFF = {annex_country = {
 								target = ROOT
 								transfer_troops = no
@@ -233,13 +233,7 @@ EFF = {annex_country = {
 			    remove_core_of = ROOT
 		    }
 							}
-					FROM = {
 
-						white_peace = ROOT
-						clr_country_flag = PRC_spread_chinese_influence
-	
-
-					}
 					set_global_flag = skip_default_capitulation
 				}
 
