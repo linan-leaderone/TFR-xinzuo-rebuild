@@ -2850,4 +2850,56 @@ country_event = {
 
 
 }
+country_event = {
+	id = PRC_MAO.87
+	title = PRC_MAO.87.t
+	desc = PRC_MAO.87.d
+	picture = GFX_PRC_MAO_event_87
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.87.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.88
+	title = PRC_MAO.88.t
+	desc = PRC_MAO.88.d
+	picture = GFX_PRC_MAO_event_88
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.88.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.89
+	title = PRC_MAO.89.t
+	desc = PRC_MAO.89.d
+	picture = GFX_PRC_MAO_event_89
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.89.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.90
+	title = PRC_MAO.90.t
+	desc = PRC_MAO.90.d
+	picture = GFX_PRC_MAO_event_90
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.90.a
+}
+
+
+}
 

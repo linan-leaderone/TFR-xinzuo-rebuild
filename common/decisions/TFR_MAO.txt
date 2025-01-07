@@ -1,5 +1,164 @@
 
 PRC_balance_of_maoism_power_category = {
+	PRC_pidoutjp_3 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_6
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.89
+			}
+
+
+		hidden_effect = {
+	
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}	
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = chinese_exceptionalism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = national_bolshevism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		}
+			add_stability = 0.1
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.03
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
+	PRC_pidoutjp_2 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_6
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.88
+			}
+			add_stability = 0.1
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.03
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
+	PRC_pidoutjp_1 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_baihuaqifang_6
+		}
+		available = {
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO.87
+			}
+			add_stability = 0.1
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.03
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.04
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
 	PRC_jiaogai_4 = {
 		allowed = {
 			original_tag = PRC

@@ -241,7 +241,7 @@ focus_tree = {
 		#has_completed_focus = PRC_the_Flower_of_Freedom_8	
 	}
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 100
 			hidden_effect = {
 
 		}
@@ -260,6 +260,7 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_19
+			has_completed_focus = PRC_baihuaqifang_8
 		}
 		prerequisite = {
             focus = PRC_the_Flower_of_Freedom_10
@@ -707,7 +708,7 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			add_political_power = 75
+			add_stability = -0.3
 			hidden_effect = {
 
 		}
@@ -734,7 +735,7 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 100
 			hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 		set_country_leader_ideology = anarchist_maoism
@@ -1164,6 +1165,11 @@ set_cosmetic_tag = PRC_AM
 		}
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
 		
 			
 		}
@@ -1193,6 +1199,11 @@ set_cosmetic_tag = PRC_AM
 		}
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
 		
 			
 		}
@@ -2454,6 +2465,11 @@ create_navy_leader = {
 		completion_reward = {
 				
 		hidden_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
 			country_event = {
 				id = PRC_MAO.35
 				days = 30
@@ -2595,6 +2611,8 @@ create_navy_leader = {
 		}
 		completion_reward = {
 		unlock_decision_tooltip = PRC_pidoutjp_1
+		unlock_decision_tooltip = PRC_pidoutjp_2
+		unlock_decision_tooltip = PRC_pidoutjp_3
 
 			
 		}
@@ -2608,6 +2626,9 @@ create_navy_leader = {
 		cost = 5
 		available_if_capitulated = yes
 
+		allow_branch = {
+		#has_country_flag = daliangshangaizao
+		}
 		prerequisite = {
             focus = PRC_baihuaqifang_2
         }
@@ -2619,12 +2640,44 @@ create_navy_leader = {
 
 		}
 		completion_reward = {
-		unlock_decision_tooltip = PRC_jiaogai_1
-		unlock_decision_tooltip = PRC_jiaogai_2
-		unlock_decision_tooltip = PRC_jiaogai_3
-		unlock_decision_tooltip = PRC_jiaogai_4
-		unlock_decision_tooltip = PRC_jiaogai_5
 
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_baihuaqifang_8
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 2000
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.02
+			}		
+			add_to_variable = {
+				var = PRC_mic_industrial_development_monthly_dynamic_var
+				value = 0.02
+			}		
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.01
+			}		
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}			
+			add_to_variable = {
+				var = PRC_mic_conscription_dynamic_var
+				value = 0.05
+			}	
+			add_stability = -0.2
+
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				
+				}
 			
 		}
 	}								

@@ -727,6 +727,28 @@ taihaijingji_idea_25 = {
 	poverty_development_monthly = 0.02
 	society_development_monthly = 0.05
 			}
+		}								
+		PRC_made_in_china_PRC_baihuaqifang_8 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			industrial_development_monthly = 0.02
+			poverty_development_monthly = 0.02
+			personal_value_facto = 0.1
+			conscription =  0.05
+			society_development_monthly = 0.01
+			}
 		}							
 		PRC_made_in_china_PRC_MAO_39 = {
 			picture = GFX_idea_PRC_made_in_china
