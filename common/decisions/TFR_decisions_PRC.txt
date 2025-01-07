@@ -9263,7 +9263,6 @@ PRC_foreign_policy_category = {
 						is_ally_with = PRC
 					}
 				NOT = {country_exists = LEB}
-				NOT = {country_exists = HEZ}
 		NOT = {PAL = {
 	has_war_with = PRC
 		}}
@@ -9586,7 +9585,6 @@ annex_country = {
 						is_ally_with = PRC
 					}
 				NOT = {country_exists = LEB}
-				NOT = {country_exists = HEZ}
 				NOT = {country_exists = PAL}
 		NOT = {ISR = {
 	has_war_with = PRC
@@ -9604,6 +9602,19 @@ annex_country = {
 					type = annex_everything 
 				}
 			}
+				if = {
+					limit = {
+						country_exists = HEZ
+					}
+					
+			JOR = {
+				declare_war_on = { 
+					target = HEZ
+					type = annex_everything 
+				}
+			}	
+
+				}
 
 	
 		}
@@ -9727,6 +9738,14 @@ annex_country = {
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_5
+			OR = {
+
+			AND = {
+				country_exists = HTS
+NOT = {country_exists = SYR}
+		}
+
+			AND = {
 					SYR = {
 						is_ally_with = PRC
 					}
@@ -9735,6 +9754,9 @@ annex_country = {
 	has_war_with = PRC
 		}}
 			}
+		}
+		}
+
 		}
 		fire_only_once = yes
 		days_remove = 35
