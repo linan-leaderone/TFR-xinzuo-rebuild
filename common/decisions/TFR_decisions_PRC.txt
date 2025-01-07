@@ -9291,9 +9291,6 @@ JOR = {annex_country = {
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_5
-					JOR = {
-						is_ally_with = PRC
-					}
 				NOT = {country_exists = LEB}
 				NOT = {country_exists = HEZ}
 				NOT = {country_exists = PAL}

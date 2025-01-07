@@ -643,6 +643,30 @@ JOR = {annex_country = {
 							}
 
 							}
+			PRC = {set_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_tongzhi
+			}}
+						JOR = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally
+				set_country_flag = eadi_member
+							
+				set_cosmetic_tag = JOR_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = JORCCC_party_long name = JORCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴勒斯坦革命委员会"
+	                desc = "POLITICS_YDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
 			every_state = {
 				limit = {
 					is_core_of = ISR
@@ -673,6 +697,30 @@ JOR = {annex_country = {
 							}
 
 							}
+			PRC = {set_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_tongzhi
+			}}
+						JOR = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally
+				set_country_flag = eadi_member
+							
+				set_cosmetic_tag = JOR_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = JORCCC_party_long name = JORCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴勒斯坦革命委员会"
+	                desc = "POLITICS_YDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
 			every_state = {
 				limit = {
 					is_core_of = HEZ
@@ -703,6 +751,30 @@ JOR = {annex_country = {
 							}
 
 							}
+			PRC = {set_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_tongzhi
+			}}
+						JOR = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally
+				set_country_flag = eadi_member
+							
+				set_cosmetic_tag = JOR_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = JORCCC_party_long name = JORCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴勒斯坦革命委员会"
+	                desc = "POLITICS_YDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
 			every_state = {
 				limit = {
 					is_core_of = LEB
