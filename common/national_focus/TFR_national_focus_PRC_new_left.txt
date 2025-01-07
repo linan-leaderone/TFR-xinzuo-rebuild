@@ -189,8 +189,14 @@ focus_tree = {
         }
 
 		completion_reward = {
-		
+		remove_ideas = PRC_corrupt_bureaucracy_idea
+			hidden_effect = {
+		remove_ideas = PRC_corrupt_bureaucracy2_idea
+		remove_ideas = PRC_corrupt_bureaucracy3_idea
+		remove_ideas = PRC_corrupt_bureaucracy4_idea
+		remove_ideas = PRC_corrupt_bureaucracy5_idea
 
+		}
 		}
 	} 
    focus = {
@@ -217,6 +223,14 @@ focus_tree = {
         }
 
 		completion_reward = {
+		remove_ideas = PRC_corrupt_bureaucracy_idea
+			hidden_effect = {
+		remove_ideas = PRC_corrupt_bureaucracy2_idea
+		remove_ideas = PRC_corrupt_bureaucracy3_idea
+		remove_ideas = PRC_corrupt_bureaucracy4_idea
+		remove_ideas = PRC_corrupt_bureaucracy5_idea
+
+		}
 		
 
 		}
@@ -267,7 +281,10 @@ focus_tree = {
         }
 
 		completion_reward = {
-			add_political_power = 75
+			add_stability = -0.2
+			country_event = {
+				id = PRC_MAO.92
+			}
 			hidden_effect = {
 
 		}
@@ -291,6 +308,10 @@ focus_tree = {
         }
 
 		completion_reward = {
+			add_stability = -0.2
+			country_event = {
+				id = PRC_MAO.93
+			}
 			hidden_effect = {
 
 		}
@@ -314,6 +335,10 @@ focus_tree = {
         }
 
 		completion_reward = {
+			add_stability = -0.2
+			country_event = {
+				id = PRC_MAO.95
+			}
 			hidden_effect = {
 
 		}
@@ -337,6 +362,10 @@ focus_tree = {
         }
 
 		completion_reward = {
+			add_stability = -0.2
+			country_event = {
+				id = PRC_MAO.97
+			}
 			hidden_effect = {
 
 		}
@@ -360,6 +389,10 @@ focus_tree = {
         }
 
 		completion_reward = {
+			add_stability = -0.3
+			country_event = {
+				id = PRC_MAO.91
+			}
 			hidden_effect = {
 
 		}
@@ -383,6 +416,37 @@ focus_tree = {
         }
 
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_the_Flower_of_Freedom_18
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.001
+			}		
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = -0.2
+			}		
+			add_to_variable = {
+				var = PRC_mic_political_power_gain_dynamic_var
+				value = 0.5
+			}		
+			add_to_variable = {
+				var = PRC_mic_stability_factor_dynamic_var
+				value = 0.2
+			}		
+			add_to_variable = {
+				var = PRC_mic_war_support_factor_dynamic_var
+				value = 0.2
+			}
 			hidden_effect = {
 
 		}
@@ -407,9 +471,50 @@ focus_tree = {
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_25
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = PRC_mic_production_factory_efficiency_gain_factor_dynamic_var
+				value = 0.15
+			}		
+			add_to_variable = {
+				var = PRC_mic_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.25
+			}		
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.25
+			}	
+			add_to_variable = {
+				var = PRC_mic_personal_expense_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_consumer_goods_factor_dynamic_var
+				value = -0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_income_growth_factor_dynamic_var
+				value = 0.1
+			}		
+			add_to_variable = {
+				var = PRC_mic_industrial_capacity_factory_dynamic_var
+				value = 0.25
+			}		
+			add_to_variable = {
+				var = PRC_mic_production_cost_industrial_complex_factor_dynamic_var
+				value = -0.3
+			}
 
 		}
 	}  
@@ -424,15 +529,50 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
+			
+			has_completed_focus = PRC_inegrate_research_institutes
 		}
 		prerequisite = {
             focus = PRC_the_Flower_of_Freedom_25
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_26
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				
+				}
+			add_to_variable = {
+				var = PRC_mic_academic_development_monthly_dynamic_var
+				value = 0.01
+			}
+			add_to_variable = {
+				var = PRC_mic_production_factory_efficiency_gain_factor_dynamic_var
+				value = 0.2
+			}		
+			add_to_variable = {
+				var = PRC_mic_production_factory_max_efficiency_factor_dynamic_var
+				value = 0.2
+			}	
+			add_to_variable = {
+				var = PRC_mic_research_speed_factor_dynamic_var
+				value = 0.2
+			}	
+			add_to_variable = {
+				var = PRC_mic_production_speed_buildings_factor_dynamic_var
+				value = 0.2
+			}	
 
 		}
 	}  
@@ -447,6 +587,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
+			has_completed_focus = PRC_ai_assisted_governance
 		}
 		prerequisite = {
             focus = PRC_the_Flower_of_Freedom_25
@@ -459,9 +600,50 @@ focus_tree = {
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_27
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				
+				}
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}		
+			add_to_variable = {
+				var = PRC_mic_income_growth_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_conscription_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_research_speed_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_production_factory_start_efficiency_factor_dynamic_var
+				value = 0.2
+			}	
+			add_to_variable = {
+				var = PRC_mic_production_speed_buildings_factor_dynamic_var
+				value = 0.2
+			}	
 
 		}
 	}  
@@ -483,9 +665,27 @@ focus_tree = {
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_20
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1500
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = PRC_mic_political_power_gain_dynamic_var
+				value = 0.5
+			}		
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = 0.2
+			}		
+			add_stability = -0.2
 
 		}
 	} 
@@ -506,9 +706,27 @@ focus_tree = {
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_20
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1500
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = PRC_mic_political_power_gain_dynamic_var
+				value = 0.5
+			}		
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = 0.2
+			}		
+			add_stability = -0.3
 
 		}
 	} 
@@ -543,6 +761,14 @@ focus_tree = {
         }
 
 		completion_reward = {
+			add_ideas = jjdzxjd_idea
+			every_country = {
+				limit = {
+						is_ally_with = PRC
+						NOT = {has_idea = jjdzxjd_idea}
+				}
+			add_ideas = jjdzxjd_idea
+			}
 			hidden_effect = {
 		promote_character = {
 			character = PRC_renda
@@ -586,9 +812,42 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_21
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				
+				}
+			add_to_variable = {
+				var = PRC_mic_stability_factor_dynamic_var
+				value = 0.1
+			}		
+			add_to_variable = {
+				var = PRC_mic_farming_development_monthly_dynamic_var
+				value = 0.01
+			}
+			add_to_variable = {
+				var = PRC_mic_industrial_development_monthly_dynamic_var
+				value = 0.01
+			}		
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = -0.15
+			}	
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.01
+			}	
 
 		}
 	} 
@@ -609,9 +868,46 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_27
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				
+				}
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}		
+			add_to_variable = {
+				var = PRC_mic_income_growth_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.01
+			}	
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.01
+			}	
+			add_to_variable = {
+				var = PRC_mic_supply_node_range_dynamic_var
+				value = 0.2
+			}	
 
 		}
 	} 
@@ -635,9 +931,55 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			hidden_effect = {
 
-		}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_19
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1500
+			}
+			add_debt = yes
+			every_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				
+				}
+			add_to_variable = {
+				var = PRC_mic_consumer_goods_factor_dynamic_var
+				value = -0.15
+			}		
+			add_to_variable = {
+				var = PRC_mic_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.15
+			}		
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = -0.15
+			}	
+			add_to_variable = {
+				var = PRC_mic_local_resources_factor_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_industrial_development_monthly_dynamic_var
+				value = 0.01
+			}		
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.01
+			}		
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.01
+			}
+
 
 		}
 	} 
@@ -661,9 +1003,18 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			hidden_effect = {
+			country_event = {
+				id = PRC_MAO.98
+			}
 
-		}
+			add_ideas = wushenlun_idea
+			every_country = {
+				limit = {
+						is_ally_with = PRC
+						NOT = {has_idea = wushenlun_idea}
+				}
+			add_ideas = wushenlun_idea
+			}
 
 		}
 	} 
@@ -684,6 +1035,10 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
+			add_stability = -0.2
+			country_event = {
+				id = PRC_MAO.94
+			}
 			hidden_effect = {
 
 		}
@@ -708,7 +1063,10 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			add_stability = -0.3
+			add_stability = -0.2
+			country_event = {
+				id = PRC_MAO.90
+			}
 			hidden_effect = {
 
 		}
@@ -1165,6 +1523,15 @@ set_cosmetic_tag = PRC_AM
 		}
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.100
+			}
+	set_temp_variable = {
+		var = military_development_var_temp
+		value = -0.3
+	}
+			add_stability = -0.2
+	add_military_development = yes
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 1000
@@ -1199,6 +1566,15 @@ set_cosmetic_tag = PRC_AM
 		}
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.99
+			}
+	set_temp_variable = {
+		var = military_development_var_temp
+		value = -0.6
+	}
+			add_stability = -0.4
+	add_military_development = yes
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 1000
@@ -1228,6 +1604,9 @@ set_cosmetic_tag = PRC_AM
 			has_completed_focus = PRC_anti_corruption_technology
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.96
+			}
 			add_ideas = PRC_ai_security1_core
 			set_temp_variable = {
 				var = debt_var_temp

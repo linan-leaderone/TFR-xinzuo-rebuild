@@ -2101,8 +2101,8 @@ shared_focus = {
 				has_country_flag = PRC_new_left_win
 			}
 			OR = {
-				has_completed_focus = PRC_a_truly_harmonious_society
-				has_completed_focus = PRC_communist_vanguard_restored
+				has_completed_focus = PRC_chinese_socialist_dream
+				has_completed_focus = PRC_towards_a_digital_communism
 			}
 		}
 		else = {
@@ -2695,8 +2695,8 @@ shared_focus = {
 				has_country_flag = PRC_new_left_win
 			}
 			OR = {
-				has_completed_focus = PRC_a_truly_harmonious_society
-				has_completed_focus = PRC_communist_vanguard_restored
+				has_completed_focus = PRC_chinese_socialist_dream
+				has_completed_focus = PRC_towards_a_digital_communism
 			}
 		}
 	}

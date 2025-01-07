@@ -2890,14 +2890,155 @@ country_event = {
 
 }
 country_event = {
-	id = PRC_MAO.90
-	title = PRC_MAO.90.t
-	desc = PRC_MAO.90.d
-	picture = GFX_PRC_MAO_event_90
+	id = PRC_MAO.91
+	title = PRC_MAO.91.t
+	desc = PRC_MAO.91.d
+	picture = GFX_PRC_MAO_event_91
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = PRC_MAO.90.a
+		name = PRC_MAO.91.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.92
+	title = PRC_MAO.92.t
+	desc = PRC_MAO.92.d
+	picture = GFX_PRC_MAO_event_92
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.92.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.93
+	title = PRC_MAO.93.t
+	desc = PRC_MAO.93.d
+	picture = GFX_PRC_MAO_event_93
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.93.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.94
+	title = PRC_MAO.94.t
+	desc = PRC_MAO.94.d
+	picture = GFX_PRC_MAO_event_94
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.94.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.95
+	title = PRC_MAO.95.t
+	desc = PRC_MAO.95.d
+	picture = GFX_PRC_MAO_event_95
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.95.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.96
+	title = PRC_MAO.96.t
+	desc = PRC_MAO.96.d
+	picture = GFX_PRC_MAO_event_96
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.96.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.97
+	title = PRC_MAO.97.t
+	desc = PRC_MAO.97.d
+	picture = GFX_PRC_MAO_event_97
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.97.a
+}
+
+
+}
+news_event = {
+	id = PRC_MAO.98
+	title = PRC_MAO.98.t
+	desc = PRC_MAO.98.d
+	picture = GFX_PRC_MAO_event_98
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = PRC_MAO.98.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+	option = {
+		name = PRC_MAO.98.b
+		trigger = {
+			tag = PRC
+		}
+	}
+}
+country_event = {
+	id = PRC_MAO.99
+	title = PRC_MAO.99.t
+	desc = PRC_MAO.99.d
+	picture = GFX_PRC_MAO_event_99
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.99.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.99
+	title = PRC_MAO.99.t
+	desc = PRC_MAO.99.d
+	picture = GFX_PRC_MAO_event_99
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.99.a
+}
+
+
+}
+country_event = {
+	id = PRC_MAO.100
+	title = PRC_MAO.100.t
+	desc = PRC_MAO.100.d
+	picture = GFX_PRC_MAO_event_100
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO.100.a
 }
 
 

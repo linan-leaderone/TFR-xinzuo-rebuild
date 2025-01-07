@@ -6,7 +6,15 @@ spriteTypes = {
             animation_rate_fps = 30
             looping = yes
             play_on_show = yes
-		}		
+		}			
+	SpriteType = {
+		name = "GFX_idea_generic_wushenlun_idea"
+		texturefile = "gfx/MAOYUANXIN/wushenlun.png"
+	}			
+	SpriteType = {
+		name = "GFX_idea_generic_jjdzxjd_idea"
+		texturefile = "gfx/MAOYUANXIN/APA_popular_support5.png"
+	}		
 	SpriteType = {
 		name = "GFX_AICOM"
 		texturefile = "gfx/MAOYUANXIN/PRC_JFJ.png"

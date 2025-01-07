@@ -116,11 +116,31 @@ add_ideas = 	BRM_civil_war_idea1
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {PRK = {has_idea = jjdzxjd_idea}}
+					}
+						PRK = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_yuuki_4}
 						NOT = {PRK = {has_idea = PRC_yuuki_4}}
 					}
 						PRK = {
 			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {PRK = {has_idea = wushenlun_idea}}
+					}
+						PRK = {
+			add_ideas = wushenlun_idea
 						}
 
 				}
@@ -209,6 +229,52 @@ recruit_character = PRC_mao_yuanxin
 		
 						ROOT = {
 			add_ideas = PRC_socialist_dream_idea
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+	
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = jjdzxjd_idea}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas =jjdzxjd_idea
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+	
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = wushenlun_idea}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas = wushenlun_idea
 						}
 					set_global_flag = skip_default_capitulation
 				}

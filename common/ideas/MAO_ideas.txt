@@ -1,6 +1,56 @@
 ideas = {	
 	country = {
 								
+wushenlun_idea = {
+    picture = generic_wushenlun_idea
+    name = PRC_wushenlun_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+       research_speed_factor = 0.3
+       society_development_monthly = 0.05
+       war_support_weekly = 0.05 
+       stability_weekly = 0.05  
+       army_attack_factor = 0.1  
+       army_defence_factor = 0.1
+       libertarian_socialist_drift = 0.03
+       totalitarian_socialist_drift = 0.04
+    }
+}						
+jjdzxjd_idea = {
+    picture = generic_jjdzxjd_idea
+    name = PRC_jjdzxjd_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+       conscription = 0.15
+       war_support_weekly = 0.05 
+       stability_weekly = 0.05  
+       army_attack_factor = 0.1  
+       army_defence_factor = 0.1
+       libertarian_socialist_drift = 0.05
+       totalitarian_socialist_drift = 0.03
+    }
+}
+					
 taihaijingji_idea_1 = {
     picture = generic_world_wide_financial_crisis
     name = PRC_taihaijingji_idea

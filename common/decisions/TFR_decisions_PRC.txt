@@ -9405,6 +9405,27 @@ XIN = {annex_country = {
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {ROJ = {has_idea = wushenlun_idea}}
+					}
+						ROJ = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {ROJ = {has_idea = jjdzxjd_idea}}
+					}
+						ROJ = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
 						NOT = {ROJ= {has_idea = PRC_socialist_dream_idea}}
 					}
@@ -9456,11 +9477,32 @@ XIN = {
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {XIN = {has_idea = jjdzxjd_idea}}
+					}
+						XIN = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_yuuki_4}
 						NOT = {XIN = {has_idea = PRC_yuuki_4}}
 					}
 						XIN = {
 			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {XIN = {has_idea = wushenlun_idea}}
+					}
+						XIN = {
+			add_ideas = wushenlun_idea
 						}
 
 				}
@@ -10833,6 +10875,27 @@ GER = {
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {BAN = {has_idea = wushenlun_idea}}
+					}
+						BAN = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {BAN = {has_idea = jjdzxjd_idea}}
+					}
+						BAN = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
 						NOT = {BAN = {has_idea = PRC_socialist_dream_idea}}
 					}
@@ -10952,6 +11015,27 @@ GER = {
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {EFF = {has_idea = wushenlun_idea}}
+					}
+						EFF = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {EFF = {has_idea = jjdzxjd_idea}}
+					}
+						EFF = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
 						NOT = {EFF = {has_idea = PRC_socialist_dream_idea}}
 					}
@@ -11049,6 +11133,27 @@ GER = {
 						}
 
 				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {ZAP = {has_idea = wushenlun_idea}}
+					}
+						ZAP = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {ZAP = {has_idea = jjdzxjd_idea}}
+					}
+						ZAP = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
@@ -11257,6 +11362,27 @@ GER = {
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {ELN = {has_idea = wushenlun_idea}}
+					}
+						ELN = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {ELN = {has_idea = jjdzxjd_idea}}
+					}
+						ELN = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
 						NOT = {ELN = {has_idea = PRC_socialist_dream_idea}}
 					}
@@ -11361,6 +11487,27 @@ GER = {
 						}
 
 				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {SIG = {has_idea = wushenlun_idea}}
+					}
+						SIG = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {SIG = {has_idea = jjdzxjd_idea}}
+					}
+						SIG = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
@@ -11474,6 +11621,27 @@ GER = {
 						}
 
 				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {PAK = {has_idea = wushenlun_idea}}
+					}
+						PAK = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {PAK = {has_idea = jjdzxjd_idea}}
+					}
+						PAK = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
