@@ -2603,6 +2603,9 @@ shared_focus = {
 	has_war_with = SOV
 		}}
 	}
+	allow_branch = {
+		always = no
+	}
 	
 	prerequisite = { focus = PRC_masters_of_asia_3 }
 	completion_reward = {
