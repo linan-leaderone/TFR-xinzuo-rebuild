@@ -5291,7 +5291,7 @@ shared_focus = {
 		always = no
 	}
 	allow_branch = {
-	#	has_global_flag = pan_asian_war_ongoing
+		has_global_flag = pan_asian_war_ongoing
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_chinas_greatest_hour completion_reward"

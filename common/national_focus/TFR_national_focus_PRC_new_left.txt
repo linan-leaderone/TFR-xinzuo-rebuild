@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 100
 		}
 	allow_branch = {
-		#has_country_flag = PRC_handongfang_hog
+		has_country_flag = PRC_handongfang_hog
 	}
 		available = {
 			PRC_han_dongfang = {is_country_leader = yes}
@@ -252,7 +252,7 @@ focus_tree = {
         }
 
 	allow_branch = {
-		#has_completed_focus = PRC_the_Flower_of_Freedom_8	
+		has_completed_focus = PRC_the_Flower_of_Freedom_8	
 	}
 		completion_reward = {
 			add_political_power = 100
@@ -3006,7 +3006,7 @@ create_navy_leader = {
 		available_if_capitulated = yes
 
 		allow_branch = {
-		#has_country_flag = daliangshangaizao
+		has_country_flag = daliangshangaizao
 		}
 		prerequisite = {
             focus = PRC_baihuaqifang_2
