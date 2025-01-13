@@ -36,6 +36,7 @@ scripted_gui = {
 			}
 			TFR_pdto_politics_icon_visible = {
 				has_country_flag = pdto_member
+				NOT = {is_ally_with = PRC}
 			}
 			TFR_csto_politics_icon_visible = {
 				has_country_flag = csto_member
