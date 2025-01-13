@@ -2056,6 +2056,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		country_event = PRC_MAO.4
+	    hidden_effect = {	   
+				scoped_play_song = "radio_hqj_dt_80"
+	    	   	}
 	    		add_timed_idea = {
 	    	   		idea = PRK_surprise_offensive
 	    	   		days = 50

@@ -1260,7 +1260,7 @@ set_cosmetic_tag = PRC_AM
 			right_side = PRC_konfus_side
 			set_value = 0.27
 		}
-				scoped_play_song = "internationale"
+				scoped_play_song = "radio_hqj_dt_1"
 				add_to_variable = {
 					var = PRC_cpc_communist_drift_dynamic_var
 					value = 0.012
@@ -5833,6 +5833,7 @@ remove_ideas = militia_looting
 			}
 			add_political_power = 100
 			hidden_effect = {
+				scoped_play_song = "radio_hqj_dt_81"
 				remove_dynamic_modifier = {
 					modifier = PRC_made_in_china_dynamic 
 				}
