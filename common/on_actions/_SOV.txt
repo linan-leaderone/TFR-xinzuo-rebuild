@@ -268,22 +268,114 @@ EFF = {annex_country = {
 					ROOT = {
 						dismantle_faction = yes
 					}
-						PRC = {white_peace = PER}
-PRC = {annex_country = {
+						PRC = {white_peace = PER}	
+			every_state = {
+				limit = {
+					is_core_of = PER
+				}
+			    add_core_of = ETL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PER
+				}
+			    remove_core_of = PER
+		    }
+ETL = {annex_country = {
 								target = PER
 								transfer_troops = no
 							}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {ETL = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						ETL = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
 
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {ETL = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						ETL = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {ETL = {has_idea = PRC_neomaoism111_idea}}
+					}
+						ETL = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {ETL = {has_idea = jjdzxjd_idea}}
+					}
+						ETL = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {ETL = {has_idea = PRC_yuuki_4}}
+					}
+						ETL = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {ETL = {has_idea = wushenlun_idea}}
+					}
+						ETL = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {ETL= {has_idea = PRC_socialist_dream_idea}}
+					}
+						ETL = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {ETL = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						ETL = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+
+				}
 							}
 					FROM = {
 
 						white_peace = ROOT
 						clr_country_flag = PRC_spread_chinese_influence
 			PRC = {release_autonomy = {
-			target = PER
+			target = ETL
 			autonomy_state = autonomy_tongzhi
 			}}
-						PER = {
+						ETL = {
                 inherit_technology = PRC
 
 		remove_ideas = PER_glory_of_islamic_revolution
@@ -1487,15 +1579,44 @@ PRC = {has_country_flag = RUS_EUO_PRC}
 			long_name = SOV_stalinist_bloc_rcpm
 			name = SOV_stalinist_bloc_short_rcpm
 		}
-
 				if = {
 					limit = {
-						PRC = {has_idea = PRC_future_of_cyber_communism_idea}
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {NAU = {has_idea = wushenlun_idea}}
+					}
+						NAU = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {NAU = {has_idea = jjdzxjd_idea}}
+					}
+						NAU = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
 					}
 						NAU = {
 			add_ideas = PRC_neomaoism111_idea
 						}
 					}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {NAU= {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						NAU = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}	
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_future_of_cyber_communism_idea}

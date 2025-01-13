@@ -699,7 +699,506 @@ spriteType = {
     name = "GFX_PRC_MAO_event_100"
     texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_100.png"
 }
-				
+			
+spriteType = {
+    name = "GFX_PRC_MAO_event_101"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_101.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_102"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_102.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_103"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_103.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_104"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_104.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_105"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_105.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_106"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_106.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_107"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_107.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_108"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_108.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_109"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_109.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_110"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_110.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_111"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_111.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_112"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_112.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_113"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_113.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_114"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_114.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_115"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_115.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_116"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_116.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_117"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_117.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_118"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_118.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_119"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_119.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_120"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_120.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_121"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_121.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_122"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_122.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_123"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_123.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_124"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_124.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_125"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_125.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_126"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_126.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_127"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_127.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_128"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_128.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_129"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_129.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_130"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_130.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_131"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_131.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_132"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_132.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_133"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_133.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_134"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_134.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_135"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_135.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_136"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_136.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_137"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_137.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_138"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_138.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_139"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_139.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_140"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_140.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_141"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_141.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_142"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_142.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_143"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_143.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_144"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_144.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_145"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_145.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_146"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_146.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_147"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_147.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_148"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_148.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_149"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_149.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_150"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_150.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_151"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_151.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_152"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_152.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_153"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_153.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_154"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_154.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_155"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_155.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_156"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_156.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_157"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_157.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_158"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_158.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_159"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_159.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_160"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_160.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_161"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_161.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_162"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_162.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_163"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_163.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_164"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_164.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_165"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_165.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_166"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_166.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_167"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_167.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_168"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_168.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_169"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_169.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_170"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_170.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_171"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_171.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_172"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_172.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_173"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_173.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_174"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_174.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_175"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_175.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_176"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_176.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_177"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_177.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_178"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_178.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_179"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_179.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_180"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_180.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_181"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_181.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_182"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_182.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_183"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_183.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_184"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_184.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_185"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_185.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_186"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_186.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_187"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_187.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_188"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_188.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_189"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_189.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_190"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_190.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_191"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_191.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_192"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_192.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_193"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_193.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_194"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_194.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_195"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_195.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_196"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_196.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_197"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_197.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_198"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_198.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_199"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_199.png"
+}
+
+spriteType = {
+    name = "GFX_PRC_MAO_event_200"
+    texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_200.png"
+}	
 	spriteType = {
 		name = "GFX_PRC_MAO_event_15"
 		texturefile = "gfx/MAOYUANXIN/PRC_MAO_event_15.png"

@@ -3715,6 +3715,16 @@ create_navy_leader = {
 		}
 			custom_effect_tooltip = autonomy_zizhiqu_tooltip
 			hidden_effect = {
+				
+					if = {
+						limit = {
+				434 = {
+					is_fully_controlled_by = PRC
+				}	
+				} 
+
+			TIB = {add_state_core = 434}
+				}
 			every_controlled_state = {
 				limit = {
 					has_dynamic_modifier = {
@@ -4219,6 +4229,20 @@ set_popularities = {
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "台湾革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "台湾革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
 				}
 			SHA = {
                 inherit_technology = PRC
@@ -4231,6 +4255,8 @@ set_popularities = {
 				set_capital = {state = 622}
 				set_cosmetic_tag = SHA_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4242,6 +4268,20 @@ set_popularities = {
 	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
 	                expire = "1999.1.1"
 	                ideology = maoism
+				}  
+				create_country_leader = {
+	                name = "陕甘宁革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "陕甘宁革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
 				}  
 				}
 			NSF = {
@@ -4255,6 +4295,8 @@ set_popularities = {
 				set_cosmetic_tag = NSF_XIN
 				set_capital = {state = 604}
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4266,6 +4308,20 @@ set_popularities = {
 	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
 	                expire = "1999.1.1"
 	                ideology = maoism
+				}  
+				create_country_leader = {
+	                name = "西北革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "西北革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
 				}  
 				}
 			SIC = {
@@ -4279,6 +4335,8 @@ set_popularities = {
 				set_capital = {state = 1189}
 				set_cosmetic_tag = SIC_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4290,6 +4348,20 @@ set_popularities = {
 	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
 	                expire = "1999.1.1"
 	                ideology = maoism
+				}  
+				create_country_leader = {
+	                name = "川渝革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "川渝革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
 				}  
 				}
 			YUN = {
@@ -4303,6 +4375,8 @@ set_popularities = {
 				set_capital = {state = 1196}
 				set_cosmetic_tag = YUN_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4315,6 +4389,20 @@ set_popularities = {
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "西南革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "西南革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			NLM = {
                 inherit_technology = PRC
@@ -4327,6 +4415,8 @@ set_popularities = {
 				set_capital = {state = 1211}
 				set_cosmetic_tag = NLM_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4339,6 +4429,20 @@ set_popularities = {
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "北斗星革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "北斗星革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			XFT = {
                 inherit_technology = PRC
@@ -4352,6 +4456,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 592}
 				set_cosmetic_tag = XFT_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4364,6 +4470,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "华南革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "华南革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			CHF = {	
                 inherit_technology = PRC
@@ -4374,6 +4494,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 600}
 				set_cosmetic_tag = CHF_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4386,6 +4508,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "闽赣革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "闽赣革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			RGT = {
                 inherit_technology = PRC
@@ -4396,6 +4532,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 1215}
 				set_cosmetic_tag = RGT_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4408,6 +4546,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "华东革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "华东革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			APF = {
                 inherit_technology = PRC
@@ -4418,6 +4570,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 716}
 				set_cosmetic_tag = APF_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4430,6 +4584,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "辽宁革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "辽宁革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			MST = {
                 inherit_technology = PRC
@@ -4440,6 +4608,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 1415}
 				set_cosmetic_tag = MST_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4452,6 +4622,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "延边革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "延边革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			NMA = {
                 inherit_technology = PRC
@@ -4462,6 +4646,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 717}
 				set_cosmetic_tag = NMA_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4474,6 +4660,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "黑龙江革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "黑龙江革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 			NCM = {
                 inherit_technology = PRC
@@ -4484,6 +4684,8 @@ remove_ideas = militia_looting
 				set_capital = {state = 328}
 				set_cosmetic_tag = NCM_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = CCCPPPCCC_party_long name = CCCPPPCCC_party }
+				set_party_name = { ideology = communist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCPPPCCC_party1_long name = CCCPPPCCC_party1 }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -4496,6 +4698,20 @@ remove_ideas = militia_looting
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+				create_country_leader = {
+	                name = "吉林革命自治委员会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "吉林革委会"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				} 
 				}
 
 		
@@ -4558,6 +4774,13 @@ remove_ideas = militia_looting
 			    remove_core_of = CHI
 		    }	
 				}	
+				every_state = {
+				limit = {
+					is_core_of = TIB
+				}
+			    remove_core_of = TIB
+		    }	
+
 
 					if = {
 						limit = {

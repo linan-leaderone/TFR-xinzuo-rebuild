@@ -9138,7 +9138,7 @@ PRC_foreign_policy_category = {
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_5
-					PER = {
+					ETL = {
 						is_ally_with = PRC
 					}
 				NOT = {
@@ -9318,7 +9318,7 @@ JOR = {annex_country = {
 								add_state_core = 1177}
 SYR = {release = ROJ}
 IRQ = {release = KUR}
-PER = {release = KUR}
+ETL = {release = KUR}
 XIN = {release = ROJ}
 XIN = {
                 inherit_technology = PRC

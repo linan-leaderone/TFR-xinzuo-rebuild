@@ -1371,6 +1371,12 @@ release_autonomy = {
 			autonomy_state = autonomy_tongzhi
 			freedom_level = 0.1
 			}}
+						PRC = {
+			country_event = {
+				id = PRC_MAO.101
+				days = 1
+			}
+				}
 						NAX = {
 				set_politics = {
 				ruling_party = totalitarian_socialist
@@ -1387,6 +1393,17 @@ release_autonomy = {
 			transfer_state = 1381			
 			transfer_state = 1366			
 			transfer_state = 1368
+				if = {
+					limit = {
+		AFG = {is_ally_with = PRC}
+					}
+			AFG = {	
+			transfer_state = 441			
+			transfer_state = 787			
+			transfer_state = 1131
+
+				}
+				}
 							annex_country = {
 								target = PRJ
 								transfer_troops = yes

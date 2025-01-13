@@ -1687,7 +1687,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 
         }
 		allow_branch = {
-			has_country_flag = PRC_military_coup_flag
+			has_country_flag = PRC_military_coup_flag_1
 		}
 		relative_position_id = PRC_salvage_the_situation
 	    x = -1
@@ -1751,7 +1751,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 
         }
 		allow_branch = {
-			has_country_flag = PRC_military_coup_flag
+			has_country_flag = PRC_military_coup_flag_1
 		}
 		prerequisite = {
 			focus = PRC_salvage_the_situation_1
