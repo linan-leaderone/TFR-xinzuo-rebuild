@@ -1,0 +1,31 @@
+
+PRC_jingjihuifu_category = {
+	
+
+	PRC_zhongmeijingji_joining = {
+		icon = generic_political_discourse
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30
+		complete_effect = {
+				}
+		timeout_effect = { 
+			taihai_test_2 = yes
+		}
+	}
+
+
+
+
+
+
+			}

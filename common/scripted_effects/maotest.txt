@@ -1,3 +1,103 @@
+taihai_test_2 = {
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_10
+    }
+
+        remove_ideas = zhongmeijingji_idea_10
+
+
+}
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_9
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_9
+        add_idea = zhongmeijingji_idea_10
+    }
+}
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_8
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_8
+        add_idea = zhongmeijingji_idea_9
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_7
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_7
+        add_idea = zhongmeijingji_idea_8
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_6
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_6
+        add_idea = zhongmeijingji_idea_7
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_5
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_5
+        add_idea = zhongmeijingji_idea_6
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_4
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_4
+        add_idea = zhongmeijingji_idea_5
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_3
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_3
+        add_idea = zhongmeijingji_idea_4
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_2
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_2
+        add_idea = zhongmeijingji_idea_3
+    }
+}
+
+if = {
+    limit = {
+        has_idea = zhongmeijingji_idea_1
+    }
+    swap_ideas = {
+        remove_idea = zhongmeijingji_idea_1
+        add_idea = zhongmeijingji_idea_2
+    }
+}
+}
+
 taihai_test_1 = {
 
 			if = {

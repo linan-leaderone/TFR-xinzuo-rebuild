@@ -13,3 +13,16 @@ PRC_balance_of_maoism_power_category = {
     
     priority = 4
 }
+PRC_jingjihuifu_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    allowed = {
+    	tag = PRC
+    }
+    
+    visible = {
+    	always = yes
+
+    }
+    
+    priority = 4
+}

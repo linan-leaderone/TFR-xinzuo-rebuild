@@ -108,6 +108,270 @@ jjdzxjd_idea = {
     }
 }
 					
+zhongmeijingji_idea_1 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.5
+        poverty_development_monthly = -0.05
+        society_development_monthly = -0.05
+        income_growth_factor = -0.5
+        inflation_monthly_factor = 0.5
+        production_speed_buildings_factor = -0.5
+        business_value_factor = -0.5
+        personal_value_factor = -0.5
+    }
+}
+					
+zhongmeijingji_idea_2 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.45
+        poverty_development_monthly = -0.045
+        society_development_monthly = -0.045
+        income_growth_factor = -0.45
+        inflation_monthly_factor = 0.45
+        production_speed_buildings_factor = -0.45
+        business_value_factor = -0.45
+        personal_value_factor = -0.45
+    }
+}
+					
+zhongmeijingji_idea_3 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.4
+        poverty_development_monthly = -0.04
+        society_development_monthly = -0.04
+        income_growth_factor = -0.4
+        inflation_monthly_factor = 0.4
+        production_speed_buildings_factor = -0.4
+        business_value_factor = -0.4
+        personal_value_factor = -0.4
+    }
+}
+
+zhongmeijingji_idea_4 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.35
+        poverty_development_monthly = -0.035
+        society_development_monthly = -0.035
+        income_growth_factor = -0.35
+        inflation_monthly_factor = 0.35
+        production_speed_buildings_factor = -0.35
+        business_value_factor = -0.35
+        personal_value_factor = -0.35
+    }
+}
+
+zhongmeijingji_idea_5 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.3
+        poverty_development_monthly = -0.03
+        society_development_monthly = -0.03
+        income_growth_factor = -0.3
+        inflation_monthly_factor = 0.3
+        production_speed_buildings_factor = -0.3
+        business_value_factor = -0.3
+        personal_value_factor = -0.3
+    }
+}
+
+zhongmeijingji_idea_6 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.25
+        poverty_development_monthly = -0.025
+        society_development_monthly = -0.025
+        income_growth_factor = -0.25
+        inflation_monthly_factor = 0.25
+        production_speed_buildings_factor = -0.25
+        business_value_factor = -0.25
+        personal_value_factor = -0.25
+    }
+}
+
+zhongmeijingji_idea_7 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.2
+        poverty_development_monthly = -0.02
+        society_development_monthly = -0.02
+        income_growth_factor = -0.2
+        inflation_monthly_factor = 0.2
+        production_speed_buildings_factor = -0.2
+        business_value_factor = -0.2
+        personal_value_factor = -0.2
+    }
+}
+
+zhongmeijingji_idea_8 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.15
+        poverty_development_monthly = -0.015
+        society_development_monthly = -0.015
+        income_growth_factor = -0.15
+        inflation_monthly_factor = 0.15
+        production_speed_buildings_factor = -0.15
+        business_value_factor = -0.15
+        personal_value_factor = -0.15
+    }
+}
+
+zhongmeijingji_idea_9 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.1
+        poverty_development_monthly = -0.01
+        society_development_monthly = -0.01
+        income_growth_factor = -0.1
+        inflation_monthly_factor = 0.1
+        production_speed_buildings_factor = -0.1
+        business_value_factor = -0.1
+        personal_value_factor = -0.1
+    }
+}
+
+zhongmeijingji_idea_10 = {
+    picture = generic_world_wide_financial_crisis
+    name = PRC_zhongmeijingji_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        consumer_goods_factor = 0.05
+        poverty_development_monthly = -0.005
+        society_development_monthly = -0.005
+        income_growth_factor = -0.05
+        inflation_monthly_factor = 0.05
+        production_speed_buildings_factor = -0.05
+        business_value_factor = -0.05
+        personal_value_factor = -0.05
+    }
+}
+
+
+
+
+					
 taihaijingji_idea_1 = {
     picture = generic_world_wide_financial_crisis
     name = PRC_taihaijingji_idea

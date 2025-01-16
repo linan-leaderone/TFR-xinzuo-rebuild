@@ -10281,7 +10281,8 @@ country_event = {
 	}
 	option = {
 		name = china.312.a
-		add_political_power = 35
+		add_ideas = zhongmeijingji_idea_1
+		activate_mission = PRC_zhongmeijingji_joining
 	}
 }
 #Chinese-American Scientists Seek Asylum in China
