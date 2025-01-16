@@ -4,6 +4,62 @@ on_actions = {
 		effect = {
 				if = {
 					limit = {
+						FROM = {
+						OR = {
+							original_tag = ROJ
+								is_ally_with = ROJ
+						}
+						}
+						ROOT = {
+
+							original_tag = SYR
+
+
+
+
+						}
+					}
+
+
+						ROJ = {white_peace = SYR}
+			ROJ = {set_autonomy = {
+			target = SYR
+			autonomy_state = autonomy_puppet
+			}}
+				SYR = {set_party_name = { ideology = libertarian_socialist long_name = SYRCCCCCC_party_long name = SYRCCCCCC_party } }
+				SYR = {
+						remove_ideas = SYR_devistated_economy
+						remove_ideas = SYR_war_exhaustion
+						remove_ideas = SYR_alawite_dominated_army
+						remove_ideas = SYR_inexperienced_generals
+						remove_ideas = SYR_russian_trained_officers
+						remove_ideas = SYR_russian_support
+						remove_ideas = SYR_army_of_lions_idea
+						remove_ideas = SYR_alawite_dominated_army_2
+						remove_ideas = SYR_devistated_economy_2
+						remove_ideas = SYR_devistated_economy_3
+						remove_ideas = SYR_devistated_economy_4
+						remove_ideas = SYR_devistated_economy_5
+						remove_ideas = SYR_syrian_economic_renewal
+						remove_ideas = SYR_failing_curency
+						remove_ideas = SYR_assadism_idea
+						remove_ideas = SYR_cult_of_saddeh_idea
+						remove_ideas = SYR_greater_syria_1
+						remove_ideas = SYR_greater_syria_2
+						remove_ideas = SYR_greater_syria_3
+						remove_ideas = SYR_greater_syria_4
+create_country_leader = {
+	                name = "叙利亚临时革命政府"
+	                desc = "POLITICS_SYRRGW_DESC"
+	                picture = "gfx/MAOYUANXIN/gjzyy.png"
+	                expire = "1999.1.1"
+	                ideology = reformist_socialism
+				}  }
+			
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
 										PRC = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}

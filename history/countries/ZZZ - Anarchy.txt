@@ -1,0 +1,122 @@
+﻿#Note: This country is required to exist, otherwise it can cause many required functions to work improperly or cease to work at all.
+capital = 713
+set_country_flag = shithole_country
+recruit_character = ZZZ_anarchy_char
+set_politics = {
+	ruling_party = libertarian_socialist
+	last_election = "2018.11.13"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	libertarian_socialist = 100
+}
+
+	TRG = {
+add_ideas = duliyuanjing_1
+}
+	PRK = {set_politics = {	
+		ruling_party = national_socialist
+		last_election = "2017.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		social_democrat = 5
+		nationalist = 10
+		fascist = 25
+		national_socialist = 60
+	}
+set_party_name = { ideology = national_socialist long_name = PRK1_party_long name = PRK1_party }
+set_party_name = { ideology = fascist long_name = PRK1_party_long name = PRK1_party }
+}
+
+	PRC = {
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		nationalist = 60
+		social_democrat = 5
+		social_liberal = 5
+		market_liberal = 3
+		authoritarian_democrat = 20
+		conservative = 7
+	}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_status_banned111
+				name = PRC_status_banned111
+			}
+set_party_name = { ideology = nationalist long_name = PRC_communist11122_party_long name = PRC_communist11122_party }
+set_party_name = { ideology = authoritarian_democrat long_name = PRC_communist11133_party_long name = PRC_communist11133_party }
+set_party_name = { ideology = national_socialist long_name = PRC_communist11144_party_long name = PRC_communist11144_party }
+
+				create_country_leader = {
+	                name = "未知"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+				create_country_leader = {
+	                name = "未知"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+				create_country_leader = {
+	                name = "未知"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+		add_country_leader_role = {
+			character = PRC_xi_jinping
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_1
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_hu_chunhua
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_cheng_wenqing
+			promote_leader = yes
+			country_leader = {
+				ideology = jucheism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+}

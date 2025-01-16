@@ -9371,6 +9371,16 @@ XIN = {annex_country = {
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {ROJ = {has_idea = beidouweixing}}
+					}
+						ROJ = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
 						NOT = {ROJ = {has_idea = PRC_coordinate_eadi_militaries_idea}}
 					}
@@ -9458,6 +9468,16 @@ XIN = {
 					}
 						XIN = {
 			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {XIN = {has_idea = beidouweixing}}
+					}
+						XIN = {
+			add_ideas = beidouweixing
 						}
 
 				}	
@@ -9768,6 +9788,50 @@ NOT = {country_exists = SYR}
 			}
 		}
 	}
+			PRC_military_intervention_roj_1 = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_5
+
+			OR = {
+					IRQ = {
+						is_ally_with = PRC
+					}
+					FIA = {
+						is_ally_with = PRC
+					}
+					BUK = {
+						is_ally_with = PRC
+					}
+					ABK = {
+						is_ally_with = PRC
+					}
+					}
+				NOT = {
+					SYR = {
+						is_ally_with = PRC
+					}
+				}
+					SYR = {
+						is_subject_of = ROJ
+					}
+		NOT = {SYR = {
+	has_war_with = PRC
+		}}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		
+		remove_effect = {
+					PRC = {
+			add_to_faction = ROJ
+			add_to_faction = SYR
+		}
+		}
+	}
 			PRC_military_intervention_syr_1 = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
@@ -9791,6 +9855,11 @@ NOT = {country_exists = SYR}
 				NOT = {
 					SYR = {
 						is_ally_with = PRC
+					}
+				}
+				NOT = {
+					SYR = {
+						is_subject_of = ROJ
 					}
 				}
 		NOT = {SYR = {
@@ -9819,6 +9888,7 @@ NOT = {country_exists = SYR}
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_1
 				NOT = {
+			has_country_flag = PRC_vin_influence_2
 					VIN = {
 						is_in_faction = yes
 					}
@@ -9828,7 +9898,11 @@ NOT = {country_exists = SYR}
 		fire_only_once = yes
 		days_remove = 35
 		cancel_if_not_visible = yes
-		
+			
+		complete_effect = {
+			set_country_flag = PRC_vin_influence_1
+			
+		}
 		remove_effect = {
 			set_country_flag = PRC_spread_chinese_influence
 			PRC = {
@@ -9842,7 +9916,325 @@ NOT = {country_exists = SYR}
 			}
 		}
 	}
-	PRC_military_intervention_thailand_1 = {
+
+			PRC_military_intervention_vin_3 = {
+		available = {
+VIN = {totalitarian_socialist > 0.3}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_1
+			has_country_flag = PRC_vin_influence_2
+					VIN = {
+						is_in_faction = yes
+					}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+						
+		}
+		remove_effect = {
+			
+			PRC = {set_autonomy = {
+			target = VIN
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}}
+		hidden_effect = {
+						VIN = {
+
+                inherit_technology = PRC
+
+
+				load_oob = VIN_reserves
+							
+				set_cosmetic_tag = VIN_XIN_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = VINVIN_party_long name = VINVIN_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "印度支那革命委员会"
+	                desc = "POLITICS_YNGW_DESC"
+	                picture = "gfx/MAOYUANXIN/YN_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						} 
+						}
+		}
+	}
+
+
+	PRC_military_intervention_laos_2 = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_1
+				NOT = {
+			has_country_flag = PRC_laos_influence_1
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes		
+		complete_effect = {
+			set_country_flag = PRC_laos_influence_2
+			
+		}
+		remove_effect = {
+
+		hidden_effect = {
+						VIN = {
+annex_country = {
+								target = LAO
+								transfer_troops = yes
+							}
+			every_state = {
+				limit = {
+					is_core_of = LAO
+				}
+			    add_core_of = VIN
+		    }
+							
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.2
+			}
+				set_cosmetic_tag = VIN_XIN_XIN
+
+
+				load_oob = VIN_reserves
+	
+
+				set_party_name = { ideology = communist long_name = VINVIN_party_long name = VINVIN_party }
+
+						} 
+						}
+
+		}
+	}
+	
+			PRC_military_intervention_phi_1 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_1
+				NOT = {
+		PHI = {is_ally_with = JAP}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+	    hidden_effect = {
+										HUT = {
+			transfer_state = 1275
+			transfer_state = 625
+			transfer_state = 628
+			transfer_state = 1279
+			transfer_state = 1276
+			transfer_state = 1281
+
+		}	
+
+	    every_state = {
+		if = {
+				limit = {
+					is_core_of = HUT
+				}
+			    remove_core_of = HUT
+		    }	
+		    }	
+			every_state = {
+				limit = {
+					is_core_of = PHI
+				}
+			    add_core_of = HUT
+		    }
+			release_autonomy = {
+			target = HUT
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}		
+					HUT = {set_cosmetic_tag = PHI_XIN	
+                inherit_technology = PRC				
+				set_cosmetic_tag = PHI_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = PHICCC_party_long name = PHICCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}	
+				load_oob = PHI_reserves
+				create_country_leader = {
+	                name = "菲律宾革命委员会"
+	                desc = "POLITICS_ASTGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+		    }
+		}
+			PHI = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	
+			PRC_military_intervention_vin_2 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_1
+
+				NOT = {
+			has_country_flag = PRC_vin_influence_1
+		VIN = {is_ally_with = PRC}
+
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+			set_country_flag = PRC_vin_influence_2
+			
+		}
+		remove_effect = {	
+										VIN = {
+			transfer_state = 879
+								add_state_core = 879
+				set_party_name = { ideology = totalitarian_socialist long_name = VINCCBC_party_long name = VINCCBC_party }
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {VIN = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						VIN = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {VIN = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						VIN = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {VIN = {has_idea = beidouweixing}}
+					}
+						VIN = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {VIN = {has_idea = PRC_neomaoism111_idea}}
+					}
+						VIN = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {VIN = {has_idea = PRC_yuuki_4}}
+					}
+						VIN = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {VIN = {has_idea = wushenlun_idea}}
+					}
+						VIN = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {VIN = {has_idea = jjdzxjd_idea}}
+					}
+						VIN = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {VIN= {has_idea = PRC_socialist_dream_idea}}
+					}
+						VIN = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {VIN = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						VIN = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+				}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.1
+			}
+				}
+			PRC = {
+				add_to_faction = VIN
+			}
+
+		}
+	}
+	PRC_military_intervention_thailand_3 = {
 		available = {
 			OR = {
 				LAO = {
@@ -9850,6 +10242,13 @@ NOT = {country_exists = SYR}
 				}
 				CAM = {
 					is_ally_with = PRC
+				}
+			AND = {
+				VIN = {
+					is_ally_with = PRC
+				}
+	NOT = { country_exists = LAO }
+	NOT = { country_exists = CAM }
 				}
 				BRM = {
 					is_ally_with = PRC
@@ -9859,9 +10258,211 @@ NOT = {country_exists = SYR}
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_1
+				country_exists = ETI
+				country_exists = SIA
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		remove_effect = {
+			set_country_flag = PRC_spread_chinese_influence
+
+			PRC = {
+				add_to_faction = ETI
+			}
+			ETI = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {ETI = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						ETI = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {ETI = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						ETI = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {ETI = {has_idea = beidouweixing}}
+					}
+						ETI = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {ETI = {has_idea = PRC_neomaoism111_idea}}
+					}
+						ETI = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {ETI = {has_idea = PRC_yuuki_4}}
+					}
+						ETI = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {ETI = {has_idea = wushenlun_idea}}
+					}
+						ETI = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {ETI = {has_idea = jjdzxjd_idea}}
+					}
+						ETI = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {ETI= {has_idea = PRC_socialist_dream_idea}}
+					}
+						ETI = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {ETI = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						ETI = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+				}
+			}
+		}
+	}
+	PRC_military_intervention_thailand_2 = {
+		available = {
+			OR = {
+				LAO = {
+					is_ally_with = PRC
+				}
+				CAM = {
+					is_ally_with = PRC
+				}
+			AND = {
+				VIN = {
+					is_ally_with = PRC
+				}
+	NOT = { country_exists = LAO }
+	NOT = { country_exists = CAM }
+				}
+				BRM = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_1
+				country_exists = ETI
+				NOT = {
+					ETI = {
+						is_in_faction = yes
+					}
+					ETI = {
+						has_war_with = SIA
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		remove_effect = {
+			set_country_flag = PRC_spread_chinese_influence
+			PRC = {
+				declare_war_on = { 
+					target = ETI
+					type = annex_everything 
+				}
+			}
+			ETI = {
+				add_ideas = VIN_determined_defenders
+			}
+		}
+	}
+	PRC_military_intervention_thailand_1 = {
+		available = {
+			OR = {
+				LAO = {
+					is_ally_with = PRC
+				}
+				CAM = {
+					is_ally_with = PRC
+				}
+			AND = {
+				VIN = {
+					is_ally_with = PRC
+				}
+	NOT = { country_exists = LAO }
+	NOT = { country_exists = CAM }
+				}
+				BRM = {
+					is_ally_with = PRC
+				}
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_1
+				country_exists = SIA
 				NOT = {
 					SIA = {
 						is_in_faction = yes
+					}
+					SIA = {
+						has_war_with = ETI
 					}
 				}
 			}
@@ -10763,6 +11364,7 @@ PRC_military_intervention_eqg_1 = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_1
 				NOT = {
+			has_country_flag = PRC_laos_influence_2
 					LAO = {
 						is_in_faction = yes
 					}
@@ -10771,7 +11373,11 @@ PRC_military_intervention_eqg_1 = {
 		}
 		fire_only_once = yes
 		days_remove = 35
-		cancel_if_not_visible = yes
+		cancel_if_not_visible = yes		
+		complete_effect = {
+			set_country_flag = PRC_laos_influence_1
+			
+		}
 		remove_effect = {
 			set_country_flag = PRC_spread_chinese_influence
 			PRC = {
@@ -10914,7 +11520,17 @@ GER = {
 			add_ideas = PRC_coordinate_eadi_militaries_idea
 						}
 
-				}	
+				}		
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {BAN = {has_idea = beidouweixing}}
+					}
+						BAN = {
+			add_ideas = beidouweixing
+						}
+
+				}
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_shuzihuaminzhu}
@@ -11057,6 +11673,16 @@ GER = {
 				}	
 				if = {
 					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {EFF = {has_idea = beidouweixing}}
+					}
+						EFF = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_shuzihuaminzhu}
 						NOT = {EFF = {has_idea = PRC_shuzihuaminzhu}}
 					}
@@ -11172,6 +11798,16 @@ GER = {
 					}
 						ZAP = {
 			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}	
+									if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {ZAP = {has_idea = beidouweixing}}
+					}
+						ZAP = {
+			add_ideas = beidouweixing
 						}
 
 				}	
@@ -11300,6 +11936,16 @@ GER = {
 				}	
 				if = {
 					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {ZAP = {has_idea = beidouweixing}}
+					}
+						ZAP = {
+			add_ideas = beidouweixing
+						}
+
+				}
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_shuzihuaminzhu}
 						NOT = {ZAP = {has_idea = PRC_shuzihuaminzhu}}
 					}
@@ -11411,7 +12057,17 @@ GER = {
 			add_ideas = PRC_coordinate_eadi_militaries_idea
 						}
 
-				}					
+				}			
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {ELN = {has_idea = beidouweixing}}
+					}
+						ELN = {
+			add_ideas = beidouweixing
+						}
+
+				}				
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_neomaoism111_idea}
@@ -11539,6 +12195,16 @@ GER = {
 						}
 
 				}	
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {SIG = {has_idea = beidouweixing}}
+					}
+						SIG = {
+			add_ideas = beidouweixing
+						}
+
+				}
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_neomaoism111_idea}
@@ -11673,6 +12339,16 @@ GER = {
 						}
 
 				}	
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {PAK = {has_idea = beidouweixing}}
+					}
+						PAK = {
+			add_ideas = beidouweixing
+						}
+
+				}
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_neomaoism111_idea}
@@ -13578,112 +14254,7 @@ GER = {
 			base = 100
 		}
 	}
-	PRC_send_apla_weapons = {
-		icon = GFX_decision_category_america_burning_category
-		available = {
-			APA = {
-				has_war = yes
-			}
-		}
-		visible = {
-			APA = {
-				has_war = yes
-			}
-		}
-		fire_only_once = no
-		cost = 30
-		days_remove = 30
-		days_re_enable = 60
-		remove_effect = {
-			APA = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 2500
-					producer = PRC
-				}
-			}
-		}
-		ai_will_do = {
-		base = 10
-		}
-	}
-	PRC_train_apla_militia = {
-		icon = GFX_decision_category_america_burning_category
-		available = {
-			APA = {
-				has_war = yes
-			}
-		}
-		visible = {
-			APA = {
-				has_war = yes
-			}
-		}
-		fire_only_once = no
-		cost = 50
-		days_remove = 50
-		days_re_enable = 70
-		remove_effect = {
-			APA = {
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
-						allow_spawning_on_enemy_provs = no
-						owner = APA
-					}
-				}
-			}
-		}
-		ai_will_do = {
-		base = 10
-		}
-	}
-	PRC_arm_the_apla_airforce = {
-		icon = GFX_decision_category_america_burning_category
-		available = {
-			APA = {
-				has_war = yes
-			}
-		}
-		visible = {
-			APA = {
-				has_war = yes
-			}
-		}
-		fire_only_once = no
-		cost = 75
-		days_remove = 50
-		days_re_enable = 140
-		remove_effect = {
-			APA = {
-				if = {
-					limit = {
-						NOT = {
-							has_dlc = "By Blood Alone"
-						}
-					}
-					add_equipment_to_stockpile = { 
-						type = fighter_equipment_2
-						amount = 100
-						producer = PRC
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = { 
-						type = small_plane_airframe_1
-						amount = 100
-						producer = PRC
-					}
-				}
-			}	
-		}
-		ai_will_do = {
-		base = 10
-		}
-	}
+
 	PRC_send_zap_weapons = {
 		icon = GFX_PRC_new_left_decision
 		available = {
@@ -13695,6 +14266,7 @@ GER = {
 			ZAP = {
 				has_war = yes
 			}
+		NOT = {ZAP = {is_ally_with = PRC}}
 		}
 		fire_only_once = no
 		cost = 30
@@ -13724,6 +14296,7 @@ GER = {
 			ZAP = {
 				has_war = yes
 			}
+		NOT = {ZAP = {is_ally_with = PRC}}
 		}
 		fire_only_once = no
 		cost = 50
@@ -13755,6 +14328,7 @@ GER = {
 			ZAP = {
 				has_war = yes
 			}
+		NOT = {ZAP = {is_ally_with = PRC}}
 		}
 		fire_only_once = no
 		cost = 75
@@ -13762,6 +14336,449 @@ GER = {
 		days_re_enable = 140
 		remove_effect = {
 			ZAP = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					add_equipment_to_stockpile = { 
+						type = fighter_equipment_2
+						amount = 100
+						producer = PRC
+					}
+				}
+				else_if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					add_equipment_to_stockpile = { 
+						type = small_plane_airframe_1
+						amount = 100
+						producer = PRC
+					}
+				}
+			}	
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+
+	PRC_send_eff_weapons = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			EFF = {
+				has_war = yes
+			}
+		}
+		visible = {
+			EFF = {
+				has_war = yes
+			}
+		NOT = {EFF = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			EFF = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_train_eff_militia = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			EFF = {
+				has_war = yes
+			}
+		}
+		visible = {
+			EFF = {
+				has_war = yes
+			}
+		NOT = {EFF = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 50
+		days_re_enable = 70
+		remove_effect = {
+			EFF = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
+						allow_spawning_on_enemy_provs = no
+						owner = EFF
+					}
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_arm_the_eff_airforce = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			EFF = {
+				has_war = yes
+			}
+		}
+		visible = {
+			EFF = {
+				has_war = yes
+			}
+		NOT = {EFF = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 50
+		days_re_enable = 140
+		remove_effect = {
+			EFF = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					add_equipment_to_stockpile = { 
+						type = fighter_equipment_2
+						amount = 100
+						producer = PRC
+					}
+				}
+				else_if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					add_equipment_to_stockpile = { 
+						type = small_plane_airframe_1
+						amount = 100
+						producer = PRC
+					}
+				}
+			}	
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+
+
+
+	PRC_send_roj_weapons = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			ROJ = {
+				has_war = yes
+			}
+		}
+		visible = {
+			ROJ = {
+				has_war = yes
+			}
+		NOT = {ROJ = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			ROJ = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_train_roj_militia = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			ROJ = {
+				has_war = yes
+			}
+		}
+		visible = {
+			ROJ = {
+				has_war = yes
+			}
+		NOT = {ROJ = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 50
+		days_re_enable = 70
+		remove_effect = {
+			ROJ = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
+						allow_spawning_on_enemy_provs = no
+						owner = ROJ
+					}
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_arm_the_roj_airforce = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			ROJ = {
+				has_war = yes
+			}
+		}
+		visible = {
+			ROJ = {
+				has_war = yes
+			}
+		NOT = {ROJ = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 50
+		days_re_enable = 140
+		remove_effect = {
+			ROJ = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					add_equipment_to_stockpile = { 
+						type = fighter_equipment_2
+						amount = 100
+						producer = PRC
+					}
+				}
+				else_if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					add_equipment_to_stockpile = { 
+						type = small_plane_airframe_1
+						amount = 100
+						producer = PRC
+					}
+				}
+			}	
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+
+	PRC_send_rcg_weapons = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			RCG = {
+				has_war = yes
+			}
+		}
+		visible = {
+			RCG = {
+				has_war = yes
+			}
+		NOT = {RCG = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			RCG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_train_rcg_militia = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			RCG = {
+				has_war = yes
+			}
+		}
+		visible = {
+			RCG = {
+				has_war = yes
+			}
+		NOT = {RCG = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 50
+		days_re_enable = 70
+		remove_effect = {
+			RCG = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
+						allow_spawning_on_enemy_provs = no
+						owner = RCG
+					}
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_arm_the_rcg_airforce = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			RCG = {
+				has_war = yes
+			}
+		}
+		visible = {
+			RCG = {
+				has_war = yes
+			}
+		NOT = {RCG = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 50
+		days_re_enable = 140
+		remove_effect = {
+			RCG = {
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "By Blood Alone"
+						}
+					}
+					add_equipment_to_stockpile = { 
+						type = fighter_equipment_2
+						amount = 100
+						producer = PRC
+					}
+				}
+				else_if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					add_equipment_to_stockpile = { 
+						type = small_plane_airframe_1
+						amount = 100
+						producer = PRC
+					}
+				}
+			}	
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+
+
+	PRC_send_trg_weapons = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			TRG = {
+				has_war = yes
+			}
+		}
+		visible = {
+		NOT = {TRG = {is_ally_with = PRC}}
+			TRG = {
+				has_war = yes
+			}
+		}
+		fire_only_once = no
+		cost = 30
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			TRG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_train_trg_militia = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			TRG = {
+				has_war = yes
+			}
+		}
+		visible = {
+		NOT = {TRG = {is_ally_with = PRC}}
+			TRG = {
+				has_war = yes
+			}
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 50
+		days_re_enable = 70
+		remove_effect = {
+			TRG = {
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
+						allow_spawning_on_enemy_provs = no
+						owner = TRG
+					}
+				}
+			}
+		}
+		ai_will_do = {
+		base = 10
+		}
+	}
+	PRC_arm_the_trg_airforce = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			TRG = {
+				has_war = yes
+			}
+		}
+		visible = {
+			TRG = {
+				has_war = yes
+			}
+		NOT = {TRG = {is_ally_with = PRC}}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 50
+		days_re_enable = 140
+		remove_effect = {
+			TRG = {
 				if = {
 					limit = {
 						NOT = {
@@ -18322,6 +19339,117 @@ PRC_great_asian_war = {
 				idea = PRC_burma_offensive_idea
 				days = 50
 			}
+		}
+		ai_will_do = {
+			base = 200
+		}
+	}
+
+	PRC_beidou_qidong = {
+		icon = generic_industry
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_beidouweixing
+			has_completed_focus = PRC_chinas_greatest_hour
+
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 10
+		complete_effect = {
+		}
+		remove_effect = {
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 787
+					state = 1132
+					state = 440
+					state = 1380
+					state = 442
+					state = 443
+					state = 445
+					state = 1324
+					state = 441
+					state = 1131
+					state = 1373
+					state = 439
+					state = 1381
+					state = 437
+					state = 1397
+					state = 1398
+					state = 1370
+					state = 789
+					state = 432
+					state = 1367
+					state = 434
+					state = 1366
+					state = 1368
+					state = 1369
+					state = 430
+					state = 431
+					state = 424
+					state = 1418
+					state = 1413
+					state = 1417
+					state = 1414
+					state = 1415
+					state = 1416
+					state = 422
+					region = 146
+					region = 189
+					region = 142
+					region = 188
+					region = 160
+					region = 159
+					region = 187
+					region = 158
+					region = 93
+					region = 167
+					region = 193
+					region = 194
+					region = 195
+					region = 156
+					region = 76
+					region = 154
+					region = 165
+					region = 164
+					region = 143
+					region = 145
+					region = 220
+					region = 216
+					region = 219
+					region = 152
+					state = 428
+					state = 433
+					state = 1379
+					state = 438
+					state = 436
+					state = 1400
+					state = 1399
+					state = 435
+					state = 1371
+					state = 426
+					state = 1372
+					state = 427
+					state = 425
+					state = 423
+					state = 320
+					state = 429
+					state = 716
+					state = 1394
+					state = 328
+					state = 717
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+		}
+
 		}
 		ai_will_do = {
 			base = 200

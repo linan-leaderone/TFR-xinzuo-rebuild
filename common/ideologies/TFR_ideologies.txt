@@ -1,14 +1,6 @@
 ideologies = {
 	totalitarian_socialist = {
 		types = {
-			jucheism = {
-				can_be_randomly_selected = no
-				color = {
-					117
-					26
-					8
-				}
-			}
 			totalism = {
 			}
 			maoism = {
@@ -584,6 +576,10 @@ ideologies = {
 					124
 				}
 			}
+			market_socialism_2 = {
+				can_be_randomly_selected = no
+
+			}
 			ultra_conservatism = {
 				can_be_randomly_selected = no
 				color = {
@@ -698,6 +694,10 @@ ideologies = {
 	nationalist = {
 		types = {
 			autocrat = {
+			}
+			market_socialism_1 = {
+				can_be_randomly_selected = no
+
 			}
 			theocracy = {
 				can_be_randomly_selected = no
@@ -869,6 +869,14 @@ ideologies = {
 	national_socialist = {
 		types = {
 
+			jucheism = {
+				can_be_randomly_selected = no
+				color = {
+					117
+					26
+					8
+				}
+			}
 			esoteric_fascism = {
 			}
 			neonazism = {

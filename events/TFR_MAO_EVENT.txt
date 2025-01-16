@@ -227,7 +227,11 @@ news_event = {
 		trigger = {
 			tag = PRC
 		}
-		set_global_flag = pan_asian_war_ongoing
+		hidden_effect = {
+			news_event = news.346
+			PRC_gaw_start = yes
+	}
+
 
 	}
 }

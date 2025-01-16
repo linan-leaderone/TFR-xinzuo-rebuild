@@ -596,7 +596,7 @@ focus_tree = {
 			focus = PRC_analyze_first_days
 		}
 		relative_position_id = PRC_the_final_opportunity
-	    x = -2
+	    x = 0
 	    y = 6
 		
 	    cost = 1
@@ -604,9 +604,6 @@ focus_tree = {
 		ai_will_do = {
 	    	factor = 10
 	    }
-		mutually_exclusive = {
-			focus = PRC_slowly_but_surely
-		}
 	    completion_reward = {	
 			set_temp_variable = { 
 				var = PRC_influence_nat_var_temp
@@ -647,14 +644,16 @@ focus_tree = {
 	    x = 2
 	    y = 6
 		
+		allow_branch = {
+			#has_country_flag = PRC_ongoing_taiwan_war
+			#has_global_flag = PRC_ongoing_taiwan_war
+			always = no
+		}
 	    cost = 1
 		
 		ai_will_do = {
 	    	factor = 10
 	    }
-		mutually_exclusive = {
-			focus = PRC_fast_finalization
-		}
 	    completion_reward = {
 			set_temp_variable = { 
 				var = PRC_influence_cen_var_temp
@@ -749,10 +748,10 @@ focus_tree = {
 	    id = PRC_adapt_to_current_realities_of_battles
 	    icon = GFX_focus_PRC_adapt_to_current_realities_of_battles
 		prerequisite = {
-			focus = PRC_air_deconservation
+			focus = PRC_crackdown_on_separatists
 		}
 		relative_position_id = PRC_the_final_opportunity
-	    x = 0
+	    x = -1
 	    y = 9
 		
 	    cost = 5
@@ -774,7 +773,10 @@ focus_tree = {
 	    id = PRC_crackdown_on_separatists
 	    icon = GFX_focus_PRC_crackdown_on_separatists
 		prerequisite = {
-			focus = PRC_fast_finalization
+			focus = PRC_indiscriminate_missile_strikes
+		}
+		prerequisite = {
+			focus = PRC_air_deconservation
 		}
 		relative_position_id = PRC_the_final_opportunity
 	    x = -1
@@ -852,11 +854,11 @@ focus_tree = {
 	    id = PRC_taiwanese_affairs_dont_concern_mainland
 	    icon = GFX_focus_PRC_taiwanese_affairs_dont_concern
 		prerequisite = {
-			focus = PRC_fast_finalization
+			focus = PRC_unite_people
 		}
 		relative_position_id = PRC_the_final_opportunity
-	    x = -3
-	    y = 8
+	    x = 1
+	    y = 9
 		
 	    cost = 3
 		
@@ -879,9 +881,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_indiscriminate_missile_strikes
-		}
-		prerequisite = {
-			focus = PRC_taiwanese_affairs_dont_concern_mainland
 		}
 		relative_position_id = PRC_the_final_opportunity
 	    x = -2
@@ -916,7 +915,10 @@ focus_tree = {
 	    id = PRC_unite_people
 	    icon = GFX_focus_PRC_unite_the_people
 		prerequisite = {
-			focus = PRC_slowly_but_surely
+			focus = PRC_minimize_civilian_casualties
+		}
+		prerequisite = {
+			focus = PRC_air_deconservation
 		}
 		relative_position_id = PRC_the_final_opportunity
 	    x = 1
@@ -956,7 +958,7 @@ focus_tree = {
 	    id = PRC_minimize_civilian_casualties
 	    icon = GFX_focus_PRC_minimize_casualties
 		prerequisite = {
-			focus = PRC_slowly_but_surely
+			focus = PRC_fast_finalization
 		}
 		relative_position_id = PRC_the_final_opportunity
 	    x = 2
@@ -1119,16 +1121,13 @@ focus_tree = {
 	    id = PRC_no_hurry
 	    icon = GFX_focus_PRC_no_hurry
 		prerequisite = {
-			focus = PRC_adapt_to_current_realities_of_battles
+			focus = PRC_taiwanese_affairs_dont_concern_mainland
 		}
 		prerequisite = {
 			focus = PRC_unite_people
 		}
 		prerequisite = {
 			focus = PRC_minimize_civilian_casualties
-		}
-		prerequisite = {
-			focus = PRC_economic_conversion_to_military_needs
 		}
 		relative_position_id = PRC_the_final_opportunity
 	    x = 2
@@ -1404,7 +1403,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 				popularity = 0.05
 			}	
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.04
 			}		
 			add_popularity = {
@@ -1412,7 +1411,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 				popularity = 0.05
 			}	
 			add_popularity = {
-				ideology = totalitarian_socialist
+				ideology = conservative
 				popularity = 0.04
 			}
 			add_stability = 0.1
@@ -1775,12 +1774,13 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			}
 	    }
 	    completion_reward = {
+		
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.05
 			}	
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.04
 			}		
 			add_popularity = {
@@ -1788,7 +1788,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 				popularity = 0.05
 			}	
 			add_popularity = {
-				ideology = totalitarian_socialist
+				ideology = conservative
 				popularity = 0.04
 			}
 			add_stability = 0.1
@@ -1821,15 +1821,15 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 	    }
 	    completion_reward = {
 			add_popularity = {
-				ideology = communist
+				ideology = authoritarian_democrat
 				popularity = 0.02
 			}		
 			add_popularity = {
-				ideology = libertarian_socialist
+				ideology = conservative
 				popularity = 0.03
 			}	
 			add_popularity = {
-				ideology = totalitarian_socialist
+				ideology = nationalist
 				popularity = 0.03
 			}
 		}

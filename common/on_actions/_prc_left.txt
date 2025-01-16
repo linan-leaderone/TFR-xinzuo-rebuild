@@ -106,6 +106,16 @@ add_ideas = 	BRM_civil_war_idea1
 				}
 				if = {
 					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {PRK = {has_idea = beidouweixing}}
+					}
+						PRK = {
+			add_ideas = beidouweixing
+						}
+
+				}
+				if = {
+					limit = {
 						PRC = {has_idea = PRC_shuzihuaminzhu}
 						NOT = {PRK = {has_idea = PRC_shuzihuaminzhu}}
 					}
@@ -191,6 +201,9 @@ add_ideas = 	BRM_civil_war_idea1
 
 	on_startup = {
 		effect = {
+	ROJ = {
+add_ideas = duliyuanjing
+}
 	PRC = {
 recruit_character = PRC_han_dongfang
 recruit_character = PRC_ren_chonghao
@@ -209,6 +222,29 @@ recruit_character = PRC_mao_yuanxin
 	on_capitulation = {
 		effect = {
 
+				if = {
+					limit = {
+	
+
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						PRC = {has_idea = beidouweixing}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+
+		
+						ROOT = {
+			add_ideas = beidouweixing
+						}
+					set_global_flag = skip_default_capitulation
+				}
 				if = {
 					limit = {
 	
@@ -543,7 +579,7 @@ annex_country = {
 					set_global_flag = skip_default_capitulation
 				}
 
-				if = {
+					if = {
 					limit = {
 
 				PRC = {
@@ -556,6 +592,7 @@ annex_country = {
 		}
 		}
 		}
+
 
 						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
 						FROM = {
@@ -581,6 +618,14 @@ annex_country = {
 			}
 						SIA = {
                 inherit_technology = PRC
+annex_country = {
+								target = ETI
+								transfer_troops = yes
+							}
+annex_country = {
+								target = BRU
+								transfer_troops = yes
+							}
 				load_oob = SIA_reserves
 				remove_ideas = PRC_unwilling_ally	
 							
@@ -600,6 +645,42 @@ annex_country = {
 				}  
 						}
 					}
+						PRC = {white_peace = SIA}
+			PRC = {
+				set_autonomy = {
+			target = SIA
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			} 
+			}
+						SIA = {
+                inherit_technology = PRC
+annex_country = {
+								target = ETI
+								transfer_troops = yes
+							}
+annex_country = {
+								target = BRU
+								transfer_troops = yes
+							}
+				load_oob = SIA_reserves
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = SIA_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = SIACCC_party_long name = SIACCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "暹罗革命委员会"
+	                desc = "POLITICS_XLGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
 					set_global_flag = skip_default_capitulation
 				}
 
@@ -719,7 +800,7 @@ PRC = {annex_country = {
 		}
 		}
 		}
-						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						NOT = {PRC = {has_country_flag = PRC_laos_influence_2}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -758,6 +839,54 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = maoism
 				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+										PRC = {
+		OR = {
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+		AND = {
+						PRC_han_dongfang = {is_country_leader = yes}
+						has_government = libertarian_socialist
+		}
+		}
+		}
+						PRC = {has_country_flag = PRC_laos_influence_2}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = CAM
+						}
+					}
+					FROM = {
+						puppet = ROOT
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+
+						VIN = {
+
+				load_oob = CAM_2000
+				
+		annex_country = {
+								target = CAM
+								transfer_troops = yes
+							}
+			every_state = {
+				limit = {
+					is_core_of = CAM
+				}
+			    add_core_of = VIN
+		    }
 						}
 					}
 					set_global_flag = skip_default_capitulation
@@ -1014,6 +1143,13 @@ set_popularities = {
 						}
 					}
 					FROM = {
+			
+				every_state = {
+				limit = {
+					is_core_of = HUT
+				}
+			    remove_core_of = HUT
+		    }	
 			PRC = {
 
 							annex_country = {
@@ -1029,7 +1165,11 @@ release_autonomy = {
 						PHI = {
                 inherit_technology = PRC
 				remove_ideas = PRC_unwilling_ally	
-							
+
+							annex_country = {
+								target = HUT
+								transfer_troops = yes
+							}							
 				set_cosmetic_tag = PHI_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = PHICCC_party_long name = PHICCC_party }
 				set_politics = {
@@ -1045,7 +1185,11 @@ release_autonomy = {
 	                ideology = maoism
 				}  
 						}
-					}
+					}	
+										PRC = {
+			transfer_state = 1384
+								add_state_core = 1384
+				}
 					set_global_flag = skip_default_capitulation
 				}
 				if = {
@@ -1216,7 +1360,11 @@ release_autonomy = {
 	                ideology = maoism
 				}  
 						}
-					}
+					}	
+										PRC = {
+			transfer_state = 1383
+								add_state_core = 1383
+				}
 					set_global_flag = skip_default_capitulation
 				}
 

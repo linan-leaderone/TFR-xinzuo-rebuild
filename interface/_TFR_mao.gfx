@@ -6,7 +6,15 @@ spriteTypes = {
             animation_rate_fps = 30
             looping = yes
             play_on_show = yes
-		}			
+		}				
+	SpriteType = {
+		name = "GFX_idea_generic_beidouweixing_idea"
+		texturefile = "gfx/MAOYUANXIN/beidouweixing.png"
+	}						
+	SpriteType = {
+		name = "GFX_idea_generic_duliyuanjing_idea"
+		texturefile = "gfx/MAOYUANXIN/duliyuanjing.png"
+	}				
 	SpriteType = {
 		name = "GFX_idea_generic_wushenlun_idea"
 		texturefile = "gfx/MAOYUANXIN/wushenlun.png"
@@ -157,6 +165,14 @@ spriteTypes = {
 	}	
 
 
+	spriteType = {
+		name = "GFX_ideology_market_socialism_1"
+		texturefile = "gfx/MAOYUANXIN/market_socialism.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_market_socialism_2"
+		texturefile = "gfx/MAOYUANXIN/market_socialism.png"
+	}	
 	spriteType = {
 		name = "GFX_ideology_anarchist_maoism"
 		texturefile = "gfx/MAOYUANXIN/anarchist_maoism.png"
@@ -1865,6 +1881,42 @@ spriteType = {
 
 		animation = {
 			animationmaskfile = "gfx/MAOYUANXIN/PRC_anti_fix.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_PRC_beidouweixing"
+		texturefile = "gfx/MAOYUANXIN/PRC_beidouweixing.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_beidouweixing"
+		texturefile = "gfx/MAOYUANXIN/PRC_beidouweixing.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_beidouweixing.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/MAOYUANXIN/PRC_beidouweixing.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

@@ -102,7 +102,7 @@ country_event = {
 			}
 			add_stability = -0.25
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = -0.175
 			}
 		}
@@ -353,7 +353,7 @@ country_event = {
 	option = {
 		name = china.18.a
 		set_politics = {
-			ruling_party = communist
+			ruling_party = authoritarian_democrat
 			elections_allowed = no
 		}
 		retire_character = PRC_xi_jinping
@@ -361,7 +361,7 @@ country_event = {
 			character = PRC_Hu_Chunhua
 			promote_leader = yes
 			country_leader = {
-				ideology = market_socialism
+				ideology = market_socialism_2
 				expire = "2099.1.1.1"
 				traits = {
 				}
@@ -408,10 +408,7 @@ country_event = {
 			character = PRC_yao_xinzhong
 			ideology = conservative_socialism
 		}
-		promote_character = {
-			character = PRC_bo_xilai
-			ideology = patriotic_socialism
-		}
+
 		add_country_leader_role = {
 			character = PRC_bo_xilai
 			promote_leader = yes
@@ -426,7 +423,7 @@ country_event = {
 			character = PRC_bo_xilai
 			promote_leader = yes
 			country_leader = {
-				ideology = patriotic_socialism
+				ideology = left_nationalism
 				expire = "1.1.1.1"
 				traits = {
 				}
@@ -446,11 +443,11 @@ country_event = {
 			add_ideas = PRC_yu_hongqiu_sec
 			load_focus_tree = china_new_left_focus
 			add_popularity = {
-				ideology = libertarian_socialist
+				ideology = authoritarian_democrat
 				popularity = 0.1
 			}
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.15
 			}
 			add_popularity = {
@@ -459,8 +456,8 @@ country_event = {
 			}
 			set_party_name = {
 				ideology = communist
-				long_name = PRC_communist11_party_long
-				name = PRC_communist11_party
+				long_name = PRC_cpc_nationalist11_party_long
+				name = PRC_cpc_nationalist11_party
 			}
 			set_party_name = {
 				ideology = social_democrat
@@ -479,13 +476,13 @@ country_event = {
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				long_name = PRC_cpc_authoritarian_democrat_party_long
-				name = PRC_cpc_authoritarian_democrat_party
+				long_name = PRC_cpc_authoritarian_democrat11_party_long
+				name = PRC_cpc_authoritarian_democrat11_party
 			}
 			set_party_name = {
 				ideology = nationalist
-				long_name = PRC_cpc_nationalist_party_long
-				name = PRC_cpc_nationalist_party
+				long_name = PRC_cpc_nationalist11_party_long
+				name = PRC_cpc_nationalist11_party
 			}
 			set_party_name = {
 				ideology = totalitarian_socialist
@@ -545,7 +542,7 @@ country_event = {
 			}
 			add_to_coalition = yes
 			set_temp_variable = {
-				coalition_partner_var_temp = token:authoritarian_democrat
+				coalition_partner_var_temp = token:communist
 			}
 			add_to_coalition = yes
 			news_event = {
@@ -586,13 +583,13 @@ country_event = {
 		set_country_flag = PRC_liberal_win
 		hidden_effect = {
 			set_politics = {
-				ruling_party = communist
+				ruling_party = nationalist
 				elections_allowed = no
 				last_election = "2000.1.1"
 				election_frequency = 48
 			}
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.04
 			}
 			add_popularity = {
@@ -609,7 +606,7 @@ country_event = {
 			}
 			load_focus_tree = china_liberal_focus
 			set_party_name = {
-				ideology = communist
+				ideology = nationalist
 				long_name = PRC_cpc_liberals_authdem
 				name = PRC_cpc_liberals_authdem_short
 			}
@@ -679,8 +676,8 @@ country_event = {
 			}
 			set_popularities = {
 				totalitarian_socialist = 22
-				communist = 12
-				libertarian_socialist = 3
+				nationalist = 12
+				authoritarian_democrat = 3
 				social_democrat = 2
 				social_liberal = 2
 				market_liberal = 0
@@ -769,7 +766,7 @@ country_event = {
 				transfer_troops = no
 			}
 			set_country_leader_portrait = {
-				ideology = communist
+				ideology = nationalist
 				portrait = GFX_portrait_PRC_xi_jinping_taiwan_win
 			}
 			news_event = {
@@ -1578,7 +1575,7 @@ country_event = {
 					    ideology = marxism_leninism
 					}
 					set_party_name = {
-					    ideology = communist
+					    ideology = nationalist
 					    long_name = SIC_long_march_party_long
 					    name = SIC_long_march_party
 					}
@@ -3094,13 +3091,7 @@ country_event = {
 			base = 100
 		}
 	}
-	option = {
-		name = china.84.b
-		complete_national_focus = PRC_slowly_but_surely
-		ai_chance = {
-			base = 0
-		}
-	}
+
 }
 
 #Protests in Major Cities
@@ -3565,7 +3556,7 @@ country_event = {
 		add_political_power = 100
 		set_popularities = {
 			totalitarian_socialist = 45
-			communist = 15
+			nationalist = 15
 			libertarian_socialist = 5
 			social_democrat = 5
 			authoritarian_democrat = 20
@@ -4484,7 +4475,7 @@ country_event = {
 	option = {
 		name = china.1243.a
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.1
 		}
 		add_ideas = PRC_Anti_Military_Protests_idea
@@ -4850,7 +4841,7 @@ country_event = {
 			days = 365
 		}
 		set_politics = {
-			ruling_party = communist
+			ruling_party = nationalist
 			elections_allowed = no
 			last_election = "2000.1.1"
 			election_frequency = 48
@@ -5448,7 +5439,7 @@ country_event = {
 		name = china.149.a
 		add_stability = -0.05
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.15
 		}
 		add_popularity = {
@@ -5498,32 +5489,27 @@ country_event = {
 		name = china.151.a
 		add_stability = -0.1
 		set_party_name = {
-			ideology = totalitarian_socialist
-			long_name = PRC_cpc_maoist_tot_soc
-			name = PRC_cpc_maoist_tot_soc_short
-		}
-		set_party_name = {
-			ideology = communist
+			ideology = nationalist
 			long_name = PRC_cpc_fail_authsoc
 			name = PRC_cpc_fail_authsoc_short
 		}
 		set_party_name = {
-			ideology = libertarian_socialist
+			ideology = authoritarian_democrat
 			long_name = PRC_cpc_neomarxist_libsoc
 			name = PRC_cpc_neomarxist_libsoc_short
 		}
 		set_party_name = {
-			ideology = authoritarian_democrat
+			ideology = conservative
 			long_name = PRC_cpc_liberals_authdem
 			name = PRC_cpc_liberals_authdem_short
 		}
 		end_coalition = yes
 		hidden_effect = {
 			set_popularities = {
-				communist = 24
-				authoritarian_democrat = 16
+				libertarian_socialist = 24
+				conservative = 16
 				totalitarian_socialist = 15
-				libertarian_socialist = 19
+				authoritarian_democrat = 19
 				nationalist = 26
 			}
 		}
@@ -5712,7 +5698,7 @@ country_event = {
 		name = china.159.a
 		add_ideas = PRC_hardliner_resistance_idea1
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = 0.1
 		}
 		1211 = {
@@ -5970,7 +5956,7 @@ country_event = {
 		name = china.174.a
 		retire_character = PRC_Hu_Chunhua
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.1
 		}
 	}
@@ -5990,7 +5976,7 @@ country_event = {
 		name = china.175.a
 		set_popularities = {
 			totalitarian_socialist = 7
-			communist = 36
+			nationalist = 36
 			libertarian_socialist = 12
 			social_democrat = 7
 			social_liberal = 6
@@ -6369,7 +6355,7 @@ country_event = {
 	option = { #CPC Wins
 		name = china.186.a
 		trigger = {
-			communist > 0.3
+			nationalist > 0.3
 		}
 		country_event = { id = china.2002 days = 3 }
 	}
@@ -6593,7 +6579,7 @@ country_event = {
 	option = { #Liberals Stay
 		name = china.191.a
 		trigger = {
-			communist > 0.15
+			nationalist > 0.15
 		}
 	}
 	option = { #Social Platform Left
@@ -6615,7 +6601,7 @@ country_event = {
 			}
 		}
 		set_temp_variable = {
-			coalition_partner_var_temp = token:communist
+			coalition_partner_var_temp = token:nationalist
 		}
 		add_to_coalition = yes
 	}
@@ -6638,7 +6624,7 @@ country_event = {
 			}
 		}
 		set_temp_variable = {
-			coalition_partner_var_temp = token:communist
+			coalition_partner_var_temp = token:nationalist
 		}
 		add_to_coalition = yes
 	}
@@ -6661,7 +6647,7 @@ country_event = {
 			}
 		}
 		set_temp_variable = {
-			coalition_partner_var_temp = token:communist
+			coalition_partner_var_temp = token:nationalist
 		}
 		add_to_coalition = yes
 	}
@@ -6675,7 +6661,7 @@ country_event = {
 			elections_allowed = no
 		}
 		set_temp_variable = {
-			coalition_partner_var_temp = token:communist
+			coalition_partner_var_temp = token:nationalist
 		}
 		add_to_coalition = yes
 	}
@@ -7066,7 +7052,7 @@ country_event = {
 			clr_country_flag = pdto_member
 			set_cosmetic_tag = CHI_PRC_puppet
 			set_politics = {
-				ruling_party = communist
+				ruling_party = nationalist
 				elections_allowed = no
 			}
 			hidden_effect = {
@@ -7700,7 +7686,7 @@ country_event = {
 		name = china.231.a
 		add_stability = -0.025
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.025
 		}
 		country_event = {
@@ -8020,7 +8006,7 @@ country_event = {
 		}
 		add_income = yes
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = 0.05
 		}
 		add_stability = 0.035
@@ -9543,7 +9529,7 @@ country_event = {
 	option = {
 		name = china.288.a
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.03
 		}
 	}
@@ -9562,7 +9548,7 @@ country_event = {
 	option = {
 		name = china.289.a
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.03
 		}
 		add_stability = -0.015
@@ -9582,7 +9568,7 @@ country_event = {
 	option = {
 		name = china.290.a
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.04
 		}
 		add_stability = -0.035
@@ -9603,7 +9589,7 @@ country_event = {
 		name = china.291.a
 		add_political_power = 50
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = 0.025
 		}
 	}
@@ -9720,7 +9706,7 @@ set_cosmetic_tag = PRC_HACHIMI
 			add_stability = -0.25
 			add_political_power = -100
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = -0.1
 			}
 		}
@@ -9739,7 +9725,7 @@ set_cosmetic_tag = PRC_HACHIMI_FLAG
 			add_stability = -0.25
 			add_political_power = -100
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = -0.1
 			}
 		}
@@ -9807,7 +9793,7 @@ country_event = {
 			name = SHA_totalitarian_socialist_short
 		}
 		set_party_name = {
-			ideology = communist
+			ideology = nationalist
 			long_name = PRC_cpc_collapse_1_party
 			name = PRC_cpc_collapse_1_party_short
 		}
@@ -10164,7 +10150,7 @@ country_event = {
 	option = {
 		name = china.307.a
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = 0.015
 		}
 		add_popularity = {
@@ -10199,11 +10185,11 @@ country_event = {
 		add_political_power = -100
 		add_stability = -0.1
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = 0.1
 		}
 		set_politics = {
-			ruling_party = communist
+			ruling_party = nationalist
 			elections_allowed = no
 		}
 		add_country_leader_role = {
@@ -10935,7 +10921,7 @@ country_event = {
 	option = {
 		name = china.344.a
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = 0.025
 		}
 		add_popularity = {
@@ -11102,7 +11088,7 @@ country_event = {
 		name = china.351.a
 		add_political_power = -75
 		add_popularity = {
-			ideology = communist
+			ideology = nationalist
 			popularity = -0.05
 		}
 	}
@@ -11288,7 +11274,7 @@ country_event = {
 					popularity = -0.5
 				}
 				add_popularity = {
-					ideology = communist
+					ideology = nationalist
 					popularity = -0.5
 				}
 				set_party_name = {

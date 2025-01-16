@@ -370,7 +370,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.025
 			}
 			add_ideas = PRC_food_safety_reforms_idea			
@@ -675,7 +675,7 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.05
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.035
 			}
 			#set_power_balance = {
@@ -772,7 +772,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.025
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.035
 			}
 			set_temp_variable = {
@@ -1799,7 +1799,7 @@ has_completed_focus = PRC_south_asian_brothers
 				}
 			}
 	    	add_popularity = {
-	    	   ideology = communist
+	    	   ideology = nationalist
 	    	   popularity = 0.15
 	    	}
 			set_temp_variable = {
@@ -2095,21 +2095,12 @@ shared_focus = {
 	available = {    	    
 		if = {
 			limit = {
-				has_global_flag = PRC_taiwan_war_won
-			}
-			has_country_flag = PRC_xxi_congress_end				
-		}
-		else_if = {
-			limit = {
 				has_country_flag = PRC_new_left_win
 			}
 			OR = {
 				has_completed_focus = PRC_chinese_socialist_dream
 				has_completed_focus = PRC_towards_a_digital_communism
 			}
-		}
-		else = {
-			has_global_flag = pan_asian_war_ongoing
 		}
 		has_completed_focus = PRC_counter_indian_aggression
 		has_completed_focus = PRC_coordinate_eadi_militaries
@@ -2512,10 +2503,55 @@ shared_focus = {
 		news_event = {
 			id = china.99
 		}
+	    hidden_effect = {
+	    every_state = {
+		if = {
+				limit = {
+					is_core_of = HUT
+				}
+			    remove_core_of = HUT
+		    }	
+		    }	
+			every_state = {
+				limit = {
+					is_core_of = PHI
+				}
+			    add_core_of = HUT
+		    }
+			release_autonomy = {
+			target = HUT
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}		
+					HUT = {set_cosmetic_tag = PHI_XIN	
+                inherit_technology = PRC				
+				set_cosmetic_tag = PHI_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = PHICCC_party_long name = PHICCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}	
+				load_oob = PHI_reserves
+				create_country_leader = {
+	                name = "菲律宾革命委员会"
+	                desc = "POLITICS_ASTGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+		    }
+			}
 		unlock_decision_tooltip = PRC_military_intervention_vin_1
+		unlock_decision_tooltip = PRC_military_intervention_phi_1
+		unlock_decision_tooltip = PRC_military_intervention_vin_2
+		unlock_decision_tooltip = PRC_military_intervention_vin_3
 		unlock_decision_tooltip = PRC_military_intervention_thailand_1
+		unlock_decision_tooltip = PRC_military_intervention_thailand_2
+		unlock_decision_tooltip = PRC_military_intervention_thailand_3
 		unlock_decision_tooltip = PRC_military_intervention_cambodia_1
 		unlock_decision_tooltip = PRC_military_intervention_laos_1
+		unlock_decision_tooltip = PRC_military_intervention_laos_2
 		
 	}
 }
@@ -2663,12 +2699,6 @@ shared_focus = {
     active = no
 }}
 					XIN = {set_cosmetic_tag = SAU_XIN}
-			every_state = {
-				limit = {
-					is_core_of = SAU
-				}
-			    add_core_of = XIN
-		    }
 	    every_state = {
 		if = {
 				limit = {
@@ -2683,6 +2713,12 @@ shared_focus = {
 			    remove_core_of = ETL
 		    }
 		    }	
+			every_state = {
+				limit = {
+					is_core_of = SAU
+				}
+			    add_core_of = XIN
+		    }
 		    }	
 		declare_war_on = {
 			target = PER
@@ -2721,10 +2757,12 @@ shared_focus = {
 			}
 		custom_effect_tooltip = PRC_this_will_lead_to_the_gaw
 	    hidden_effect = {
+		focus_unlock = yes
+		complete_national_focus = PRC_chinas_greatest_hour
 	    	set_global_flag = GAW_soon
-				JAP = {
-					country_event = jap.1000
-				}
+			set_global_flag = pan_asian_war_ongoing
+		JAP = {activate_mission = JAP_korean_war_joining}
+
 		NAX = {
 			transfer_state = 435
 			transfer_state = 1372
@@ -3636,6 +3674,40 @@ shared_focus = {
 				value = -0.04
 			}
 		}
+	}
+}
+shared_focus = {
+	id = PRC_beidouweixing
+	icon = GFX_focus_PRC_beidouweixing
+	x = 1
+	y = 2
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+				has_country_flag = PRC_new_left_win
+	}
+	prerequisite = {
+		focus = PRC_chinas_spot_in_the_sun
+	}
+	available = {
+			has_completed_focus = PRC_fund_space_development
+	}
+	completion_reward = {
+		set_country_flag = PRC_army_reform_start
+		add_war_support = 0.05
+			add_ideas = beidouweixing			
+		every_country = {
+			limit = {
+				is_ally_with = PRC
+			}
+			add_ideas = beidouweixing
+		}
+		custom_effect_tooltip = PRC_beidouweixing_gaw
+
+	
 	}
 }
 shared_focus = {
@@ -5778,10 +5850,10 @@ shared_focus = {
 		add_political_power = 50
 		if = {
 			limit = {
-				has_government = communist
+				has_government = nationalist
 			}
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.025
 			}
 		}
@@ -5808,10 +5880,10 @@ shared_focus = {
 		add_stability = 0.05
 		if = {
 			limit = {
-				has_government = communist
+				has_government = nationalist
 			}
 			add_popularity = {
-				ideology = communist
+				ideology = nationalist
 				popularity = 0.05
 			}
 		}

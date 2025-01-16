@@ -1,6 +1,63 @@
 ideas = {	
 	country = {
-								
+											
+beidouweixing = {
+    picture = generic_beidouweixing_idea
+    name = beidouweixing
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	production_speed_buildings_factor = 0.2
+	max_command_power = 500
+	resistance_decay = 0.5
+	required_garrison_factor = -0.3
+	army_org_factor = 0.2
+	army_morale_factor = 0.2
+	recon_factor = 1
+	army_attack_factor = 0.2
+	army_defence_factor = 0.2
+	army_speed_factor = 0.2
+	experience_loss_factor = -0.3
+	army_bonus_air_superiority_factor = 0.2
+	air_cas_present_factor = 0.2
+	air_accidents = -0.2
+	air_weather_penalty = -0.2
+	air_attack_factor = 0.2
+	invasion_preparation = -0.3
+	amphibious_invasion = 0.3
+
+
+    }
+}								
+duliyuanjing = {
+    picture = generic_duliyuanjing_idea
+    name = duliyuanjing
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = 1
+       army_defence_factor = 1
+
+    }
+}							
 wushenlun_idea = {
     picture = generic_wushenlun_idea
     name = PRC_wushenlun_idea

@@ -4779,7 +4779,13 @@ remove_ideas = militia_looting
 					is_core_of = TIB
 				}
 			    remove_core_of = TIB
-		    }	
+		    }		
+				every_state = {
+				limit = {
+					is_core_of = HKN
+				}
+			    remove_core_of = HKN
+		    }
 
 
 					if = {
@@ -6526,7 +6532,6 @@ remove_ideas = militia_looting
 			focus = PRC_denounce_deng_xiao_ping_thought
 		}
 		mutually_exclusive = {
-			focus = PRC_revive_ideas_chongqing_model
 		}
 		ai_will_do = {
 			factor = 50
@@ -7693,13 +7698,12 @@ has_country_leader = {
 			focus = PRC_denounce_deng_xiao_ping_thought
 		}
 		mutually_exclusive = {
-			focus = PRC_towards_automated_socialism
 		}
 		ai_will_do = {
 			factor = 75
 		}
 		available = {
-			has_completed_focus = PRC_revolution_of_21_century
+			NOT = {has_completed_focus = PRC_rejuvinate_cpc_cadres}
 		  
 		}
 		completion_reward = {
