@@ -55,6 +55,8 @@ duliyuanjing = {
     modifier = {
         war_support_factor = 1
        army_defence_factor = 1
+				army_core_attack_factor = 1
+				army_core_defence_factor = 1
 
     }
 }							

@@ -1,4 +1,10 @@
 taihai_test_2 = {
+			if = {
+				limit = {
+					NOT = { has_idea = zhongmeijingji_idea_10  }
+				}
+				activate_mission = PRC_zhongmeijingji_joining
+				}
 if = {
     limit = {
         has_idea = zhongmeijingji_idea_10
