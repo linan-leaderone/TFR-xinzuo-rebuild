@@ -38,6 +38,30 @@ beidouweixing = {
 
     }
 }								
+kmgjhz = {
+    picture = generic_kmgjhz_idea
+    name = kmgjhz
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.5
+       army_defence_factor = -0.6
+	army_attack_factor = -0.6
+	line_change_production_efficiency_factor = -0.5
+	industrial_capacity_factory = -0.5
+
+
+    }
+}									
 duliyuanjing = {
     picture = generic_duliyuanjing_idea
     name = duliyuanjing

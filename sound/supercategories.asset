@@ -1,0 +1,10 @@
+category = {
+	name = "Super Events"
+	soundeffects = {
+		ecwar2
+		ecwar
+		rcwar
+
+	}
+	compressor = master_compressor
+}

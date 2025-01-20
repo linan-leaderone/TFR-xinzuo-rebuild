@@ -1,0 +1,18 @@
+sound = {
+	name = "ecwar"
+	file = "menu/ecwar.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "ecwar2"
+	file = "menu/ecwar2.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "rcwar"
+	file = "menu/rcwar.wav"
+	volume = 1
+	always_load = yes
+}

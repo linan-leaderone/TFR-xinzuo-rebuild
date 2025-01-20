@@ -1666,7 +1666,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_establish_eadi
 	x = 39
 	y = 0
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_the_red_phoenix
 	
@@ -1707,7 +1707,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_our_commitment_to_korea
 	x = -1
 	y = 2
-	cost = 5
+	cost = 1
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -1765,7 +1765,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_push_for_thaw
 	x = -1
 	y = 3
-	cost = 2
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -1860,7 +1860,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_support_the_korean_way
 	x = 1
 	y = 3
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -1903,7 +1903,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_joint_military_exercises
 	x = 2
 	y = 4
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -1956,7 +1956,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_korean_economic_assistence
 	x = -2
 	y = 4
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -2030,7 +2030,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_finilize_korean_revolution_1
 	x = 0
 	y = 4
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -2411,7 +2411,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia
 	x = -5
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2472,7 +2472,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_1
 	x = -7
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2504,6 +2504,11 @@ shared_focus = {
 			id = china.99
 		}
 	    hidden_effect = {
+		SOV = {set_party_name = {
+			ideology = totalitarian_socialist
+			long_name = SOV_stalinist_bloc_rcpm11
+			name = SOV_stalinist_bloc_short_rcpm11
+		}}
 	    every_state = {
 		if = {
 				limit = {
@@ -2542,6 +2547,7 @@ shared_focus = {
 				}  
 		    }
 			}
+		unlock_decision_tooltip = PRC_military_intervention_sov_1
 		unlock_decision_tooltip = PRC_military_intervention_vin_1
 		unlock_decision_tooltip = PRC_military_intervention_phi_1
 		unlock_decision_tooltip = PRC_military_intervention_vin_2
@@ -2561,7 +2567,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_2
 	x = -7
 	y = 2
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2582,7 +2588,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_3
 	x = -9
 	y = 2
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2609,7 +2615,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_6
 	x = -7
 	y = 3
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2656,14 +2662,19 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_5
 	x = -9
 	y = 3
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
 	}
+	bypass = {
+			NOT = {
+				country_exists = PER
+			}
+	}
 	available = {
-		TAL = {is_ally_with = PRC}
+		AFG = {is_ally_with = PRC}
 		IRQ = {is_ally_with = PER}
 	}
 	prerequisite = { focus = PRC_masters_of_asia_3 }
@@ -2748,19 +2759,37 @@ shared_focus = {
 			}
 		}
 	}
-	prerequisite = { focus = PRC_masters_of_asia_5 }
-	prerequisite = { focus = PRC_masters_of_asia_6 }
-	prerequisite = { focus = PRC_coordinate_eadi_militaries }
+	prerequisite = {
+		 focus = PRC_masters_of_asia_5 
+		 }
+	prerequisite = {
+		 focus = PRC_coordinate_eadi_militaries
+		 }
+	prerequisite = {
+		 focus = PRC_masters_of_asia_6
+		 }
 	completion_reward = {
 			country_event = {
 				id = PRC_MAO.8
 			}
 		custom_effect_tooltip = PRC_this_will_lead_to_the_gaw
 	    hidden_effect = {
+		RAJ = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+	    }
+		JAP = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+	    }
 		focus_unlock = yes
-		complete_national_focus = PRC_chinas_greatest_hour
 	    	set_global_flag = GAW_soon
 			set_global_flag = pan_asian_war_ongoing
+			mark_focus_tree_layout_dirty = yes
+
+		complete_national_focus = PRC_chinas_greatest_hour
 		JAP = {activate_mission = JAP_korean_war_joining}
 
 		NAX = {
@@ -2813,7 +2842,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_8
 	x = -7
 	y = 5
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2842,6 +2871,22 @@ shared_focus = {
 		unlock_decision_tooltip = PRC_military_intervention_zap_1
 		unlock_decision_tooltip = PRC_military_intervention_zap_2
 	
+	    hidden_effect = {	
+					NGA = {
+						dismantle_faction = yes
+					}
+					MLI = {
+						dismantle_faction = yes
+					}
+					EGY = {
+						dismantle_faction = yes
+					}
+					
+					TZN = {
+						dismantle_faction = yes
+					}
+	}
+
 			every_country = {
 				limit = {
 						is_ally_with = PRC
@@ -2852,15 +2897,120 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = PRC_masters_of_asia_11
-	icon = GFX_focus_PRC_masters_of_asia_11
-	x = -8
-	y = 6
+	id = PRC_masters_of_asia_16
+	icon = GFX_focus_PRC_masters_of_asia_16
+	x = -5
+	y = 4
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+				has_completed_focus = PRC_masters_of_asia_5
+		SOV = {totalitarian_socialist > 0.4}
+	OR = {
+		has_global_flag = SOV_first_nato_war_victory
+		has_global_flag = nato_nato_won_nato_war				
+	}
+										
+	}
+	prerequisite = { focus = PRC_coordinate_eadi_militaries }
+	completion_reward = {
+		custom_effect_tooltip = PRC_this_will_lead_to_the_grcw
+		
+	
+	    hidden_effect = {	
+			
+				set_country_flag = rcwar_flag	
+				scoped_sound_effect = rcwar
+				scoped_play_song = "one_minute_of_silence"
+					country_event = PRC_MAO.32
+			set_country_flag = RUS_EUO_PRC	
+						SOV = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = -0.15
+			}
+						} 
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		} 
+		declare_war_on = {
+			target = KAZ
+			type = annex_everything
+		} 
+		declare_war_on = {
+			target = TAJ
+			type = annex_everything
+		} 
+		declare_war_on = {
+			target = UZB
+			type = annex_everything
+		} 
+		declare_war_on = {
+			target = TMS
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = KYR
+			type = annex_everything
+		}
+	}
+
+
+	}
+}
+shared_focus = {
+	id = PRC_masters_of_asia_17
+	icon = GFX_focus_PRC_masters_of_asia_17
+	x = -9
+	y = 4
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	OR = {
+		has_global_flag = SOV_first_nato_war_victory
+		has_global_flag = nato_nato_won_nato_war				
+	}
+										
+	}
+	prerequisite = { focus = PRC_masters_of_asia_5 }
+	completion_reward = {
+		custom_effect_tooltip = PRC_this_will_lead_to_the_gecw
+		
+	
+	    hidden_effect = {	
+				set_country_flag = ecwar_flag	
+				scoped_sound_effect = ecwar
+				scoped_play_song = "one_minute_of_silence"
+	}
+
+
+	}
+}
+shared_focus = {
+	id = PRC_masters_of_asia_11
+	icon = GFX_focus_PRC_masters_of_asia_11
+	x = -8
+	y = 6
+	cost = 3
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = RCG
+			}
 	}
 	available = {
 											
@@ -2956,11 +3106,16 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_9
 	x = -6
 	y = 6
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = MEX
+			}
 	}
 	available = {
 						NOT = {country_exists = MEX}
@@ -3006,11 +3161,16 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_14
 	x = -5
 	y = 7
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = ELN
+			}
 	}
 	available = {
 						NOT = {country_exists = COL}
@@ -3058,15 +3218,71 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = PRC_masters_of_asia_12
-	icon = GFX_focus_PRC_masters_of_asia_12
-	x = -4
-	y = 6
-	cost = 5
+	id = PRC_masters_of_asia_15
+	icon = GFX_focus_PRC_masters_of_asia_15
+	x = -7
+	y = 7
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+					
+													
+	}
+	prerequisite = { focus = PRC_masters_of_asia_8 }
+	completion_reward = {
+
+		custom_effect_tooltip = alb_this_will_lead	
+LBA = {add_ideas = kmgjhz }
+	    hidden_effect = {	
+		declare_war_on = {
+			target = EGY
+			type = annex_everything
+		}	
+		declare_war_on = {
+			target = SUD
+			type = annex_everything
+		}	
+		declare_war_on = {
+			target = LBA
+			type = annex_everything
+		}	
+		declare_war_on = {
+			target = SSD
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = WES
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = MRT
+			type = annex_everything
+		}
+	}
+
+
+
+	}
+}
+shared_focus = {
+	id = PRC_masters_of_asia_12
+	icon = GFX_focus_PRC_masters_of_asia_12
+	x = -4
+	y = 6
+	cost = 3
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = NIC
+			}
 	}
 	available = {
 													
@@ -3168,11 +3384,16 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_10
 	x = -10
 	y = 6
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = EFF
+			}
 	}
 	available = {
 						NOT = {country_exists = CFF}
@@ -3249,11 +3470,16 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_13
 	x = -9
 	y = 7
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = EFF
+			}
 	}
 	available = {
 											
@@ -3274,19 +3500,6 @@ shared_focus = {
     relation = guarantee
     active = no
 }}
-					NGA = {
-						dismantle_faction = yes
-					}
-					MLI = {
-						dismantle_faction = yes
-					}
-					EGY = {
-						dismantle_faction = yes
-					}
-					
-					TZN = {
-						dismantle_faction = yes
-					}
 		EFF = {
                 inherit_technology = PRC
 			annex_country = {
@@ -3491,7 +3704,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_south_asian_brothers
 	x = -3
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -3539,7 +3752,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_revolution_in_myanmar
 	x = -5
 	y = 2
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
@@ -3584,7 +3797,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_coordinate_eadi_militaries
 	x = 0
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_revolution_in_myanmar
 	ai_will_do = {
@@ -3610,7 +3823,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_chinas_spot_in_the_sun
 	x = 1
 	y = 0
-	cost = 3
+	cost = 1
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 1
@@ -3715,7 +3928,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_prepare_for_the_next_war
 	x = -1
 	y = 1
-	cost = 3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_chinas_spot_in_the_sun
 	ai_will_do = {
@@ -3759,7 +3972,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_lessons_from_the_taiwan_war
 	x = 1
 	y = 1
-	cost = 3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_chinas_spot_in_the_sun
 	ai_will_do = {
@@ -3816,7 +4029,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_next_generation_airforce
 	x = -5
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_prepare_for_the_next_war
 	ai_will_do = {
@@ -4148,7 +4361,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_a_blue_water_navy
 	x = -1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_prepare_for_the_next_war
 	ai_will_do = {
@@ -4899,7 +5112,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_sharpen_the_southern_blade
 	x = 1
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_lessons_from_the_taiwan_war
 	ai_will_do = {
@@ -4933,7 +5146,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_expand_the_thunder_gods
 	x = 3
 	y = 1
-	cost = 5
+	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_lessons_from_the_taiwan_war
 	ai_will_do = {

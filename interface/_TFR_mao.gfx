@@ -8,6 +8,22 @@ spriteTypes = {
             play_on_show = yes
 		}				
 	SpriteType = {
+		name = "GFX_super_ecwar2"
+		texturefile = "gfx/MAOYUANXIN/super_ecwar2.png"
+	}							
+	SpriteType = {
+		name = "GFX_super_ecwar"
+		texturefile = "gfx/MAOYUANXIN/super_ecwar.png"
+	}							
+	SpriteType = {
+		name = "GFX_super_rcwar"
+		texturefile = "gfx/MAOYUANXIN/super_rcwar.png"
+	}			
+	SpriteType = {
+		name = "GFX_idea_generic_kmgjhz_idea"
+		texturefile = "gfx/MAOYUANXIN/kongjunhongzha.png"
+	}						
+	SpriteType = {
 		name = "GFX_idea_generic_beidouweixing_idea"
 		texturefile = "gfx/MAOYUANXIN/beidouweixing.png"
 	}						
@@ -1899,7 +1915,7 @@ spriteType = {
 		texturefile = "gfx/MAOYUANXIN/PRC_beidouweixing.png"
 	}
 	SpriteType = {
-		name = "GFX_focus_PRC_beidouweixing"
+		name = "GFX_focus_PRC_beidouweixing_shine"
 		texturefile = "gfx/MAOYUANXIN/PRC_beidouweixing.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

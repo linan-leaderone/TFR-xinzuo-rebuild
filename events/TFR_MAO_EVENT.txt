@@ -875,50 +875,8 @@ traits = { 
 }
 
 
-country_event = {
-	id = PRC_MAO.28
-	title = PRC_MAO.28.t
-	desc = PRC_MAO.28.d
-	picture = GFX_PRC_MAO_event_28
-	is_triggered_only = no
-	fire_only_once = yes
-	trigger = {
-		tag = PRC
-										GER = {
-	has_war_with = SOV
-		}
-										PRC = {
-	has_war_with = SOV
-		}
-	}
 
-	option = {
-		name = PRC_MAO.28.a
-	PRC = {set_country_flag = RUS_EUO_PRC}		
-}	
-}
 
-country_event = {
-	id = PRC_MAO.29
-	title = PRC_MAO.29.t
-	desc = PRC_MAO.29.d
-	picture = GFX_PRC_MAO_event_29
-	is_triggered_only = no
-	fire_only_once = yes
-	trigger = {
-		tag = PRC
-	PRC = {has_country_flag = RUS_EUO_PRC}	
-
-	SOV = {surrender_progress > 0.65}
-	}
-
-	option = {
-		name = PRC_MAO.29.a
-					SOV = {
-						dismantle_faction = yes
-					}
-}	
-}
 news_event = {
 	id = PRC_MAO.30
 	title = PRC_MAO.30.t
@@ -943,38 +901,6 @@ news_event = {
 		}
 	}
 }
-country_event = {
-	id = PRC_MAO.31
-	title = PRC_MAO.31.t
-	desc = PRC_MAO.31.d
-	picture = GFX_PRC_MAO_event_31
-	is_triggered_only = no
-	fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		PRC = {
-	has_war_with = SOV
-		}
-	SOV = {surrender_progress > 0.1}
-	}
-
-	option = {
-		name = PRC_MAO.31.a
-
-
-			country_event = {
-				id = PRC_MAO.32
-				days = 1
-			}
-		declare_war_on = {
-			target = SOV
-			type = annex_everything
-		}
-
-}	
-
-}
 news_event = {
 	id = PRC_MAO.32
 	title = PRC_MAO.32.t
@@ -991,12 +917,25 @@ news_event = {
 				tag = PRC
 			}
 		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = rcwar_flag	
+				scoped_sound_effect = rcwar
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
 	}
 	option = {
 		name = PRC_MAO.32.b
 		trigger = {
 			tag = PRC
 		}
+		hidden_effect = {
+
+	}
 	}
 }
 
@@ -1011,7 +950,7 @@ country_event = {
 		tag = PRC
 	PRC = {has_country_flag = RUS_EUO_PRC}	
 
-	SOV = {surrender_progress > 0.75}
+	SOV = {surrender_progress > 0.6}
 	}
 
 	option = {
@@ -1022,433 +961,15 @@ country_event = {
 										every_country = {
 						white_peace = SOV
 					}
-					SOV = {
-						if = {
-							limit = {
-								GER = {
-									OR = {
-										has_government = communist
-										has_government = libertarian_socialist
-									}
-								}
-							}
-							SOV_Zhir_defeat_in_2nd_European_War = yes
-							GER = {
-								puppet = SOV
-							}
-						}
-						else_if = {
-							limit = {
-								GER = {
-									OR = {
-										has_government = fascist
-										has_government = national_socialist
-										has_government = nationalist
-									}
-								}
-							}
-							SOV_USSR_defeat_in_2nd_European_War = yes
-							GER = {
-								puppet = SOV
-							}
-						}
-						else_if = {
-							limit = {
-								GER = {
-									OR = {
-										has_completed_focus = GER_democracy_falters
-										has_cosmetic_tag = EUU
-									}
-								}
-							}
-							SOV_Medv_defeat_in_2nd_European_War = yes
-						}
-						else_if = {
-							limit = {
-								GER = {
-									OR = {
-										has_completed_focus = GER_democracy_falters
-										has_government = conservative
-									}
-								}
-								GER = {
-									exists = yes
-								}
-							}
-							news_event = {
-								id = news.256
-							}
-							BEL = {
-								set_autonomy = {
-									target = SOV
-									autonomous_state = autonomy_supervised_state
-									freedom_level = 0.4
-								}
-							}
-							SOV = {
-								set_cosmetic_tag = SOV_nato
-								set_politics = {
-									ruling_party = social_liberal
-									last_election = "2013.5.12"
-									election_frequency = 48
-									elections_allowed = no
-								}
-								add_popularity = {
-									ideology = social_liberal
-									popularity = 0.35
-								}
-								create_country_leader = {
-									name = NATO_mandate_council
-									picture = "NATO Mandate Council.dds"
-									ideology = supervised_democracy_liberal
-									traits = {
-									}
-								}
-								country_event = {
-									id = russia.143
-									days = 176
-								}
-								country_event = {
-									id = russia.208
-								}
-							}
-							UKR = {
-								add_state_core = 137
-								add_state_core = 1059
-								add_state_core = 853
-								add_state_core = 218
-								add_state_core = 240
-								add_state_core = 1283
-								transfer_state = 137
-								transfer_state = 1059
-								transfer_state = 853
-								transfer_state = 218
-								transfer_state = 240
-								transfer_state = 1283
-							}
-							NOA = {
-								add_state_core = 237
-								add_state_core = 217
-								add_state_core = 236
-								transfer_state = 236
-								transfer_state = 217
-								transfer_state = 237
-								set_cosmetic_tag = NOA_volga
-								set_politics = {
-									ruling_party = authoritarian_democrat
-									last_election = "2013.5.12"
-									election_frequency = 48
-									elections_allowed = no
-								}
-								add_popularity = {
-									ideology = authoritarian_democrat
-									popularity = 0.15
-								}
-								create_country_leader = {
-									name = GER_richard_rossmanith
-									picture = "Richard_Rossmanith.dds"
-									ideology = military_democracy
-									traits = {
-									}
-								}
-								load_oob = "NOA_volga"
-							}
-							TAN = {
-								add_state_core = 329
-								transfer_state = 329
-							}
-							GLC = {
-								add_state_core = 582
-								add_state_core = 653
-								add_state_core = 652
-								add_state_core = 572
-								add_state_core = 403
-								add_state_core = 398
-								transfer_state = 582
-								transfer_state = 653
-								transfer_state = 652
-								transfer_state = 572
-								transfer_state = 403
-								transfer_state = 398
-							}
-							NAV = {
-								add_state_core = 195
-								add_state_core = 146
-								add_state_core = 216
-								add_state_core = 214
-								add_state_core = 215
-								add_state_core = 213
-								add_state_core = 147
-								add_state_core = 722
-								transfer_state = 195
-								transfer_state = 146
-								transfer_state = 216
-								transfer_state = 214
-								transfer_state = 215
-								transfer_state = 213
-								transfer_state = 147
-								transfer_state = 722
-								set_cosmetic_tag = NAV_nato
-							}
-							KKP = {
-								add_state_core = 239
-								add_state_core = 401
-								add_state_core = 250
-								add_state_core = 251
-								transfer_state = 239
-								transfer_state = 250
-								transfer_state = 251
-								transfer_state = 401
-								set_cosmetic_tag = KKP_ssr
-								set_politics = {
-									ruling_party = communist
-									last_election = "2013.5.12"
-									election_frequency = 48
-									elections_allowed = no
-								}
-								add_popularity = {
-									ideology = communist
-									popularity = 0.35
-								}
-							}
-							YAM = {
-								add_state_core = 580
-								add_state_core = 579
-								add_state_core = 403
-								transfer_state = 580
-								transfer_state = 579
-								transfer_state = 403
-								set_cosmetic_tag = YAM_military
-								set_politics = {
-									ruling_party = nationalist
-									last_election = "2013.5.12"
-									election_frequency = 48
-									elections_allowed = no
-								}
-								add_popularity = {
-									ideology = nationalist
-									popularity = 0.35
-								}
-								create_country_leader = {
-									name = SOV_viktor_zolotov
-									picture = "Viktor Zolotov.dds"
-									ideology = military_junta
-									traits = {
-									}
-								}
-							}
-							BLR = {
-								transfer_state = 94
-								transfer_state = 808
-								transfer_state = 95
-								transfer_state = 206
-								transfer_state = 194
-								transfer_state = 204
-								transfer_state = 194
-								transfer_state = 241
-								transfer_state = 207
-							}
-							KIR = {
-								add_state_core = 563
-								add_state_core = 566
-								add_state_core = 567
-								add_state_core = 574
-								transfer_state = 563
-								transfer_state = 566
-								transfer_state = 567
-								transfer_state = 574
-							}
-							OCC = {
-								add_state_core = 564
-								add_state_core = 565
-								transfer_state = 564
-								transfer_state = 565
-							}
-							FLN = {
-								add_state_core = 516
-								add_state_core = 577
-								add_state_core = 576
-								add_state_core = 578
-								add_state_core = 568
-								add_state_core = 571
-								add_state_core = 570
-								add_state_core = 40
-								add_state_core = 569
-								add_state_core = 654
-								transfer_state = 516
-								transfer_state = 577
-								transfer_state = 576
-								transfer_state = 578
-								transfer_state = 568
-								transfer_state = 571
-								transfer_state = 570
-								transfer_state = 40
-								transfer_state = 569
-								transfer_state = 654
-							}
-							STL = {
-								add_state_core = 260
-								add_state_core = 265
-								transfer_state = 260
-								transfer_state = 265
-								load_oob = "STL_2020"
-							}
-							STV = {
-								add_state_core = 397
-								transfer_state = 397
-							}
-							SOL = {
-								add_state_core = 256
-								add_state_core = 249
-								transfer_state = 256
-								transfer_state = 249
-							}
-							BSK = {
-								add_state_core = 651
-								transfer_state = 651
-								set_cosmetic_tag = BSK_bashkiria
-								set_politics = {
-									ruling_party = authoritarian_democrat
-									elections_allowed = no
-								}
-								set_popularities = {
-									communist = 25
-									libertarian_socialist = 5
-									nationalist = 20
-									authoritarian_democrat = 40
-									fascist = 10
-								}
-							}
-							UDM = {
-								add_state_core = 399
-								transfer_state = 399
-								set_cosmetic_tag = UDM_udmurtia
-								set_politics = {
-									ruling_party = authoritarian_democrat
-									elections_allowed = no
-								}
-								set_popularities = {
-									communist = 25
-									libertarian_socialist = 10
-									nationalist = 5
-									authoritarian_democrat = 40
-									social_liberal = 10
-								}
-							}
-							CKK = {
-								add_state_core = 408
-								add_state_core = 637
-								add_state_core = 655
-								add_state_core = 537
-								add_state_core = 555
-								transfer_state = 408
-								transfer_state = 637
-								transfer_state = 655
-								transfer_state = 537
-								transfer_state = 555
-							}
-							SEY = {
-								add_state_core = 644
-								transfer_state = 644
-							}
-							NAU = {
-								add_state_core = 409
-								add_state_core = 657
-								add_state_core = 560
-								add_state_core = 562
-								add_state_core = 561
-								transfer_state = 409
-								transfer_state = 657
-								transfer_state = 560
-								transfer_state = 562
-								transfer_state = 561
-							}
-							NFJ = {
-								add_state_core = 262
-								transfer_state = 262
-							}
-							PUR = {
-								add_state_core = 400
-								add_state_core = 351
-								add_state_core = 264
-								transfer_state = 400
-								transfer_state = 351
-								transfer_state = 264
-							}
-							CHU = {
-								add_state_core = 256
-								add_state_core = 581
-								transfer_state = 256
-								transfer_state = 581
-							}
-							KYR = {
-								set_politics = {
-									ruling_party = totalitarian_socialist
-									elections_allowed = no
-								}
-								set_popularities = {
-									communist = 25
-									totalitarian_socialist = 70
-									nationalist = 5
-								}
-							}
-							TAJ = {
-								set_politics = {
-									ruling_party = nationalist
-									elections_allowed = no
-								}
-								set_popularities = {
-									nationalist = 100
-								}
-							}
-							YAK = {
-								set_politics = {
-									ruling_party = nationalist
-									elections_allowed = no
-								}
-								set_popularities = {
-									nationalist = 100
-								}
-								add_state_core = 587
-								add_state_core = 804
-								transfer_state = 587
-								transfer_state = 804
-							}
-							TAT = {
-								set_politics = {
-									ruling_party = nationalist
-									elections_allowed = no
-								}
-								set_popularities = {
-									nationalist = 100
-								}
-								add_state_core = 821
-								add_state_core = 585
-								transfer_state = 821
-								transfer_state = 585
-							}
-							KAZ = {
-								country_event = {
-									id = russia.131
-									days = 30
-								}
-							}
-						}
-					}
-
-	NAU = {
-		transfer_state = 1328
-		transfer_state = 560
-		transfer_state = 657
-		transfer_state = 408
-		transfer_state = 409
-		transfer_state = 537
+	SOV = {
+			set_cosmetic_tag = SOV_SovietUnion
+						load_focus_tree = generic_focus
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_neomaoism111_idea}
-						NOT = {NAU = {has_idea = PRC_neomaoism111_idea}}
+						NOT = {SOV = {has_idea = PRC_neomaoism111_idea}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = PRC_neomaoism111_idea
 						}
 
@@ -1456,9 +977,9 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = wushenlun_idea}
-						NOT = {NAU = {has_idea = wushenlun_idea}}
+						NOT = {SOV = {has_idea = wushenlun_idea}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = wushenlun_idea
 						}
 
@@ -1466,9 +987,9 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = jjdzxjd_idea}
-						NOT = {NAU = {has_idea = jjdzxjd_idea}}
+						NOT = {SOV = {has_idea = jjdzxjd_idea}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = jjdzxjd_idea
 						}
 
@@ -1476,9 +997,9 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
-						NOT = {NAU= {has_idea = PRC_coordinate_eadi_militaries_idea}}
+						NOT = {SOV= {has_idea = PRC_coordinate_eadi_militaries_idea}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = PRC_coordinate_eadi_militaries_idea
 						}
 
@@ -1486,9 +1007,9 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_yuuki_4}
-						NOT = {NAU = {has_idea = PRC_yuuki_4}}
+						NOT = {SOV = {has_idea = PRC_yuuki_4}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = PRC_yuuki_4
 						}
 
@@ -1496,9 +1017,9 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_shuzihuaminzhu}
-						NOT = {NAU = {has_idea = PRC_shuzihuaminzhu}}
+						NOT = {SOV = {has_idea = PRC_shuzihuaminzhu}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = PRC_shuzihuaminzhu
 						}
 
@@ -1506,9 +1027,9 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_socialist_dream_idea}
-						NOT = {NAU = {has_idea = PRC_socialist_dream_idea}}
+						NOT = {SOV = {has_idea = PRC_socialist_dream_idea}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = PRC_socialist_dream_idea
 						}
 
@@ -1516,66 +1037,15 @@ country_event = {
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
-						NOT = {NAU = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+						NOT = {SOV = {has_idea = PRC_future_of_cyber_communism_idea_1}}
 					}
-						NAU = {
+						SOV = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
 						}
 
 				}
-		add_state_core = 1328
-		add_state_core = 560
-		add_state_core = 657
-		add_state_core = 408
-		add_state_core = 409
-		add_state_core = 537
-		add_state_core = 644
-		add_state_core = 574
-		transfer_state = 644
-		transfer_state = 574
-		add_state_core = 644
-		transfer_state = 1293
-		add_state_core = 1293
-		transfer_state = 561
-		add_state_core = 561
-		transfer_state = 562
-		add_state_core = 562
-		transfer_state = 637
-		add_state_core = 637
-		transfer_state = 655
-		add_state_core = 655
-		add_state_core = 555
-		transfer_state = 555
-		add_state_core = 566
-		add_state_core = 565
-		add_state_core = 567
-		transfer_state = 566
-		transfer_state = 565
-		transfer_state = 567
-		add_state_core = 568
-		add_state_core = 575
-		add_state_core = 654
-		add_state_core = 576
-		add_state_core = 568
-		add_state_core = 569
-		add_state_core = 40
-		add_state_core = 570
-		add_state_core = 578
-		add_state_core = 563
-		add_state_core = 564
-		transfer_state = 568
-		transfer_state = 563
-		transfer_state = 564
-		transfer_state = 575
-		transfer_state = 654
-		transfer_state = 576
-		transfer_state = 568
-		transfer_state = 569
-		transfer_state = 40
-		transfer_state = 570
-		transfer_state = 578
 			PRC = {set_autonomy = {
-			target = NAU
+			target = SOV
 			autonomy_state = autonomy_tongzhi
 			}}
 		create_country_leader = {
@@ -1591,8 +1061,8 @@ country_event = {
 		}
 		set_party_name = {
 			ideology = totalitarian_socialist
-			long_name = SOV_stalinist_bloc_rcpm
-			name = SOV_stalinist_bloc_short_rcpm
+			long_name = SOV_stalinist_bloc_rcpm11
+			name = SOV_stalinist_bloc_short_rcpm11
 		}
 
 
@@ -1605,9 +1075,9 @@ country_event = {
 
 
 
-							TAL = {
+							AFG = {
 			PRC = {set_autonomy = {
-			target = TAL
+			target = AFG
 			autonomy_state = autonomy_tongzhi
 			}}
 		set_politics = {
@@ -1652,49 +1122,49 @@ country_event = {
 				limit = {
 					is_core_of = TAJ
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 
 			every_state = {
 				limit = {
 					is_core_of = KYR
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 
 			every_state = {
 				limit = {
 					is_core_of = KHI
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 
 			every_state = {
 				limit = {
 					is_core_of = NWY
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 
 			every_state = {
 				limit = {
 					is_core_of = TMS
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 
 			every_state = {
 				limit = {
 					is_core_of = KAZ
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 
 			every_state = {
 				limit = {
 					is_core_of = UZB
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 		    }
 
@@ -1730,10 +1200,7 @@ AFG = {annex_country = {
 							}
 							}
 
-remove_ideas = AFG_corrupt_military_staff
-remove_ideas = AFG_unified_afghanistan
-remove_ideas = AFG_diarchy
-remove_ideas = AFG_crushing_taliban
+
 			every_state = {
 				limit = {
 					is_core_of = TAL
@@ -1758,87 +1225,6 @@ remove_ideas = AFG_crushing_taliban
 				}
 			    remove_core_of = PAK
 		    }
-				if = {
-					limit = {
-						PRC = {has_idea = PRC_shuzihuaminzhu}
-						NOT = {AFG = {has_idea = PRC_shuzihuaminzhu}}
-					}
-						AFG = {
-			add_ideas = PRC_shuzihuaminzhu
-						}
-
-				}
-				if = {
-					limit = {
-						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
-						NOT = {AFG = {has_idea = PRC_coordinate_eadi_militaries_idea}}
-					}
-						AFG = {
-			add_ideas = PRC_coordinate_eadi_militaries_idea
-						}
-
-				}	
-				if = {
-					limit = {
-						PRC = {has_idea = PRC_neomaoism111_idea}
-						NOT = {AFG = {has_idea = PRC_neomaoism111_idea}}
-					}
-						AFG = {
-			add_ideas = PRC_neomaoism111_idea
-						}
-
-				}
-				if = {
-					limit = {
-						PRC = {has_idea = jjdzxjd_idea}
-						NOT = {AFG = {has_idea = jjdzxjd_idea}}
-					}
-						AFG = {
-			add_ideas = jjdzxjd_idea
-						}
-
-				}
-
-				if = {
-					limit = {
-						PRC = {has_idea = PRC_yuuki_4}
-						NOT = {AFG = {has_idea = PRC_yuuki_4}}
-					}
-						AFG = {
-			add_ideas = PRC_yuuki_4
-						}
-
-				}
-				if = {
-					limit = {
-						PRC = {has_idea = wushenlun_idea}
-						NOT = {AFG = {has_idea = wushenlun_idea}}
-					}
-						AFG = {
-			add_ideas = wushenlun_idea
-						}
-
-				}
-				if = {
-					limit = {
-						PRC = {has_idea = PRC_socialist_dream_idea}
-						NOT = {AFG= {has_idea = PRC_socialist_dream_idea}}
-					}
-						AFG = {
-			add_ideas = PRC_socialist_dream_idea
-						}
-
-				}
-				if = {
-					limit = {
-						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
-						NOT = {AFG = {has_idea = PRC_future_of_cyber_communism_idea_1}}
-					}
-						AFG = {
-			add_ideas = PRC_future_of_cyber_communism_idea_1
-						}
-
-				}
 
 
 			PRC = {set_autonomy = {

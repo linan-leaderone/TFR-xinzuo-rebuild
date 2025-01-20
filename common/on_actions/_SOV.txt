@@ -495,6 +495,12 @@ ETL = {annex_country = {
 							original_tag = AAS
 							original_tag = HOU
 							original_tag = ROC
+							original_tag = EGY
+							original_tag = LBA
+							original_tag = SUD
+							original_tag = MRT
+							original_tag = WES
+							original_tag = SSD
 						}
 
 						}
@@ -775,11 +781,81 @@ IRQ = {annex_country = {
 						}
 						}
 						ROOT = {
+							original_tag = GDL
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+
+
+XIN = {annex_country = {
+								target = GDL
+								transfer_troops = no
+							}
+					}
+
+
+
+
+		    }
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PAL
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+
+
+XIN = {annex_country = {
+								target = PAL
+								transfer_troops = no
+							}
+					}
+
+
+
+
+		    }
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
 							original_tag = ISR
 						}
 					}
 					FROM = {
 						white_peace = ROOT
+				if = {
+					limit = {
+						PRC = {has_country_flag = intervention_sau_3}
+					}
+
+XIN = {annex_country = {
+								target = ISR
+								transfer_troops = no
+							}
+
+							}
+					}
 JOR = {annex_country = {
 								target = ISR
 								transfer_troops = no
@@ -834,6 +910,18 @@ JOR = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
+				if = {
+					limit = {
+						PRC = {has_country_flag = intervention_sau_3}
+					}
+
+XIN = {annex_country = {
+								target = HEZ
+								transfer_troops = no
+							}
+
+							}
+					}
 JOR = {annex_country = {
 								target = HEZ
 								transfer_troops = no
@@ -888,6 +976,19 @@ JOR = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
+				if = {
+					limit = {
+						PRC = {has_country_flag = intervention_sau_3}
+					}
+
+XIN = {annex_country = {
+								target = LEB
+								transfer_troops = no
+							}
+
+							}
+					}
+
 JOR = {annex_country = {
 								target = LEB
 								transfer_troops = no
@@ -972,7 +1073,7 @@ SYR = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
-TAL = {annex_country = {
+AFG = {annex_country = {
 								target = TMS
 								transfer_troops = no
 							}
@@ -982,7 +1083,7 @@ TAL = {annex_country = {
 				limit = {
 					is_core_of = TMS
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1004,7 +1105,7 @@ TAL = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
-TAL = {annex_country = {
+AFG = {annex_country = {
 								target = UZB
 								transfer_troops = no
 							}
@@ -1014,7 +1115,7 @@ TAL = {annex_country = {
 				limit = {
 					is_core_of = UZB
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1035,7 +1136,7 @@ TAL = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
-TAL = {annex_country = {
+AFG = {annex_country = {
 								target = KYR
 								transfer_troops = no
 							}
@@ -1045,7 +1146,7 @@ TAL = {annex_country = {
 				limit = {
 					is_core_of = KYR
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1065,7 +1166,7 @@ TAL = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
-TAL = {annex_country = {
+AFG = {annex_country = {
 								target = TAJ
 								transfer_troops = no
 							}
@@ -1075,7 +1176,7 @@ TAL = {annex_country = {
 				limit = {
 					is_core_of = TAJ
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1096,7 +1197,7 @@ TAL = {annex_country = {
 					}
 					FROM = {
 						white_peace = ROOT
-TAL = {annex_country = {
+AFG = {annex_country = {
 								target = KAZ
 								transfer_troops = no
 							}
@@ -1106,7 +1207,7 @@ TAL = {annex_country = {
 				limit = {
 					is_core_of = KAZ
 				}
-			    add_core_of = TAL
+			    add_core_of = AFG
 		    }
 		    }
 					set_global_flag = skip_default_capitulation

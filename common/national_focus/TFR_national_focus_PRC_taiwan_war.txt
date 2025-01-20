@@ -9,7 +9,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_finalopportunity
 		x = 5
 		y = 0
-		cost = 3
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 10
@@ -43,7 +43,7 @@ focus_tree = {
 	    x = -2
 	    y = 1
 		
-	    cost = 2
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_the_final_opportunity
@@ -124,7 +124,7 @@ focus_tree = {
 	    x = 0
 	    y = 1
 		
-	    cost = 3
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_the_final_opportunity
@@ -159,7 +159,7 @@ focus_tree = {
 	    x = 2
 	    y = 1
 		
-	    cost = 2
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_the_final_opportunity
@@ -194,7 +194,7 @@ focus_tree = {
 	    x = -1
 	    y = 2
 		
-	    cost = 3
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_prepare_landing_craft
@@ -223,7 +223,7 @@ focus_tree = {
 	    x = 1
 	    y = 2
 		
-	    cost = 3
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_prepare_landing_craft
@@ -276,7 +276,7 @@ focus_tree = {
 		will_lead_to_war_with = CHI
 		will_lead_to_war_with = JAP
 		will_lead_to_war_with = AST	
-	    cost = 3
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_conduct_final_training
@@ -326,7 +326,7 @@ focus_tree = {
 	    x = 2
 	    y = 3
 		
-	    cost = 3
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_blockade_taiwan
@@ -364,7 +364,7 @@ focus_tree = {
 		relative_position_id = PRC_the_final_opportunity
 	    x = -2
 	    y = 3
-	    cost = 3
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_prepare_landing_craft
@@ -392,7 +392,7 @@ focus_tree = {
 		will_lead_to_war_with = CHI
 		will_lead_to_war_with = JAP
 		will_lead_to_war_with = AST
-	    cost = 0.5
+	    cost = 1
 	    
 		prerequisite = {
 			focus = PRC_plan_on_high_alert

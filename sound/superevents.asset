@@ -1,0 +1,25 @@
+soundeffect =
+{
+	name = "ecwar"
+	sounds = {
+		sound = "ecwar"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "ecwar2"
+	sounds = {
+		sound = "ecwar2"
+	}
+	volume = 1
+}
+
+soundeffect =
+{
+	name = "rcwar"
+	sounds = {
+		sound = "rcwar"
+	}
+	volume = 1
+}

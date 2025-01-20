@@ -226,6 +226,26 @@ recruit_character = PRC_mao_yuanxin
 					limit = {
 	
 
+						FROM = {
+							original_tag = BUK
+
+						}
+						ROOT = {
+							original_tag = ABK
+						}
+					}
+
+
+					BUK = {
+add_ideas = 	BRM_civil_war_idea1
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+	
+
 						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
 						PRC = {has_idea = beidouweixing}
 						FROM = {
@@ -468,19 +488,19 @@ recruit_character = PRC_mao_yuanxin
 						}
 					}
 					FROM = {
-							PRC = {	
+							AFG = {	
 							annex_country = {
 								target = TAL
 								transfer_troops = no
 							}}
 						PRC = {
 			release_autonomy = {
-			target = TAL
+			target = AFG
 			autonomy_state = autonomy_tongzhi
 			freedom_level = 0.1
 							}
 						}
-						TAL = {			
+						AFG = {			
 			transfer_state = 1355			
 			transfer_state = 267			
 			transfer_state = 824			
@@ -493,11 +513,97 @@ recruit_character = PRC_mao_yuanxin
 			transfer_state = 1055			
 			transfer_state = 1056			
 			transfer_state = 1057			
-			transfer_state = 1058			
+			transfer_state = 1058
+	remove_ideas = AFG_corrupt_military_staff
+remove_ideas = AFG_unified_afghanistan
+remove_ideas = AFG_diarchy
+remove_ideas = AFG_crushing_taliban		
                 inherit_technology = PRC
 				remove_ideas = PRC_unwilling_ally			
 				set_cosmetic_tag = AFG_XIN
 				set_party_name = { ideology = totalitarian_socialist long_name = AFGCCC_party_long name = AFGCCC_party }
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {AFG = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						AFG = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {AFG = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						AFG = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {AFG = {has_idea = PRC_neomaoism111_idea}}
+					}
+						AFG = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {AFG = {has_idea = jjdzxjd_idea}}
+					}
+						AFG = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {AFG = {has_idea = PRC_yuuki_4}}
+					}
+						AFG = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {AFG = {has_idea = wushenlun_idea}}
+					}
+						AFG = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {AFG= {has_idea = PRC_socialist_dream_idea}}
+					}
+						AFG = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {AFG = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						AFG = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+
+				}
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
