@@ -1,5 +1,17 @@
 on_actions = {
+	on_daily_ISR = {
+		effect = {
+			if = {
+				limit = {
+			PRC = {has_country_flag = shenzhenbaoluan}
+NOT = {has_global_flag = PRC_taiwan_war_won}
+NOT = {has_global_flag = PRC_taiwan_war_lost}
+				}
+		PRC = {1395 = { set_demilitarized_zone = yes }}
+			}
 
+		}
+	}
 	on_capitulation = {
 		effect = {
 				if = {
@@ -633,6 +645,7 @@ XIN = {annex_country = {
 					}
 					FROM = {
 
+
 						white_peace = ROOT
 						clr_country_flag = PRC_spread_chinese_influence
 			PRC = {set_autonomy = {
@@ -659,7 +672,9 @@ XIN = {annex_country = {
 	                ideology = maoism
 				}  
 						}
-					}
+					}						JOR = {			
+			transfer_state = 455	
+				}
 					set_global_flag = skip_default_capitulation
 				}
 

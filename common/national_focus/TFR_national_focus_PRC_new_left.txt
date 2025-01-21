@@ -1648,6 +1648,39 @@ set_cosmetic_tag = PRC_AM
     retire_character = PRC_Shen_Jinlong
     retire_character = PRC_Dong_Jun
     retire_character = PRC_yuan_yubai
+create_field_marshal = {
+	name = "北方智能联合人民总指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_field_marshal = {
+	name = "南方智能联合人民总指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
+create_field_marshal = {
+	name = "西部智能联合人民总指挥部"
+	desc = "POLITICS_AICOM_DESC"
+	portrait_path = "GFX_AICOM"
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+	traits = { }
+}
 create_corps_commander = {
 	name = "北京智能联合人民指挥部"
 	desc = "POLITICS_AICOM_DESC"
@@ -6665,6 +6698,7 @@ remove_ideas = militia_looting
 		  
 		}
 		completion_reward = {
+	add_research_slot = 1
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea
@@ -7671,11 +7705,13 @@ has_country_leader = {
 		}
 		completion_reward = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	add_research_slot = 1
 			every_country = {
 				limit = {
 						is_ally_with = PRC
 						NOT = {has_idea = PRC_future_of_cyber_communism_idea_1}
 				}
+	add_research_slot = 1
 			add_ideas = PRC_future_of_cyber_communism_idea_1
 			}
 			set_temp_variable = {

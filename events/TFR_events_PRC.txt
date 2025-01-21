@@ -830,6 +830,7 @@ country_event = {
 	}
 	immediate = {
 		hidden_effect = {
+		PRC = {1395 = { set_demilitarized_zone = no }}
 			remove_ideas = taihaijingji_idea_1	
 			remove_ideas = taihaijingji_idea_2
 			remove_ideas = taihaijingji_idea_3

@@ -205,6 +205,50 @@ add_ideas = 	BRM_civil_war_idea1
 add_ideas = duliyuanjing
 }
 	PRC = {
+
+				1161 = {
+						add_resource = {
+							type = chromium
+							amount = 20
+						}
+				}
+				1158 = {
+						add_resource = {
+							type = chromium
+							amount = 20
+						}
+				}
+				444 = {
+						add_resource = {
+							type = chromium
+							amount = 60
+						}
+				}
+				1193 = {
+						add_resource = {
+							type = chromium
+							amount = 10
+						}
+				}
+				1186 = {
+						add_resource = {
+							type = chromium
+							amount = 10
+						}
+				}
+				283 = {
+						add_resource = {
+							type = chromium
+							amount = 10
+						}
+				}
+				1187 = {
+						add_resource = {
+							type = chromium
+							amount = 20
+						}
+				}
+
 recruit_character = PRC_han_dongfang
 recruit_character = PRC_ren_chonghao
 recruit_character = PRC_zhang_hongliang

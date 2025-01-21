@@ -2922,13 +2922,10 @@ shared_focus = {
 		
 	
 	    hidden_effect = {	
-			
-				set_country_flag = rcwar_flag	
-				scoped_sound_effect = rcwar
-				scoped_play_song = "one_minute_of_silence"
 					country_event = PRC_MAO.32
 			set_country_flag = RUS_EUO_PRC	
 						SOV = {
+			remove_ideas = duliyuanjing_2
 			add_popularity = {
 				ideology = totalitarian_socialist
 				popularity = -0.15
