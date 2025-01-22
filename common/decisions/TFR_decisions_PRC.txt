@@ -2760,6 +2760,7 @@ PRC_taiwan_war_cat = {
 				}
 			}
 					has_country_flag = taihai_cansheng_1
+has_war = no
 		}
 		}
 		is_good = no
@@ -2778,6 +2779,9 @@ PRC_taiwan_war_cat = {
 				limit = {
 					has_country_flag = taihai_cansheng
 					NOT = {has_country_flag = taihai_cansheng_1}
+				648 = {
+					is_fully_controlled_by = PRC
+				}
 				}
 			country_event = {
 				id = PRC_MAO.59
@@ -10351,6 +10355,533 @@ NOT = {country_exists = SYR}
 			}
 		}
 	}
+	PRC_military_intervention_cyp_1 = {
+		available = {
+				TUR = {
+					is_ally_with = PRC
+				}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_cyp_influence
+					CYP = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = CYP
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_ser_1 = {
+		available = {
+		OR = {
+				AUS = {
+					is_ally_with = PRC
+				}
+				GRE = {
+					is_ally_with = PRC
+				}
+				MAC = {
+					is_ally_with = PRC
+				}
+				HUN = {
+					is_ally_with = PRC
+				}
+				ROM = {
+					is_ally_with = PRC
+				}
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = KOS
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = MAC
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = ALB
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = SLV
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = CRO
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = MNT
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = BOS
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = SER
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_pld_1 = {
+		available = {
+		OR = {
+				SLO = {
+					is_ally_with = PRC
+				}
+				GER = {
+					is_ally_with = PRC
+				}
+				CZE = {
+					is_ally_with = PRC
+				}
+
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_pld_influence
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = SIL
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
+					target = PLD
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_swi_1 = {
+		available = {
+		OR = {
+				ITA = {
+					is_ally_with = PRC
+				}
+				AUS = {
+					is_ally_with = PRC
+				}
+				GER = {
+					is_ally_with = PRC
+				}
+
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_slo_influence
+					SLO = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = SLO
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_slo_1 = {
+		available = {
+		OR = {
+				HUN = {
+					is_ally_with = PRC
+				}
+				AUS = {
+					is_ally_with = PRC
+				}
+				CZE = {
+					is_ally_with = PRC
+				}
+
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_slo_influence
+					SLO = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = SLO
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_cze_1 = {
+		available = {
+		OR = {
+				HUN = {
+					is_ally_with = PRC
+				}
+				AUS = {
+					is_ally_with = PRC
+				}
+				GER = {
+					is_ally_with = PRC
+				}
+				SLO = {
+					is_ally_with = PRC
+				}
+
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_cze_influence
+					CZE = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = CZE
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_aus_1 = {
+		available = {
+		OR = {
+				HUN = {
+					is_ally_with = PRC
+				}
+				SER = {
+					is_ally_with = PRC
+				}
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_aus_influence
+					AUS = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = AUS
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_hun_1 = {
+		available = {
+		OR = {
+				AUS = {
+					is_ally_with = PRC
+				}
+				SER = {
+					is_ally_with = PRC
+				}
+				ROM = {
+					is_ally_with = PRC
+				}
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_hun_influence
+					HUN = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = HUN
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+	PRC_military_intervention_bul_1 = {
+		available = {
+		OR = {
+				TUR = {
+					is_ally_with = PRC
+				}
+				GRE = {
+					is_ally_with = PRC
+				}
+				MAC = {
+					is_ally_with = PRC
+				}
+				SER = {
+					is_ally_with = PRC
+				}
+				ROM = {
+					is_ally_with = PRC
+				}
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_bul_influence
+					BUL = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = BUL
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+
+	PRC_military_intervention_gre_1 = {
+		available = {
+		OR = {
+				TUR = {
+					is_ally_with = PRC
+				}
+				BUL = {
+					is_ally_with = PRC
+				}
+				MAC = {
+					is_ally_with = PRC
+				}
+				ALB = {
+					is_ally_with = PRC
+				}
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_gre_influence
+					GRE = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = GRE
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+
+	PRC_military_intervention_tur_1 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_tur_influence
+					TUR = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = TUR
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
+
 			PRC_military_intervention_vin_1 = {
 		available = {
 
@@ -10741,6 +11272,578 @@ annex_country = {
 
 		}
 	}
+		
+			PRC_military_intervention_fpr_2 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				
+	FPR = {is_ally_with = PRC}
+	GER = {is_ally_with = PRC}
+	ITA = {is_ally_with = PRC}
+	AUS = {is_ally_with = PRC}
+	CZE = {is_ally_with = PRC}
+	ENG = {is_ally_with = PRC}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+
+			
+		}
+		remove_effect = {	
+		custom_effect_tooltip = PRC_this_will_lead_to_the_AADFWF
+		
+	
+	    hidden_effect = {	
+				
+			PRC = {
+				declare_war_on = { 
+					target = SWI
+					type = annex_everything 
+				}
+			}
+
+										FPR = {
+				set_cosmetic_tag = FRA_Federated_Republic_of_Europe
+				set_party_name = { ideology = libertarian_socialist long_name = FRAPPPCCC_party name = FRAPPPCCC_party }
+
+annex_country = {
+								target = GER
+								transfer_troops = yes
+							}
+annex_country = {
+								target = ITA
+								transfer_troops = yes
+							}
+annex_country = {
+								target = AUS
+								transfer_troops = yes
+							}
+annex_country = {
+								target = ENG
+								transfer_troops = yes
+							}
+		if = {
+				limit = {
+					is_core_of = FRA
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = ENG
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = GER
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = ITA
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = AUS
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = HOL
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = BEL
+				}
+			    add_core_of = FPR
+		    }	
+		if = {
+				limit = {
+					is_core_of = LUX
+				}
+			    add_core_of = FPR
+		    }	
+				set_country_leader_ideology = anarchist_maoism
+
+
+	}
+
+		}
+	}
+			PRC_military_intervention_fpr_1 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				country_exists = FPR
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+
+			
+		}
+		remove_effect = {	
+		custom_effect_tooltip = PRC_this_will_lead_to_the_gecw
+		
+	
+	    hidden_effect = {	
+			FRA = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			FRA = {
+				declare_war_on = { 
+					target = FPR
+					type = annex_everything 
+				}
+			}	
+			GER = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			ITA = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			ENG = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}
+
+				set_country_flag = ecwar_flag	
+				scoped_sound_effect = ecwar
+				scoped_play_song = "one_minute_of_silence"
+										FPR = {
+
+		if = {
+				limit = {
+					is_core_of = FRA
+				}
+			    add_core_of = FPR
+		    }	
+				set_country_leader_ideology = anarchist_maoism
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {FPR = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						FPR = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {FPR = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						FPR = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {FPR = {has_idea = beidouweixing}}
+					}
+						FPR = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {FPR = {has_idea = PRC_neomaoism111_idea}}
+					}
+						FPR = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {FPR = {has_idea = PRC_yuuki_4}}
+					}
+						FPR = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {FPR = {has_idea = wushenlun_idea}}
+					}
+						FPR = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {FPR = {has_idea = jjdzxjd_idea}}
+					}
+						FPR = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {FPR= {has_idea = PRC_socialist_dream_idea}}
+					}
+						FPR = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {FPR = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						FPR = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+				}
+
+				}
+			PRC = {
+				add_to_faction = FPR
+			}
+	}
+
+		}
+	}
+
+			PRC_military_intervention_prp_1 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				country_exists = PRP
+			}
+		}
+		fire_only_once = yes
+		days_remove = 5
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+
+			
+		}
+		remove_effect = {	
+			PRC = {
+				add_to_faction = PRP
+			}
+		
+	
+	    hidden_effect = {	
+
+			PRC = {set_autonomy = {
+			target = PRP
+			autonomy_state = autonomy_tongzhi
+			}}			
+										PRP = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+						
+				set_country_leader_ideology = marxism_lenin_maoism
+
+		if = {
+				limit = {
+					is_core_of = POR
+				}
+			    remove_core_of = PRP
+		    }	
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {PRP = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						PRP = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {PRP = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						PRP = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {PRP = {has_idea = beidouweixing}}
+					}
+						PRP = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {PRP = {has_idea = PRC_neomaoism111_idea}}
+					}
+						PRP = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {PRP = {has_idea = PRC_yuuki_4}}
+					}
+						PRP = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {PRP = {has_idea = wushenlun_idea}}
+					}
+						PRP = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {PRP = {has_idea = jjdzxjd_idea}}
+					}
+						PRP = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {PRP= {has_idea = PRC_socialist_dream_idea}}
+					}
+						PRP = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {PRP = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						PRP = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+				}
+
+				}
+	}
+
+		}
+	}
+
+
+			PRC_military_intervention_rsr_1 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				country_exists = RSR
+			}
+		}
+		fire_only_once = yes
+		days_remove = 5
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+
+			
+		}
+		remove_effect = {	
+			PRC = {
+				add_to_faction = RSR
+			}
+		
+	
+	    hidden_effect = {	
+
+			PRC = {set_autonomy = {
+			target = RSR
+			autonomy_state = autonomy_tongzhi
+			}}			
+										RSR = {
+                inherit_technology = PRC
+
+		if = {
+				limit = {
+					is_core_of = SPR
+				}
+			    remove_core_of = RSR
+		    }	
+
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+						
+		
+
+				set_country_leader_ideology = marxism_lenin_maoism
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {RSR = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						RSR = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {RSR = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						RSR = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {RSR = {has_idea = beidouweixing}}
+					}
+						RSR = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {RSR = {has_idea = PRC_neomaoism111_idea}}
+					}
+						RSR = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {RSR = {has_idea = PRC_yuuki_4}}
+					}
+						RSR = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {RSR = {has_idea = wushenlun_idea}}
+					}
+						RSR = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {RSR = {has_idea = jjdzxjd_idea}}
+					}
+						RSR = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {RSR= {has_idea = PRC_socialist_dream_idea}}
+					}
+						RSR = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {RSR = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						RSR = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+						}
+				}
+
+				}
+	}
+
+		}
+	}
+
 	PRC_military_intervention_thailand_3 = {
 		available = {
 			OR = {
@@ -11811,6 +12914,136 @@ PRC_military_intervention_mlw_1 = {
     }
 }
 
+PRC_military_intervention_rwa_1 = {
+		icon = GFX_PRC_new_left_decision
+    available = {
+
+    }
+    visible = {
+        hidden_trigger = {
+            has_completed_focus = PRC_masters_of_asia_13
+country_exists = RWA
+        }
+    }
+    fire_only_once = yes
+    days_remove = 30
+    cancel_if_not_visible = yes
+    remove_effect = {
+        PRC = {
+            declare_war_on = { 
+                target = RWA
+                type = annex_everything 
+            }
+        }
+       RWA = {
+            add_ideas = VIN_determined_defenders
+        }
+    }
+}
+PRC_military_intervention_brd_1 = {
+		icon = GFX_PRC_new_left_decision
+    available = {
+
+    }
+    visible = {
+        hidden_trigger = {
+            has_completed_focus = PRC_masters_of_asia_13
+country_exists = BRD
+        }
+    }
+    fire_only_once = yes
+    days_remove = 30
+    cancel_if_not_visible = yes
+    remove_effect = {
+        PRC = {
+            declare_war_on = { 
+                target = BRD
+                type = annex_everything 
+            }
+        }
+       BRD = {
+            add_ideas = VIN_determined_defenders
+        }
+    }
+}
+PRC_military_intervention_uga_1 = {
+		icon = GFX_PRC_new_left_decision
+    available = {
+
+    }
+    visible = {
+        hidden_trigger = {
+            has_completed_focus = PRC_masters_of_asia_13
+country_exists = UGA
+        }
+    }
+    fire_only_once = yes
+    days_remove = 30
+    cancel_if_not_visible = yes
+    remove_effect = {
+        PRC = {
+            declare_war_on = { 
+                target = UGA
+                type = annex_everything 
+            }
+        }
+       UGA = {
+            add_ideas = VIN_determined_defenders
+        }
+    }
+}
+PRC_military_intervention_ken_1 = {
+		icon = GFX_PRC_new_left_decision
+    available = {
+
+    }
+    visible = {
+        hidden_trigger = {
+            has_completed_focus = PRC_masters_of_asia_13
+country_exists = KEN
+        }
+    }
+    fire_only_once = yes
+    days_remove = 30
+    cancel_if_not_visible = yes
+    remove_effect = {
+        PRC = {
+            declare_war_on = { 
+                target = KEN
+                type = annex_everything 
+            }
+        }
+       KEN = {
+            add_ideas = VIN_determined_defenders
+        }
+    }
+}
+PRC_military_intervention_rco_1 = {
+		icon = GFX_PRC_new_left_decision
+    available = {
+
+    }
+    visible = {
+        hidden_trigger = {
+            has_completed_focus = PRC_masters_of_asia_13
+country_exists = RCO
+        }
+    }
+    fire_only_once = yes
+    days_remove = 30
+    cancel_if_not_visible = yes
+    remove_effect = {
+        PRC = {
+            declare_war_on = { 
+                target = RCO
+                type = annex_everything 
+            }
+        }
+       RCO = {
+            add_ideas = VIN_determined_defenders
+        }
+    }
+}
 PRC_military_intervention_ang_1 = {
 		icon = GFX_PRC_new_left_decision
     available = {

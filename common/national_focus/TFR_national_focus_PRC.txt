@@ -2981,15 +2981,59 @@ shared_focus = {
 	}
 	prerequisite = { focus = PRC_masters_of_asia_5 }
 	completion_reward = {
-		custom_effect_tooltip = PRC_this_will_lead_to_the_gecw
-		
-	
+
+		if = {
+				limit = {
+					has_global_flag = SOV_first_nato_war_victory
+				}
+		unlock_decision_tooltip = PRC_military_intervention_fpr_1
+		unlock_decision_tooltip = PRC_military_intervention_tur_1
+		unlock_decision_tooltip = PRC_military_intervention_bul_1
+		unlock_decision_tooltip = PRC_military_intervention_gre_1
+		unlock_decision_tooltip = PRC_military_intervention_hun_1
+		unlock_decision_tooltip = PRC_military_intervention_ser_1
+		unlock_decision_tooltip = PRC_military_intervention_aus_1
+		unlock_decision_tooltip = PRC_military_intervention_cze_1
+		unlock_decision_tooltip = PRC_military_intervention_slo_1
+		unlock_decision_tooltip = PRC_military_intervention_pld_1
+		unlock_decision_tooltip = PRC_military_intervention_swi_1
+		unlock_decision_tooltip = PRC_military_intervention_cyp_1
+		    }
+		if = {
+				limit = {
+					NOT = {has_global_flag = SOV_first_nato_war_victory}
+				}	
+		custom_effect_tooltip = PRC_this_will_lead_to_the_gecw	
 	    hidden_effect = {	
+			FRA = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			GER = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			ITA = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			ENG = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}
 				set_country_flag = ecwar_flag	
 				scoped_sound_effect = ecwar
 				scoped_play_song = "one_minute_of_silence"
-	}
-
+		    }
+		    }
 
 	}
 }
@@ -3895,9 +3939,6 @@ shared_focus = {
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 1
-	}
-	allow_branch = {
-				has_country_flag = PRC_new_left_win
 	}
 	prerequisite = {
 		focus = PRC_chinas_spot_in_the_sun

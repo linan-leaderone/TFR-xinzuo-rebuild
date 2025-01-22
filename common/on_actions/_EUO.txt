@@ -1,0 +1,909 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = CYP
+						}
+
+						}
+					}
+
+
+						PRC = {white_peace = ROOT}
+TUR = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = TUR
+		    }
+							}
+					FROM = {
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+					}
+					set_global_flag = skip_default_capitulation
+				}		
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = POR
+							original_tag = GOD
+						}
+
+						}
+					}
+
+
+						PRC = {white_peace = ROOT}
+PRP = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+					FROM = {
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+					}
+					set_global_flag = skip_default_capitulation
+				}
+					
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = MNT
+							original_tag = KOS
+							original_tag = MAC
+							original_tag = BOS
+							original_tag = CRO
+							original_tag = SER
+							original_tag = SLV
+							original_tag = ALB
+						}
+
+						}
+					}
+
+						PRC = {white_peace = ROOT}
+BUL = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = BUL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+		
+
+				}
+				if = {
+					limit = {
+	NOT = {PLD = {is_ally_with = PRC}}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = MLD
+
+
+						}
+					}
+
+
+
+						PRC = {white_peace = MLD}
+			PRC = {set_autonomy = {
+			target = MLD
+			autonomy_state = autonomy_tongzhi
+			}}			
+						MLD = {
+				set_party_name = { ideology = libertarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "波兰革命委员会"
+	                desc = "POLITICS_PLDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SWI
+
+
+						}
+					}
+
+				PRC = {set_country_flag = ecwar2_flag	
+				scoped_sound_effect = ecwar2
+				scoped_play_song = "one_minute_of_silence"}
+FPR = {annex_country = {
+								target = SWI
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = SWI
+				}
+			    remove_core_of = SWI
+		    }
+							}
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+	PLD = {is_ally_with = PRC}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = MLD
+
+
+						}
+					}
+
+
+PLD = {annex_country = {
+								target = MLD
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = MLD
+				}
+			    remove_core_of = MLD
+		    }
+							}
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+	NOT = {MLD = {is_ally_with = PRC}}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PLD
+
+
+						}
+					}
+
+
+
+						PRC = {white_peace = PLD}
+			PRC = {set_autonomy = {
+			target = PLD
+			autonomy_state = autonomy_tongzhi
+			}}			
+						PLD = {
+                inherit_technology = PRC
+				set_party_name = { ideology = libertarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "波兰革命委员会"
+	                desc = "POLITICS_PLDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+			
+				if = {
+					limit = {
+	MLD = {is_ally_with = PRC}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PLD
+
+
+						}
+					}
+
+
+MLD = {annex_country = {
+								target = PLD
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = PLD
+				}
+			    remove_core_of = PLD
+		    }
+							}
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SIL
+
+
+						}
+					}
+
+
+PLD = {annex_country = {
+								target = SIL
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = SIL
+				}
+			    remove_core_of = SIL
+		    }
+							}
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = SNS
+							original_tag = GAL
+							original_tag = LCA
+							original_tag = BSQ
+							original_tag = SPR
+							original_tag = CAT
+							original_tag = BAR
+						}
+
+						}
+					}
+
+
+						PRC = {white_peace = ROOT}
+RSR = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+					FROM = {
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = TUR
+						}
+					}
+
+
+						PRC = {white_peace = TUR}
+			PRC = {set_autonomy = {
+			target = TUR
+			autonomy_state = autonomy_tongzhi
+			}}			
+			XIN = {transfer_state = 827}
+			ROJ = {transfer_state = 350	
+			transfer_state = 352	
+			transfer_state = 353	
+			transfer_state = 348				
+			transfer_state = 1030			
+			transfer_state = 1031			
+			transfer_state = 1035}
+						TUR = {
+                inherit_technology = PRC
+				set_cosmetic_tag = TUR_Rev_Repub_of_Turkey
+				set_party_name = { ideology = totalitarian_socialist long_name = TURCCC_party name = TURCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "土耳其革命委员会"
+	                desc = "POLITICS_TURGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = AUS
+						}
+					}
+
+
+						PRC = {white_peace = AUS}
+			PRC = {set_autonomy = {
+			target = AUS
+			autonomy_state = autonomy_tongzhi
+			}}			
+						AUS = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "奥地利革命委员会"
+	                desc = "POLITICS_AUSGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+						
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = ENG
+						}
+					}
+
+
+						PRC = {white_peace = ENG}
+			PRC = {set_autonomy = {
+			target = ENG
+			autonomy_state = autonomy_tongzhi
+			}}			
+						ENG = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "不列颠革命委员会"
+	                desc = "POLITICS_SLOGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SLO
+						}
+					}
+
+
+						PRC = {white_peace = SLO}
+			PRC = {set_autonomy = {
+			target = SLO
+			autonomy_state = autonomy_tongzhi
+			}}			
+						SLO = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "斯洛伐克革命委员会"
+	                desc = "POLITICS_SLOGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = ROM
+						}
+					}
+
+
+						PRC = {white_peace = ROM}
+			PRC = {set_autonomy = {
+			target = ROM
+			autonomy_state = autonomy_tongzhi
+			}}			
+						ROM = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "罗马尼亚革命委员会"
+	                desc = "POLITICS_ROMGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = HUN
+						}
+					}
+
+
+						PRC = {white_peace = HUN}
+			PRC = {set_autonomy = {
+			target = HUN
+			autonomy_state = autonomy_tongzhi
+			}}			
+						HUN = {
+                inherit_technology = PRC
+				set_cosmetic_tag = HUN_Peoples_Republic_of_Hungarian
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "匈牙利革命委员会"
+	                desc = "POLITICS_HUNGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+		
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = ITA
+						}
+					}
+
+
+						PRC = {white_peace = ITA}
+			PRC = {set_autonomy = {
+			target = ITA
+			autonomy_state = autonomy_tongzhi
+			}}			
+						ITA = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "意大利革命委员会"
+	                desc = "POLITICS_ITAGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+		
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = FRA
+						}
+					}
+
+
+						PRC = {white_peace = FRA}
+			PRC = {set_autonomy = {
+			target = FPR
+			autonomy_state = autonomy_tongzhi
+			}}			
+						FPR = {
+annex_country = {
+								target = FRA
+								transfer_troops = no
+							}
+                inherit_technology = PRC
+				set_cosmetic_tag = FPR_Socialist_Republic_of_France
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "法兰西革命委员会"
+	                desc = "POLITICS_FPRGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+		
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = GER
+						}
+					}
+
+
+						PRC = {white_peace = GER}
+			PRC = {set_autonomy = {
+			target = GER
+			autonomy_state = autonomy_tongzhi
+			}}			
+						GER = {
+                inherit_technology = PRC
+				set_cosmetic_tag = GER_soc_federation
+				set_party_name = { ideology = libertarian_socialist long_name = GERPPPCCC_party name = GERPPPCCC_party }
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "德意志革命委员会"
+	                desc = "POLITICS_GERGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+	
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = CZE
+						}
+					}
+
+
+						PRC = {white_peace = CZE}
+			PRC = {set_autonomy = {
+			target = CZE
+			autonomy_state = autonomy_tongzhi
+			}}			
+						CZE = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "捷克革命委员会"
+	                desc = "POLITICS_CZEGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = GRE
+						}
+					}
+
+
+						PRC = {white_peace = GRE}
+			PRC = {set_autonomy = {
+			target = GRE
+			autonomy_state = autonomy_tongzhi
+			}}			
+						GRE = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "希腊革命委员会"
+	                desc = "POLITICS_GREGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = BUL
+						}
+					}
+
+
+						PRC = {white_peace = BUL}
+			PRC = {set_autonomy = {
+			target = BUL
+			autonomy_state = autonomy_tongzhi
+			}}			
+						BUL = {
+                inherit_technology = PRC
+				set_cosmetic_tag = BUL_balkan_federation
+				set_party_name = { ideology = totalitarian_socialist long_name = BULCCC_party name = BULCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴尔干革命委员会"
+	                desc = "POLITICS_BULGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}
+}

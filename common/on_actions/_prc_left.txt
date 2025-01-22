@@ -285,7 +285,20 @@ add_ideas = 	BRM_civil_war_idea1
 					}
 					set_global_flag = skip_default_capitulation
 				}
-
+				if = {
+					limit = {
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+						ROOT = {load_focus_tree = generic_focus}
+					}
 				if = {
 					limit = {
 	
@@ -1691,17 +1704,37 @@ release_autonomy = {
 			transfer_state = 1381			
 			transfer_state = 1366			
 			transfer_state = 1368
-				if = {
-					limit = {
-		AFG = {is_ally_with = PRC}
-					}
-			AFG = {	
-			transfer_state = 441			
-			transfer_state = 787			
-			transfer_state = 1131
 
+			every_state = {
+				limit = {
+					is_core_of = SRL
 				}
+			    add_core_of = NAX
+		    }
+			every_state = {
+				limit = {
+					is_core_of = BAN
 				}
+			    add_core_of = NAX
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PAK
+				}
+			    add_core_of = NAX
+		    }
+							annex_country = {
+								target = SRL
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = BAN
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = PAK
+								transfer_troops = yes
+							}
 							annex_country = {
 								target = PRJ
 								transfer_troops = yes

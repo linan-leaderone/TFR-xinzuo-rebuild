@@ -969,6 +969,208 @@ country_event = {
 										every_country = {
 						white_peace = SOV
 					}
+				if = {
+					limit = {
+	EST = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = EST
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = EST
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	MLD = {is_ally_with = SOV}
+	PLD = {is_ally_with = PRC}
+					}
+			PRC = {set_autonomy = {
+			target = MLD
+			autonomy_state = autonomy_tongzhi
+			}}			
+						MLD = {
+                inherit_technology = PRC
+				set_party_name = { ideology = libertarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "波兰革命委员会"
+	                desc = "POLITICS_PLDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+					}
+				if = {
+					limit = {
+	MLD = {is_ally_with = SOV}
+	NOT = {PLD = {is_ally_with = PRC}}
+					}
+PLD = {annex_country = {
+								target = MLD
+								transfer_troops = yes
+							}}
+					}
+				if = {
+					limit = {
+	BLR = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = BLR
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = BLR
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	NGK = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = NGK
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = NGK
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	AZR = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = AZR
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = AZR
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	ARM = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = ARM
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = ARM
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	DNZ = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = DNZ
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = DNZ
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	GEO = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = GEO
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = GEO
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	MOL = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = MOL
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = MOL
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	LIT = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = LIT
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = LIT
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	UKR = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = UKR
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = UKR
+				}
+			    add_core_of = SOV
+		    }
+					}
+				if = {
+					limit = {
+	LAT = {is_ally_with = SOV}
+					}
+SOV = {annex_country = {
+								target = LAT
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = LAT
+				}
+			    add_core_of = SOV
+		    }
+					}
+
 	SOV = {
 			set_cosmetic_tag = SOV_SovietUnion
 						load_focus_tree = generic_focus
@@ -1177,6 +1379,17 @@ country_event = {
 		    }
 
 
+			every_state = {
+				limit = {
+					is_core_of = AFG
+				}
+			    add_core_of = PAK
+		    }
+PAK = {annex_country = {
+								target = AFG
+								transfer_troops = yes
+							}
+							}
 
 							AFG = {
 
@@ -1202,11 +1415,6 @@ AFG = {annex_country = {
 		    }
 
 				}
-AFG = {annex_country = {
-								target = PAK
-								transfer_troops = yes
-							}
-							}
 
 
 			every_state = {
@@ -1221,18 +1429,7 @@ AFG = {annex_country = {
 				}
 			    remove_core_of = TAL
 		    }
-			every_state = {
-				limit = {
-					is_core_of = PAK
-				}
-			    add_core_of = AFG
-		    }
-			every_state = {
-				limit = {
-					is_core_of = PAK
-				}
-			    remove_core_of = PAK
-		    }
+
 
 
 			PRC = {set_autonomy = {
@@ -1256,6 +1453,83 @@ AFG = {annex_country = {
 				} 
 				} 
 
+
+							SOV = { 
+								transfer_state = 799
+								transfer_state = 802
+								transfer_state = 803
+								transfer_state = 801
+								transfer_state = 732
+								transfer_state = 821
+								transfer_state = 804
+								transfer_state = 587
+								transfer_state = 406
+								transfer_state = 407
+								transfer_state = 404
+								transfer_state = 402
+								transfer_state = 805
+								transfer_state = 822
+								transfer_state = 823
+								transfer_state = 405
+								transfer_state = 586
+								transfer_state = 588
+								transfer_state = 589
+								transfer_state = 590
+								transfer_state = 583
+								transfer_state = 585
+								transfer_state = 584
+
+			every_state = {
+				limit = {
+					is_core_of = TAJ
+				}
+			    add_core_of = SOV
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = KYR
+				}
+			    add_core_of = SOV
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = KHI
+				}
+			    add_core_of = SOV
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = NWY
+				}
+			    add_core_of = SOV
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = TMS
+				}
+			    add_core_of = SOV
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = KAZ
+				}
+			    add_core_of = SOV
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = UZB
+				}
+			    add_core_of = SOV
+		    }
+
+
+				} 
 
 							PRC = {
 								transfer_state = 329

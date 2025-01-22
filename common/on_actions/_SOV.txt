@@ -281,6 +281,11 @@ original_tag = GAB
 original_tag = ZAM
 original_tag = MLW
 original_tag = ANG
+original_tag = RCO
+original_tag = KEN
+original_tag = UGA
+original_tag = BRD
+original_tag = RWA
 original_tag = EQG
 original_tag = CAR
 original_tag = BIA
@@ -1087,8 +1092,7 @@ SYR = {annex_country = {
 						}
 					}
 					FROM = {
-						white_peace = ROOT
-AFG = {annex_country = {
+AOV = {annex_country = {
 								target = TMS
 								transfer_troops = no
 							}
@@ -1098,7 +1102,7 @@ AFG = {annex_country = {
 				limit = {
 					is_core_of = TMS
 				}
-			    add_core_of = AFG
+			    add_core_of = SOV
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1119,8 +1123,8 @@ AFG = {annex_country = {
 						}
 					}
 					FROM = {
-						white_peace = ROOT
-AFG = {annex_country = {
+
+SOV = {annex_country = {
 								target = UZB
 								transfer_troops = no
 							}
@@ -1130,7 +1134,7 @@ AFG = {annex_country = {
 				limit = {
 					is_core_of = UZB
 				}
-			    add_core_of = AFG
+			    add_core_of = SOV
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1150,8 +1154,7 @@ AFG = {annex_country = {
 						}
 					}
 					FROM = {
-						white_peace = ROOT
-AFG = {annex_country = {
+SOV = {annex_country = {
 								target = KYR
 								transfer_troops = no
 							}
@@ -1161,7 +1164,7 @@ AFG = {annex_country = {
 				limit = {
 					is_core_of = KYR
 				}
-			    add_core_of = AFG
+			    add_core_of = SOV
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1180,8 +1183,7 @@ AFG = {annex_country = {
 						}
 					}
 					FROM = {
-						white_peace = ROOT
-AFG = {annex_country = {
+SOV = {annex_country = {
 								target = TAJ
 								transfer_troops = no
 							}
@@ -1191,7 +1193,7 @@ AFG = {annex_country = {
 				limit = {
 					is_core_of = TAJ
 				}
-			    add_core_of = AFG
+			    add_core_of = SOV
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
@@ -1211,8 +1213,7 @@ AFG = {annex_country = {
 						}
 					}
 					FROM = {
-						white_peace = ROOT
-AFG = {annex_country = {
+SOV = {annex_country = {
 								target = KAZ
 								transfer_troops = no
 							}
@@ -1222,7 +1223,7 @@ AFG = {annex_country = {
 				limit = {
 					is_core_of = KAZ
 				}
-			    add_core_of = AFG
+			    add_core_of = SOV
 		    }
 		    }
 					set_global_flag = skip_default_capitulation
