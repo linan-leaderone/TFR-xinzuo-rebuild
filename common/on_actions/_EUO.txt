@@ -186,7 +186,7 @@ BUL = {annex_country = {
 				PRC = {set_country_flag = ecwar2_flag	
 				scoped_sound_effect = ecwar2
 				scoped_play_song = "one_minute_of_silence"}
-FPR = {annex_country = {
+FRA = {annex_country = {
 								target = SWI
 								transfer_troops = no
 							}
@@ -699,13 +699,13 @@ RSR = {annex_country = {
 
 						PRC = {white_peace = FRA}
 			PRC = {set_autonomy = {
-			target = FPR
+			target = FRA
 			autonomy_state = autonomy_tongzhi
 			}}			
-						FPR = {
+						FRA = {
 annex_country = {
-								target = FRA
-								transfer_troops = no
+								target = FPR
+								transfer_troops = yes
 							}
                 inherit_technology = PRC
 				set_cosmetic_tag = FPR_Socialist_Republic_of_France

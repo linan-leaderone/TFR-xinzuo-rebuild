@@ -7276,6 +7276,256 @@ shared_focus = {
 	}
 }
 
+###international diplomacy tree
+shared_focus = {
+	id = PRC_east_rising_west_falling
+	icon = GFX_focus_PRC_east_rising_west_falling
+	x = 28
+	y = 0
+	offset = {
+		x = 4
+		trigger = {
+			has_country_flag = PRC_liberal_win
+		}
+	}
+	offset = {
+		x = 14
+		trigger = {
+			has_country_flag = PRC_new_left_win
+		}
+	}
+	cost = 5
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = PRC_establish_eadi
+	}
+	allow_branch = {
+		#has_global_flag = pan_asian_war_ongoing
+			NOT = {has_country_flag = PRC_new_left_win}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_east_rising_west_falling completion_reward"
+		country_event = {
+			id = china.464
+			hours = 6
+		}
+		add_war_support = 0.025
+		add_political_power = 75
+	}
+}
+shared_focus = {
+	id = PRC_european_conflict
+	icon = GFX_focus_PRC_european_conflict
+	x = -2
+	y = 1
+	cost = 3.6
+	available_if_capitulated = yes
+	relative_position_id = PRC_east_rising_west_falling
+	ai_will_do = {
+		factor = 60
+	}
+	prerequisite = { focus = PRC_east_rising_west_falling }
+	available = {
+		custom_trigger_tooltip = {
+		    tooltip = PRC_european_conflict_available_tt		
+			NOT = { has_global_flag = nato_nato_won_nato_war }
+			NOT = { has_global_flag = SOV_first_nato_war_victory }
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_european_conflict completion_reward"
+		unlock_decision_tooltip = PRC_declare_our_support_for_russia
+		unlock_decision_tooltip = PRC_declare_our_support_for_eu
+		unlock_decision_tooltip = PRC_declare_our_neutrality_in_europe
+	}
+}
+shared_focus = {
+	id = PRC_belt_and_road_initiative
+	icon = GFX_focus_PRC_belt_and_road_initiative
+	x = 0
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRC_east_rising_west_falling
+	ai_will_do = {
+		factor = 60
+	}
+	prerequisite = { focus = PRC_east_rising_west_falling }
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_belt_and_road_initiative completion_reward"
+		effect_tooltip = {
+			add_ideas = PRC_BRI_fake_idea
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = SOV
+					tag = PRK
+					tag = PAK
+				}
+			}
+			country_event = china.476
+			add_ideas = PRC_BRI_member
+			#set_country_flag = PRC_BRI_member_flag
+		}
+		custom_effect_tooltip = PRC_belt_and_road_initiative_tt
+		hidden_effect = {
+			#set_country_flag = PRC_BRI_member_flag
+			add_dynamic_modifier = {
+				modifier = PRC_BRI_dynamic
+			}
+			set_variable = { PRC_BRI_number_of_members = 4 }
+			set_variable = { PRC_BRI_consumer_goods_factor = -0.004 }
+			set_variable = { PRC_BRI_lend_lease_tension = -0.02 }
+			set_variable = { PRC_BRI_poverty_development_monthly = 0.002 }
+			set_variable = { PRC_BRI_industrial_development_monthly = 0.002 }
+			set_variable = { PRC_BRI_global_building_slots_factor = 0.01 }
+			set_variable = { PRC_BRI_production_speed_buildings_factor = 0.01 }
+			add_to_array = {
+				PRC.PRC_BRI_members = SOV
+			}
+			add_to_array = {
+				PRC.PRC_BRI_members = PRK
+			}
+			add_to_array = {
+				PRC.PRC_BRI_members = PAK
+			}
+			set_country_flag = PRC_BRI_invite_asia_flag
+		}
+	}
+}
+shared_focus = {
+	id = PRC_revolution_beyond_the_ocean
+	icon = GFX_focus_PRC_revolution_beyond_the_ocean
+	x = 2
+	y = 1
+	cost = 3.6
+	available_if_capitulated = yes
+	relative_position_id = PRC_east_rising_west_falling
+	ai_will_do = {
+		factor = 60
+	}
+	prerequisite = { focus = PRC_east_rising_west_falling }
+	available = {
+		country_exists = APA
+		APA = {
+			has_completed_focus = APA_first_american_workers_congress
+			if = {
+				limit = {
+					has_war = yes
+				}
+				surrender_progress < 0.25
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_revolution_beyond_the_ocean completion_reward"
+		country_event = {
+			id = china.465
+			days = 1
+		}
+		unlock_decision_tooltip = PRC_recognize_apla_as_a_legitimate_government
+		unlock_decision_tooltip = PRC_send_apla_weapons
+		unlock_decision_tooltip = PRC_train_apla_militia
+		unlock_decision_tooltip = PRC_send_pla_advisors_apla
+		unlock_decision_tooltip = PRC_arm_the_apla_airforce
+		hidden_effect = {
+			country_event = {
+				id = china.468
+				days = 90
+				random_days = 40
+			}
+			country_event = {
+				id = china.467
+				days = 20
+				random_days = 30
+			}
+			country_event = {
+				id = china.477
+				days = 90
+				random_days = 25
+			}
+			country_event = {
+				id = china.487
+				days = 250
+				random_days = 50
+			}
+			country_event = {
+				id = china.488
+				days = 350
+				random_days = 50
+			}
+			APA = {
+				country_event = {
+					id = china.467
+					days = 20
+					random_days = 30
+				}
+				country_event = {
+					id = china.487
+					days = 250
+					random_days = 50
+				}
+				country_event = {
+					id = china.488
+					days = 350
+					random_days = 50
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_trade_deals_in_africa
+	icon = GFX_focus_PRC_trade_deals_in_africa
+	x = -1
+	y = 2
+	cost = 3.6
+	available_if_capitulated = yes
+	relative_position_id = PRC_east_rising_west_falling
+	ai_will_do = {
+		factor = 60
+	}
+	prerequisite = { focus = PRC_east_rising_west_falling }
+	available = {
+		has_completed_focus = PRC_belt_and_road_initiative
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_trade_deals_in_africa completion_reward"
+		custom_effect_tooltip = PRC_belt_and_road_initiative_tt2
+		set_country_flag = PRC_BRI_invite_africa_flag
+		unlock_decision_tooltip = PRC_niger_uranium_cen
+	}
+}
+shared_focus = {
+	id = PRC_economic_war_with_the_pdto
+	icon = GFX_focus_PRC_economic_war_with_the_pdto
+	x = 1
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRC_east_rising_west_falling
+	ai_will_do = {
+		factor = 60
+	}
+	prerequisite = { focus = PRC_east_rising_west_falling }
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_economic_war_with_the_pdto completion_reward"
+		unlock_decision_tooltip = PRC_sanction_japan
+		unlock_decision_tooltip = PRC_sanction_india
+		unlock_decision_tooltip = PRC_sanction_australia
+		unlock_decision_tooltip = PRC_sanction_indonesia
+		unlock_decision_tooltip = PRC_sanction_korea
+	}
+}
+
 focus_tree = {
 	id = NCM_focus
 	country = {

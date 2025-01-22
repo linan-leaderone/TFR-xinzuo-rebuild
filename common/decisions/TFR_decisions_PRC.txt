@@ -11310,10 +11310,14 @@ annex_country = {
 				}
 			}
 
-										FPR = {
+										FRA = {
 				set_cosmetic_tag = FRA_Federated_Republic_of_Europe
 				set_party_name = { ideology = libertarian_socialist long_name = FRAPPPCCC_party name = FRAPPPCCC_party }
 
+annex_country = {
+								target = FPR
+								transfer_troops = yes
+							}
 annex_country = {
 								target = GER
 								transfer_troops = yes
@@ -11334,49 +11338,49 @@ annex_country = {
 				limit = {
 					is_core_of = FRA
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = ENG
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = GER
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = ITA
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = AUS
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = HOL
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = BEL
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 		if = {
 				limit = {
 					is_core_of = LUX
 				}
-			    add_core_of = FPR
+			    add_core_of = FRA
 		    }	
 				set_country_leader_ideology = anarchist_maoism
 
@@ -11384,6 +11388,7 @@ annex_country = {
 	}
 
 		}
+	}
 	}
 			PRC_military_intervention_fpr_1 = {
 		available = {
@@ -11442,7 +11447,7 @@ annex_country = {
 				set_country_flag = ecwar_flag	
 				scoped_sound_effect = ecwar
 				scoped_play_song = "one_minute_of_silence"
-										FPR = {
+			FPR = {
 
 		if = {
 				limit = {
