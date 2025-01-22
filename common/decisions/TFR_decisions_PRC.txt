@@ -10704,13 +10704,51 @@ NOT = {country_exists = SYR}
 
 		}
 	}
+	PRC_military_intervention_rom_1 = {
+		available = {
+		OR = {
+				BUL = {
+					is_ally_with = PRC
+				}
+				HUN = {
+					is_ally_with = PRC
+				}
+		}
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+				NOT = {
+			has_country_flag = PRC_hun_influence
+					ROM = {
+						is_in_faction = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+			
+		complete_effect = {
+
+			
+		}
+		remove_effect = {
+
+			PRC = {
+				declare_war_on = { 
+					target = ROM
+					type = annex_everything 
+				}
+			}
+
+		}
+	}
 	PRC_military_intervention_hun_1 = {
 		available = {
 		OR = {
 				AUS = {
-					is_ally_with = PRC
-				}
-				SER = {
 					is_ally_with = PRC
 				}
 				ROM = {
@@ -11281,7 +11319,7 @@ annex_country = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_17
 				
-	FPR = {is_ally_with = PRC}
+	FRA = {is_ally_with = PRC}
 	GER = {is_ally_with = PRC}
 	ITA = {is_ally_with = PRC}
 	AUS = {is_ally_with = PRC}
