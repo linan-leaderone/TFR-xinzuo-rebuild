@@ -5,6 +5,9 @@ ideologies = {
 			}
 			maoism = {
 			}
+			maoism_cyber = {
+				can_be_randomly_selected = no
+			}
 			jacobinism = {
 				can_be_randomly_selected = no
 				color = {

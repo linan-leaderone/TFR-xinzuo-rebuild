@@ -1,7 +1,37 @@
 on_actions = {
 	on_capitulation = {
 		effect = {
-				
+					if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+					has_idea = USA_battle_for_america_idea
+
+						}
+					}
+
+
+						PRC = {white_peace = ROOT}
+TRG = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = TRG
+		    }
+							}
+					set_global_flag = skip_default_capitulation
+				}					
 				if = {
 					limit = {
 
@@ -13,28 +43,83 @@ on_actions = {
 						}
 						ROOT = {
 						OR = {
-							original_tag = CYP
+							original_tag = CAN
+							original_tag = QUE
+							original_tag = MAA
 						}
+						}
+					}
 
+
+						PRC = {white_peace = ROOT}
+TRG = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+				set_cosmetic_tag = MAA_Peoples_Republic_of_America
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = TRG
+		    }
+							}
+					set_global_flag = skip_default_capitulation
+				}				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = GRK
+						}
+					}
+
+
+GRE = {annex_country = {
+								target = GRK
+								transfer_troops = no
+							}
+							}
+								set_global_flag = skip_default_capitulation
+				}					
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = CYP
 						}
 					}
 
 
 						PRC = {white_peace = ROOT}
 TUR = {annex_country = {
-								target = ROOT
+								target = CYP
 								transfer_troops = no
 							}
 
 			every_state = {
 				limit = {
-					is_core_of = ROOT
+					is_core_of = CYP
 				}
 			    add_core_of = TUR
-		    }
+		    }	
+			transfer_state = 183
 							}
 					FROM = {
-						white_peace = ROOT
+						white_peace = CYP
 						clr_country_flag = PRC_spread_chinese_influence
 					}
 					set_global_flag = skip_default_capitulation
@@ -77,7 +162,51 @@ PRP = {annex_country = {
 					}
 					set_global_flag = skip_default_capitulation
 				}
-					
+						if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = FAF
+							original_tag = BRI
+							original_tag = SAX
+							original_tag = ADU
+							original_tag = BEL
+							original_tag = HOL
+
+						}
+
+						}
+					}
+
+						PRC = {white_peace = ROOT}
+FPR = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = FPR
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+		
+
+				}			
 				if = {
 					limit = {
 
@@ -312,7 +441,48 @@ MLD = {annex_country = {
 
 					set_global_flag = skip_default_capitulation
 				}
-			
+					
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = NIR
+							original_tag = IRA
+
+
+						}
+						}
+					}
+
+
+IRE = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = IRE
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+
+					set_global_flag = skip_default_capitulation
+				}	
 				if = {
 					limit = {
 
@@ -481,7 +651,201 @@ RSR = {annex_country = {
 
 					set_global_flag = skip_default_capitulation
 				}
-						
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = FIN
+						}
+					}
+
+
+						PRC = {white_peace = FIN}
+			PRC = {set_autonomy = {
+			target = FIN
+			autonomy_state = autonomy_tongzhi
+			}}			
+						FIN = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "芬兰革命委员会"
+	                desc = "POLITICS_FINGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = ICE
+						}
+					}
+
+
+						PRC = {white_peace = ICE}
+			PRC = {set_autonomy = {
+			target = ICE
+			autonomy_state = autonomy_tongzhi
+			}}			
+						ICE = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "冰岛革命委员会"
+	                desc = "POLITICS_ICEGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SWE
+						}
+					}
+
+
+						PRC = {white_peace = SWE}
+			PRC = {set_autonomy = {
+			target = SWE
+			autonomy_state = autonomy_tongzhi
+			}}			
+						SWE = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "瑞典革命委员会"
+	                desc = "POLITICS_SWEGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}										
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = NOR
+						}
+					}
+
+
+						PRC = {white_peace = NOR}
+			PRC = {set_autonomy = {
+			target = NOR
+			autonomy_state = autonomy_tongzhi
+			}}			
+						NOR = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "挪威革命委员会"
+	                desc = "POLITICS_NORGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}					
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = DEN
+						}
+					}
+
+
+						PRC = {white_peace = DEN}
+			PRC = {set_autonomy = {
+			target = DEN
+			autonomy_state = autonomy_tongzhi
+			}}			
+						DEN = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "丹麦革命委员会"
+	                desc = "POLITICS_DENGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}						
 				if = {
 					limit = {
 
@@ -503,6 +867,14 @@ RSR = {annex_country = {
 			autonomy_state = autonomy_tongzhi
 			}}			
 						ENG = {
+annex_country = {
+								target = SCO
+								transfer_troops = yes
+							}
+annex_country = {
+								target = UK2
+								transfer_troops = yes
+							}
                 inherit_technology = PRC
 				set_politics = {
 				ruling_party = totalitarian_socialist
@@ -515,6 +887,46 @@ RSR = {annex_country = {
 	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
 	                expire = "1999.1.1"
 	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = IRE
+						}
+					}
+
+
+						PRC = {white_peace = IRE}
+			PRC = {set_autonomy = {
+			target = IRE
+			autonomy_state = autonomy_tongzhi
+			}}			
+						IRE = {
+                inherit_technology = PRC
+				set_cosmetic_tag = NIR_IRA
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "爱尔兰革命委员会"
+	                desc = "POLITICS_IREGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
 				}  
 						}
 
@@ -699,12 +1111,12 @@ RSR = {annex_country = {
 
 						PRC = {white_peace = FRA}
 			PRC = {set_autonomy = {
-			target = FRA
+			target = FPR
 			autonomy_state = autonomy_tongzhi
 			}}			
-						FRA = {
+						FPR = {
 annex_country = {
-								target = FPR
+								target = LUX
 								transfer_troops = yes
 							}
                 inherit_technology = PRC

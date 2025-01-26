@@ -1,4 +1,13 @@
 spriteTypes = {	
+
+	frameAnimatedSpriteType = {
+            name = "GFX_MAO"
+            texturefile = "gfx/MAOYUANXIN/MAO.png"
+            noOfFrames = 80
+            animation_rate_fps = 30
+            looping = yes
+            play_on_show = yes
+		}
 	frameAnimatedSpriteType = {
             name = "GFX_SMSY"
             texturefile = "gfx/MAOYUANXIN/Yuuki.dds"
@@ -10,7 +19,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_ecwar2"
 		texturefile = "gfx/MAOYUANXIN/super_ecwar2.png"
-	}							
+	}								
+	SpriteType = {
+		name = "GFX_super_acwar"
+		texturefile = "gfx/MAOYUANXIN/super_acwar.png"
+	}								
 	SpriteType = {
 		name = "GFX_super_ecwar"
 		texturefile = "gfx/MAOYUANXIN/super_ecwar.png"
@@ -192,10 +205,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_anarchist_maoism"
 		texturefile = "gfx/MAOYUANXIN/anarchist_maoism.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_maoism_cyber"
+		texturefile = "gfx/MAOYUANXIN/maoism_cyber.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_marxism_lenin_maoism"
 		texturefile = "gfx/MAOYUANXIN/marxism_lenin_maoism.png"
+	}			
+	spriteType = {
+		name = "GFX_ZZZ_nailong_economy2_banner"
+		texturefile = "gfx/MAOYUANXIN/ZZZ_nailong_economy2_banner.png"
+		legacy_lazy_load = no
+	}						
+	spriteType = {
+		name = "GFX_OGAS_socialism"
+		texturefile = "gfx/MAOYUANXIN/ZZZ_OGAS_socialism1.png"
+	}								
+	spriteType = {
+		name = "GFX_nailong_economy1"
+		texturefile = "gfx/MAOYUANXIN/ZZZ_nailong1.png"
+	}							
+	spriteType = {
+		name = "GFX_nailong_economy2"
+		texturefile = "gfx/MAOYUANXIN/ZZZ_planned_ecs.png"
+	}						
+	spriteType = {
+		name = "GFX_ZZZ_nailong_economy1_banner"
+		texturefile = "gfx/MAOYUANXIN/ZZZ_nailong_economy1_banner.png"
+		legacy_lazy_load = no
+	}					
+	spriteType = {
+		name = "GFX_ZZZ_developed_OGAS_socialism_banner"
+		texturefile = "gfx/MAOYUANXIN/ZZZ_developed_OGAS_socialism_banner.png"
+		legacy_lazy_load = no
 	}		
 	spriteType = {
 		name = "GFX_ideology_Esoteric_Maoism"
@@ -208,7 +252,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_reformist_socialism_1"
 		texturefile = "gfx/MAOYUANXIN/reformist_socialism_1.png"
-	}		
+	}			
+	spriteType = {
+		name = "GFX_Ideology_maoism_cyber"
+		texturefile = "gfx/MAOYUANXIN/Ideology_maoism_cyber.png"
+		legacy_lazy_load = no
+	}	
 	spriteType = {
 		name = "GFX_Ideology_ezmaoism"
 		texturefile = "gfx/MAOYUANXIN/Ideology_ezmaoism.png"

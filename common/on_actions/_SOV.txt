@@ -18,6 +18,41 @@ NOT = {has_global_flag = PRC_taiwan_war_lost}
 					limit = {
 						FROM = {
 						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SSD
+						}
+					}
+						PRC = {white_peace = SSD}
+EFF = {annex_country = {
+								target = SSD
+								transfer_troops = no
+							}}
+								XIN = {transfer_state = 1345
+								transfer_state = 1344
+								transfer_state = 1351
+								transfer_state = 762
+								transfer_state = 1348 }
+			every_state = {
+				limit = {
+					is_core_of = SSD
+				}
+			    add_core_of = XIN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = SSD
+				}
+			    remove_core_of = SSD
+		    }
+					}
+				if = {
+					limit = {
+						FROM = {
+						OR = {
 							original_tag = ROJ
 								is_ally_with = ROJ
 						}
@@ -436,6 +471,7 @@ ETL = {annex_country = {
 					}
 						ETL = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -513,11 +549,13 @@ ETL = {annex_country = {
 							original_tag = HOU
 							original_tag = ROC
 							original_tag = EGY
+							original_tag = MUS
+							original_tag = MEK
 							original_tag = LBA
+							original_tag = HRL
 							original_tag = SUD
 							original_tag = MRT
 							original_tag = WES
-							original_tag = SSD
 						}
 
 						}
@@ -904,7 +942,19 @@ JOR = {annex_country = {
 	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
 	                expire = "1999.1.1"
 	                ideology = maoism
-				}  
+				} 
+
+ annex_country = {
+								target = PAL
+								transfer_troops = no
+							}
+								transfer_state = 810
+								transfer_state = 1112
+								transfer_state = 1111
+								transfer_state = 1110
+								transfer_state = 812
+								transfer_state = 454
+								transfer_state = 914
 						}
 			every_state = {
 				limit = {

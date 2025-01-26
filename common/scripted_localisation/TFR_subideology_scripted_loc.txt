@@ -131,6 +131,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = maoism_cyber
+		}
+		localization_key = maoism_cyber
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = jacobinism
 		}
 		localization_key = jacobinism

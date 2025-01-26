@@ -9227,6 +9227,56 @@ PRC_foreign_policy_category = {
 			}
 		}
 	}
+
+			PRC_military_intervention_irq_2 = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_5
+
+			OR = {
+						country_exists = KUW
+						country_exists = KUR
+					}
+					IRQ = {
+						is_ally_with = PRC
+					}
+
+			}
+		}
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		
+		remove_effect = {
+
+				if = {
+					limit = {
+						country_exists = KUR
+					}
+
+				declare_war_on = { 
+					target = KUR
+					type = annex_everything 
+				}
+					}
+				if = {
+					limit = {
+						country_exists = KUW
+					}
+
+				declare_war_on = { 
+					target = KUW
+					type = annex_everything 
+				}
+					}
+
+	
+
+
+		}
+	}
+
 			PRC_military_intervention_leb_1 = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
@@ -9443,6 +9493,7 @@ XIN = {annex_country = {
 					}
 						ROJ = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 				}
@@ -9535,6 +9586,7 @@ XIN = {
 					}
 						XIN = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -9922,6 +9974,7 @@ XIN = {annex_country = {
 					}
 						ROJ = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 				}
@@ -10014,6 +10067,7 @@ XIN = {
 					}
 						XIN = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -10877,6 +10931,12 @@ NOT = {country_exists = SYR}
 
 			PRC = {
 				declare_war_on = { 
+					target = GRK
+					type = annex_everything 
+				}
+			}
+			PRC = {
+				declare_war_on = { 
 					target = GRE
 					type = annex_everything 
 				}
@@ -11297,6 +11357,7 @@ annex_country = {
 					}
 						VIN = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 			add_popularity = {
@@ -11319,7 +11380,7 @@ annex_country = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_17
 				
-	FRA = {is_ally_with = PRC}
+	FPR = {is_ally_with = PRC}
 	GER = {is_ally_with = PRC}
 	ITA = {is_ally_with = PRC}
 	AUS = {is_ally_with = PRC}
@@ -11360,10 +11421,22 @@ annex_country = {
 								target = GER
 								transfer_troops = yes
 							}
+
 annex_country = {
 								target = ITA
 								transfer_troops = yes
 							}
+
+annex_country = {
+								target = HOL
+								transfer_troops = yes
+							}
+annex_country = {
+								target = LUX
+								transfer_troops = yes
+							}
+
+
 annex_country = {
 								target = AUS
 								transfer_troops = yes
@@ -11435,7 +11508,6 @@ annex_country = {
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_17
-				country_exists = FPR
 			}
 		}
 		fire_only_once = yes
@@ -11451,6 +11523,76 @@ annex_country = {
 		
 	
 	    hidden_effect = {	
+
+					IRA = {
+						dismantle_faction = yes
+					}
+					NIR = {
+						dismantle_faction = yes
+					}
+					IRE = {
+						dismantle_faction = yes
+					}
+					ENG = {
+						dismantle_faction = yes
+					}
+					HOL = {
+						dismantle_faction = yes
+					}
+					FRA = {
+						dismantle_faction = yes
+					}
+					ITA = {
+						dismantle_faction = yes
+					}
+					NOR = {
+						dismantle_faction = yes
+					}
+					SWE = {
+						dismantle_faction = yes
+					}
+					FIN = {
+						dismantle_faction = yes
+					}
+					ICE = {
+						dismantle_faction = yes
+					}
+					DEN = {
+						dismantle_faction = yes
+					}
+					GER = {
+						dismantle_faction = yes
+					}
+			ADU = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			BEL = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			SAX = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			BRI = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			FAF = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
 			FRA = {
 				declare_war_on = { 
 					target = PRC
@@ -11462,18 +11604,105 @@ annex_country = {
 					target = FPR
 					type = annex_everything 
 				}
+			}			
+			IRA = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			NIR = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}			
+			ICE = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
 			}	
+			IRE = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			SWE = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			NOR = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			FIN = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			DEN = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			HOL = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}
 			GER = {
 				declare_war_on = { 
 					target = PRC
 					type = annex_everything 
 				}
 			}	
+
+				if = {
+					limit = {
+						LUX = {has_government = communist}
+					}
+
+			PRC = {
+				add_to_faction = LUX
+			}
+			}
+				if = {
+					limit = {
+						UK2 = {has_government = communist}
+					}
+
+			PRC = {
+				add_to_faction = UK2
+			}
+			}
+				if = {
+					limit = {
+						ITA = {has_government = communist}
+					}
+
+			PRC = {
+				add_to_faction = ITA
+			}
+			}
+				if = {
+					limit = {
+						NOT = {ITA = {has_government = communist}}
+					}
 			ITA = {
 				declare_war_on = { 
 					target = PRC
 					type = annex_everything 
 				}
+			}	
 			}	
 			ENG = {
 				declare_war_on = { 
@@ -11583,6 +11812,7 @@ annex_country = {
 					}
 						FPR = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 
@@ -11730,6 +11960,7 @@ annex_country = {
 					}
 						PRP = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 
@@ -11878,6 +12109,7 @@ annex_country = {
 					}
 						RSR = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 
@@ -12029,6 +12261,7 @@ annex_country = {
 					}
 						ETI = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 				}
 			}
@@ -13382,6 +13615,7 @@ GER = {
 					}
 						BAN = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -13532,6 +13766,7 @@ GER = {
 					}
 						EFF = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}		 
@@ -13662,6 +13897,7 @@ GER = {
 					}
 						ZAP = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -13774,6 +14010,7 @@ GER = {
 					}
 						ZAP = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -13909,6 +14146,7 @@ GER = {
 					}
 						ELN = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -14046,6 +14284,7 @@ GER = {
 					}
 						SIG = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -14190,6 +14429,7 @@ GER = {
 					}
 						PAK = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}

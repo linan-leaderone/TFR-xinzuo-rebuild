@@ -171,6 +171,7 @@ add_ideas = 	BRM_civil_war_idea1
 					}
 						PRK = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -457,6 +458,7 @@ add_ideas = 	BRM_civil_war_idea1
 		
 						ROOT = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 					set_global_flag = skip_default_capitulation
 				}
@@ -658,6 +660,7 @@ remove_ideas = AFG_crushing_taliban
 					}
 						AFG = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}

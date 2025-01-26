@@ -16,3 +16,9 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+sound = {
+	name = "acwar"
+	file = "menu/acwar.wav"
+	volume = 1
+	always_load = yes
+}

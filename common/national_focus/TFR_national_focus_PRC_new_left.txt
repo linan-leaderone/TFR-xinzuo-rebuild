@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 100
 		}
 	allow_branch = {
-		has_country_flag = PRC_handongfang_hog
+		#has_country_flag = PRC_handongfang_hog
 	}
 		available = {
 			PRC_han_dongfang = {is_country_leader = yes}
@@ -252,7 +252,7 @@ focus_tree = {
         }
 
 	allow_branch = {
-		has_completed_focus = PRC_the_Flower_of_Freedom_8	
+		#has_completed_focus = PRC_the_Flower_of_Freedom_8	
 	}
 		completion_reward = {
 			add_political_power = 100
@@ -471,7 +471,7 @@ focus_tree = {
         }
 
 		completion_reward = {
-
+change_economy_type_worker_controlled = yes
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea
@@ -7156,6 +7156,7 @@ has_country_leader = {
 		  
 		}
 		completion_reward = {
+			change_economy_type_ZZZ_nailong_economy1 = yes
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea
@@ -7230,6 +7231,7 @@ has_country_leader = {
 		  
 		}
 		completion_reward = {
+			change_economy_type_planned_economy = yes
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea
@@ -7701,9 +7703,35 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
+			if = {
+				limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_6
+				}
+			has_completed_focus = PRC_the_Flower_of_Freedom_25
+			}
 		  
 		}
 		completion_reward = {
+			if = {
+				limit = {
+			has_completed_focus = PRC_advanced_economic_planning_2
+				}
+			change_economy_type_ZZZ_nailong_economy2 = yes
+			}
+			if = {
+				limit = {
+			has_completed_focus = PRC_advanced_economic_planning_1
+			NOT = {has_completed_focus = PRC_the_Flower_of_Freedom_25}
+				}
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+			}
+			if = {
+				limit = {
+			has_completed_focus = PRC_advanced_economic_planning_1
+			has_completed_focus = PRC_the_Flower_of_Freedom_25
+				}
+	change_economy_type_ZZZ_OGAS_socialism2 = yes
+			}
 			add_ideas = PRC_future_of_cyber_communism_idea_1
 	add_research_slot = 1
 			every_country = {
@@ -7713,6 +7741,7 @@ has_country_leader = {
 				}
 	add_research_slot = 1
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 			}
 			set_temp_variable = {
 				var = debt_var_temp

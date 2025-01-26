@@ -1,4 +1,21 @@
 	scripted_gui = {
+		acwar_super_event = {
+			context_type = player_context
+			window_name = "acwar_super_event"
+
+			visible = {
+				has_country_flag = acwar_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = acwar_flag
+				}
+			}
+		}
 		rcwar_super_event = {
 			context_type = player_context
 			window_name = "rcwar_super_event"

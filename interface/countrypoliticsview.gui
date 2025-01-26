@@ -1,8 +1,164 @@
 guiTypes = {
 
 	containerWindowType = {
+		name = "TFR_economic_type_countrypoliticsview_container"
+		position = { x = 15 y = 322 }
+		size = { width = 68 height = 68 }
+		clipping = yes
+		scale = 0.96
+		
+		iconType = {
+			name = "TFR_no_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Faction_Member"
+			pdx_tooltip = "TFR_NO_ECONOMY_TT"
+			pdx_tooltip_delayed = "TFR_NO_ECONOMY_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_capitalism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_capitalism_economy"
+			pdx_tooltip = "TFR_CAPITALISM_TT"
+			pdx_tooltip_delayed = "TFR_CAPITALISM_TT_LONG"
+		}		
+		iconType = {
+			name = "TFR_american_capitalism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_american_capitalism_economy"
+			pdx_tooltip = "TFR_AMERICAN_CAPITALISM_TT"
+			pdx_tooltip_delayed = "TFR_AMERICAN_CAPITALISM_TT_LONG"
+		} 
+		iconType = {
+			name = "TFR_collective_capitalism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_collective_capitalism_economy"
+			pdx_tooltip = "TFR_COLLECTIVE_CAPITALISM_TT"
+			pdx_tooltip_delayed = "TFR_COLLECTIVE_CAPITALISM_TT_LONG"
+		} 	
+		iconType = {
+			name = "TFR_oligopolistic_capitalism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_oligopolistic_capitalism_economy"
+			pdx_tooltip = "TFR_OLIGOPOLY_CAPITALISM_TT"
+			pdx_tooltip_delayed = "TFR_OLIGOPOLY_CAPITALISM_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_welfare_capitalism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_welfare_capitalism_economy"
+			pdx_tooltip = "TFR_WELFARE_CAPITALISM_TT"
+			pdx_tooltip_delayed = "TFR_WELFARE_CAPITALISM_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_corporatism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_corporatism_economy"
+			pdx_tooltip = "TFR_CORPORATISM_TT"
+			pdx_tooltip_delayed = "TFR_CORPORATISM_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_managed_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_managed_economy"
+			pdx_tooltip = "TFR_MANAGED_ECONOMY_TT"
+			pdx_tooltip_delayed = "TFR_MANAGED_ECONOMY_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_command_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_command_economy"
+			pdx_tooltip = "TFR_COMMAND_ECONOMY_TT"
+			pdx_tooltip_delayed = "TFR_COMMAND_ECONOMY_TT_LONG"
+		}		
+		iconType = {
+			name = "TFR_planned_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_planned_economy"
+			pdx_tooltip = "TFR_PLANNED_ECONOMY_TT"
+			pdx_tooltip_delayed = "TFR_PLANNED_ECONOMY_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_socialist_market_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_socialist_market"
+			pdx_tooltip = "TFR_SOCIALIST_MARKET_TT"
+			pdx_tooltip_delayed = "TFR_SOCIALIST_MARKET_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_developed_socialism_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_developed_socialism"
+			pdx_tooltip = "TFR_DEVELOPED_SOCIALISM_TT"
+			pdx_tooltip_delayed = "TFR_DEVELOPED_SOCIALISM_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_military_controlled_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_military_controlled_economy"
+			pdx_tooltip = "TFR_MILITARY_CONTROLLED_TT"
+			pdx_tooltip_delayed = "TFR_MILITARY_CONTROLLED_TT_LONG"
+		}	
+		iconType = {
+			name = "TFR_worker_controlled_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_worker_controlled_economy"
+			pdx_tooltip = "TFR_WORKER_CONTROLLED_TT"
+			pdx_tooltip_delayed = "TFR_WORKER_CONTROLLED_TT_LONG"
+		}
+		iconType = {
+			name = "TFR_chaostic_economy_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_chaostic_economy"
+			pdx_tooltip = "TFR_CHAOSTIC_TT"
+			pdx_tooltip_delayed = "TFR_CHAOSTIC_TT_LONG"
+		}
+		iconType = {
+				name = "TFR_minarchism_economy_type_icon"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_minarchism_economy"
+				pdx_tooltip = "TFR_MINARCHISM_TT"
+				pdx_tooltip_delayed = "TFR_MINARCHISM_TT_LONG"
+		}
+		iconType = {
+				name = "TFR_ancap_economy_type_icon"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_ancap_economy"
+				pdx_tooltip = "TFR_ANCAP_TT"
+				pdx_tooltip_delayed = "TFR_ANCAP_TT_LONG"
+		}
+		iconType = {
+				name = "TFR_OGAS_socialism1_type_icon"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_OGAS_socialism"
+				pdx_tooltip = "ZZZ_OGAS_socialism1_TT"
+				pdx_tooltip_delayed = "ZZZ_OGAS_socialism1_LONG"
+		}
+		iconType = {
+				name = "TFR_OGAS_socialism2_type_icon"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_OGAS_socialism"
+				pdx_tooltip = "ZZZ_OGAS_socialism2_TT"
+				pdx_tooltip_delayed = "ZZZ_OGAS_socialism2_LONG"
+		}
+		iconType = {
+				name = "TFR_nailong_economy1_type_icon"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_nailong_economy1"
+				pdx_tooltip = "nailong_economy1_TT"
+				pdx_tooltip_delayed = "nailong_economy1_TT_LONG"
+		}
+		iconType = {
+				name = "TFR_nailong_economy2_type_icon"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_nailong_economy2"
+				pdx_tooltip = "nailong_economy2_TT"
+				pdx_tooltip_delayed = "nailong_economy2_TT_LONG"
+		}
+	}
+	
+	containerWindowType = {
 		name = "TFR_global_asssociation_countrypoliticsview_container"
-		position = { x = 61 y = 325 }
+		position = { x = 105 y = 325 }
 		size = { width = 68 height = 68 }
 		clipping = yes
 		

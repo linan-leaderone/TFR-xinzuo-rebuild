@@ -1,5 +1,76 @@
 	ideas = {
 		hidden_ideas = {
+
+			ZZZ_nailong_economy2 = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					consumer_goods_factor = -0.05
+					production_speed_infrastructure_factor = 0.1
+					industrial_capacity_factory = 0.06
+					line_change_production_efficiency_factor = 0.05
+					production_lack_of_resource_penalty_factor = -0.035
+					income_growth_factor = 0.1
+					personal_expense_factor = 0.1
+				}
+			}
+			ZZZ_nailong_economy1 = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					consumer_goods_factor = -0.025
+					production_speed_infrastructure_factor = 0.1
+					industrial_capacity_factory = 0.06
+					line_change_production_efficiency_factor = -0.05
+					production_lack_of_resource_penalty_factor = 0.035
+					income_growth_factor = -0.1
+					personal_expense_factor = -0.1
+				}
+			}
+			ZZZ_OGAS_socialism2 = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					consumer_goods_factor = -0.05
+					production_speed_industrial_complex_factor = 0.1
+					industrial_capacity_factory = 0.1
+					production_lack_of_resource_penalty_factor = -0.1
+					line_change_production_efficiency_factor = 0.1
+					production_factory_efficiency_gain_factor = 0.1
+					personal_expense_factor = 0.05
+					personal_value_factor = 0.1
+				}
+			}
+			ZZZ_OGAS_socialism1 = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					consumer_goods_factor = -0.05
+					production_speed_industrial_complex_factor = 0.1
+					industrial_capacity_factory = 0.1
+					production_lack_of_resource_penalty_factor = -0.1
+					line_change_production_efficiency_factor = 0.1
+					production_factory_efficiency_gain_factor = 0.1
+					personal_expense_factor = 0.05
+					personal_value_factor = 0.1
+				}
+			}
 			duliyuanjing_2 = {
 				picture = SOV_stakhanovite_movement
 				allowed = {

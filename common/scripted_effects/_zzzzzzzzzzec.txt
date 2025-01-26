@@ -1,0 +1,54 @@
+
+remove_economy_types = {
+	remove_ideas = {
+		ZZZ_capitalist_economy
+		ZZZ_american_capitalism
+		ZZZ_collective_capitalism
+		ZZZ_oligopolistic_capitalism
+		ZZZ_welfare_capitalism
+		ZZZ_corporatism
+		ZZZ_managed_economy
+		ZZZ_command_economy
+		ZZZ_planned_economy
+		ZZZ_socialist_market
+		ZZZ_developed_socialism
+		ZZZ_military_controlled_economy
+		ZZZ_worker_controlled_economy
+		ZZZ_chaostic_economy
+		ZZZ_minarchism
+		ZZZ_ancap
+		ZZZ_OGAS_socialism1
+		ZZZ_OGAS_socialism2
+		ZZZ_nailong_economy1
+		ZZZ_nailong_economy2
+	}
+}
+
+change_economy_type_ZZZ_nailong_economy1 = {
+	custom_effect_tooltip = change_economy_type_ZZZ_nailong_economy1_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_nailong_economy1
+	}
+}
+change_economy_type_ZZZ_nailong_economy2 = {
+	custom_effect_tooltip = change_economy_type_ZZZ_nailong_economy2_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_nailong_economy2
+	}
+}
+change_economy_type_ZZZ_OGAS_socialism1 = {
+	custom_effect_tooltip = change_economy_type_ZZZ_OGAS_socialism1_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_OGAS_socialism1
+	}
+}
+change_economy_type_ZZZ_OGAS_socialism2 = {
+	custom_effect_tooltip = change_economy_type_ZZZ_OGAS_socialism2_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_OGAS_socialism2
+	}
+}

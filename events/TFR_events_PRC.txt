@@ -11927,21 +11927,21 @@ country_event = {
 }
 
 #Chinese Ending nl
-country_event = {
-	id = china.2003
-	title = china.2003.t
-	desc = china.2003.d
-	picture = GFX_PRC_ending_nl
-	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {
-	}
-	immediate = {
-	}
-	option = {
-		name = china.2003.a
-		custom_effect_tooltip = PRC_tfr_china_ending_tt
-		custom_effect_tooltip = unrestricted_diplomacy_tt
-		set_country_flag = unrestricted_diplomacy_flag
-	}
-}
+#country_event = {
+#	id = china.2003
+#	title = china.2003.t
+#	desc = china.2003.d
+#	picture = GFX_PRC_ending_nl
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	trigger = {
+#	}
+#	immediate = {
+#	}
+#	option = {
+#		name = china.2003.a
+#		custom_effect_tooltip = PRC_tfr_china_ending_tt
+#		custom_effect_tooltip = unrestricted_diplomacy_tt
+#		set_country_flag = unrestricted_diplomacy_flag
+#	}
+#}

@@ -76,4 +76,64 @@ units = {
 		division_template = "Infantry Brigade"
 		start_experience_factor = 0.1
 	}	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "1st Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2nd Infantry Brigade"
+		location = 13428
+		division_template = "Infantry Brigade"
+		start_experience_factor = 0.1
+	}	
 }

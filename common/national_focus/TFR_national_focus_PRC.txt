@@ -2790,7 +2790,10 @@ shared_focus = {
 			mark_focus_tree_layout_dirty = yes
 
 		complete_national_focus = PRC_chinas_greatest_hour
-		JAP = {activate_mission = JAP_korean_war_joining}
+		JAP = {			add_to_faction = KOR
+			KOR = {
+				set_country_flag = pdto_member
+			}}
 
 		NAX = {
 			transfer_state = 435
@@ -2831,7 +2834,7 @@ shared_focus = {
 			target = NAX
 			type = annex_everything
 		}
-	    }
+	    }	
 	    }
 		
 	
@@ -2871,7 +2874,10 @@ shared_focus = {
 		unlock_decision_tooltip = PRC_military_intervention_zap_1
 		unlock_decision_tooltip = PRC_military_intervention_zap_2
 	
-	    hidden_effect = {	
+	    hidden_effect = {		
+					TRG = {
+						dismantle_faction = yes
+					}
 					NGA = {
 						dismantle_faction = yes
 					}
@@ -2890,7 +2896,6 @@ shared_focus = {
 			every_country = {
 				limit = {
 						is_ally_with = PRC
-						NOT = {has_country_flag = KMGJ_member}
 				}
 		set_country_flag = KMGJ_member
 			}
@@ -2938,7 +2943,7 @@ shared_focus = {
 		declare_war_on = {
 			target = KAZ
 			type = annex_everything
-		} 
+		}
 		declare_war_on = {
 			target = TAJ
 			type = annex_everything
@@ -3005,12 +3010,96 @@ shared_focus = {
 				}	
 		custom_effect_tooltip = PRC_this_will_lead_to_the_gecw	
 	    hidden_effect = {	
+					NIR = {
+						dismantle_faction = yes
+					}
+					IRE = {
+						dismantle_faction = yes
+					}
+					ENG = {
+						dismantle_faction = yes
+					}
+					HOL = {
+						dismantle_faction = yes
+					}
+					FRA = {
+						dismantle_faction = yes
+					}
+					ITA = {
+						dismantle_faction = yes
+					}
+					NOR = {
+						dismantle_faction = yes
+					}
+					SWE = {
+						dismantle_faction = yes
+					}
+					FIN = {
+						dismantle_faction = yes
+					}
+					ICE = {
+						dismantle_faction = yes
+					}
+					DEN = {
+						dismantle_faction = yes
+					}
+					GER = {
+						dismantle_faction = yes
+					}
 			FRA = {
 				declare_war_on = { 
 					target = PRC
 					type = annex_everything 
 				}
 			}	
+			FRA = {
+				declare_war_on = { 
+					target = FPR
+					type = annex_everything 
+				}
+			}		
+			NIR = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}			
+			ICE = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			IRE = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			SWE = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			NOR = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}		
+			FIN = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}	
+			DEN = {
+				declare_war_on = { 
+					target = PRC
+					type = annex_everything 
+				}
+			}
 			GER = {
 				declare_war_on = { 
 					target = PRC
@@ -3126,6 +3215,7 @@ shared_focus = {
 					}
 						RCG = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -3155,7 +3245,7 @@ shared_focus = {
 	}
 	bypass = {
 			NOT = {
-				country_exists = MEX
+				country_exists = ZAP
 			}
 	}
 	available = {
@@ -3251,10 +3341,178 @@ shared_focus = {
 		
 
 				set_country_leader_ideology = marxism_lenin_maoism
-	    hidden_effect = {	
-	}
+
 	}
 			}
+
+	}
+}
+shared_focus = {
+	id = PRC_masters_of_asia_18
+	icon = GFX_focus_PRC_masters_of_asia_18
+	x = -7
+	y = 9
+	cost = 3
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		SOV = {is_ally_with = PRC}
+		FRA = {is_ally_with = PRC}							
+	}
+	prerequisite = { focus = PRC_masters_of_asia_15 }
+	prerequisite = { focus = PRC_masters_of_asia_14 }
+	prerequisite = { focus = PRC_masters_of_asia_13 }
+	completion_reward = {
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10000
+			}
+			add_debt = yes
+		custom_effect_tooltip = usa_this_will_lead	
+
+	    hidden_effect = {	
+				set_country_flag = acwar_flag	
+				scoped_sound_effect = acwar
+				scoped_play_song = "one_minute_of_silence"
+				
+		CAN = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}	
+		QUE = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}	
+				every_country = { 
+					
+				limit = {
+					has_idea = USA_battle_for_america_idea
+					NOT = {original_tag = TRG}
+				}
+						dismantle_faction = yes
+		declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	
+
+				 }
+			PRC = {
+				add_to_faction = TRG
+			}
+			set_autonomy = {
+			target =TRG
+			autonomy_state = autonomy_tongzhi
+			}
+			TRG = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {TRG = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						TRG = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {TRG = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						TRG = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = beidouweixing}
+						NOT = {TRG = {has_idea = beidouweixing}}
+					}
+						TRG = {
+			add_ideas = beidouweixing
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {TRG = {has_idea = PRC_neomaoism111_idea}}
+					}
+						TRG = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {TRG = {has_idea = PRC_yuuki_4}}
+					}
+						TRG = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {TRG = {has_idea = wushenlun_idea}}
+					}
+						TRG = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {TRG = {has_idea = jjdzxjd_idea}}
+					}
+						TRG = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {TRG= {has_idea = PRC_socialist_dream_idea}}
+					}
+						TRG = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {TRG = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						TRG = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+						}
+				}
+
+				set_country_leader_ideology = maoism
+	}
+				 
+	}
+
+
 
 	}
 }
@@ -3282,13 +3540,21 @@ LBA = {add_ideas = kmgjhz }
 		declare_war_on = {
 			target = EGY
 			type = annex_everything
-		}	
+		}	 
+		declare_war_on = {
+			target = MEK
+			type = annex_everything
+		} 
+		declare_war_on = {
+			target = MUS
+			type = annex_everything
+		} 
 		declare_war_on = {
 			target = SUD
 			type = annex_everything
 		}	
 		declare_war_on = {
-			target = LBA
+			target = HRL
 			type = annex_everything
 		}	
 		declare_war_on = {
@@ -3408,6 +3674,7 @@ shared_focus = {
 					}
 						NIC = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 						}
 
 				}
@@ -7280,7 +7547,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_east_rising_west_falling
 	icon = GFX_focus_PRC_east_rising_west_falling
-	x = 28
+	x = 58
 	y = 0
 	offset = {
 		x = 4

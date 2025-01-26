@@ -6,7 +6,13 @@
 			}
 			localization_key = "super_patriot_victory"
 		}
-		
+			
+		text = { 
+			trigger = {
+				has_country_flag = acwar_flag
+			}
+			localization_key = "acwar"
+		}	
 		text = { 
 			trigger = {
 				has_country_flag = rcwar_flag
@@ -413,7 +419,13 @@
 			}
 			localization_key = "super_patriot_victory_text"
 		}
-		
+				
+		text = { 
+			trigger = {
+				has_country_flag = acwar_flag
+			}
+			localization_key = "acwar_text"
+		}
 		text = { 
 			trigger = {
 				has_country_flag = rcwar_flag
@@ -813,6 +825,13 @@
 				has_country_flag = PTF_patriot_front_victory
 			}
 			localization_key = "super_patriot_victory_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = acwar_flag
+			}
+			localization_key = "acwar_button"
 		}
 		
 		text = { 
