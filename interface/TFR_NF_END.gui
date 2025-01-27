@@ -6,11 +6,6 @@ guiTypes = {
 		background = {
 		   name = "Background"		
 		   quadTextureSprite ="GFX_left_end_back"
-		} 
-		buttonType = {
-			name = "TFR_left_end_button"
-			spriteType = "GFX_left_end_button"
-			position = { x=1667 y=505}
 		}
 		iconType = {
 			name = "TFR_left_end_1"
@@ -71,6 +66,11 @@ guiTypes = {
 			quadTextureSprite = "GFX_LEFT_END_10"
 			position = { x=-960 y=-540}
 			Orientation = "CENTER"
+		} 
+		buttonType = {
+			name = "TFR_left_end_button"
+			spriteType = "GFX_left_end_button"
+			position = { x=1667 y=505}
 		}
 		}
 		}
