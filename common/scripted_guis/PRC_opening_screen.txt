@@ -15,7 +15,7 @@ scripted_gui = {
 				if = { 
 					
 				limit = {
-				check_variable = { PRC_PAGE = 9 }
+				check_variable = { PRC_PAGE = 10 }
 			}
 
 				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_1
