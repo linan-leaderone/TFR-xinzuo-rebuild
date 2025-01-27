@@ -987,15 +987,16 @@ SOV = {annex_country = {
 				if = {
 					limit = {
 	MLD = {is_ally_with = SOV}
-	PLD = {is_ally_with = PRC}
+	NOT = {PLD = {is_ally_with = PRC}}
 					}
 			PRC = {set_autonomy = {
 			target = MLD
 			autonomy_state = autonomy_tongzhi
 			}}			
 						MLD = {
+								transfer_state = 5
                 inherit_technology = PRC
-				set_party_name = { ideology = libertarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+				set_party_name = { ideology = totalitarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -1013,9 +1014,11 @@ SOV = {annex_country = {
 				if = {
 					limit = {
 	MLD = {is_ally_with = SOV}
-	NOT = {PLD = {is_ally_with = PRC}}
+	PLD = {is_ally_with = PRC}
 					}
-PLD = {annex_country = {
+PLD = {
+								transfer_state = 5
+annex_country = {
 								target = MLD
 								transfer_troops = yes
 							}}
@@ -1155,10 +1158,8 @@ SOV = {annex_country = {
 			    add_core_of = SOV
 		    }
 					}
-				if = {
-					limit = {
-	LAT = {is_ally_with = SOV}
-					}
+
+
 SOV = {annex_country = {
 								target = LAT
 								transfer_troops = yes
@@ -1169,7 +1170,6 @@ SOV = {annex_country = {
 				}
 			    add_core_of = SOV
 		    }
-					}
 
 	SOV = {
 			set_cosmetic_tag = SOV_SovietUnion
@@ -2903,9 +2903,14 @@ country_event = {
         desc = PRC_MAO.113.d
         picture = GFX_PRC_MAO_event_113
         is_triggered_only = yes
-        fire_only_once = yes
+        fire_only_once = no
         option = {
                 name = PRC_MAO.113.a
+
+			PRC = {annex_country = {
+								target = ROOT
+								transfer_troops = yes
+							} }
         }
 }
 
@@ -2913,11 +2918,16 @@ country_event = {
         id = PRC_MAO.114
         title = PRC_MAO.114.t
         desc = PRC_MAO.114.d
-        picture = GFX_PRC_MAO_event_114
+        picture = GFX_PRC_ending_nl
         is_triggered_only = yes
         fire_only_once = yes
         option = {
                 name = PRC_MAO.114.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_1
+	    hidden_effect = {	
+				scoped_sound_effect = acgjg
+				scoped_play_song = "one_minute_of_silence"
+        }
         }
 }
 

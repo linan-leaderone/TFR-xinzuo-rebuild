@@ -1,0 +1,63 @@
+scripted_gui = {
+
+	PRC_opening_screen_main = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_1
+		}
+
+		effects = {
+			TFR_left_end_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_left_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_left_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_left_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_left_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_left_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_left_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_left_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_left_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_left_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_left_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+
+}

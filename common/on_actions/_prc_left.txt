@@ -49,6 +49,8 @@ add_ideas = 	BRM_civil_war_idea1
 				limit = {
 
 				PRC = {
+
+				NOT = {has_completed_focus = PRC_masters_of_asia_8}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}

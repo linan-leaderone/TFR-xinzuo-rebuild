@@ -5,6 +5,7 @@ category = {
 		ecwar
 		rcwar
 		acwar
+		acgjg
 
 	}
 	compressor = master_compressor

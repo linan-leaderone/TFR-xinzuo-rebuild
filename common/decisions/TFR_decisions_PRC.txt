@@ -10928,12 +10928,14 @@ NOT = {country_exists = SYR}
 			
 		}
 		remove_effect = {
+				if = {
+					limit = {
+						country_exists = GRK
+					}
 
 			PRC = {
-				declare_war_on = { 
-					target = GRK
-					type = annex_everything 
-				}
+				add_to_faction = GRK
+			}
 			}
 			PRC = {
 				declare_war_on = { 
@@ -11410,6 +11412,23 @@ annex_country = {
 			}
 
 										FRA = {
+			PRC = {set_autonomy = {
+			target = FRA
+			autonomy_state = autonomy_tongzhi
+			}}		
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "法兰西革命委员会"
+	                desc = "POLITICS_FPRGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = anarchist_maoism
+				}  
 				set_cosmetic_tag = FRA_Federated_Republic_of_Europe
 				set_party_name = { ideology = libertarian_socialist long_name = FRAPPPCCC_party name = FRAPPPCCC_party }
 
@@ -11441,22 +11460,14 @@ annex_country = {
 								target = AUS
 								transfer_troops = yes
 							}
-annex_country = {
-								target = ENG
-								transfer_troops = yes
-							}
+
 		if = {
 				limit = {
 					is_core_of = FRA
 				}
 			    add_core_of = FRA
 		    }	
-		if = {
-				limit = {
-					is_core_of = ENG
-				}
-			    add_core_of = FRA
-		    }	
+
 		if = {
 				limit = {
 					is_core_of = GER
@@ -14157,8 +14168,418 @@ GER = {
 		ai_will_do = {
 			base = 100
 		}
+	}				
+		PRC_military_intervention_pru_2 = {
+		icon = GFX_PRC_new_left_decision
+		
+		available = {
+		PRU = {is_ally_with = PRC}	
+
+		}
+		
+		visible = {
+			has_completed_focus = PRC_masters_of_asia_14
+
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		remove_effect = {
+
+
+        PRC = {
+            declare_war_on = { 
+                target = CHL
+                type = annex_everything 
+            }
+            declare_war_on = { 
+                target = PAR
+                type = annex_everything 
+            }
+            declare_war_on = { 
+                target = URG
+                type = annex_everything 
+            }
+            declare_war_on = { 
+                target = ARG
+                type = annex_everything 
+            }
+            declare_war_on = { 
+                target = BOL
+                type = annex_everything 
+            }
+        }
+	    hidden_effect = {	
+
+
+
+		}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}				
+		PRC_military_intervention_pru_1 = {
+		icon = GFX_PRC_new_left_decision
+		
+		available = {
+
+		}
+		
+		visible = {
+			has_completed_focus = PRC_masters_of_asia_14
+
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		remove_effect = {
+
+
+        PRC = {
+            declare_war_on = { 
+                target = PRU
+                type = annex_everything 
+            }
+        }
+	    hidden_effect = {	
+
+
+
+		}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}									
+	PRC_military_intervention_cub_1 = {
+		icon = GFX_PRC_new_left_decision
+		
+		available = {
+
+		}
+		
+		visible = {
+			has_completed_focus = PRC_masters_of_asia_14
+
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		remove_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+	  
+CUB = {	
+			remove_ideas = CUB_socialist_market_reforms
+	                inherit_technology = PRC
+			PRC = {set_autonomy = {
+			target = CUB
+			autonomy_state = autonomy_tongzhi
+			}}			
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {CUB = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						CUB = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {CUB = {has_idea = PRC_neomaoism111_idea}}
+					}
+						CUB = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {CUB = {has_idea = PRC_yuuki_4}}
+					}
+						CUB = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {CUB = {has_idea = PRC_socialist_dream_idea}}
+					}
+						CUB = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {CUB = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						CUB = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+						}
+
+				}
+
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+
+				set_country_leader_ideology = marxism_lenin_maoism
+
+
+							}
+
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}								
+	PRC_military_intervention_cub_2 = {
+		icon = GFX_PRC_new_left_decision
+		
+		available = {
+		FRA = {is_ally_with = PRC}	
+		}
+		
+		visible = {
+			has_completed_focus = PRC_masters_of_asia_14
+
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		remove_effect = {
+
+
+        PRC = {
+            declare_war_on = { 
+                target = DOM
+                type = annex_everything 
+            }
+            declare_war_on = { 
+                target = JAM
+                type = annex_everything 
+            }
+            declare_war_on = { 
+                target = HAI
+                type = annex_everything 
+            }
+        }
+	    hidden_effect = {	
+
+CUB = {	
+			transfer_state = 692	
+			transfer_state = 691		
+			transfer_state = 696	
+			transfer_state = 686
+			transfer_state = 690				
+			transfer_state = 693				
+			transfer_state = 694				
+			transfer_state = 695				
+			transfer_state = 829				
+			transfer_state = 830				
+			transfer_state = 831				
+			transfer_state = 833				
+			transfer_state = 308
+
+			add_state_core = 692	
+			add_state_core = 691		
+			add_state_core = 696	
+			add_state_core = 686
+			add_state_core = 690				
+			add_state_core = 693				
+			add_state_core = 694				
+			add_state_core = 695				
+			add_state_core = 829				
+			add_state_core = 830				
+			add_state_core = 831				
+			add_state_core = 833				
+			add_state_core = 308
+                inherit_technology = PRC
+			PRC = {set_autonomy = {
+			target = CUB
+			autonomy_state = autonomy_tongzhi
+			}}			
+				set_cosmetic_tag = CUB_XIN
+set_party_name = { ideology = communist long_name = CUBCCC_party name = CUBCCC_party }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "加勒比革命委员会"
+	                desc = "POLITICS_CUBGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+
+
+							}
+
+		}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}											
+	PRC_military_intervention_cya_1 = {
+		icon = GFX_PRC_new_left_decision
+		
+		available = {
+		FRA = {is_ally_with = PRC}	
+		}
+		
+		visible = {
+			has_completed_focus = PRC_masters_of_asia_14
+
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		remove_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+
+        PRC = {
+            declare_war_on = { 
+                target = BRA
+                type = annex_everything 
+            }
+        }
+	    hidden_effect = {	
+
+CAY = {	
+
+			transfer_state = 310	
+			transfer_state = 904
+                inherit_technology = PRC
+			PRC = {set_autonomy = {
+			target = CAY
+			autonomy_state = autonomy_tongzhi
+			}}			
+				set_cosmetic_tag = BRA_XIN
+set_party_name = { ideology = communist long_name = BRACCC_party name = BRACCC_party }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴西革命委员会"
+	                desc = "POLITICS_BRAGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+	annex_country = {
+								target = SUR
+								transfer_troops = yes
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = SUR
+				}
+			    add_core_of = CAY
+		    }
+							}
+CAY = {annex_country = {
+								target = GYA
+								transfer_troops = yes
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = GYA
+				}
+			    add_core_of = CAY
+		    }
+							}
+		}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}							
+	PRC_military_intervention_eln_1145 = {
+		icon = GFX_PRC_new_left_decision
+		
+		available = {
+			
+		}
+		
+		visible = {
+			has_completed_focus = PRC_masters_of_asia_14
+
+		}
+		
+		days_remove = 30
+		fire_only_once = yes
+		cost = 50
+		
+		remove_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+
+        PRC = {
+            declare_war_on = { 
+                target = ECU
+                type = annex_everything 
+            }
+        }
+	    hidden_effect = {	
+
+ELN = {annex_country = {
+								target = VEN
+								transfer_troops = yes
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = VEN
+				}
+			    add_core_of = ELN
+		    }
+							}
+		}
+		}
+		ai_will_do = {
+			base = 100
+		}
 	}			
-				
+	
 	PRC_military_intervention_sig_1 = {
 		icon = GFX_PRC_new_left_decision
 		

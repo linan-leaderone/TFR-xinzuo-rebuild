@@ -31,7 +31,77 @@ TRG = {annex_country = {
 		    }
 							}
 					set_global_flag = skip_default_capitulation
-				}					
+				}		
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = HAI
+							original_tag = JAM
+							original_tag = DOM
+						}
+						}
+					}
+
+
+						PRC = {white_peace = ROOT}
+CUB = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = CUB
+		    }
+							}
+					set_global_flag = skip_default_capitulation
+				}	
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = CHL
+							original_tag = BOL
+							original_tag = ARG
+							original_tag = URG
+							original_tag = PAR
+						}
+						}
+					}
+
+
+						PRC = {white_peace = ROOT}
+PRU = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = PRU
+		    }
+							}
+					set_global_flag = skip_default_capitulation
+				}						
 				if = {
 					limit = {
 
@@ -46,6 +116,9 @@ TRG = {annex_country = {
 							original_tag = CAN
 							original_tag = QUE
 							original_tag = MAA
+							original_tag = USN
+							original_tag = APA
+							original_tag = NSM
 						}
 						}
 					}
@@ -277,7 +350,8 @@ BUL = {annex_country = {
 			autonomy_state = autonomy_tongzhi
 			}}			
 						MLD = {
-				set_party_name = { ideology = libertarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+								transfer_state = 5
+				set_party_name = { ideology = totalitarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
                 inherit_technology = PRC
 				set_politics = {
 				ruling_party = totalitarian_socialist
@@ -348,7 +422,9 @@ FRA = {annex_country = {
 					}
 
 
-PLD = {annex_country = {
+PLD = {
+								transfer_state = 5
+annex_country = {
 								target = MLD
 								transfer_troops = no
 							}
@@ -389,7 +465,7 @@ PLD = {annex_country = {
 			}}			
 						PLD = {
                 inherit_technology = PRC
-				set_party_name = { ideology = libertarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+				set_party_name = { ideology = totalitarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -441,7 +517,38 @@ MLD = {annex_country = {
 
 					set_global_flag = skip_default_capitulation
 				}
-					
+						
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = ECU
+						}
+					}
+
+
+ELN = {annex_country = {
+								target = ECU
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ECU
+				}
+			    add_core_of = ELN
+		    }
+
+							}
+
+					set_global_flag = skip_default_capitulation
+				}					
 				if = {
 					limit = {
 
@@ -672,6 +779,7 @@ RSR = {annex_country = {
 			autonomy_state = autonomy_tongzhi
 			}}			
 						FIN = {
+				set_party_name = { ideology = totalitarian_socialist long_name = FINCCC_party name = FINCCC_party }
                 inherit_technology = PRC
 				set_politics = {
 				ruling_party = totalitarian_socialist
@@ -712,6 +820,7 @@ RSR = {annex_country = {
 			}}			
 						ICE = {
                 inherit_technology = PRC
+				set_party_name = { ideology = totalitarian_socialist long_name = ICECCC_party name = ICECCC_party }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -750,6 +859,7 @@ RSR = {annex_country = {
 			autonomy_state = autonomy_tongzhi
 			}}			
 						SWE = {
+				set_party_name = { ideology = totalitarian_socialist long_name = SWECCC_party name = SWECCC_party }
                 inherit_technology = PRC
 				set_politics = {
 				ruling_party = totalitarian_socialist
@@ -789,6 +899,7 @@ RSR = {annex_country = {
 			autonomy_state = autonomy_tongzhi
 			}}			
 						NOR = {
+				set_party_name = { ideology = totalitarian_socialist long_name =NORCCC_party name = NORCCC_party }
                 inherit_technology = PRC
 				set_politics = {
 				ruling_party = totalitarian_socialist
@@ -1093,7 +1204,108 @@ annex_country = {
 
 					set_global_flag = skip_default_capitulation
 				}
-		
+						
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PRU
+						}
+					}
+
+
+						PRC = {white_peace = PRU}
+			PRC = {set_autonomy = {
+			target = PRU
+			autonomy_state = autonomy_tongzhi
+			}}					
+						ELN = {		
+			transfer_state = 490				
+			transfer_state = 491
+		add_state_core = 490
+		add_state_core = 491		
+			}
+						PRU = {
+
+                inherit_technology = PRC		
+				set_cosmetic_tag = PRU_XIN
+set_party_name = { ideology = communist long_name = PRUCCC_party name = PRUCCC_party }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "拉普拉塔革命委员会"
+	                desc = "POLITICS_PRUGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = BRA
+						}
+					}
+
+
+						PRC = {white_peace = BRA}
+			PRC = {set_autonomy = {
+			target = BRA
+			autonomy_state = autonomy_tongzhi
+			}}			
+						BRA = {
+annex_country = {
+								target = CAY
+								transfer_troops = yes
+							}
+			every_state = {
+				limit = {
+					is_core_of = CAY
+				}
+			    add_core_of = BRA
+		    }
+                inherit_technology = PRC		
+				set_cosmetic_tag = BRA_XIN
+set_party_name = { ideology = communist long_name = BRACCC_party name = BRACCC_party }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴西革命委员会"
+	                desc = "POLITICS_BRAGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
 				if = {
 					limit = {
 
@@ -1115,6 +1327,10 @@ annex_country = {
 			autonomy_state = autonomy_tongzhi
 			}}			
 						FPR = {
+annex_country = {
+								target = FRA
+								transfer_troops = yes
+							}
 annex_country = {
 								target = LUX
 								transfer_troops = yes
@@ -1236,13 +1452,17 @@ annex_country = {
 						}
 					}
 
-
+GRE = {annex_country = {
+								target = GRK
+								transfer_troops = yes
+							}}
 						PRC = {white_peace = GRE}
 			PRC = {set_autonomy = {
 			target = GRE
 			autonomy_state = autonomy_tongzhi
 			}}			
 						GRE = {
+
                 inherit_technology = PRC
 				set_politics = {
 				ruling_party = libertarian_socialist

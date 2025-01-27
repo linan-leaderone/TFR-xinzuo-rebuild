@@ -9736,40 +9736,6 @@ set_cosmetic_tag = PRC_HACHIMI
 	
 	}
 }
-
-#Our Helmsman
-country_event = {
-	id = china.295
-	title = china.295.t
-	desc = china.295.d
-	picture = GFX_PRC_bo_xilai_1
-	is_triggered_only = yes
-	immediate = {
-	}
-	option = {
-		name = china.295.a
-		add_country_leader_role = {
-			character = PRC_bo_xilai
-			promote_leader = yes
-			country_leader = {
-				ideology = maoism
-				expire = "1.1.1.1"
-				traits={
-					hos_red_dragon_rider
-					hos_maoist_messiah
-					hos_godfather_of_chongqing_model
-				}
-			}
-		}
-		set_cosmetic_tag = PRC_totalitarian_socialist
-		add_popularity = {
-			ideology = totalitarian_socialist
-			popularity = 0.1
-		}
-		add_political_power = 100
-	}
-}
-
 #cpc collapse
 country_event = {
 	id = china.296

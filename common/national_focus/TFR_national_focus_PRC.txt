@@ -3319,6 +3319,12 @@ shared_focus = {
 				value = 2000
 			}
 			add_debt = yes
+		unlock_decision_tooltip = PRC_military_intervention_pru_1
+		unlock_decision_tooltip = PRC_military_intervention_pru_2
+		unlock_decision_tooltip = PRC_military_intervention_cya_1
+		unlock_decision_tooltip = PRC_military_intervention_cub_1
+		unlock_decision_tooltip = PRC_military_intervention_cub_2
+		unlock_decision_tooltip = PRC_military_intervention_eln_1145
 		custom_effect_tooltip = eln_this_will_lead
 	    hidden_effect = {
 			set_autonomy = {
@@ -3348,6 +3354,55 @@ shared_focus = {
 	}
 }
 shared_focus = {
+	id = PRC_masters_of_asia_19
+	icon = GFX_focus_PRC_masters_of_asia_19
+	x = -7
+	y = 11
+	cost = 3
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_war = no
+													
+	}
+	prerequisite = { focus = PRC_masters_of_asia_18 }
+	completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100000
+			}
+			add_debt = yes
+							country_event = { id = PRC_MAO.114 hours = 12}
+		custom_effect_tooltip = PRW_this_will_lead
+	    hidden_effect = {
+set_cosmetic_tag = PRW_XIN	
+set_country_leader_name = {
+	ideology = totalitarian_socialist
+	name = RMDHHH
+}
+set_country_leader_portrait = {
+	portrait = PRC_renda_QSJ_PR
+}
+			every_state = {
+			    add_core_of = PRC
+		    }
+						every_country = { 
+				limit = {
+					NOT = {original_tag = PRC}
+				}
+					country_event = PRC_MAO.113
+
+				}	
+
+			}
+
+	}
+}
+shared_focus = {
 	id = PRC_masters_of_asia_18
 	icon = GFX_focus_PRC_masters_of_asia_18
 	x = -7
@@ -3360,7 +3415,18 @@ shared_focus = {
 	}
 	available = {
 		SOV = {is_ally_with = PRC}
-		FRA = {is_ally_with = PRC}							
+		FRA = {is_ally_with = PRC}	
+		BRA = {is_ally_with = PRC}
+		PRU = {is_ally_with = PRC}		
+		CUB = {is_ally_with = PRC}		
+						NOT = {country_exists = ARG}
+						NOT = {country_exists = CHL}
+						NOT = {country_exists = BOL}
+						NOT = {country_exists = PAR}	
+						NOT = {country_exists = UGR}	
+						NOT = {country_exists = DOM}	
+						NOT = {country_exists = HAI}	
+						NOT = {country_exists = JAM}			
 	}
 	prerequisite = { focus = PRC_masters_of_asia_15 }
 	prerequisite = { focus = PRC_masters_of_asia_14 }
@@ -3379,6 +3445,22 @@ shared_focus = {
 				scoped_sound_effect = acwar
 				scoped_play_song = "one_minute_of_silence"
 				
+		USN = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}	
+		USA = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}	
+		PTF = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}	
+		NSM = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}		
 		CAN = { declare_war_on = {
 			target = PRC
 			type = annex_everything
@@ -3407,13 +3489,24 @@ shared_focus = {
 			target =TRG
 			autonomy_state = autonomy_tongzhi
 			}
-			TRG = {
+			TRG = {				
+			transfer_state = 730
+
+			add_state_core = 730	
                 inherit_technology = PRC
+				set_party_name = { ideology = totalitarian_socialist long_name = TRGPPPCCC_party name = TRGPPPCCC_party }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
 				elections_allowed = yes
 				}
+				create_country_leader = {
+	                name = "全美人民革命委员会"
+	                desc = "POLITICS_PLDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
 				
 				if = {
 					limit = {

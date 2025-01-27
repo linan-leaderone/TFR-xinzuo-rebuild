@@ -23,7 +23,55 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_acwar"
 		texturefile = "gfx/MAOYUANXIN/super_acwar.png"
-	}								
+	}										
+	SpriteType = {
+		name = "GFX_left_end_button"
+		texturefile = "gfx/MAOYUANXIN/left_end_button.png"
+	}												
+	SpriteType = {
+		name = "GFX_left_end_back"
+		texturefile = "gfx/MAOYUANXIN/left_end_back.png"
+	}										
+	SpriteType = {
+		name = "GFX_LEFT_END_10"
+		texturefile = "gfx/MAOYUANXIN/left_end_10.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_9"
+		texturefile = "gfx/MAOYUANXIN/left_end_9.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_8"
+		texturefile = "gfx/MAOYUANXIN/left_end_8.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_7"
+		texturefile = "gfx/MAOYUANXIN/left_end_7.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_6"
+		texturefile = "gfx/MAOYUANXIN/left_end_6.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_5"
+		texturefile = "gfx/MAOYUANXIN/left_end_5.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_4"
+		texturefile = "gfx/MAOYUANXIN/left_end_4.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_3"
+		texturefile = "gfx/MAOYUANXIN/left_end_3.png"
+	}											
+	SpriteType = {
+		name = "GFX_LEFT_END_2"
+		texturefile = "gfx/MAOYUANXIN/left_end_2.png"
+	}										
+	SpriteType = {
+		name = "GFX_LEFT_END_1"
+		texturefile = "gfx/MAOYUANXIN/left_end_1.png"
+	}									
 	SpriteType = {
 		name = "GFX_super_ecwar"
 		texturefile = "gfx/MAOYUANXIN/super_ecwar.png"
@@ -61,9 +109,14 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/GFX_KMGJ_faction.png"
 	}			
 	SpriteType = {
+		name = "PRC_renda_QSJ_PR"
+		texturefile = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	}						
+	SpriteType = {
 		name = "PRC_renda_ANQ_PR"
 		texturefile = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
 	}			
+
 	SpriteType = {
 		name = "GFX_idea_PRC_shuzihuaminzhu"
 		texturefile = "gfx/MAOYUANXIN/shuzihuaminzhu.png"

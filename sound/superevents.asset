@@ -8,6 +8,14 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "acgjg"
+	sounds = {
+		sound = "acgjg"
+	}
+	volume = 1
+}
+soundeffect =
+{
 	name = "acwar"
 	sounds = {
 		sound = "acwar"

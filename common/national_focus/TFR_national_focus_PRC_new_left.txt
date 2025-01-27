@@ -1590,7 +1590,7 @@ set_cosmetic_tag = PRC_AM
 		relative_position_id = PRC_fuel_chinese_nationalism
 		x = -1
 		y = 5
-		cost = 2
+		cost = 10
 		available_if_capitulated = yes
 
 		prerequisite = {
