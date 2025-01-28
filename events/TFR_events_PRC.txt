@@ -9654,6 +9654,10 @@ country_event = {
 
 		end_coalition = yes
 
+			country_event = {
+				id = PRC_MAO.115
+				days = 7
+			}
 		add_country_leader_role = {
 			character = PRC_ren_chonghao
 			promote_leader = yes
