@@ -378,13 +378,13 @@ country_event = {
 		hidden_effect = {
 		promote_character = {
 			character = PRC_han_dongfang
-			ideology = reformist_socialism_1
+			ideology = gzl_socialism
 		}
 		add_country_leader_role = {
 			character = PRC_han_dongfang
 			promote_leader = yes
 			country_leader = {
-				ideology = reformist_socialism_1
+				ideology = gzl_socialism
 				expire = "1.1.1.1"
 				traits = {
 				}
@@ -394,7 +394,7 @@ country_event = {
 			character = PRC_han_dongfang
 			promote_leader = yes
 			country_leader = {
-				ideology = social_democracy_1
+				ideology = sm_socialism
 				expire = "1.1.1.1"
 				traits = {
 				}

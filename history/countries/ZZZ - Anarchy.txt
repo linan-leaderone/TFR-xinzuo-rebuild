@@ -33,6 +33,132 @@ set_party_name = { ideology = national_socialist long_name = PRK1_party_long nam
 set_party_name = { ideology = fascist long_name = PRK1_party_long name = PRK1_party }
 }
 
+	LAO = {
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		nationalist = 20
+		social_democrat = 5
+		social_liberal = 5
+		market_liberal = 3
+		authoritarian_democrat = 60
+		conservative = 7
+	}
+		add_country_leader_role = {
+			character = LAO_somsavat_lengsavad_char
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = LAO_thongloun_sisoulith_char
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = LAO_bounnhang_vorachith_char
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+set_party_name = { ideology = authoritarian_democrat long_name = LAO_communist11122_party_long name = LAO_communist11122_party_long }
+}
+	VIN = {
+	set_politics = {
+		ruling_party = authoritarian_democrat
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		nationalist = 20
+		social_democrat = 5
+		social_liberal = 5
+		market_liberal = 3
+		authoritarian_democrat = 60
+		conservative = 7
+	}
+		add_country_leader_role = {
+			character = VIN_nguyen_phu_trong_char
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = VIN_to_lam_char
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+set_party_name = { ideology = authoritarian_democrat long_name = VIN_communist11122_party_long name = VIN_communist11122_party_long }
+}
+	CUB = {
+	set_politics = {
+		ruling_party = social_democrat
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		social_democrat = 72
+		totalitarian_socialist = 2
+		libertarian_socialist = 10
+		communist = 7
+		social_liberal = 4
+		conservative = 5
+	}
+		add_country_leader_role = {
+			character = CUB_magiel_diaz_char
+			promote_leader = yes
+			country_leader = {
+				ideology = kasitekuoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = CUB_raul_castro_char
+			promote_leader = yes
+			country_leader = {
+				ideology = kasitekuoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+set_party_name = { ideology = social_democrat long_name = CUB_communist11122_party_long name = CUB_communist11122_party_long }
+}
 	PRC = {
 	set_politics = {
 		ruling_party = nationalist

@@ -131,6 +131,9 @@ ideologies = {
 					0
 				}
 			}
+			gzl_socialism = {
+				can_be_randomly_selected = no
+			}
 			post_leftism = {
 			}
 			left_accelerationist = {
@@ -216,6 +219,12 @@ ideologies = {
 				}
 			}
 			social_democracy = {
+			}
+			sm_socialism = {
+				can_be_randomly_selected = no
+			}
+			kasitekuoism = {
+				can_be_randomly_selected = no
 			}
 			social_democracy_1 = {
 			}

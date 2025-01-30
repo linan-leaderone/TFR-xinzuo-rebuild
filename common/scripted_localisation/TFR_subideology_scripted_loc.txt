@@ -652,6 +652,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = gzl_socialism
+		}
+		localization_key = gzl_socialism
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = anarchist_maoism
 		}
 		localization_key = anarchist_maoism
@@ -796,6 +802,18 @@ defined_text = {
 			has_country_leader_ideology = social_democracy_1
 		}
 		localization_key = social_democracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = sm_socialism
+		}
+		localization_key = sm_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = kasitekuoism
+		}
+		localization_key = kasitekuoism
 	}
 	text = {
 		trigger = {

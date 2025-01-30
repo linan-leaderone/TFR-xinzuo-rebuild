@@ -246,6 +246,33 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/PRC_ma_houzhi_xiao.png"
 	}	
 
+	spriteType = {
+		name = "GFX_ideology_gzl_socialism"
+		texturefile = "gfx/MAOYUANXIN/gzl_socialism.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_kasitekuoism"
+		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
+	}		
+	spriteType = {
+		name = "GFX_Ideology_kasitekuoism"
+		texturefile = "gfx/MAOYUANXIN/Ideology_kasitekuoism.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_ideology_sm_socialism"
+		texturefile = "gfx/MAOYUANXIN/sm_socialism.png"
+	}		
+	spriteType = {
+		name = "GFX_Ideology_handongfangzuo"
+		texturefile = "gfx/MAOYUANXIN/Ideology_handongfangzuo.png"
+		legacy_lazy_load = no
+	}			
+	spriteType = {
+		name = "GFX_Ideology_handongfangyou"
+		texturefile = "gfx/MAOYUANXIN/Ideology_handongfangyou.png"
+		legacy_lazy_load = no
+	}	
 
 	spriteType = {
 		name = "GFX_ideology_market_socialism_1"
