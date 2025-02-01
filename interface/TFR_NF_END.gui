@@ -70,7 +70,7 @@ guiTypes = {
 		buttonType = {
 			name = "TFR_left_end_button"
 			spriteType = "GFX_left_end_button"
-			position = { x=707 y=-25}
+			position = { x=707 y=-35}
 			Orientation = "CENTER"
 		}
 		}

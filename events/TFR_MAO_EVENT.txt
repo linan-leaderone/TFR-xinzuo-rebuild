@@ -65,42 +65,19 @@ country_event = {
 			add_stability = -0.25
 			add_political_power = -100
 			add_popularity = {
-				ideology = communist
+				ideology = authoritarian_democrat
 				popularity = -0.1
 			}
+set_country_flag = PRC_handeqiang_hog
+			mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
 
+			complete_national_focus = PRC_rumaojiehe_6
 		end_coalition = yes
 
 
-		add_country_leader_role = {
-			character = PRC_bo_xilai
-			promote_leader = yes
-			country_leader = {
-				ideology = market_socialism
-				expire = "1.1.1.1"
-				traits = {
-				}
-			}
-		}
-			set_temp_variable = {
-				coalition_partner_var_temp = token:communist
-			}
-			add_to_coalition = yes
 			set_temp_variable = {
 				coalition_partner_var_temp = token:fascist
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				coalition_partner_var_temp = token:conservative
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				coalition_partner_var_temp = token:nationalist
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				coalition_partner_var_temp = token:authoritarian_democrat
 			}
 			add_to_coalition = yes
 
@@ -2244,6 +2221,7 @@ set_global_flag = PRC_taiwan_war_lost
 				hours = 12
 			}
 		hidden_effect = {
+set_cosmetic_tag = PRC_PRC
 			remove_ideas = taihaijingji_idea_1	
 			remove_ideas = taihaijingji_idea_2
 			remove_ideas = taihaijingji_idea_3
@@ -2270,46 +2248,598 @@ set_global_flag = PRC_taiwan_war_lost
 			remove_ideas = taihaijingji_idea_24	
 			remove_ideas = taihaijingji_idea_25
 			PRC_end_taiwan_war = yes
-			country_event = {
-				id = china.248
-				days = 1
+			RAJ = {
+				puppet = TIB
 			}
-			country_event = {
-				id = china.249
-				days = 2
+			TIB = {
+				transfer_state = 322
+				transfer_state = 1152
+				transfer_state = 1153
+				transfer_state = 1155
+				transfer_state = 1156
+				add_state_core = 322
+				add_state_core = 1152
+				add_state_core = 1153
+				add_state_core = 1155
+				add_state_core = 1156
+				set_capital = {
+					state = 1156
+				}
+				set_politics = {
+					ruling_party = nationalist
+					elections = no
+				}
+				set_popularities = {
+					nationalist = 40
+					authoritarian_democrat = 10
+					conservative = 30
+					market_liberal = 5
+					social_liberal = 15
+				}
+				set_cosmetic_tag = RAJ_military_administration
 			}
-			country_event = {
-				id = china.44
-				days = 3
+			SIK = {
+				transfer_state = 287
+				transfer_state = 619
+				transfer_state = 1160
+				transfer_state = 1164
+				transfer_state = 788
+				add_state_core = 788
+
+				add_state_core = 287
+				add_state_core = 619
+				add_state_core = 1160
+				add_state_core = 1164
+				set_capital = {
+					state = 287
+				}
+				retire_character = SIK_Abdullah_Mansour_char
 			}
-			country_event = {
-				id = china.45
-				days = 4
+			XIN = {
+				transfer_state = 1158
+				transfer_state = 1161
+				transfer_state = 617
+				transfer_state = 1165
+				transfer_state = 1162
+				transfer_state = 1163
+				transfer_state = 618
+				add_state_core = 1158
+				add_state_core = 1161
+				add_state_core = 617
+				add_state_core = 1165
+				add_state_core = 1162
+				add_state_core = 1163
+				add_state_core = 618
+				set_capital = {
+					state = 1165
+				}
 			}
-			country_event = {
-				id = china.46
-				days = 5
+
+
+			NSF = {
+set_cosmetic_tag = PRC_NSF
+		add_country_leader_role = {
+			character = NSF_zhao_zongqi_char
+			promote_leader = yes
+			country_leader = {
+				ideology = military_junta
+				expire = "1.1.1.1"
+				traits = {
+				}
 			}
-			country_event = {
-				id = china.47
-				days = 6
+		}
+set_politics = {	
+		ruling_party = nationalist
+		last_election = "2017.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		social_democrat = 5
+		national_socialist = 10
+		fascist = 25
+		nationalist = 60
+	}
+				transfer_state = 1186
+				add_state_core = 1186
+				transfer_state = 1187
+				add_state_core = 1187
+				transfer_state = 616
+				transfer_state = 283
+				transfer_state = 1198
+				add_state_core = 1198
+				transfer_state = 604
+				add_state_core = 616
+				add_state_core = 283
+				add_state_core = 604
+				transfer_state = 1201
+				add_state_core = 1201
+				transfer_state = 622
+				transfer_state = 1200
+				add_state_core = 622
+				add_state_core = 1200
+					transfer_state = 1199
+					add_state_core = 1199
+					transfer_state = 1193
+					add_state_core = 1193
+				set_capital = {
+					state = 622
+				}
 			}
-			country_event = {
-				id = china.48
-				days = 7
+			SIC = {
+set_cosmetic_tag = PRC_SIC
+				transfer_state = 601
+				transfer_state = 605
+				transfer_state = 1168
+				transfer_state = 1188
+				transfer_state = 1189
+				transfer_state = 1190
+				add_state_core = 601
+				add_state_core = 605
+				add_state_core = 1168
+				add_state_core = 1188
+				add_state_core = 1189
+				add_state_core = 1190
+PRC = {set_nationality = {
+    target_country = SIC
+    character = PRC_bo_xilai
+}}
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = left_nationalism
+				expire = "1.1.1.1"
+			
 			}
-			country_event = {
-				id = china.49
-				days = 8
+		}
 			}
-			country_event = {
-				id = china.50
-				days = 9
+
+			INM = {
+				transfer_state = 612
+				transfer_state = 621
+				add_state_core = 612
+				add_state_core = 621
+				transfer_state = 1202
+				add_state_core = 1202
+				transfer_state = 1166
+				add_state_core = 1166
 			}
-			country_event = {
-				id = china.51
-				days = 10
+
+
+			PRC_cheng_wenqing = {
+				set_nationality = MST
 			}
+			MST = {
+set_cosmetic_tag = PRC_DBJ
+				retire_country_leader = yes
+				transfer_state = 1167
+				transfer_state = 714
+				transfer_state = 717
+					transfer_state = 1416
+					add_state_core = 1416
+				add_state_core = 1167
+				add_state_core = 714
+				add_state_core = 717
+				transfer_state = 328
+				transfer_state = 715
+				add_state_core = 328
+				add_state_core = 715
+					transfer_state = 1414
+					add_state_core = 1414
+					transfer_state = 1415
+					add_state_core = 1415
+				transfer_state = 716
+				add_state_core = 716
+					transfer_state = 1394
+					add_state_core = 1394
+					transfer_state = 1413
+					add_state_core = 1413
+					transfer_state = 1417
+					add_state_core = 1417
+				set_country_leader_portrait = {
+					ideology = totalitarian_socialist
+					portrait = GFX_portrait_MSS_Cheng_Wenqing
+				}
+		add_country_leader_role = {
+			character = PRC_cheng_wenqing
+			promote_leader = yes
+			country_leader = {
+				ideology = jucheism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+set_politics = {	
+		ruling_party = nationalist
+		last_election = "2017.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		social_democrat = 5
+		national_socialist = 10
+		fascist = 25
+		nationalist = 60
+	}
+	
+			}
+
+			YUN = {
+set_cosmetic_tag = PRC_YUN	
+				transfer_state = 1196
+				transfer_state = 1195
+				transfer_state = 1192
+				transfer_state = 325
+				add_state_core = 1196
+				add_state_core = 1195
+				add_state_core = 1192
+				add_state_core = 325
+			}
+
+
+
+			CHF = {
+
+set_cosmetic_tag = PRC_GHGLS	
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}	
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_communist1_social_democrat_party_long
+				name = PRC_communist1_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_social_democrat1_party_long
+				name = PRC_cpc_social_democrat1_party
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_cpc_social_liberal1_party_long
+				name = PRC_cpc_social_liberal1_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc1
+				name = PRC_cpc_rad1_maoist_tot_soc1_short
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialist_libsoc1
+				name = PRC_cpc_libertarian_socialist_libsoc1_short
+			}
+
+PRC = {set_nationality = {
+    target_country = CHF
+    character = PRC_han_dongfang
+}}
+PRC = {set_nationality = {
+    target_country = CHF
+    character = PRC_qin_hui
+}}
+			promote_character = {
+			character = PRC_han_dongfang
+			ideology = gzl_socialism
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = gzl_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = sm_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = liberal_socialism
+		}
+set_politics = {	
+		ruling_party = social_democrat
+		last_election = "2017.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		social_democrat = 20
+		totalitarian_socialist = 20
+		communist = 20
+		libertarian_socialist = 20
+		social_liberal = 20
+	}
+				transfer_state = 1159
+				transfer_state = 600
+				transfer_state = 1214
+				transfer_state = 1207
+				transfer_state = 1213
+				transfer_state = 1221
+				transfer_state = 1222
+				transfer_state = 1227
+				transfer_state = 1220
+				transfer_state = 596
+				transfer_state = 1197
+				transfer_state = 1204
+				transfer_state = 1203
+				transfer_state = 594
+				transfer_state = 1205
+				transfer_state = 593
+				add_state_core = 1197
+				add_state_core = 1204
+				add_state_core = 1203
+				add_state_core = 594
+				add_state_core = 1205
+				add_state_core = 593
+				transfer_state = 603
+				transfer_state = 1210
+				add_state_core = 603
+				add_state_core = 1210
+				add_state_core = 1159
+				add_state_core = 600
+				add_state_core = 1214
+				add_state_core = 1207
+				add_state_core = 1213
+				add_state_core = 1221
+				add_state_core = 1222
+				add_state_core = 1227
+				add_state_core = 1220
+				add_state_core = 596
+					transfer_state = 728
+					add_state_core = 728
+					transfer_state = 326
+					add_state_core = 326
+					transfer_state = 729
+					add_state_core = 729
+				transfer_state = 1208
+				transfer_state = 1209
+				transfer_state = 599
+				add_state_core = 1208
+				add_state_core = 1209
+				add_state_core = 599
+					transfer_state = 602
+				add_state_core = 602
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 592
+							}
+						}
+					}
+					transfer_state = 592
+					add_state_core = 592
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1206
+							}
+						}
+					}
+					transfer_state = 1206
+					add_state_core = 1206
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1216
+							}
+						}
+					}
+					transfer_state = 1216
+					add_state_core = 1216
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1217
+							}
+						}
+					}
+					transfer_state = 1217
+					add_state_core = 1217
+				}
+				if = {
+					limit = {
+						NOT = {
+							JAP = {
+								controls_state = 613
+							}
+						}
+					}
+					transfer_state = 613
+					add_state_core = 613
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 591
+							}
+						}
+					}
+					transfer_state = 591
+					add_state_core = 591
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1191
+							}
+						}
+					}
+					transfer_state = 1191
+					add_state_core = 1191
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 595
+							}
+						}
+					}
+					transfer_state = 595
+					add_state_core = 595
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1219
+							}
+						}
+					}
+					transfer_state = 1219
+					add_state_core = 1219
+				}
+				if = {
+					limit = {
+						NOT = {
+							JAP = {
+								controls_state = 1215
+							}
+						}
+					}
+					transfer_state = 1215
+					add_state_core = 1215
+				}
+				if = {
+					limit = {
+						NOT = {
+							CHI = {
+								controls_state = 1395
+							}
+						}
+					}
+					transfer_state = 1395
+					add_state_core = 1395
+				}
+			}
+							CHI = {
+					transfer_state = 592
+					add_state_core = 592
+					transfer_state = 728
+					add_state_core = 728
+					transfer_state = 326
+					add_state_core = 326
+					transfer_state = 729
+					add_state_core = 729
+					transfer_state = 591
+					add_state_core = 591
+					transfer_state = 1218
+					add_state_core = 1218
+					transfer_state = 1217
+					add_state_core = 1217
+					transfer_state = 1216
+					add_state_core = 1216
+					transfer_state = 648
+					add_state_core = 648
+					transfer_state = 595
+					add_state_core = 595
+							}
+							VIN = {
+					transfer_state = 879
+					add_state_core = 879
+							}
+							PHI = {
+					transfer_state = 1382
+					add_state_core = 1382
+							}
+							YUN = {
+					transfer_state = 1191
+					add_state_core = 1191
+					transfer_state = 1203
+					add_state_core = 1203
+					transfer_state = 594
+					add_state_core = 594
+					transfer_state = 599
+					add_state_core = 599
+					transfer_state = 593
+					add_state_core = 593
+					transfer_state = 1204
+					add_state_core = 1204
+					transfer_state = 1205
+					add_state_core = 1205
+					transfer_state = 1210
+					add_state_core = 1210
+					transfer_state = 603
+					add_state_core = 603
+					transfer_state = 1197
+					add_state_core = 1197
+							}
+			CNT = {
+					transfer_state = 1212
+					transfer_state = 620
+					transfer_state = 1211
+					transfer_state = 1225
+					transfer_state = 1224
+					transfer_state = 1223
+					transfer_state = 1226
+					transfer_state = 606
+					add_state_core = 1212
+					add_state_core = 620
+					add_state_core = 1211
+					add_state_core = 1225
+					add_state_core = 1224
+					add_state_core = 1223
+					add_state_core = 1226
+					add_state_core = 606
+					transfer_state = 1230
+					add_state_core = 1230
+				transfer_state = 598
+				transfer_state = 1228
+				add_state_core = 598
+				add_state_core = 1228
+				transfer_state = 1229
+				add_state_core = 1229
+					transfer_state = 1420
+					add_state_core = 1420
+
+					transfer_state = 1393
+					add_state_core = 1393
+					set_capital = {
+						state = 1211
+					}
+				}
 		}
 			hidden_effect = {
 				JAP = {

@@ -12,6 +12,8 @@ MEX_mexican_civil_war_category = {
 			}
 	  if = {
 			limit = {
+
+			PRC = {has_completed_focus = PRC_rejuvinate_cpc_cadres}
 				PRC = {has_country_flag = PRC_new_left_win}
 			}
 			NOT = {

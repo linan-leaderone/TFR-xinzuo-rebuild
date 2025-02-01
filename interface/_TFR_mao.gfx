@@ -3015,6 +3015,14 @@ spriteType = {
 		textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe.png"
 	}
 	spriteType = {
+		name = "GFX_focus_rumaojiehe_1"
+		textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_rumaojiehe_2"
+		textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_2.png"
+	}
+	spriteType = {
 		name = "GFX_focus_yangbanxi"
 		textureFile = "gfx/MAOYUANXIN/PRC_yangbanxi.png"
 	}
@@ -5688,6 +5696,3706 @@ SpriteType = {
         animationdelay = 0
         animationblendmode = "add"
         animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_1"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_1.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_1_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_1.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_2"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_2.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_2_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_2.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_3"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_3.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_3_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_3.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_3.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_3.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_4"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_4.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_4_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_4.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_4.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_5"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_5.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_5_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_5.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_5.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_6"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_6.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_6_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_6.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_6.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_7"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_7.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_7_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_7.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_7.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_8"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_8.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_8_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_8.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_8.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_9"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_9.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_9_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_9.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_9.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_10"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_10.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_10_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_10.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_10.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_11"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_11.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_11_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_11.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_11.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_12"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_12.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_12_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_12.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_12.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_13"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_13.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_13_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_13.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_13.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_14"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_14.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_14_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_14.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_14.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_15"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_15.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_15_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_15.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_15.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_16"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_16.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_16_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_16.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_16.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_17"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_17.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_17_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_17.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_17.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_18"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_18.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_18_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_18.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_18.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_19"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_19.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_19_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_19.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_19.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_20"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_20.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_20_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_20.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_20.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_21"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_21.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_21_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_21.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_21.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_22"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_22.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_22_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_22.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_22.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_23"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_23.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_23_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_23.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_23.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_24"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_24.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_24_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_24.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_24.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_25"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_25.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_25_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_25.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_25.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_26"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_26.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_26_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_26.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_26.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_27"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_27.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_27_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_27.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_27.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_28"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_28.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_28_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_28.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_28.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_29"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_29.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_29_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_29.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_29.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_30"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_30.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_30_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_30.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_30.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_31"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_31.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_31_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_31.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_31.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_31.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_32"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_32.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_32_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_32.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_32.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_32.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_33"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_33.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_33_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_33.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_33.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_33.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_34"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_34.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_34_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_34.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_34.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_34.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_35"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_35.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_35_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_35.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_35.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_35.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_36"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_36.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_36_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_36.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_36.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_36.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_37"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_37.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_37_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_37.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_37.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_37.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_38"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_38.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_38_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_38.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_38.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_38.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_39"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_39.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_39_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_39.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_39.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_39.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_40"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_40.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_40_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_40.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_40.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_40.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_41"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_41.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_41_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_41.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_41.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_41.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_42"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_42.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_42_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_42.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_42.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_42.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_43"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_43.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_43_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_43.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_43.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_43.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_44"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_44.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_44_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_44.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_44.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_44.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_45"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_45.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_45_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_45.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_45.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_45.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_46"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_46.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_46_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_46.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_46.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_46.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_47"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_47.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_47_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_47.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_47.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_47.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_48"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_48.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_48_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_48.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_48.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_48.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_49"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_49.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_49_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_49.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_49.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_49.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_50"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_50.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_50_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_50.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_50.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_50.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_51"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_51.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_51_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_51.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_51.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_51.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_52"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_52.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_52_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_52.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_52.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_52.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_53"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_53.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_53_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_53.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_53.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_53.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_54"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_54.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_54_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_54.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_54.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_54.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_55"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_55.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_55_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_55.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_55.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_55.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_56"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_56.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_56_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_56.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_56.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_56.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_57"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_57.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_57_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_57.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_57.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_57.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_58"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_58.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_58_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_58.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_58.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_58.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_59"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_59.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_59_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_59.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_59.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_59.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_60"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_60.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_60_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_60.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_60.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_60.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_61"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_61.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_61_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_61.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_61.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_61.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_62"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_62.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_62_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_62.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_62.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_62.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_63"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_63.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_63_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_63.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_63.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_63.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_64"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_64.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_64_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_64.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_64.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_64.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_65"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_65.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_65_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_65.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_65.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_65.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_66"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_66.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_66_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_66.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_66.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_66.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_67"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_67.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_67_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_67.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_67.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_67.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_68"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_68.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_68_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_68.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_68.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_68.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_69"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_69.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_69_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_69.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_69.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_69.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_70"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_70.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_70_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_70.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_70.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_70.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_71"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_71.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_71_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_71.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_71.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_71.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_72"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_72.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_72_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_72.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_72.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_72.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_73"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_73.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_73_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_73.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_73.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_73.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_74"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_74.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_74_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_74.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_74.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_74.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_75"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_75.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_75_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_75.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_75.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_75.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_76"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_76.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_76_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_76.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_76.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_76.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_77"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_77.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_77_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_77.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_77.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_77.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_78"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_78.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_78_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_78.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_78.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_78.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_79"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_79.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_79_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_79.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_79.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_79.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_80"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_80.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_80_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_80.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_80.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_80.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_81"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_81.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_81_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_81.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_81.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_81.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_82"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_82.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_82_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_82.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_82.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_82.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_83"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_83.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_83_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_83.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_83.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_83.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_84"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_84.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_84_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_84.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_84.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_84.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_85"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_85.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_85_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_85.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_85.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_85.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_86"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_86.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_86_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_86.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_86.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_86.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_87"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_87.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_87_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_87.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_87.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_87.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_88"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_88.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_88_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_88.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_88.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_88.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_89"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_89.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_89_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_89.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_89.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_89.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_90"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_90.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_90_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_90.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_90.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_90.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_91"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_91.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_91_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_91.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_91.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_91.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_92"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_92.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_92_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_92.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_92.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_92.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_93"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_93.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_93_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_93.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_93.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_93.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_94"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_94.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_94_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_94.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_94.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_94.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_95"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_95.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_95_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_95.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_95.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_95.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_96"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_96.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_96_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_96.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_96.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_96.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_97"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_97.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_97_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_97.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_97.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_97.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_98"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_98.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_98_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_98.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_98.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_98.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_99"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_99.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_99_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_99.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_99.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_99.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+
+spriteType = {
+    name = "GFX_focus_rumaojiehe_100"
+    textureFile = "gfx/MAOYUANXIN/PRC_rumaojiehe_100.png"
+}
+SpriteType = {
+    name = "GFX_focus_rumaojiehe_100_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_rumaojiehe_100.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_100.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = -90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_rumaojiehe_100.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  # <- the animated file
+        animationrotation = 90.0     # -90 clockwise 90 counterclockwise(by default)
+        animationlooping = no         # yes or no ;)
+        animationtime = 0.75          # in seconds
+        animationdelay = 0            # in seconds
+        animationblendmode = "add"    # add, multiply, overlay
+        animationtype = "scrolling"   # scrolling, rotating, pulsing
         animationrotationoffset = { x = 0.0 y = 0.0 }
         animationtexturescale = { x = 1.0 y = 1.0 }
     }

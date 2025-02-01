@@ -1339,8 +1339,7 @@ has_country_flag = pfsrb
 		OR = {
 			PRC_hu_chunhua = {is_country_leader = yes}
 			PRC_han_deqiang = {is_country_leader = yes}
-			
-			
+		}
 		}
 		fire_only_once = no
 		cost = 25

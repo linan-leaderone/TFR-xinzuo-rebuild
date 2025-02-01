@@ -705,6 +705,14 @@ ideologies = {
 
 	nationalist = {
 		types = {
+			jucheism = {
+				can_be_randomly_selected = no
+				color = {
+					117
+					26
+					8
+				}
+			}
 			autocrat = {
 			}
 			market_socialism_1 = {
@@ -881,14 +889,7 @@ ideologies = {
 	national_socialist = {
 		types = {
 
-			jucheism = {
-				can_be_randomly_selected = no
-				color = {
-					117
-					26
-					8
-				}
-			}
+
 			esoteric_fascism = {
 			}
 			neonazism = {

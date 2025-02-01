@@ -1899,6 +1899,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = jucheism
+		}
+		localization_key = jucheism
+	}
+	text = {
+		trigger = {
 			original_tag = LST
 			has_country_leader_ideology = radical_nationalism
 		}
@@ -2239,12 +2245,6 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocNatSoc
-	text = {
-		trigger = {
-			has_country_leader_ideology = jucheism
-		}
-		localization_key = jucheism
-	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = Esoteric_Maoism

@@ -5049,6 +5049,36 @@ PRC_maoist_politburo_cat = {
 		}
 		icon = GFX_PRC_new_left_decision
 	}
+	PRC_prepare_radical_coup_5 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+	PRC_hu_chunhua = {is_country_leader = yes}
+		}
+		available = {
+	PRC_hu_chunhua = {is_country_leader = yes}
+	power_balance_value = {
+    id = PRC_maoism_power_balance
+    value > 0.6
+}
+			national_socialist > 0.4
+		}
+		days_remove = 35
+		fire_only_once = yes
+		modifier = {
+			national_socialist_drift = 0.05
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			country_event = { id = PRC_MAO.3 hours = 5 } #fall of hu
+		}
+		icon = GFX_PRC_nationalist_decision
+		cost = 100
+	}
+
 	PRC_prepare_radical_coup_4 = {
 		allowed = {
 			original_tag = PRC
@@ -16707,6 +16737,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			ZAP = {
 				has_war = yes
 			}
@@ -16737,6 +16768,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			ZAP = {
 				has_war = yes
 			}
@@ -16747,12 +16779,23 @@ ELN = {annex_country = {
 		days_remove = 25
 		days_re_enable = 30
 		remove_effect = {
-			ZAP = {
+			ZAP = {division_template = {
+						name = "中国教导民兵团"
+						priority = 1
+						division_names_group = HUM_INF_01
+						regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 0 }
+						}
+						support = {
+						}
+					}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
-						allow_spawning_on_enemy_provs = no
-						owner = ZAP
+						division = "name = \"中国教导民兵团\" division_template = \"中国教导民兵团\"  start_experience_factor = 0.1"
+						owner = PREV
 					}
 				}
 			}
@@ -16769,6 +16812,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			ZAP = {
 				has_war = yes
 			}
@@ -16817,6 +16861,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			EFF = {
 				has_war = yes
 			}
@@ -16847,6 +16892,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			EFF = {
 				has_war = yes
 			}
@@ -16858,11 +16904,23 @@ ELN = {annex_country = {
 		days_re_enable = 30
 		remove_effect = {
 			EFF = {
+division_template = {
+						name = "中国教导民兵团"
+						priority = 1
+						division_names_group = HUM_INF_01
+						regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 0 }
+						}
+						support = {
+						}
+					}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
-						allow_spawning_on_enemy_provs = no
-						owner = EFF
+						division = "name = \"中国教导民兵团\" division_template = \"中国教导民兵团\"  start_experience_factor = 0.1"
+						owner = PREV
 					}
 				}
 			}
@@ -16879,6 +16937,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			EFF = {
 				has_war = yes
 			}
@@ -16929,6 +16988,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			ROJ = {
 				has_war = yes
 			}
@@ -16959,6 +17019,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			ROJ = {
 				has_war = yes
 			}
@@ -16970,11 +17031,23 @@ ELN = {annex_country = {
 		days_re_enable = 30
 		remove_effect = {
 			ROJ = {
+division_template = {
+						name = "中国教导民兵团"
+						priority = 1
+						division_names_group = HUM_INF_01
+						regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 0 }
+						}
+						support = {
+						}
+					}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
-						allow_spawning_on_enemy_provs = no
-						owner = ROJ
+						division = "name = \"中国教导民兵团\" division_template = \"中国教导民兵团\"  start_experience_factor = 0.1"
+						owner = PREV
 					}
 				}
 			}
@@ -16991,6 +17064,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			ROJ = {
 				has_war = yes
 			}
@@ -17039,6 +17113,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			RCG = {
 				has_war = yes
 			}
@@ -17069,6 +17144,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			RCG = {
 				has_war = yes
 			}
@@ -17080,11 +17156,23 @@ ELN = {annex_country = {
 		days_re_enable = 30
 		remove_effect = {
 			RCG = {
+division_template = {
+						name = "中国教导民兵团"
+						priority = 1
+						division_names_group = HUM_INF_01
+						regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 0 }
+						}
+						support = {
+						}
+					}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
-						allow_spawning_on_enemy_provs = no
-						owner = RCG
+						division = "name = \"中国教导民兵团\" division_template = \"中国教导民兵团\"  start_experience_factor = 0.1"
+						owner = PREV
 					}
 				}
 			}
@@ -17101,6 +17189,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			RCG = {
 				has_war = yes
 			}
@@ -17150,6 +17239,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 		NOT = {TRG = {is_ally_with = PRC}}
 			TRG = {
 				has_war = yes
@@ -17180,6 +17270,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 		NOT = {TRG = {is_ally_with = PRC}}
 			TRG = {
 				has_war = yes
@@ -17191,11 +17282,23 @@ ELN = {annex_country = {
 		days_re_enable = 30
 		remove_effect = {
 			TRG = {
+division_template = {
+						name = "中国教导民兵团"
+						priority = 1
+						division_names_group = HUM_INF_01
+						regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 0 }
+						}
+						support = {
+						}
+					}
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
-						allow_spawning_on_enemy_provs = no
-						owner = TRG
+						division = "name = \"中国教导民兵团\" division_template = \"中国教导民兵团\"  start_experience_factor = 0.1"
+						owner = PREV
 					}
 				}
 			}
@@ -17212,6 +17315,7 @@ ELN = {annex_country = {
 			}
 		}
 		visible = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
 			TRG = {
 				has_war = yes
 			}
