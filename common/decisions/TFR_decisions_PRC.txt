@@ -14076,9 +14076,6 @@ GER = {
 		visible = {
 			has_completed_focus = PRC_masters_of_asia_8
 		NIC = {is_ally_with = PRC}
-			ELN = {
-				has_war = yes
-			}
 		}
 		
 		days_remove = 30

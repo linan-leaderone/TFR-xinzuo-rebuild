@@ -2772,7 +2772,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_6
 		x = 45
 		y = 12
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2798,7 +2798,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_7
 		x = 44
 		y = 13
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2820,7 +2820,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_8
 		x = 46
 		y = 13
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2842,7 +2842,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_9
 		x = 45
 		y = 14
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2867,7 +2867,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_12
 		x = 45
 		y = 15
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2891,11 +2891,484 @@ create_navy_leader = {
 		}
 	}
 	focus = {
+		id = PRC_rumaojiehe_40
+		icon = GFX_focus_rumaojiehe_40
+		x = 52
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_11
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_41
+		icon = GFX_focus_rumaojiehe_41
+		x = 54
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_11
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_42
+		icon = GFX_focus_rumaojiehe_42
+		x = 53
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_40
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_41
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_43
+		icon = GFX_focus_rumaojiehe_43
+		x = 53
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_42
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_45
+		icon = GFX_focus_rumaojiehe_45
+		x = 54
+		y = 19
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_43
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_46
+		icon = GFX_focus_rumaojiehe_46
+		x = 53
+		y = 20
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_44
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_45
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_47
+		icon = GFX_focus_rumaojiehe_47
+		x = 53
+		y = 21
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_46
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_48
+		icon = GFX_focus_rumaojiehe_48
+		x = 53
+		y = 22
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_47
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_49
+		icon = GFX_focus_rumaojiehe_49
+		x = 53
+		y = 23
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_48
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_53
+		icon = GFX_focus_rumaojiehe_53
+		x = 55
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_49
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_54
+		icon = GFX_focus_rumaojiehe_54
+		x = 54
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_53
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_55
+		icon = GFX_focus_rumaojiehe_55
+		x = 53
+		y = 26
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_54
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_51
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_52
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_56
+		icon = GFX_focus_rumaojiehe_56
+		x = 53
+		y = 27
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_55
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_57
+		icon = GFX_focus_rumaojiehe_57
+		x = 52
+		y = 28
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_56
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_58
+		icon = GFX_focus_rumaojiehe_58
+		x = 54
+		y = 28
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_56
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_59
+		icon = GFX_focus_rumaojiehe_59
+		x = 53
+		y = 30
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_57
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_58
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_52
+		icon = GFX_focus_rumaojiehe_52
+		x = 53
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_49
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_50
+		icon = GFX_focus_rumaojiehe_50
+		x = 51
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_49
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_51
+		icon = GFX_focus_rumaojiehe_51
+		x = 52
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_50
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_44
+		icon = GFX_focus_rumaojiehe_44
+		x = 52
+		y = 19
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_43
+        }
+	
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
 		id = PRC_rumaojiehe_11
 		icon = GFX_focus_rumaojiehe_11
 		x = 53
 		y = 15
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 	allow_branch = {
@@ -2923,7 +3396,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_10
 		x = 37
 		y = 15
-		cost = 2
+		cost = 5
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2937,6 +3410,627 @@ create_navy_leader = {
 		}
 		mutually_exclusive = {
 			focus = PRC_rumaojiehe_12
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_29
+		icon = GFX_focus_rumaojiehe_29
+		x = 34
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_26
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_28
+		icon = GFX_focus_rumaojiehe_28
+		x = 32
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_26
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_30
+		icon = GFX_focus_rumaojiehe_30
+		x = 32
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_27
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_29
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_28
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_31
+		icon = GFX_focus_rumaojiehe_31
+		x = 32
+		y = 23
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_30
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_27
+		icon = GFX_focus_rumaojiehe_27
+		x = 30
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_26
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_26
+		icon = GFX_focus_rumaojiehe_26
+		x = 32
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_10
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_32
+		icon = GFX_focus_rumaojiehe_32
+		x = 41
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_10
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_33
+		icon = GFX_focus_rumaojiehe_33
+		x = 41
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_32
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_34
+		icon = GFX_focus_rumaojiehe_34
+		x = 41
+		y = 19
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_33
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_38
+		icon = GFX_focus_rumaojiehe_38
+		x = 41
+		y = 23
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_37
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_39
+		icon = GFX_focus_rumaojiehe_39
+		x = 41
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_38
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_37
+		icon = GFX_focus_rumaojiehe_37
+		x = 41
+		y = 21
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_35
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_36
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_18
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_36
+		icon = GFX_focus_rumaojiehe_36
+		x = 40
+		y = 20
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_34
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_35
+		icon = GFX_focus_rumaojiehe_35
+		x = 42
+		y = 20
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_34
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_13
+		icon = GFX_focus_rumaojiehe_13
+		x = 37
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_10
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_14
+		icon = GFX_focus_rumaojiehe_14
+		x = 37
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_13
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_15
+		icon = GFX_focus_rumaojiehe_15
+		x = 36
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_14
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_16
+		icon = GFX_focus_rumaojiehe_16
+		x = 38
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_14
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_17
+		icon = GFX_focus_rumaojiehe_17
+		x = 37
+		y = 19
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_16
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_15
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_18
+		icon = GFX_focus_rumaojiehe_18
+		x = 38
+		y = 20
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_17
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_19
+		icon = GFX_focus_rumaojiehe_19
+		x = 36
+		y = 20
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_17
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_20
+		icon = GFX_focus_rumaojiehe_20
+		x = 37
+		y = 21
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_19
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_18
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_22
+		icon = GFX_focus_rumaojiehe_22
+		x = 36
+		y = 23
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_21
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_24
+		icon = GFX_focus_rumaojiehe_24
+		x = 37
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_22
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_23
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_31
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_25
+		icon = GFX_focus_rumaojiehe_25
+		x = 37
+		y = 26
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_39
+        }
+		prerequisite = {
+       focus = PRC_rumaojiehe_24
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_23
+		icon = GFX_focus_rumaojiehe_23
+		x = 38
+		y = 23
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_21
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_21
+		icon = GFX_focus_rumaojiehe_21
+		x = 37
+		y = 22
+		cost = 5
+		available_if_capitulated = yes
+
+		prerequisite = {
+       focus = PRC_rumaojiehe_20
+        }
+	
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
 		}
 		completion_reward = {
 
