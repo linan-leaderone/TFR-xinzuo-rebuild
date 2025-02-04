@@ -3394,6 +3394,7 @@ country_event = {
         option = {
                 name = PRC_MAO.111.a
 		hidden_effect = {
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
 			set_politics = {
 				ruling_party = totalitarian_socialist
 				elections_allowed = no

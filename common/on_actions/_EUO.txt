@@ -1369,7 +1369,12 @@ annex_country = {
 						}
 					}
 
-
+						FPR = {
+annex_country = {
+								target = GER
+								transfer_troops = yes
+							}
+			}
 						PRC = {white_peace = GER}
 			PRC = {set_autonomy = {
 			target = GER
