@@ -1,0 +1,502 @@
+
+defined_text = {
+	name = HDQ_BINGDUYANJIU
+	text = {
+		trigger = {
+check_variable = {
+    var = HANDEQIANG_tutu_T
+    value = 100
+    compare = less_than
+}
+		}
+		localization_key = HDQ_BINGDUYANJIU_1
+	}
+	text = {
+		trigger = {
+check_variable = {
+    var = HANDEQIANG_tutu_T
+    value = 100
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_BINGDUYANJIU_2
+	}
+}
+defined_text = {
+	name = HDQ_LINGZHIYANJIU
+	text = {
+		trigger = {
+check_variable = {
+    var = HANDEQIANG_tutu_AI
+    value = 100
+    compare = less_than
+}
+		}
+		localization_key = HDQ_LINGZHIYANJIU_1
+	}
+	text = {
+		trigger = {
+check_variable = {
+    var = HANDEQIANG_tutu_AI
+    value = 100
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_LINGZHIYANJIU_2
+	}
+}
+defined_text = {
+	name = HDQ_DIANLIGONGYING
+	text = {
+		trigger = {
+check_variable = {
+    var = HANDEQIANG_tutu_dianligongying
+    value = HANDEQIANG_tutu_dianlixiaohao
+    compare = less_than
+}
+		}
+		localization_key = HDQ_DIANLIGONGYING_1
+	}
+	text = {
+		trigger = {
+check_variable = {
+    var = HANDEQIANG_tutu_dianligongying
+    value = HANDEQIANG_tutu_dianlixiaohao
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_DIANLIGONGYING_2
+	}
+}
+defined_text = {
+	name = HDQ_YUZHONGRENKOU
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 1}
+		}
+		localization_key = HDQ_YUZHONGRENKOU_1
+	}
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 2}
+		}
+		localization_key = HDQ_YUZHONGRENKOU_2
+	}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 3 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_3
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 4 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_4
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 5 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_5
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 6 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_6
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 7 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_7
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 8 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_8
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 9 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_9
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 10 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_10
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 11 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_11
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 12 }
+    }
+    localization_key = HDQ_YUZHONGRENKOU_12
+}
+
+}
+defined_text = {
+	name = HDQ_DANGQIANRENKOU
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 1}
+		}
+		localization_key = HDQ_DANGQIANRENKOU_1
+	}
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 2}
+		}
+		localization_key = HDQ_DANGQIANRENKOU_2
+	}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 3 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_3
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 4 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_4
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 5 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_5
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 6 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_6
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 7 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_7
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 8 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_8
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 9 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_9
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 10 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_10
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 11 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_11
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 12 }
+    }
+    localization_key = HDQ_DANGQIANRENKOU_12
+}
+
+}
+defined_text = {
+	name = HDQ_MUBIAORENKOU
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 1}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_1
+    value = 1000
+    compare = less_than
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_1_1
+	}
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 1}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_1
+    value = 1000
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_1_2
+	}
+
+
+
+
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 2}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_2
+    value = 450
+    compare = less_than
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_2_1
+	}
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 2}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_2
+    value = 450
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_2_2
+	}
+
+
+
+
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 3}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_3
+    value = 1000
+    compare = less_than
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_3_1
+	}
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 3}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_3
+    value = 1000
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_3_2
+	}
+
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 4}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_4
+    value = 3500
+    compare = less_than
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_4_1
+	}
+	text = {
+		trigger = {
+			check_variable = { HANDEQIANG_UI_STATE = 4}
+check_variable = {
+    var = HANDEQIANG_tutu_STATE_4
+    value = 3500
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = HDQ_MUBIAORENKOU_4_2
+	}
+
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 5 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_5
+            value = 4500
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_5_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 5 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_5
+            value = 4500
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_5_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 6 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_6
+            value = 15000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_6_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 6 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_6
+            value = 15000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_6_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 7 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_7
+            value = 10000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_7_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 7 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_7
+            value = 10000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_7_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 8 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_8
+            value = 10000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_8_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 8 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_8
+            value = 10000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_8_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 9 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_9
+            value = 1000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_9_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 9 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_9
+            value = 1000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_9_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 10 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_10
+            value = 10000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_10_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 10 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_10
+            value = 10000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_10_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 11 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_11
+            value = 6000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_11_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 11 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_11
+            value = 6000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_11_2
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 12 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_12
+            value = 4000
+            compare = less_than
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_12_1
+}
+text = {
+    trigger = {
+        check_variable = { HANDEQIANG_UI_STATE = 12 }
+        check_variable = {
+            var = HANDEQIANG_tutu_STATE_12
+            value = 4000
+            compare = greater_than_or_equals
+        }
+    }
+    localization_key = HDQ_MUBIAORENKOU_12_2
+}
+
+
+
+}

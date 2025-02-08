@@ -1607,6 +1607,7 @@ set_cosmetic_tag = PRC_AM
 				id = PRC_MAO.96
 			}
 			add_ideas = PRC_ai_security1_core
+			add_ideas = PRC_ai_intelligence1_core
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 1000
@@ -2859,37 +2860,40 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+				remove_dynamic_modifier = {
+					modifier = PRC_communist_party_of_china_dynamic
+				}
 			
 		}
 	}
-	focus = {
-		id = PRC_rumaojiehe_12
-		icon = GFX_focus_rumaojiehe_12
-		x = 45
-		y = 15
-		cost = 5
-		available_if_capitulated = yes
+	#focus = {
+		#id = PRC_rumaojiehe_12
+		#icon = GFX_focus_rumaojiehe_12
+		#x = 45
+		#y = 15
+		#cost = 5
+		#available_if_capitulated = yes
 
-		prerequisite = {
-       focus = PRC_rumaojiehe_9
-        }
+		#prerequisite = {
+       #focus = PRC_rumaojiehe_9
+       # }
 	
-		mutually_exclusive = {
-			focus = PRC_rumaojiehe_11
-		}
-		mutually_exclusive = {
-			focus = PRC_rumaojiehe_10
-		}
-		ai_will_do = {
-			factor = 15
-		}
-		available = {
-		}
-		completion_reward = {
+		#mutually_exclusive = {
+		#	focus = PRC_rumaojiehe_11
+		#}
+		#mutually_exclusive = {
+		#	focus = PRC_rumaojiehe_10
+		#}
+		#ai_will_do = {
+		#	factor = 15
+		#}
+		#available = {
+		#}
+		#completion_reward = {
 
-			
-		}
-	}
+		#	
+		#}
+	#}
 	focus = {
 		id = PRC_rumaojiehe_40
 		icon = GFX_focus_rumaojiehe_40
@@ -2908,6 +2912,10 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -2930,6 +2938,10 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -2957,6 +2969,10 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -2980,6 +2996,10 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -3002,6 +3022,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3028,6 +3053,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = wyhxiaolvdwsy
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
 
 			
 		}
@@ -3052,6 +3083,11 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -3072,8 +3108,14 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+			has_completed_focus = PRC_rumaojiehe_20
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_T = 100 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3098,6 +3140,11 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+
+custom_effect_tooltip = T_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_T = 100 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -3120,6 +3167,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = wyhxiaolv
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
 
 			
 		}
@@ -3143,6 +3196,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3172,6 +3230,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+	
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3193,8 +3256,26 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_20_start_3
+            check_variable = {
+    var = HANDEQIANG_tutu_dianligongying
+    value = HANDEQIANG_tutu_dianlixiaohao
+    compare = greater_than_or_equals
+}
+            check_variable = {
+    var = HANDEQIANG_tutu_dianlixiaohao
+    value = 50
+    compare = greater_than_or_equals
+}
+		}
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_T = 100 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3218,6 +3299,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
 
 			
 		}
@@ -3241,6 +3327,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
 
 			
 		}
@@ -3265,8 +3356,20 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_59_start_1
+			has_country_flag = TFR_tutu_JIYIN_finish		
+		}
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 5000
+			}
+			add_debt = yes
+			country_event = {
+				id = PRC_MAO.112
+			}
 
 			
 		}
@@ -3291,6 +3394,11 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -3313,6 +3421,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3337,6 +3450,11 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -3359,6 +3477,11 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3385,8 +3508,14 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+			has_completed_focus = PRC_rumaojiehe_10
 		}
 		completion_reward = {
+
+
+custom_effect_tooltip = T_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_T = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3413,6 +3542,34 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+custom_effect_tooltip = wyhxiaolvdwsysss
+			PRC_fushengjihua_action_effects111 = yes
+			PRC_fushengjihua_action_effects = yes
+			set_country_flag = TFR_ANDEQIANG_anniu_start
+								if = {
+						limit = {
+				NOT = {1148 = {
+					is_fully_controlled_by = PRC
+				}	}
+				} 
+			set_country_flag = TFR_tutu_STATE_9_finish	
+				}
+				set_variable = { HANDEQIANG_UI_STATE = 6 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_1 = 3 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_2 = 1 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_3 = 3 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_4 = 8 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_5 = 11 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_6 = 41 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_7 = 31 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_8 = 24 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_9 = 2 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_10 = 23 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_11 = 13 }
+				set_variable = { HANDEQIANG_yuzhongrenkou_12 = 10 }
+				set_variable = { HANDEQIANG_tutu_dianlixiaohao = 14 }
+				set_variable = { HANDEQIANG_tutu_dianligongying = 24 }
+
 			
 		}
 	}
@@ -3435,6 +3592,13 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+custom_effect_tooltip = AI_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_AI = 50 }
+			PRC_fushengjihua_action_effects = yes
+			country_event = {
+				id = PRC_MAO.149
+			}
+
 			
 		}
 	}
@@ -3456,6 +3620,10 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+custom_effect_tooltip = AI_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_AI = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3485,6 +3653,10 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+custom_effect_tooltip = AI_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_AI = 100 }
+			PRC_fushengjihua_action_effects = yes
+
 			
 		}
 	}
@@ -3506,6 +3678,10 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+
+custom_effect_tooltip = AI_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_AI = 100 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3529,6 +3705,13 @@ create_navy_leader = {
 		}
 		completion_reward = {
 
+custom_effect_tooltip = AI_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_AI = 50 }
+			PRC_fushengjihua_action_effects = yes
+			country_event = {
+				id = PRC_MAO.148
+			}
+
 			
 		}
 	}
@@ -3550,6 +3733,10 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			
+custom_effect_tooltip = AI_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_AI = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3572,7 +3759,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
-
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 			
 		}
 	}
@@ -3594,6 +3786,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3616,6 +3814,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3638,6 +3842,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3660,6 +3870,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3688,6 +3904,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3710,6 +3932,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3732,6 +3960,12 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+custom_effect_tooltip = wyhxiaolv
 
 			
 		}
@@ -3754,6 +3988,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3776,6 +4013,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3798,7 +4038,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
-
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 			
 		}
 	}
@@ -3820,6 +4062,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3845,6 +4090,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3867,6 +4115,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = 2_dianlixiaohao
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 2 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3889,6 +4140,8 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = wyhxiaolvdwsyssssw
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3912,8 +4165,32 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_21_start_1
+            check_variable = {
+    var = HANDEQIANG_tutu_AI_dengji
+    value = 8
+    compare = greater_than_or_equals
+}
+		}
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_20_start_1
+            check_variable = {
+    var = HANDEQIANG_tutu_dianligongying
+    value = HANDEQIANG_tutu_dianlixiaohao
+    compare = greater_than_or_equals
+}
+            check_variable = {
+    var = HANDEQIANG_tutu_dianlixiaohao
+    value = 30
+    compare = greater_than_or_equals
+}
+		}
 		}
 		completion_reward = {
+custom_effect_tooltip = AI_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_AI = 50 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3936,6 +4213,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = AI_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_AI = 100 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -3962,8 +4242,30 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_20_start_3
+            check_variable = {
+    var = HANDEQIANG_tutu_dianligongying
+    value = HANDEQIANG_tutu_dianlixiaohao
+    compare = greater_than_or_equals
+}
+            check_variable = {
+    var = HANDEQIANG_tutu_dianlixiaohao
+    value = 50
+    compare = greater_than_or_equals
+}
+		}
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_25_start_1
+			has_country_flag = TFR_tutu_AI_finish		
+		}
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 5000
+			}
+			add_debt = yes
 
 			
 		}
@@ -3987,8 +4289,27 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+	custom_trigger_tooltip = {
+		tooltip = rumaojiehe_25_start
+			has_country_flag = TFR_tutu_STATE_1_finish	
+			has_country_flag = TFR_tutu_STATE_2_finish	
+			has_country_flag = TFR_tutu_STATE_3_finish	
+			has_country_flag = TFR_tutu_STATE_4_finish	
+			has_country_flag = TFR_tutu_STATE_5_finish	
+			has_country_flag = TFR_tutu_STATE_6_finish	
+			has_country_flag = TFR_tutu_STATE_7_finish	
+			has_country_flag = TFR_tutu_STATE_8_finish	
+			has_country_flag = TFR_tutu_STATE_9_finish	
+			has_country_flag = TFR_tutu_STATE_10_finish	
+			has_country_flag = TFR_tutu_STATE_11_finish	
+			has_country_flag = TFR_tutu_STATE_12_finish		
+		}
+
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.111
+			}
 
 			
 		}
@@ -4011,6 +4332,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+custom_effect_tooltip = AI_JINDU_100
+        add_to_variable = { HANDEQIANG_tutu_AI = 100 }
+			PRC_fushengjihua_action_effects = yes
 
 			
 		}
@@ -4031,8 +4355,28 @@ create_navy_leader = {
 			factor = 15
 		}
 		available = {
+			has_idea = PRC_the_long_march_2_idea
+				custom_trigger_tooltip = {
+		tooltip = rumaojiehe_20_start_2
+            check_variable = {
+    var = HANDEQIANG_tutu_dianligongying
+    value = HANDEQIANG_tutu_dianlixiaohao
+    compare = greater_than_or_equals
+}
+            check_variable = {
+    var = HANDEQIANG_tutu_dianlixiaohao
+    value = 40
+    compare = greater_than_or_equals
+}
+		}
 		}
 		completion_reward = {
+custom_effect_tooltip = AI_JINDU_50
+        add_to_variable = { HANDEQIANG_tutu_AI = 50 }
+			PRC_fushengjihua_action_effects = yes
+			country_event = {
+				id = PRC_MAO.147
+			}
 
 			
 		}

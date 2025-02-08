@@ -11803,7 +11803,6 @@ country_event = {
 	}
 	option = {
 		name = china.667.a
-		add_stability = -0.25
 		set_temp_variable = {
 			var = academic_development_var_temp
 			value = 0.15
@@ -11826,12 +11825,6 @@ country_event = {
 	option = {
 		name = china.668.a
 		promote_character = PRC_long_march
-		add_stability = -0.5
-		add_manpower = -100000
-		news_event = {
-			id = news.544
-			hours = 6
-		}
 		set_country_flag = PRC_long_march_flag
 	}
 }

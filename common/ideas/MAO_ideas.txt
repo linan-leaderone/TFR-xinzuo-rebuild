@@ -1593,6 +1593,19 @@ taihaijingji_idea_25 = {
 }
 	head_minister = {
 
+		PRC_ai_changzheng_core = {
+			picture = PRC_changzheng_core
+			allowed = { original_tag = PRC }
+			visible = {
+			has_idea = PRC_the_long_march_2_idea
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				sec_ai_changzheng_11113dd
+			}
+		}
 		PRC_song_yongyi_hog = {
 			picture = PRC_song_yongyi_hog
 			name = PRC_song_yongyi
@@ -1628,6 +1641,20 @@ has_country_leader = {
 			}
 			traits = { 
 				hog_li_jinjin
+			}
+		}
+		PRC_xi_jinping_hog = {
+			picture = PRC_xi_jinping_hog
+			name = PRC_xi_jinping_hog
+			allowed = { original_tag = PRC}
+			visible = {
+			has_country_flag = TFR_xjp_start
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_xi_jinping
 			}
 		}
 		PRC_xiong_hou_hog = {
@@ -1795,6 +1822,19 @@ has_country_leader = {
 
 	
 	intelligence_minister = {
+		PRC_ai_intelligence1_core = {
+			picture = PRC_ai_core
+			allowed = { original_tag = PRC }
+			visible = {
+				has_completed_focus = PRC_revive_peoples_war_mindset_4
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				sec_ai_intelligence_11113dd
+			}
+		}
 		PRC_han_deqiang_hog = {
 			picture = PRC_han_deqiang_hog
 			name = PRC_han_deqiang

@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	TFR_ANDEQIANG_anniu_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_ANDEQIANG_anniu_gui"
+
+		visible = {
+			has_country_flag = TFR_ANDEQIANG_anniu_start
+		}
+
+		effects = {
+			TFR_ANDEQIANG_anniu_click = {
+				if = {
+					limit = { 
+				check_variable = { HANDEQIANG_UI_START = 1 }
+					}
+				set_variable = { HANDEQIANG_UI_START = 0 }
+				}
+				else = {
+				set_variable = { HANDEQIANG_UI_START = 1 }
+				}
+			}
+			}
+	}		
+}

@@ -1,0 +1,871 @@
+PRC_fushengjihua_action_effects111 = {
+##新疆
+    set_variable = { 618.RKPC = 618.state_population_k }
+divide_variable = {
+    var = 618.RKPC
+    value = 10
+}
+    set_variable = { 617.RKPC = 617.state_population_k }
+divide_variable = {
+    var = 617.RKPC
+    value = 10
+}
+    set_variable = { 1165.RKPC = 1165.state_population_k }
+divide_variable = {
+    var = 1165.RKPC
+    value = 10
+}
+    set_variable = { 1162.RKPC = 1162.state_population_k }
+divide_variable = {
+    var = 1162.RKPC
+    value = 10
+}
+    set_variable = { 1163.RKPC = 1163.state_population_k }
+divide_variable = {
+    var = 1163.RKPC
+    value = 10
+}
+    set_variable = { 1161.RKPC = 1161.state_population_k }
+divide_variable = {
+    var = 1161.RKPC
+    value = 10
+}
+    set_variable = { 1160.RKPC = 1160.state_population_k }
+divide_variable = {
+    var = 1160.RKPC
+    value = 10
+}
+    set_variable = { 1158.RKPC = 1158.state_population_k }
+divide_variable = {
+    var = 1158.RKPC
+    value = 10
+}
+    set_variable = { 1164.RKPC = 1164.state_population_k }
+divide_variable = {
+    var = 1164.RKPC
+    value = 10
+}
+    set_variable = { 619.RKPC = 619.state_population_k }
+divide_variable = {
+    var = 619.RKPC
+    value = 10
+}
+    set_variable = { 287.RKPC = 287.state_population_k }
+divide_variable = {
+    var = 287.RKPC
+    value = 10
+}
+    set_variable = { 788.RKPC = 788.state_population_k }
+divide_variable = {
+    var = 788.RKPC
+    value = 10
+}
+add_to_variable = { 618.RKPC = 617.RKPC }
+add_to_variable = { 618.RKPC = 1165.RKPC }
+add_to_variable = { 618.RKPC = 1162.RKPC }
+add_to_variable = { 618.RKPC = 1163.RKPC }
+add_to_variable = { 618.RKPC = 1161.RKPC }
+add_to_variable = { 618.RKPC = 1160.RKPC }
+add_to_variable = { 618.RKPC = 1158.RKPC }
+add_to_variable = { 618.RKPC = 1164.RKPC }
+add_to_variable = { 618.RKPC = 619.RKPC }
+add_to_variable = { 618.RKPC = 287.RKPC }
+add_to_variable = { 618.RKPC = 788.RKPC }
+
+ 
+    set_variable = { HANDEQIANG_zuigao_STATE_1 = 618.RKPC }
+
+
+##青藏
+    set_variable = { 1155.RKPC = 1155.state_population_k }
+divide_variable = {
+    var = 1155.RKPC
+    value = 10
+}
+    set_variable = { 1153.RKPC = 1153.state_population_k }
+divide_variable = {
+    var = 1153.RKPC
+    value = 10
+}
+    set_variable = { 1152.RKPC = 1152.state_population_k }
+divide_variable = {
+    var = 1152.RKPC
+    value = 10
+}
+    set_variable = { 1156.RKPC = 1156.state_population_k }
+divide_variable = {
+    var = 1156.RKPC
+    value = 10
+}
+    set_variable = { 322.RKPC = 322.state_population_k }
+divide_variable = {
+    var = 322.RKPC
+    value = 10
+}
+    set_variable = { 1186.RKPC = 1186.state_population_k }
+divide_variable = {
+    var = 1186.RKPC
+    value = 10
+}
+    set_variable = { 1187.RKPC = 1187.state_population_k }
+divide_variable = {
+    var = 1187.RKPC
+    value = 10
+}
+    set_variable = { 604.RKPC = 604.state_population_k }
+divide_variable = {
+    var = 604.RKPC
+    value = 10
+}
+add_to_variable = { 1155.RKPC = 1153.RKPC }
+add_to_variable = { 1155.RKPC = 1152.RKPC }
+add_to_variable = { 1155.RKPC = 1156.RKPC }
+add_to_variable = { 1155.RKPC = 322.RKPC }
+add_to_variable = { 1155.RKPC = 1186.RKPC }
+add_to_variable = { 1155.RKPC = 1187.RKPC }
+add_to_variable = { 1155.RKPC = 604.RKPC }
+
+ 
+    set_variable = { HANDEQIANG_zuigao_STATE_2 = 1155.RKPC }
+
+
+
+
+
+
+
+##内蒙
+    set_variable = { 1166.RKPC = 1166.state_population_k }
+divide_variable = {
+    var = 1166.RKPC
+    value = 10
+}
+    set_variable = { 621.RKPC = 621.state_population_k }
+divide_variable = {
+    var = 621.RKPC
+    value = 10
+}
+    set_variable = { 1202.RKPC = 1202.state_population_k }
+divide_variable = {
+    var = 1202.RKPC
+    value = 10
+}
+    set_variable = { 612.RKPC = 612.state_population_k }
+divide_variable = {
+    var = 612.RKPC
+    value = 10
+}
+    set_variable = { 715.RKPC = 715.state_population_k }
+divide_variable = {
+    var = 715.RKPC
+    value = 10
+}
+    set_variable = { 1167.RKPC = 1167.state_population_k }
+divide_variable = {
+    var = 1167.RKPC
+    value = 10
+}
+add_to_variable = { 1166.RKPC = 621.RKPC }
+add_to_variable = { 1166.RKPC = 1202.RKPC }
+add_to_variable = { 1166.RKPC = 612.RKPC }
+add_to_variable = { 1166.RKPC = 715.RKPC }
+add_to_variable = { 1166.RKPC = 1167.RKPC }
+
+ 
+    set_variable = { HANDEQIANG_zuigao_STATE_3 = 1166.RKPC }
+
+
+##西北
+    set_variable = { 1198.RKPC = 1198.state_population_k }
+divide_variable = {
+    var = 1198.RKPC
+    value = 10
+}
+    set_variable = { 616.RKPC = 616.state_population_k }
+divide_variable = {
+    var = 616.RKPC
+    value = 10
+}
+    set_variable = { 1199.RKPC = 1199.state_population_k }
+divide_variable = {
+    var = 1199.RKPC
+    value = 10
+}
+    set_variable = { 1201.RKPC = 1201.state_population_k }
+divide_variable = {
+    var = 1201.RKPC
+    value = 10
+}
+    set_variable = { 1193.RKPC = 1193.state_population_k }
+divide_variable = {
+    var = 1193.RKPC
+    value = 10
+}
+    set_variable = { 283.RKPC = 283.state_population_k }
+divide_variable = {
+    var = 283.RKPC
+    value = 10
+}
+    set_variable = { 622.RKPC = 622.state_population_k }
+divide_variable = {
+    var = 622.RKPC
+    value = 10
+}
+    set_variable = { 1200.RKPC = 1200.state_population_k }
+divide_variable = {
+    var = 1200.RKPC
+    value = 10
+}
+
+ add_to_variable = { 1198.RKPC = 616.RKPC }
+add_to_variable = { 1198.RKPC = 1199.RKPC }
+add_to_variable = { 1198.RKPC = 1201.RKPC }
+add_to_variable = { 1198.RKPC = 1193.RKPC }
+add_to_variable = { 1198.RKPC = 283.RKPC }
+add_to_variable = { 1198.RKPC = 622.RKPC }
+add_to_variable = { 1198.RKPC = 1200.RKPC }
+
+    set_variable = { HANDEQIANG_zuigao_STATE_4 = 1198.RKPC }
+
+
+##东北
+    set_variable = { 716.RKPC = 716.state_population_k }
+divide_variable = {
+    var = 716.RKPC
+    value = 10
+}
+    set_variable = { 1394.RKPC = 1394.state_population_k }
+divide_variable = {
+    var = 1394.RKPC
+    value = 10
+}
+    set_variable = { 328.RKPC = 328.state_population_k }
+divide_variable = {
+    var = 328.RKPC
+    value = 10
+}
+    set_variable = { 714.RKPC = 714.state_population_k }
+divide_variable = {
+    var = 714.RKPC
+    value = 10
+}
+    set_variable = { 717.RKPC = 717.state_population_k }
+divide_variable = {
+    var = 717.RKPC
+    value = 10
+}
+    set_variable = { 1416.RKPC = 1416.state_population_k }
+divide_variable = {
+    var = 1416.RKPC
+    value = 10
+}
+    set_variable = { 1415.RKPC = 1415.state_population_k }
+divide_variable = {
+    var = 1415.RKPC
+    value = 10
+}
+    set_variable = { 1414.RKPC = 1414.state_population_k }
+divide_variable = {
+    var = 1414.RKPC
+    value = 10
+}
+    set_variable = { 1417.RKPC = 1417.state_population_k }
+divide_variable = {
+    var = 1417.RKPC
+    value = 10
+}
+    set_variable = { 1413.RKPC = 1413.state_population_k }
+divide_variable = {
+    var = 1413.RKPC
+    value = 10
+}
+add_to_variable = { 716.RKPC = 1394.RKPC }
+add_to_variable = { 716.RKPC = 328.RKPC }
+add_to_variable = { 716.RKPC = 714.RKPC }
+add_to_variable = { 716.RKPC = 717.RKPC }
+add_to_variable = { 716.RKPC = 1416.RKPC }
+add_to_variable = { 716.RKPC = 1415.RKPC }
+add_to_variable = { 716.RKPC = 1414.RKPC }
+add_to_variable = { 716.RKPC = 1417.RKPC }
+add_to_variable = { 716.RKPC = 1413.RKPC }
+
+
+    set_variable = { HANDEQIANG_zuigao_STATE_5 = 716.RKPC }
+
+
+
+
+
+
+
+##华北
+    set_variable = { 610.RKPC = 610.state_population_k }
+divide_variable = {
+    var = 610.RKPC
+    value = 10
+}
+    set_variable = { 611.RKPC = 611.state_population_k }
+divide_variable = {
+    var = 611.RKPC
+    value = 10
+}
+    set_variable = { 609.RKPC = 609.state_population_k }
+divide_variable = {
+    var = 609.RKPC
+    value = 10
+}
+    set_variable = { 608.RKPC = 608.state_population_k }
+divide_variable = {
+    var = 608.RKPC
+    value = 10
+}
+    set_variable = { 597.RKPC = 597.state_population_k }
+divide_variable = {
+    var = 597.RKPC
+    value = 10
+}
+    set_variable = { 614.RKPC = 614.state_population_k }
+divide_variable = {
+    var = 614.RKPC
+    value = 10
+}
+    set_variable = { 607.RKPC = 607.state_population_k }
+divide_variable = {
+    var = 607.RKPC
+    value = 10
+}
+    set_variable = { 615.RKPC = 615.state_population_k }
+divide_variable = {
+    var = 615.RKPC
+    value = 10
+}
+    set_variable = { 1157.RKPC = 1157.state_population_k }
+divide_variable = {
+    var = 1157.RKPC
+    value = 10
+}
+    set_variable = { 1154.RKPC = 1154.state_population_k }
+divide_variable = {
+    var = 1154.RKPC
+    value = 10
+}
+    set_variable = { 1194.RKPC = 1194.state_population_k }
+divide_variable = {
+    var = 1194.RKPC
+    value = 10
+}
+    set_variable = { 1421.RKPC = 1421.state_population_k }
+divide_variable = {
+    var = 1421.RKPC
+    value = 10
+}
+    set_variable = { 1233.RKPC = 1233.state_population_k }
+divide_variable = {
+    var = 1233.RKPC
+    value = 10
+}
+    set_variable = { 1232.RKPC = 1232.state_population_k }
+divide_variable = {
+    var = 1232.RKPC
+    value = 10
+}
+    set_variable = { 1231.RKPC = 1231.state_population_k }
+divide_variable = {
+    var = 1231.RKPC
+    value = 10
+}
+    set_variable = { 1230.RKPC = 1230.state_population_k }
+divide_variable = {
+    var = 1230.RKPC
+    value = 10
+}
+    set_variable = { 1229.RKPC = 1229.state_population_k }
+divide_variable = {
+    var = 1229.RKPC
+    value = 10
+}
+    set_variable = { 1393.RKPC = 1393.state_population_k }
+divide_variable = {
+    var = 1393.RKPC
+    value = 10
+}
+    set_variable = { 1420.RKPC = 1420.state_population_k }
+divide_variable = {
+    var = 1420.RKPC
+    value = 10
+}
+    set_variable = { 1226.RKPC = 1226.state_population_k }
+divide_variable = {
+    var = 1226.RKPC
+    value = 10
+}
+    set_variable = { 1224.RKPC = 1224.state_population_k }
+divide_variable = {
+    var = 1224.RKPC
+    value = 10
+}
+    set_variable = { 1225.RKPC = 1225.state_population_k }
+divide_variable = {
+    var = 1225.RKPC
+    value = 10
+}
+
+add_to_variable = { 610.RKPC = 611.RKPC }
+add_to_variable = { 610.RKPC = 609.RKPC }
+add_to_variable = { 610.RKPC = 608.RKPC }
+add_to_variable = { 610.RKPC = 597.RKPC }
+add_to_variable = { 610.RKPC = 614.RKPC }
+add_to_variable = { 610.RKPC = 607.RKPC }
+add_to_variable = { 610.RKPC = 615.RKPC }
+add_to_variable = { 610.RKPC = 1157.RKPC }
+add_to_variable = { 610.RKPC = 1154.RKPC }
+add_to_variable = { 610.RKPC = 1194.RKPC }
+add_to_variable = { 610.RKPC = 1421.RKPC }
+add_to_variable = { 610.RKPC = 1233.RKPC }
+add_to_variable = { 610.RKPC = 1232.RKPC }
+add_to_variable = { 610.RKPC = 1231.RKPC }
+add_to_variable = { 610.RKPC = 1230.RKPC }
+add_to_variable = { 610.RKPC = 1229.RKPC }
+add_to_variable = { 610.RKPC = 1393.RKPC }
+add_to_variable = { 610.RKPC = 1420.RKPC }
+add_to_variable = { 610.RKPC = 1226.RKPC }
+add_to_variable = { 610.RKPC = 1224.RKPC }
+add_to_variable = { 610.RKPC = 1225.RKPC }
+
+    set_variable = { HANDEQIANG_zuigao_STATE_6 = 610.RKPC }
+
+
+
+
+
+
+##华东
+    set_variable = { 598.RKPC = 598.state_population_k }
+divide_variable = {
+    var = 598.RKPC
+    value = 10
+}
+    set_variable = { 1228.RKPC = 1228.state_population_k }
+divide_variable = {
+    var = 1228.RKPC
+    value = 10
+}
+    set_variable = { 613.RKPC = 613.state_population_k }
+divide_variable = {
+    var = 613.RKPC
+    value = 10
+}
+    set_variable = { 1222.RKPC = 1222.state_population_k }
+divide_variable = {
+    var = 1222.RKPC
+    value = 10
+}
+    set_variable = { 606.RKPC = 606.state_population_k }
+divide_variable = {
+    var = 606.RKPC
+    value = 10
+}
+    set_variable = { 1221.RKPC = 1221.state_population_k }
+divide_variable = {
+    var = 1221.RKPC
+    value = 10
+}
+    set_variable = { 1223.RKPC = 1223.state_population_k }
+divide_variable = {
+    var = 1223.RKPC
+    value = 10
+}
+    set_variable = { 1215.RKPC = 1215.state_population_k }
+divide_variable = {
+    var = 1215.RKPC
+    value = 10
+}
+    set_variable = { 1220.RKPC = 1220.state_population_k }
+divide_variable = {
+    var = 1220.RKPC
+    value = 10
+}
+    set_variable = { 1159.RKPC = 1159.state_population_k }
+divide_variable = {
+    var = 1159.RKPC
+    value = 10
+}
+    set_variable = { 596.RKPC = 596.state_population_k }
+divide_variable = {
+    var = 596.RKPC
+    value = 10
+}
+    set_variable = { 1219.RKPC = 1219.state_population_k }
+divide_variable = {
+    var = 1219.RKPC
+    value = 10
+}
+
+add_to_variable = { 598.RKPC = 1228.RKPC }
+add_to_variable = { 598.RKPC = 613.RKPC }
+add_to_variable = { 598.RKPC = 1222.RKPC }
+add_to_variable = { 598.RKPC = 606.RKPC }
+add_to_variable = { 598.RKPC = 1221.RKPC }
+add_to_variable = { 598.RKPC = 1223.RKPC }
+add_to_variable = { 598.RKPC = 1215.RKPC }
+add_to_variable = { 598.RKPC = 1220.RKPC }
+add_to_variable = { 598.RKPC = 1159.RKPC }
+add_to_variable = { 598.RKPC = 596.RKPC }
+add_to_variable = { 598.RKPC = 1219.RKPC }
+
+
+    set_variable = { HANDEQIANG_zuigao_STATE_7 = 598.RKPC }
+
+
+
+##华中
+    set_variable = { 1217.RKPC = 1217.state_population_k }
+divide_variable = {
+    var = 1217.RKPC
+    value = 10
+}
+    set_variable = { 595.RKPC = 595.state_population_k }
+divide_variable = {
+    var = 595.RKPC
+    value = 10
+}
+    set_variable = { 1218.RKPC = 1218.state_population_k }
+divide_variable = {
+    var = 1218.RKPC
+    value = 10
+}
+    set_variable = { 1216.RKPC = 1216.state_population_k }
+divide_variable = {
+    var = 1216.RKPC
+    value = 10
+}
+    set_variable = { 1227.RKPC = 1227.state_population_k }
+divide_variable = {
+    var = 1227.RKPC
+    value = 10
+}
+    set_variable = { 1211.RKPC = 1211.state_population_k }
+divide_variable = {
+    var = 1211.RKPC
+    value = 10
+}
+    set_variable = { 1212.RKPC = 1212.state_population_k }
+divide_variable = {
+    var = 1212.RKPC
+    value = 10
+}
+    set_variable = { 620.RKPC = 620.state_population_k }
+divide_variable = {
+    var = 620.RKPC
+    value = 10
+}
+    set_variable = { 1208.RKPC = 1208.state_population_k }
+divide_variable = {
+    var = 1208.RKPC
+    value = 10
+}
+    set_variable = { 602.RKPC = 602.state_population_k }
+divide_variable = {
+    var = 602.RKPC
+    value = 10
+}
+    set_variable = { 600.RKPC = 600.state_population_k }
+divide_variable = {
+    var = 600.RKPC
+    value = 10
+}
+    set_variable = { 1213.RKPC = 1213.state_population_k }
+divide_variable = {
+    var = 1213.RKPC
+    value = 10
+}
+    set_variable = { 1214.RKPC = 1214.state_population_k }
+divide_variable = {
+    var = 1214.RKPC
+    value = 10
+}
+    set_variable = { 1209.RKPC = 1209.state_population_k }
+divide_variable = {
+    var = 1209.RKPC
+    value = 10
+}
+
+
+add_to_variable = { 1217.RKPC = 595.RKPC }
+add_to_variable = { 1217.RKPC = 1218.RKPC }
+add_to_variable = { 1217.RKPC = 1216.RKPC }
+add_to_variable = { 1217.RKPC = 1227.RKPC }
+add_to_variable = { 1217.RKPC = 1211.RKPC }
+add_to_variable = { 1217.RKPC = 1212.RKPC }
+add_to_variable = { 1217.RKPC = 620.RKPC }
+add_to_variable = { 1217.RKPC = 1208.RKPC }
+add_to_variable = { 1217.RKPC = 602.RKPC }
+add_to_variable = { 1217.RKPC = 600.RKPC }
+add_to_variable = { 1217.RKPC = 1213.RKPC }
+add_to_variable = { 1217.RKPC = 1214.RKPC }
+add_to_variable = { 1217.RKPC = 1209.RKPC }
+
+
+
+    set_variable = { HANDEQIANG_zuigao_STATE_8 = 1217.RKPC }
+
+
+
+
+
+##台湾
+    set_variable = { 648.RKPC = 648.state_population_k }
+divide_variable = {
+    var = 648.RKPC
+    value = 10
+}
+    set_variable = { 1148.RKPC = 1148.state_population_k }
+divide_variable = {
+    var = 1148.RKPC
+    value = 10
+}
+    set_variable = { 876.RKPC = 876.state_population_k }
+divide_variable = {
+    var = 876.RKPC
+    value = 10
+}
+    set_variable = { 648.RKPC = 648.state_population_k }
+divide_variable = {
+    var = 648.RKPC
+    value = 10
+}
+    set_variable = { 524.RKPC = 524.state_population_k }
+divide_variable = {
+    var = 524.RKPC
+    value = 10
+}
+    set_variable = { 1149.RKPC = 1149.state_population_k }
+divide_variable = {
+    var = 1149.RKPC
+    value = 10
+}
+    set_variable = { 1150.RKPC = 1150.state_population_k }
+divide_variable = {
+    var = 1150.RKPC
+    value = 10
+}
+add_to_variable = { 648.RKPC = 1148.RKPC }
+add_to_variable = { 648.RKPC = 876.RKPC }
+add_to_variable = { 648.RKPC = 524.RKPC }
+add_to_variable = { 648.RKPC = 1149.RKPC }
+add_to_variable = { 648.RKPC = 1150.RKPC }
+set_variable = { HANDEQIANG_zuigao_STATE_9 = 648.RKPC }
+
+
+
+
+##华南
+    set_variable = { 592.RKPC = 592.state_population_k }
+divide_variable = {
+    var = 592.RKPC
+    value = 10
+}
+    set_variable = { 326.RKPC = 326.state_population_k }
+divide_variable = {
+    var = 326.RKPC
+    value = 10
+}
+    set_variable = { 729.RKPC = 729.state_population_k }
+divide_variable = {
+    var = 729.RKPC
+    value = 10
+}
+    set_variable = { 728.RKPC = 728.state_population_k }
+divide_variable = {
+    var = 728.RKPC
+    value = 10
+}
+    set_variable = { 591.RKPC = 591.state_population_k }
+divide_variable = {
+    var = 591.RKPC
+    value = 10
+}
+    set_variable = { 879.RKPC = 879.state_population_k }
+divide_variable = {
+    var = 879.RKPC
+    value = 10
+}
+    set_variable = { 879.RKPC = 879.state_population_k }
+divide_variable = {
+    var = 879.RKPC
+    value = 10
+}
+    set_variable = { 1382.RKPC = 1382.state_population_k }
+divide_variable = {
+    var = 1382.RKPC
+    value = 10
+}
+    set_variable = { 1395.RKPC = 1395.state_population_k }
+divide_variable = {
+    var = 1395.RKPC
+    value = 10
+}
+    set_variable = { 1206.RKPC = 1206.state_population_k }
+divide_variable = {
+    var = 1206.RKPC
+    value = 10
+}
+    set_variable = { 1207.RKPC = 1207.state_population_k }
+divide_variable = {
+    var = 1207.RKPC
+    value = 10
+}
+    set_variable = { 1204.RKPC = 1204.state_population_k }
+divide_variable = {
+    var = 1204.RKPC
+    value = 10
+}
+    set_variable = { 1205.RKPC = 1205.state_population_k }
+divide_variable = {
+    var = 1205.RKPC
+    value = 10
+}
+    set_variable = { 1203.RKPC = 1203.state_population_k }
+divide_variable = {
+    var = 1203.RKPC
+    value = 10
+}
+    set_variable = { 1191.RKPC = 1191.state_population_k }
+divide_variable = {
+    var = 1207.RKPC
+    value = 10
+}
+    set_variable = { 593.RKPC = 593.state_population_k }
+divide_variable = {
+    var = 593.RKPC
+    value = 10
+}
+    set_variable = { 594.RKPC = 594.state_population_k }
+divide_variable = {
+    var = 594.RKPC
+    value = 10
+}
+    set_variable = { 599.RKPC = 599.state_population_k }
+divide_variable = {
+    var = 599.RKPC
+    value = 10
+}
+
+add_to_variable = { 592.RKPC = 326.RKPC }
+add_to_variable = { 592.RKPC = 729.RKPC }
+add_to_variable = { 592.RKPC = 728.RKPC }
+add_to_variable = { 592.RKPC = 591.RKPC }
+add_to_variable = { 592.RKPC = 879.RKPC }
+add_to_variable = { 592.RKPC = 1382.RKPC }
+add_to_variable = { 592.RKPC = 1395.RKPC }
+add_to_variable = { 592.RKPC = 1206.RKPC }
+add_to_variable = { 592.RKPC = 1207.RKPC }
+add_to_variable = { 592.RKPC = 1204.RKPC }
+add_to_variable = { 592.RKPC = 1205.RKPC }
+add_to_variable = { 592.RKPC = 1203.RKPC }
+add_to_variable = { 592.RKPC = 1191.RKPC }
+add_to_variable = { 592.RKPC = 593.RKPC }
+add_to_variable = { 592.RKPC = 594.RKPC }
+add_to_variable = { 592.RKPC = 599.RKPC }
+
+
+set_variable = { HANDEQIANG_zuigao_STATE_10 = 592.RKPC }
+
+
+
+
+##川渝
+    set_variable = { 1189.RKPC = 1189.state_population_k }
+divide_variable = {
+    var = 1189.RKPC
+    value = 10
+}
+    set_variable = { 1168.RKPC = 1168.state_population_k }
+divide_variable = {
+    var = 1168.RKPC
+    value = 10
+}
+    set_variable = { 601.RKPC = 601.state_population_k }
+divide_variable = {
+    var = 601.RKPC
+    value = 10
+}
+    set_variable = { 1190.RKPC = 1190.state_population_k }
+divide_variable = {
+    var = 1190.RKPC
+    value = 10
+}
+    set_variable = { 605.RKPC = 605.state_population_k }
+divide_variable = {
+    var = 605.RKPC
+    value = 10
+}
+    set_variable = { 1188.RKPC = 1188.state_population_k }
+divide_variable = {
+    var = 1188.RKPC
+    value = 10
+}
+
+add_to_variable = { 1189.RKPC = 1168.RKPC }
+add_to_variable = { 1189.RKPC = 601.RKPC }
+add_to_variable = { 1189.RKPC = 1190.RKPC }
+add_to_variable = { 1189.RKPC = 605.RKPC }
+add_to_variable = { 1189.RKPC = 1188.RKPC }
+
+
+set_variable = { HANDEQIANG_zuigao_STATE_11 = 1189.RKPC }
+
+
+
+##云贵
+    set_variable = { 603.RKPC = 603.state_population_k }
+divide_variable = {
+    var = 603.RKPC
+    value = 10
+}
+    set_variable = { 325.RKPC = 325.state_population_k }
+divide_variable = {
+    var = 325.RKPC
+    value = 10
+}
+    set_variable = { 1210.RKPC = 1210.state_population_k }
+divide_variable = {
+    var = 1210.RKPC
+    value = 10
+}
+    set_variable = { 1196.RKPC = 1196.state_population_k }
+divide_variable = {
+    var = 1196.RKPC
+    value = 10
+}
+    set_variable = { 1197.RKPC = 1197.state_population_k }
+divide_variable = {
+    var = 1197.RKPC
+    value = 10
+}
+    set_variable = { 1192.RKPC = 1192.state_population_k }
+divide_variable = {
+    var = 1192.RKPC
+    value = 10
+}
+    set_variable = { 1195.RKPC = 1195.state_population_k }
+divide_variable = {
+    var = 1195.RKPC
+    value = 10
+}
+add_to_variable = { 603.RKPC = 325.RKPC }
+add_to_variable = { 603.RKPC = 1210.RKPC }
+add_to_variable = { 603.RKPC = 1196.RKPC }
+add_to_variable = { 603.RKPC = 1197.RKPC }
+add_to_variable = { 603.RKPC = 1192.RKPC }
+add_to_variable = { 603.RKPC = 1195.RKPC }
+
+
+set_variable = { HANDEQIANG_zuigao_STATE_12 = 603.RKPC }
+
+
+
+
+
+
+}

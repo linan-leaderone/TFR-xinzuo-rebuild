@@ -1,0 +1,372 @@
+PRC_fushengjihua_action_effects_update_1 = {
+if = {
+    limit = {
+        has_country_flag = HANDEQIANG_action_STATE_1_61
+    }
+    add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 1 }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_32
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 1 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_33
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 3 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_34
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_35
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_36
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_37
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 20 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_38
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 60 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_39
+        }
+        add_to_variable = { HANDEQIANG_yuzhongrenkou_1 = 900 }
+    }
+    clr_country_flag = HANDEQIANG_action_STATE_1_61
+}
+
+if = {
+    limit = {
+        has_country_flag = HANDEQIANG_action_STATE_1_62
+    }
+    PRC_fushengjihua_action_effects_state_1 = yes
+    add_to_variable = { HANDEQIANG_tutu_dianligongying = 0.1 }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_32
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 0.1 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_33
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 0.3 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_34
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 0.5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_35
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 0.5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_36
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 0.5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_37
+        }
+        PRC_fushengjihua_action_effects_state_1_20 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 2 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_38
+        }
+        PRC_fushengjihua_action_effects_state_1_60 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 6 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_39
+        }
+        PRC_fushengjihua_action_effects_state_1_900 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianligongying = 90 }
+    }
+    clr_country_flag = HANDEQIANG_action_STATE_1_62
+}
+
+
+
+if = {
+    limit = {
+        has_country_flag = HANDEQIANG_action_STATE_1_63
+    }
+    PRC_fushengjihua_action_effects_state_1 = yes
+    add_to_variable = { HANDEQIANG_tutu_AI = 1 }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_32
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 1 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_33
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 3 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_34
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_35
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_36
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_37
+        }
+        PRC_fushengjihua_action_effects_state_1_20 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 20 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_38
+        }
+        PRC_fushengjihua_action_effects_state_1_60 = yes
+        add_to_variable = { HANDEQIANG_tutu_AI = 60 }
+    }
+
+    clr_country_flag = HANDEQIANG_action_STATE_1_63
+}
+if = {
+    limit = {
+        has_country_flag = HANDEQIANG_action_STATE_1_64
+    }
+    PRC_fushengjihua_action_effects_state_1 = yes
+    add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 0.2 }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_32
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 0.2 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_33
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 0.6 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_34
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 0.10 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_35
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 0.10 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_36
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 0.10 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_37
+        }
+        PRC_fushengjihua_action_effects_state_1_20 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 4 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_38
+        }
+        PRC_fushengjihua_action_effects_state_1_60 = yes
+        add_to_variable = { HANDEQIANG_tutu_dianlixiaohao = 12 }
+    }
+
+    clr_country_flag = HANDEQIANG_action_STATE_1_64
+}
+
+if = {
+    limit = {
+        has_country_flag = HANDEQIANG_action_STATE_1_65
+    }
+    add_to_variable = { HANDEQIANG_tutu_T = 1 }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_53
+        }
+        add_to_variable = { HANDEQIANG_tutu_T = 9 }
+    }
+    clr_country_flag = HANDEQIANG_action_STATE_1_65
+}
+
+
+if = {
+    limit = {
+        has_country_flag = HANDEQIANG_action_STATE_1_66
+    }
+    PRC_fushengjihua_action_effects_state_1 = yes
+    add_to_variable = { HANDEQIANG_tutu_T = 1 }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_32
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 1 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_33
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 3 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_34
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_35
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_36
+        }
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        PRC_fushengjihua_action_effects_state_1 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 5 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_37
+        }
+        PRC_fushengjihua_action_effects_state_1_20 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 20 }
+    }
+    if = {
+        limit = {
+            has_completed_focus = PRC_rumaojiehe_38
+        }
+        PRC_fushengjihua_action_effects_state_1_60 = yes
+        add_to_variable = { HANDEQIANG_tutu_T = 60 }
+    }
+
+    clr_country_flag = HANDEQIANG_action_STATE_1_66
+}
+
+}

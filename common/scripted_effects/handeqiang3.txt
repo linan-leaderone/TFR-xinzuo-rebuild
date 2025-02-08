@@ -1,0 +1,6484 @@
+
+PRC_fushengjihua_action_effects_state_1_60 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_1
+    value = 1000
+}
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -100000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -100000
+            }
+        }
+    }
+    }
+PRC_fushengjihua_action_effects_state_1_900 = {
+
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_1
+    value = 1000
+}
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -1000000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -1000000
+            }
+        }
+    }
+
+    }
+PRC_fushengjihua_action_effects_state_1 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_1
+    value = 10
+}
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            617 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1165 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1162 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1163 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1161 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1160 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1158 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1164 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            619 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            287 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            788 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_2 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_2
+    value = 10
+}
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1153 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1152 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1156 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            322 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1186 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1187 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            604 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_3 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_3
+    value = 10
+}
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            621 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1202 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            612 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            715 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1167 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_4 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_4
+    value = 10
+}
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            616 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1199 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1201 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1193 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            283 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            622 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1200 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_5 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_5
+    value = 10
+}
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1394 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            328 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            714 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            717 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1416 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1415 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1414 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1417 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1413 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_6 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_6
+    value = 10
+}
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            611 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            609 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            608 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            597 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            614 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            607 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            615 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1157 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1154 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1194 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1421 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1233 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1232 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1231 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+
+PRC_fushengjihua_action_effects_state_7 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_7
+    value = 10
+}
+    random_list = {
+        # 【第1份】
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第2份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第3份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第4份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第5份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第6份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第7份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第8份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第9份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+        # 【第10份】
+    random_list = {
+        10 = { 1228 = { add_manpower = -10000 } }
+        10 = { 613 = { add_manpower = -10000 } }
+        10 = { 1222 = { add_manpower = -10000 } }
+        10 = { 606 = { add_manpower = -10000 } }
+        10 = { 1221 = { add_manpower = -10000 } }
+        10 = { 1223 = { add_manpower = -10000 } }
+        10 = { 1215 = { add_manpower = -10000 } }
+        10 = { 1220 = { add_manpower = -10000 } }
+        10 = { 1159 = { add_manpower = -10000 } }
+        10 = { 596 = { add_manpower = -10000 } }
+        10 = { 1219 = { add_manpower = -10000 } }
+    }
+    }
+}
+PRC_fushengjihua_action_effects_state_8 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_8
+    value = 10
+}
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            595 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1218 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1216 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1227 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1211 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1212 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            620 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1208 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            602 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            600 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1213 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1214 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1209 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+
+PRC_fushengjihua_action_effects_state_9 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_9
+    value = 10
+}
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1148 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            876 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            524 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1149 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1150 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_10 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_10
+    value = 10
+}
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            326 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            729 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            728 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            592 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            591 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            879 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1382 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1395 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1206 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1207 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1204 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1205 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1203 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1191 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            593 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            594 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            599 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_11 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_11
+    value = 10
+}
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            1168 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            601 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1190 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            605 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1188 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+PRC_fushengjihua_action_effects_state_12 = {
+subtract_from_variable = {
+    var = HANDEQIANG_yuzhongrenkou_12
+    value = 10
+}
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+    random_list = {
+        10 = {
+            325 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1210 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1196 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1197 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1192 = {
+                add_manpower = -10000
+            }
+        }
+        10 = {
+            1195 = {
+                add_manpower = -10000
+            }
+        }
+    }
+}
+

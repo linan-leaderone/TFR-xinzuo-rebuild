@@ -474,6 +474,7 @@ add_ideas = 	BRM_civil_war_idea1
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -531,6 +532,7 @@ add_ideas = 	BRM_civil_war_idea1
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -689,6 +691,7 @@ remove_ideas = AFG_crushing_taliban
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -754,6 +757,7 @@ annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -861,6 +865,7 @@ annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -962,6 +967,7 @@ PRC = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1019,6 +1025,7 @@ PRC = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1068,6 +1075,7 @@ PRC = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1128,6 +1136,7 @@ PRC = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1293,6 +1302,7 @@ set_popularities = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1366,6 +1376,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1424,6 +1435,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1482,6 +1494,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1543,6 +1556,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1589,6 +1603,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1627,6 +1642,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -1665,6 +1681,7 @@ release_autonomy = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist

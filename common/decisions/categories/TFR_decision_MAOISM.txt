@@ -26,3 +26,19 @@ PRC_jingjihuifu_category = {
     
     priority = 4
 }
+PRC_fushengjihua_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    allowed = {
+    	tag = PRC
+    }
+    
+    visible = {
+    	always = yes
+
+has_country_flag = TFR_ANDEQIANG_anniu_start
+    }
+    
+	visible_when_empty = yes
+    priority = 4
+}
+

@@ -1,0 +1,294 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_ANDEQIANG_anniu_gui"
+		size = { width = 85 height = 85 }
+		position = { x = -85 y = -450 }
+		orientation = lower_right
+
+		buttonType = {
+			name = "TFR_ANDEQIANG_anniu"
+			spriteType = "TFR_ANDEQIANG_anniu"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+		}
+}
+	containerWindowType = {
+		name = "TFR_ANDEQIANG_UI"
+		position = { x=0 y=0 }
+		size = { width = 1588 height = 1107 }
+		Orientation = center
+		Origo = center
+		clipping = no	
+		moveable = yes
+		background = {
+			name = "Background"           
+			quadTextureSprite ="GFX_TFR_ANDEQIANG_UI"
+		}
+		instantTextBoxType = {
+			name = "MUBIAORENKOU_textbox"
+			position = { x = 1240 y = 205 }
+			font = "VCR01_36_glow"
+			borderSize = {x = 0 y = 0}
+			text = "[HDQ_MUBIAORENKOU]"
+			maxWidth = 800
+			maxHeight = 100
+			fixedsize = yes	
+			format = left	
+		}
+		instantTextBoxType = {
+			name = "DANGQIANRENKOU_textbox"
+			position = { x = 1240 y = 285 }
+			font = "VCR01_36_glow"
+			borderSize = {x = 0 y = 0}
+			text = "[HDQ_DANGQIANRENKOU]"
+			maxWidth = 800
+			maxHeight = 100
+			fixedsize = yes	
+			format = left	
+		}
+		instantTextBoxType = {
+			name = "YUZHONGRENKOU_textbox"
+			position = { x = 1240 y = 370 }
+			font = "VCR01_36_glow"
+			borderSize = {x = 0 y = 0}
+			text = "[HDQ_YUZHONGRENKOU]"
+			maxWidth = 800
+			maxHeight = 100
+			fixedsize = yes	
+			format = left	
+		}
+		instantTextBoxType = {
+			name = "DIANLIGONGYING_textbox"
+			position = { x = 1240 y = 452 }
+			font = "VCR01_36_glow"
+			borderSize = {x = 0 y = 0}
+			text = "[HDQ_DIANLIGONGYING]"
+			maxWidth = 800
+			maxHeight = 100
+			fixedsize = yes	
+			format = left	
+		}
+		instantTextBoxType = {
+			name = "LINGZHIYANJIU_textbox"
+			position = { x = 1240 y = 536 }
+			font = "VCR01_36_glow"
+			borderSize = {x = 0 y = 0}
+			text = "[HDQ_LINGZHIYANJIU]"
+			maxWidth = 800
+			maxHeight = 100
+			fixedsize = yes	
+			format = left	
+		}
+		instantTextBoxType = {
+			name = "BINGDUYANJIU_textbox"
+			position = { x = 1240 y = 621 }
+			font = "VCR01_36_glow"
+			borderSize = {x = 0 y = 0}
+			text = "[HDQ_BINGDUYANJIU]"
+			maxWidth = 800
+			maxHeight = 100
+			fixedsize = yes	
+			format = left	
+		}
+		iconType = {
+			name = "HDQ_STATE_1222"
+			spriteType = "GFX_HDQ_STATE_1222"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_22"
+			spriteType = "GFX_HDQ_STATE_22"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_32"
+			spriteType = "GFX_HDQ_STATE_32"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_42"
+			spriteType = "GFX_HDQ_STATE_42"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_52"
+			spriteType = "GFX_HDQ_STATE_52"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_62"
+			spriteType = "GFX_HDQ_STATE_62"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_72"
+			spriteType = "GFX_HDQ_STATE_72"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_82"
+			spriteType = "GFX_HDQ_STATE_82"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_92"
+			spriteType = "GFX_HDQ_STATE_92"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_102"
+			spriteType = "GFX_HDQ_STATE_102"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_112"
+			spriteType = "GFX_HDQ_STATE_112"
+			position = { x=0 y=0}
+		}
+		iconType = {
+			name = "HDQ_STATE_122"
+			spriteType = "GFX_HDQ_STATE_122"
+			position = { x=0 y=0}
+		}
+		buttonType = {
+			name = "HDQ_STATE_1"
+			spriteType = "GFX_HDQ_STATE_1"
+			position = { x=111 y=298}
+		}
+		buttonType = {
+			name = "HDQ_STATE_2"
+			spriteType = "GFX_HDQ_STATE_2"
+			position = { x=155 y=504}
+		}
+		buttonType = {
+			name = "HDQ_STATE_3"
+			spriteType = "GFX_HDQ_STATE_3"
+			position = { x=470 y=189}
+		}
+		buttonType = {
+			name = "HDQ_STATE_4"
+			spriteType = "GFX_HDQ_STATE_4"
+			position = { x=413 y=436}
+		}
+		buttonType = {
+			name = "HDQ_STATE_5"
+			spriteType = "GFX_HDQ_STATE_5"
+			position = { x=754 y=173}
+		}
+		buttonType = {
+			name = "HDQ_STATE_6"
+			spriteType = "GFX_HDQ_STATE_6"
+			position = { x=676 y=412}
+		}
+		buttonType = {
+			name = "HDQ_STATE_7"
+			spriteType = "GFX_HDQ_STATE_7"
+			position = { x=755 y=558}
+		}
+		buttonType = {
+			name = "HDQ_STATE_8"
+			spriteType = "GFX_HDQ_STATE_8"
+			position = { x=656 y=623}
+		}
+		buttonType = {
+			name = "HDQ_STATE_9"
+			spriteType = "GFX_HDQ_STATE_9"
+			position = { x=876 y=747}
+		}
+		iconType = {
+			name = "HDQ_STATE_9999"
+			spriteType = "GFX_HDQ_STATE_9"
+			position = { x=876 y=747}
+		}
+		buttonType = {
+			name = "HDQ_STATE_10"
+			spriteType = "GFX_HDQ_STATE_10"
+			position = { x=588 y=760}
+		}
+		buttonType = {
+			name = "HDQ_STATE_11"
+			spriteType = "GFX_HDQ_STATE_11"
+			position = { x=464 y=612}
+		}
+		buttonType = {
+			name = "HDQ_STATE_12"
+			spriteType = "GFX_HDQ_STATE_12"
+			position = { x=465 y=707}
+		}
+
+
+
+		buttonType = {
+			name = "HDQ_button_1"
+			spriteType = "GFX_HDQ_button_1"
+			position = { x=985 y=702}
+		}
+		buttonType = {
+			name = "HDQ_button_2"
+			spriteType = "GFX_HDQ_button_2"
+			position = { x=985 y=826}
+		}
+		buttonType = {
+			name = "HDQ_button_3"
+			spriteType = "GFX_HDQ_button_3"
+			position = { x=985 y=942}
+		}
+		buttonType = {
+			name = "HDQ_button_4"
+			spriteType = "GFX_HDQ_button_4"
+			position = { x=1255 y=702}
+		}
+		buttonType = {
+			name = "HDQ_button_5"
+			spriteType = "GFX_HDQ_button_5"
+			position = { x=1255 y=826}
+		}
+		buttonType = {
+			name = "HDQ_button_6"
+			spriteType = "GFX_HDQ_button_6"
+			position = { x=1255 y=942}
+		}
+		iconType = {
+			name = "HDQ_button_11"
+			spriteType = "GFX_HDQ_button_11"
+			position = { x=985 y=702}
+		}
+		iconType = {
+			name = "HDQ_button_21"
+			spriteType = "GFX_HDQ_button_21"
+			position = { x=985 y=825}
+		}
+		iconType = {
+			name = "HDQ_button_31"
+			spriteType = "GFX_HDQ_button_31"
+			position = { x=985 y=942}
+		}
+		iconType = {
+			name = "HDQ_button_41"
+			spriteType = "GFX_HDQ_button_41"
+			position = { x=1255 y=702}
+		}
+		iconType = {
+			name = "HDQ_button_51"
+			spriteType = "GFX_HDQ_button_51"
+			position = { x=1255 y=825}
+		}
+		iconType = {
+			name = "HDQ_button_61"
+			spriteType = "GFX_HDQ_button_61"
+			position = { x=1255 y=942}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+		}
+		}

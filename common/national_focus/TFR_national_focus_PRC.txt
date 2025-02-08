@@ -1681,6 +1681,7 @@ shared_focus = {
 		#	has_completed_focus = PRC_the_great_revival
 		#}
 		has_country_flag = PRC_for_policy_tree_available
+		NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 	}
 	completion_reward = {
 	    add_threat = 1
@@ -2427,10 +2428,7 @@ shared_focus = {
 			limit = {
 				has_country_flag = PRC_new_left_win
 			}
-		OR = {
-						PRC_han_deqiang = {is_country_leader = yes}
 						PRC_kong_qingdong = {is_country_leader = yes}
-		}
 		}
 	}
 	prerequisite = { focus = PRC_establish_eadi }

@@ -1,4 +1,22 @@
-leader_traits = {
+leader_traits = {	
+	hog_xi_jinping = {
+		industrial_capacity_factory = 0.025
+		war_support_factor = 0.1
+		political_power_gain = 0.15
+		army_morale_factor = 0.05
+
+		random = no
+	}
+	sec_ai_intelligence_11113dd = {
+		random = no
+		expense_growth_factor = -0.2
+	justify_war_goal_time = -0.5
+	political_power_gain = 0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	sec_ai_anti_11113dd = {
 		random = no
 		expense_growth_factor = -0.2
@@ -64,6 +82,18 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	sec_ai_changzheng_11113dd  = {
+		random = no
+		totalitarian_socialist_drift = 0.05
+		communist_drift = 0.01
+		libertarian_socialist_drift = 0.02
+		stability_factor = 0.3
+		political_power_gain = 2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	sec_ma_houzhi  = {
 		random = no
 		totalitarian_socialist_drift = 0.02

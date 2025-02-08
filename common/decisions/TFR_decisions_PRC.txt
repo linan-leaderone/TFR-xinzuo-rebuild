@@ -8521,10 +8521,15 @@ set_country_flag = PRC_yuuki_1_3
 				remove_idea = PRC_the_long_march_1_idea
 				add_idea = PRC_the_long_march_2_idea
 			}
+								if = {
+						limit = {
+NOT = {has_country_flag = PRC_handeqiang_hog}
+		}
 			country_event = { 
 				id = china.668
 				days = 5
 			}
+		}
 		}
 	}
 	PRC_asteroid_mining_programme_new_left = {

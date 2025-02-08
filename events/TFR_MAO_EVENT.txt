@@ -940,7 +940,7 @@ country_event = {
 
 	option = {
 		name = PRC_MAO.33.a
-
+clr_country_flag = RUS_EUO_PR
 	
 		hidden_effect = {
 										every_country = {
@@ -3394,13 +3394,107 @@ country_event = {
         option = {
                 name = PRC_MAO.111.a
 		hidden_effect = {
+			complete_national_focus = PRC_advanced_economic_planning_1
+unlock_national_focus = PRC_revive_peoples_war_mindset_4
+unlock_national_focus = PRC_economic_computerization
+unlock_national_focus =PRC_rejuvinate_cpc_cadres
+unlock_national_focus =PRC_exonorate_neo_maoists
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -1
+			}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -1
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.6
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			add_ideas = PRC_ai_economic_core
+			add_ideas = PRC_ai_security1_core
+			add_ideas = PRC_ai_security_core
+			add_ideas = PRC_ai_intelligence1_core
+			add_ideas = PRC_ai_changzheng_core
 	change_economy_type_ZZZ_OGAS_socialism1 = yes
+
+		end_coalition = yes
 			set_politics = {
 				ruling_party = totalitarian_socialist
 				elections_allowed = no
 			}
-
-		end_coalition = yes
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_cpc1_rad_maoist_tot_soc
+				name = PRC_cpc_rad1_maoist_tot_soc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc
+				name = PRC_cpc_rad1_maoist_tot_soc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
 set_cosmetic_tag = PRC_HACHIMI
 create_country_leader = {
 	name = MAO_CMZD
@@ -3411,6 +3505,66 @@ create_country_leader = {
 	traits = {
 	}
 }
+create_corps_commander = {
+name = "“毛泽东”" 
+desc = "POLITICS_MAOZEDONG_DESC"
+portrait_path = "GFX_MAO"
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+traits = { 
+}
+} 
+			create_country_leader = {
+	                name = "未知"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = neonazism
+				}  
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+set_portraits = {
+    character = PRC_long_march
+    army = { large="gfx/MAOYUANXIN/changzheng1.png" }
+    civilian = { large="gfx/MAOYUANXIN/changzheng1.png" }
+}
+
+
+create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+traits = { 
+}
+} 
+
         }
         }
 }
@@ -3424,7 +3578,103 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.112.a
+		hidden_effect = {
+				if = {
+						limit = {
+				NOT = { has_country_flag = PRC_HDQ_AI_XD_1}
+				NOT = { has_country_flag = PRC_HDQ_AI_XD_2}
+				} 
+
+			country_event = {
+				id = PRC_MAO.165
+				days = 7
+			}
+				} 
+				if = {
+						limit = {
+				has_country_flag = PRC_HDQ_AI_XD_1
+				NOT = { has_country_flag = PRC_HDQ_AI_XD_2}
+				} 
+
+			country_event = {
+				id = PRC_MAO.163
+				days = 7
+			}
+				} 
+				if = {
+						limit = {
+				has_country_flag = PRC_HDQ_AI_XD_1
+				has_country_flag = PRC_HDQ_AI_XD_2
+				} 
+
+			country_event = {
+				id = PRC_MAO.164
+				days = 7
+			}
+				} 
 608 = { set_demilitarized_zone = yes }
+		end_coalition = yes
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_jinjiweiyuanhui
+				name = PRC_jinjiweiyuanhui
+			}  
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = military_democracy
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+add_ideas = PRC_xie_chuntao_hog
+			create_country_leader = {
+	                name = "未知"
+	                desc = "POLITICS_SGW_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_ANQ_PR.png"
+	                expire = "1999.1.1"
+	                ideology = neonazism
+				}   
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+        }
         }
 }
 
@@ -3867,6 +4117,8 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.148.a
+
+    retire_character = PRC_mao_yuanxin
         }
 }
 
@@ -3927,6 +4179,15 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.153.a
+
+		hidden_effect = {
+launch_nuke = {
+    province = 2022
+    state = 283
+    controller = PRC
+    use_nuke = yes
+}
+        }
         }
 }
 
@@ -3939,6 +4200,15 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.154.a
+		hidden_effect = {
+		JAP = {
+
+			country_event = {
+				id = PRC_MAO.162
+				days = 31
+			}	
+}
+        }
         }
 }
 
@@ -3951,6 +4221,225 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.155.a
+		hidden_effect = {
+
+launch_nuke = {
+    province = 7158
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 12432
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 10507
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 4469
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1207
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 10480
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1438
+    state = 1233
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1531
+    state = 1194
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1575
+    state = 1194
+    controller = PRC
+    use_nuke = yes
+}
+
+launch_nuke = {
+    province = 7571
+    state = 1194
+    controller = PRC
+    use_nuke = yes
+}
+
+launch_nuke = {
+    province = 4634
+    state = 1194
+    controller = PRC
+    use_nuke = yes
+}
+
+launch_nuke = {
+    province = 1034
+    state = 1194
+    controller = PRC
+    use_nuke = yes
+}
+
+launch_nuke = {
+    province = 12300
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 4074
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 10367
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 4174
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 14215
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1203
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 12078
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 12344
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 4538
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 14208
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 10421
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1180
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 14207
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 1519
+    state = 615
+    controller = PRC
+    use_nuke = yes
+}
+            615 = {
+                add_manpower = -1000000
+            }
+            1194 = {
+                add_manpower = -1000000
+            }
+            1123 = {
+                add_manpower = -1000000
+            }
+            615 = {
+                add_manpower = -1000000
+            }
+            1194 = {
+                add_manpower = -1000000
+            }
+            1123 = {
+                add_manpower = -1000000
+            }
+            615 = {
+                add_manpower = -1000000
+            }
+            1194 = {
+                add_manpower = -1000000
+            }
+            1123 = {
+                add_manpower = -1000000
+            }
+            615 = {
+                add_manpower = -1000000
+            }
+            1194 = {
+                add_manpower = -1000000
+            }
+            1123 = {
+                add_manpower = -1000000
+            }
+            615 = {
+                add_manpower = -1000000
+            }
+            1194 = {
+                add_manpower = -1000000
+            }
+            1123 = {
+                add_manpower = -1000000
+            }
+            615 = {
+                add_manpower = -1000000
+            }
+            1194 = {
+                add_manpower = -1000000
+            }
+            1123 = {
+                add_manpower = -1000000
+            }
+
+			PRC_fushengjihua_action_effects = yes
+        }
         }
 }
 
@@ -3963,6 +4452,100 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.156.a
+		hidden_effect = {
+
+launch_nuke = {
+    province = 7014
+    state = 1215
+    controller = PRC
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 12076
+    state = 1215
+    controller = PRC
+    use_nuke = yes
+}
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+            1215 = {
+                add_manpower = -1000000
+            }
+			PRC_fushengjihua_action_effects = yes
+        }
         }
 }
 
@@ -3987,6 +4570,18 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.158.a
+		hidden_effect = {
+launch_nuke = {
+    province = 14170
+    state = 648
+    controller = PRC
+    use_nuke = yes
+}
+            648 = {
+                add_manpower = -1000000
+            }
+			PRC_fushengjihua_action_effects = yes
+        }
         }
 }
 
@@ -3999,6 +4594,42 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.159.a
+		hidden_effect = {
+launch_nuke = {
+    province = 10062
+    state = 326
+    controller = PRC
+    use_nuke = yes
+}
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+           326 = {
+                add_manpower = -1000000
+            }
+			PRC_fushengjihua_action_effects = yes
+        }
         }
 }
 
@@ -4023,6 +4654,46 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.161.a
+
+		hidden_effect = {
+           1195 = {
+                add_manpower = -1000000
+            }
+           1195 = {
+                add_manpower = -1000000
+            }
+           1259 = {
+                add_manpower = 1000000
+            }
+           1259 = {
+                add_manpower = 1000000
+            }
+           1402 = {
+                add_manpower = 1000000
+            }
+           1401 = {
+                add_manpower = 1000000
+            }
+           1401 = {
+                add_manpower = 1000000
+            }
+           1402 = {
+                add_manpower = 1000000
+            }
+           1195 = {
+                add_manpower = -1000000
+            }
+           325 = {
+                add_manpower = -1000000
+            }
+           325 = {
+                add_manpower = -1000000
+            }
+           325 = {
+                add_manpower = -1000000
+            }
+			PRC_fushengjihua_action_effects = yes
+        }
         }
 }
 
@@ -4035,6 +4706,20 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.162.a
+		JAP = {
+			add_to_faction = KOR
+			KOR = {
+				set_country_flag = pdto_member
+declare_war_on = {
+			target = PRK
+			type = annex_everything
+		}
+			}
+declare_war_on = {
+			target = PRK
+			type = annex_everything
+		}
+}
         }
 }
 
@@ -4047,6 +4732,166 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.163.a
+		hidden_effect = {
+			complete_national_focus = PRC_advanced_economic_planning_1
+unlock_national_focus = PRC_revive_peoples_war_mindset_4
+unlock_national_focus = PRC_economic_computerization
+unlock_national_focus =PRC_rejuvinate_cpc_cadres
+unlock_national_focus =PRC_exonorate_neo_maoists
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -1
+			}
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -1
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.5
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.3
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			add_ideas = PRC_ai_economic_core
+			add_ideas = PRC_ai_security1_core
+			add_ideas = PRC_ai_security_core
+			add_ideas = PRC_ai_intelligence1_core
+			add_ideas = PRC_ai_changzheng_core
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+
+		end_coalition = yes
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_cpc1_rad_maoist_tot_soc
+				name = PRC_cpc_rad1_maoist_tot_soc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc
+				name = PRC_cpc_rad1_maoist_tot_soc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+set_cosmetic_tag = PRC_HACHIMI
+
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+set_portraits = {
+    character = PRC_long_march
+    army = { large="gfx/MAOYUANXIN/changzheng1.png" }
+    civilian = { large="gfx/MAOYUANXIN/changzheng1.png" }
+}
+
+
+create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+traits = { 
+}
+} 
+
+        }
         }
 }
 
@@ -4059,6 +4904,7 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.164.a
+
         }
 }
 
@@ -4071,6 +4917,51 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.165.a
+
+		hidden_effect = {
+set_cosmetic_tag = PRC_HACHIMI
+			complete_national_focus = PRC_reliable_politburo
+		end_coalition = yes
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			set_country_flag = TFR_xjp_start
+add_ideas = PRC_xi_jinping_hog
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+        }
         }
 }
 

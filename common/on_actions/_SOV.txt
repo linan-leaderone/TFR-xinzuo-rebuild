@@ -111,6 +111,7 @@ create_country_leader = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -161,6 +162,7 @@ ELN = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -216,6 +218,7 @@ EFF = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -272,6 +275,7 @@ ZAP = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -355,6 +359,7 @@ EFF = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -521,6 +526,7 @@ ETL = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -611,6 +617,7 @@ XIN = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -667,6 +674,7 @@ XIN = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
@@ -727,6 +735,7 @@ XIN = {annex_country = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+						MAO_CMZD = {is_country_leader = yes}
 		AND = {
 						PRC_han_dongfang = {is_country_leader = yes}
 						has_government = libertarian_socialist
