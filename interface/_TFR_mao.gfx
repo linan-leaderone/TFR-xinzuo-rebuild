@@ -19,6 +19,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_ecwar2"
 		texturefile = "gfx/MAOYUANXIN/super_ecwar2.png"
+	}									
+	SpriteType = {
+		name = "GFX_super_aifh"
+		texturefile = "gfx/MAOYUANXIN/super_aifh.png"
+	}									
+	SpriteType = {
+		name = "GFX_super_shwj"
+		texturefile = "gfx/MAOYUANXIN/super_shwj.png"
 	}								
 	SpriteType = {
 		name = "GFX_super_acwar"

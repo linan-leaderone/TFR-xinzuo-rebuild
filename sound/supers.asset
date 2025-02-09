@@ -28,3 +28,15 @@ sound = {
 	volume = 1
 	always_load = yes
 }
+sound = {
+	name = "aifh"
+	file = "menu/aifh.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "shwj"
+	file = "menu/shwj.wav"
+	volume = 1
+	always_load = yes
+}

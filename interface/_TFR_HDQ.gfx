@@ -1,4 +1,8 @@
-spriteTypes = {								
+spriteTypes = {									
+	SpriteType = {
+		name = "GFX_MAOSS"
+		texturefile = "gfx/MAOYUANXIN/SSMZD.png"
+	}									
 	SpriteType = {
 		name = "GFX_idea_PRC_changzheng_core"
 		texturefile = "gfx/MAOYUANXIN/PRC_chang_zheng_xiao1.png"

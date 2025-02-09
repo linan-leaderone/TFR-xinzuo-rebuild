@@ -1,0 +1,1228 @@
+﻿division_template = {
+	name = "zombie"
+    is_locked = yes	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }	
+		militia = { x = 1 y = 3 }	
+
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }	
+		militia = { x = 2 y = 3 }	
+
+		militia = { x = 3 y = 0 }
+		militia = { x = 3 y = 1 }
+		militia = { x = 3 y = 2 }	
+		militia = { x = 3 y = 3 }	
+
+
+	}
+	support = {
+
+	}
+}
+
+units = {
+
+
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9843
+		start_experience_factor = 0
+	}
+
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 10068
+		start_experience_factor = 0
+	}
+	
+
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7014
+		start_experience_factor = 0
+	}
+
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 4056
+		start_experience_factor = 0
+	}
+
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 14695
+		start_experience_factor = 0
+	}
+
+
+
+
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9998
+		start_experience_factor = 0
+	}
+
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7798
+		start_experience_factor = 0
+	}
+
+
+
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 1273
+		start_experience_factor = 0
+	}
+
+
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 12975
+		start_experience_factor = 0
+	}
+
+
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 9347
+		start_experience_factor = 0
+	}
+
+
+
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 6103
+		start_experience_factor = 0
+	}
+
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "zombie"
+		location = 7361
+		start_experience_factor = 0
+	}
+
+}

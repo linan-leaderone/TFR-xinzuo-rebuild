@@ -1,6 +1,25 @@
 	ideas = {
 		hidden_ideas = {
 
+			HKN_ZBG = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+	research_speed_factor = -100000
+	stability_factor = 100
+	stability_weekly = 1
+	war_support_factor = 100
+	war_support_weekly = 1
+	army_org_factor = 1000000
+	army_morale_factor = 100
+	supply_consumption_factor = -1
+	conscription = 1
+				}
+			}
 			ZZZ_nailong_economy2 = {
 				allowed = {
 					always = no

@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 100
 		}
 	allow_branch = {
-		#has_country_flag = PRC_handongfang_hog
+		has_country_flag = PRC_handongfang_hog
 	}
 		available = {
 			PRC_han_dongfang = {is_country_leader = yes}
@@ -2799,7 +2799,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_7
 		x = 44
 		y = 13
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2821,7 +2821,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_8
 		x = 46
 		y = 13
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2843,7 +2843,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_9
 		x = 45
 		y = 14
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2899,7 +2899,7 @@ create_navy_leader = {
 		icon = GFX_focus_rumaojiehe_40
 		x = 52
 		y = 16
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2925,7 +2925,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_41
 		x = 54
 		y = 16
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2951,7 +2951,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_42
 		x = 53
 		y = 17
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -2981,7 +2981,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_43
 		x = 53
 		y = 18
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3008,7 +3008,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_45
 		x = 54
 		y = 19
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3036,7 +3036,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_46
 		x = 53
 		y = 20
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3068,7 +3068,7 @@ custom_effect_tooltip = wyhxiaolvdwsy
 		icon = GFX_focus_rumaojiehe_47
 		x = 53
 		y = 21
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3096,7 +3096,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_48
 		x = 53
 		y = 22
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3125,7 +3125,7 @@ custom_effect_tooltip = T_JINDU_100
 		icon = GFX_focus_rumaojiehe_49
 		x = 53
 		y = 23
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3153,7 +3153,7 @@ custom_effect_tooltip = T_JINDU_100
 		icon = GFX_focus_rumaojiehe_53
 		x = 55
 		y = 24
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3182,7 +3182,7 @@ custom_effect_tooltip = wyhxiaolv
 		icon = GFX_focus_rumaojiehe_54
 		x = 54
 		y = 25
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3210,7 +3210,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_55
 		x = 53
 		y = 26
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3244,7 +3244,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_56
 		x = 53
 		y = 27
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3285,7 +3285,7 @@ custom_effect_tooltip = T_JINDU_100
 		icon = GFX_focus_rumaojiehe_57
 		x = 52
 		y = 28
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3313,7 +3313,7 @@ custom_effect_tooltip = T_JINDU_100
 		icon = GFX_focus_rumaojiehe_58
 		x = 54
 		y = 28
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3379,7 +3379,7 @@ custom_effect_tooltip = T_JINDU_100
 		icon = GFX_focus_rumaojiehe_52
 		x = 53
 		y = 24
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3407,7 +3407,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_50
 		x = 51
 		y = 24
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3435,7 +3435,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_51
 		x = 52
 		y = 25
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3463,7 +3463,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_44
 		x = 52
 		y = 19
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3491,7 +3491,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_11
 		x = 53
 		y = 15
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 	allow_branch = {
@@ -3525,7 +3525,7 @@ custom_effect_tooltip = T_JINDU_50
 		icon = GFX_focus_rumaojiehe_10
 		x = 37
 		y = 15
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3578,7 +3578,7 @@ custom_effect_tooltip = wyhxiaolvdwsysss
 		icon = GFX_focus_rumaojiehe_29
 		x = 34
 		y = 17
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3607,7 +3607,7 @@ custom_effect_tooltip = AI_JINDU_50
 		icon = GFX_focus_rumaojiehe_28
 		x = 32
 		y = 17
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3633,7 +3633,7 @@ custom_effect_tooltip = AI_JINDU_50
 		icon = GFX_focus_rumaojiehe_30
 		x = 32
 		y = 18
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3665,7 +3665,7 @@ custom_effect_tooltip = AI_JINDU_100
 		icon = GFX_focus_rumaojiehe_31
 		x = 32
 		y = 23
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3691,7 +3691,7 @@ custom_effect_tooltip = AI_JINDU_100
 		icon = GFX_focus_rumaojiehe_27
 		x = 30
 		y = 17
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3720,7 +3720,7 @@ custom_effect_tooltip = AI_JINDU_50
 		icon = GFX_focus_rumaojiehe_26
 		x = 32
 		y = 16
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3746,7 +3746,7 @@ custom_effect_tooltip = AI_JINDU_50
 		icon = GFX_focus_rumaojiehe_32
 		x = 41
 		y = 16
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3773,7 +3773,7 @@ custom_effect_tooltip = wyhxiaolv
 		icon = GFX_focus_rumaojiehe_33
 		x = 41
 		y = 17
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -3975,7 +3975,7 @@ custom_effect_tooltip = wyhxiaolv
 		icon = GFX_focus_rumaojiehe_13
 		x = 37
 		y = 16
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4000,7 +4000,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_14
 		x = 37
 		y = 17
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4025,7 +4025,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_15
 		x = 36
 		y = 18
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4049,7 +4049,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_16
 		x = 38
 		y = 18
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4074,7 +4074,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_17
 		x = 37
 		y = 19
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4102,7 +4102,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_18
 		x = 38
 		y = 20
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4127,7 +4127,7 @@ custom_effect_tooltip = 2_dianlixiaohao
 		icon = GFX_focus_rumaojiehe_19
 		x = 36
 		y = 20
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4151,7 +4151,7 @@ custom_effect_tooltip = wyhxiaolvdwsyssssw
 		icon = GFX_focus_rumaojiehe_20
 		x = 37
 		y = 21
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4200,7 +4200,7 @@ custom_effect_tooltip = AI_JINDU_50
 		icon = GFX_focus_rumaojiehe_22
 		x = 36
 		y = 23
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4225,7 +4225,7 @@ custom_effect_tooltip = AI_JINDU_100
 		icon = GFX_focus_rumaojiehe_24
 		x = 37
 		y = 24
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4261,6 +4261,7 @@ custom_effect_tooltip = AI_JINDU_100
 		}
 		}
 		completion_reward = {
+			set_country_flag = PRC_HDQ_AI_XD_2
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 5000
@@ -4319,7 +4320,7 @@ custom_effect_tooltip = AI_JINDU_100
 		icon = GFX_focus_rumaojiehe_23
 		x = 38
 		y = 23
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4344,7 +4345,7 @@ custom_effect_tooltip = AI_JINDU_100
 		icon = GFX_focus_rumaojiehe_21
 		x = 37
 		y = 22
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 
 		prerequisite = {
@@ -4374,6 +4375,7 @@ custom_effect_tooltip = AI_JINDU_100
 custom_effect_tooltip = AI_JINDU_50
         add_to_variable = { HANDEQIANG_tutu_AI = 50 }
 			PRC_fushengjihua_action_effects = yes
+			set_country_flag = PRC_HDQ_AI_XD_1
 			country_event = {
 				id = PRC_MAO.147
 			}
@@ -7969,7 +7971,7 @@ remove_ideas = militia_looting
 		icon = GFX_focus_PRC_recollectivize_agroculture
 		x = 4
 		y = 2
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
         relative_position_id = PRC_socialist_modernization
 		prerequisite = {
@@ -9572,7 +9574,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_revive_ideas_chongqing_model
 		x = 3
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
         relative_position_id = PRC_denounce_deng_xiao_ping_thought
 		prerequisite = {
@@ -9628,7 +9630,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_modernize_manufacturing_clasters
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
         relative_position_id = PRC_revive_ideas_chongqing_model
 		prerequisite = {
@@ -9822,7 +9824,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_tackle_youth_unemployment
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		relative_position_id = PRC_revive_ideas_chongqing_model
 		prerequisite = {
@@ -9872,7 +9874,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_ensure_common_prosperity
 		x = 1
 		y = -1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
         relative_position_id = PRC_revive_iron_rice_bowl
 		prerequisite = {
@@ -9904,7 +9906,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_decommodification
 		x = 3
 		y = -1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
         relative_position_id = PRC_revive_iron_rice_bowl
 		prerequisite = {
@@ -9986,7 +9988,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_focus_on_protectionism
 		x = 4
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
         relative_position_id = PRC_revive_iron_rice_bowl
 		prerequisite = {
@@ -10034,7 +10036,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_enrich_domestic_market
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
         relative_position_id = PRC_focus_on_protectionism
 		prerequisite = {
@@ -10085,7 +10087,7 @@ has_country_leader = {
 		icon = GFX_focus_PRC_regional_industrialization
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
         relative_position_id = PRC_enrich_domestic_market
 		prerequisite = {
