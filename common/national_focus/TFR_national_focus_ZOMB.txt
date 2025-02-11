@@ -1,0 +1,1183 @@
+focus_tree = {
+	id = HKZ_ZOM_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = HKN
+			MAO_SS = {is_country_leader = yes}
+		}
+	}
+	
+
+   focus = {
+		id = HKZ_ZOM_15
+		icon = GFX_HKZ_ZOM_15
+		x = 2
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_12
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_15
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_14
+		icon = GFX_HKZ_ZOM_14
+		x = 1
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_15
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_14
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_13
+		icon = GFX_HKZ_ZOM_13
+		x = 1
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_12
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_13
+	
+		
+
+		}
+	}  
+   focus = {
+		id = HKZ_ZOM_18
+		icon = GFX_HKZ_ZOM_18
+		x = 5
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_17
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_18
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_20
+		icon = GFX_HKZ_ZOM_20
+		x = 20
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_1
+				}
+			}
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_21
+		icon = GFX_HKZ_ZOM_21
+		x = 20
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_20
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_2
+				}
+			}
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_22
+		icon = GFX_HKZ_ZOM_22
+		x = 19
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_21
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_24
+		icon = GFX_HKZ_ZOM_24
+		x = 19
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_22
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_25
+		icon = GFX_HKZ_ZOM_25
+		x = 18
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_22
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_28
+		icon = GFX_HKZ_ZOM_28
+		x = 16
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_27
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_27
+		icon = GFX_HKZ_ZOM_27
+		x = 17
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_26
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_26
+		icon = GFX_HKZ_ZOM_26
+		x = 18
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_22
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_29
+		icon = GFX_HKZ_ZOM_29
+		x = 21
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_23
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_30
+		icon = GFX_HKZ_ZOM_30
+		x = 20
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		OR = {
+			has_completed_focus = HKZ_ZOM_24
+			has_completed_focus = HKZ_ZOM_29
+		}
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_33
+		icon = GFX_HKZ_ZOM_33
+		x = 23
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_32
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_34
+		icon = GFX_HKZ_ZOM_34
+		x = 24
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_33
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_35
+		icon = GFX_HKZ_ZOM_35
+		x = 25
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_34
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_32
+		icon = GFX_HKZ_ZOM_32
+		x = 22
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_23
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_36
+		icon = GFX_HKZ_ZOM_36
+		x = 23
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_32
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_37
+		icon = GFX_HKZ_ZOM_37
+		x = 24
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_36
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_39
+		icon = GFX_HKZ_ZOM_39
+		x = 30
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_40
+		icon = GFX_HKZ_ZOM_40
+		x = 30
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_39
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_41
+		icon = GFX_HKZ_ZOM_40
+		x = 31
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		OR = {
+			has_completed_focus = HKZ_ZOM_40
+			has_completed_focus = HKZ_ZOM_42
+		}
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_41
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_monthly_population_dynamic_var
+				value = 0.5
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_43
+		icon = GFX_HKZ_ZOM_43
+		x = 32
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_42
+		icon = GFX_HKZ_ZOM_42
+		x = 32
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_43
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_44
+		icon = GFX_HKZ_ZOM_44
+		x = 32
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_44
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_44
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_army_speed_factor_dynamic_var
+				value = 1
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_45
+		icon = GFX_HKZ_ZOM_45
+		x = 31
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_45
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_45
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_army_defence_factor_dynamic_var
+				value = 1
+			}	
+			add_to_variable = {
+				var = ZOM_monthly_population_dynamic_var
+				value = 0.5
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_46
+		icon = GFX_HKZ_ZOM_46
+		x = 31
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_46
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_46
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_army_defence_factor_dynamic_var
+				value = 0.5
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_47
+		icon = GFX_HKZ_ZOM_47
+		x = 31
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_48
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_47
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_army_defence_factor_dynamic_var
+				value = 0.5
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_48
+		icon = GFX_HKZ_ZOM_48
+		x = 32
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_3
+				}
+			}
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_49
+		icon = GFX_HKZ_ZOM_49
+		x = 33
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_49
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_49
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_army_attack_factor_dynamic_var
+				value = 0.5
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_50
+		icon = GFX_HKZ_ZOM_50
+		x = 33
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_50
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_49
+				}
+			}			
+			add_to_variable = {
+				var = ZOM_army_attack_factor_dynamic_var
+				value = 0.5
+			}	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_38
+		icon = GFX_HKZ_ZOM_38
+		x = 24
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_37
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_31
+		icon = GFX_HKZ_ZOM_31
+		x = 22
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_29
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_23
+		icon = GFX_HKZ_ZOM_23
+		x = 21
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_21
+		
+		}
+		completion_reward = {
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_19
+		icon = GFX_HKZ_ZOM_19
+		x = 4
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_16
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_19
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_17
+		icon = GFX_HKZ_ZOM_17
+		x = 4
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_12
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_17
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_16
+		icon = GFX_HKZ_ZOM_16
+		x = 3
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_12
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_16
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_12
+		icon = GFX_HKZ_ZOM_12
+		x = 2
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_12
+	
+		
+
+		}
+	} 
+
+   focus = {
+		id = HKZ_ZOM_1
+		icon = GFX_HKZ_ZOM_1
+		x = 7
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		OR = {
+			has_completed_focus = HKZ_ZOM_1
+			has_completed_focus = HKZ_ZOM_7
+		}
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_1
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_7
+		icon = GFX_HKZ_ZOM_7
+		x = 8
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_2
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_8
+		icon = GFX_HKZ_ZOM_8
+		x = 8
+		y = 8
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_7
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_8
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_9
+		icon = GFX_HKZ_ZOM_9
+		x = 9
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_7
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_9
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_10
+		icon = GFX_HKZ_ZOM_10
+		x = 10
+		y = 6
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_9
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_10
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_11
+		icon = GFX_HKZ_ZOM_11
+		x = 11
+		y = 7
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_10
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_11
+	
+		
+
+		}
+	} 
+
+   focus = {
+		id = HKZ_ZOM_2
+		icon = GFX_HKZ_ZOM_2
+		x = 7
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_3
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_3
+		icon = GFX_HKZ_ZOM_3
+		x = 7
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_2
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_7
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_4
+		icon = GFX_HKZ_ZOM_4
+		x = 7
+		y = 0
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		OR = {
+			has_completed_focus = HKZ_ZOM_5
+			has_completed_focus = HKZ_ZOM_3
+		}
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_4
+	
+		
+
+		}
+	} 
+   focus = {
+		id = HKZ_ZOM_5
+		icon = GFX_HKZ_ZOM_5
+		x = 8
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		OR = {
+			has_completed_focus = HKZ_ZOM_3
+			has_completed_focus = HKZ_ZOM_6
+		}
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_5
+	
+		
+
+		}
+	}  
+   focus = {
+		id = HKZ_ZOM_6
+		icon = GFX_HKZ_ZOM_6
+		x = 8
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_completed_focus = HKZ_ZOM_2
+		
+		}
+		completion_reward = {
+	unlock_decision_category_tooltip = M_virus_action_6
+	
+		
+
+		}
+	} 
+
+
+	} 

@@ -1,4 +1,13 @@
 leader_traits = {	
+	SSMZD_JSLA = {
+army_speed_factor = -0.5
+army_defence_factor = -0.2
+experience_loss_factor = 0.5
+mobilization_speed = -0.2
+monthly_population = -0.3
+	 custom_modifier_tooltip = SSMZD_JSLA_desc	
+	random = no
+	}	
 	hog_xi_jinping = {
 		industrial_capacity_factory = 0.025
 		war_support_factor = 0.1

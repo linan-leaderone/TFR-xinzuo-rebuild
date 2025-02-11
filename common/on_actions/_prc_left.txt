@@ -327,6 +327,48 @@ add_ideas = 	BRM_civil_war_idea1
 				}
 				if = {
 					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = HKN
+						}
+					}
+
+PRC = {annex_country = {
+								target = HKN
+								transfer_troops = no
+							}}
+		
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+	
+
+						HKN = {MAO_SS = {is_country_leader = yes}}
+						FROM = {
+							original_tag = HKN
+						}
+						ROOT = {
+							NOT = {original_tag = HKN}
+						}
+					}
+HKN = {annex_country = {
+								target = ROOT
+								transfer_troops = yes
+							}}
+		
+						
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
 	
 
 						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}

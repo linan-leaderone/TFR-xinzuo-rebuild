@@ -3394,6 +3394,8 @@ country_event = {
         option = {
                 name = PRC_MAO.111.a
 		hidden_effect = {
+			clr_country_flag = TFR_ANDEQIANG_anniu_start
+				set_variable = { HANDEQIANG_UI_START = 0 }
 			complete_national_focus = PRC_advanced_economic_planning_1
 unlock_national_focus = PRC_revive_peoples_war_mindset_4
 unlock_national_focus = PRC_economic_computerization
@@ -3579,6 +3581,8 @@ country_event = {
         option = {
                 name = PRC_MAO.112.a
 		hidden_effect = {
+			clr_country_flag = TFR_ANDEQIANG_anniu_start
+				set_variable = { HANDEQIANG_UI_START = 0 }
 set_capital = {state = 1222}
 			country_event = {
 				id = PRC_MAO.166
@@ -3600,7 +3604,6 @@ create_country_leader = {
 	traits = {
 	}
 }
-set_cosmetic_tag = HKN_XIN
 }
 				every_state = {
 				limit = {
@@ -5510,13 +5513,79 @@ country_event = {
         option = {
                 name = PRC_MAO.173.a
 			hidden_effect = {
+
 				HKN = {
 
+						load_focus_tree = HKZ_ZOM_focus
+unlock_national_focus =HKZ_ZOM_7
+unlock_national_focus =HKZ_ZOM_2
+unlock_national_focus =HKZ_ZOM_3
+unlock_national_focus =HKZ_ZOM_9
+unlock_national_focus =HKZ_ZOM_8
+unlock_national_focus =HKZ_ZOM_10
+unlock_national_focus =HKZ_ZOM_1
+unlock_national_focus =HKZ_ZOM_20
+unlock_national_focus =HKZ_ZOM_21
+unlock_national_focus =HKZ_ZOM_48
 			set_party_name = {
 				ideology = libertarian_socialist
 				long_name = PRC_libertarian_socialistzmb_social_democrat_party
 				name = PRC_libertarian_socialistzmb_social_democrat_party
 			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+	retire_character = HKN_Jimmy_Lai_char
+	retire_character = HKN_joshua_wong_char
+	retire_character = HKN_alvin_yeung_char
+
 set_politics = {
 	ruling_party = libertarian_socialist
 	last_election = "2018.11.13"
@@ -5526,6 +5595,7 @@ set_politics = {
 set_popularities = {
 	libertarian_socialist = 100
 }
+add_country_leader_trait = SSMZD_JSLA
 				transfer_state = 1332
 				transfer_state = 1341
 				transfer_state = 517
@@ -5547,6 +5617,49 @@ set_popularities = {
 				transfer_state = 610
 				transfer_state = 609
 
+				add_dynamic_modifier = {
+					modifier = ZOM_of_china_dynamic
+				}
+			add_to_variable = {
+				var = ZOM_research_speed_factor_dynamic_var
+				value = -100000
+			}	
+			add_to_variable = {
+				var = ZOM_stability_factor_dynamic_var
+				value = 100
+			}	
+			add_to_variable = {
+				var = ZOM_stability_weekly_dynamic_var
+				value = 1
+			}			
+			add_to_variable = {
+				var = ZOM_war_support_factor_dynamic_var
+				value = 100
+			}	
+			add_to_variable = {
+				var = ZOM_war_support_weekly_dynamic_var
+				value = 1
+			}		
+			add_to_variable = {
+				var = ZOM_army_org_factor_dynamic_var
+				value = 1000
+			}		
+			add_to_variable = {
+				var = ZOM_army_morale_factor_dynamic_var
+				value = 100
+			}				
+			add_to_variable = {
+				var = ZOM_surrender_limit_dynamic_var
+				value = 1
+			}		
+			add_to_variable = {
+				var = ZOM_supply_consumption_factor_dynamic_var
+				value = -1
+			}		
+			add_to_variable = {
+				var = ZOM_conscription_dynamic_var
+				value = 1
+			}	
 
 				every_country = {
 declare_war_on = {
@@ -5559,6 +5672,7 @@ declare_war_on = {
 		    }
 
 
+	activate_mission = M_virus_action_20
 load_oob = "HKN_ZB"
 add_ideas = HKN_ZBG
 remove_ideas = HKN_spirit_of_hk
@@ -5566,12 +5680,93 @@ set_capital = {state = 608}
 
 }
 
+			mark_focus_tree_layout_dirty = yes
         }
         }
         option = {
                 name = PRC_MAO.173.b
 			hidden_effect = {
 				HKN = {
+							load_focus_tree = HKZ_ZOM_focus
+unlock_national_focus =HKZ_ZOM_7
+unlock_national_focus =HKZ_ZOM_2
+unlock_national_focus =HKZ_ZOM_3
+unlock_national_focus =HKZ_ZOM_9
+unlock_national_focus =HKZ_ZOM_8
+unlock_national_focus =HKZ_ZOM_10
+unlock_national_focus =HKZ_ZOM_1
+unlock_national_focus =HKZ_ZOM_20
+unlock_national_focus =HKZ_ZOM_21
+unlock_national_focus =HKZ_ZOM_48
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_libertarian_socialistzmb_social_democrat_party
+				name = PRC_libertarian_socialistzmb_social_democrat_party
+			}
+	retire_character = HKN_Jimmy_Lai_char
+	retire_character = HKN_joshua_wong_char
+	retire_character = HKN_alvin_yeung_char
+
+set_politics = {
+	ruling_party = libertarian_socialist
+	last_election = "2018.11.13"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	libertarian_socialist = 100
+}
+add_country_leader_trait = SSMZD_JSLA
 				transfer_state = 1332
 				transfer_state = 1341
 				transfer_state = 517
@@ -5593,10 +5788,49 @@ set_capital = {state = 608}
 				transfer_state = 610
 				transfer_state = 609
 
-
-			every_state = {
-			    add_core_of = HKN
-		    }
+				add_dynamic_modifier = {
+					modifier = ZOM_of_china_dynamic
+				}
+			add_to_variable = {
+				var = ZOM_research_speed_factor_dynamic_var
+				value = -100000
+			}	
+			add_to_variable = {
+				var = ZOM_stability_factor_dynamic_var
+				value = 100
+			}	
+			add_to_variable = {
+				var = ZOM_stability_weekly_dynamic_var
+				value = 1
+			}			
+			add_to_variable = {
+				var = ZOM_war_support_factor_dynamic_var
+				value = 100
+			}	
+			add_to_variable = {
+				var = ZOM_war_support_weekly_dynamic_var
+				value = 1
+			}		
+			add_to_variable = {
+				var = ZOM_army_org_factor_dynamic_var
+				value = 1000
+			}		
+			add_to_variable = {
+				var = ZOM_army_morale_factor_dynamic_var
+				value = 100
+			}				
+			add_to_variable = {
+				var = ZOM_surrender_limit_dynamic_var
+				value = 1
+			}		
+			add_to_variable = {
+				var = ZOM_supply_consumption_factor_dynamic_var
+				value = -1
+			}		
+			add_to_variable = {
+				var = ZOM_conscription_dynamic_var
+				value = 1
+			}	
 
 				every_country = {
 declare_war_on = {
@@ -5604,9 +5838,15 @@ declare_war_on = {
 							type = annex_everything
 						}
 			}
+			every_state = {
+			    add_core_of = HKN
+		    }
 
+
+	activate_mission = M_virus_action_20
 load_oob = "HKN_ZB"
 add_ideas = HKN_ZBG
+remove_ideas = HKN_spirit_of_hk
 set_capital = {state = 608}
 
 }
@@ -5614,6 +5854,7 @@ set_capital = {state = 608}
 
 				HKN = { change_tag_from = ROOT }
         }
+			PRC = {mark_focus_tree_layout_dirty = yes}
         }
 }
 
@@ -5626,6 +5867,19 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.174.a
+			hidden_effect = {
+load_focus_tree = generic_focus
+				create_country_leader = {
+	                name = "..."
+	                desc = "POLITICS_ZOM_DESC"
+	                picture = "gfx/MAOYUANXIN/ZZZ_anarchy.dds"
+	                expire = "1999.1.1"
+	                ideology = left_anarchist
+				}  
+				remove_dynamic_modifier = {
+					modifier = ZOM_of_china_dynamic
+				}
+        }
         }
 }
 
@@ -5638,6 +5892,19 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.175.a
+			hidden_effect = {
+load_focus_tree = generic_focus
+				create_country_leader = {
+	                name = "..."
+	                desc = "POLITICS_ZOM_DESC"
+	                picture = "gfx/MAOYUANXIN/ZZZ_anarchy.dds"
+	                expire = "1999.1.1"
+	                ideology = left_anarchist
+				}  
+				remove_dynamic_modifier = {
+					modifier = ZOM_of_china_dynamic
+				}
+        }
         }
 }
 

@@ -15,7 +15,11 @@ spriteTypes = {
             animation_rate_fps = 30
             looping = yes
             play_on_show = yes
-		}				
+		}					
+	SpriteType = {
+		name = "GFX_idea_ZOM_of_china"
+		texturefile = "gfx/MAOYUANXIN/GFX_idea_ZOM_of_china.png"
+	}				
 	SpriteType = {
 		name = "GFX_super_ecwar2"
 		texturefile = "gfx/MAOYUANXIN/super_ecwar2.png"

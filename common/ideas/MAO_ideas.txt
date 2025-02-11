@@ -1419,6 +1419,217 @@ taihaijingji_idea_25 = {
 				expense_growth_factor = -0.25
 			}
 		}
+		ZOM_of_china_idea_1 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 100
+				stability_weekly = 1
+			}
+		}								
+		ZOM_of_china_idea_49 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.5
+			}
+		}								
+		ZOM_of_china_idea_41 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.5
+			}
+		}								
+		ZOM_of_china_idea_45 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 1
+				monthly_population = 0.5
+			}
+		}								
+		ZOM_of_china_idea_46 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.5
+			}
+		}			
+		ZOM_of_china_idea_47 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.5
+			}
+		}			
+		ZOM_of_china_idea_44 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 1
+			}
+		}		
+		ZOM_of_china_idea_3 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 1
+				surrender_limit = 1
+				supply_consumption_factor = -1
+			}
+		}	
+		ZOM_of_china_idea_2 = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 100
+				war_support_weekly = 1
+				army_morale_factor = 100
+				army_org_factor = 1000
+			}
+		}	
+		ZOM_of_china_idea = { 
+			picture = GFX_idea_ZOM_of_china
+			name = ZOM_of_china_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}	
+		PRC_made_in_china_PRC_advanced_economic_planning_3 = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				personal_value_factor = 0.1
+				business_value_factor = 0.2
+				personal_expense_factor = 0.1
+				income_growth_factor = 0.15
+				industrial_capacity_factory = 0.05
+				production_cost_industrial_complex_factor = -0.15
+			}
+		}		
 		PRC_made_in_china_PRC_advanced_economic_planning_3 = { 
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
