@@ -2769,6 +2769,2564 @@ create_navy_leader = {
 		}
 	}
 	focus = {
+		id = PRC_rumaojiehe_60
+		icon = GFX_focus_rumaojiehe_60
+		x = 45
+		y = 12
+		cost = 1
+		available_if_capitulated = yes
+
+		prerequisite = {
+       
+        }
+		
+	allow_branch = {
+	#	has_country_flag = sangshiweiji_qidong
+	}
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+	always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_60_tooltip
+			hidden_effect = {
+MAD = {annex_country = {
+								target = MZB
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = GNB
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = LBA
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = TUN
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = ALG
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = MOR
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = EGY
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = HRL
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = SAF
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = EFF
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = RCG
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = CAR
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = ETH
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = WES
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = MRT
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = MLI
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = NGR
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = LIB
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = ZIM
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = ANG
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = NMB
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = BOT
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = SOM
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = SSD
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = SUD
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = MLW
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = ZAM
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = TZN
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = TDF
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = ERI
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = CHA
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = GAB
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = EQG
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = NGA
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = CMR
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = VOL
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = GAM
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = SEN
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = SIE
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = GNA
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = IVO
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = TOG
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = GHA
+								transfer_troops = yes
+							}}
+MAD = {annex_country = {
+								target = DAH
+								transfer_troops = yes
+							}
+							every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = MAD}
+				}
+			    add_core_of = MAD
+		    }	
+set_cosmetic_tag = PRC_MAD}
+
+
+
+
+
+ECU = {annex_country = {
+								target = ELN
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = PRU
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = BRA
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = FRC
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = COL
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = CLS
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = VEN
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = ELN
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = GYA
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = SUR
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = PAR
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = ARG
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = BOL
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = CHL
+								transfer_troops = yes
+							}}
+ECU = {annex_country = {
+								target = URG
+								transfer_troops = yes
+							}
+				transfer_state = 310 
+				transfer_state = 904
+				every_unit_leader = {
+					limit = {
+					tag = COL
+					}
+					set_nationality = ECU
+				}
+				every_unit_leader = {
+					limit = {
+					tag = PRU
+					}
+					set_nationality = ECU
+				}
+				every_unit_leader = {
+					limit = {
+					tag = BAR
+					}
+					set_nationality = ECU
+				}
+				every_unit_leader = {
+					limit = {
+					tag = CHL
+					}
+					set_nationality = ECU
+				}
+				every_unit_leader = {
+					limit = {
+					tag = URG
+					}
+					set_nationality = ECU
+				}
+							every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = ECU}
+				}
+			    add_core_of = ECU
+		    }	
+set_capital = {state = 648}
+set_cosmetic_tag = PRC_ECU
+							}
+
+
+
+USN = {annex_country = {
+								target = USA
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = USB
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = APA
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = TRG
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = CAN
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = MEX
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = CUB
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = DOM
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = HAI
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = ATW
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = NSM
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = PTF
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = ZAP
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = NIC
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = GUC
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = SIN
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = CDJ
+								transfer_troops = yes
+							}}
+USN = {annex_country = {
+								target = JAM
+								transfer_troops = yes
+							}
+				every_unit_leader = {
+					limit = {
+					tag = TRG
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = USB
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = ATW
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = CUB
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = CAN
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = PTF
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = NSM
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = NIC
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = APA
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = ZAP
+					}
+					set_nationality = USN
+				}
+				every_unit_leader = {
+					limit = {
+					tag = USA
+					}
+					set_nationality = USN
+				}
+			every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = USN}
+				}
+			    add_core_of = USN
+		    }	
+set_capital = {state = 315}
+set_cosmetic_tag = PRC_USN
+							}
+
+
+
+
+ITA = {annex_country = {
+								target = BEL
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = GRK
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = FAF
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = PRP
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = GER
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = BAY
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = HOL
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = GRE
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = BUL
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = ROM
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = HUN
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = CZE
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SLO
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = PLD
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SWI
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = AUS
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SPR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = POR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = ENG
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = IRE
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = NIR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = IRA
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = FRA
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = PFR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SNS
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = RSR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = GOD
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = GAL
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = LCA
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = BSQ
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = CAT
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = BAR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = MLD
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = NOR
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = DEN
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SWE
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = FIN
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = ICE
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SER
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = ALB
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = MAC
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = CRO
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = SLV
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = MNT
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = BOS
+								transfer_troops = yes
+							}}
+ITA = {annex_country = {
+								target = KOS
+								transfer_troops = yes
+							}
+							
+				every_unit_leader = {
+					limit = {
+					tag = GER
+					}
+					set_nationality = ITA
+				}
+				every_unit_leader = {
+					limit = {
+					tag = ENG
+					}
+					set_nationality = ITA
+				}
+				every_unit_leader = {
+					limit = {
+					tag = FRA
+					}
+					set_nationality = ITA
+				}
+				every_unit_leader = {
+					limit = {
+					tag = BUL
+					}
+					set_nationality = ITA
+				}
+				every_unit_leader = {
+					limit = {
+					tag = ROM
+					}
+					set_nationality = ITA
+				}
+				every_unit_leader = {
+					limit = {
+					tag = CZE
+					}
+					set_nationality = ITA
+				}
+				every_unit_leader = {
+					limit = {
+					tag = PLD
+					}
+					set_nationality = ITA
+				}
+			every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = ITA}
+				}
+			    add_core_of = ITA
+		    }	
+set_capital = {state = 116}
+set_cosmetic_tag = PRC_EUO
+							}
+
+
+QAT = {annex_country = {
+								target = ARR
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = ASS
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = SAU
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = KUW
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = IRQ
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = KUR
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = PER
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = YEM
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = OMA
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = ISR
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = PAL
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = HEZ
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = SYR
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = PER
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = LEB
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = JOR
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = UAE
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = JAH
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = TUR
+								transfer_troops = yes
+							}}
+QAT = {annex_country = {
+								target = CYP
+								transfer_troops = yes
+							}
+						
+				every_unit_leader = {
+					limit = {
+					tag = KUR
+					}
+					set_nationality = QAT
+				}
+				every_unit_leader = {
+					limit = {
+					tag = SYR
+					}
+					set_nationality = QAT
+				}	
+				every_unit_leader = {
+					limit = {
+					tag = PER
+					}
+					set_nationality = QAT
+				}
+				every_unit_leader = {
+					limit = {
+					tag = ISR
+					}
+					set_nationality = QAT
+				}
+				every_unit_leader = {
+					limit = {
+					tag = PAL
+					}
+					set_nationality = QAT
+				}
+				every_unit_leader = {
+					limit = {
+					tag = SAU
+					}
+					set_nationality = QAT
+				}
+				every_unit_leader = {
+					limit = {
+					tag = ARR
+					}
+					set_nationality = QAT
+				}
+				every_unit_leader = {
+					limit = {
+					tag = TUR
+					}
+					set_nationality = QAT
+				}
+			every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = QAT}
+				}
+			    add_core_of = QAT
+		    }	
+set_capital = {state = 856}
+set_cosmetic_tag = PRC_ZD
+							}
+
+
+
+RAJ = {annex_country = {
+								target = SAJ
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = BAN
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = PAK
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = NEP
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = BHU
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = SRL
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = TAL
+								transfer_troops = yes
+							}}
+RAJ = {annex_country = {
+								target = AFG
+								transfer_troops = yes
+							}
+			every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = RAJ}
+				}
+			    add_core_of = RAJ
+		    }	
+set_capital = {state = 281}
+set_cosmetic_tag = PRC_NYJ}
+
+
+
+
+SIG = {annex_country = {
+								target = CAM
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = MAL
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = VIN
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = LAO
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = SIA
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = BRM
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = PHI
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = INS
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = AST
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = NZL
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = PNG
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = KNU
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = CNF
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = PDF
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = KLA
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = SSA
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = MND
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = MOA
+								transfer_troops = yes
+							}}
+SIG = {annex_country = {
+								target = WAT
+								transfer_troops = yes
+							}
+							
+				every_unit_leader = {
+					limit = {
+					tag = SIA
+					}
+					set_nationality = SIG
+				}
+				every_unit_leader = {
+					limit = {
+					tag = VIN
+					}
+					set_nationality = SIG
+				}
+				every_unit_leader = {
+					limit = {
+					tag = AST
+					}
+					set_nationality = SIG
+				}
+				every_unit_leader = {
+					limit = {
+					tag = INS
+					}
+					set_nationality = SIG
+				}
+				every_unit_leader = {
+					limit = {
+					tag = PHI
+					}
+					set_nationality = SIG
+				}
+				every_unit_leader = {
+					limit = {
+					tag = LAO
+					}
+					set_nationality = SIG
+				}
+			every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = SIG}
+				}
+			    add_core_of = SIG
+		    }	
+set_cosmetic_tag = PRC_YTQ
+							}
+
+
+PRC = {annex_country = {
+								target = KOR
+								transfer_troops = yes
+							}}
+PRC = {annex_country = {
+								target = MON
+								transfer_troops = yes
+							}}
+PRC = {annex_country = {
+								target = JAP
+								transfer_troops = yes
+							}}
+PRC = {
+				every_unit_leader = {
+					limit = {
+					tag = JAP
+					}
+					set_nationality = PRC
+				}
+				every_unit_leader = {
+					limit = {
+					tag = KOR
+					}
+					set_nationality = PRC
+				}
+				every_unit_leader = {
+					limit = {
+					tag = PKR
+					}
+					set_nationality = PRC
+				}
+				every_unit_leader = {
+					limit = {
+					tag = CHI
+					}
+					set_nationality = PRC
+				}
+	annex_country = {
+								target = CHI
+								transfer_troops = yes
+							}
+set_capital = {state = 1148}
+set_cosmetic_tag = PRC_DYJ
+							}
+PRC = {annex_country = {
+								target = PKR
+								transfer_troops = yes
+							}
+
+			every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = PRC}
+				}
+			    add_core_of = PRC
+		    }	}
+		}
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_90
+		icon = GFX_focus_rumaojiehe_90
+		x = 33
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_61
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+						
+		}
+		completion_reward = {
+
+			
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+	
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = 1
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_1
+				}
+			}			
+		}			
+		}	
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_61
+		icon = GFX_focus_rumaojiehe_61
+		x = 35
+		y = 13
+		cost = 1
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_60
+		}	
+		
+		mutually_exclusive = {
+			focus = PRC_rumaojiehe_62
+		}
+		mutually_exclusive = {
+			focus = PRC_rumaojiehe_63
+		}
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+						PRC_bo_xilai = {is_country_leader = yes}
+		}
+		completion_reward = {
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+			effect_tooltip = {
+					add_ideas = AZOM_of_china_idea_03
+		
+			}	
+		}			
+		}	
+
+			hidden_effect = {
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+				add_dynamic_modifier = {
+					modifier = AZOM_of_china_dynamic
+				}
+					
+				add_to_variable = {
+					var = AZOM_society_development_monthly_dynamic_var
+					value = 50
+				}		
+				add_to_variable = {
+					var = AZOM_academic_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_industrial_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_personal_expense_factor_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_military_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_conscription_dynamic_var
+					value = 0.1
+				}	
+				add_to_variable = {
+					var = AZOM_surrender_limit_dynamic_var
+					value = 1
+				}				
+		}			
+		}		
+		}	
+
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_84
+		icon = GFX_focus_rumaojiehe_84
+		x = 35
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_61
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_84_tooltip
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_85
+		icon = GFX_focus_rumaojiehe_85
+		x = 34
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_84
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_84_tooltip
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_87
+		icon = GFX_focus_rumaojiehe_87
+		x = 35
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_85
+		}	
+		prerequisite = {
+			focus = PRC_rumaojiehe_86
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_84_tooltip
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_88
+		icon = GFX_focus_rumaojiehe_88
+		x = 35
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_87
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_84_tooltip
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_89
+		icon = GFX_focus_rumaojiehe_89
+		x = 35
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_88
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_84_tooltip
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_86
+		icon = GFX_focus_rumaojiehe_86
+		x = 36
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_84
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_rumaojiehe_84_tooltip
+
+			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_62
+		icon = GFX_focus_rumaojiehe_62
+		x = 45
+		y = 13
+		cost = 1
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_60
+		}	
+		
+		mutually_exclusive = {
+			focus = PRC_rumaojiehe_61
+		}
+		mutually_exclusive = {
+			focus = PRC_rumaojiehe_63
+		}
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+						PRC_long_march = {is_country_leader = yes}
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+			effect_tooltip = {
+					add_ideas = AZOM_of_china_idea_02
+		
+			}	
+		}			
+		}	
+
+			hidden_effect = {
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+				add_dynamic_modifier = {
+					modifier = AZOM_of_china_dynamic
+				}
+				
+				add_to_variable = {
+					var = AZOM_society_development_monthly_dynamic_var
+					value = 50
+				}		
+				add_to_variable = {
+					var = AZOM_academic_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_industrial_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_personal_expense_factor_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_military_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_army_org_factor_dynamic_var
+					value = 1
+				}					
+		}			
+		}			
+		}	
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_64
+		icon = GFX_focus_rumaojiehe_64
+		x = 41
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_75
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_production_factory_max_efficiency_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_production_factory_efficiency_gain_factor_dynamic_var
+					value = 1
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_3
+				}
+			}					
+		}			
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_77
+		icon = GFX_focus_rumaojiehe_77
+		x = 41
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_64
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = 1
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_1
+				}
+			}					
+		}			
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_66
+		icon = GFX_focus_rumaojiehe_66
+		x = 48
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_62
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_attrition_dynamic_var
+					value = -0.25
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_7
+				}
+			}					
+		}			
+		}	
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_72
+		icon = GFX_focus_rumaojiehe_72
+		x = 46
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_66
+			focus = PRC_rumaojiehe_71
+			focus = PRC_rumaojiehe_84
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_attrition_dynamic_var
+					value = -0.25
+				}					
+		}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_7
+				}
+			}				
+		}	
+			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_73
+		icon = GFX_focus_rumaojiehe_73
+		x = 47
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_72
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				HKN = { 
+	
+				add_to_variable = {
+					var = ZOM_army_speed_factor_dynamic_var
+					value = -0.5
+				}		
+				add_to_variable = {
+					var = ZOM_army_attack_factor_dynamic_var
+					value = -1
+				}			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_31
+				}
+			}				
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_74
+		icon = GFX_focus_rumaojiehe_74
+		x = 45
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_72
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+		
+				HKN = { 
+	
+				add_to_variable = {
+					var = ZOM_army_defence_factor_dynamic_var
+					value = -1
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ZOM_of_china_idea
+					add_idea = ZOM_of_china_idea_30
+				}
+			}					
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_67
+		icon = GFX_focus_rumaojiehe_67
+		x = 49
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_68
+			focus = PRC_rumaojiehe_80
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+set_technology = { Pjijia_zhanshi = 1 }
+			}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_68
+		icon = GFX_focus_rumaojiehe_68
+		x = 50
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_66
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_attrition_dynamic_var
+					value = -0.25
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_7
+				}
+			}						
+		}			
+		}	
+
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_69
+		icon = GFX_focus_rumaojiehe_69
+		x = 51
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_68
+			focus = PRC_rumaojiehe_80
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_air_cas_present_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_air_mission_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_air_superiority_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_air_intercept_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_air_cas_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_air_agility_factor_dynamic_var
+					value = 1
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_12
+				}
+			}						
+		}			
+		}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_78
+		icon = GFX_focus_rumaojiehe_78
+		x = 48
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_69
+			focus = PRC_rumaojiehe_81
+		}	
+		prerequisite = {
+			focus = PRC_rumaojiehe_67
+			focus = PRC_rumaojiehe_81
+		}	
+		prerequisite = {
+			focus = PRC_rumaojiehe_74
+			focus = PRC_rumaojiehe_81
+		}	
+		prerequisite = {
+			focus = PRC_rumaojiehe_73
+			focus = PRC_rumaojiehe_81
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+							every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+				
+				add_to_variable = {
+					var = AZOM_army_org_factor_dynamic_var
+					value = 2
+				}		
+				add_to_variable = {
+					var = AZOM_surrender_limit_dynamic_var
+					value = 1
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_8
+				}
+			}						
+		}			
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_79
+		icon = GFX_focus_rumaojiehe_79
+		x = 42
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_77
+		}	
+		prerequisite = {
+			focus = PRC_rumaojiehe_76
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_production_factory_max_efficiency_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_production_factory_efficiency_gain_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = 1
+				}		
+				add_to_variable = {
+					var = AZOM_decryption_dynamic_var
+					value = 100
+				}	
+				add_to_variable = {
+					var = AZOM_encryption_dynamic_var
+					value = 100
+				}	
+				add_to_variable = {
+					var = AZOM_intel_from_combat_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_supply_consumption_factor_dynamic_var
+					value = -0.25
+				}			
+				add_to_variable = {
+					var = AZOM_production_speed_buildings_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_production_lack_of_resource_penalty_factor_dynamic_var
+					value = -0.25
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_6
+				}
+			}			
+		}			
+		}	
+			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_70
+		icon = GFX_focus_rumaojiehe_70
+		x = 45
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_79
+		}	
+		prerequisite = {
+			focus = PRC_rumaojiehe_78
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+	
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 3
+				}			
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = 3
+				}				
+				add_to_variable = {
+					var = AZOM_research_speed_factor_dynamic_var
+					value = 10
+				}					
+				add_to_variable = {
+					var = AZOM_industrial_capacity_factory_dynamic_var
+					value = 10
+				}				
+				add_to_variable = {
+					var = AZOM_production_speed_buildings_factor_dynamic_var
+					value = 10
+				}		
+				add_to_variable = {
+					var = AZOM_political_power_cost_dynamic_var
+					value = -1
+				}		
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_9
+				}
+			}			
+		}			
+		}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_75
+		icon = GFX_focus_rumaojiehe_75
+		x = 42
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_62
+			focus = PRC_rumaojiehe_63
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_supply_consumption_factor_dynamic_var
+					value = -0.5
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_2
+				}
+			}					
+		}			
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_76
+		icon = GFX_focus_rumaojiehe_76
+		x = 43
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_65
+			focus = PRC_rumaojiehe_86
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_supply_consumption_factor_dynamic_var
+					value = -0.25
+				}			
+				add_to_variable = {
+					var = AZOM_production_speed_buildings_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = AZOM_production_lack_of_resource_penalty_factor_dynamic_var
+					value = -0.75
+				}		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_5
+				}
+			}				
+		}			
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_65
+		icon = GFX_focus_rumaojiehe_65
+		x = 43
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_75
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+			
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+				add_to_variable = {
+					var = AZOM_decryption_dynamic_var
+					value = 100
+				}	
+				add_to_variable = {
+					var = AZOM_encryption_dynamic_var
+					value = 100
+				}	
+				add_to_variable = {
+					var = AZOM_intel_from_combat_factor_dynamic_var
+					value = 1
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_4
+				}
+			}							
+		}			
+		}	
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_63
+		icon = GFX_focus_rumaojiehe_63
+		x = 57
+		y = 13
+		cost = 1
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_60
+		}	
+		
+		mutually_exclusive = {
+			focus = PRC_rumaojiehe_62
+		}
+		mutually_exclusive = {
+			focus = PRC_rumaojiehe_61
+		}
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+					has_government = totalitarian_socialist
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+			effect_tooltip = {
+					add_ideas = AZOM_of_china_idea_01
+		
+			}	
+		}			
+		}	
+
+			hidden_effect = {
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+				add_dynamic_modifier = {
+					modifier = AZOM_of_china_dynamic
+				}
+				
+				add_to_variable = {
+					var = AZOM_society_development_monthly_dynamic_var
+					value = 50
+				}		
+				add_to_variable = {
+					var = AZOM_academic_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_industrial_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_personal_expense_factor_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_military_development_monthly_dynamic_var
+					value = 50
+				}	
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 0.5
+				}			
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = 0.5
+				}			
+		}			
+		}		
+		}	
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_80
+		icon = GFX_focus_rumaojiehe_80
+		x = 57
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_71
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+						country_event = {
+				id = PRC_MAO.183
+			}
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+					NOT = {original_tag = PRC}
+				}
+						country_event = {
+				id = PRC_MAO.182
+			}
+		}			
+		}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_81
+		icon = GFX_focus_rumaojiehe_81
+		x = 57
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_80
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_planning_speed_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_max_planning_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_experience_gain_army_factor_dynamic_var
+					value = 1
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_11
+				}
+			}						
+		}			
+		}
+			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_82
+		icon = GFX_focus_rumaojiehe_82
+		x = 57
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_81
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			HKN = {country_event = {
+				id = PRC_MAO.174
+			}}
+
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_83
+		icon = GFX_focus_rumaojiehe_83
+		x = 57
+		y = 18
+		cost = 1
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_82
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+
+						country_event = {
+				id = PRC_MAO.184
+			}
+			
+		}
+	}
+	focus = {
+		id = PRC_rumaojiehe_71
+		icon = GFX_focus_rumaojiehe_71
+		x = 57
+		y = 14
+		cost = 5
+		available_if_capitulated = yes
+	
+		prerequisite = {
+			focus = PRC_rumaojiehe_63
+		}	
+		
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		completion_reward = {
+
+				every_country = { 
+				if = { 
+				limit = {
+					NOT = {original_tag = HKN}
+				}
+
+
+				add_to_variable = {
+					var = AZOM_army_core_defence_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_army_morale_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = 1
+				}	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = AZOM_of_china_idea_0
+					add_idea = AZOM_of_china_idea_10
+				}
+			}						
+		}			
+		}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+	}
+	focus = {
 		id = PRC_rumaojiehe_6
 		icon = GFX_focus_rumaojiehe_6
 		x = 45
@@ -2781,7 +5339,7 @@ create_navy_leader = {
         }
 		
 	allow_branch = {
-		#has_country_flag = PRC_handeqiang_hog
+		has_country_flag = PRC_handeqiang_hog
 	}
 		ai_will_do = {
 			factor = 15
@@ -2812,6 +5370,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.176
+			}
 
 			
 		}
@@ -2834,6 +5395,9 @@ create_navy_leader = {
 		available = {
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.177
+			}
 
 			
 		}
@@ -3299,6 +5863,9 @@ custom_effect_tooltip = T_JINDU_100
 		available = {
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.179
+			}
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 50
@@ -3327,6 +5894,9 @@ custom_effect_tooltip = T_JINDU_100
 		available = {
 		}
 		completion_reward = {
+			country_event = {
+				id = PRC_MAO.178
+			}
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 50
@@ -3494,9 +6064,6 @@ custom_effect_tooltip = T_JINDU_50
 		cost = 2
 		available_if_capitulated = yes
 
-	allow_branch = {
-		#has_country_flag = PRC_handeqiang_hog
-	}
 		prerequisite = {
        focus = PRC_rumaojiehe_9
         }
@@ -4642,6 +7209,9 @@ custom_effect_tooltip = AI_JINDU_50
 			id = PRC_maoism_power_balance
 			value = -0.05
 		}
+			country_event = {
+				id = PRC_MAO.180
+			}
 			country_event = {
 				id = china.346
 				hours = 6

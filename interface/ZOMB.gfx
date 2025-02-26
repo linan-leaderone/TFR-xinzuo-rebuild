@@ -4,6 +4,26 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/HKZ_ZOM_KY.dds"
 	}
 	spriteType = {
+		name = "GFX_HANDEQIANG1_END_8"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG1_END_8.png"
+	}
+	spriteType = {
+		name = "GFX_HANDEQIANG1_END_7"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG1_END_7.png"
+	}
+	spriteType = {
+		name = "GFX_HANDEQIANG1_END_6"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG1_END_6.png"
+	}
+	spriteType = {
+		name = "GFX_HANDEQIANG1_END_5"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG1_END_5.png"
+	}
+	spriteType = {
+		name = "GFX_HANDEQIANG1_END_4"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG1_END_4.png"
+	}
+	spriteType = {
 		name = "GFX_HKZ_ZOM_0"
 		texturefile = "gfx/MAOYUANXIN/HKZ_ZOM_0.png"
 	}

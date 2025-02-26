@@ -1,5 +1,21 @@
 technologies = {
 
+Pjijia_zhanshi = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 2200
+		enable_equipments = {
+			jijia_zhanshi_1
+		}
+		enable_subunits = {
+			PRC_jijia_zhanshi
+		}
+	}
+
 	yuuki_4 = {
 		
 		allow = {

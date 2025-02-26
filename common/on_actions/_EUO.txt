@@ -386,7 +386,7 @@ BUL = {annex_country = {
 						}
 					}
 
-				PRC = {set_country_flag = ecwar2_flag	
+				PRC = {set_country_flag = ecwar2_flag
 				scoped_sound_effect = ecwar2
 				scoped_play_song = "one_minute_of_silence"}
 FRA = {annex_country = {

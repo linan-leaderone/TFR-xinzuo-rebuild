@@ -1,6 +1,6 @@
 scripted_gui = {
 
-	PRC_opening_screen_main = {
+	PRC_END_XINZUORE_ZUOPAI_1 = {
 		context_type = player_context
 		parent_window_token = top_bar
 		window_name = "TFR_NLT_ENDWID"
@@ -53,6 +53,307 @@ scripted_gui = {
 				check_variable = { PRC_PAGE = 8 }
 			}
 			TFR_left_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+
+
+
+	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID5"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1
+		}
+
+		effects = {
+			TFR_left_end_ZUOPAI_HANDEQIANG5_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_HANDEQIANG5_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_HANDEQIANG5_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_HANDEQIANG5_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_HANDEQIANG5_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_HANDEQIANG5_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_HANDEQIANG5_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_HANDEQIANG5_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG5_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG5_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_HANDEQIANG5_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG4_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID4"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG4_1
+		}
+
+		effects = {
+			TFR_left_end_ZUOPAI_HANDEQIANG4_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG4_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_HANDEQIANG4_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_HANDEQIANG4_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_HANDEQIANG4_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_HANDEQIANG4_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_HANDEQIANG4_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_HANDEQIANG4_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_HANDEQIANG4_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG4_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG4_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_HANDEQIANG4_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG3_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID3"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG3_1
+		}
+
+		effects = {
+			TFR_left_end_ZUOPAI_HANDEQIANG3_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG3_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_HANDEQIANG3_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_HANDEQIANG3_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_HANDEQIANG3_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_HANDEQIANG3_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_HANDEQIANG3_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_HANDEQIANG3_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_HANDEQIANG3_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG3_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG3_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_HANDEQIANG3_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+
+	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG2_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID2"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG2_1
+		}
+
+		effects = {
+			TFR_left_end_ZUOPAI_HANDEQIANG2_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG2_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_HANDEQIANG2_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_HANDEQIANG2_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_HANDEQIANG2_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_HANDEQIANG2_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_HANDEQIANG2_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_HANDEQIANG2_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_HANDEQIANG2_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG2_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG2_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_HANDEQIANG2_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+
+
+	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1
+		}
+
+		effects = {
+			TFR_left_end_ZUOPAI_HANDEQIANG1_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_HANDEQIANG1_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_HANDEQIANG1_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_HANDEQIANG1_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_HANDEQIANG1_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_HANDEQIANG1_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_HANDEQIANG1_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_HANDEQIANG1_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG1_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG1_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_HANDEQIANG1_end_10_visible = {
 				check_variable = { PRC_PAGE = 9 }
 			}
 		

@@ -2910,7 +2910,8 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	available = {
+	available = {	
+has_country_flag = ecwar1145_flag
 				has_completed_focus = PRC_masters_of_asia_5
 		SOV = {totalitarian_socialist > 0.4}
 	OR = {

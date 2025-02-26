@@ -1,0 +1,63 @@
+
+sub_units = {
+	PRC_jijia_zhanshi = {
+		abbreviation = "PJZ"
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		priority = 600
+		ai_priority = 200
+		active = no
+		type = {
+			infantry
+		}
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		combat_width = 0.1
+		maximum_speed = 5
+		max_organisation = 100
+		max_strength = 100
+		default_morale = 1
+		manpower = 100
+		#Misc Abilities
+		training_time = 90
+		suppression = 1.5
+		weight = 0.1
+		supply_consumption = 0.00
+
+		hills = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+		mountain = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+		marsh = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+		river = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+		amphibious = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+	
+		need = {
+			jijia_zhanshi_1 = 100
+		}
+	}
+}

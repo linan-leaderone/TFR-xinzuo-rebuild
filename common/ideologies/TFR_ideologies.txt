@@ -590,6 +590,11 @@ ideologies = {
 			}
 			market_socialism_2 = {
 				can_be_randomly_selected = no
+				color = {
+					153
+					18
+					0
+				}
 
 			}
 			ultra_conservatism = {
@@ -717,6 +722,11 @@ ideologies = {
 			}
 			market_socialism_1 = {
 				can_be_randomly_selected = no
+				color = {
+					153
+					18
+					0
+				}
 
 			}
 			theocracy = {

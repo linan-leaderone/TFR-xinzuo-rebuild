@@ -339,7 +339,53 @@ add_ideas = 	BRM_civil_war_idea1
 						}
 					}
 
-PRC = {annex_country = {
+				if = {
+					limit = {
+						PRC = {PRC_bo_xilai = {is_country_leader = yes}}
+					}
+PRC = {country_event = PRC_MAO.191}
+					}
+				if = {
+					limit = {
+						PRC = {PRC_long_march = = {is_country_leader = yes}}
+						PRC = {has_country_flag = end_of_zombie_mao}
+					}
+PRC = {country_event = PRC_MAO.188}
+					}
+				if = {
+					limit = {
+						PRC = {PRC_long_march = = {is_country_leader = yes}}
+						NOT = {PRC = {has_country_flag = end_of_zombie_mao}}
+					}
+PRC = {country_event = PRC_MAO.189}
+					}
+PRC = {
+
+				add_to_variable = {
+					var = AZOM_army_defence_factor_dynamic_var
+					value = -3
+				}			
+				add_to_variable = {
+					var = AZOM_army_attack_factor_dynamic_var
+					value = -3
+				}				
+				add_to_variable = {
+					var = AZOM_research_speed_factor_dynamic_var
+					value = -10
+				}					
+				add_to_variable = {
+					var = AZOM_industrial_capacity_factory_dynamic_var
+					value = -10
+				}				
+				add_to_variable = {
+					var = AZOM_production_speed_buildings_factor_dynamic_var
+					value = -10
+				}		
+				add_to_variable = {
+					var = AZOM_political_power_cost_dynamic_var
+					value = 1
+				}	
+annex_country = {
 								target = HKN
 								transfer_troops = no
 							}}

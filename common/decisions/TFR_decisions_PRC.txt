@@ -11418,10 +11418,19 @@ annex_country = {
 				has_completed_focus = PRC_masters_of_asia_17
 				
 	FPR = {is_ally_with = PRC}
+			OR = {
 	GER = {is_ally_with = PRC}
+	NOT = { country_exists = GER}
+			}
 	ITA = {is_ally_with = PRC}
+			OR = {
 	AUS = {is_ally_with = PRC}
+	NOT = { country_exists = AUS}
+			}
+			OR = {
 	CZE = {is_ally_with = PRC}
+	NOT = { country_exists = CZE }
+			}
 	ENG = {is_ally_with = PRC}
 			}
 		}
@@ -11438,7 +11447,8 @@ annex_country = {
 		
 	
 	    hidden_effect = {	
-				
+					
+set_country_flag = ecwar1145_flag
 			PRC = {
 				declare_war_on = { 
 					target = SWI

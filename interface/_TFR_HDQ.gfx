@@ -1,7 +1,31 @@
-spriteTypes = {									
+spriteTypes = {	
+	spriteType = { name = "GFX_unit_PRC_jijia_zhanshi_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_PRC_jijia_zhanshi_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = {
+		name = "GFX_unit_PRC_jijia_zhanshi_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_Pjijia_zhanshi_medium"
+		texturefile = "gfx/MAOYUANXIN/jijia_zhanshi.dds"
+	}				
+	SpriteType = {
+		name = "GFX_jijia_zhanshi_medium"
+		texturefile = "gfx/MAOYUANXIN/jijia_zhanshi.dds"
+	}	
+	SpriteType = {
+		name = "jijia_zhanshi"
+		texturefile = "gfx/MAOYUANXIN/jijia_zhanshi.dds"
+	}							
 	SpriteType = {
 		name = "GFX_MAOSS"
 		texturefile = "gfx/MAOYUANXIN/SSMZD.png"
+	}										
+	SpriteType = {
+		name = "GFX_idea_AZOM_of_china"
+		texturefile = "gfx/MAOYUANXIN/GFX_idea_AZOM_of_china.png"
 	}									
 	SpriteType = {
 		name = "GFX_idea_PRC_changzheng_core"

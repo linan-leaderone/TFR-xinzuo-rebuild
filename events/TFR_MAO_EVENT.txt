@@ -3394,6 +3394,8 @@ country_event = {
         option = {
                 name = PRC_MAO.111.a
 		hidden_effect = {
+clr_country_flag = PRC_handeqiang_hog
+			mark_focus_tree_layout_dirty = yes
 			clr_country_flag = TFR_ANDEQIANG_anniu_start
 				set_variable = { HANDEQIANG_UI_START = 0 }
 			complete_national_focus = PRC_advanced_economic_planning_1
@@ -3581,6 +3583,8 @@ country_event = {
         option = {
                 name = PRC_MAO.112.a
 		hidden_effect = {
+clr_country_flag = PRC_handeqiang_hog
+			mark_focus_tree_layout_dirty = yes
 			clr_country_flag = TFR_ANDEQIANG_anniu_start
 				set_variable = { HANDEQIANG_UI_START = 0 }
 set_capital = {state = 1222}
@@ -4219,6 +4223,7 @@ launch_nuke = {
     controller = PRC
     use_nuke = yes
 }
+goto_state = 283
         }
         }
 }
@@ -4415,6 +4420,7 @@ launch_nuke = {
     controller = PRC
     use_nuke = yes
 }
+goto_state = 615
             615 = {
                 add_manpower = -1000000
             }
@@ -4498,6 +4504,7 @@ launch_nuke = {
     controller = PRC
     use_nuke = yes
 }
+goto_state = 1215
             1215 = {
                 add_manpower = -1000000
             }
@@ -4609,6 +4616,7 @@ launch_nuke = {
     controller = PRC
     use_nuke = yes
 }
+goto_state = 648
             648 = {
                 add_manpower = -1000000
             }
@@ -4633,6 +4641,7 @@ launch_nuke = {
     controller = PRC
     use_nuke = yes
 }
+goto_state = 326
            326 = {
                 add_manpower = -1000000
             }
@@ -5297,6 +5306,7 @@ launch_nuke = {
     use_nuke = yes
 }
 
+goto_state = 608
 launch_nuke = {
     province = 14933
     state = 608
@@ -5516,6 +5526,7 @@ country_event = {
 
 				HKN = {
 
+set_cosmetic_tag = HKN_XIN
 						load_focus_tree = HKZ_ZOM_focus
 unlock_national_focus =HKZ_ZOM_7
 unlock_national_focus =HKZ_ZOM_2
@@ -5679,14 +5690,18 @@ remove_ideas = HKN_spirit_of_hk
 set_capital = {state = 608}
 
 }
-
+			PRC = {
+set_country_flag = sangshiweiji_qidong
 			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_rumaojiehe_60
+        }
         }
         }
         option = {
                 name = PRC_MAO.173.b
 			hidden_effect = {
 				HKN = {
+set_cosmetic_tag = HKN_XIN
 							load_focus_tree = HKZ_ZOM_focus
 unlock_national_focus =HKZ_ZOM_7
 unlock_national_focus =HKZ_ZOM_2
@@ -5854,7 +5869,11 @@ set_capital = {state = 608}
 
 				HKN = { change_tag_from = ROOT }
         }
-			PRC = {mark_focus_tree_layout_dirty = yes}
+			PRC = {
+set_country_flag = sangshiweiji_qidong
+mark_focus_tree_layout_dirty = yes
+complete_national_focus = PRC_rumaojiehe_60
+}
         }
 }
 
@@ -5876,6 +5895,7 @@ load_focus_tree = generic_focus
 	                expire = "1999.1.1"
 	                ideology = left_anarchist
 				}  
+PRC = {set_country_flag = end_of_zombie_mao}
 				remove_dynamic_modifier = {
 					modifier = ZOM_of_china_dynamic
 				}
@@ -5893,7 +5913,8 @@ country_event = {
         option = {
                 name = PRC_MAO.175.a
 			hidden_effect = {
-load_focus_tree = generic_focus
+load_focus_tree = generic_focus 
+PRC = {set_country_flag = end_of_zombie_mao}
 				create_country_leader = {
 	                name = "..."
 	                desc = "POLITICS_ZOM_DESC"
@@ -5929,6 +5950,13 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.177.a
+goto_state = 604
+launch_nuke = {
+    province = 12327
+    state = 604
+    controller = PRC
+    use_nuke = yes
+}
         }
 }
 
@@ -5974,7 +6002,7 @@ country_event = {
         desc = PRC_MAO.181.d
         picture = GFX_PRC_MAO_event_181
         is_triggered_only = yes
-        fire_only_once = yes
+        fire_only_once = no
         option = {
                 name = PRC_MAO.181.a
         }
@@ -5986,9 +6014,113 @@ country_event = {
         desc = PRC_MAO.182.d
         picture = GFX_PRC_MAO_event_182
         is_triggered_only = yes
-        fire_only_once = yes
+        fire_only_once = no
         option = {
                 name = PRC_MAO.182.a
+  PRC = {set_autonomy = {
+    target = ROOT
+    autonomous_state = autonomy_tongzhi
+}}
+
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.6
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_status_banned
+				name = PRC_status_banned
+			}
+			add_ideas = PRC_ai_economic_core
+			add_ideas = PRC_ai_security1_core
+			add_ideas = PRC_ai_security_core
+			add_ideas = PRC_ai_intelligence1_core
+			add_ideas = PRC_ai_changzheng_core
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+
+		end_coalition = yes
+			set_politics = {
+				ruling_party = totalitarian_socialist
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_cpc1_rad_maoist_tot_soc
+				name = PRC_cpc_rad1_maoist_tot_soc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc
+				name = PRC_cpc_rad1_maoist_tot_soc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+create_country_leader = {
+	name = MAO_CMZD
+	desc = "POLITICS_MAOZEDONG_DESC"
+	picture = GFX_MAO
+	expire = "2200.1.1"
+	ideology = maoism_cyber
+	traits = {
+	}
+}
+create_corps_commander = {
+name = "“毛泽东”" 
+desc = "POLITICS_MAOZEDONG_DESC"
+portrait_path = "GFX_MAO"
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+traits = { 
+}
+} 
         }
 }
 
@@ -6008,11 +6140,71 @@ country_event = {
         id = PRC_MAO.184
         title = PRC_MAO.184.t
         desc = PRC_MAO.184.d
-        picture = GFX_PRC_MAO_event_184
+        picture = GFX_PRC_MAO_event_111
         is_triggered_only = yes
         fire_only_once = yes
         option = {
                 name = PRC_MAO.184.a
+
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+	    hidden_effect = {	
+						country_event = {
+				id = PRC_MAO.186
+				days = 1
+			}
+set_cosmetic_tag = PRW_XIN	
+set_country_leader_name = {
+	ideology = totalitarian_socialist
+	name = RMDHHH
+}
+set_country_leader_portrait = {
+	portrait = PRC_renda_QSJ_PR
+}
+			every_state = {
+			    add_core_of = PRC
+		    }
+						every_country = { 
+				limit = {
+					NOT = {original_tag = PRC}
+				}
+					country_event = PRC_MAO.113
+
+				}	
+
+			}
+
+        }
+        option = {
+                name = PRC_MAO.184.b
+
+
+	    hidden_effect = {
+set_cosmetic_tag = PRW_XIN	
+						country_event = {
+				id = PRC_MAO.185
+				days = 1
+			}
+			every_state = {
+			    add_core_of = PRC
+		    }
+						every_country = { 
+				limit = {
+					NOT = {original_tag = PRC}
+				}
+					country_event = PRC_MAO.113
+
+				}	
+
+			}
         }
 }
 
@@ -6020,11 +6212,16 @@ country_event = {
         id = PRC_MAO.185
         title = PRC_MAO.185.t
         desc = PRC_MAO.185.d
-        picture = GFX_PRC_MAO_event_185
+        picture = GFX_PRC_ending_nl
         is_triggered_only = yes
         fire_only_once = yes
         option = {
                 name = PRC_MAO.185.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1
+	    hidden_effect = {	
+				scoped_sound_effect = acdfh
+				scoped_play_song = "one_minute_of_silence"
+        }
         }
 }
 
@@ -6032,11 +6229,16 @@ country_event = {
         id = PRC_MAO.186
         title = PRC_MAO.186.t
         desc = PRC_MAO.186.d
-        picture = GFX_PRC_MAO_event_186
+        picture = GFX_PRC_ending_nl
         is_triggered_only = yes
         fire_only_once = yes
         option = {
                 name = PRC_MAO.186.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG2_1
+	    hidden_effect = {	
+				scoped_sound_effect = acgjg
+				scoped_play_song = "one_minute_of_silence"
+        }
         }
 }
 
@@ -6049,6 +6251,11 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.187.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG3_1
+	    hidden_effect = {	
+				scoped_sound_effect = acxcz
+				scoped_play_song = "one_minute_of_silence"
+        }
         }
 }
 
@@ -6060,7 +6267,44 @@ country_event = {
         is_triggered_only = yes
         fire_only_once = yes
         option = {
-                name = PRC_MAO.188.a
+                name = PRC_MAO.188.a	
+
+	    hidden_effect = {	
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			}
+				country_event = {
+				id = PRC_MAO.187
+				days = 1
+			}
         }
 }
 
@@ -6068,11 +6312,15 @@ country_event = {
         id = PRC_MAO.189
         title = PRC_MAO.189.t
         desc = PRC_MAO.189.d
-        picture = GFX_PRC_MAO_event_189
+        picture = GFX_PRC_MAO_event_188
         is_triggered_only = yes
         fire_only_once = yes
         option = {
-                name = PRC_MAO.189.a
+                name = PRC_MAO.189.a	
+						country_event = {
+				id = PRC_MAO.190
+				days = 1
+			}
         }
 }
 
@@ -6085,6 +6333,11 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.190.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG4_1
+	    hidden_effect = {	
+				scoped_sound_effect = acdzs
+				scoped_play_song = "one_minute_of_silence"
+        }
         }
 }
 
