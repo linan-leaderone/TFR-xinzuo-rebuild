@@ -1,4 +1,60 @@
 characters={
+PRC_Bo_Guagua ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/Bo_Guagua.png"
+			}
+		}
+		country_leader={
+			desc = PRC_Bo_Guagua_DESC
+			ideology=left_nationalism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_Zhang_Weiwei ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/Zhang_Weiwei.png"
+			}
+		}
+		country_leader={
+			desc = PRC_Zhang_Weiwei_DESC
+			ideology=marxism_lenin_maoism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_Chen_Jining ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/Chen_Jining.png"
+			}
+		}
+		country_leader={
+			desc = PRC_Chen_Jining_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PRC_Zhang_hongliang ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/Zhang_hongliang.png"
+			}
+		}
+		country_leader={
+			desc = PRC_Zhang_hongliang_DESC
+			ideology=left_populism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 PRC_han_dongfang ={
 		portraits={
 			civilian={

@@ -8,6 +8,62 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_3"
+		texturefile = "gfx/MAOYUANXIN/bohe_end_3.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_2"
+		texturefile = "gfx/MAOYUANXIN/bohe_end_2.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_1"
+		texturefile = "gfx/MAOYUANXIN/bohe_end_1.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_4"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_4.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_5"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_5.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_6"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_6.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG8_END_8"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG8_END_8.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG8_END_7"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG8_END_7.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG7_END_8"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG7_END_8.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG7_END_7"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG7_END_7.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_8"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_8.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_7"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_7.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_9"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_9.png"
+	}
+	SpriteType = {
+		name = "GFX_HANDEQIANG6_END_10"
+		texturefile = "gfx/MAOYUANXIN/HANDEQIANG6_END_10.png"
+	}
+	SpriteType = {
 		name = "GFX_Pjijia_zhanshi_medium"
 		texturefile = "gfx/MAOYUANXIN/jijia_zhanshi.dds"
 	}				

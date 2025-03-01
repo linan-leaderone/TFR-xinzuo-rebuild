@@ -17,6 +17,18 @@ sound = {
 	always_load = yes
 }
 sound = {
+	name = "acmgh"
+	file = "menu/mgh.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "acmzd"
+	file = "menu/mzd.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
 	name = "acdfh"
 	file = "menu/dfh.wav"
 	volume = 1

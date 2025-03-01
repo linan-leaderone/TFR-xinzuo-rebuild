@@ -3394,6 +3394,22 @@ country_event = {
         option = {
                 name = PRC_MAO.111.a
 		hidden_effect = {
+			country_event = {
+				id = PRC_MAO.193
+				days = 1
+			}
+			country_event = {
+				id = PRC_MAO.194
+				days = 7
+			}
+			country_event = {
+				id = PRC_MAO.195
+				days = 14
+			}
+			JAP = {country_event = {
+				id = PRC_MAO.196
+				days = 21
+			}}
 clr_country_flag = PRC_handeqiang_hog
 			mark_focus_tree_layout_dirty = yes
 			clr_country_flag = TFR_ANDEQIANG_anniu_start
@@ -3741,6 +3757,7 @@ country_event = {
         option = {
                 name = PRC_MAO.114.a
 set_country_flag = PRC_END_XINZUORE_ZUOPAI_1
+set_variable = { PRC_PAGE = 0 }
 	    hidden_effect = {	
 				scoped_sound_effect = acgjg
 				scoped_play_song = "one_minute_of_silence"
@@ -4697,6 +4714,10 @@ country_event = {
                 name = PRC_MAO.161.a
 
 		hidden_effect = {
+			JAP = {country_event = {
+				id = PRC_MAO.198
+				days = 21
+			}}
            1195 = {
                 add_manpower = -1000000
             }
@@ -5136,13 +5157,13 @@ country_event = {
 		hidden_effect = {
 set_cosmetic_tag = PRC_HACHIMI
 			complete_national_focus = PRC_reliable_politburo
+			set_country_flag = TFR_xjp_start
+add_ideas = PRC_xi_jinping_hog
 		end_coalition = yes
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = no
 			}
-			set_country_flag = TFR_xjp_start
-add_ideas = PRC_xi_jinping_hog
 			set_temp_variable = {
 				coalition_partner_var_temp = token:social_democrat
 			}
@@ -5912,6 +5933,11 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.175.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1
+	    hidden_effect = {	
+				scoped_sound_effect = acmzd
+				scoped_play_song = "one_minute_of_silence"
+        }
 			hidden_effect = {
 load_focus_tree = generic_focus 
 PRC = {set_country_flag = end_of_zombie_mao}
@@ -6218,6 +6244,7 @@ country_event = {
         option = {
                 name = PRC_MAO.185.a
 set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1
+set_variable = { PRC_PAGE = 0 }
 	    hidden_effect = {	
 				scoped_sound_effect = acdfh
 				scoped_play_song = "one_minute_of_silence"
@@ -6235,6 +6262,7 @@ country_event = {
         option = {
                 name = PRC_MAO.186.a
 set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG2_1
+set_variable = { PRC_PAGE = 0 }
 	    hidden_effect = {	
 				scoped_sound_effect = acgjg
 				scoped_play_song = "one_minute_of_silence"
@@ -6252,6 +6280,7 @@ country_event = {
         option = {
                 name = PRC_MAO.187.a
 set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG3_1
+set_variable = { PRC_PAGE = 0 }
 	    hidden_effect = {	
 				scoped_sound_effect = acxcz
 				scoped_play_song = "one_minute_of_silence"
@@ -6334,6 +6363,7 @@ country_event = {
         option = {
                 name = PRC_MAO.190.a
 set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG4_1
+set_variable = { PRC_PAGE = 0 }
 	    hidden_effect = {	
 				scoped_sound_effect = acdzs
 				scoped_play_song = "one_minute_of_silence"
@@ -6349,7 +6379,204 @@ country_event = {
         is_triggered_only = yes
         fire_only_once = yes
         option = {
-                name = PRC_MAO.191.a
+                name = PRC_MAO.191.a	
+	    hidden_effect = {	
+add_ideas = PRC_li_qiang_hog
+		end_coalition = yes
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+
+		promote_character = {
+			character = PRC_Bo_Guagua
+			ideology = left_nationalism
+		}
+		add_country_leader_role = {
+			character = PRC_Bo_Guagua
+			promote_leader = yes
+			country_leader = {
+				ideology = left_nationalism
+				expire = "1.1.1.1"
+			
+			}
+		}
+        }
+						country_event = {
+				id = PRC_MAO.192
+				days = 1
+			}
+        }
+        option = {
+                name = PRC_MAO.191.b		
+	    hidden_effect = {		
+add_ideas = PRC_li_qiang_hog
+
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}	
+		end_coalition = yes
+	
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_cpc_Esoauthoritarian_democrat
+				name = PRC_cpc_Esoauthoritarian_democrat
+			}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+
+		promote_character = {
+			character = PRC_Chen_Jining
+			ideology = market_socialism_2
+		}
+		add_country_leader_role = {
+			character = PRC_Chen_Jining
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_2
+				expire = "1.1.1.1"
+			
+			}
+		}
+        }
+						country_event = {
+				id = PRC_MAO.192
+				days = 1
+			}
+        }
+        option = {
+                name = PRC_MAO.191.c			
+	    hidden_effect = {		
+add_ideas = PRC_li_qiang_hog
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+		}	
+		end_coalition = yes
+	
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_Esosocial_democrat
+				name = PRC_cpc_Esosocial_democrat
+			}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		promote_character = {
+			character = PRC_Zhang_hongliang
+			ideology = left_populism
+		}
+		add_country_leader_role = {
+			character = PRC_Zhang_hongliang
+			promote_leader = yes
+			country_leader = {
+				ideology = left_populism
+				expire = "1.1.1.1"
+			
+			}
+		}
+        }
+						country_event = {
+				id = PRC_MAO.192
+				days = 1
+			}
         }
 }
 
@@ -6362,22 +6589,39 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.192.a
+set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG6_1
+set_variable = { PRC_PAGE = 0 }
+	    hidden_effect = {	
+				scoped_sound_effect = acmgh
+				scoped_play_song = "one_minute_of_silence"
+        }
         }
 }
 
-country_event = {
+news_event = {
         id = PRC_MAO.193
         title = PRC_MAO.193.t
         desc = PRC_MAO.193.d
         picture = GFX_PRC_MAO_event_193
         is_triggered_only = yes
         fire_only_once = yes
-        option = {
-                name = PRC_MAO.193.a
-        }
+	option = {
+		name = PRC_MAO.193.a
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = aifh_flag
+				scoped_sound_effect = aifh
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+	}
+
 }
 
-country_event = {
+news_event = {
         id = PRC_MAO.194
         title = PRC_MAO.194.t
         desc = PRC_MAO.194.d
@@ -6389,7 +6633,7 @@ country_event = {
         }
 }
 
-country_event = {
+news_event = {
         id = PRC_MAO.195
         title = PRC_MAO.195.t
         desc = PRC_MAO.195.d
@@ -6410,10 +6654,106 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.196.a
+
+		SOV = {
+			add_to_faction = MON
+
+MON = {
+set_country_flag = mto_member
+PRC = {set_nationality = {
+    target_country = MON
+    character = PRC_bo_xilai
+}}
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = left_nationalism
+				expire = "1.1.1.1"
+			
+			}
+		}
+		promote_character = {
+			character = PRC_bo_xilai
+			ideology = left_nationalism
+		}
+		end_coalition = yes
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+
+set_cosmetic_tag = PRC_HACHIMI_FLAG
+}
+		}
+SOV = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+MON = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+
+JAP = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+
+		JAP = {
+							CHI = {
+					transfer_state = 879
+				add_state_core = 879
+					transfer_state = 1382
+				add_state_core = 1382
+			}
+			add_to_faction = CHI
+
+CHI = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+			}
+PRC = {country_event = {
+				id = PRC_MAO.197
+			} }
         }
 }
 
-country_event = {
+news_event = {
         id = PRC_MAO.197
         title = PRC_MAO.197.t
         desc = PRC_MAO.197.d
@@ -6422,6 +6762,11 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.197.a
+
+		hidden_effect = {
+			PRC_gaw_start = yes
+	}
+
         }
 }
 
@@ -6434,6 +6779,32 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.198.a
+		JAP = {
+			add_to_faction = BRM
+			BRM = {
+				set_country_flag = pdto_member
+declare_war_on = {
+			target = PDF
+			type = annex_everything
+		}
+			}
+			}
+BRM = {declare_war_on = {
+			target = SSA
+			type = annex_everything
+		}}
+BRM = {declare_war_on = {
+			target = MOA
+			type = annex_everything
+		}}
+BRM = {declare_war_on = {
+			target = MND
+			type = annex_everything
+		}}
+BRM = {declare_war_on = {
+			target = WAT
+			type = annex_everything
+		}}
         }
 }
 

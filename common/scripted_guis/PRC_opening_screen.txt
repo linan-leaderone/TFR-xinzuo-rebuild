@@ -62,6 +62,85 @@ scripted_gui = {
 
 
 
+	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG6_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_NLT_ENDWID6"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG6_1
+		}
+
+		effects = {
+			TFR_left_end_ZUOPAI_HANDEQIANG6_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG6_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_HANDEQIANG6_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_HANDEQIANG6_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_HANDEQIANG6_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_HANDEQIANG6_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_HANDEQIANG6_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_HANDEQIANG6_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_HANDEQIANG8_end_7_visible = {
+				PRC_Zhang_hongliang = {is_country_leader = yes}
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG8_end_8_visible = {
+				PRC_Zhang_hongliang = {is_country_leader = yes}
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG7_end_7_visible = {
+				PRC_Chen_Jining = {is_country_leader = yes}
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG7_end_8_visible = {
+				PRC_Chen_Jining = {is_country_leader = yes}
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG6_end_7_visible = {
+				PRC_Bo_Guagua = {is_country_leader = yes}
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_HANDEQIANG6_end_8_visible = {
+				PRC_Bo_Guagua = {is_country_leader = yes}
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_HANDEQIANG6_end_9_visible = {
+				check_variable = { PRC_PAGE = 8 }
+			}
+			TFR_HANDEQIANG6_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+		
+		}
+
+	}
+
+
 	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1 = {
 		context_type = player_context
 		parent_window_token = top_bar

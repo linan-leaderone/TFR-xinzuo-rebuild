@@ -8,6 +8,23 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "acmzd"
+	sounds = {
+		sound = "acmzd"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "acmgh"
+	sounds = {
+		sound = "acmgh"
+	}
+	volume = 1
+}
+
+soundeffect =
+{
 	name = "acxcz"
 	sounds = {
 		sound = "acxcz"

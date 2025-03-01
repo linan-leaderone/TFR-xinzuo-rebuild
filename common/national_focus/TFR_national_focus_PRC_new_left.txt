@@ -2781,7 +2781,7 @@ create_navy_leader = {
         }
 		
 	allow_branch = {
-	#	has_country_flag = sangshiweiji_qidong
+		has_country_flag = sangshiweiji_qidong
 	}
 		ai_will_do = {
 			factor = 15

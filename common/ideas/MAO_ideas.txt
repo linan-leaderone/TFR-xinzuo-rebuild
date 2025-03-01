@@ -2296,7 +2296,23 @@ army_defence_factor = 1
 
 }
 	head_minister = {
-
+	
+		PRC_li_qiang_hog = {
+			picture = Li_Qiang
+			name = PRC_li_qiang_hog
+			allowed = { original_tag = PRC}
+			visible = {
+				always = yes
+			}
+			
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_political_protege
+				eco_economic_organizer
+			}
+		}	
 		PRC_ai_changzheng_core = {
 			picture = PRC_changzheng_core
 			allowed = { original_tag = PRC }

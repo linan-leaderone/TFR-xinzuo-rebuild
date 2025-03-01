@@ -252,6 +252,10 @@ add_ideas = duliyuanjing
 						}
 				}
 
+recruit_character = PRC_Bo_Guagua
+recruit_character = PRC_Chen_Jining
+recruit_character = PRC_Zhang_hongliang
+recruit_character = PRC_Zhang_Weiwei
 recruit_character = PRC_han_dongfang
 recruit_character = PRC_ren_chonghao
 recruit_character = PRC_zhang_hongliang
@@ -327,6 +331,23 @@ add_ideas = 	BRM_civil_war_idea1
 				}
 				if = {
 					limit = {
+						FROM = {
+							original_tag = HKN
+						}
+						ROOT = {
+							NOT = {original_tag = HKN}
+						}
+					}
+	
+HKN = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
 
 						FROM = {
 						OR = {
@@ -347,14 +368,14 @@ PRC = {country_event = PRC_MAO.191}
 					}
 				if = {
 					limit = {
-						PRC = {PRC_long_march = = {is_country_leader = yes}}
+						PRC = {PRC_long_march = {is_country_leader = yes}}
 						PRC = {has_country_flag = end_of_zombie_mao}
 					}
 PRC = {country_event = PRC_MAO.188}
 					}
 				if = {
 					limit = {
-						PRC = {PRC_long_march = = {is_country_leader = yes}}
+						PRC = {PRC_long_march = {is_country_leader = yes}}
 						NOT = {PRC = {has_country_flag = end_of_zombie_mao}}
 					}
 PRC = {country_event = PRC_MAO.189}
