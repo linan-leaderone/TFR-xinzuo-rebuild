@@ -929,14 +929,8 @@ country_event = {
 	title = PRC_MAO.33.t
 	desc = PRC_MAO.33.d
 	picture = GFX_PRC_MAO_event_33
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = yes
-	trigger = {
-		tag = PRC
-	PRC = {has_country_flag = RUS_EUO_PRC}	
-
-	SOV = {surrender_progress > 0.6}
-	}
 
 	option = {
 		name = PRC_MAO.33.a
@@ -945,6 +939,112 @@ clr_country_flag = RUS_EUO_PR
 		hidden_effect = {
 										every_country = {
 						white_peace = SOV
+					}
+				if = {
+					limit = {
+	HUN = {is_ally_with = SOV}
+					}
+			PRC = {set_autonomy = {
+			target = HUN
+			autonomy_state = autonomy_tongzhi
+			}}			
+						HUN = {
+                inherit_technology = PRC
+				set_cosmetic_tag = HUN_Peoples_Republic_of_Hungarian
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "匈牙利革命委员会"
+	                desc = "POLITICS_HUNGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+					}
+				if = {
+					limit = {
+	SLO = {is_ally_with = SOV}
+					}
+			PRC = {set_autonomy = {
+			target = SLO
+			autonomy_state = autonomy_tongzhi
+			}}			
+						SLO = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "斯洛伐克革命委员会"
+	                desc = "POLITICS_SLOGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+					}
+				if = {
+					limit = {
+	ROM = {is_ally_with = SOV}
+					}
+			PRC = {set_autonomy = {
+			target = ROM
+			autonomy_state = autonomy_tongzhi
+			}}			
+						ROM = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "罗马尼亚革命委员会"
+	                desc = "POLITICS_ROMGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+						}
+
+
+
+					}
+				if = {
+					limit = {
+	BUL = {is_ally_with = SOV}
+					}
+			PRC = {set_autonomy = {
+			target = BUL
+			autonomy_state = autonomy_tongzhi
+			}}			
+						BUL = {
+                inherit_technology = PRC
+				set_cosmetic_tag = BUL_balkan_federation
+				set_party_name = { ideology = totalitarian_socialist long_name = BULCCC_party name = BULCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "巴尔干革命委员会"
+	                desc = "POLITICS_BULGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
 					}
 				if = {
 					limit = {
@@ -1228,6 +1328,7 @@ SOV = {annex_country = {
 					}
 						SOV = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
+dismantle_faction = yes
 						}
 
 				}
@@ -3685,6 +3786,10 @@ create_country_leader = {
 				}
 			}
 		}
+
+		set_country_leader_description = {
+	desc = PRC_renda_zanshi
+}
 add_ideas = PRC_xie_chuntao_hog
 			create_country_leader = {
 	                name = "未知"
@@ -5934,6 +6039,7 @@ country_event = {
         option = {
                 name = PRC_MAO.175.a
 set_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1
+set_variable = { PRC_PAGE = 0 }
 	    hidden_effect = {	
 				scoped_sound_effect = acmzd
 				scoped_play_song = "one_minute_of_silence"
@@ -6183,6 +6289,10 @@ country_event = {
 			}
 		}
 	    hidden_effect = {	
+
+		set_country_leader_description = {
+	desc = PRC_renda_ANQ_renda
+}
 						country_event = {
 				id = PRC_MAO.186
 				days = 1
@@ -6329,6 +6439,10 @@ country_event = {
 				}
 			}
 		}
+
+		set_country_leader_description = {
+	desc = PRC_renda_ANQ_renda
+}
 			}
 				country_event = {
 				id = PRC_MAO.187
@@ -6663,7 +6777,12 @@ set_country_flag = mto_member
 PRC = {set_nationality = {
     target_country = MON
     character = PRC_bo_xilai
-}}
+}}	
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_cpc_Esoauthoritarian_democrat
+				name = PRC_cpc_Esoauthoritarian_democrat
+			}
 		add_country_leader_role = {
 			character = PRC_bo_xilai
 			promote_leader = yes
@@ -6727,6 +6846,50 @@ MON = {declare_war_on = {
 			target = PRC
 			type = annex_everything
 		}}
+VIN = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+BRM = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+KOR = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+RAJ = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+PHI = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+LAO = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+SIA = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+CAM = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+MAL = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+SIG = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
+INS = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}}
 
 JAP = {declare_war_on = {
 			target = PRC
@@ -6747,7 +6910,11 @@ CHI = {declare_war_on = {
 			type = annex_everything
 		}}
 			}
-PRC = {country_event = {
+PRC = {
+		set_country_flag = aimzdzz
+		complete_national_focus = PRC_chinas_greatest_hour
+			mark_focus_tree_layout_dirty = yes
+country_event = {
 				id = PRC_MAO.197
 			} }
         }
@@ -6765,6 +6932,7 @@ news_event = {
 
 		hidden_effect = {
 			PRC_gaw_start = yes
+		PRC = {activate_mission = PRC_GAW_war_exhaustion1}
 	}
 
         }
@@ -6817,6 +6985,60 @@ country_event = {
         fire_only_once = yes
         option = {
                 name = PRC_MAO.199.a
+
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+		hidden_effect = {
+		set_country_leader_description = {
+	desc = PRC_renda_ANQ_renda
+}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+        }
+        }
+        option = {
+                name = PRC_MAO.199.b
+
+		hidden_effect = {
+
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism_cyber
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism_cyber
+		}
+	
+set_country_leader_name = {
+	ideology = maoism_cyber
+	name = MAO_CMZD
+}
+
+set_country_leader_portrait = {
+	portrait = GFX_MAO
+}
+		set_country_leader_description = {
+	desc = POLITICS_MAOZEDONG_DESC
+}
+        }
         }
 }
 

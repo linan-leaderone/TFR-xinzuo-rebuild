@@ -1,4 +1,56 @@
 
+PRC_pla_dynamic = {
+	icon = GFX_idea_PRC_pla
+
+	enable = { 
+		always = yes
+	}
+	surrender_limit = PRC_pla_surrender_limit_dynamic_var
+	army_core_attack_factor = PRC_pla_army_core_attack_factor_dynamic_var
+	army_core_defence_factor = PRC_pla_army_core_defence_factor_dynamic_var 
+	army_defence_factor = PRC_pla_army_defence_factor_dynamic_var
+	max_planning_factor = PRC_pla_max_planning_factor_dynamic_var
+	planning_speed = PRC_pla_planning_speed_dynamic_var
+	attrition = PRC_pla_attrition_dynamic_var
+	initiative_factor = PRC_pla_initiative_factor_dynamic_var
+	experience_gain_army_factor = PRC_pla_experience_gain_army_factor_dynamic_var
+	command_power_gain = PRC_pla_command_power_gain_dynamic_var
+	army_org_factor = PRC_pla_army_org_factor_dynamic_var
+	army_org_regain = PRC_pla_army_org_regain_dynamic_var
+	battalion_upkeep_factor = PRC_battalion_upkeep_factor_dynamic_var
+	land_reinforce_rate = PRC_pla_land_reinforce_rate_dynamic_var
+	breakthrough_factor = PRC_pla_breakthrough_factor_dynamic_var
+	mobilization_speed = PRC_pla_mobilization_speed_dynamic_var
+	training_time_factor = PRC_pla_training_time_factor_dynamic_var
+	military_development_monthly = PRC_pla_military_development_monthly_dynamic_var
+	acclimatization_cold_climate_gain_factor = PRC_acclimatization_cold_climate_gain_factor_dynamic_var
+	acclimatization_hot_climate_gain_factor = PRC_acclimatization_hot_climate_gain_factor_dynamic_var
+	pocket_penalty = PRC_pocket_penalty_dynamic_var
+	army_armor_attack_factor = PRC_army_armor_attack_factor_dynamic_var
+	terrain_penalty_reduction = PRC_terrain_penalty_reduction_dynamic_var
+	air_superiority_efficiency = PRC_pla_air_superiority_efficiency_dynamic_var
+	air_intercept_efficiency = PRC_pla_air_intercept_efficiency_dynamic_var
+	air_strategic_bomber_bombing_factor = PRC_air_strategic_bomber_bombing_factor_dynamic_var
+	navy_anti_air_attack_factor = PRC_navy_anti_air_attack_factor_dynamic_var
+	conscription_factor = PRC_pla_conscription_factor_dynamic_var
+	recon_factor = PRC_pla_recon_factor_dynamic_var
+	army_infantry_attack_factor = PRC_pla_army_infantry_attack_factor_dynamic_var
+	army_infantry_defence_factor = PRC_pla_army_infantry_defence_factor_dynamic_var
+	supply_consumption_factor = PRC_pla_supply_consumption_factor_dynamic_var
+	decryption = PRC_pla_decryption_dynamic_var
+	encryption = PRC_pla_encryption_dynamic_var
+	intel_from_combat_factor = PRC_pla_intel_from_combat_factor_dynamic_var
+
+	air_agility_factor = PRC_pla_air_agility_factor_dynamic_var
+	air_attack_factor = PRC_pla_air_attack_factor_dynamic_var
+	air_defence_factor = PRC_pla_air_defence_factor_dynamic_var
+	air_close_air_support_org_damage_factor = PRC_pla_air_close_air_support_org_damage_factor_dynamic_var
+	air_cas_efficiency = PRC_pla_air_cas_efficiency_dynamic_var
+	air_maximum_speed_factor =PRC_pla_air_maximum_speed_factor_dynamic_var
+	air_range_factor = PRC_pla_air_range_factor_dynamic_var
+	air_weather_penalty = PRC_pla_air_weather_penalty_dynamic_var
+}
+
 PRC_ai_governed_city = {
 	icon = GFX_modifiers_ai_governed_city
 	

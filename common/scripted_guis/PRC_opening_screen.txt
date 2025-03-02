@@ -166,6 +166,9 @@ scripted_gui = {
 		}
 
 		triggers = {
+			TFR_left_end_ZUOPAI_HANDEQIANG5_button_visible = {
+			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG5_1
+			}
 			TFR_HANDEQIANG5_end_1_visible = {
 				check_variable = { PRC_PAGE = 0 }
 			}
@@ -383,7 +386,7 @@ scripted_gui = {
 	PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1 = {
 		context_type = player_context
 		parent_window_token = top_bar
-		window_name = "TFR_NLT_ENDWID"
+		window_name = "TFR_NLT_ENDWID1"
 
 		visible = {
 			has_country_flag = PRC_END_XINZUORE_ZUOPAI_HANDEQIANG1_1

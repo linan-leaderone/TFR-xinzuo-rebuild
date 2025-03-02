@@ -8,6 +8,46 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	SpriteType = {
+		name = "GFX_ZOM_END_1"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_1.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_2"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_2.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_3"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_3.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_4"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_4.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_5"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_5.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_6"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_6.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_7"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_7.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_8"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_8.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_9"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_9.png"
+	}
+	SpriteType = {
+		name = "GFX_ZOM_END_10"
+		texturefile = "gfx/MAOYUANXIN/ZOM_end_10.png"
+	}
+	SpriteType = {
 		name = "GFX_HANDEQIANG6_END_3"
 		texturefile = "gfx/MAOYUANXIN/bohe_end_3.png"
 	}

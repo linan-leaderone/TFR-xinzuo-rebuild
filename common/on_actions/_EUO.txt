@@ -258,7 +258,9 @@ PRP = {annex_country = {
 						}
 					}
 
-						PRC = {white_peace = ROOT}
+		
+
+				PRC = {white_peace = ROOT}
 FPR = {annex_country = {
 								target = ROOT
 								transfer_troops = no
@@ -277,7 +279,9 @@ FPR = {annex_country = {
 			    remove_core_of = ROOT
 		    }
 							}
-		
+					PRC = {
+				add_to_faction = FPR
+			}
 
 				}			
 				if = {

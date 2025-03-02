@@ -130,7 +130,12 @@ scripted_gui = {
 				has_country_flag = pact_of_steel_member
 			}
 			TFR_pdto_politics_icon_visible = {
-				has_country_flag = pdto_member
+			OR = {
+				is_ally_with = JAP
+				is_ally_with = AST
+				is_ally_with = NZL
+				is_ally_with = RAJ
+			}
 				NOT = {is_ally_with = PRC}
 			}
 			TFR_csto_politics_icon_visible = {
@@ -146,7 +151,7 @@ scripted_gui = {
 				has_country_flag = esto_member
 			}
 			TFR_eadi_politics_icon_visible = {
-				has_country_flag = eadi_member
+				is_ally_with = PRC
 					NOT = {has_country_flag = KMGJ_member}
 			}
 			TFR_KMGJ_politics_icon_visible = {
@@ -191,7 +196,13 @@ scripted_gui = {
 				has_country_flag = pact_of_steel_member
 			}
 			TFR_pdto_diplo_icon_visible = {
-				has_country_flag = pdto_member
+			OR = {
+				is_ally_with = JAP
+				is_ally_with = AST
+				is_ally_with = NZL
+				is_ally_with = RAJ
+			}
+				NOT = {is_ally_with = PRC}
 			}
 			TFR_csto_diplo_icon_visible = {
 				has_country_flag = csto_member
@@ -206,7 +217,7 @@ scripted_gui = {
 				has_country_flag = esto_member
 			}
 			TFR_eadi_diplo_icon_visible = {
-				has_country_flag = eadi_member
+				is_ally_with = PRC
 NOT = {has_country_flag = KMGJ_member}
 			}
 			TFR_KMGJ_diplo_icon_visible = {

@@ -341,6 +341,10 @@ add_to_variable = {
 			country_event = {
 				id = PRC_MAO.77
 			}
+			country_event = {
+				id = PRC_MAO1.2
+				days = 14
+			}
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea

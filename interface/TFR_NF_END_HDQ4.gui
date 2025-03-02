@@ -30,7 +30,7 @@ guiTypes = {
 		} 
 		iconType = {
 			name = "TFR_HANDEQIANG4_end_5"
-			quadTextureSprite = "GFX_HANDEQIANG3_END_5"
+			quadTextureSprite = "GFX_HANDEQIANG1_END_5"
 			position = { x=-960 y=-540}
 			Orientation = "CENTER"
 		} 

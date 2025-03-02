@@ -90,7 +90,7 @@ guiTypes = {
 		} 
 		buttonType = {
 			name = "TFR_left_end_ZUOPAI_HANDEQIANG6_button"
-			spriteType = "GFX_left_end1_button"
+			spriteType = "GFX_left_end_button"
 			position = { x=707 y=-35}
 			Orientation = "CENTER"
 		}

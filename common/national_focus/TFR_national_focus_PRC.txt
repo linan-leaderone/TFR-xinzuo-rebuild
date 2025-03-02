@@ -2571,6 +2571,14 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	bypass = {
+	OR = {
+			NOT = {
+				country_exists = SIG
+			}
+		SIG = {is_ally_with = PRC}
+	}
+	}
 	available = {
 		 
 	}
@@ -2591,6 +2599,11 @@ shared_focus = {
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+			NOT = {
+				country_exists = PAK
+			}
 	}
 	available = {
 			PAK = {
@@ -2618,6 +2631,14 @@ shared_focus = {
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+	OR = {
+			NOT = {
+				country_exists = BEN
+			}
+		BEN = {is_ally_with = PRC}
+	}
 	}
 	available = {
 	}
@@ -2745,6 +2766,14 @@ shared_focus = {
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+	OR = {
+			NOT = {
+				country_exists = RAJ
+			}
+		NAX = {is_ally_with = PRC}
+	}
 	}
 	available = {
 		 if = {
@@ -2903,16 +2932,23 @@ shared_focus = {
 	id = PRC_masters_of_asia_16
 	icon = GFX_focus_PRC_masters_of_asia_16
 	x = -5
-	y = 4
+	y = 5
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
 		factor = 1
 	}
+	bypass = {
+	OR = {
+			NOT = {
+				country_exists = SOV
+			}
+		SOV = {is_ally_with = PRC}
+	}
+	}
 	available = {	
 has_country_flag = ecwar1145_flag
-				has_completed_focus = PRC_masters_of_asia_5
 		SOV = {totalitarian_socialist > 0.4}
 	OR = {
 		has_global_flag = SOV_first_nato_war_victory
@@ -2920,12 +2956,13 @@ has_country_flag = ecwar1145_flag
 	}
 										
 	}
-	prerequisite = { focus = PRC_coordinate_eadi_militaries }
+	prerequisite = { focus = PRC_masters_of_asia_4 }
 	completion_reward = {
 		custom_effect_tooltip = PRC_this_will_lead_to_the_grcw
 		
 	
 	    hidden_effect = {	
+		PRC = {activate_mission = PRC_GAW_war_exhaustion1}
 					country_event = PRC_MAO.32
 			set_country_flag = RUS_EUO_PRC	
 						SOV = {
@@ -3305,7 +3342,7 @@ shared_focus = {
 	available = {
 						NOT = {country_exists = COL}
 						NOT = {country_exists = CLS}
-						NOT = {country_exists = FPC}
+						NOT = {country_exists = FRC}
 						country_exists = ELN
 		ELN = {is_ally_with = PRC}				
 													
@@ -4124,11 +4161,7 @@ shared_focus = {
 			limit = {
 				has_country_flag = PRC_new_left_win
 			}
-		OR = {
-						PRC_hu_chunhua = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_yao_xinzhong = {is_country_leader = yes}
-		}
+			has_completed_focus = PRC_reliable_politburo
 		}
 	}
 	mutually_exclusive = { focus = PRC_masters_of_asia_1 }
@@ -4161,7 +4194,7 @@ shared_focus = {
 	    focus = PRC_masters_of_asia_1
 	}
 	bypass = {
-		#is_ally_with = BRM
+		is_ally_with = BRM
 	}
 	
 	ai_will_do = {
@@ -5972,7 +6005,7 @@ shared_focus = {
 	id = PRC_chinas_greatest_hour
 	icon = GFX_focus_PRC_chinas_greatest_hour
 	x = 1
-	y = 7
+	y = 9
 	cost = 5
 	available_if_capitulated = yes
 	ai_will_do = {
@@ -6015,6 +6048,42 @@ shared_focus = {
 				random_days = 5
 			}
 		}
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_91
+	icon = GFX_focus_rumaojiehe_91
+	x = 15
+	y = 10
+	cost = 2
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_chinas_greatest_hour }
+	available = {
+			has_completed_focus = PRC_chinas_spot_in_the_sun
+	}
+	allow_branch = {
+		has_country_flag = aimzdzz
+	}
+	completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_91
+				}
+			}
+
+				add_to_variable = {
+					var = PRC_pla_army_core_defence_factor_dynamic_var 
+					value = 1
+				}	
+				add_to_variable = {
+					var = PRC_pla_army_core_attack_factor_dynamic_var
+					value = 1
+				}	
+		
 	}
 }
 shared_focus = {
@@ -7467,6 +7536,310 @@ shared_focus = {
 		unlock_decision_tooltip = PRC_operation_pallava_dec
 		custom_effect_tooltip = when_selecting_a_decision_tt
 		show_ideas_tooltip = PRC_operation_pallava_idea
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_92
+	icon = GFX_focus_rumaojiehe_92
+	x = 13
+	y = 11
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_91 }
+	available = {
+		
+	}
+	completion_reward = {
+			
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_92
+				}
+			}
+
+				add_to_variable = {
+					var = PRC_pla_air_cas_present_factor_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = PRC_pla_air_mission_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = PRC_pla_air_superiority_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = PRC_pla_air_intercept_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = PRC_pla_air_cas_efficiency_dynamic_var
+					value = 1
+				}	
+				add_to_variable = {
+					var = PRC_pla_air_agility_factor_dynamic_var
+					value = 1
+				}	
+
+		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_98
+	icon = GFX_focus_rumaojiehe_98
+	x = 13
+	y = 13
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_92 }
+	available = {
+		
+	}
+	completion_reward = {
+		
+set_technology = { Pjijia_zhanshi = 1 }
+		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_93
+	icon = GFX_focus_rumaojiehe_93
+	x = 15
+	y = 11
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_91 }
+	available = {
+		
+	}
+	completion_reward = {
+		
+		
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_93
+				}
+			}
+				add_to_variable = {
+					var = PRC_pla_army_defence_factor_dynamic_var
+					value = 1
+				}			
+				add_to_variable = {
+					var = PRC_pla_army_attack_factor_dynamic_var
+					value = 1
+				}		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_94
+	icon = GFX_focus_rumaojiehe_94
+	x = 17
+	y = 11
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_91 }
+	available = {
+			has_completed_focus = PRC_beidouweixing
+		
+	}
+	completion_reward = {
+		
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_94
+				}
+			}
+				add_to_variable = {
+					var = PRC_pla_decryption_dynamic_var
+					value = 100
+				}	
+				add_to_variable = {
+					var = PRC_pla_encryption_dynamic_var
+					value = 100
+				}	
+				add_to_variable = {
+					var = PRC_pla_intel_from_combat_factor_dynamic_var
+					value = 1
+				}	
+		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_99
+	icon = GFX_focus_rumaojiehe_99
+	x = 17
+	y = 13
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_94 }
+	available = {
+		
+	}
+	completion_reward = {
+		
+		
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_99
+				}
+			}
+				add_to_variable = {
+					var = PRC_pla_supply_consumption_factor_dynamic_var
+					value = -0.5
+				}	
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_95
+	icon = GFX_focus_rumaojiehe_95
+	x = 16
+	y = 12
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_91 }
+	available = {
+		
+	}
+	completion_reward = {
+
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_95
+				}
+			}
+				add_to_variable = {
+					var = PRC_pla_army_org_factor_dynamic_var
+					value = 1
+				}		
+				add_to_variable = {
+					var = PRC_pla_surrender_limit_dynamic_var
+					value = 1
+				}	
+		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_96
+	icon = GFX_focus_rumaojiehe_96
+	x = 14
+	y = 12
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_91 }
+	available = {
+		
+	}
+	completion_reward = {
+		
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_96
+				}
+			}
+				add_to_variable = {
+					var = PRC_pla_attrition_dynamic_var
+					value = -0.5
+				}	
+		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_97
+	icon = GFX_focus_rumaojiehe_97
+	x = 15
+	y = 13
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_95 }
+	prerequisite = { focus = PRC_rumaojiehe_96 }
+	available = {
+		
+	}
+	completion_reward = {
+		
+			
+			effect_tooltip = {
+				swap_ideas = {
+				remove_idea = PRC_pla_dummy_idea
+				add_idea = PRC_pla_dummy_idea_97
+				}
+			}
+				add_to_variable = {
+					var = PRC_pla_army_defence_factor_dynamic_var
+					value = 3
+				}			
+				add_to_variable = {
+					var = PRC_pla_army_attack_factor_dynamic_var
+					value = 3
+				}				
+				add_to_variable = {
+					var = PRC_pla_research_speed_factor_dynamic_var
+					value = 10
+				}					
+				add_to_variable = {
+					var = PRC_pla_industrial_capacity_factory_dynamic_var
+					value = 10
+				}				
+				add_to_variable = {
+					var = PRC_pla_production_speed_buildings_factor_dynamic_var
+					value = 10
+				}		
+				add_to_variable = {
+					var = PRC_pla_political_power_cost_dynamic_var
+					value = -1
+				}		
+	}
+}
+shared_focus = {
+	id = PRC_rumaojiehe_100
+	icon = GFX_focus_rumaojiehe_100
+	x = 15
+	y = 14
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = { focus = PRC_rumaojiehe_97 }
+	available = {
+		
+	}
+	completion_reward = {
+		country_event = {
+				id = PRC_MAO.199
+			}
+		
 	}
 }
 shared_focus = {

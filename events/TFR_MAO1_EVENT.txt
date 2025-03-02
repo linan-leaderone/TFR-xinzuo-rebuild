@@ -1,0 +1,33 @@
+add_namespace = PRC_MAO1
+country_event = {
+	id = PRC_MAO1.1
+	title = PRC_MAO1.1.t
+	desc = PRC_MAO1.1.d
+	picture = GFX_PRC_MAO1_event_1
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+PRC_mao_yuanxin = {is_country_leader = yes}
+date > 2024.12.21
+date < 2025.1.31
+	}
+	option = {
+		name = PRC_MAO1.1.a
+
+	}
+
+}
+country_event = {
+	id = PRC_MAO1.2
+	title = PRC_MAO1.2.t
+	desc = PRC_MAO1.2.d
+	picture = GFX_PRC_MAO1_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO1.2.a
+
+	}
+
+}

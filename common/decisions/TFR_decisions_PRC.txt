@@ -9101,7 +9101,10 @@ PRC_foreign_policy_category = {
 
 			PRC_military_intervention_afh_1 = {
 		available = {
+		OR = {
 			is_ally_with = PAK
+			is_ally_with = NAX
+		}
 		}
 		visible = {
 			hidden_trigger = {
@@ -11416,8 +11419,20 @@ annex_country = {
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_17
-				
+	NOT = { country_exists = SPR}
+	NOT = { country_exists = POR}
+	NOT = { country_exists = GOD}
+	NOT = { country_exists = SNS}
+	SWE = {is_ally_with = PRC}
+	SOV = {is_ally_with = PRC}
+	IRE = {is_ally_with = PRC}
+	FIN = {is_ally_with = PRC}
+	ICE = {is_ally_with = PRC}
 	FPR = {is_ally_with = PRC}
+			OR = {
+	PLD = {is_ally_with = PRC}
+	MLD = {is_ally_with = PRC}
+			}
 			OR = {
 	GER = {is_ally_with = PRC}
 	NOT = { country_exists = GER}
@@ -11431,7 +11446,10 @@ annex_country = {
 	CZE = {is_ally_with = PRC}
 	NOT = { country_exists = CZE }
 			}
+			OR = {
 	ENG = {is_ally_with = PRC}
+	UK2 = {is_ally_with = PRC}
+			}
 			}
 		}
 		fire_only_once = yes
@@ -11496,7 +11514,83 @@ annex_country = {
 								transfer_troops = yes
 							}
 annex_country = {
+								target = SLO
+								transfer_troops = yes
+							}
+annex_country = {
+								target = PRP
+								transfer_troops = yes
+							}
+annex_country = {
+								target = RSR
+								transfer_troops = yes
+							}
+annex_country = {
 								target = LUX
+								transfer_troops = yes
+							}
+annex_country = {
+								target = CZE
+								transfer_troops = yes
+							}
+annex_country = {
+								target = PLD
+								transfer_troops = yes
+							}
+annex_country = {
+								target = MLD
+								transfer_troops = yes
+							}
+annex_country = {
+								target = ROM
+								transfer_troops = yes
+							}
+annex_country = {
+								target = HUN
+								transfer_troops = yes
+							}
+annex_country = {
+								target = IRE
+								transfer_troops = yes
+							}
+annex_country = {
+								target = UK2
+								transfer_troops = yes
+							}
+annex_country = {
+								target = ENG
+								transfer_troops = yes
+							}
+annex_country = {
+								target = DEN
+								transfer_troops = yes
+							}
+annex_country = {
+								target = FIN
+								transfer_troops = yes
+							}
+annex_country = {
+								target = ICE
+								transfer_troops = yes
+							}
+annex_country = {
+								target = NOR
+								transfer_troops = yes
+							}
+annex_country = {
+								target = SWE
+								transfer_troops = yes
+							}
+annex_country = {
+								target = TUR
+								transfer_troops = yes
+							}
+annex_country = {
+								target = GRE
+								transfer_troops = yes
+							}
+annex_country = {
+								target = BUL
 								transfer_troops = yes
 							}
 
@@ -11506,49 +11600,12 @@ annex_country = {
 								transfer_troops = yes
 							}
 
-		if = {
+			FRA = {every_controlled_state = {
 				limit = {
-					is_core_of = FRA
+					NOT = {is_core_of = FRA}
 				}
 			    add_core_of = FRA
-		    }	
-
-		if = {
-				limit = {
-					is_core_of = GER
-				}
-			    add_core_of = FRA
-		    }	
-		if = {
-				limit = {
-					is_core_of = ITA
-				}
-			    add_core_of = FRA
-		    }	
-		if = {
-				limit = {
-					is_core_of = AUS
-				}
-			    add_core_of = FRA
-		    }	
-		if = {
-				limit = {
-					is_core_of = HOL
-				}
-			    add_core_of = FRA
-		    }	
-		if = {
-				limit = {
-					is_core_of = BEL
-				}
-			    add_core_of = FRA
-		    }	
-		if = {
-				limit = {
-					is_core_of = LUX
-				}
-			    add_core_of = FRA
-		    }	
+		    }	}
 				set_country_leader_ideology = anarchist_maoism
 
 
@@ -11888,7 +11945,6 @@ annex_country = {
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_17
-				country_exists = PRP
 			}
 		}
 		fire_only_once = yes
@@ -11900,17 +11956,34 @@ annex_country = {
 			
 		}
 		remove_effect = {	
+	
+	    hidden_effect = {	
+								PRP = {transfer_state = 698}
+			}
 			PRC = {
 				add_to_faction = PRP
+
+
 			}
 		
 	
 	    hidden_effect = {	
 
-			PRC = {set_autonomy = {
+			PRC = {
+
+set_autonomy = {
 			target = PRP
 			autonomy_state = autonomy_tongzhi
-			}}			
+			}
+declare_war_on = {
+			target = POR
+			type = annex_everything
+		}
+declare_war_on = {
+			target = GOD
+			type = annex_everything
+		}
+}			
 										PRP = {
                 inherit_technology = PRC
 				set_politics = {
@@ -12026,15 +12099,14 @@ annex_country = {
 		}
 	}
 
-
-			PRC_military_intervention_rsr_1 = {
+			PRC_military_intervention_UK2_1 = {
 		available = {
 
 		}
 		visible = {
 			hidden_trigger = {
 				has_completed_focus = PRC_masters_of_asia_17
-				country_exists = RSR
+country_exists = UK2
 			}
 		}
 		fire_only_once = yes
@@ -12046,6 +12118,36 @@ annex_country = {
 			
 		}
 		remove_effect = {	
+
+			PRC = {
+				add_to_faction = UK2
+			}
+}
+}
+		
+
+			PRC_military_intervention_rsr_1 = {
+		available = {
+
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = PRC_masters_of_asia_17
+			}
+		}
+		fire_only_once = yes
+		days_remove = 5
+		cancel_if_not_visible = yes
+		
+		complete_effect = {
+
+			
+		}
+		remove_effect = {	
+	
+	    hidden_effect = {	
+								RSR = {transfer_state = 177}
+			}
 			PRC = {
 				add_to_faction = RSR
 			}
@@ -12056,7 +12158,17 @@ annex_country = {
 			PRC = {set_autonomy = {
 			target = RSR
 			autonomy_state = autonomy_tongzhi
-			}}			
+			}
+
+declare_war_on = {
+			target = SPR
+			type = annex_everything
+		}
+declare_war_on = {
+			target = SNS
+			type = annex_everything
+		}
+}			
 										RSR = {
                 inherit_technology = PRC
 
@@ -21672,14 +21784,68 @@ PRC_national_peoples_congress_category = {
 }
 
 PRC_great_asian_war = {
+	PRC_GAW_war_exhaustion1 = {
+		priority = 99
+		icon = GFX_SOV_decision_nato_war_deadline
+		available = {
+			
+			SOV = {
+				surrender_progress > 0.7
+			}
+
+
+		}
+		days_mission_timeout = 200
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = no
+		is_good = no
+		cancel_trigger = {
+			hidden_trigger = {
+				always = no
+			}
+			PRC = {
+				surrender_progress > 0.6
+			}
+		}
+		cancel_effect = {
+			hidden_effect = {
+				PRC_japans_victory_in_the_gaw = yes
+				JAP = {
+					country_event = china.1002
+				}
+			}
+			news_event = {
+				id = news.414
+				days = 1
+			}
+		}
+		timeout_effect = {
+			PRC_increase_war_exhaustion = yes
+			activate_mission = PRC_GAW_war_exhaustion1
+		}
+		complete_effect = {
+				PRC = {
+					country_event = PRC_MAO.33
+				}
+		}
+	}
 	PRC_GAW_war_exhaustion = {
 		priority = 99
 		icon = GFX_SOV_decision_nato_war_deadline
 		available = {
-			hidden_trigger = {
-				always = no
-			}
 			has_country_flag = PRC_kill_em_all_flag
+	  if = {
+			limit = {
+				has_country_flag = ai_cmao_weihe
+			}
+	has_war = no
+		}
+
 		}
 		days_mission_timeout = 200
 		activation = {
