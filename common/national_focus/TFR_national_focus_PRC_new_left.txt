@@ -9272,20 +9272,8 @@ remove_ideas = militia_looting
 			}
 			add_total_campaign_slot = yes
 			add_stability = 0.085
-			add_popularity = {
-				ideology = communist
-				popularity = -0.1
-			}
 			unlock_decision_category_tooltip = PRC_socialist_democratization_cat
 			hidden_effect = {
-				set_politics = {
-					ruling_party = libertarian_socialist
-					elections_allowed = no
-				}
-				set_temp_variable = {
-					coalition_partner_var_temp = token:communist
-				}
-				add_to_coalition = yes
 				add_to_variable = {
 					var = PRC_cpc_political_power_gain_dynamic_var
 					value = -0.2

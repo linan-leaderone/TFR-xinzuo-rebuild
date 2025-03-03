@@ -1,5 +1,34 @@
 
 M_virus_action = {
+
+                  FKJZH = {
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			always = yes
+		}
+		state_target = yes
+		on_map_mode = map_only
+		target_array = controlled_states
+		cost = 0
+		fire_only_once = yes
+		days_remove = 14
+		visible = {
+			has_completed_focus = HKZ_ZOM_21
+			tag = HKN
+			always = yes
+			has_full_control_of_state = FROM
+		}
+
+		complete_effect = {
+                                                     
+		}
+
+		remove_effect = {
+                                                                 transfer_state = FROM
+		}
+	}
 M_virus_action_20 = {
 	available = {
 	OR = {
@@ -55,7 +84,8 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+	
+num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -80,7 +110,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_13
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -980,7 +1010,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -1002,7 +1032,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_14
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -1902,7 +1932,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -1924,7 +1954,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_15
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -2824,7 +2854,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -2846,7 +2876,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_16
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -3746,7 +3776,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -3768,7 +3798,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_17
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -4668,7 +4698,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -4690,7 +4720,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_18
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -5590,7 +5620,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -5612,7 +5642,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_19
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -6512,7 +6542,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -6534,7 +6564,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_10
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -7434,7 +7464,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -7456,7 +7486,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_11
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -8356,7 +8386,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -8378,7 +8408,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_12
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -9278,7 +9308,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -9300,7 +9330,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_9
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -10200,7 +10230,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -10222,7 +10252,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_8
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -11122,7 +11152,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -11144,7 +11174,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_3
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -12044,7 +12074,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -12066,7 +12096,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_6
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -12966,7 +12996,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -12988,7 +13018,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_5
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -13888,7 +13918,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -13910,7 +13940,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_4
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -14810,7 +14840,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -14832,7 +14862,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_2
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -15732,7 +15762,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -15753,7 +15783,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_1
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
@@ -16654,7 +16684,7 @@ M_virus_action_20 = {
 
 		target_trigger = {
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 				has_war_with = ROOT
 				any_controlled_state = {
 					is_capital = no
@@ -16676,7 +16706,7 @@ M_virus_action_20 = {
 			tag = HKN
 			has_completed_focus = HKZ_ZOM_7
 			FROM = {
-				exists = yes
+				 num_of_controlled_states > 10
 			}
 		}
 
