@@ -793,7 +793,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = HKZ_ZOM_44
+			has_completed_focus = HKZ_ZOM_45
 		
 		}
 		completion_reward = {
@@ -824,7 +824,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = HKZ_ZOM_45
+			has_completed_focus = HKZ_ZOM_46
 		
 		}
 		completion_reward = {
@@ -859,7 +859,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = HKZ_ZOM_46
+			has_completed_focus = HKZ_ZOM_47
 		
 		}
 		completion_reward = {
@@ -947,7 +947,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = HKZ_ZOM_49
+			has_completed_focus = HKZ_ZOM_50
 		
 		}
 		completion_reward = {
@@ -978,7 +978,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = HKZ_ZOM_50
+			has_completed_focus = HKZ_ZOM_48
 		
 		}
 		completion_reward = {
