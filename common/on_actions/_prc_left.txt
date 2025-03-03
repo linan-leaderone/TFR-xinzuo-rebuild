@@ -1339,7 +1339,6 @@ PRC = {annex_country = {
 				remove_ideas = PRC_unwilling_ally	
 				set_party_name = { ideology = totalitarian_socialist long_name = SIGCCC_party_long name = SIGCCC_party }
 				set_cosmetic_tag = SIG_XIN
-				}
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
