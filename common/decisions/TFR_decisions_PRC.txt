@@ -10634,7 +10634,7 @@ NOT = {country_exists = SYR}
 		}
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_masters_of_asia_17
+				always = no
 				NOT = {
 			has_country_flag = PRC_slo_influence
 					SLO = {
