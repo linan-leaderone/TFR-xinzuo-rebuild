@@ -2948,7 +2948,15 @@ shared_focus = {
 	}
 	}
 	available = {	
-has_country_flag = ecwar1145_flag
+			OR = {
+	FPR = {is_ally_with = PRC}
+	FPR = {is_ally_with = SOV}
+	FRA = {is_ally_with = PRC}
+	FRA = {is_ally_with = SOV}
+			NOT = {
+				country_exists = FRA
+			}
+			}
 		SOV = {totalitarian_socialist > 0.4}
 	OR = {
 		has_global_flag = SOV_first_nato_war_victory
