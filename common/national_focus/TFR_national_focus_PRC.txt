@@ -2209,6 +2209,10 @@ shared_focus = {
 			has_completed_focus = PRC_masters_of_asia_1
 	}
 	completion_reward = { 
+		country_event = { 
+			id = PRC_MAO1.31
+			days = 1
+		}
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 50
@@ -2221,6 +2225,14 @@ shared_focus = {
 			}
 	    }
 	    hidden_effect = {
+		country_event = { 
+			id = PRC_MAO1.32
+			days = 3
+		}
+		country_event = { 
+			id = PRC_MAO1.33
+			days = 70
+		}
 			
 			every_state = {
 				limit = {
@@ -2263,6 +2275,15 @@ shared_focus = {
 	    focus = PRC_niaolong_6
 	}
 	
+		select_effect = {
+			hidden_effect = {
+	
+			country_event = {
+				id = PRC_MAO1.34
+				days = 30
+			}
+				}
+				}
 	ai_will_do = {
 	    factor = 100
 	}
@@ -3056,7 +3077,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_masters_of_asia_4
 	x = -7
 	y = 4
-	cost = 5
+	cost = 10
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -3071,15 +3092,12 @@ shared_focus = {
 	}
 	}
 	available = {
-		 if = {
-			limit = {
-				has_country_flag = PRC_new_left_win
-			}
+				has_completed_focus = PRC_korean_economic_assistence
+				has_completed_focus = PRC_niaolong_6
 			OR = {
 				has_completed_focus = PRC_chinese_socialist_dream
 				has_completed_focus = PRC_towards_a_digital_communism
 			}
-		}
 	}
 	prerequisite = {
 		 focus = PRC_masters_of_asia_5 

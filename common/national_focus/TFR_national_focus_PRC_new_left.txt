@@ -10402,10 +10402,8 @@ remove_ideas = militia_looting
 			focus = PRC_niaolong_5
 		}
 		available = {
-		OR = {
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
-		}
 			has_completed_focus = PRC_niaolong_3
 		}
 		completion_reward = {
@@ -10460,14 +10458,12 @@ remove_ideas = militia_looting
 			focus = PRC_niaolong_4
 		}
 		available = {
-		OR = {
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_zhang_hongliang = {is_country_leader = yes}}
 					NOT = {	PRC_hu_chunhua = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
-		}
 			has_completed_focus = PRC_niaolong_3
 		}
 		completion_reward = {
@@ -11499,10 +11495,8 @@ remove_ideas = militia_looting
 		}
 		available = {
 		  
-		OR = {
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
-		}
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -11872,7 +11866,6 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
-		OR = {
 						PRC_bo_xilai = {is_country_leader = yes}
 						has_completed_focus = PRC_the_Flower_of_Freedom_4
 						has_completed_focus = PRC_reliable_politburo
@@ -11881,8 +11874,6 @@ has_country_leader = {
 						PRC_qin_hui = {is_country_leader = yes}
 						PRC_yao_xinzhong = {is_country_leader = yes}
 						PRC_kong_qingdong = {is_country_leader = yes}
-		}
-		  
 		}
 		completion_reward = {
 			change_economy_type_ZZZ_nailong_economy1 = yes

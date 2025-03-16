@@ -311,7 +311,7 @@ country_event = {
 		name = PRC_MAO.11.a
 	
 			hidden_effect = {
-
+add_ideas = low_training
 change_government_type_revolutionary_front = yes
 				HKN = {set_cosmetic_tag = PRC_PLA_PANLUAN}
 				country_event = {
@@ -592,7 +592,26 @@ set_cosmetic_tag = PRC_GH
 		set_politics = {
 			ruling_party = libertarian_socialist
 			elections_allowed = yes
-		}	
+		}
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_social_democrat1_party_long
+				name = PRC_cpc_social_democrat1_party
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialist_libsoc1
+				name = PRC_cpc_libertarian_socialist_libsoc1_short
+			}
 }
 		
 
@@ -616,6 +635,14 @@ set_cosmetic_tag = PRC_GH
 		end_coalition = yes
 			set_temp_variable = {
 				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
 			}
 			add_to_coalition = yes
 			set_party_name = {

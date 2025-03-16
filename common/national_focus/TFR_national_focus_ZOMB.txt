@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 20
-			tag = HKN
+			tag = HKNNN
 			MAO_SS = {is_country_leader = yes}
 		}
 	}

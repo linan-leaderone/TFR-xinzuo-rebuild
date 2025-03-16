@@ -5,6 +5,24 @@ sound = {
 	always_load = yes
 }
 sound = {
+	name = "XCQA"
+	file = "menu/XCQA.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "XCQB"
+	file = "menu/XCQB.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "XCQC"
+	file = "menu/XCQC.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
 	name = "ecwar"
 	file = "menu/ecwar.wav"
 	volume = 1

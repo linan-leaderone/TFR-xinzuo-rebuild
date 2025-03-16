@@ -1,8 +1,24 @@
 soundeffect =
 {
-	name = "HDFMSQ"
+	name = "XCQA"
 	sounds = {
-		sound = "HDFMSQ"
+		sound = "XCQA"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "XCQB"
+	sounds = {
+		sound = "XCQB"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "XCQC"
+	sounds = {
+		sound = "XCQC"
 	}
 	volume = 1
 }

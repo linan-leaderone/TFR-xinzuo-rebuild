@@ -1014,6 +1014,18 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_31
         is_triggered_only = yes
         fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = XCQB
+				scoped_play_song = "one_minute_of_silence"
+			}
+			
+		}
+	}
         option = {
             name = PRC_MAO1.31.a
         }
@@ -1027,6 +1039,18 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_32
         is_triggered_only = yes
         fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = XCQA
+				scoped_play_song = "one_minute_of_silence"
+			}
+			
+		}
+	}
         option = {
             name = PRC_MAO1.32.a
         }
@@ -1040,6 +1064,18 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_33
         is_triggered_only = yes
         fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = XCQC
+				scoped_play_song = "one_minute_of_silence"
+			}
+			
+		}
+	}
         option = {
             name = PRC_MAO1.33.a
         }
@@ -1913,5 +1949,14 @@ set_country_flag = market_desc_de
         fire_only_once = yes
         option = {
             name = PRC_MAO1.100.a
+PRC_mao_yuanxin = {set_character_name = PRC_mao_yuanxin }
+PRC_han_dongfang = {set_character_name = PRC_han_dongfang }
+PRC_renda = {set_character_name = PRC_renda }
+PRC_qin_hui = {set_character_name = PRC_qin_hui }
+PRC_yao_xinzhong = {set_character_name = PRC_yao_xinzhong }
+PRC_zhang_hongliang = {set_character_name = PRC_zhang_hongliang }
+PRC_ren_chonghao = {set_character_name = PRC_ren_chonghao }
+PRC_kong_qingdong = {set_character_name = PRC_kong_qingdong }
+PRC_han_deqiang = {set_character_name = PRC_han_deqiang }
         }
     }
