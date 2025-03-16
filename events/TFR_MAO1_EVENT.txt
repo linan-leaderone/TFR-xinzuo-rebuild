@@ -1014,18 +1014,6 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_31
         is_triggered_only = yes
         fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				scoped_sound_effect = XCQB
-				scoped_play_song = "one_minute_of_silence"
-			}
-			
-		}
-	}
         option = {
             name = PRC_MAO1.31.a
         }
@@ -1045,7 +1033,7 @@ set_country_flag = market_desc_de
 				limit = {
 					is_ai = no
 				}
-				scoped_sound_effect = XCQA
+				scoped_sound_effect = XCQB
 				scoped_play_song = "one_minute_of_silence"
 			}
 			
@@ -1070,7 +1058,7 @@ set_country_flag = market_desc_de
 				limit = {
 					is_ai = no
 				}
-				scoped_sound_effect = XCQC
+				scoped_sound_effect = XCQA
 				scoped_play_song = "one_minute_of_silence"
 			}
 			
@@ -1089,6 +1077,18 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_34
         is_triggered_only = yes
         fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = XCQC
+				scoped_play_song = "one_minute_of_silence"
+			}
+			
+		}
+	}
         option = {
             name = PRC_MAO1.34.a
         }
