@@ -1,4 +1,10 @@
 sound = {
+	name = "HDFMSQ"
+	file = "menu/HDFMSQ.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
 	name = "ecwar"
 	file = "menu/ecwar.wav"
 	volume = 1

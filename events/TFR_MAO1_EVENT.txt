@@ -959,6 +959,12 @@ traits = { 
         fire_only_once = yes
         option = {
             name = PRC_MAO1.28.a
+set_country_flag = plan_desc_de
+        }
+        option = {
+            name = PRC_MAO1.28.b
+set_country_flag = market_desc_de
+
         }
     }
 
@@ -972,6 +978,18 @@ traits = { 
         fire_only_once = yes
         option = {
             name = PRC_MAO1.29.a
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = HDFMSQ
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+			country_event = {
+				id = PRC_MAO1.30
+			}
         }
     }
 

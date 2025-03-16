@@ -581,6 +581,9 @@ country_event = {
 	option = {
 		name = PRC_MAO.17.a
 	
+		trigger = {
+has_country_flag = plan_desc_de
+		}
 			complete_national_focus = PRC_the_Flower_of_Freedom_3
 	
 		hidden_effect = {
@@ -597,7 +600,10 @@ set_cosmetic_tag = PRC_GH
 }
 	option = {
 		name = PRC_MAO.17.b
-	
+		
+		trigger = {
+has_country_flag = market_desc_de
+		}
 			complete_national_focus = PRC_the_Flower_of_Freedom_4
 	
 		hidden_effect = {

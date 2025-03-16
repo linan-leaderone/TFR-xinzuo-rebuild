@@ -1,5 +1,13 @@
 soundeffect =
 {
+	name = "HDFMSQ"
+	sounds = {
+		sound = "HDFMSQ"
+	}
+	volume = 1
+}
+soundeffect =
+{
 	name = "acdzs"
 	sounds = {
 		sound = "acdzs"

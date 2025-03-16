@@ -63,25 +63,25 @@ focus_tree = {
 		select_effect = {
 			hidden_effect = {
 	
-			#country_event = {
-			#	id = PRC_MAO1.25
-			#}
-			#country_event = {
-			#	id = PRC_MAO1.26
-			#	days = 7
-			#}
-			#country_event = {
-			#	id = PRC_MAO1.27
-			#	days = 14
-			#}
-			#country_event = {
-			#	id = PRC_MAO1.28
-			#	days = 21
-			#}
-			#country_event = {
-			#	id = PRC_MAO1.29
-			#	days = 28
-			#}
+			country_event = {
+				id = PRC_MAO1.25
+			}
+			country_event = {
+				id = PRC_MAO1.26
+				days = 7
+			}
+			country_event = {
+				id = PRC_MAO1.27
+				days = 14
+			}
+			country_event = {
+				id = PRC_MAO1.28
+				days = 21
+			}
+			country_event = {
+				id = PRC_MAO1.29
+				days = 28
+			}
 				}
 				}
 		available_if_capitulated = yes

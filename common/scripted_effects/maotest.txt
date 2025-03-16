@@ -47,7 +47,7 @@ if = {
 
 if = {
     limit = {
-       NOT = {has_idea = red_noble_idea_5 }
+       has_idea = red_noble_idea_5 
     }
         remove_ideas = red_noble_idea_5
 }
@@ -89,6 +89,7 @@ if = {
 
 
 
+}
 }
 red_noble_idea_xueruo = {
 
