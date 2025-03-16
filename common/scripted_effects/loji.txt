@@ -1,0 +1,93 @@
+long_march_Favorability_add = {
+add_to_variable = { loji_manyidu_T = 10 }
+add_to_variable = { mzd_taidu = 1 }
+add_to_variable = { jjtz_taidu  = 1 }
+
+}
+long_march_Favorability_reduce = {
+add_to_variable = { loji_manyidu_T = -10 }
+add_to_variable = { mzd_taidu = -1 }
+add_to_variable = { jjtz_taidu  = -1 }
+}
+loji_manyidu_change = {
+			if = {
+				limit = {
+		OR = {
+			has_government = totalitarian_socialist
+			has_government = communist
+			has_government = libertarian_socialist
+		}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 2 }
+}
+			if = {
+				limit = {
+			NOT = {has_government = social_democrat}
+			NOT = {has_government = conservative}
+			NOT = {has_government = authoritarian_democrat}
+			NOT = {has_government = totalitarian_socialist}
+			NOT = {has_government = communist}
+			NOT = {has_government = libertarian_socialist}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -2 }
+}
+
+			if = {
+				limit = {
+		OR = {
+			has_idea = red_noble_idea_0
+			has_idea = red_noble_idea_1
+			has_idea = red_noble_idea_2
+		}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+}
+			if = {
+				limit = {
+			NOT = {has_idea = red_noble_idea_0}
+			NOT = {has_idea = red_noble_idea_1}
+			NOT = {has_idea = red_noble_idea_2}
+			NOT = {has_idea = red_noble_idea_3}
+			NOT = {has_idea = red_noble_idea_4}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 1 }
+}
+
+			if = {
+				limit = {
+					check_variable = { jjtz_taidu = 2 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 1 }
+}
+			if = {
+				limit = {
+					check_variable = { jjtz_taidu = 0 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+}
+			if = {
+				limit = {
+					check_variable = { mzd_taidu = 2 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 1 }
+}
+			if = {
+				limit = {
+					check_variable = { mzd_taidu = 1 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+}
+			if = {
+				limit = {
+					check_variable = { mzd_taidu = 3 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -1.5 }
+}
+
+add_to_variable = { loji_manyidu_T = loji_manyidu_change_shuzhi }
+
+				activate_mission = PRC_loji_manyidu_change_1
+
+                set_variable = { loji_manyidu_change_shuzhi = 0 }
+
+}

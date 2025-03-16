@@ -1,0 +1,384 @@
+defined_text = {
+	name = PRC1_loji_category_scripted_loc
+	text = {
+		trigger = {
+			NOT = {has_idea = PRC_the_long_march_2_idea}
+			NOT = {has_idea = PRC_the_long_march_1_idea}
+		}
+		localization_key = PRC1_loji_category_scripted_loc1
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_1_idea
+		}
+		localization_key = PRC1_loji_category_scripted_loc2
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+		}
+		localization_key = PRC1_loji_category_scripted_loc3
+	}
+}
+defined_text = {
+	name = PRC1_loji_banner_loc
+	text = {
+		trigger = {
+			NOT = {has_idea = PRC_the_long_march_2_idea}
+			NOT = {has_idea = PRC_the_long_march_1_idea}
+		}
+		localization_key = PRC1_loji_banner0
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_1_idea
+		}
+		localization_key = PRC1_loji_banner1
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			NOT = {has_idea = PRC_ai_changzheng_core}
+		}
+		localization_key = PRC1_loji_banner2
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 80
+    compare = greater_than_or_equals
+}
+
+		}
+		localization_key = PRC1_loji_banner3
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 80
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = greater_than_or_equals
+}
+
+		}
+		localization_key = PRC1_loji_banner4
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 40
+    compare = greater_than_or_equals
+}
+
+		}
+		localization_key = PRC1_loji_banner5
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 40
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 20
+    compare = greater_than_or_equals
+}
+
+		}
+		localization_key = PRC1_loji_banner6
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 20
+    compare = less_than
+}
+		}
+		localization_key = PRC1_loji_banner7
+	}
+}
+defined_text = {
+	name = PRC1_loji_category_desc_scripted_loc
+	text = {
+		trigger = {
+			NOT = {has_idea = PRC_the_long_march_2_idea}
+			NOT = {has_idea = PRC_the_long_march_1_idea}
+		}
+		localization_key = PRC1_loji_category_desc_scripted_loc1
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_1_idea
+		}
+		localization_key = PRC1_loji_category_desc_scripted_loc2
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			NOT = {has_idea = PRC_ai_changzheng_core}
+		}
+		localization_key = PRC1_loji_category_desc_scripted_loc3
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+		}
+		localization_key = PRC1_loji_category_desc_scripted_loc31
+	}
+}
+defined_text = {
+	name = PRC_loji_category_desc_yijian1_loc
+	text = {
+		trigger = {
+			check_variable = { mzd_taidu = 0 }
+		}
+		localization_key = PRC_loji_category_desc_yijian1_loc1
+	}
+	text = {
+		trigger = {
+			check_variable = { mzd_taidu = 1 }
+		}
+		localization_key = PRC_loji_category_desc_yijian1_loc2
+	}
+	text = {
+		trigger = {
+			check_variable = { mzd_taidu = 2 }
+		}
+		localization_key = PRC_loji_category_desc_yijian1_loc3
+	}
+	text = {
+		trigger = {
+			check_variable = { mzd_taidu = 3 }
+		}
+		localization_key = PRC_loji_category_desc_yijian1_loc4
+	}
+}
+defined_text = {
+	name = PRC_loji_category_desc_yijian4_loc
+	text = {
+		trigger = {
+		OR = {
+			has_government = totalitarian_socialist
+			has_government = communist
+			has_government = libertarian_socialist
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian4_loc1
+	}
+	text = {
+		trigger = {
+		OR = {
+			has_government = social_democrat
+			has_government = conservative
+			has_government = authoritarian_democrat
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian4_loc2
+	}
+	text = {
+		trigger = {
+			NOT = {has_government = social_democrat}
+			NOT = {has_government = conservative}
+			NOT = {has_government = authoritarian_democrat}
+			NOT = {has_government = totalitarian_socialist}
+			NOT = {has_government = communist}
+			NOT = {has_government = libertarian_socialist}
+		}
+		localization_key = PRC_loji_category_desc_yijian4_loc3
+	}
+}
+defined_text = {
+	name = PRC_loji_category_desc_yijian3_loc
+	text = {
+		trigger = {
+		OR = {
+			has_idea = red_noble_idea_0
+			has_idea = red_noble_idea_1
+			has_idea = red_noble_idea_2
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian3_loc1
+	}
+	text = {
+		trigger = {
+		OR = {
+			has_idea = red_noble_idea_3
+			has_idea = red_noble_idea_4
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian3_loc2
+	}
+	text = {
+		trigger = {
+			NOT = {has_idea = red_noble_idea_0}
+			NOT = {has_idea = red_noble_idea_1}
+			NOT = {has_idea = red_noble_idea_2}
+			NOT = {has_idea = red_noble_idea_3}
+			NOT = {has_idea = red_noble_idea_4}
+		}
+		localization_key = PRC_loji_category_desc_yijian3_loc3
+	}
+}
+defined_text = {
+	name = PRC_loji_category_desc_yijian2_loc
+	text = {
+		trigger = {
+			check_variable = { jjtz_taidu = 0 }
+		}
+		localization_key = PRC_loji_category_desc_yijian2_loc1
+	}
+	text = {
+		trigger = {
+			check_variable = { jjtz_taidu = 1 }
+		}
+		localization_key = PRC_loji_category_desc_yijian2_loc2
+	}
+	text = {
+		trigger = {
+			check_variable = { jjtz_taidu = 2 }
+		}
+		localization_key = PRC_loji_category_desc_yijian2_loc3
+	}
+}
+defined_text = {
+	name = PRC_loji_category_desc_manyidu_loc
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 80
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = PRC1_loji_category_desc_manyidu_loc1
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 80
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = PRC1_loji_category_desc_manyidu_loc2
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 40
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = PRC1_loji_category_desc_manyidu_loc3
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 40
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 20
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = PRC1_loji_category_desc_manyidu_loc4
+	}
+	text = {
+		trigger = {
+			has_idea = PRC_the_long_march_2_idea
+			has_idea = PRC_ai_changzheng_core
+check_variable = {
+    var = loji_manyidu_T
+    value = 20
+    compare = less_than
+}
+		}
+		localization_key = PRC1_loji_category_desc_manyidu_loc5
+	}
+}
+defined_text = {
+	name = PRC1_loji_manyidu_loc
+	text = {
+		trigger = {
+check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = PRC1_loji_manyidu_loc1
+	}
+	text = {
+		trigger = {
+check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = less_than
+}
+check_variable = {
+    var = loji_manyidu_T
+    value = 20
+    compare = greater_than_or_equals
+}
+		}
+		localization_key = PRC1_loji_manyidu_loc2
+	}
+	text = {
+		trigger = {
+check_variable = {
+    var = loji_manyidu_T
+    value = 20
+    compare = less_than
+}
+		}
+		localization_key = PRC1_loji_manyidu_loc3
+	}
+}

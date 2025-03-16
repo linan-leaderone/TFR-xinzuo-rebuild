@@ -43,6 +43,84 @@ add_ideas = 	BRM_civil_war_idea1
 
 }
 
+			if = { #GAW_militia_jap2
+				limit = {
+
+				HKN = {PRC_He_Weidong = {is_country_leader = yes}}
+
+					FROM.FROM = { 
+							state = 1215
+
+					}
+						FROM = { tag = HKN}
+
+						ROOT = { tag = PRC }
+				}
+				PRC = {white_peace = HKN}
+    HKN = {retire_character = PRC_He_Weidong}
+    HKN = {retire_character = PRC_PRC_Xu_Qiliang}
+			PRC = {country_event = {
+				id = PRC_MAO1.7
+				days = 7
+			}}
+
+
+
+PRC = {annex_country = {
+								target = HKN
+								transfer_troops = no
+							}}
+			every_state = {
+				limit = {
+					is_core_of = HKN
+				}
+			    remove_core_of = HKN
+		    }	
+
+					set_global_flag = skip_default_capitulation
+
+				}
+
+			if = { #GAW_militia_jap2
+				limit = {
+
+				HKN = {PRC_Xu_Deqing = {is_country_leader = yes}}
+
+					FROM.FROM = { 
+							state = 1226
+
+					}
+						FROM = { tag = HKN}
+
+						ROOT = { tag = PRC }
+				}
+    HKN = {retire_character = PRC_Han_Weiguo}
+    HKN = {retire_character = PRC_Xu_Deqing}
+    HKN = {retire_character = PRC_Lin_Xiangyang}
+    HKN = {retire_character = PRC_Huang_Ming}
+    HKN = {retire_character = PRC_Yi_Xiaoguang}
+    HKN = {retire_character = PRC_Zhu_Shengling}
+
+				PRC = {white_peace = HKN}
+			PRC = {country_event = {
+				id = PRC_MAO1.5 
+				days = 7
+			}}
+
+PRC = {annex_country = {
+								target = HKN
+								transfer_troops = no
+							}}
+			every_state = {
+				limit = {
+					is_core_of = HKN
+				}
+			    remove_core_of = HKN
+		    }	
+
+					set_global_flag = skip_default_capitulation
+
+				}
 
 
 			if = { #GAW_militia_jap2
@@ -207,6 +285,20 @@ add_ideas = 	BRM_civil_war_idea1
 	ROJ = {
 add_ideas = duliyuanjing
 }
+	PRK = {
+	change_economy_type_command_economy = yes
+}
+	VIN = {
+change_government_type_presidential_dictatorship = yes
+}
+	LAO = {
+change_government_type_presidential_dictatorship = yes
+}
+	CUB = {
+change_government_type_presidential_dictatorship = yes
+change_economy_type_party_state_capitalism = yes
+
+}
 	PRC = {
 
 				1161 = {
@@ -302,6 +394,7 @@ add_ideas = 	BRM_civil_war_idea1
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 						ROOT = {load_focus_tree = generic_focus}
@@ -362,6 +455,45 @@ HKN = {annex_country = {
 
 				if = {
 					limit = {
+						HKN = {PRC_Wu_Yanan = {is_country_leader = yes}}
+					}
+    HKN = {retire_character = PRC_Wang_Hai}
+    HKN = {retire_character = PRC_Wu_Yanan}
+    HKN = {retire_character = PRC_Wang_Xiubin}
+			PRC = {country_event = {
+				id = PRC_MAO1.4 
+				days = 7
+			}}
+					}
+
+				if = {
+					limit = {
+						HKN = {PRC_Wang_Qiang = {is_country_leader = yes}}
+					}
+    HKN = {retire_character = PRC_Wang_Qiang}
+    HKN = {retire_character = PRC_Li_Qiaoming}
+    HKN = {retire_character = PRC_Li_Yujie}
+    HKN = {retire_character = PRC_Ding_Laihang}
+    HKN = {retire_character = PRC_yuan_yubai}
+    HKN = {retire_character = PRC_Hu_Zhongming}
+			PRC = {country_event = {
+				id = PRC_MAO1.6 
+				days = 7
+			}}
+					}
+
+				if = {
+					limit = {
+						HKN = {PRC_Wu_Shenzhou = {is_country_leader = yes}}
+					}
+    HKN = {retire_character = PRC_Wu_Shenzhou}
+			PRC = {country_event = {
+				id = PRC_MAO.96
+				days = 4
+			}}
+					}
+				if = {
+					limit = {
 						PRC = {PRC_bo_xilai = {is_country_leader = yes}}
 					}
 PRC = {country_event = PRC_MAO.191}
@@ -378,11 +510,9 @@ PRC = {country_event = PRC_MAO.188}
 						PRC = {PRC_long_march = {is_country_leader = yes}}
 						NOT = {PRC = {has_country_flag = end_of_zombie_mao}}
 					}
-PRC = {country_event = PRC_MAO.189}
-					}
 PRC = {
-
-				add_to_variable = {
+country_event = PRC_MAO.189
+		add_to_variable = {
 					var = AZOM_army_defence_factor_dynamic_var
 					value = -3
 				}			
@@ -406,11 +536,23 @@ PRC = {
 					var = AZOM_political_power_cost_dynamic_var
 					value = 1
 				}	
+}
+					}
+
+						PRC = {white_peace = HKN}
+PRC = {
+
+		
 annex_country = {
 								target = HKN
 								transfer_troops = no
 							}}
-		
+			every_state = {
+				limit = {
+					is_core_of = HKN
+				}
+			    remove_core_of = HKN
+		    }	
 
 					set_global_flag = skip_default_capitulation
 				}
@@ -448,6 +590,7 @@ HKN = {annex_country = {
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 
@@ -471,6 +614,7 @@ HKN = {annex_country = {
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 
@@ -494,6 +638,7 @@ HKN = {annex_country = {
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 
@@ -517,6 +662,7 @@ HKN = {annex_country = {
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 
@@ -540,6 +686,7 @@ HKN = {annex_country = {
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 
@@ -553,6 +700,31 @@ HKN = {annex_country = {
 				if = {
 					limit = {
 						
+						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}						
+						PRC = {has_completed_focus =PRC_advanced_economic_planning_1}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
+						}
+					}
+
+		
+						ROOT = {
+			
+change_government_type_communist_party_state = yes
+
+						}
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+						
 						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
 						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
 						FROM = {
@@ -563,6 +735,7 @@ HKN = {annex_country = {
 						}
 						ROOT = {
 							NOT = {original_tag = PRC}
+							NOT = {original_tag = HKN}
 						}
 					}
 
@@ -570,6 +743,7 @@ HKN = {annex_country = {
 						ROOT = {
 			add_ideas = PRC_future_of_cyber_communism_idea_1
 	change_economy_type_ZZZ_OGAS_socialism1 = yes
+
 						}
 					set_global_flag = skip_default_capitulation
 				}
@@ -1453,8 +1627,13 @@ release_autonomy = {
 			autonomy_state = autonomy_tongzhi
 			freedom_level = 0.1
 			}
+			transfer_state = 876	
 }
 						JAP = {
+annex_country = {
+								target = SHK
+								transfer_troops = yes
+							}
 						load_focus_tree = generic_focus
                 inherit_technology = PRC
 				remove_ideas = PRC_unwilling_ally	

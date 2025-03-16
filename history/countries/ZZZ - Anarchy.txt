@@ -19,13 +19,14 @@ add_ideas = duliyuanjing_1
 	TRG = {
 add_ideas = duliyuanjing_1
 }
-	PRK = {set_politics = {	
+	PRK = {set_politics = {
 		ruling_party = nationalist
 		last_election = "2017.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
-
+	change_economy_type_command_economy = yes
+change_government_type_fascist_dictatorship = yes
 	set_popularities = {
 		social_democrat = 5
 		national_socialist = 10
@@ -37,6 +38,7 @@ set_party_name = { ideology = fascist long_name = PRK1_party_long name = PRK1_pa
 }
 
 	LAO = {
+change_government_type_presidential_dictatorship = yes
 	set_politics = {
 		ruling_party = authoritarian_democrat
 		last_election = "2018.1.1"
@@ -86,6 +88,7 @@ set_party_name = { ideology = fascist long_name = PRK1_party_long name = PRK1_pa
 set_party_name = { ideology = authoritarian_democrat long_name = LAO_communist11122_party_long name = LAO_communist11122_party_long }
 }
 	VIN = {
+change_government_type_presidential_dictatorship = yes
 	set_politics = {
 		ruling_party = authoritarian_democrat
 		last_election = "2018.1.1"
@@ -140,6 +143,7 @@ set_party_name = { ideology = authoritarian_democrat long_name = VIN_communist11
 }
 
 	CUB = {
+change_government_type_presidential_dictatorship = yes
 	set_politics = {
 		ruling_party = social_democrat
 		last_election = "2018.1.1"
@@ -178,6 +182,9 @@ set_party_name = { ideology = authoritarian_democrat long_name = VIN_communist11
 set_party_name = { ideology = social_democrat long_name = CUB_communist11122_party_long name = CUB_communist11122_party_long }
 }
 	PRC = {
+change_government_type_presidential_dictatorship = yes
+add_ideas = PRC_Chinese_Exam_Oriented_Education
+add_ideas = red_noble_idea_1
 	set_politics = {
 		ruling_party = nationalist
 		last_election = "2018.1.1"
@@ -240,6 +247,7 @@ set_party_name = { ideology = national_socialist long_name = PRC_communist11144_
 				ideology = market_socialism_1
 				expire = "1.1.1.1"
 				traits = {
+hos_red_dragon_rider
 				}
 			}
 		}
@@ -250,6 +258,7 @@ set_party_name = { ideology = national_socialist long_name = PRC_communist11144_
 				ideology = market_socialism_2
 				expire = "1.1.1.1"
 				traits = {
+hos_red_dragon_rider
 				}
 			}
 		}
@@ -260,6 +269,7 @@ set_party_name = { ideology = national_socialist long_name = PRC_communist11144_
 				ideology = neonazism
 				expire = "1.1.1.1"
 				traits = {
+hos_red_dragon_rider
 				}
 			}
 		}

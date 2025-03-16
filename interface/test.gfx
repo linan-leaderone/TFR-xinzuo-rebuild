@@ -1,0 +1,617 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pie_chart_segment"
+		texturefile = "gfx/test.dds"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_pie_chart_party"
+		texturefile = "gfx/test_0.dds"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_changzhengstateanniu_4"
+		texturefile = "gfx/country/PRC/second_changzheng/xuanxiang4.dds"
+	}
+	spriteType = {
+		name = "GFX_changzhengstateanniu_3"
+		texturefile = "gfx/country/PRC/second_changzheng/xuanxiang3.dds"
+	}
+	spriteType = {
+		name = "GFX_changzhengstateanniu_1"
+		texturefile = "gfx/country/PRC/second_changzheng/xuanxiang1.dds"
+	}
+	spriteType = {
+		name = "GFX_changzhengstateanniu_2"
+		texturefile = "gfx/country/PRC/second_changzheng/xuanxiang2.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng_close"
+		texturefile = "gfx/country/PRC/second_changzheng/changzhengclose.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng_close"
+		texturefile = "gfx/country/PRC/second_changzheng/changzhengclose.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng02"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng02.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng03"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng03.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng01"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng01.dds"
+	}
+	spriteType = {
+		name = "GFX_raj_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/yindu.dds"
+	}
+	spriteType = {
+		name = "GFX_afg_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/yilang.dds"
+	}
+	spriteType = {
+		name = "GFX_beg_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/baergan.dds"
+	}
+	spriteType = {
+		name = "GFX_fra_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/yuenan.dds"
+	}
+	spriteType = {
+		name = "GFX_daxi_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/daxi.dds"
+	}
+	spriteType = {
+		name = "GFX_sulian_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/suyi.dds"
+	}
+	spriteType = {
+		name = "GFX_rbdg_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/manzhou.dds"
+	}
+	spriteType = {
+		name = "GFX_tib_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/tib.dds"
+	}
+	spriteType = {
+		name = "GFX_kmt_slfw"
+		texturefile = "gfx/country/PRC/second_changzheng/KMT.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng2"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng2.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng3"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng3.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng4"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng4.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng5"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng5.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng6"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng6.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng7"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng7.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng8"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng8.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng9"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng9.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng11"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng11.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng12"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng12.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng13"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng13.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng14"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng14.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng15"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng15.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng16"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng16.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng17"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng17.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng18"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng18.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng19"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng19.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng21"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng21.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng22"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng22.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng23"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng23.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng24"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng24.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng25"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng25.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng26"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng26.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng27"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng27.dds"
+	}
+	spriteType = {
+		name = "GFX_hongjunbu1"
+		texturefile = "gfx/country/PRC/second_changzheng/hongjunbu1.dds"
+	}
+	spriteType = {
+		name = "GFX_hongjunbu2"
+		texturefile = "gfx/country/PRC/second_changzheng/hongjunbu2.dds"
+	}
+	spriteType = {
+		name = "GFX_hongjunbu3"
+		texturefile = "gfx/country/PRC/second_changzheng/hongjunbu3.dds"
+	}
+	spriteType = {
+		name = "GFX_hongjunbu4"
+		texturefile = "gfx/country/PRC/second_changzheng/hongjunbu4.dds"
+	}
+	spriteType = {
+		name = "GFX_changzhenganniu"
+		texturefile = "gfx/country/PRC/second_changzheng/PRC_STAR.dds"
+	}
+	spriteType = {
+		name = "GFX_changzheng_JIEMIAN"
+		texturefile = "gfx/country/PRC/second_changzheng/changzheng.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju"
+		texturefile = "gfx/country/ITA/kaiju.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju1"
+		texturefile = "gfx/country/ITA/kaiju1.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_YBL1"
+		texturefile = "gfx/country/ITA/RRBY.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_ALB1"
+		texturefile = "gfx/country/ITA/RALB.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BER4"
+		texturefile = "gfx/country/ITA/BEG4.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_MET"
+		texturefile = "gfx/country/ITA/MET.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_YBL2"
+		texturefile = "gfx/country/ITA/RRBYR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_SPR"
+		texturefile = "gfx/country/ITA/RSPA.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_AUS"
+		texturefile = "gfx/country/ITA/RAUS.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_HOL"
+		texturefile = "gfx/country/ITA/RHOL.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_MOR1"
+		texturefile = "gfx/country/ITA/RMOR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_MOR2"
+		texturefile = "gfx/country/ITA/RMORR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BEIFEI"
+		texturefile = "gfx/country/ITA/RBF.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BEL"
+		texturefile = "gfx/country/ITA/RBEL.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_FRA1"
+		texturefile = "gfx/country/ITA/FLXNZ.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_FRA11"
+		texturefile = "gfx/country/ITA/FLXNZ2.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_FRA2"
+		texturefile = "gfx/country/ITA/RFRA.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_YUG"
+		texturefile = "gfx/country/ITA/RYUG.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_GER1"
+		texturefile = "gfx/country/ITA/RGER.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_GER2"
+		texturefile = "gfx/country/ITA/RGERR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_YUG1"
+		texturefile = "gfx/country/ITA/RYUGR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BER1"
+		texturefile = "gfx/country/ITA/BER.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BER2"
+		texturefile = "gfx/country/ITA/RBEG.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BER3"
+		texturefile = "gfx/country/ITA/RBEGR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_ROM"
+		texturefile = "gfx/country/ITA/RROM.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_EGY1"
+		texturefile = "gfx/country/ITA/REGY.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_EGY2"
+		texturefile = "gfx/country/ITA/REGYY.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BUL1"
+		texturefile = "gfx/country/ITA/RBUL.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_BUL2"
+		texturefile = "gfx/country/ITA/RBULR.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_DNH1"
+		texturefile = "gfx/country/ITA/RDNH.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_DNH2"
+		texturefile = "gfx/country/ITA/RDNGH.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_GRE1"
+		texturefile = "gfx/country/ITA/RGRE.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_GRE2"
+		texturefile = "gfx/country/ITA/RGRER.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_HUN1"
+		texturefile = "gfx/country/ITA/RHUNE.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_HUN2"
+		texturefile = "gfx/country/ITA/RHUN.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_CZE1"
+		texturefile = "gfx/country/ITA/RCZER.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_CZE2"
+		texturefile = "gfx/country/ITA/RCZE.dds"
+	}
+	spriteType = {
+		name = "GFX_kaiju_POR"
+		texturefile = "gfx/country/ITA/RPOR.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA11"
+		texturefile = "gfx/country/ITA/SPA/SPA11.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA12"
+		texturefile = "gfx/country/ITA/SPA/SPA12.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA13"
+		texturefile = "gfx/country/ITA/SPA/SPA13.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA21"
+		texturefile = "gfx/country/ITA/SPA/SPA21.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA22"
+		texturefile = "gfx/country/ITA/SPA/SPA22.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA23"
+		texturefile = "gfx/country/ITA/SPA/SPA23.dds"
+	}
+spriteType = {
+	name = "GFX_SPA31"
+	texturefile = "gfx/country/ITA/SPA/SPA31.dds"
+}
+spriteType = {
+	name = "GFX_SPA32"
+	texturefile = "gfx/country/ITA/SPA/SPA32.dds"
+}
+spriteType = {
+	name = "GFX_SPA33"
+	texturefile = "gfx/country/ITA/SPA/SPA33.dds"
+}
+spriteType = {
+	name = "GFX_SPA41"
+	texturefile = "gfx/country/ITA/SPA/SPA41.dds"
+}
+spriteType = {
+	name = "GFX_SPA42"
+	texturefile = "gfx/country/ITA/SPA/SPA42.dds"
+}
+spriteType = {
+	name = "GFX_SPA43"
+	texturefile = "gfx/country/ITA/SPA/SPA43.dds"
+}
+spriteType = {
+	name = "GFX_SPA51"
+	texturefile = "gfx/country/ITA/SPA/SPA51.dds"
+}
+spriteType = {
+	name = "GFX_SPA52"
+	texturefile = "gfx/country/ITA/SPA/SPA52.dds"
+}
+spriteType = {
+	name = "GFX_SPA53"
+	texturefile = "gfx/country/ITA/SPA/SPA53.dds"
+}
+spriteType = {
+	name = "GFX_SPA61"
+	texturefile = "gfx/country/ITA/SPA/SPA61.dds"
+}
+spriteType = {
+	name = "GFX_SPA62"
+	texturefile = "gfx/country/ITA/SPA/SPA62.dds"
+}
+spriteType = {
+	name = "GFX_SPA63"
+	texturefile = "gfx/country/ITA/SPA/SPA63.dds"
+}
+spriteType = {
+	name = "GFX_SPA71"
+	texturefile = "gfx/country/ITA/SPA/SPA71.dds"
+}
+spriteType = {
+	name = "GFX_SPA72"
+	texturefile = "gfx/country/ITA/SPA/SPA72.dds"
+}
+spriteType = {
+	name = "GFX_SPA73"
+	texturefile = "gfx/country/ITA/SPA/SPA73.dds"
+}
+spriteType = {
+	name = "GFX_SPA81"
+	texturefile = "gfx/country/ITA/SPA/SPA81.dds"
+}
+spriteType = {
+	name = "GFX_SPA82"
+	texturefile = "gfx/country/ITA/SPA/SPA82.dds"
+}
+spriteType = {
+	name = "GFX_SPA83"
+	texturefile = "gfx/country/ITA/SPA/SPA83.dds"
+}
+spriteType = {
+	name = "GFX_SPA91"
+	texturefile = "gfx/country/ITA/SPA/SPA91.dds"
+}
+spriteType = {
+	name = "GFX_SPA92"
+	texturefile = "gfx/country/ITA/SPA/SPA92.dds"
+}
+spriteType = {
+	name = "GFX_SPA93"
+	texturefile = "gfx/country/ITA/SPA/SPA93.dds"
+}
+spriteType = {
+	name = "GFX_SPA111"
+	texturefile = "gfx/country/ITA/SPA/SPA111.dds"
+}
+spriteType = {
+	name = "GFX_SPA112"
+	texturefile = "gfx/country/ITA/SPA/SPA112.dds"
+}
+spriteType = {
+	name = "GFX_SPA113"
+	texturefile = "gfx/country/ITA/SPA/SPA113.dds"
+}
+spriteType = {
+	name = "GFX_SPA121"
+	texturefile = "gfx/country/ITA/SPA/SPA121.dds"
+}
+spriteType = {
+	name = "GFX_SPA122"
+	texturefile = "gfx/country/ITA/SPA/SPA122.dds"
+}
+spriteType = {
+	name = "GFX_SPA123"
+	texturefile = "gfx/country/ITA/SPA/SPA123.dds"
+}
+spriteType = {
+	name = "GFX_SPA131"
+	texturefile = "gfx/country/ITA/SPA/SPA131.dds"
+}
+spriteType = {
+	name = "GFX_SPA132"
+	texturefile = "gfx/country/ITA/SPA/SPA132.dds"
+}
+spriteType = {
+	name = "GFX_SPA133"
+	texturefile = "gfx/country/ITA/SPA/SPA133.dds"
+}
+spriteType = {
+	name = "GFX_SPA141"
+	texturefile = "gfx/country/ITA/SPA/SPA141.dds"
+}
+spriteType = {
+	name = "GFX_SPA142"
+	texturefile = "gfx/country/ITA/SPA/SPA142.dds"
+}
+spriteType = {
+	name = "GFX_SPA143"
+	texturefile = "gfx/country/ITA/SPA/SPA143.dds"
+}
+spriteType = {
+	name = "GFX_SPA151"
+	texturefile = "gfx/country/ITA/SPA/SPA151.dds"
+}
+spriteType = {
+	name = "GFX_SPA152"
+	texturefile = "gfx/country/ITA/SPA/SPA152.dds"
+}
+spriteType = {
+	name = "GFX_SPA153"
+	texturefile = "gfx/country/ITA/SPA/SPA153.dds"
+}
+spriteType = {
+	name = "GFX_SPA161"
+	texturefile = "gfx/country/ITA/SPA/SPA161.dds"
+}
+spriteType = {
+	name = "GFX_SPA162"
+	texturefile = "gfx/country/ITA/SPA/SPA162.dds"
+}
+spriteType = {
+	name = "GFX_SPA163"
+	texturefile = "gfx/country/ITA/SPA/SPA163.dds"
+}
+spriteType = {
+	name = "GFX_SPA171"
+	texturefile = "gfx/country/ITA/SPA/SPA171.dds"
+}
+spriteType = {
+	name = "GFX_SPA172"
+	texturefile = "gfx/country/ITA/SPA/SPA172.dds"
+}
+spriteType = {
+	name = "GFX_SPA173"
+	texturefile = "gfx/country/ITA/SPA/SPA173.dds"
+}
+spriteType = {
+	name = "GFX_SPA181"
+	texturefile = "gfx/country/ITA/SPA/SPA181.dds"
+}
+spriteType = {
+	name = "GFX_SPA182"
+	texturefile = "gfx/country/ITA/SPA/SPA182.dds"
+}
+spriteType = {
+	name = "GFX_SPA183"
+	texturefile = "gfx/country/ITA/SPA/SPA183.dds"
+}
+spriteType = {
+	name = "GFX_SPA191"
+	texturefile = "gfx/country/ITA/SPA/SPA191.dds"
+}
+spriteType = {
+	name = "GFX_SPA192"
+	texturefile = "gfx/country/ITA/SPA/SPA192.dds"
+}
+spriteType = {
+	name = "GFX_SPA193"
+	texturefile = "gfx/country/ITA/SPA/SPA193.dds"
+}
+spriteType = {
+	name = "GFX_SPA211"
+	texturefile = "gfx/country/ITA/SPA/SPA211.dds"
+}
+spriteType = {
+	name = "GFX_SPA212"
+	texturefile = "gfx/country/ITA/SPA/SPA212.dds"
+}
+spriteType = {
+	name = "GFX_SPA213"
+	texturefile = "gfx/country/ITA/SPA/SPA213.dds"
+}
+spriteType = {
+	name = "GFX_SPA221"
+	texturefile = "gfx/country/ITA/SPA/SPA221.dds"
+}
+spriteType = {
+	name = "GFX_SPA222"
+	texturefile = "gfx/country/ITA/SPA/SPA222.dds"
+}
+spriteType = {
+	name = "GFX_SPA223"
+	texturefile = "gfx/country/ITA/SPA/SPA223.dds"
+}
+spriteType = {
+	name = "GFX_SPA231"
+	texturefile = "gfx/country/ITA/SPA/SPA231.dds"
+}
+spriteType = {
+	name = "GFX_SPA232"
+	texturefile = "gfx/country/ITA/SPA/SPA232.dds"
+}
+spriteType = {
+	name = "GFX_SPA233"
+	texturefile = "gfx/country/ITA/SPA/SPA233.dds"
+}
+spriteType = {
+	name = "GFX_kaiju_EU1"
+	texturefile = "gfx/country/ITA/REV_EU1.dds"
+}
+spriteType = {
+	name = "GFX_kaiju_EU2"
+	texturefile = "gfx/country/ITA/rev_eu2.dds"
+}
+
+}

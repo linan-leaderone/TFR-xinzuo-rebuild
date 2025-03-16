@@ -20,7 +20,12 @@ country_event = {
 				ruling_party = totalitarian_socialist
 				elections_allowed = yes
 			}
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
 			add_ideas = PRC_mao_yuanxin_hog_1
+		}
 		}
 
 	}
@@ -71,7 +76,7 @@ country_event = {
 set_country_flag = PRC_handeqiang_hog
 			mark_focus_tree_layout_dirty = yes
 		hidden_effect = {
-
+change_government_type_theocracy = yes
 			complete_national_focus = PRC_rumaojiehe_6
 		end_coalition = yes
 
@@ -305,14 +310,36 @@ country_event = {
 	option = {
 		name = PRC_MAO.11.a
 	
+			hidden_effect = {
+
+change_government_type_revolutionary_front = yes
+				HKN = {set_cosmetic_tag = PRC_PLA_PANLUAN}
+				country_event = {
+					id = PRC_MAO1.3
+				}
+				}
 			set_politics = {
 				ruling_party = libertarian_socialist
 				elections_allowed = no
 			}
+
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
 			add_ideas = PRC_li_jinjin_hog
+			}
 		hidden_effect = {
 			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = PRC_the_Flower_of_Freedom_1
+			complete_national_focus = PRC_revive_peoples_war_mindset_4
+
+								if = {
+						limit = {
+			NOT = {has_completed_focus = PRC_baihuaqifang}
+		}
+			complete_national_focus = PRC_baihuaqifang
+			}
 		end_coalition = yes
 
 			set_country_flag = PRC_handongfang_hog
@@ -328,8 +355,18 @@ country_event = {
 		}
 			set_party_name = {
 				ideology = communist
-				long_name = PRC_communist_social_democrat_party_long
-				name = PRC_communist_social_democrat_party
+				long_name = PRC_communist_social_democrat_party
+				name = PRC_communist_social_democrat_party_long
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_social_democrat1_party_long
+				name = PRC_cpc_social_democrat1_party
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialist_libsoc1
+				name = PRC_cpc_libertarian_socialist_libsoc1_short
 			}
 			set_temp_variable = {
 				coalition_partner_var_temp = token:communist
@@ -349,10 +386,6 @@ country_event = {
 			add_to_coalition = yes
 			add_stability = -0.25
 			add_political_power = -100
-			add_popularity = {
-				ideology = communist
-				popularity = -0.1
-			}
 			add_popularity = {
 				ideology = social_democrat
 				popularity = 0.3
@@ -422,7 +455,12 @@ country_event = {
 				ruling_party = social_liberal
 				elections_allowed = yes
 			}
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
 			add_ideas = PRC_song_yongyi_hog
+}
 		hidden_effect = {
 set_cosmetic_tag = PRC_GH	
 		end_coalition = yes
@@ -450,7 +488,13 @@ country_event = {
 				ruling_party = communist
 				elections_allowed = no
 			}
+
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
 			add_ideas = PRC_xiong_hou_hog
+			}
 		hidden_effect = {
 set_cosmetic_tag = PRC_HACHIMI	
 		end_coalition = yes
@@ -569,39 +613,9 @@ set_cosmetic_tag = PRC_GH
 			}
 			add_to_coalition = yes
 			set_party_name = {
-				ideology = communist
-				long_name = PRC_communist1_social_democrat_party_long
-				name = PRC_communist1_social_democrat_party
-			}
-			set_party_name = {
 				ideology = social_democrat
 				long_name = PRC_cpc_social_democrat1_party_long
 				name = PRC_cpc_social_democrat1_party
-			}
-			set_party_name = {
-				ideology = social_liberal
-				long_name = PRC_cpc_social_liberal1_party_long
-				name = PRC_cpc_social_liberal1_party
-			}
-			set_party_name = {
-				ideology = conservative
-				long_name = PRC_cpc_conservative1_party_long
-				name = PRC_cpc_conservative1_party
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				long_name = PRC_cpc_authoritarian_democrat1_party_long
-				name = PRC_cpc_authoritarian_democrat1_party
-			}
-			set_party_name = {
-				ideology = nationalist
-				long_name = PRC_cpc_nationalist1_party_long
-				name = PRC_cpc_nationalist1_party
-			}
-			set_party_name = {
-				ideology = totalitarian_socialist
-				long_name = PRC_cpc1_rad_maoist_tot_soc1
-				name = PRC_cpc_rad1_maoist_tot_soc1_short
 			}	
 			set_party_name = {
 				ideology = libertarian_socialist
@@ -3544,6 +3558,15 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO.96.a
+    retire_character = PRC_li_zuocheng
+    retire_character = PRC_Zhang_Youxia
+    retire_character = PRC_Li_Yuchao
+    retire_character = PRC_wei_fenghe
+    retire_character = PRC_wang_ning
+    retire_character = PRC_Miao_Hua
+    retire_character = PRC_Qin_Shengxiang
+    retire_character = PRC_Dong_Jun
+    retire_character = PRC_Shen_Jinlong
 }
 
 
@@ -3776,6 +3799,7 @@ country_event = {
         option = {
                 name = PRC_MAO.111.a
 		hidden_effect = {
+change_government_type_ai_governance = yes
 			add_power_balance_value = {
 				id = PRC_maoism_power_balance
 				value = -1
@@ -3989,6 +4013,7 @@ country_event = {
         option = {
                 name = PRC_MAO.112.a
 		hidden_effect = {
+change_government_type_provisional_government = yes
 clr_country_flag = PRC_handeqiang_hog
 			mark_focus_tree_layout_dirty = yes
 			clr_country_flag = TFR_ANDEQIANG_anniu_start
@@ -5189,6 +5214,7 @@ country_event = {
         option = {
                 name = PRC_MAO.163.a
 		hidden_effect = {
+change_government_type_ai_governance = yes
 			complete_national_focus = PRC_advanced_economic_planning_1
 unlock_national_focus = PRC_revive_peoples_war_mindset_4
 unlock_national_focus = PRC_economic_computerization
@@ -5362,6 +5388,7 @@ country_event = {
                 name = PRC_MAO.164.a
 
 		hidden_effect = {
+change_government_type_ai_governance = yes
 			complete_national_focus = PRC_advanced_economic_planning_1
 unlock_national_focus = PRC_revive_peoples_war_mindset_4
 unlock_national_focus = PRC_economic_computerization
@@ -5550,6 +5577,7 @@ country_event = {
 
 		hidden_effect = {
 set_cosmetic_tag = PRC_HACHIMI
+change_government_type_presidential_dictatorship = yes
 			complete_national_focus = PRC_reliable_politburo
 			set_country_flag = TFR_xjp_start
 add_ideas = PRC_xi_jinping_hog
@@ -5945,6 +5973,7 @@ country_event = {
 
 				HKN = {
 
+change_government_type_annihilation_cult = yes
 set_cosmetic_tag = HKN_XIN
 						load_focus_tree = HKZ_ZOM_focus
 unlock_national_focus =HKZ_ZOM_7
@@ -6119,6 +6148,7 @@ set_country_flag = sangshiweiji_qidong
                 name = PRC_MAO.173.b
 			hidden_effect = {
 				HKN = {
+change_government_type_annihilation_cult = yes
 set_cosmetic_tag = HKN_XIN
 							load_focus_tree = HKZ_ZOM_focus
 unlock_national_focus =HKZ_ZOM_7
@@ -6501,6 +6531,7 @@ country_event = {
 			add_ideas = PRC_ai_changzheng_core
 	change_economy_type_ZZZ_OGAS_socialism1 = yes
 
+change_government_type_ai_governance = yes
 		end_coalition = yes
 			set_politics = {
 				ruling_party = totalitarian_socialist
@@ -6581,7 +6612,7 @@ country_event = {
 			}
 		}
 	    hidden_effect = {	
-
+change_government_type_communist_party_state = yes
 		set_country_leader_description = {
 	desc = PRC_renda_ANQ_renda
 }
@@ -6700,7 +6731,8 @@ country_event = {
         option = {
                 name = PRC_MAO.188.a	
 
-	    hidden_effect = {	
+	    hidden_effect = {		
+change_government_type_communist_party_state = yes
 		add_country_leader_role = {
 			character = PRC_renda
 			promote_leader = yes
@@ -6918,7 +6950,8 @@ add_ideas = PRC_li_qiang_hog
         }
         option = {
                 name = PRC_MAO.191.c			
-	    hidden_effect = {		
+	    hidden_effect = {			
+change_government_type_socialist_republic = yes
 add_ideas = PRC_li_qiang_hog
 		set_politics = {
 			ruling_party = social_democrat
@@ -7289,7 +7322,8 @@ country_event = {
 			}
 		}
 
-		hidden_effect = {
+		hidden_effect = {			
+change_government_type_communist_party_state = yes
 		set_country_leader_description = {
 	desc = PRC_renda_ANQ_renda
 }

@@ -1,0 +1,15 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_long_march_tiaojiao_gui"
+		position = { x=0 y=0 }	
+		size = { width=100%% height=100%% }
+
+		buttonType = {
+			name = "TFR_long_march_tiaojiao_btn"
+			spriteType = "GFX_TFR_long_march_tiaojiao_btn"
+			position = { x=0 y=600}
+			pdx_tooltip = "TFR_long_march_tiaojiao_btn_Text"
+			Orientation = "LEFT"
+		}
+		}
+		}

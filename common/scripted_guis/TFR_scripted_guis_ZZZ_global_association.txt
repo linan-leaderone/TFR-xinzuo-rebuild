@@ -1,4 +1,115 @@
 scripted_gui = {
+	TFR_government_type_countrypoliticsview_container = {
+		context_type = player_context
+		window_name = "TFR_government_type_countrypoliticsview_container"
+		parent_window_name = "countrypoliticsview"
+		triggers = {
+			TFR_no_government_type_icon_visible = {
+				NOT = {
+					has_idea = ZZZ_russian_political_system
+					has_idea = ZZZ_absolute_monarchy
+					has_idea = ZZZ_military_dictatorship
+					has_idea = ZZZ_socialist_republic
+					has_idea = ZZZ_semi_constitutional_monarchy
+					has_idea = ZZZ_constitutional_monarchy
+					has_idea = ZZZ_neo_soviet_republic
+					has_idea = ZZZ_nazi_dictatorship
+					has_idea = ZZZ_fascist_dictatorship
+					has_idea = ZZZ_revolutionary_front
+					has_idea = ZZZ_communist_party_state
+					has_idea = ZZZ_semi_presidential_system
+					has_idea = ZZZ_parliamentary_republic
+					has_idea = ZZZ_presidential_republic
+					has_idea = ZZZ_presidential_dictatorship
+					has_idea = ZZZ_ultranationalist_dictatorship
+					has_idea = ZZZ_islamic_republic
+					has_idea = ZZZ_american_presidential_republic
+					has_idea = ZZZ_provisional_government
+					has_idea = ZZZ_theocracy
+					has_idea = ZZZ_annihilation_cult
+					has_idea = ZZZ_ai_governance
+					has_idea = ZZZ_eurasianist_system
+					has_idea = ZZZ_american_peoples_dictatorship
+				}
+			}
+			TFR_russian_political_system_type_icon_visible = {
+				has_idea = ZZZ_russian_political_system
+			}			
+			TFR_chinese_political_system_type_icon_visible = {
+				has_idea = ZZZ_chinese_political_system
+			}	
+			TFR_islamic_republic_type_icon_visible = {
+				has_idea = ZZZ_islamic_republic
+			}	
+			TFR_absolute_monarchy_type_icon_visible = {
+				has_idea = ZZZ_absolute_monarchy
+			}	
+			TFR_military_dictatorship_type_icon_visible = {
+				has_idea = ZZZ_military_dictatorship
+			}	
+			TFR_socialist_republic_type_icon_visible = {
+				has_idea = ZZZ_socialist_republic
+			}	
+			TFR_semi_constitutional_monarchy_type_icon_visible = {
+				has_idea = ZZZ_semi_constitutional_monarchy
+			}		
+			TFR_constitutional_monarchy_type_icon_visible = {
+				has_idea = ZZZ_constitutional_monarchy
+			}	
+			TFR_american_presidential_republic_type_icon_visible = {
+				has_idea = ZZZ_american_presidential_republic
+			}
+			TFR_neo_soviet_republic_type_icon_visible = {
+				has_idea = ZZZ_neo_soviet_republic
+			}	
+			TFR_nazi_dictatorship_type_icon_visible = {
+				has_idea = ZZZ_nazi_dictatorship
+			}	
+			TFR_fascist_dictatorship_type_icon_visible = {
+				has_idea = ZZZ_fascist_dictatorship
+			}		
+			TFR_revolutionary_front_type_icon_visible = {
+				has_idea = ZZZ_revolutionary_front
+			}		
+			TFR_communist_party_state_type_icon_visible = {
+				has_idea = ZZZ_communist_party_state
+			}	
+			TFR_provisional_government_type_icon_visible = {
+				has_idea = ZZZ_provisional_government
+			}	
+			TFR_semi_presidential_system_type_icon_visible = {
+				has_idea = ZZZ_semi_presidential_system
+			}		
+			TFR_parliamentary_republic_type_icon_visible = {
+				has_idea = ZZZ_parliamentary_republic
+			}	
+			TFR_presidential_republic_type_icon_visible = {
+				has_idea = ZZZ_presidential_republic
+			}		
+			TFR_presidential_dictatorship_type_icon_visible = {
+				has_idea = ZZZ_presidential_dictatorship
+			}
+			TFR_ultranationalist_dictatorship_type_icon_visible = {
+				has_idea = ZZZ_ultranationalist_dictatorship
+			}		
+			TFR_annihilation_cult_type_icon_visible = {
+				has_idea = ZZZ_annihilation_cult
+			}
+			TFR_theocracy_type_icon_visible = {
+				has_idea = ZZZ_theocracy
+			}			
+			TFR_ai_governance_type_icon_visible = {
+				has_idea = ZZZ_ai_governance
+			}	
+			TFR_american_peoples_dictatorship_type_icon_visible = {
+				has_idea = ZZZ_american_peoples_dictatorship
+			}		
+			TFR_eurasianist_system_type_icon_visible = {
+				has_idea = ZZZ_eurasianist_system
+			}
+		}
+	}
+
 	economy_type_countrypoliticsview_gui = {
 		context_type = player_context
 		window_name = "TFR_economic_type_countrypoliticsview_container"
@@ -27,6 +138,14 @@ scripted_gui = {
 					has_idea = ZZZ_nailong_economy2
 					has_idea = ZZZ_OGAS_socialism1
 					has_idea = ZZZ_OGAS_socialism2
+					has_idea = ZZZ_mixed_economy
+					has_idea = ZZZ_party_state_capitalism
+					has_idea = ZZZ_state_capitalism
+					has_idea = ZZZ_america_first_capitalism
+					has_idea = ZZZ_maga_capitalism
+					has_idea = ZZZ_left_corporatism
+					has_idea = ZZZ_liberal_corporatism
+					has_idea = ZZZ_kaiser_economy
 				}
 			}
 			TFR_capitalism_type_politics_icon_visible = {
@@ -92,6 +211,30 @@ scripted_gui = {
 			TFR_nailong_economy2_type_icon_visible = {
 				has_idea = ZZZ_nailong_economy2
 			}	
+			TFR_mixed_economy_type_icon_visible = {
+				has_idea = ZZZ_mixed_economy
+			}
+			TFR_party_state_capitalism_type_icon_visible = {
+				has_idea = ZZZ_party_state_capitalism
+			}	
+			TFR_state_capitalism_type_icon_visible = {
+				has_idea = ZZZ_state_capitalism
+			}	
+			TFR_america_first_capitalism_type_icon_visible = {
+				has_idea = ZZZ_america_first_capitalism
+			}		
+			TFR_maga_capitalism_type_icon_visible = {
+				has_idea = ZZZ_maga_capitalism
+			}	
+			TFR_left_corporatism_type_icon_visible = {
+				has_idea = ZZZ_left_corporatism
+			}	
+			TFR_liberal_corporatism_type_icon_visible = {
+				has_idea = ZZZ_liberal_corporatism
+			}	
+			TFR_kaiser_economy_type_icon_visible = {
+				has_idea = ZZZ_kaiser_economy
+			}
 		}
 	}
 	global_association_countrypoliticsview_gui = {
@@ -118,6 +261,7 @@ scripted_gui = {
 					has_country_flag = pact_of_steel_member
 					has_country_flag = BTO_member
 					has_country_flag = KMGJ_member
+					has_country_flag = National_Front_Member
 				}
 			}
 			TFR_no_faction_politics_icon_visible = {
@@ -181,6 +325,9 @@ scripted_gui = {
 			}
 			TFR_AOR_politics_icon_visible = {
 				has_country_flag = AOR_member
+			}
+			TFR_national_front_politics_icon_visible = {
+				has_country_flag = National_Front_Member
 			}
 		}
 	}
@@ -247,6 +394,9 @@ NOT = {has_country_flag = KMGJ_member}
 			}
 			TFR_BTO_diplo_icon_visible = {
 				has_country_flag = BTO_member
+			}	
+			TFR_national_front_diplo_icon_visible = {
+				has_country_flag = National_Front_Member
 			}
 		}
 	}

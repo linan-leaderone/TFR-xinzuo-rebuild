@@ -1,5 +1,75 @@
 spriteTypes = {
 spriteType = {
+    name = "GFX_PRC_loji_banner1"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner1.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner2"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner2.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner3"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner3.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner4"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner4.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner5"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner5.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner6"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner6.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner7"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner7.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_PRC_loji_banner8"
+    texturefile = "gfx/MAOYUANXIN/PRC_loji_banner8.png"
+		legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "GFX_PRC_red_noble_banner"
+    texturefile = "gfx/MAOYUANXIN/GFX_PRC_red_noble_banner.png"
+		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_TFR_long_march_tiaojiao_btn"
+    texturefile = "gfx/MAOYUANXIN/loji_btn.png"
+}
+spriteType = {
+    name = "GFX_decision_changzhengbianhua"
+    texturefile = "gfx/MAOYUANXIN/changzhengbianhua.png"
+}
+spriteType = {
+    name = "GFX_idea_rgzhd"
+    texturefile = "gfx/MAOYUANXIN/rgzhd.png"
+}
+spriteType = {
+    name = "GFX_idea_red_noble_idea"
+    texturefile = "gfx/MAOYUANXIN/GFX_idea_red_noble_idea.png"
+}
+spriteType = {
+    name = "GFX_idea_PRC_Chinese_Exam_Oriented_Education"
+    texturefile = "gfx/MAOYUANXIN/PRC_Chinese_Exam_Oriented_Education.png"
+}
+spriteType = {
+    name = "GFX_idea_red_noble_idea_6"
+    texturefile = "gfx/MAOYUANXIN/GFX_idea_jingliquefa.png"
+}
+spriteType = {
     name = "GFX_PRC_MAO1_event_16"
     texturefile = "gfx/MAOYUANXIN/PRC_MAO1_event_16.png"
 }

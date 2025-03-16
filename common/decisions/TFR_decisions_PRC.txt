@@ -8524,6 +8524,7 @@ set_country_flag = PRC_yuuki_1_3
 								if = {
 						limit = {
 NOT = {has_country_flag = PRC_handeqiang_hog}
+NOT = {has_country_flag = PRC_kongqingdong_hog}
 		}
 			country_event = { 
 				id = china.668
@@ -8949,7 +8950,7 @@ PRC_foreign_policy_category = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_masters_of_asia
+				has_completed_focus = PRC_niaolong_16
 				NOT = {
 					VIN = {
 						is_in_faction = yes
@@ -8991,7 +8992,7 @@ PRC_foreign_policy_category = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_masters_of_asia
+				has_completed_focus = PRC_niaolong_16
 				NOT = {
 					SIA = {
 						is_in_faction = yes
@@ -9033,7 +9034,7 @@ PRC_foreign_policy_category = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_masters_of_asia
+				has_completed_focus = PRC_niaolong_16
 				NOT = {
 					CAM = {
 						is_in_faction = yes
@@ -9074,7 +9075,7 @@ PRC_foreign_policy_category = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_masters_of_asia
+				has_completed_focus = PRC_niaolong_16
 				NOT = {
 					LAO = {
 						is_in_faction = yes
@@ -15910,9 +15911,11 @@ ELN = {annex_country = {
 			BRM = {
 				is_in_faction = no
 			}
-			PRC = {
+			PRC = {		
+		OR = {
 				has_completed_focus = PRC_revolution_in_myanmar
-				has_country_flag = PRC_myanmar_negotiations_flag
+				has_completed_focus = PRC_niaolong_16
+			}
 				NOT = {has_completed_focus = PRC_masters_of_asia_1}
 			}
 		}

@@ -352,6 +352,8 @@ country_event = {
 	}
 	option = {
 		name = china.18.a
+                set_variable = { mzd_taidu = 0 }
+                set_variable = { jjtz_taidu = 0 }
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
@@ -9647,6 +9649,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
+change_government_type_communist_party_state = yes
 			set_politics = {
 				ruling_party = totalitarian_socialist
 				elections_allowed = no
@@ -9690,7 +9693,12 @@ country_event = {
 			}
 			add_to_coalition = yes
 
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
 			add_ideas = PRC_mao_yuanxin_hog
+		}
 set_cosmetic_tag = PRC_HACHIMI
 			add_stability = -0.25
 			add_political_power = -100
@@ -11815,17 +11823,19 @@ country_event = {
 	id = china.668
 	title = china.668.t
 	desc = china.668.d
-	picture = GFX_PRC_server_room_1
+	picture = GFX_PRC_MAO1_event_4
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = {
-	}
-	immediate = {
-	}
 	option = {
 		name = china.668.a
-		promote_character = PRC_long_march
-		set_country_flag = PRC_long_march_flag
+
+	}
+	option = {
+		name = china.668.b
+			add_ideas = PRC_ai_changzheng_core
+set_country_flag = changzheng_start_end
+loji_manyidu_change = yes
+add_to_variable = { loji_manyidu_T = 60 }
 	}
 }
 

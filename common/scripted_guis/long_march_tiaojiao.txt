@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	TFR_long_march_tiaojiao_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_long_march_tiaojiao_gui"
+
+		visible = {
+			has_country_flag = changzheng_start_end
+		}
+
+		effects = {
+			TFR_long_march_tiaojiao_btn_click = {
+				if = {
+					limit = { 
+				check_variable = { changzheng_UI_START = 1 }
+					}
+				set_variable = { changzheng_UI_START = 0 }
+				}
+				else = {
+				set_variable = { changzheng_UI_START = 1 }
+				}
+			}
+			}
+	}		
+}

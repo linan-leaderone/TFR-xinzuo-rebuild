@@ -162,7 +162,190 @@ zhongmeijingji_idea_1 = {
         personal_value_factor = -0.5
     }
 }
-					
+								
+red_noble_idea_0 = {
+    picture = red_noble_idea
+    name = PRC_red_noble_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.1
+        political_power_factor = -0.25
+        consumer_goods_factor = 0.1
+        income_growth_factor = -0.25
+        personal_value_factor = -0.1
+    }
+}								
+red_noble_idea_1 = {
+    picture = red_noble_idea
+    name = PRC_red_noble_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.08
+        political_power_factor = -0.2
+        consumer_goods_factor = 0.08
+        income_growth_factor = -0.2
+        personal_value_factor = -0.08
+    }
+}									
+red_noble_idea_2 = {
+    picture = red_noble_idea
+    name = PRC_red_noble_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.06
+        political_power_factor = -0.15
+        consumer_goods_factor = 0.06
+        income_growth_factor = -0.15
+        personal_value_factor = -0.06
+    }
+}			
+
+		PRC_Chinese_Exam_Oriented_Education = {
+			picture = PRC_Chinese_Exam_Oriented_Education
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			modifier = {
+	political_power_factor = 0.15
+	research_speed_factor = -0.15
+	industrial_capacity_factory = -0.1
+	monthly_population = -0.01
+	training_time_army_factor = 0.15
+	stability_factor = 0.15
+        income_growth_factor = 0.05
+        personal_value_factor = 0.05
+			}
+		}	
+		PRC_guoduzhentong_idea = {
+			picture = PRC_chinese_civil_war_idea
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			modifier = {
+        stability_factor = -0.15
+        political_power_factor = -0.05
+        consumer_goods_factor = 0.05
+        income_growth_factor = -0.05
+        personal_value_factor = 0.05
+			}
+		}								
+red_noble_idea_3 = {
+    picture = red_noble_idea
+    name = PRC_red_noble_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.04
+        political_power_factor = -0.1
+        consumer_goods_factor = 0.04
+        income_growth_factor = -0.1
+        personal_value_factor = -0.04
+    }
+}										
+red_noble_idea_4 = {
+    picture = red_noble_idea
+    name = PRC_red_noble_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.02
+        political_power_factor = -0.05
+        consumer_goods_factor = 0.02
+        income_growth_factor = -0.05
+        personal_value_factor = -0.02
+    }
+}											
+red_noble_idea_5 = {
+    picture = red_noble_idea
+    name = PRC_red_noble_idea_5
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.2
+        political_power_factor = -0.2
+        income_growth_factor = -0.05
+    }
+}													
+red_noble_idea_6 = {
+    picture = red_noble_idea_6
+    name = PRC_red_noble_idea_6
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+
+    removal_cost = -1
+    
+    modifier = {
+        stability_factor = -0.2
+        political_power_factor = -0.05
+    }
+}			
 zhongmeijingji_idea_2 = {
     picture = generic_world_wide_financial_crisis
     name = PRC_zhongmeijingji_idea

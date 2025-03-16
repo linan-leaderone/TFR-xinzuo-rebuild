@@ -21,6 +21,14 @@ remove_economy_types = {
 		ZZZ_OGAS_socialism2
 		ZZZ_nailong_economy1
 		ZZZ_nailong_economy2
+		ZZZ_state_capitalism
+		ZZZ_kaiser_economy
+		ZZZ_maga_capitalism
+		ZZZ_america_first_capitalism
+		ZZZ_mixed_economy
+		ZZZ_party_state_capitalism
+		ZZZ_left_corporatism
+		ZZZ_liberal_corporatism
 	}
 }
 

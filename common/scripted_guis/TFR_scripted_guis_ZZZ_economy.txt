@@ -66,6 +66,14 @@ scripted_gui = {
 					has_idea = ZZZ_nailong_economy2
 					has_idea = ZZZ_OGAS_socialism1
 					has_idea = ZZZ_OGAS_socialism2
+					has_idea = ZZZ_mixed_economy
+					has_idea = ZZZ_party_state_capitalism
+					has_idea = ZZZ_state_capitalism
+					has_idea = ZZZ_america_first_capitalism
+					has_idea = ZZZ_maga_capitalism
+					has_idea = ZZZ_left_corporatism
+					has_idea = ZZZ_liberal_corporatism
+					has_idea = ZZZ_kaiser_economy
 				}
 			}
 			TFR_OGAS_socialism1_type_icon_visible = {
@@ -130,6 +138,30 @@ scripted_gui = {
 			}
 			TFR_ancap_economy_type_icon_visible = {
 				has_idea = ZZZ_ancap
+			}		
+			TFR_mixed_economy_type_icon_visible = {
+				has_idea = ZZZ_mixed_economy
+			}
+			TFR_party_state_capitalism_type_icon_visible = {
+				has_idea = ZZZ_party_state_capitalism
+			}	
+			TFR_state_capitalism_type_icon_visible = {
+				has_idea = ZZZ_state_capitalism
+			}	
+			TFR_america_first_capitalism_type_icon_visible = {
+				has_idea = ZZZ_america_first_capitalism
+			}		
+			TFR_maga_capitalism_type_icon_visible = {
+				has_idea = ZZZ_maga_capitalism
+			}	
+			TFR_left_corporatism_type_icon_visible = {
+				has_idea = ZZZ_left_corporatism
+			}	
+			TFR_liberal_corporatism_type_icon_visible = {
+				has_idea = ZZZ_liberal_corporatism
+			}	
+			TFR_kaiser_economy_type_icon_visible = {
+				has_idea = ZZZ_kaiser_economy
 			}
 		}
 		

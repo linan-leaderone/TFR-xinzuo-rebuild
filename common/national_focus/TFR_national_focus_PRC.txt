@@ -1706,8 +1706,8 @@ shared_focus = {
 shared_focus = {
 	id = PRC_our_commitment_to_korea
 	icon = GFX_focus_PRC_our_commitment_to_korea
-	x = -1
-	y = 2
+	x = 2
+	y = 1
 	cost = 1
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -1764,8 +1764,8 @@ shared_focus = {
 shared_focus = {
 	id = PRC_push_for_thaw
 	icon = GFX_focus_PRC_push_for_thaw
-	x = -1
-	y = 3
+	x = 1
+	y = 2
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -1859,8 +1859,8 @@ has_completed_focus = PRC_south_asian_brothers
 shared_focus = {
 	id = PRC_support_the_korean_way
 	icon = GFX_focus_PRC_support_the_korean_way
-	x = 1
-	y = 3
+	x = 3
+	y = 2
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -1902,8 +1902,8 @@ has_completed_focus = PRC_masters_of_asia
 shared_focus = {
 	id = PRC_joint_military_exercises
 	icon = GFX_focus_PRC_joint_military_exercises
-	x = 2
-	y = 4
+	x = 3
+	y = 3
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -1922,6 +1922,7 @@ shared_focus = {
 			value = 0.05
 		}
 		add_military_development = yes
+			add_to_faction = PRK
 	    PRK = {
 	    	swap_ideas = {
 	    	   remove_idea = PRK_for_the_party
@@ -1955,31 +1956,24 @@ shared_focus = {
 shared_focus = {
 	id = PRC_korean_economic_assistence
 	icon = GFX_focus_PRC_korean_economic_assistence
-	x = -2
+	x = 2
 	y = 4
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
-	    focus = PRC_push_for_thaw
+	    focus = PRC_finilize_korean_revolution_1
+	    focus = PRC_joint_military_exercises
 	}
 	ai_will_do = {
 	    factor = 100
 	}
-	mutually_exclusive = {
-	    focus = PRC_finilize_korean_revolution_1
-	}
 	available = {
-has_completed_focus = PRC_south_asian_brothers
 	  if = {
 			limit = {
 				has_country_flag = PRC_new_left_win
 			}
-	  OR = {
-				has_completed_focus = PRC_reliable_politburo
-		has_completed_focus = PRC_revolution_of_21_century
-				has_completed_focus = PRC_reconcile_with_militarists
-		}
+		PRK = {is_ally_with = PRC}
 		}
 	}
 	completion_reward = {
@@ -2029,27 +2023,22 @@ has_completed_focus = PRC_south_asian_brothers
 shared_focus = {
 	id = PRC_finilize_korean_revolution_1
 	icon = GFX_focus_PRC_finilize_korean_revolution_1
-	x = 0
-	y = 4
+	x = 1
+	y = 3
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
 	    focus = PRC_push_for_thaw
 	}
-	mutually_exclusive = {
-	    focus = PRC_korean_economic_assistence
-	}
-	allow_branch = {
-		NOT = {
-			OR = {
-				has_country_flag = PRC_nationalist_win
-				has_global_flag = PRC_liberal_china_flag
-			}
-		}
-	}
+
 	ai_will_do = {
 	    factor = 100
+	}
+	bypass = {
+			NOT = {
+				has_completed_focus = PRC_masters_of_asia_1
+			}
 	}
 	available = {    
 				has_completed_focus = PRC_masters_of_asia_1
@@ -2073,14 +2062,18 @@ shared_focus = {
 shared_focus = {
 	id = PRC_finilize_korean_revolution_2
 	icon = GFX_focus_PRC_finilize_korean_revolution_2
-	x = 0
+	x = 2
 	y = 5
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
+	    focus = PRC_niaolong_14
+	    focus = PRC_niaolong_15
+	    focus = PRC_niaolong_21
+	}
+	prerequisite = {
 	    focus = PRC_korean_economic_assistence
-	    focus = PRC_joint_military_exercises
 	}
 	allow_branch = {
 		NOT = {
@@ -2094,17 +2087,6 @@ shared_focus = {
 	    factor = 100
 	}
 	available = {    	    
-		if = {
-			limit = {
-				has_country_flag = PRC_new_left_win
-			}
-			OR = {
-				has_completed_focus = PRC_chinese_socialist_dream
-				has_completed_focus = PRC_towards_a_digital_communism
-			}
-		}
-		has_completed_focus = PRC_counter_indian_aggression
-		has_completed_focus = PRC_coordinate_eadi_militaries
 	}
 	completion_reward = {	    
 		PRK = { country_event = nk.14 }
@@ -2127,7 +2109,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_counter_indian_aggression
 	icon = GFX_focus_PRC_counter_indian_aggression
-	x = 3
+	x = 12
 	y = 1
 	cost = 5
 	available_if_capitulated = yes
@@ -2164,7 +2146,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_anti_japanese_covert_operations
 	icon = GFX_focus_PRC_anti_japanese_covert_operations
-	x = 5
+	x = 16
 	y = 1
 	cost = 2
 	available_if_capitulated = yes
@@ -2177,9 +2159,24 @@ shared_focus = {
 	    factor = 100
 	}
 	available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
+			OR = {
+			has_completed_focus = PRC_reliable_politburo
+			has_completed_focus = PRC_masters_of_asia_1
+			has_completed_focus = PRC_masters_of_asia
+		}
+		}
 	  
 	}
-	completion_reward = { #вернусь сюда когда сделаем японию #не вернулся, ну потом значит
+	completion_reward = { 
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
 	    JAP = {
 			add_political_power = -100
 	    	add_stability = -0.05
@@ -2188,6 +2185,180 @@ shared_focus = {
 		gain_random_agency_upgrade = yes
 		gain_random_agency_upgrade = yes
 		gain_random_agency_upgrade = yes
+	}
+}	
+shared_focus = {
+	id = PRC_niaolong_6
+	icon = GFX_focus_PRC_niaolong_6
+	x = 15
+	y = 2
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_anti_japanese_covert_operations
+	}
+	
+	mutually_exclusive = {
+	    focus = PRC_niaolong_7
+	}
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+			has_completed_focus = PRC_masters_of_asia_1
+	}
+	completion_reward = { 
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+	    JAP = {
+			add_timed_idea = {
+				idea = rgzhd
+				days = 360
+			}
+	    }
+	    hidden_effect = {
+			
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    add_core_of = SHK
+		    }	
+					SHK = {
+				set_capital = {state = 1340}
+                inherit_technology = PRC
+				set_cosmetic_tag = JAP_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = JAPCCC_party_long name = JAPCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "日本革命委员会"
+	                desc = "POLITICS_JAPGW_DESC"
+	                picture = "gfx/MAOYUANXIN/MLY_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}   
+		    }
+	    }
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+	}
+}		
+shared_focus = {
+	id = PRC_niaolong_9
+	icon = GFX_focus_PRC_niaolong_9
+	x = 15
+	y = 3
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_niaolong_6
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  has_war_with = JAP
+	}
+	completion_reward = { 
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+		custom_effect_tooltip = PRC_thiwdwfdwfwill_lead_to_the_gaw
+	    hidden_effect = {
+	    SHK = {		
+			transfer_state = 1340	
+			transfer_state = 1335	
+			transfer_state = 1338			
+	    }
+	    SHK = {			
+			load_oob = SHK_reserves			
+	    }			
+			set_autonomy = {
+			target = SHK
+			autonomy_state = autonomy_tongzhi
+			freedom_level = 0.1
+			}	
+	    }
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+	}
+}	
+shared_focus = {
+	id = PRC_niaolong_7
+	icon = GFX_focus_PRC_niaolong_7
+	x = 17
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_anti_japanese_covert_operations
+	}
+	
+	mutually_exclusive = {
+	    focus = PRC_niaolong_6
+	}
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
+			OR = {
+			has_completed_focus = PRC_reliable_politburo
+			has_completed_focus = PRC_masters_of_asia
+		}
+		}
+	}
+	completion_reward = { 
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+	    	add_stability = 0.1
+	    	add_war_support = 0.2
+		gain_random_agency_upgrade = yes
+	}
+}	
+shared_focus = {
+	id = PRC_niaolong_8
+	icon = GFX_focus_PRC_niaolong_8
+	x = 17
+	y = 3
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_niaolong_7
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  has_war_with = JAP
+	}
+	completion_reward = { 
+	    JAP = {
+			add_political_power = -100
+	    	add_stability = -0.2
+	    	add_war_support = -0.3
+	    }
 	}
 }	
 
@@ -2356,7 +2527,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_support_pakistan
 	icon = GFX_focus_PRC_support_pakistan
-	x = 0
+	x = -1
 	y = 2
 	cost = 2
 	available_if_capitulated = yes
@@ -2383,7 +2554,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_himalayan_frontier
 	icon = GFX_focus_PRC_himalayan_frontier
-	x = 2
+	x = 1
 	y = 2
 	cost = 2
 	available_if_capitulated = yes
@@ -2410,9 +2581,9 @@ shared_focus = {
 shared_focus = {
 	id = PRC_masters_of_asia
 	icon = GFX_focus_PRC_masters_of_asia
-	x = -5
+	x = 7
 	y = 1
-	cost = 3
+	cost = 1
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
@@ -2432,19 +2603,12 @@ shared_focus = {
 		}
 	}
 	prerequisite = { focus = PRC_establish_eadi }
-	mutually_exclusive = { focus = PRC_masters_of_asia_1 }
-	mutually_exclusive = { focus = PRC_south_asian_brothers }
 	completion_reward = {
-		declare_war_on = {
-			target = MON
-			type = annex_everything
-		}
-		news_event = {
-			id = china.99
-		}
-		unlock_decision_tooltip = PRC_military_intervention_vin
-		unlock_decision_tooltip = PRC_military_intervention_thailand
-		unlock_decision_tooltip = PRC_military_intervention_cambodia
+	    hidden_effect = {
+						SOV = {
+			remove_ideas = duliyuanjing_2
+	}
+	}
 		if = {
 			limit = {
 				PAK = {
@@ -2453,17 +2617,151 @@ shared_focus = {
 			}
 			unlock_decision_tooltip = PRC_revolution_in_pakistan
 		}
-		#hidden_effect = { #потом сделаем
-		#	SOV = {
-		#		country_event = {
-		#			id = russia.397
-		#			days = 1
-		#		}
-		#	}
-		#}
 	}
 }
 
+
+shared_focus = {
+	id = PRC_niaolong_16
+	icon = GFX_focus_PRC_niaolong_16
+	x = 6
+	y = 2
+	cost = 1
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	prerequisite = { focus = PRC_masters_of_asia }
+	completion_reward = {
+		unlock_decision_tooltip = PRC_military_intervention_vin
+		unlock_decision_tooltip = PRC_military_intervention_thailand
+		unlock_decision_tooltip = PRC_military_intervention_cambodia
+			unlock_decision_tooltip = PRC_support_junta 
+	}
+}
+shared_focus = {
+	id = PRC_niaolong_18
+	icon = GFX_focus_PRC_niaolong_18
+	x = 5
+	y = 3
+	cost = 1
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	OR = {
+	 SOV = { has_war_with = GER}
+		has_global_flag = nato_nato_won_nato_war	
+	}	
+		
+	}
+	prerequisite = {
+		 focus = PRC_niaolong_16 
+		 focus = PRC_niaolong_17 
+		 }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = PRC_niaolong_19
+	icon = GFX_focus_PRC_niaolong_19
+	x = 7
+	y = 3
+	cost = 1
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	prerequisite = {
+		 focus = PRC_niaolong_16 
+		 focus = PRC_niaolong_17 
+		 }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = PRC_niaolong_20
+	icon = GFX_focus_PRC_niaolong_20
+	x = 9
+	y = 3
+	cost = 1
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	prerequisite = {
+		 focus = PRC_niaolong_16 
+		 focus = PRC_niaolong_17 
+		 }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = PRC_niaolong_21
+	icon = GFX_focus_PRC_niaolong_21
+	x = 7
+	y = 4
+	cost = 1
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	prerequisite = {
+		 focus = PRC_niaolong_18 
+		 }
+	prerequisite = {
+		 focus = PRC_niaolong_20
+		 }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = PRC_niaolong_17
+	icon = GFX_focus_PRC_niaolong_17
+	x = 8
+	y = 2
+	cost = 1
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	prerequisite = { focus = PRC_masters_of_asia }
+	completion_reward = {
+		declare_war_on = {
+			target = MON
+			type = annex_everything
+		}
+		news_event = {
+			id = china.99
+		}
+	}
+}
 
 shared_focus = {
 	id = PRC_masters_of_asia_1
@@ -2490,8 +2788,6 @@ shared_focus = {
 		}
 	}
 	prerequisite = { focus = PRC_establish_eadi }
-	mutually_exclusive = { focus = PRC_south_asian_brothers }
-	mutually_exclusive = { focus = PRC_masters_of_asia }
 	completion_reward = {
 			set_faction_name = KMGJ_NEW_NEW
 		declare_war_on = {
@@ -2694,7 +2990,6 @@ shared_focus = {
 	}
 	available = {
 		AFG = {is_ally_with = PRC}
-		IRQ = {is_ally_with = PER}
 	}
 	prerequisite = { focus = PRC_masters_of_asia_3 }
 	completion_reward = {
@@ -2931,8 +3226,8 @@ shared_focus = {
 shared_focus = {
 	id = PRC_masters_of_asia_16
 	icon = GFX_focus_PRC_masters_of_asia_16
-	x = -5
-	y = 5
+	x = -6
+	y = 8
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -2964,7 +3259,11 @@ shared_focus = {
 	}
 										
 	}
-	prerequisite = { focus = PRC_masters_of_asia_4 }
+	prerequisite = {
+		 focus = PRC_masters_of_asia_13 
+		 focus = PRC_masters_of_asia_15 
+		 focus = PRC_masters_of_asia_14 
+		 }
 	completion_reward = {
 		custom_effect_tooltip = PRC_this_will_lead_to_the_grcw
 		
@@ -3012,8 +3311,8 @@ shared_focus = {
 shared_focus = {
 	id = PRC_masters_of_asia_17
 	icon = GFX_focus_PRC_masters_of_asia_17
-	x = -9
-	y = 4
+	x = -8
+	y = 8
 	cost = 5
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -3028,7 +3327,11 @@ shared_focus = {
 	}
 										
 	}
-	prerequisite = { focus = PRC_masters_of_asia_5 }
+	prerequisite = {
+		 focus = PRC_masters_of_asia_13 
+		 focus = PRC_masters_of_asia_15 
+		 focus = PRC_masters_of_asia_14 
+		 }
 	completion_reward = {
 
 		if = {
@@ -3401,7 +3704,7 @@ shared_focus = {
 	id = PRC_masters_of_asia_19
 	icon = GFX_focus_PRC_masters_of_asia_19
 	x = -7
-	y = 11
+	y = 12
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -3450,7 +3753,7 @@ shared_focus = {
 	id = PRC_masters_of_asia_18
 	icon = GFX_focus_PRC_masters_of_asia_18
 	x = -7
-	y = 9
+	y = 10
 	cost = 3
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
@@ -3472,9 +3775,8 @@ shared_focus = {
 						NOT = {country_exists = HAI}	
 						NOT = {country_exists = JAM}			
 	}
-	prerequisite = { focus = PRC_masters_of_asia_15 }
-	prerequisite = { focus = PRC_masters_of_asia_14 }
-	prerequisite = { focus = PRC_masters_of_asia_13 }
+	prerequisite = { focus = PRC_masters_of_asia_17 }
+	prerequisite = { focus = PRC_masters_of_asia_16 }
 	completion_reward = {
 
 			set_temp_variable = {
@@ -4172,22 +4474,391 @@ shared_focus = {
 			has_completed_focus = PRC_reliable_politburo
 		}
 	}
-	mutually_exclusive = { focus = PRC_masters_of_asia_1 }
-	mutually_exclusive = { focus = PRC_masters_of_asia }
 	completion_reward = {
 	    add_political_power = 150
 		unlock_decision_tooltip = PRC_naval_exercises_decision
-		unlock_decision_tooltip = PRC_invite_vietnam_to_eadi
-		unlock_decision_tooltip = PRC_invite_laos_eadi
-		unlock_decision_tooltip = PRC_invite_cambodia_eadi
-		unlock_decision_tooltip = PRC_invite_thailand_eadi
 		unlock_decision_tooltip = PRC_invite_malaysia_eadi
 		unlock_decision_tooltip = PRC_invite_singapore_eadi
 		unlock_decision_tooltip = PRC_invite_indonesia_eadi
 		unlock_decision_tooltip = PRC_invite_philippines_eadi
+		unlock_decision_tooltip = PRC_invite_vietnam_to_eadi
+		unlock_decision_tooltip = PRC_invite_laos_eadi
+		unlock_decision_tooltip = PRC_invite_cambodia_eadi
+		unlock_decision_tooltip = PRC_invite_thailand_eadi
+	    hidden_effect = {
+						SOV = {
+			remove_ideas = duliyuanjing_2
+	}
+	}
 	}
 }
 
+shared_focus = {
+	id = PRC_niaolong_10
+	icon = GFX_focus_PRC_niaolong_10
+	x = -3
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_south_asian_brothers
+	}
+	bypass = {
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  
+	}
+	completion_reward = {
+			set_temp_variable = {
+				var = global.PRC_influence_VIN_var_temp
+				value = 0.2
+			}
+			PRC_add_VIN_influence = yes
+			VIN = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_CAM_var_temp
+				value = 0.2
+			}
+			PRC_add_CAM_influence = yes
+			CAM = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_LAO_var_temp
+				value = 0.2
+			}
+			PRC_add_LAO_influence = yes
+			LAO = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_SIA_var_temp
+				value = 0.2
+			}
+			PRC_add_SIA_influence = yes
+			SIA = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+	
+	}		
+}
+shared_focus = {
+	id = PRC_niaolong_12
+	icon = GFX_focus_PRC_niaolong_12
+	x = -1
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_south_asian_brothers
+	}
+	bypass = {
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  
+	}
+	completion_reward = {
+	
+	}		
+}
+shared_focus = {
+	id = PRC_niaolong_13
+	icon = GFX_focus_PRC_niaolong_13
+	x = -1
+	y = 3
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_niaolong_12
+	}
+	bypass = {
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  
+	}
+	completion_reward = {
+	
+	}		
+}
+shared_focus = {
+	id = PRC_niaolong_11
+	icon = GFX_focus_PRC_niaolong_11
+	x = -3
+	y = 3
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_niaolong_10
+	}
+	bypass = {
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  
+	}
+	completion_reward = {
+			set_temp_variable = {
+				var = global.PRC_influence_VIN_var_temp
+				value = 0.15
+			}
+			PRC_add_VIN_influence = yes
+			VIN = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_CAM_var_temp
+				value = 0.15
+			}
+			PRC_add_CAM_influence = yes
+			CAM = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_LAO_var_temp
+				value = 0.15
+			}
+			PRC_add_LAO_influence = yes
+			LAO = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_SIA_var_temp
+				value = 0.15
+			}
+			PRC_add_SIA_influence = yes
+			SIA = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_MAL_var_temp
+				value = 0.15
+			}
+			PRC_add_MAL_influence = yes
+			MAL = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_PHI_var_temp
+				value = 0.15
+			}
+			PRC_add_PHI_influence = yes
+			PHI = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_INS_var_temp
+				value = 0.15
+			}
+			PRC_add_INS_influence = yes
+			INS = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_SIG_var_temp
+				value = 0.15
+			}
+			PRC_add_SIG_influence = yes
+			SIG = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = 10
+				}
+				add_income = yes
+				set_temp_variable = {
+					var = industrial_development_var_temp
+					value = 0.05
+				}
+				add_industrial_development = yes
+			}
+	
+	}		
+}
+shared_focus = {
+	id = PRC_niaolong_14
+	icon = GFX_focus_PRC_niaolong_14
+	x = -4
+	y = 4
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_niaolong_11
+	}
+	prerequisite = {
+	    focus = PRC_niaolong_13
+	}
+	prerequisite = {
+	    focus = PRC_coordinate_eadi_militaries
+	}
+	mutually_exclusive = {
+	    focus = PRC_niaolong_15
+	}
+	bypass = {
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  
+	}
+	completion_reward = {
+	
+	}		
+}
+shared_focus = {
+	id = PRC_niaolong_15
+	icon = GFX_focus_PRC_niaolong_15
+	x = -2
+	y = 4
+	cost = 2
+	available_if_capitulated = yes
+	relative_position_id = PRC_establish_eadi
+	prerequisite = {
+	    focus = PRC_niaolong_11
+	}
+	prerequisite = {
+	    focus = PRC_niaolong_13
+	}
+	prerequisite = {
+	    focus = PRC_coordinate_eadi_militaries
+	}
+	mutually_exclusive = {
+	    focus = PRC_niaolong_14
+	}
+	bypass = {
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+	available = {
+	  
+	}
+	completion_reward = {
+	
+	}		
+}
 shared_focus = {
 	id = PRC_revolution_in_myanmar
 	icon = GFX_focus_PRC_revolution_in_myanmar
@@ -4198,7 +4869,6 @@ shared_focus = {
 	relative_position_id = PRC_establish_eadi
 	prerequisite = {
 	    focus = PRC_south_asian_brothers
-	    focus = PRC_masters_of_asia
 	    focus = PRC_masters_of_asia_1
 	}
 	bypass = {
@@ -8022,7 +8692,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_east_rising_west_falling
 	icon = GFX_focus_PRC_east_rising_west_falling
-	x = 63
+	x = 68
 	y = 0
 	offset = {
 		x = 4
@@ -8268,6 +8938,106 @@ shared_focus = {
 	}
 }
 
+shared_focus = {
+	id = PRC_belt_and_road_initiative_non_cen
+	icon = GFX_focus_PRC_belt_and_road_initiative
+	x = 83
+	y = 0
+	#offset = {
+	#	x = 1
+	#	trigger = {
+	#		has_country_flag = PRC_liberal_win
+	#	}
+	#}
+	offset = {
+		x = 7
+		trigger = {
+			has_country_flag = PRC_new_left_win
+		}
+	}
+	cost = 5
+	available_if_capitulated = yes
+	allow_branch = {
+		#has_global_flag = pan_asian_war_ongoing
+			NOT = {has_country_flag = PRC_new_left_win}
+	}
+	ai_will_do = {
+		factor = 60
+	}
+	available = {
+		has_completed_focus = PRC_establish_eadi
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_belt_and_road_initiative completion_reward"
+		effect_tooltip = {
+			add_ideas = PRC_BRI_fake_idea
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = SOV
+					tag = PRK
+					tag = PAK
+				}
+			}
+			country_event = china.476
+			add_ideas = PRC_BRI_member
+			#set_country_flag = PRC_BRI_member_flag
+		}
+		custom_effect_tooltip = PRC_belt_and_road_initiative_tt
+		hidden_effect = {
+			#set_country_flag = PRC_BRI_member_flag
+			add_dynamic_modifier = {
+				modifier = PRC_BRI_dynamic
+			}
+			set_variable = { PRC_BRI_number_of_members = 4 }
+			set_variable = { PRC_BRI_income_growth_factor = 0.005 }
+			set_variable = { PRC_BRI_consumer_goods_factor = -0.004 }
+			set_variable = { PRC_BRI_lend_lease_tension = -0.02 }
+			set_variable = { PRC_BRI_poverty_development_monthly = 0.002 }
+			set_variable = { PRC_BRI_industrial_development_monthly = 0.002 }
+			set_variable = { PRC_BRI_global_building_slots_factor = 0.01 }
+			set_variable = { PRC_BRI_production_speed_buildings_factor = 0.01 }
+			add_to_array = {
+				PRC.PRC_BRI_members = SOV
+			}
+			add_to_array = {
+				PRC.PRC_BRI_members = PRK
+			}
+			add_to_array = {
+				PRC.PRC_BRI_members = PAK
+			}
+			set_country_flag = PRC_BRI_invite_asia_flag
+		}
+	}
+}
+shared_focus = {
+	id = PRC_trade_deals_in_africa_non_cen
+	icon = GFX_focus_PRC_trade_deals_in_africa
+	x = 0
+	y = 1
+	cost = 3.6
+	available_if_capitulated = yes
+	relative_position_id = PRC_belt_and_road_initiative_non_cen
+	ai_will_do = {
+		factor = 60
+	}
+	prerequisite = { focus = PRC_belt_and_road_initiative_non_cen }
+	available = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus PRC_trade_deals_in_africa completion_reward"
+		custom_effect_tooltip = PRC_belt_and_road_initiative_tt2
+		set_country_flag = PRC_BRI_invite_africa_flag
+		if = {
+			limit = {
+				has_country_flag = PRC_nationalist_win
+			}
+			unlock_decision_tooltip = PRC_niger_uranium
+		}
+	}
+}
+
 focus_tree = {
 	id = NCM_focus
 	country = {
@@ -8292,6 +9062,58 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
+		}
+	}
+}
+
+focus_tree = {
+	id = PRC_post_gaw_lost
+	country = {
+		factor = 0
+	}
+
+	#HUANG MING
+	focus = {
+		id = PRC_crackdown_on_beijing
+		icon = GFX_focus_PRC_crackdown_on_beijing
+		x = 0
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			always = no
+		}
+		allow_branch = {
+			has_country_flag = PRC_post_gaw_lost_huang_ming_won
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_dream_come_true_tt
+		}
+	}
+
+
+	#NICK LAND NEO CHINA BLESSED PATH
+	focus = {
+		id = PRC_meltdown
+		icon = GFX_focus_PRC_meltdown
+		x = 0
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			always = no
+		}
+		allow_branch = {
+			has_country_flag = PRC_post_gaw_lost_nick_land_won
+		}
+		completion_reward = {
+			custom_effect_tooltip = PRC_dream_come_true_tt
 		}
 	}
 }

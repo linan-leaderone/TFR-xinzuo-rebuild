@@ -1,3 +1,138 @@
+red_noble_idea_add = {
+
+if = {
+    limit = {
+        has_idea = red_noble_idea_1
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_1
+        add_idea = red_noble_idea_0
+    }
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_2
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_2
+        add_idea = red_noble_idea_1
+    }
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_3
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_3
+        add_idea = red_noble_idea_2
+    }
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_4
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_4
+        add_idea = red_noble_idea_3
+    }
+}
+if = {
+    limit = {
+       NOT = {has_idea = red_noble_idea_4 }
+       NOT = {has_idea = red_noble_idea_3 }
+       NOT = {has_idea = red_noble_idea_2 }
+       NOT = {has_idea = red_noble_idea_1 }
+    }
+        add_ideas = red_noble_idea_4
+
+if = {
+    limit = {
+       NOT = {has_idea = red_noble_idea_5 }
+    }
+        remove_ideas = red_noble_idea_5
+}
+
+}
+
+}
+
+red_noble_idea_remove = {
+
+if = {
+    limit = {
+        has_idea = red_noble_idea_4
+    }
+        remove_ideas = red_noble_idea_4
+
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_3
+    }
+        remove_ideas = red_noble_idea_3
+
+
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_2
+    }
+       remove_ideas = red_noble_idea_2
+
+
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_1
+    }
+        remove_ideas = red_noble_idea_1
+
+
+
+}
+red_noble_idea_xueruo = {
+
+if = {
+    limit = {
+        has_idea = red_noble_idea_4
+    }
+        remove_ideas = red_noble_idea_4
+
+			add_timed_idea = {
+				idea = red_noble_idea_5
+				days = 200
+			}
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_3
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_3
+        add_idea = red_noble_idea_4
+    }
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_2
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_2
+        add_idea = red_noble_idea_3
+    }
+}
+if = {
+    limit = {
+        has_idea = red_noble_idea_1
+    }
+    swap_ideas = {
+        remove_idea = red_noble_idea_1
+        add_idea = red_noble_idea_2
+    }
+}
+
+}
+
 taihai_test_2 = {
 			if = {
 				limit = {

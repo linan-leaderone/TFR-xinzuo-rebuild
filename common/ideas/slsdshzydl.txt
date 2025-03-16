@@ -1,6 +1,32 @@
 ideas = {	
 	country = {
-					
+			rgzhd = {
+			picture = rgzhd
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+political_power_gain = -0.05
+expense_growth_factor = 0.15
+				totalitarian_socialist_drift = 0.03
+				libertarian_socialist_drift = 0.02
+				communist_drift = 0.01
+	stability_factor = -0.05
+	war_support_factor = -0.05
+	line_change_production_efficiency_factor = -0.1
+	production_speed_buildings_factor = -0.1
+
+
+			}
+		}					
 		PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_20 = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
@@ -21,8 +47,121 @@ expense_growth_factor = 0.2
 
 
 			}
+		}		
+								
+		PRC_made_in_china_PRC_niaolong_2 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+business_value_factor = 0.15
+expense_growth_factor = -0.15
+personal_value_factor = 0.2
+society_development_monthly = 0.01
+poverty_development_monthly = 0.01
+
+			}
+		}							
+		PRC_made_in_china_PRC_niaolong_1 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+business_value_factor = -0.05
+stability_factor = 0.2
+misc_income = 50
+
+			}
+		}						
+		PRC_made_in_china_PRC_niaolong_5 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+research_speed_factor = -0.05
+expense_growth_factor = -0.2
+society_development_monthly = 0.01
+
+			}
 		}	
-					
+							
+		PRC_made_in_china_PRC_niaolong_4 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+research_speed_factor = 0.1
+expense_growth_factor = -0.2
+society_development_monthly = 0.01
+academic_development_monthly = 0.01
+
+			}
+		}						
+		PRC_made_in_china_PRC_niaolong_3 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+war_support_factor = 0.1
+stability_factor = 0.1
+misc_income = -50
+personal_value_factor = 0.2
+personal_expense_factor = -0.1
+society_development_monthly = 0.01
+poverty_development_monthly = 0.01
+
+			}
+		}					
 		PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_22 = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
