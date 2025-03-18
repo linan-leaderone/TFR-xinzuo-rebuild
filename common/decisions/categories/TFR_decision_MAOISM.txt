@@ -13,6 +13,20 @@ PRC_balance_of_maoism_power_category = {
     
     priority = 4
 }
+
+PRC_RENDAHUIYI = {
+	icon = decision_category_icon_PRC_RENDAHUIYI
+	picture = GFX_decision_category_picture_PRC_RENDAHUIYI
+	allowed = {always = yes}
+	visible = { 
+            has_completed_focus = PRC_the_Flower_of_Freedom_4
+		tag = PRC
+	}
+	available = { 
+	}
+	visible_when_empty = yes
+	scripted_gui = PRC_paixi_ui
+}
 PRC_jingjihuifu_category = {
     icon = GFX_decision_category_PRC_internal_factions_icon
     allowed = {

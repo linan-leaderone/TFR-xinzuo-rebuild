@@ -568,7 +568,14 @@ guiTypes = {
 				spriteType = "GFX_ai_governance"
 				pdx_tooltip = "TFR_AI_GOVERNANCE_TT"
 				pdx_tooltip_delayed = "TFR_AI_GOVERNANCE_TT_LONG"
-			}		
+			}				
+			iconType = {
+				name = "TFR_shuzihuaminzhu_type_icon"
+				position = { x = 8 y = 3 }
+				spriteType = "GFX_shuzihuaminzhu"
+				pdx_tooltip = "TFR_shuzihuaminzhu_TT"
+				pdx_tooltip_delayed = "TFR_shuzihuaminzhu_TT_LONG"
+			}	
 		}
 	}
 

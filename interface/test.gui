@@ -1,6 +1,6 @@
 guiTypes = {
 	containerWindowType = {
-		name = "ISR_paixi_ui_window"
+		name = "PRC_paixi_ui_window"
 		position = { x=0 y=0 }
 		size = { width = 100% height= 700 }		
 	    
@@ -29,7 +29,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "likude_icon"
-			position = { x=30 y=540 }
+			position = { x=30 y=490 }
 			quadTextureSprite = "GFX_ISR_LKD"
 			pdx_tooltip = ISR_likude_paixi
 			pdx_tooltip_delayed = ISR_likude_paixi_desc	
@@ -50,6 +50,8 @@ guiTypes = {
 			pdx_tooltip = ISR_muxionghui_paixi
 			pdx_tooltip_delayed = ISR_muxionghui_paixi_desc	
 		}
+
+
 
 		containerWindowType = {
 			name = "pie_container"
@@ -958,14 +960,14 @@ guiTypes = {
 				rotation = 6.2203534541
 			}
 		}
-
 		iconType = {
 			name = "overlay"
-			quadTextureSprite = GFX_party_pie_chart_overlay 
-			position = { x = 140 y = 30 }
+			quadTextureSprite = GFX_paeeeee_pie_chart_overlay
+			position = { x = 130 y = 20 }
+			scale = 2
 			orientation = UPPER_LEFT 
-			pdx_tooltip = ISR_YIHUI
-			pdx_tooltip_delayed = ISR_YIHUI_desc	
+			pdx_tooltip = PRC_YIHUI
+			pdx_tooltip_delayed = PRC_YIHUI_desc	
 		}
 	}
 }

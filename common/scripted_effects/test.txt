@@ -1,0 +1,80 @@
+PRC_party_fight = {
+#set_popularities = {
+#	totalitarian_socialist = zgm_zcd
+#	communist = gyd_zcd
+#	libertarian_socialist = lgd_zcd
+#	social_democrat = lgd_zp
+#	social_liberal = zyd_zcd
+#	conservative = xzd_zcd
+#	authoritarian_democrat = rmd_zcd
+#}
+
+
+
+	clear_array = pie_chart
+	resize_array = {
+		array = pie_chart
+		value = 7
+		size = 100
+	}
+	set_temp_variable = { fuxingdang_temp = zgm_zcd } 
+	divide_temp_variable = { fuxingdang_temp = 40 }
+	add_to_temp_variable = { fuxingdang_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = fuxingdang_temp
+		set_variable = { pie_chart^v = 3 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+	set_temp_variable = { fatahe_temp = gyd_zcd }
+	divide_temp_variable = { fatahe_temp = 40 }
+	add_to_temp_variable = { fatahe_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = fatahe_temp
+		set_variable = { pie_chart^v = 2 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { minzhen_temp = lgd_zcd }
+	divide_temp_variable = { minzhen_temp = 40 }
+	add_to_temp_variable = { minzhen_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = minzhen_temp
+		set_variable = { pie_chart^v = 8 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { likude_temp = zyd_zcd }
+	divide_temp_variable = { likude_temp = 40 }
+	add_to_temp_variable = { likude_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = likude_temp
+		set_variable = { pie_chart^v = 5 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { yiergong_temp = xzd_zcd }
+	divide_temp_variable = { yiergong_temp = 40 }
+	add_to_temp_variable = { yiergong_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = yiergong_temp
+		set_variable = { pie_chart^v = 6 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { muxionghui_temp = rmd_zcd }
+	divide_temp_variable = { muxionghui_temp = 40 }
+	add_to_temp_variable = { muxionghui_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = muxionghui_temp
+		set_variable = { pie_chart^v = 7 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	clear_variable = ROOT.last_idx
+}

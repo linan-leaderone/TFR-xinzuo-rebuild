@@ -20,6 +20,11 @@ spriteType = {
 		legacy_lazy_load = no
 }
 spriteType = {
+    name = "GFX_PRC_renda_banner"
+    texturefile = "gfx/MAOYUANXIN/PRC_renda_banner.png"
+		legacy_lazy_load = no
+}
+spriteType = {
     name = "GFX_PRC_loji_banner5"
     texturefile = "gfx/MAOYUANXIN/PRC_loji_banner5.png"
 		legacy_lazy_load = no
@@ -44,6 +49,30 @@ spriteType = {
     name = "GFX_PRC_red_noble_banner"
     texturefile = "gfx/MAOYUANXIN/GFX_PRC_red_noble_banner.png"
 		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_ISR_FXD"
+    texturefile = "gfx/MAOYUANXIN/ZMG.png"
+}
+spriteType = {
+    name = "GFX_ISR_FTH"
+    texturefile = "gfx/MAOYUANXIN/GYD.png"
+}
+spriteType = {
+    name = "GFX_ISR_MZ"
+    texturefile = "gfx/MAOYUANXIN/LGD.png"
+}
+spriteType = {
+    name = "GFX_ISR_LKD"
+    texturefile = "gfx/MAOYUANXIN/ZYD.png"
+}
+spriteType = {
+    name = "GFX_ISR_YEG"
+    texturefile = "gfx/MAOYUANXIN/XZD.png"
+}
+spriteType = {
+    name = "GFX_ISR_MXH"
+    texturefile = "gfx/MAOYUANXIN/RMD.png"
 }
 spriteType = {
     name = "GFX_TFR_long_march_tiaojiao_btn"

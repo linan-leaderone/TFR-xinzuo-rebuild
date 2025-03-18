@@ -1,4 +1,41 @@
 
+remove_gov_types = {
+	remove_ideas = {
+		ZZZ_russian_political_system
+		ZZZ_chinese_political_system
+		ZZZ_absolute_monarchy
+		ZZZ_military_dictatorship
+		ZZZ_socialist_republic
+		ZZZ_semi_constitutional_monarchy
+		ZZZ_constitutional_monarchy
+		ZZZ_neo_soviet_republic
+		ZZZ_nazi_dictatorship
+		ZZZ_fascist_dictatorship
+		ZZZ_revolutionary_front
+		ZZZ_communist_party_state
+		ZZZ_semi_presidential_system
+		ZZZ_parliamentary_republic
+		ZZZ_presidential_republic
+		ZZZ_presidential_dictatorship
+		ZZZ_ultranationalist_dictatorship
+		ZZZ_islamic_republic
+		ZZZ_american_presidential_republic
+		ZZZ_provisional_government
+		ZZZ_eurasianist_system
+		ZZZ_american_peoples_dictatorship
+		ZZZ_annihilation_cult
+		ZZZ_shuzihuaminzhu
+	}
+}
+
+change_government_type_shuzihuaminzhu = {
+	custom_effect_tooltip = change_gov_type_shuzihuaminzhu_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_shuzihuaminzhu
+	}
+}
+
 remove_economy_types = {
 	remove_ideas = {
 		ZZZ_capitalist_economy

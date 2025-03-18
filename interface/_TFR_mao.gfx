@@ -399,10 +399,14 @@ spriteTypes = {
 		name = "GFX_ZZZ_nailong_economy2_banner"
 		texturefile = "gfx/MAOYUANXIN/ZZZ_nailong_economy2_banner.png"
 		legacy_lazy_load = no
-	}						
+	}							
 	spriteType = {
 		name = "GFX_OGAS_socialism"
 		texturefile = "gfx/MAOYUANXIN/ZZZ_OGAS_socialism1.png"
+	}							
+	spriteType = {
+		name = "GFX_shuzihuaminzhu"
+		texturefile = "gfx/MAOYUANXIN/shuzihuaminzhu.png"
 	}								
 	spriteType = {
 		name = "GFX_nailong_economy1"

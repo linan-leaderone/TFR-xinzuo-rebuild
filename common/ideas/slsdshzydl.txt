@@ -27,6 +27,32 @@ expense_growth_factor = 0.15
 
 			}
 		}					
+		PRC_made_in_china_PRC_niaolong_23 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+business_value_factor = -0.05
+stability_factor = 0.1
+expense_growth_factor = 0.15
+local_resources_factor = 0.1
+personal_value_factor = 0.1
+society_development_monthly = 0.01
+poverty_development_monthly = 0.01
+
+
+			}
+		}							
 		PRC_made_in_china_dummy_PRC_the_Flower_of_Freedom_20 = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea

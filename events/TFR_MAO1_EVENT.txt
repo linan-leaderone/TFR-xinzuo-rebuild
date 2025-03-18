@@ -1118,6 +1118,12 @@ set_country_flag = market_desc_de
         option = {
             name = PRC_MAO1.36.a
         }
+        option = {
+            name = PRC_MAO1.36.b
+        }
+        option = {
+            name = PRC_MAO1.36.c
+        }
     }
 
 

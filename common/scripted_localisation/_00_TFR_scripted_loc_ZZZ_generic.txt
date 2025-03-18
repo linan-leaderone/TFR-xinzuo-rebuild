@@ -973,6 +973,12 @@ defined_text = {
 	}	
 	text = {
 		trigger = {
+			has_idea = ZZZ_shuzihuaminzhu
+		}
+		localization_key = ZZZ_shuzihuaminzhu
+	}	
+	text = {
+		trigger = {
 			NOT = {
 				has_idea = ZZZ_russian_political_system
 				has_idea = ZZZ_absolute_monarchy
@@ -998,6 +1004,7 @@ defined_text = {
 				has_idea = ZZZ_ai_governance
 				has_idea = ZZZ_eurasianist_system
 				has_idea = ZZZ_american_peoples_dictatorship
+				has_idea = ZZZ_shuzihuaminzhu
 			}
 		}
 		localization_key = ZZZ_anarchy

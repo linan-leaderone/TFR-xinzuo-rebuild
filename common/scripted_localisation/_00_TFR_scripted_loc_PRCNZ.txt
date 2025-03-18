@@ -178,6 +178,18 @@ defined_text = {
 		}
 		localization_key = PRC_loji_category_desc_yijian1_loc4
 	}
+	text = {
+		trigger = {
+			check_variable = { mzd_taidu = 4 }
+		}
+		localization_key = PRC_loji_category_desc_yijian1_loc5
+	}
+	text = {
+		trigger = {
+			check_variable = { mzd_taidu = 5 }
+		}
+		localization_key = PRC_loji_category_desc_yijian1_loc6
+	}
 }
 defined_text = {
 	name = PRC_loji_category_desc_yijian4_loc

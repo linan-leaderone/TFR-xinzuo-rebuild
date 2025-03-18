@@ -623,7 +623,6 @@ set_cosmetic_tag = PRC_GH
 		trigger = {
 has_country_flag = market_desc_de
 		}
-			complete_national_focus = PRC_the_Flower_of_Freedom_4
 	
 		hidden_effect = {
 

@@ -83,6 +83,20 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 				}
 add_to_variable = { loji_manyidu_change_shuzhi = -1.5 }
 }
+			if = {
+				limit = {
+					check_variable = { mzd_taidu = 4 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+}
+
+			if = {
+				limit = {
+					check_variable = { mzd_taidu = 5 }
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -2 }
+}
+
 
 add_to_variable = { loji_manyidu_T = loji_manyidu_change_shuzhi }
 

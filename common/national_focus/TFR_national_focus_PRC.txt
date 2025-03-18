@@ -1681,7 +1681,17 @@ shared_focus = {
 		#	has_completed_focus = PRC_the_great_revival
 		#}
 		has_country_flag = PRC_for_policy_tree_available
-		NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
+			OR = {
+		has_completed_focus = PRC_the_Flower_of_Freedom_3
+		PRC_mao_yuanxin = {is_country_leader = yes}
+		PRC_renda = {is_country_leader = yes}
+		has_completed_focus = PRC_reliable_politburo	
+	}	
+	}
 	}
 	completion_reward = {
 	    add_threat = 1
@@ -2225,14 +2235,14 @@ shared_focus = {
 			}
 	    }
 	    hidden_effect = {
-		country_event = { 
-			id = PRC_MAO1.32
-			days = 3
-		}
-		country_event = { 
-			id = PRC_MAO1.33
-			days = 70
-		}
+		#country_event = { 
+		#	id = PRC_MAO1.32
+		#	days = 3
+		#}
+		#country_event = { 
+		#	id = PRC_MAO1.33
+		#	days = 70
+		#}
 			
 			every_state = {
 				limit = {
@@ -2278,10 +2288,10 @@ shared_focus = {
 		select_effect = {
 			hidden_effect = {
 	
-			country_event = {
-				id = PRC_MAO1.34
-				days = 30
-			}
+			#country_event = {
+			#	id = PRC_MAO1.34
+			#	days = 30
+			#}
 				}
 				}
 	ai_will_do = {
