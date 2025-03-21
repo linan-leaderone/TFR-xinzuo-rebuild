@@ -1945,8 +1945,6 @@ set_popularities = {
 		}
 		prerequisite = {
             focus = PRC_niaolong_25
-        }
-		prerequisite = {
             focus = PRC_niaolong_24
         }
 
