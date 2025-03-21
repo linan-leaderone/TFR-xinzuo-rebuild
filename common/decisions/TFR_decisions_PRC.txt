@@ -9696,6 +9696,16 @@ annex_country = {
 					}
 				if = {
 					limit = {
+						country_exists = ROC
+					}
+
+				declare_war_on = { 
+					target = ROC
+					type = annex_everything 
+				}
+					}
+				if = {
+					limit = {
 						country_exists = SAU
 					}
 

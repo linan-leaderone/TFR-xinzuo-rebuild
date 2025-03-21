@@ -226,6 +226,69 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = PRC_loji_category_desc_yijian5_loc
+	text = {
+		trigger = {
+			NOT = {has_idea = ZZZ_communist_party_state}
+			NOT = {has_idea = ZZZ_shuzihuaminzhu}
+			NOT = {has_idea = ZZZ_socialist_republic}
+			NOT = {has_idea = ZZZ_american_peoples_dictatorship}
+			NOT = {has_idea = ZZZ_revolutionary_front}
+			NOT = {has_idea = ZZZ_neo_soviet_republic}
+			NOT = {has_idea = ZZZ_ai_governance}
+			NOT = {has_idea = ZZZ_constitutional_monarchy}
+			NOT = {has_idea = ZZZ_provisional_government}
+			NOT = {has_idea = ZZZ_semi_presidential_system}
+			NOT = {has_idea = ZZZ_parliamentary_republic}
+			NOT = {has_idea = ZZZ_american_presidential_republic}
+			NOT = {has_idea = ZZZ_presidential_republic}
+			NOT = {has_idea = ZZZ_presidential_dictatorship}
+		}
+		localization_key = PRC_loji_category_desc_yijian5_loc1
+	}
+	text = {
+		trigger = {
+		OR = {
+			has_idea = ZZZ_revolutionary_front
+			has_idea = ZZZ_american_peoples_dictatorship
+			has_idea = ZZZ_neo_soviet_republic
+			has_idea = ZZZ_socialist_republic
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian5_loc2
+	}
+	text = {
+		trigger = {
+		OR = {
+			has_idea = ZZZ_communist_party_state
+			has_idea = ZZZ_ai_governance
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian5_loc3
+	}
+	text = {
+		trigger = {
+			has_idea = ZZZ_shuzihuaminzhu
+		}
+		localization_key = PRC_loji_category_desc_yijian5_loc4
+	}
+	text = {
+		trigger = {
+		OR = {
+			has_idea = ZZZ_constitutional_monarchy
+			has_idea = ZZZ_provisional_government
+			has_idea = ZZZ_semi_presidential_system
+			has_idea = ZZZ_provisional_government
+			has_idea = ZZZ_parliamentary_republic
+			has_idea = ZZZ_american_presidential_republic
+			has_idea = ZZZ_presidential_republic
+			has_idea = ZZZ_presidential_dictatorship
+		}
+		}
+		localization_key = PRC_loji_category_desc_yijian5_loc5
+	}
+}
+defined_text = {
 	name = PRC_loji_category_desc_yijian3_loc
 	text = {
 		trigger = {

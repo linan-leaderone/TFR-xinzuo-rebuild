@@ -12,6 +12,12 @@ add_to_variable = { jjtz_taidu  = -1 }
 loji_manyidu_change = {
 			if = {
 				limit = {
+			has_idea = ZZZ_shuzihuaminzhu
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 2 }
+}
+			if = {
+				limit = {
 		OR = {
 			has_government = totalitarian_socialist
 			has_government = communist
@@ -67,9 +73,29 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 }
 			if = {
 				limit = {
+		OR = {
+			has_idea = ZZZ_communist_party_state
+			has_idea = ZZZ_ai_governance
+		}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 1 }
+}
+			if = {
+				limit = {
 					check_variable = { mzd_taidu = 2 }
 				}
 add_to_variable = { loji_manyidu_change_shuzhi = 1 }
+}
+			if = {
+				limit = {
+		OR = {
+			has_idea = ZZZ_revolutionary_front
+			has_idea = ZZZ_american_peoples_dictatorship
+			has_idea = ZZZ_neo_soviet_republic
+			has_idea = ZZZ_socialist_republic
+		}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 }
 			if = {
 				limit = {
@@ -88,6 +114,41 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1.5 }
 					check_variable = { mzd_taidu = 4 }
 				}
 add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+}
+			if = {
+				limit = {
+			NOT = {has_idea = ZZZ_communist_party_state}
+			NOT = {has_idea = ZZZ_shuzihuaminzhu}
+			NOT = {has_idea = ZZZ_socialist_republic}
+			NOT = {has_idea = ZZZ_american_peoples_dictatorship}
+			NOT = {has_idea = ZZZ_revolutionary_front}
+			NOT = {has_idea = ZZZ_neo_soviet_republic}
+			NOT = {has_idea = ZZZ_ai_governance}
+			NOT = {has_idea = ZZZ_constitutional_monarchy}
+			NOT = {has_idea = ZZZ_provisional_government}
+			NOT = {has_idea = ZZZ_semi_presidential_system}
+			NOT = {has_idea = ZZZ_parliamentary_republic}
+			NOT = {has_idea = ZZZ_american_presidential_republic}
+			NOT = {has_idea = ZZZ_presidential_republic}
+			NOT = {has_idea = ZZZ_presidential_dictatorship}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -100 }
+}
+
+			if = {
+				limit = {
+		OR = {
+			has_idea = ZZZ_constitutional_monarchy
+			has_idea = ZZZ_provisional_government
+			has_idea = ZZZ_semi_presidential_system
+			has_idea = ZZZ_provisional_government
+			has_idea = ZZZ_parliamentary_republic
+			has_idea = ZZZ_american_presidential_republic
+			has_idea = ZZZ_presidential_republic
+			has_idea = ZZZ_presidential_dictatorship
+		}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -2 }
 }
 
 			if = {

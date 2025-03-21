@@ -58,21 +58,24 @@ EFF = {annex_country = {
 						}
 						}
 						ROOT = {
-
 							original_tag = SYR
-
-
-
-
 						}
 					}
 
 
-						ROJ = {white_peace = SYR}
-			ROJ = {set_autonomy = {
+			ROJ = {white_peace = SYR}
+SYR = {remove_state_core = 1029}
+SYR = {remove_state_core = 814}
+SYR = {remove_state_core = 1030}
+SYR = {remove_state_core = 1035}
+
+			ROJ = {
+				set_cosmetic_tag = ROJ_XIN
+release_autonomy = {
 			target = SYR
 			autonomy_state = autonomy_puppet
-			}}
+			}
+}
 				SYR = {set_party_name = { ideology = libertarian_socialist long_name = SYRCCCCCC_party_long name = SYRCCCCCC_party } }
 				SYR = {
 						remove_ideas = SYR_devistated_economy

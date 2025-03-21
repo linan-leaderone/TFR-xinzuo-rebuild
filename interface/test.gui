@@ -45,7 +45,7 @@ guiTypes = {
 
 		iconType = {
 			name = "muxionghui_icon"
-			position = { x=350 y=500 }
+			position = { x=350 y=490 }
 			quadTextureSprite = "GFX_ISR_MXH"
 			pdx_tooltip = ISR_muxionghui_paixi
 			pdx_tooltip_delayed = ISR_muxionghui_paixi_desc	

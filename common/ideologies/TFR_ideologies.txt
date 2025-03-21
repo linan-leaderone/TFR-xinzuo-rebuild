@@ -1,12 +1,12 @@
 ideologies = {
 	totalitarian_socialist = {
 		types = {
+			maoism_cyber = {
+				can_be_randomly_selected = no
+			}
 			totalism = {
 			}
 			maoism = {
-			}
-			maoism_cyber = {
-				can_be_randomly_selected = no
 			}
 			jacobinism = {
 				can_be_randomly_selected = no
@@ -30,7 +30,16 @@ ideologies = {
 				can_be_randomly_selected = no
 			}		
 			neo_stalinism = {
-			}		
+			}	
+	
+			transhumanism = {
+				can_be_randomly_selected = no
+				color = {
+					112
+					6
+					45
+				}
+			}	
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_COMMUNIST_1"
@@ -61,6 +70,11 @@ ideologies = {
 
 	communist = {
 		types = {
+			left_accelerationist_1 = {
+				can_be_randomly_selected = no
+			}
+			marxism_lenin_maoism = {
+			}
 			market_socialism = {
 				can_be_randomly_selected = no
 				color = {
@@ -69,12 +83,7 @@ ideologies = {
 					0
 				}
 			}
-			left_accelerationist_1 = {
-				can_be_randomly_selected = no
-			}
 			marxism_leninism = {
-			}
-			marxism_lenin_maoism = {
 			}
 			neo_socialism = {
 				can_be_randomly_selected = no
@@ -122,8 +131,6 @@ ideologies = {
 
 	libertarian_socialist = {
 		types = {
-			left_anarchist = {
-			}
 			anarchist_maoism = {
 				color = {
 					255
@@ -133,6 +140,8 @@ ideologies = {
 			}
 			gzl_socialism = {
 				can_be_randomly_selected = no
+			}
+			left_anarchist = {
 			}
 			post_leftism = {
 			}
@@ -172,6 +181,15 @@ ideologies = {
 					36
 				}
 			}
+
+			confucian_socialism = {
+				can_be_randomly_selected = no
+				color = {
+					237
+					178
+					155
+				}
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_LIBERTARIAN_SOCIALIST_1"
@@ -202,6 +220,10 @@ ideologies = {
 
 	social_democrat = {
 		types = {
+			sm_socialism = {
+				can_be_randomly_selected = no
+			}
+
 			left_centrist = {
 				can_be_randomly_selected = no
 				color = {
@@ -219,9 +241,6 @@ ideologies = {
 				}
 			}
 			social_democracy = {
-			}
-			sm_socialism = {
-				can_be_randomly_selected = no
 			}
 			kasitekuoism = {
 				can_be_randomly_selected = no
@@ -404,6 +423,9 @@ ideologies = {
 					56
 				}
 			}
+			trumpism_market = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_MARKET_LIBERAL_1"
@@ -550,6 +572,14 @@ ideologies = {
 					204
 				}
 			}
+			trumpism_conservative = {
+				can_be_randomly_selected = no
+				color = {
+					41
+					41
+					168
+				}
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_CONSERVATIVE_1"
@@ -680,6 +710,14 @@ ideologies = {
 			russian_monarchist_conservative = {
 				can_be_randomly_selected = no
 			}
+			trumpism_authdem = {
+				can_be_randomly_selected = no
+				color = {
+					123
+					128
+					162
+				}
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRACY_1"
@@ -718,8 +756,6 @@ ideologies = {
 					8
 				}
 			}
-			autocrat = {
-			}
 			market_socialism_1 = {
 				can_be_randomly_selected = no
 				color = {
@@ -728,6 +764,9 @@ ideologies = {
 					0
 				}
 
+			}
+
+			autocrat = {
 			}
 			theocracy = {
 				can_be_randomly_selected = no
@@ -788,6 +827,22 @@ ideologies = {
 				#Ascended Man
 				can_be_randomly_selected = no
 			}
+			right_wing_accelerationist = {
+				can_be_randomly_selected = no
+				color = {
+					63
+					242
+					161
+				}
+			}
+			putinism_despot = {
+				can_be_randomly_selected = no
+				color = {
+					84
+					84
+					84
+				}
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONALIST_1"
@@ -834,6 +889,9 @@ ideologies = {
 			classical_fascism = {
 			}
 			clerical_fascism = {
+			}	
+			blackhundredism = {
+				can_be_randomly_selected = no
 			}
 			ecofascism = {
 				can_be_randomly_selected = no
@@ -851,6 +909,22 @@ ideologies = {
 					137
 					110
 					49
+				}
+			}	
+			vladimir_zhirinovsky_thought_post_war = {
+				can_be_randomly_selected = no
+				color = {
+					137
+					110
+					49
+				}
+			}	
+			vladimir_zhirinovsky_thought_militarist = {
+				can_be_randomly_selected = no
+				color = {
+					104
+					91
+					62
 				}
 			}
 			chinese_exceptionalism = {
@@ -898,7 +972,14 @@ ideologies = {
 
 	national_socialist = {
 		types = {
-
+			Esoteric_Maoism= {
+				color = {
+					85 26 139
+				}
+			}
+			nazi_maoism = {
+				can_be_randomly_selected = no
+			}
 
 			esoteric_fascism = {
 			}
@@ -997,11 +1078,7 @@ ideologies = {
 				}
 			}
 
-			Esoteric_Maoism= {
-				color = {
-					85 26 139
-				}
-			}
+
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_FASCIST_1"

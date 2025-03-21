@@ -78,15 +78,24 @@ duliyuanjing = {
     
     modifier = {
 
-                        weekly_manpower = 500
+        weekly_manpower = 1000
         war_support_factor = 1
        army_defence_factor = 1
-				army_core_attack_factor = 1
-				army_core_defence_factor = 1
-equipment_capture = 0.5
-					surrender_limit = 1
-
+	army_core_attack_factor = 1
+	army_core_defence_factor = 1
+	equipment_capture = 2
+	surrender_limit = 1
     }
+			targeted_modifier = {
+				tag = HTS
+				attack_bonus_against = 2
+				defense_bonus_against = 2
+			}
+			targeted_modifier = {
+				tag = SYR
+				attack_bonus_against = 2
+				defense_bonus_against = 2
+			}
 }							
 wushenlun_idea = {
     picture = generic_wushenlun_idea
@@ -2609,6 +2618,32 @@ army_defence_factor = 1
 				production_factory_start_efficiency_factor = 0.15
 				poverty_development_monthly = 0.03
 				income_growth_factor = -0.05
+			}
+		}		
+		PRC_neomaoism1111_idea = {
+			picture = PRC_neomaoism_idea
+			allowed = {
+				original_tag = PRC
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.05
+				war_support_factor = 0.2
+				personal_value_factor = -0.1
+				totalitarian_socialist_drift = 0.01
+				libertarian_socialist_drift = 0.01
+				communist_drift = 0.05
+				poverty_development_monthly = 0.05
+				society_development_monthly = 0.03
+				expense_growth_factor = -0.1
 			}
 		}	
 		PRC_neomaoism111_idea = {

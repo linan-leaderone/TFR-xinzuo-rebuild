@@ -11835,7 +11835,7 @@ country_event = {
 			add_ideas = PRC_ai_changzheng_core
 set_country_flag = changzheng_start_end
 loji_manyidu_change = yes
-add_to_variable = { loji_manyidu_T = 60 }
+add_to_variable = { loji_manyidu_T = 75 }
 	}
 }
 

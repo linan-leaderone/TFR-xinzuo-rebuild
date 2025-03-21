@@ -75,6 +75,14 @@ spriteType = {
     texturefile = "gfx/MAOYUANXIN/RMD.png"
 }
 spriteType = {
+    name = "GFX_idea_ROC_of_china"
+    texturefile = "gfx/MAOYUANXIN/ROC_RENDA.png"
+}
+spriteType = {
+    name = "decision_category_icon_PRC_RENDAHUIYI"
+    texturefile = "gfx/MAOYUANXIN/quanguorenda.png"
+}
+spriteType = {
     name = "GFX_TFR_long_march_tiaojiao_btn"
     texturefile = "gfx/MAOYUANXIN/loji_btn.png"
 }

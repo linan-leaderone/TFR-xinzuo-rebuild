@@ -1,0 +1,94 @@
+add_namespace = russia
+
+
+
+#Police Breaking up Rallies
+country_event = {
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+	picture = GFX_Russian_Police_MVD
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.12.a
+		add_stability = -0.05
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.03
+		}
+		SOV_add_election_approval_rating_nav = yes		
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 1
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+	}
+
+
+#Party of Pensioners support Zhirinovsky
+country_event = {
+	id = russia.14
+	title = russia.14.t
+	desc = russia.14.d
+	picture = GFX_SOV_party_pensioners
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.14.a
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ldpr_var_temp
+			value = 0.02
+		}
+		SOV_add_election_approval_rating_ldpr = yes
+
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 1
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+	
+	}
+}
+
+#Election Preparations
+country_event = {
+	id = russia.45
+	title = russia.45.t
+	desc = russia.45.d
+	picture = GFX_SOV_presidential_elections
+	
+	is_triggered_only = yes
+	
+
+	option = { #ldpr
+		name = russia.45.b
+		ai_chance = {
+			factor = 5000
+		}
+		custom_effect_tooltip = SOV_side_ldpr
+		custom_effect_tooltip = SOV_elections_started
+		set_country_flag = SOV_sided_with_ldpr_flag
+		complete_national_focus = SOV_russian_destiny
+		hidden_effect = {
+			activate_mission = SOV_countdown_day_mission
+			activate_mission = SOV_opposition_growth_mission
+			country_event = { id = russia.53 days = 15 }
+			country_event = { id = russia.54 days = 30 }
+			country_event = { id = russia.12 days = 50 }
+			country_event = { id = russia.13 days = 20 }
+			country_event = { id = russia.14 days = 70 }
+	
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ldpr_var_temp
+					value = 1
+				}
+				SOV_add_election_approval_rating_ldpr = yes
+		}
+	}
+	
+
+}

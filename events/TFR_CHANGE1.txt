@@ -1,0 +1,38 @@
+add_namespace = syria
+
+#Rojava Refuses
+country_event = {
+	id = syria.12
+	title = syria.12.t
+	desc = syria.12.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.12.a
+			HTS = {declare_war_on = {
+				target = ROJ
+				type = annex_everything
+			}}
+			declare_war_on = {
+				target = HTS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROJ
+				type = annex_everything
+			}
+		if = {
+			limit = {
+				has_government = nationalist
+			}
+			country_event = {
+				id = syria.28
+				days = 350
+			}
+		}
+	}
+}

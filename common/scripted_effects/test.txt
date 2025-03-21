@@ -1,14 +1,79 @@
 PRC_party_fight = {
-#set_popularities = {
-#	totalitarian_socialist = zgm_zcd
-#	communist = gyd_zcd
-#	libertarian_socialist = lgd_zcd
-#	social_democrat = lgd_zp
-#	social_liberal = zyd_zcd
-#	conservative = xzd_zcd
-#	authoritarian_democrat = rmd_zcd
-#}
 
+			hidden_effect = {
+
+			set_variable = {
+				var = ROC_totalitarian_socialist_drift_dynamic_var
+				value = zgm_zcd
+			}
+			set_variable = {
+				var = ROC_communist_drift_dynamic_var
+				value = gyd_zcd
+			}
+			set_variable = {
+				var = ROC_libertarian_socialist_drift_dynamic_var
+				value = lgd_zcd
+			}
+			set_variable = {
+				var = ROC_nationalist_drift_dynamic_var
+				value = rmd_zcd
+			}
+			set_variable = {
+				var = ROC_social_liberal_drift_dynamic_var
+				value = zyd_zcd
+			}
+			set_variable = {
+				var = ROC_conservative_drift_dynamic_var
+				value = xzd_zcd
+			}
+divide_variable = {
+    var = ROC_totalitarian_socialist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_communist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_libertarian_socialist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_libertarian_socialist_drift_dynamic_var
+    value = 4
+}
+			set_variable = {
+				var = ROC_social_democrat_drift_dynamic_var
+				value = ROC_libertarian_socialist_drift_dynamic_var
+			}
+multiply_variable = {
+    var = ROC_social_democrat_drift_dynamic_var
+    value = 3
+}
+divide_variable = {
+    var = ROC_social_liberal_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_conservative_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_nationalist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_nationalist_drift_dynamic_var
+    value = 3
+}
+			set_variable = {
+				var = ROC_authoritarian_democrat_drift_dynamic_var
+				value = ROC_nationalist_drift_dynamic_var
+			}
+multiply_variable = {
+    var = ROC_authoritarian_democrat_drift_dynamic_var
+    value = 2
+}
 
 
 	clear_array = pie_chart
@@ -77,4 +142,5 @@ PRC_party_fight = {
 	}
 
 	clear_variable = ROOT.last_idx
+}
 }

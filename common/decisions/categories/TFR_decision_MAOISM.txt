@@ -71,3 +71,16 @@ has_country_flag = TFR_ANDEQIANG_anniu_start
     priority = 4
 }
 
+UKR_BYA_category = {
+    icon = GFX_UKR_BYA_category_icon
+    allowed = {
+    	tag = BYA
+    }
+    
+    visible = {
+    	always = yes
+    }
+   
+    priority = 4
+}
+

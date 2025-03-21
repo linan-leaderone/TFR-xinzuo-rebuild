@@ -87,6 +87,44 @@ change_government_type_presidential_dictatorship = yes
 
 set_party_name = { ideology = authoritarian_democrat long_name = LAO_communist11122_party_long name = LAO_communist11122_party_long }
 }
+	BYA = {
+remove_ideas = FER_derussification
+remove_ideas = KBK_military_occupation
+		transfer_state = 1374
+		add_state_core = 1374
+add_manpower = 100000
+load_oob = "YASHUYING"
+change_government_type_military_dictatorship = yes  
+set_cosmetic_tag = YASHUYING
+set_party_name = { ideology = national_socialist long_name = SYY1_party_long name = SYY1_party_long }
+				create_country_leader = {
+	                name = UKR_MKXM
+	                desc = "POLITICS_MKXM_DESC"
+	                picture = "gfx/MAOYUANXIN/MKXM.png"
+	                expire = "1999.1.1"
+	                ideology = nazi_maoism
+				}  
+	set_politics = {
+		ruling_party = national_socialist
+		last_election = "2018.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		national_socialist = 60
+		fascist = 5
+		nationalist = 15
+		authoritarian_democrat = 10
+		libertarian_socialist = 10
+	}
+}
+	DPR = {
+				declare_war_on = { 
+					target = BYA
+					type = annex_everything 
+				}
+}
 	VIN = {
 change_government_type_presidential_dictatorship = yes
 	set_politics = {

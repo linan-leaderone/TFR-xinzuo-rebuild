@@ -1165,6 +1165,60 @@ set_cosmetic_tag = PRC_AM
 			
 			custom_effect_tooltip = aftdwfwfwfs
 			hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = ROC_of_china_dynamic
+			}
+			add_to_variable = {
+				var = ROC_political_power_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = ROC_stability_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = ROC_totalitarian_socialist_drift_dynamic_var
+				value = 0.3
+			}
+			add_to_variable = {
+				var = ROC_communist_drift_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = ROC_social_democrat_drift_dynamic_var
+				value = 0.34
+			}
+			add_to_variable = {
+				var = ROC_libertarian_socialist_drift_dynamic_var
+				value = 0.11
+			}
+			add_to_variable = {
+				var = ROC_nationalist_drift_dynamic_var
+				value = 0.01
+			}
+			add_to_variable = {
+				var = ROC_social_liberal_drift_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = ROC_conservative_drift_dynamic_var
+				value = 0.02
+			}
+			add_to_variable = {
+				var = ROC_authoritarian_democrat_drift_dynamic_var
+				value = 0.02
+			}
+set_popularities = {
+	totalitarian_socialist = 30
+	communist = 10
+	libertarian_socialist = 11
+	social_democrat = 34
+	social_liberal = 10
+	conservative = 2
+	authoritarian_democrat = 2
+	nationalist = 1
+}
+
                 set_variable = { zgm_zcd = 1200 }
                 set_variable = { gyd_zcd = 400 }
                 set_variable = { lgd_zcd = 1800 }
@@ -1194,7 +1248,837 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			add_political_power = 75
+			country_event = {
+				id = PRC_MAO1.36
+			}
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_24
+		icon = GFX_focus_PRC_niaolong_24
+		x = 29
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_24_start_3
+            check_variable = { mzd_taidu = 2 }
+		}
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_25
+		}
+		prerequisite = {
+            focus = PRC_niaolong_22
+        }
+
+		completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = PRC_neomaoism_idea
+				add_idea = PRC_neomaoism1111_idea
+			}
+			custom_effect_tooltip = gyd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = 40
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 80
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -20
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -100
+			}
+                PRC_party_fight = yes
+		
+
+		}
+	}      
+   focus = {
+		id = PRC_niaolong_27
+		icon = GFX_focus_PRC_niaolong_27
+		x = 42
+		y = 15
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_26
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_28
+		icon = GFX_focus_PRC_niaolong_28
+		x = 41
+		y = 16
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_27
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_29
+		icon = GFX_focus_PRC_niaolong_29
+		x = 43
+		y = 16
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_27
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	}    
+   focus = {
+		id = PRC_niaolong_46
+		icon = GFX_focus_PRC_niaolong_46
+		x = 33
+		y = 15
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_45
+        }
+		prerequisite = {
+            focus = PRC_niaolong_41
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_47
+		icon = GFX_focus_PRC_niaolong_47
+		x = 36
+		y = 14
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_the_Flower_of_Freedom_4
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_48
+		icon = GFX_focus_PRC_niaolong_48
+		x = 35
+		y = 15
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_47
+        }
+
+		completion_reward = {
+		
+
+		}
+	}    
+   focus = {
+		id = PRC_niaolong_50
+		icon = GFX_focus_PRC_niaolong_50
+		x = 34
+		y = 16
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_46
+        }
+		prerequisite = {
+            focus = PRC_niaolong_48
+        }
+
+
+		completion_reward = {
+		
+
+		}
+	}    
+   focus = {
+		id = PRC_niaolong_51
+		icon = GFX_focus_PRC_niaolong_51
+		x = 34
+		y = 17
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_50
+        }
+
+
+		completion_reward = {
+		
+
+		}
+	}    
+   focus = {
+		id = PRC_niaolong_53
+		icon = GFX_focus_PRC_niaolong_53
+		x = 35
+		y = 18
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_52
+		}
+		prerequisite = {
+            focus = PRC_niaolong_49
+        }
+		prerequisite = {
+            focus = PRC_niaolong_51
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_52
+		icon = GFX_focus_PRC_niaolong_52
+		x = 37
+		y = 18
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_53
+		}
+		prerequisite = {
+            focus = PRC_niaolong_49
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_49
+		icon = GFX_focus_PRC_niaolong_49
+		x = 36
+		y = 17
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_47
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_45
+		icon = GFX_focus_PRC_niaolong_45
+		x = 34
+		y = 14
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_the_Flower_of_Freedom_4
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_41
+		icon = GFX_focus_PRC_niaolong_41
+		x = 32
+		y = 14
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_the_Flower_of_Freedom_4
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_36
+		icon = GFX_focus_PRC_niaolong_36
+		x = 38
+		y = 14
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_the_Flower_of_Freedom_4
+        }
+
+		completion_reward = {
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_37
+		icon = GFX_focus_PRC_niaolong_37
+		x = 38
+		y = 15
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_36
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_40
+		icon = GFX_focus_PRC_niaolong_40
+		x = 38
+		y = 17
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_39
+        }
+		prerequisite = {
+            focus = PRC_niaolong_38
+        }
+
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_39
+		icon = GFX_focus_PRC_niaolong_39
+		x = 37
+		y = 16
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_38
+		}
+		prerequisite = {
+            focus = PRC_niaolong_37
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_38
+		icon = GFX_focus_PRC_niaolong_38
+		x = 39
+		y = 16
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_39
+		}
+		prerequisite = {
+            focus = PRC_niaolong_37
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_32
+		icon = GFX_focus_PRC_niaolong_32
+		x = 40
+		y = 14
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_the_Flower_of_Freedom_4
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_33
+		icon = GFX_focus_PRC_niaolong_33
+		x = 40
+		y = 15
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_32
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_34
+		icon = GFX_focus_PRC_niaolong_34
+		x = 40
+		y = 17
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_33
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_35
+		icon = GFX_focus_PRC_niaolong_35
+		x = 40
+		y = 18
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_34
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_31
+		icon = GFX_focus_PRC_niaolong_31
+		x = 42
+		y = 18
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_30
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	} 
+   focus = {
+		id = PRC_niaolong_30
+		icon = GFX_focus_PRC_niaolong_30
+		x = 42
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_28
+        }
+		prerequisite = {
+            focus = PRC_niaolong_29
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_26
+		icon = GFX_focus_PRC_niaolong_26
+		x = 42
+		y = 14
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_the_Flower_of_Freedom_4
+        }
+
+		completion_reward = {
+			
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_42
+		icon = GFX_focus_PRC_niaolong_42
+		x = 30
+		y = 16
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {
+		}
+		available = {
+		
+		}
+		prerequisite = {
+            focus = PRC_niaolong_25
+        }
+		prerequisite = {
+            focus = PRC_niaolong_24
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_43
+		icon = GFX_focus_PRC_niaolong_43
+		x = 31
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_44
+		}
+		available = {
+			NOT = { country_exists = CHI }
+		}
+		prerequisite = {
+            focus = PRC_niaolong_42
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_44
+		icon = GFX_focus_PRC_niaolong_44
+		x = 29
+		y = 17
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_43
+		}
+		available = {
+			country_exists = CHI 
+		}
+		prerequisite = {
+            focus = PRC_niaolong_42
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}    
+   focus = {
+		id = PRC_niaolong_54
+		icon = GFX_focus_PRC_niaolong_54
+		x = 29
+		y = 18
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+            focus = PRC_niaolong_44
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_25
+		icon = GFX_focus_PRC_niaolong_25
+		x = 31
+		y = 15
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_24
+		}
+		available = {
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_25_start_3
+				OR = {
+            check_variable = { mzd_taidu = 4 }
+            check_variable = { mzd_taidu = 5 }
+		}
+		}
+		}
+		prerequisite = {
+            focus = PRC_niaolong_22
+        }
+
+		completion_reward = {
+			
+			custom_effect_tooltip = zgm_zcd_d
+			add_to_variable = {
+				var = zgm_zcd
+				value = -140
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -20
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 120
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 40
+			}
+                PRC_party_fight = yes
+			
 		
 
 		}
@@ -11471,14 +12355,12 @@ remove_ideas = militia_looting
 			factor = 50
 		}
 		available = {
-		OR = {
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_zhang_hongliang = {is_country_leader = yes}}
 					NOT = {	PRC_hu_chunhua = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
-		}
 		  
 		}
 		completion_reward = {
@@ -11532,6 +12414,14 @@ remove_ideas = militia_looting
 		  
 		}
 		completion_reward = {
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_1
+				}
+			country_event = {
+				id = PRC_MAO1.37
+			}
+				}
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea
