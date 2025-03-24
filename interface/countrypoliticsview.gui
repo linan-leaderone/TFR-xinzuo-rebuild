@@ -575,6 +575,13 @@ guiTypes = {
 				spriteType = "GFX_shuzihuaminzhu"
 				pdx_tooltip = "TFR_shuzihuaminzhu_TT"
 				pdx_tooltip_delayed = "TFR_shuzihuaminzhu_TT_LONG"
+			}					
+			iconType = {
+				name = "TFR_shuzihuaminzhu_type_icon1"
+				position = { x = 8 y = 3 }
+				spriteType = "GFX_shuzihuaminzhu"
+				pdx_tooltip = "TFR_shuzihuaminzhu1_TT"
+				pdx_tooltip_delayed = "TFR_shuzihuaminzhu1_TT_LONG"
 			}	
 		}
 	}

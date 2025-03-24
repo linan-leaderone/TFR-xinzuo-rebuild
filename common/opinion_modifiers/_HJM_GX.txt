@@ -1,0 +1,12 @@
+opinion_modifiers = {
+
+
+	NEW_START_ROCJAP = {
+		value = 50
+	}	
+	NEW_START_AROCJAP = {
+		value = 100
+	}	
+
+
+}

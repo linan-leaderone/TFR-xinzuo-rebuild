@@ -976,6 +976,12 @@ defined_text = {
 			has_idea = ZZZ_shuzihuaminzhu
 		}
 		localization_key = ZZZ_shuzihuaminzhu
+	}		
+	text = {
+		trigger = {
+			has_idea = ZZZ_shuzihuaminzhu1
+		}
+		localization_key = ZZZ_shuzihuaminzhu1
 	}	
 	text = {
 		trigger = {
@@ -1005,6 +1011,7 @@ defined_text = {
 				has_idea = ZZZ_eurasianist_system
 				has_idea = ZZZ_american_peoples_dictatorship
 				has_idea = ZZZ_shuzihuaminzhu
+				has_idea = ZZZ_shuzihuaminzhu1
 			}
 		}
 		localization_key = ZZZ_anarchy

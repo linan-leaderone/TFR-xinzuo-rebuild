@@ -9,6 +9,158 @@ add_to_variable = { loji_manyidu_T = -10 }
 add_to_variable = { mzd_taidu = -1 }
 add_to_variable = { jjtz_taidu  = -1 }
 }
+long_march_buff_love_change = {
+			if = {
+				limit = {
+			NOT = { has_dynamic_modifier = { modifier = loji_of_china_dynamic }}
+				}
+
+				add_dynamic_modifier = {
+					modifier = loji_of_china_dynamic
+				}
+}
+
+			if = {
+				limit = {
+            check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = greater_than_or_equals
+}
+				}
+                set_variable = { loji_manyidu_T_love_buff_var = loji_manyidu_T }
+                set_variable = { loji_manyidu_T_love_buff_varr = 0 }
+
+
+subtract_from_variable = {
+    var = loji_manyidu_T_love_buff_var
+    value = 60
+}
+set_variable = { loji_decryption_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_encryption_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_no_supply_grace_dynamic_var = loji_manyidu_T_love_buff_var}
+add_to_variable = { loji_no_supply_grace_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+divide_variable = {
+    var = loji_manyidu_T_love_buff_var
+    value = 50
+}
+subtract_variable = {
+    var = loji_manyidu_T_love_buff_varr
+    value = loji_manyidu_T_love_buff_var
+}
+set_variable = { loji_consumer_goods_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_production_lack_of_resource_penalty_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_attrition_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_supply_consumption_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_org_loss_when_moving_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_air_agility_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_cas_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_intercept_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { lloji_air_superiority_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_mission_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_cas_present_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_defence_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_speed_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_stability_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_org_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_political_power_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_surrender_limit_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_speed_buildings_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_local_building_slots_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_speed_industrial_complex_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_speed_arms_factory_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_command_power_gain_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_morale_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_breakthrough_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_land_reinforce_rate_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_industrial_capacity_factory_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_mobilization_speed_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_industrial_capacity_dockyard_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_factory_max_efficiency_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_factory_efficiency_gain_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_planning_speed_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_max_planning_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_war_support_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_expense_growth_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+				}
+
+
+
+			if = {
+				limit = {
+            check_variable = {
+    var = loji_manyidu_T
+    value = 60
+    compare = less_than
+}
+				}
+                set_variable = { loji_manyidu_T_love_buff_var = loji_manyidu_T }
+                set_variable = { loji_manyidu_T_love_buff_varr = 0 }
+
+
+subtract_from_variable = {
+    var = loji_manyidu_T_love_buff_var
+    value = 60
+}
+set_variable = { loji_decryption_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_encryption_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_no_supply_grace_dynamic_var = loji_manyidu_T_love_buff_var}
+add_to_variable = { loji_no_supply_grace_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+add_to_variable = { loji_max_command_power_dynamic_var = loji_manyidu_T_love_buff_var }
+divide_variable = {
+    var = loji_manyidu_T_love_buff_var
+    value = 100
+}
+subtract_variable = {
+    var = loji_manyidu_T_love_buff_varr
+    value = loji_manyidu_T_love_buff_var
+}
+set_variable = { loji_consumer_goods_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_production_lack_of_resource_penalty_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_attrition_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_supply_consumption_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_org_loss_when_moving_dynamic_var = loji_manyidu_T_love_buff_varr}
+set_variable = { loji_air_agility_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_cas_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_intercept_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { lloji_air_superiority_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_mission_efficiency_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_air_cas_present_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_defence_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_speed_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_stability_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_org_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_political_power_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_surrender_limit_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_speed_buildings_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_local_building_slots_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_speed_industrial_complex_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_speed_arms_factory_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_command_power_gain_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_army_morale_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_breakthrough_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_land_reinforce_rate_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_industrial_capacity_factory_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_mobilization_speed_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_industrial_capacity_dockyard_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_factory_max_efficiency_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_production_factory_efficiency_gain_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_planning_speed_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_max_planning_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_war_support_factor_dynamic_var = loji_manyidu_T_love_buff_var}
+set_variable = { loji_expense_growth_factor_dynamic_var = loji_manyidu_T_love_buff_varr}
+
+				}
+}
 loji_manyidu_change = {
 			if = {
 				limit = {
@@ -76,6 +228,7 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 		OR = {
 			has_idea = ZZZ_communist_party_state
 			has_idea = ZZZ_ai_governance
+			has_idea = ZZZ_shuzihuaminzhu1
 		}
 				}
 add_to_variable = { loji_manyidu_change_shuzhi = 1 }
@@ -119,6 +272,7 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 				limit = {
 			NOT = {has_idea = ZZZ_communist_party_state}
 			NOT = {has_idea = ZZZ_shuzihuaminzhu}
+			NOT = {has_idea = ZZZ_shuzihuaminzhu1}
 			NOT = {has_idea = ZZZ_socialist_republic}
 			NOT = {has_idea = ZZZ_american_peoples_dictatorship}
 			NOT = {has_idea = ZZZ_revolutionary_front}
@@ -161,8 +315,14 @@ add_to_variable = { loji_manyidu_change_shuzhi = -2 }
 
 add_to_variable = { loji_manyidu_T = loji_manyidu_change_shuzhi }
 
+clamp_variable = {
+    var = loji_manyidu_T
+    min = 0
+    max = 100
+}
 				activate_mission = PRC_loji_manyidu_change_1
 
                 set_variable = { loji_manyidu_change_shuzhi = 0 }
+long_march_buff_love_change = yes
 
 }

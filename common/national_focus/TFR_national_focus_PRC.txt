@@ -2192,9 +2192,6 @@ shared_focus = {
 	    	add_stability = -0.05
 	    	add_war_support = -0.1
 	    }
-		gain_random_agency_upgrade = yes
-		gain_random_agency_upgrade = yes
-		gain_random_agency_upgrade = yes
 	}
 }	
 shared_focus = {
@@ -2269,8 +2266,6 @@ shared_focus = {
 				}   
 		    }
 	    }
-		gain_random_agency_upgrade = yes
-		gain_random_agency_upgrade = yes
 	}
 }		
 shared_focus = {
@@ -2322,8 +2317,6 @@ shared_focus = {
 			freedom_level = 0.1
 			}	
 	    }
-		gain_random_agency_upgrade = yes
-		gain_random_agency_upgrade = yes
 	}
 }	
 shared_focus = {
@@ -2363,7 +2356,6 @@ shared_focus = {
 			add_debt = yes
 	    	add_stability = 0.1
 	    	add_war_support = 0.2
-		gain_random_agency_upgrade = yes
 	}
 }	
 shared_focus = {

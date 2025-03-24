@@ -1,0 +1,86 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+
+
+
+				if = {
+					limit = {
+					
+
+				PRC = {
+			has_completed_focus = PRC_niaolong_31
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							original_tag = JAP
+								is_ally_with = JAP
+						}
+						}
+						ROOT = {
+							original_tag = PRK
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+KOR = {annex_country = {
+								target = PRK
+								transfer_troops = no
+							}
+		set_politics = {
+			ruling_party = social_democrat
+			election_frequency = 48
+			elections_allowed = yes
+		}	
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.4
+			}
+set_cosmetic_tag = KOR_XIN		
+
+create_country_leader = {
+	                name = "KOR_JJY"
+	                desc = "POLITICS_JJY_DESC"
+	                picture = "gfx/MAOYUANXIN/JJY.png"
+	                expire = "1999.1.1"
+	                ideology = progressivism
+				} 
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    add_core_of = KOR
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    remove_core_of = PRK
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}
+}

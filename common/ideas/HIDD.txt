@@ -1,6 +1,27 @@
 	ideas = {
 		hidden_ideas = {
 
+			ZZZ_shuzihuaminzhu1 = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					political_power_factor = 0.1
+					industrial_capacity_factory = 0.1
+					stability_factor = 0.1
+					army_attack_factor = 0.1
+					army_morale_factor = 0.1
+	production_factory_efficiency_gain_factor = 0.1
+	mobilization_speed = 0.1
+	research_speed_factor = 0.1
+	war_support_factor = 0.1
+society_development_monthly = 0.01
+academic_development_monthly = 0.01
+				}
+			}
 			ZZZ_shuzihuaminzhu = {
 				allowed = {
 					always = no

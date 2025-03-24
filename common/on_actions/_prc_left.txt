@@ -128,6 +128,7 @@ PRC = {annex_country = {
 
 				PRC = {
 
+				NOT = {has_completed_focus = PRC_the_Flower_of_Freedom_4}
 				NOT = {has_completed_focus = PRC_masters_of_asia_8}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}

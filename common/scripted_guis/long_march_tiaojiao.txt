@@ -11,15 +11,72 @@ scripted_gui = {
 
 		effects = {
 			TFR_long_march_tiaojiao_btn_click = {
-				if = {
-					limit = { 
-				check_variable = { changzheng_UI_START = 1 }
-					}
-				set_variable = { changzheng_UI_START = 0 }
-				}
-				else = {
-				set_variable = { changzheng_UI_START = 1 }
-				}
+			
+    random_list = {
+        5 = {
+        set_variable = { loji_chat_liaotian = 1 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 2 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 3 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 4 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 5 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 6 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 7 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 8 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 9 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 10 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 11 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 12 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 13 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 14 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 15 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 16 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 17 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 18 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 19 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 20 }
+        }
+        }
+
+
+				
 			}
 			}
 	}		

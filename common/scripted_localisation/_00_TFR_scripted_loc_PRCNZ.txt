@@ -1,4 +1,613 @@
 defined_text = {
+	name = TFR_long_march_tiaojiao_btn_Text
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 0 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text0
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 1 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text1
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 2 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text2
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 3 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text3
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 4 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text4
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 5 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text5
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 6 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text6
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 7 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text7
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 8 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text8
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 9 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text9
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 10 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text10
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 11 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text11
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 12 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text12
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 13 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text13
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 14 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text14
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 15 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text15
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 16 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text16
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 17 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text17
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 18 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text18
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 19 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text19
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 20 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text20
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 21 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text21
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 22 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text22
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 23 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text23
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 24 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text24
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 25 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text25
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 26 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text26
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 27 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text27
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 28 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text28
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 29 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text29
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 30 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text30
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 31 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text31
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 32 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text32
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 33 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text33
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 34 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text34
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 35 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text35
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 36 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text36
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 37 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text37
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 38 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text38
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 39 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text39
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 40 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text40
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 41 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text41
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 42 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text42
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 43 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text43
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 44 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text44
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 45 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text45
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 46 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text46
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 47 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text47
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 48 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text48
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 49 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text49
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 50 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text50
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 51 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text51
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 52 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text52
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 53 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text53
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 54 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text54
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 55 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text55
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 56 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text56
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 57 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text57
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 58 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text58
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 59 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text59
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 60 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text60
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 61 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text61
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 62 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text62
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 63 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text63
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 64 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text64
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 65 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text65
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 66 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text66
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 67 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text67
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 68 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text68
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 69 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text69
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 70 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text70
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 71 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text71
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 72 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text72
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 73 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text73
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 74 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text74
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 75 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text75
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 76 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text76
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 77 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text77
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 78 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text78
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 79 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text79
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 80 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text80
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 81 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text81
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 82 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text82
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 83 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text83
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 84 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text84
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 85 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text85
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 86 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text86
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 87 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text87
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 88 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text88
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 89 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text89
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 90 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text90
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 91 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text91
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 92 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text92
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 93 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text93
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 94 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text94
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 95 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text95
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 96 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text96
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 97 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text97
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 98 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text98
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 99 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text99
+}
+text = {
+    trigger = {
+        check_variable = { loji_chat_liaotian = 100 }
+    }
+    localization_key = TFR_long_march_tiaojiao_btn_Text100
+}
+}
+defined_text = {
 	name = PRC1_loji_category_scripted_loc
 	text = {
 		trigger = {
@@ -231,6 +840,7 @@ defined_text = {
 		trigger = {
 			NOT = {has_idea = ZZZ_communist_party_state}
 			NOT = {has_idea = ZZZ_shuzihuaminzhu}
+			NOT = {has_idea = ZZZ_shuzihuaminzhu1}
 			NOT = {has_idea = ZZZ_socialist_republic}
 			NOT = {has_idea = ZZZ_american_peoples_dictatorship}
 			NOT = {has_idea = ZZZ_revolutionary_front}
@@ -271,6 +881,12 @@ defined_text = {
 			has_idea = ZZZ_shuzihuaminzhu
 		}
 		localization_key = PRC_loji_category_desc_yijian5_loc4
+	}
+	text = {
+		trigger = {
+			has_idea = ZZZ_shuzihuaminzhu1
+		}
+		localization_key = PRC_loji_category_desc_yijian5_loc6
 	}
 	text = {
 		trigger = {

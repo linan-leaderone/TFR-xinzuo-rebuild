@@ -8,7 +8,7 @@ guiTypes = {
 			name = "TFR_long_march_tiaojiao_btn"
 			spriteType = "GFX_TFR_long_march_tiaojiao_btn"
 			position = { x=0 y=600}
-			pdx_tooltip = "TFR_long_march_tiaojiao_btn_Text"
+			pdx_tooltip = "TFR_long_march_tiaojiao_btn_Textt"
 			Orientation = "LEFT"
 		}
 		}

@@ -277,7 +277,7 @@ focus_tree = {
         }
 
 	allow_branch = {
-		#has_completed_focus = PRC_the_Flower_of_Freedom_8	
+		has_completed_focus = PRC_the_Flower_of_Freedom_8	
 	}
 		completion_reward = {
 			add_political_power = 100
@@ -1325,7 +1325,32 @@ set_popularities = {
 
 		completion_reward = {
 			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
 			
+			country_event = {
+				id = PRC_MAO1.46
+			}
+			country_event = {
+				id = PRC_MAO1.45
+				days = 7
+			}
+			JAP = {
+	
+	add_opinion_modifier = {
+    target = PRC
+    modifier = NEW_START_AROCJAP
+}
+	}
+		
+	add_opinion_modifier = {
+    target = JAP
+    modifier = NEW_START_AROCJAP
+}	
+	
 			
 		
 
@@ -1350,7 +1375,32 @@ set_popularities = {
 
 		completion_reward = {
 			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
 			
+		army_experience = 25
+		air_experience = 25
+		navy_experience = 25
+
+		set_temp_variable = {
+			var = PRC_army_reform_progress_temp
+			value = 0.15
+		}
+		PRC_add_army_reform_progress = yes
+
+
+			JAP = {
+		army_experience = 75
+		air_experience = 75
+		navy_experience = 75
+		}
+
+			country_event = {
+				id = PRC_MAO1.44
+			}
 			
 		
 
@@ -1374,6 +1424,14 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			country_event = {
+				id = PRC_MAO1.41
+			}
 			
 			
 			
@@ -1402,6 +1460,11 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
 
 		}
@@ -1424,7 +1487,15 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
+			country_event = {
+				id = PRC_MAO1.48
+			}
 
 		}
 	}   
@@ -1446,6 +1517,11 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
 
 		}
@@ -1472,6 +1548,11 @@ set_popularities = {
 
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
 
 		}
@@ -1495,6 +1576,12 @@ set_popularities = {
 
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			change_government_type_shuzihuaminzhu1 = yes
 		
 
 		}
@@ -1523,7 +1610,26 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
+			custom_effect_tooltip = gyd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = 40
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 80
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -120
+			}
+                PRC_party_fight = yes
 
 		}
 	}   
@@ -1549,6 +1655,24 @@ set_popularities = {
 
 		completion_reward = {
 		
+			custom_effect_tooltip = zgm_zcd_d
+			add_to_variable = {
+				var = zgm_zcd
+				value = -140
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -20
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 200
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -40
+			}
+                PRC_party_fight = yes
 
 		}
 	}   
@@ -1570,6 +1694,11 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
 
 		}
@@ -1585,6 +1714,7 @@ set_popularities = {
 			factor = 100
 		}
 		available = {
+			has_completed_focus = PRC_ai_assisted_governance
 	
 		}
 		prerequisite = {
@@ -1592,6 +1722,11 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
 
 		}
@@ -1614,7 +1749,15 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 		
+			country_event = {
+				id = PRC_MAO1.47
+			}
 
 		}
 	}   
@@ -1715,9 +1858,28 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
 			
 			
 			
+			custom_effect_tooltip = gyd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = 40
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 80
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -120
+			}
+                PRC_party_fight = yes
 		
 
 		}
@@ -1746,6 +1908,20 @@ set_popularities = {
 			
 			
 			
+			custom_effect_tooltip = zgm_zcd_d
+			add_to_variable = {
+				var = zgm_zcd
+				value = -140
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -40
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 180
+			}
+                PRC_party_fight = yes
 		
 
 		}
@@ -1828,7 +2004,7 @@ set_popularities = {
    focus = {
 		id = PRC_niaolong_35
 		icon = GFX_focus_PRC_niaolong_35
-		x = 40
+		x = 39
 		y = 18
 		cost = 2
 		available_if_capitulated = yes
@@ -1840,6 +2016,9 @@ set_popularities = {
 		}
 		prerequisite = {
             focus = PRC_niaolong_34
+        }
+		prerequisite = {
+            focus = PRC_niaolong_40
         }
 
 		completion_reward = {
@@ -1868,7 +2047,42 @@ set_popularities = {
         }
 
 		completion_reward = {
+
+			add_to_faction = KOR
 			
+	    		add_timed_idea = {
+	    	   		idea = PRK_surprise_offensive
+	    	   		days = 50
+	    	   	}
+		declare_war_on = {
+			target = PRK
+			type = annex_everything
+		}
+			KOR = {
+				
+	    		add_timed_idea = {
+	    	   		idea = PRK_surprise_offensive
+	    	   		days = 50
+	    	   	}
+		declare_war_on = {
+			target = PRK
+			type = annex_everything
+		}
+			}
+			JAP = {
+				
+	    		add_timed_idea = {
+	    	   		idea = PRK_surprise_offensive
+	    	   		days = 50
+	    	   	}
+		declare_war_on = {
+			target = PRK
+			type = annex_everything
+		}
+			}
+			country_event = {
+				id = PRC_MAO1.43
+			}
 			
 			
 		
@@ -1896,6 +2110,14 @@ set_popularities = {
         }
 
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			country_event = {
+				id = PRC_MAO1.42
+			}
 			
 			
 			
@@ -1921,8 +2143,21 @@ set_popularities = {
         }
 
 		completion_reward = {
-			
-			
+	remove_opinion_modifier = {
+    target = JAP
+    modifier = past_japanese_war_crimes
+    }
+	JAP = {
+	add_opinion_modifier = {
+    target = PRC
+    modifier = NEW_START_ROCJAP
+}
+	}
+		
+	add_opinion_modifier = {
+    target = JAP
+    modifier = NEW_START_ROCJAP
+}	
 			
 		
 
@@ -2031,6 +2266,41 @@ set_popularities = {
 		}
 	}  
    focus = {
+		id = PRC_niaolong_55
+		icon = GFX_focus_PRC_niaolong_55
+		x = 35
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+		prerequisite = {
+            focus = PRC_niaolong_54
+            focus = PRC_niaolong_43
+        }
+		prerequisite = {
+            focus = PRC_niaolong_53
+            focus = PRC_niaolong_52
+        }
+		prerequisite = {
+            focus = PRC_niaolong_35
+        }
+		prerequisite = {
+            focus = PRC_niaolong_31
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
 		id = PRC_niaolong_25
 		icon = GFX_focus_PRC_niaolong_25
 		x = 31
@@ -2058,6 +2328,7 @@ set_popularities = {
 
 		completion_reward = {
 			
+			remove_ideas = PRC_neomaoism_idea
 			custom_effect_tooltip = zgm_zcd_d
 			add_to_variable = {
 				var = zgm_zcd
@@ -2594,6 +2865,7 @@ set_popularities = {
 		available = {
 			has_completed_focus = PRC_anti_corruption_technology
 		}
+		cancelable = no
 		completion_reward = {
 			add_ideas = PRC_ai_security1_core
 			add_ideas = PRC_ai_intelligence1_core
@@ -8217,6 +8489,7 @@ custom_effect_tooltip = AI_JINDU_50
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
 			has_completed_focus = PRC_the_Flower_of_Freedom_8
+			has_completed_focus = PRC_niaolong_24
 		}
 			power_balance_value = {
     id = PRC_maoism_power_balance
@@ -8258,9 +8531,15 @@ custom_effect_tooltip = AI_JINDU_50
 			}
 
 }
+
+					if = {
+						limit = {
+					has_idea = PRC_neomaoism_idea
+				} 
 			swap_ideas = {
 				remove_idea = PRC_neomaoism_idea
 				add_idea = PRC_neomaoism111_idea
+			}
 			}
 			every_country = {
 				limit = {
@@ -8466,6 +8745,12 @@ custom_effect_tooltip = AI_JINDU_50
 		available = {
 			has_completed_focus = PRC_advanced_economic_planning_1
 
+					if = {
+						limit = {
+					has_completed_focus = PRC_the_Flower_of_Freedom_1
+				} 
+					has_completed_focus = PRC_niaolong_47
+				} 
 		}
 		completion_reward = {
 		unlock_decision_tooltip = PRC_jiaogai_1

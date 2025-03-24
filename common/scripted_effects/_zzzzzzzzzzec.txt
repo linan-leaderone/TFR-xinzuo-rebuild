@@ -25,6 +25,7 @@ remove_gov_types = {
 		ZZZ_american_peoples_dictatorship
 		ZZZ_annihilation_cult
 		ZZZ_shuzihuaminzhu
+		ZZZ_shuzihuaminzhu1
 	}
 }
 
@@ -35,6 +36,14 @@ change_government_type_shuzihuaminzhu = {
 		add_ideas = ZZZ_shuzihuaminzhu
 	}
 }
+change_government_type_shuzihuaminzhu1 = {
+	custom_effect_tooltip = change_gov_type_shuzihuaminzhu1_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_shuzihuaminzhu1
+	}
+}
+
 
 remove_economy_types = {
 	remove_ideas = {

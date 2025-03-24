@@ -629,6 +629,8 @@ has_country_flag = market_desc_de
 set_cosmetic_tag = PRC_GH	
 		set_politics = {
 			ruling_party = social_democrat
+			last_election = "2024.1.1"
+			election_frequency = 48
 			elections_allowed = yes
 		}	
 		end_coalition = yes
@@ -3592,6 +3594,7 @@ country_event = {
 		name = PRC_MAO.96.a
     retire_character = PRC_li_zuocheng
     retire_character = PRC_Zhang_Youxia
+    retire_character = PRC_Li_shangfu
     retire_character = PRC_Li_Yuchao
     retire_character = PRC_wei_fenghe
     retire_character = PRC_wang_ning
