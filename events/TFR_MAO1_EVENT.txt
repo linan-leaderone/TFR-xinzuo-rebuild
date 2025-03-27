@@ -1372,6 +1372,9 @@ set_country_flag = market_desc_de
         option = {
             name = PRC_MAO1.50.a
         }
+        option = {
+            name = PRC_MAO1.50.b
+        }
     }
 
 
@@ -1379,7 +1382,6 @@ set_country_flag = market_desc_de
         id = PRC_MAO1.51
         title = PRC_MAO1.51.t
         desc = PRC_MAO1.51.d
-        picture = GFX_PRC_MAO1_event_51
         is_triggered_only = yes
         fire_only_once = yes
         option = {
@@ -1423,6 +1425,30 @@ set_country_flag = market_desc_de
         fire_only_once = yes
         option = {
             name = PRC_MAO1.54.a
+
+		hidden_effect = {
+
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = Geometridaeism
+		}
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+			}
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = Geometridaeism
+		}
+
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
+			add_ideas = PRC_song_yongyi_hog
+}
+set_country_leader_ideology = Geometridaeism
+			}
         }
     }
 
@@ -1436,7 +1462,79 @@ set_country_flag = market_desc_de
         fire_only_once = yes
         option = {
             name = PRC_MAO1.55.a
+					hidden_effect = {
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
+			}
+set_country_leader_ideology = left_accelerationist_2
+
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
+			add_ideas = PRC_xiong_hou_hog
+			}
+
         }
+
+        }
+        option = {
+            name = PRC_MAO1.55.b
+					hidden_effect = {
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
+			}
+set_country_leader_ideology = left_accelerationist_2
+set_country_leader_name = {
+	ideology = communist
+	name = MHYYMH
+}
+set_country_leader_portrait = {
+	ideology = communist
+	portrait = GFX_PRC_MHYYMH
+}
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
+			add_ideas = PRC_xiong_hou_hog
+			}
+
+        }
+
+        }
+        option = {
+            name = PRC_MAO1.55.c
+					hidden_effect = {
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
+			}
+set_country_leader_ideology = left_accelerationist_2
+
+set_country_leader_name = {
+	ideology = communist
+	name = PRC_XHHHHH
+}
+set_country_leader_portrait = {
+	ideology = communist
+	portrait = GFX_PRC_XHHHHH
+}
+								if = {
+						limit = {
+NOT = {has_idea = PRC_ai_changzheng_core}
+		}
+			add_ideas = PRC_xiong_hou_hog
+			}
+
+        }
+
+        }
+
+
+
     }
 
 
@@ -1449,6 +1547,9 @@ set_country_flag = market_desc_de
         fire_only_once = yes
         option = {
             name = PRC_MAO1.56.a
+set_country_flag = yyxwt
+		unlock_decision_tooltip = PRC_jiaogai_6
+
         }
     }
 
@@ -1462,6 +1563,56 @@ set_country_flag = market_desc_de
         fire_only_once = yes
         option = {
             name = PRC_MAO1.57.a
+	set_country_flag = yyxwt111
+			custom_effect_tooltip = gyd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = 20
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 20
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 120
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -80
+			}
+			add_to_variable = {
+				var = xzd_zcd
+				value = -80
+			}
+                PRC_party_fight = yes
+
+        }
+        option = {
+            name = PRC_MAO1.57.b
+			custom_effect_tooltip = zgm_zcd_d
+			add_to_variable = {
+				var = zgm_zcd
+				value = -60
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -80
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -80
+			}
+			add_to_variable = {
+				var = xzd_zcd
+				value = -20
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 240
+			}
+                PRC_party_fight = yes
+
         }
     }
 

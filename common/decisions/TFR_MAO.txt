@@ -1,38 +1,3 @@
-PRC_loji_category = {
-
-	PRC_loji_manyidu_change_1 = {
-		icon = GFX_decision_changzhengbianhua
-		allowed = { 
-			tag = PRC
-		}
-		activation = {
-			always = no
-		}
-		available = {    
-			
-				custom_trigger_tooltip = {
-		tooltip = loji_manyidu_zuidi_1
-
-			check_variable = { loji_manyidu_T = 0 }
-		}
-		}
-		is_good = no
-		selectable_mission = no
-		days_mission_timeout = 35
-		complete_effect = {
-			country_event = {
-				id = PRC_MAO1.14
-			}				
-			hidden_effect = {
-				
-			}
-		}
-		timeout_effect = { 
-			loji_manyidu_change = yes
-		}
-	}
-
-		}
 PRC_balance_of_maoism_power_category = {
 	PRC_pidoutjp_3 = {
 		allowed = {
@@ -188,6 +153,41 @@ PRC_balance_of_maoism_power_category = {
 			add_popularity = {
 				ideology = libertarian_socialist
 				popularity = 0.02
+			}
+		}
+		icon = GFX_PRC_new_left_decision
+		cost = 50
+	}
+	PRC_jiaogai_6 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_country_flag = yyxwt
+		}
+		available = {
+
+		}
+		days_remove = 35
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO1.57
+			}
+
+
+				remove_ideas = PRC_yangyongxin_idea
+			add_power_balance_value = {
+				id = PRC_maoism_power_balance
+				value = -0.03
 			}
 		}
 		icon = GFX_PRC_new_left_decision
@@ -356,6 +356,7 @@ add_to_variable = {
 		}
 		visible = {
 		has_completed_focus = PRC_baihuaqifang_7
+has_idea = PRC_xuefawenti_idea
 		}
 		available = {
 

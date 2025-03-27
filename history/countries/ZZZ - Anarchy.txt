@@ -221,8 +221,11 @@ set_party_name = { ideology = social_democrat long_name = CUB_communist11122_par
 }
 	PRC = {
 change_government_type_presidential_dictatorship = yes
+add_ideas = PRC_yangyongxin_idea
+add_ideas = PRC_xuefawenti_idea
 add_ideas = PRC_Chinese_Exam_Oriented_Education
 add_ideas = red_noble_idea_1
+	add_research_slot = 1
 	set_politics = {
 		ruling_party = nationalist
 		last_election = "2018.1.1"

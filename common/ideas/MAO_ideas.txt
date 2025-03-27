@@ -238,7 +238,38 @@ red_noble_idea_2 = {
         income_growth_factor = -0.15
         personal_value_factor = -0.06
     }
-}			
+}				
+
+		PRC_xuefawenti_idea = {
+			picture = PRC_xuefawenti_idea
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			modifier = {
+	research_speed_factor = -0.1
+	stability_factor = 0.1
+        income_growth_factor = 0.05
+        business_value_factor = 0.05
+			}
+		}						
+
+		PRC_yangyongxin_idea = {
+			picture = PRC_yangyongxin_idea
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			modifier = {
+	research_speed_factor = -0.05
+	monthly_population = -0.02
+	stability_factor = 0.15
+        income_growth_factor = 0.05
+        business_value_factor = 0.05
+			}
+		}			
 
 		PRC_Chinese_Exam_Oriented_Education = {
 			picture = PRC_Chinese_Exam_Oriented_Education

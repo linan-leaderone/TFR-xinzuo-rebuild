@@ -1,0 +1,35 @@
+PRC_loji_category = {
+
+	PRC_loji_manyidu_change_1 = {
+		icon = GFX_decision_changzhengbianhua
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {    
+			
+				custom_trigger_tooltip = {
+		tooltip = loji_manyidu_zuidi_1
+
+			check_variable = { loji_manyidu_T = 0 }
+		}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		complete_effect = {
+			country_event = {
+				id = PRC_MAO1.14
+			}				
+			hidden_effect = {
+				
+			}
+		}
+		timeout_effect = { 
+			loji_manyidu_change = yes
+		}
+	}
+
+		}

@@ -4,6 +4,9 @@ ideologies = {
 			maoism_cyber = {
 				can_be_randomly_selected = no
 			}
+			left_accelerationist_3 = {
+				can_be_randomly_selected = no
+			}
 			totalism = {
 			}
 			maoism = {
@@ -71,6 +74,9 @@ ideologies = {
 	communist = {
 		types = {
 			left_accelerationist_1 = {
+				can_be_randomly_selected = no
+			}
+			left_accelerationist_2 = {
 				can_be_randomly_selected = no
 			}
 			marxism_lenin_maoism = {
@@ -342,6 +348,9 @@ ideologies = {
 				}
 			}
 			neoliberalism = {
+			}
+			Geometridaeism = {
+				can_be_randomly_selected = no
 			}
 			christian_democracy = {
 				can_be_randomly_selected = no

@@ -496,7 +496,6 @@ NOT = {has_idea = PRC_ai_changzheng_core}
 			add_ideas = PRC_xiong_hou_hog
 			}
 		hidden_effect = {
-set_cosmetic_tag = PRC_HACHIMI	
 		end_coalition = yes
 
 			set_party_name = {
@@ -3340,6 +3339,13 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO.77.a
+
+					if = {
+						limit = {
+					has_idea = PRC_xuefawenti_idea
+				} 
+				remove_ideas = PRC_xuefawenti_idea
+			}
 }
 
 

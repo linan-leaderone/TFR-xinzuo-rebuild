@@ -347,6 +347,10 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/gzl_socialism.png"
 	}		
 	spriteType = {
+		name = "GFX_ideology_Geometridaeism"
+		texturefile = "gfx/MAOYUANXIN/Geometridaeism.png"
+	}	
+	spriteType = {
 		name = "GFX_ideology_kasitekuoism"
 		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
 	}		
@@ -358,6 +362,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_sm_socialism"
 		texturefile = "gfx/MAOYUANXIN/sm_socialism.png"
+	}			
+	spriteType = {
+		name = "GFX_Ideology_Geometridaeism_banner"
+		texturefile = "gfx/MAOYUANXIN/Ideology_Geometridaeism.png"
+		legacy_lazy_load = no
 	}		
 	spriteType = {
 		name = "GFX_Ideology_handongfangzuo"
@@ -437,6 +446,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_left_accelerationist_1"
 		texturefile = "gfx/MAOYUANXIN/left_accelerationist_1.png"
+	}			
+	spriteType = {
+		name = "GFX_ideology_left_accelerationist_2"
+		texturefile = "gfx/MAOYUANXIN/left_accelerationist_2.png"
+	}			
+	spriteType = {
+		name = "GFX_ideology_left_accelerationist_3"
+		texturefile = "gfx/MAOYUANXIN/left_accelerationist_1.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_reformist_socialism_1"
@@ -445,6 +462,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Ideology_maoism_cyber"
 		texturefile = "gfx/MAOYUANXIN/Ideology_maoism_cyber.png"
+		legacy_lazy_load = no
+	}		
+	spriteType = {
+		name = "GFX_Ideology_left_accelerationist2"
+		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_left_accelerationist2.png"
+		legacy_lazy_load = no
+	}			
+	spriteType = {
+		name = "GFX_Ideology_left_accelerationist1"
+		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_left_accelerationist1.png"
 		legacy_lazy_load = no
 	}	
 	spriteType = {

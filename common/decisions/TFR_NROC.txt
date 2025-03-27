@@ -1,0 +1,326 @@
+PRC_RENDAHUIYI = {
+	
+	PRC_lgd_chengnuo_1 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_the_Flower_of_Freedom_4
+		PRC_han_dongfang = {is_country_leader = yes}
+		}
+		available = {
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+		activate_mission = PRC_lgd_chengnuo_1_action
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}	
+	PRC_lgd_chengnuo_2 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_the_Flower_of_Freedom_4
+		PRC_han_dongfang = {is_country_leader = yes}
+		}
+		available = {
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+		activate_mission = PRC_lgd_chengnuo_2_action
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}	
+	PRC_lgd_chengnuo_3 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_the_Flower_of_Freedom_4
+		PRC_han_dongfang = {is_country_leader = yes}
+		}
+		available = {
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+		activate_mission = PRC_lgd_chengnuo_3_action
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}	
+	PRC_lgd_chengnuo_4 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_the_Flower_of_Freedom_4
+		PRC_han_dongfang = {is_country_leader = yes}
+		}
+		available = {
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+		activate_mission = PRC_lgd_chengnuo_4_action
+		}
+
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}
+	PRC_lgd_chengnuo_1_action = {
+		icon = GFX_PRC_liberal_decision
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {    
+		has_completed_focus = PRC_niaolong_27
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 720
+		complete_effect = {
+			
+			custom_effect_tooltip = lgd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -50
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -25
+			}
+                PRC_party_fight = yes
+
+		}
+		timeout_effect = { 
+			
+			custom_effect_tooltip = lgd_zcd_down
+			add_to_variable = {
+				var = zgm_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -300
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 100
+			}
+                PRC_party_fight = yes
+		}
+	}
+	PRC_lgd_chengnuo_2_action = {
+		icon = GFX_PRC_liberal_decision
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {    
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolosrshhd24_start_3   
+		has_completed_focus = PRC_niaolong_51
+		}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 720
+		complete_effect = {
+			
+			custom_effect_tooltip = lgd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -50
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -25
+			}
+                PRC_party_fight = yes
+
+		}
+		timeout_effect = { 
+			
+			custom_effect_tooltip = lgd_zcd_down
+			add_to_variable = {
+				var = zgm_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -300
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 100
+			}
+                PRC_party_fight = yes
+		}
+	}
+	PRC_lgd_chengnuo_3_action = {
+		icon = GFX_PRC_liberal_decision
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {    
+
+					if = {
+						limit = {
+			country_exists = CHI 
+				}
+			has_completed_focus = PRC_niaolong_54
+				}
+					if = {
+						limit = {
+			NOT = { country_exists = CHI }
+				}
+			has_completed_focus = PRC_niaolong_43
+				}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 720
+		complete_effect = {
+			
+			custom_effect_tooltip = lgd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -50
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -25
+			}
+                PRC_party_fight = yes
+
+		}
+		timeout_effect = { 
+			
+			custom_effect_tooltip = lgd_zcd_down
+			add_to_variable = {
+				var = zgm_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -300
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 100
+			}
+                PRC_party_fight = yes
+		}
+	}
+	PRC_lgd_chengnuo_4_action = {
+		icon = GFX_PRC_liberal_decision
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {    
+		has_completed_focus = PRC_niaolong_33
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 720
+		complete_effect = {
+			
+			custom_effect_tooltip = lgd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -50
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -25
+			}
+                PRC_party_fight = yes
+
+		}
+		timeout_effect = { 
+			
+			custom_effect_tooltip = lgd_zcd_down
+			add_to_variable = {
+				var = zgm_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -300
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 100
+			}
+                PRC_party_fight = yes
+		}
+	}
+}

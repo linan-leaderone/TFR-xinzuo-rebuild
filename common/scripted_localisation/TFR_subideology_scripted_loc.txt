@@ -53,6 +53,12 @@ defined_text = {
 
 	text = {
 		trigger = {
+			has_country_leader_ideology = left_accelerationist_3
+		}
+		localization_key = left_accelerationist_3	 
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = maoism
 		}
 		localization_key = maoism
@@ -137,6 +143,12 @@ defined_text = {
 			has_country_leader_ideology = left_accelerationist_1
 		}
 		localization_key = left_accelerationist_1	 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = left_accelerationist_2
+		}
+		localization_key = left_accelerationist_2	 
 	}
 	text = {
 		trigger = {
@@ -837,6 +849,14 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocSocLib
+	text = {
+		trigger = {
+			has_country_leader_ideology = Geometridaeism
+		}
+		localization_key = Geometridaeism
+	}
+
+
 	text = {
 		trigger = {
 			OR = {

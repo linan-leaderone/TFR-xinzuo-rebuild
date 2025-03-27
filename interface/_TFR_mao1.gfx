@@ -71,8 +71,24 @@ spriteType = {
     texturefile = "gfx/MAOYUANXIN/XZD.png"
 }
 spriteType = {
+    name = "GFX_PRC_MHYYMH"
+    texturefile = "gfx/MAOYUANXIN/YMH2.png"
+}
+spriteType = {
+    name = "GFX_PRC_XHHHHH"
+    texturefile = "gfx/MAOYUANXIN/PRC_xiong_hou.png"
+}
+spriteType = {
     name = "GFX_ISR_MXH"
     texturefile = "gfx/MAOYUANXIN/RMD.png"
+}
+spriteType = {
+    name = "GFX_idea_PRC_xuefawenti_idea"
+    texturefile = "gfx/MAOYUANXIN/xuefawenti.png"
+}
+spriteType = {
+    name = "GFX_idea_PRC_yangyongxin_idea"
+    texturefile = "gfx/MAOYUANXIN/yangyongxin.png"
 }
 spriteType = {
     name = "GFX_idea_ROC_of_china"

@@ -1367,7 +1367,7 @@ set_popularities = {
 			factor = 100
 		}
 		available = {
-	
+			has_completed_focus = PRC_chinas_spot_in_the_sun
 		}
 		prerequisite = {
             focus = PRC_niaolong_27
@@ -1480,7 +1480,7 @@ set_popularities = {
 			factor = 100
 		}
 		available = {
-	
+			has_completed_focus = PRC_ai_assisted_governance
 		}
 		prerequisite = {
             focus = PRC_the_Flower_of_Freedom_4
@@ -1493,10 +1493,15 @@ set_popularities = {
 			}
 			add_debt = yes
 		
+remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			country_event = {
 				id = PRC_MAO1.48
 			}
 
+			country_event = {
+				id = PRC_MAO1.56
+				days = 7
+			}
 		}
 	}   
    focus = {
@@ -1780,6 +1785,9 @@ set_popularities = {
 
 		completion_reward = {
 		
+			country_event = {
+				id = PRC_MAO1.52
+			}
 
 		}
 	}   
@@ -1802,6 +1810,10 @@ set_popularities = {
 
 		completion_reward = {
 			
+			
+			country_event = {
+				id = PRC_MAO1.53
+			}
 			
 			
 		
@@ -1946,6 +1958,9 @@ set_popularities = {
 		completion_reward = {
 			
 			
+			country_event = {
+				id = PRC_MAO1.49
+			}
 			
 		
 
@@ -1971,6 +1986,9 @@ set_popularities = {
 		completion_reward = {
 			
 			
+			country_event = {
+				id = PRC_MAO1.50
+			}
 			
 		
 
@@ -1996,6 +2014,9 @@ set_popularities = {
 		completion_reward = {
 			
 			
+			country_event = {
+				id = PRC_MAO1.51
+			}
 			
 		
 
@@ -2143,6 +2164,10 @@ set_popularities = {
         }
 
 		completion_reward = {
+			
+			country_event = {
+				id = PRC_MAO1.58
+			}
 	remove_opinion_modifier = {
     target = JAP
     modifier = past_japanese_war_crimes
@@ -8532,6 +8557,13 @@ custom_effect_tooltip = AI_JINDU_50
 
 }
 
+
+					if = {
+						limit = {
+					has_idea = PRC_yangyongxin_idea
+				} 
+				remove_ideas = PRC_yangyongxin_idea
+			}
 					if = {
 						limit = {
 					has_idea = PRC_neomaoism_idea
@@ -13881,11 +13913,16 @@ has_country_leader = {
 		available = {
 		OR = {
 						PRC_hu_chunhua = {is_country_leader = yes}
-						PRC_ren_chonghao = {is_country_leader = yes}
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
-						PRC_han_dongfang = {is_country_leader = yes}
 						PRC_bo_xilai = {is_country_leader = yes}
+			has_completed_focus = PRC_the_Flower_of_Freedom_3
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_4
+				}
+			has_country_flag = yyxwt111
+				}
 		}
 		  
 		}
