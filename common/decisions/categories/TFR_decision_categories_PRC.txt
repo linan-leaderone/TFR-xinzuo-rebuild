@@ -132,6 +132,7 @@ PRC_maoist_politburo_cat = {
     }
     visible = {
     	has_completed_focus = PRC_legacy_of_mao
+NOT = {has_completed_focus = PRC_the_Flower_of_Freedom_1}
     }
 }
 

@@ -1,0 +1,67 @@
+@landmark_repair_speed_factor = 0.15
+
+buildings = {
+
+
+
+	landmark_National_Smart_Governance_Center_Tower = {
+		show_on_map = 1
+		base_cost = 20000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		icon_frame = 22
+		value = 5
+		
+		is_buildable = no
+		disable_grow_animation = yes
+		spawn_point = landmark_spawn
+		repair_speed_factor = @landmark_repair_speed_factor
+		only_display_if_exists = yes
+		special_icon = GFX_AITAl
+		level_cap = {
+			province_max = 1
+		}
+		always_shown = yes
+		show_modifier = yes
+		country_modifiers = {
+			enable_for_controllers = { PRC }
+			modifiers = {
+				political_power_factor = 0.05
+				research_speed_factor = 0.05
+				income_growth_factor = -0.05
+			}
+		}
+	}
+
+
+	Three_Gorges_Project = {
+		show_on_map = 1
+		base_cost = 20000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		icon_frame = 22
+		value = 5
+		
+		is_buildable = no
+		disable_grow_animation = yes
+		spawn_point = landmark_spawn
+		repair_speed_factor = @landmark_repair_speed_factor
+		only_display_if_exists = yes
+		special_icon = GFX_Three_Gorges_Project
+		level_cap = {
+			province_max = 1
+		}
+		always_shown = yes
+		show_modifier = yes
+		country_modifiers = {
+			enable_for_controllers = { PRC }
+			modifiers = {
+				local_resources_factor = 0.1
+				local_building_slots_factor = 0.1
+				stability_factor = 0.05
+				income_growth_factor = 0.02
+			}
+		}
+	}
+
+
+}
+

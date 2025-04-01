@@ -24,6 +24,8 @@ PRC_RENDAHUIYI = {
 	}
 	available = { 
 	}
+    
+    priority = 40
 	visible_when_empty = yes
 	scripted_gui = PRC_paixi_ui
 }
@@ -75,6 +77,19 @@ UKR_BYA_category = {
     icon = GFX_UKR_BYA_category_icon
     allowed = {
     	tag = BYA
+    }
+    
+    visible = {
+    	always = yes
+    }
+   
+    priority = 4
+}
+
+UKR_RUS_category = {
+    icon = GFX_UKR_RUS_category_icon
+    allowed = {
+    	tag = UKR
     }
     
     visible = {

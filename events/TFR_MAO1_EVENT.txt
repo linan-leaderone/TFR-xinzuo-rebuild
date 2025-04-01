@@ -1691,7 +1691,73 @@ set_country_flag = yyxwt
         fire_only_once = yes
         option = {
             name = PRC_MAO1.63.a
+set_country_flag = roc_lxmzd
+custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_1
+			add_to_variable = {
+				var = zgm_zcd
+				value = -75
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 200
+			}
+                PRC_party_fight = yes
+
         }
+        option = {
+            name = PRC_MAO1.63.b
+set_country_flag = roc_shmzd
+			
+			custom_effect_tooltip = lgd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -50
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -25
+			}
+                PRC_party_fight = yes
+        }
+        option = {
+            name = PRC_MAO1.63.c
+set_country_flag = roc_rbgcd
+custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
+			add_to_variable = {
+				var = zgm_zcd
+				value = 200
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 400
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -500
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -100
+			}
+                PRC_party_fight = yes
+        }
+
     }
 
 
@@ -1704,6 +1770,47 @@ set_country_flag = yyxwt
         fire_only_once = yes
         option = {
             name = PRC_MAO1.64.a
+			
+			custom_effect_tooltip = lgd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -50
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -25
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -25
+			}
+                PRC_party_fight = yes
+        }
+        option = {
+            name = PRC_MAO1.64.b
+			
+			custom_effect_tooltip = lgd_zcd_down
+			add_to_variable = {
+				var = zgm_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 100
+			}
+			add_to_variable = {
+				var = lgd_zcd
+				value = -300
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 100
+			}
+                PRC_party_fight = yes
         }
     }
 

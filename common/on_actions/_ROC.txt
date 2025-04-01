@@ -9,6 +9,53 @@ on_actions = {
 					
 
 				PRC = {
+			has_completed_focus = PRC_niaolong_56
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							original_tag = SHK
+								is_ally_with = SHK
+						}
+						}
+						ROOT = {
+							original_tag = JAP
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+SHK = {annex_country = {
+								target = JAP
+								transfer_troops = no
+							}
+
+set_cosmetic_tag = JAP_republic		
+
+							}
+
+		PRC = {
+			add_to_faction = SHK
+		}
+				every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    remove_core_of = JAP
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+					
+
+				PRC = {
 			has_completed_focus = PRC_niaolong_31
 		}
 

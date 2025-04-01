@@ -1,0 +1,75 @@
+add_namespace = jap
+
+country_event = {
+	# Japan victory
+	id = jap.9
+	title = jap.9.t
+	desc = jap.9.d
+	picture = GFX_jap_jsdf
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			CHI = {
+				add_ideas = CHI_destroyed_country_1
+			}
+		}
+	}
+	option = {
+		name = jap.9.a
+		set_global_flag = JAP_japan_victory
+
+			add_dynamic_modifier = {
+				modifier = JAP_new_era_japan_dynamic
+			}
+			focus_unlock = yes
+			hidden_effect = {
+				load_focus_tree = TFR_tree_JAP_ldp
+				complete_national_focus = JAP_triumph_of_japanese_people
+				remove_ideas = JAP_helicopter_bonus
+				remove_ideas = JAP_helicopter_destroyers
+				remove_ideas = JAP_kawasaki_bonus
+				remove_ideas = PDO_taiwan_intervention_idea
+				remove_ideas = PDO_taiwan_intervention_2_idea
+				remove_ideas = JAP_society_balance
+				country_event = {
+					id = jap.112
+					days = 1 
+					random_days = 2
+				}
+
+					set_temp_variable = {
+					    var = JAP_ldp_conservatives_var_temp
+					    value = 0.4
+					    }
+					JAP_add_influence_ldp_conservatives = yes
+			
+			}
+	
+	}
+}
+
+#Liberal tree - premier assasination attempt
+country_event = {
+	id = jap.78
+	title = jap.78.t
+	desc = jap.78.d
+	picture = GFX_kill_prime
+	immediate = {
+		hidden_effect = {
+			set_global_flag = JAP_edano_killed
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = jap.78.b
+		custom_effect_tooltip = JAP_keep_coalition_tt
+		set_country_flag = JAP_liberal_congress_flag
+		complete_national_focus = JAP_preserve_the_coalition
+		complete_national_focus = JAP_preserve_the_coalition
+		country_event = {
+			id = jap.80
+			days = 20
+		}
+	}
+}

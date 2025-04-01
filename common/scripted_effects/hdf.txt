@@ -1,0 +1,17 @@
+jap_UNF_UN_ADD = {
+
+
+add_to_variable = { JAP_CHIJUNSHULIANG  = -1 }
+
+	    SHK = {			
+			load_oob = SHK_reserves			
+	    }		
+if = {
+    limit = {
+check_variable = { var_name > 0 }
+    }			
+jap_UNF_UN_ADD = yes
+}
+
+
+}

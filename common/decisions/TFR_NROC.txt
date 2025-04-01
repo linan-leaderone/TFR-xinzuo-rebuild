@@ -1,5 +1,446 @@
 PRC_RENDAHUIYI = {
+						
+	PRC_lgd_duiriguanxi_5 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_56
+		}
+		available = {
+	JAP = {communist > 0.35}
+		}
+		days_remove = 28
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+		custom_effect_tooltip = PRC_thiwdwfdwfwill_leadfffcccc_to_the_gaw
+	    hidden_effect = {	
 	
+AST = {set_faction_leader = yes }	
+	    JAP = {leave_faction = yes }	
+	    SHK = {			
+			transfer_state = 531	
+			transfer_state = 1340	
+			transfer_state = 1335	
+			transfer_state = 1338			
+	    }
+	    SHK = {			
+			load_oob = SHK_reserves	
+
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}		
+	    }			
+		
+jap_UNF_UN_ADD = yes
+	    }
+
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}							
+	PRC_lgd_duiriguanxi_9 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_28
+		}
+		available = {
+	JAP = {social_liberal > 0.4}
+		}
+		days_remove = 28
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 5000
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+JAP = {
+				set_politics = {
+				ruling_party = social_liberal
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			hidden_effect = {
+				load_focus_tree = TFR_tree_JAP_liberal
+				complete_national_focus = JAP_triumph_of_democracy
+				complete_national_focus = JAP_for_people_for_the_future
+				remove_ideas = JAP_helicopter_bonus
+				remove_ideas = JAP_helicopter_destroyers
+				remove_ideas = JAP_kawasaki_bonus
+				remove_ideas = PDO_taiwan_intervention_idea
+				remove_ideas = PDO_taiwan_intervention_2_idea
+				remove_ideas = JAP_fragmented_goverment_idea
+				remove_ideas = JAP_society_balance
+				country_event = {
+					id = jap.78
+
+				}
+
+			}
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}						
+	PRC_lgd_duiriguanxi_11 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_57
+		}
+		available = {
+	MON = {social_democrat > 0.5}
+		}
+		days_remove = 28
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+					if = {
+						limit = {
+				NOT = {MON = { has_government = social_democrat }}
+				}
+MON = {
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			}
+			}
+
+		PRC = {
+			add_to_faction = MON
+		}
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}							
+	PRC_lgd_duiriguanxi_7 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_29
+		}
+		available = {
+	JAP = {social_democrat > 0.5}
+		}
+		days_remove = 28
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 5000
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+JAP = {
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}						
+	PRC_lgd_duiriguanxi_4 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_56
+		}
+		available = {
+	JAP = {communist > 0.6}
+		}
+		days_remove = 28
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 5000
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+JAP = {
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+	    hidden_effect = {	
+				create_country_leader = {
+	                name = "DKPZ"
+	                desc = "POLITICS_DKPZ_DESC"
+	                picture = "gfx/MAOYUANXIN/DKPZ.png"
+	                expire = "1999.1.1"
+	                ideology = trotskyism
+				}   
+						}
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}				
+	PRC_lgd_duiriguanxi_3 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_56
+		}
+		available = {
+
+		}
+		days_remove = 28
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+add_to_variable = { JAP_CHIJUNSHULIANG  = 1 }
+JAP = {
+
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}			
+	PRC_lgd_duiriguanxi_10 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_57
+		}
+		available = {
+
+		}
+		days_remove = 28
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+MON = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+
+			}
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}		
+	PRC_lgd_duiriguanxi_6 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_29
+		}
+		available = {
+
+		}
+		days_remove = 28
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+JAP = {
+
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}	
+	PRC_lgd_duiriguanxi_8 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_28
+		}
+		available = {
+
+		}
+		days_remove = 28
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+JAP = {
+
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+			}
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}		
+	PRC_lgd_duiriguanxi_2 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_56
+		}
+		available = {
+
+		}
+		days_remove = 28
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+JAP = {
+
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.01
+			}
+			}
+			}
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}	
+	PRC_lgd_duiriguanxi_1 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_27
+		}
+		available = {
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+			country_event = {
+				id = PRC_MAO1.63
+			}
+		}
+
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}		
+	PRC_lgd_duiriguanxi_2 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_27
+		}
+		available = {
+
+		}
+		fire_only_once = yes
+		complete_effect = {
+			country_event = {
+				id = PRC_MAO1.63
+			}
+		}
+
+		icon = GFX_PRC_jap_rel
+		cost = 50
+	}		
+
 	PRC_lgd_chengnuo_1 = {
 		allowed = {
 			original_tag = PRC

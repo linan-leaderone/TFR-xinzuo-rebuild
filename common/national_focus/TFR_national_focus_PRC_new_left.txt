@@ -1309,7 +1309,7 @@ set_popularities = {
    focus = {
 		id = PRC_niaolong_27
 		icon = GFX_focus_PRC_niaolong_27
-		x = 42
+		x = 43
 		y = 15
 		cost = 2
 		available_if_capitulated = yes
@@ -1331,6 +1331,7 @@ set_popularities = {
 			}
 			add_debt = yes
 			
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_1
 			country_event = {
 				id = PRC_MAO1.46
 			}
@@ -1355,6 +1356,105 @@ set_popularities = {
 		
 
 		}
+	}        
+   focus = {
+		id = PRC_niaolong_56
+		icon = GFX_focus_PRC_niaolong_56
+		x = 45
+		y = 16
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_28
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_29
+		}
+		available = {
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_24_starfvvvsssst_3
+has_country_flag = roc_rbgcd
+		}
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_27
+        }
+
+		completion_reward = {
+			
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_2
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_3
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_4
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_5
+			hidden_effect = {
+							
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    add_core_of = SHK
+		    }	
+									SHK = {
+				set_capital = {state = 531}
+                inherit_technology = PRC
+				set_cosmetic_tag = JAP_udf
+				set_party_name = { ideology = communist long_name = JAPCPCC_party name = JAPCPCC_party }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "CXFZ"
+	                desc = "POLITICS_CXFZ_DESC"
+	                picture = "gfx/MAOYUANXIN/CXFZ.png"
+	                expire = "1999.1.1"
+	                ideology = trotskyism
+				}   
+				create_corps_commander = {
+name = "CXFZ" 
+desc = "POLITICS_CXFZ_DESC"
+portrait_path = "gfx/MAOYUANXIN/CXFZ.png"
+skill = 4
+attack_skill = 4
+defense_skill = 4
+planning_skill = 4
+logistics_skill = 4
+traits = { 
+}
+} 
+		    }
+		
+	}
+			JAP = {
+	
+	remove_opinion_modifier = {
+    target = PRC
+    modifier = NEW_START_AROCJAP
+}
+	remove_opinion_modifier = {
+    target = PRC
+    modifier = NEW_START_ROCJAP
+}
+	}
+		
+	remove_opinion_modifier = {
+    target = JAP
+    modifier = NEW_START_AROCJAP
+}	
+	remove_opinion_modifier = {
+    target = JAP
+    modifier = NEW_START_ROCJAP
+}
+	
+			
+		
+
+		}
 	}  
    focus = {
 		id = PRC_niaolong_28
@@ -1368,6 +1468,16 @@ set_popularities = {
 		}
 		available = {
 			has_completed_focus = PRC_chinas_spot_in_the_sun
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_24_starfvvvsssstw_3
+has_country_flag = roc_lxmzd
+		}
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_56
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_29
 		}
 		prerequisite = {
             focus = PRC_niaolong_27
@@ -1380,6 +1490,8 @@ set_popularities = {
 				value = 50
 			}
 			add_debt = yes
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_9
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_8
 			
 		army_experience = 25
 		air_experience = 25
@@ -1416,8 +1528,18 @@ set_popularities = {
 		ai_will_do = {
 			factor = 100
 		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_28
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_56
+		}
 		available = {
 	
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_2333_starfvvvsssstw_3
+has_country_flag = roc_lxmzd
+		}
 		}
 		prerequisite = {
             focus = PRC_niaolong_27
@@ -1429,6 +1551,8 @@ set_popularities = {
 				value = 50
 			}
 			add_debt = yes
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_6
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_7
 			country_event = {
 				id = PRC_MAO1.41
 			}
@@ -1465,6 +1589,9 @@ set_popularities = {
 				value = 100
 			}
 			add_debt = yes
+			country_event = {
+				id = PRC_MAO1.60
+			}
 		
 
 		}
@@ -1705,6 +1832,9 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			}
 			add_debt = yes
 		
+			country_event = {
+				id = PRC_MAO1.61
+			}
 
 		}
 	}   
@@ -1734,6 +1864,9 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			add_debt = yes
 		
 
+			country_event = {
+				id = PRC_MAO1.59
+			}
 		}
 	}   
    focus = {
@@ -1810,6 +1943,34 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			custom_effect_tooltip = autonniaolong_37zhiqu1_tooltip
+			hidden_effect = {
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_guangxi_zhuang_autonomous_region
+					}
+				}		
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_inner_mongolia_autonomous_region
+					}
+				}		
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_xinjiang_uygur_autonomous_region
+					}
+				}		
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_tibet_autonomous_region
+					}
+				}		
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_ningxia_hui_autonomous_region
+					}
+				}
+			}
 			
 			country_event = {
 				id = PRC_MAO1.53
@@ -1835,8 +1996,6 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		}
 		prerequisite = {
             focus = PRC_niaolong_39
-        }
-		prerequisite = {
             focus = PRC_niaolong_38
         }
 
@@ -1957,6 +2116,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			add_ideas = PRC_niaolong_xindengta
 			
 			country_event = {
 				id = PRC_MAO1.49
@@ -1986,6 +2146,10 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		completion_reward = {
 			
 			
+			swap_ideas = {
+				remove_idea = PRC_niaolong_xindengta
+				add_idea = PRC_niaolong_xindengta1
+			}
 			country_event = {
 				id = PRC_MAO1.50
 			}
@@ -2013,6 +2177,10 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			swap_ideas = {
+				remove_idea = PRC_niaolong_xindengta1
+				add_idea = PRC_niaolong_xindengta2
+			}
 			
 			country_event = {
 				id = PRC_MAO1.51
@@ -2044,6 +2212,10 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			swap_ideas = {
+				remove_idea = PRC_niaolong_xindengta2
+				add_idea = PRC_niaolong_xindengta3
+			}
 			
 			
 		
@@ -2109,11 +2281,42 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		
 
 		}
+	}  
+   focus = {
+		id = PRC_niaolong_57
+		icon = GFX_focus_PRC_niaolong_57
+		x = 44
+		y = 18
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	
+		}
+		prerequisite = {
+            focus = PRC_niaolong_30
+        }
+
+		completion_reward = {
+
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_11
+					if = {
+						limit = {
+				NOT = {MON = { has_government = social_democrat }}
+				}
+		unlock_decision_tooltip = PRC_lgd_duiriguanxi_10
+				}
+			
+		
+
+		}
 	} 
    focus = {
 		id = PRC_niaolong_30
 		icon = GFX_focus_PRC_niaolong_30
-		x = 42
+		x = 43
 		y = 17
 		cost = 5
 		available_if_capitulated = yes
@@ -2125,9 +2328,8 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		}
 		prerequisite = {
             focus = PRC_niaolong_28
-        }
-		prerequisite = {
             focus = PRC_niaolong_29
+            focus = PRC_niaolong_56
         }
 
 		completion_reward = {
@@ -2149,7 +2351,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
    focus = {
 		id = PRC_niaolong_26
 		icon = GFX_focus_PRC_niaolong_26
-		x = 42
+		x = 43
 		y = 14
 		cost = 2
 		available_if_capitulated = yes
@@ -2201,6 +2403,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		mutually_exclusive = {
 		}
 		available = {
+			has_completed_focus = PRC_niaolong_46
 		
 		}
 		prerequisite = {
@@ -2210,6 +2413,25 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			
+			country_event = {
+				id = PRC_MAO1.62
+			}
+			custom_effect_tooltip = autonsssqsdddsomy_zizhiqu1_tooltip
+			
+			hidden_effect = {
+				
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_hong_kong
+					}
+				}		
+				every_controlled_state = {
+					remove_dynamic_modifier = {
+						modifier = PRC_macau
+					}
+				}
+	}
 			
 		
 
@@ -2237,6 +2459,98 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			custom_effect_tooltip = autonssssomy_zizhiqu1_tooltip
+
+			hidden_effect = {
+				
+					if = {
+						limit = {
+				524 = {
+					is_fully_controlled_by = PRC
+				}	
+				NOT = { country_exists = CHI }
+				}
+
+				every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    add_core_of = IMA
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    remove_core_of = CHI
+		    }	
+				}
+					
+			release_autonomy = {
+			target = IMA
+			autonomy_state = autonomy_zizhiqu
+			freedom_level = 0.5
+			}
+					
+			IMA = {
+                inherit_technology = PRC
+				load_oob = CHI_PRC_puppet
+				set_capital = {state = 1148}
+				set_cosmetic_tag = IMA_XIN
+				set_party_name = { ideology = social_democrat long_name = TWW4_party_long name = TWW4_party_long }
+				set_party_name = { ideology = social_liberal long_name = TWW5_party_long name = TWW5_party_long }
+				set_party_name = { ideology = conservative long_name = TWW6_party_long name = TWW6_party_long }
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				set_popularities = {
+					social_democrat = 50
+					social_liberal = 30
+					conservative = 20
+				}
+				CHI = {set_nationality = {
+    target_country = IMA
+    character = CHI_han_kuo_yu_char
+}}
+				CHI = {set_nationality = {
+    target_country = IMA
+    character = CHI_tsai_ing_wen_char
+}}
+				CHI = {set_nationality = {
+    target_country = IMA
+    character = CHI_lai_ching_te_char
+}}
+		add_country_leader_role = {
+			character = CHI_tsai_ing_wen_char
+			promote_leader = yes
+			country_leader = {
+				ideology = sm_socialism
+				expire = "1.1.1.1"
+			
+			}
+		}
+		add_country_leader_role = {
+			character = CHI_tsai_ing_wen_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Geometridaeism
+				expire = "1.1.1.1"
+			
+			}
+		}
+		add_country_leader_role = {
+			character = CHI_han_kuo_yu_char
+			promote_leader = yes
+			country_leader = {
+				ideology = conservative_socialism
+				expire = "1.1.1.1"
+			
+			}
+		}
+
+				}
+				}
 			
 		
 
@@ -2263,9 +2577,17 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
         }
 
 		completion_reward = {
-			
-			
+	CHI = {
+	add_opinion_modifier = {
+    target = PRC
+    modifier = NEW_START_ROCJAP
+}
+	}
 		
+	add_opinion_modifier = {
+    target = CHI
+    modifier = NEW_START_ROCJAP
+}	
 
 		}
 	}    
@@ -2285,7 +2607,11 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
-			
+	diplomatic_relation = {
+    country = CHI
+    relation = non_aggression_pact
+    active = yes
+    }
 		
 
 		}
@@ -2310,6 +2636,9 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		prerequisite = {
             focus = PRC_niaolong_53
             focus = PRC_niaolong_52
+        }
+		prerequisite = {
+            focus = PRC_niaolong_57
         }
 		prerequisite = {
             focus = PRC_niaolong_35

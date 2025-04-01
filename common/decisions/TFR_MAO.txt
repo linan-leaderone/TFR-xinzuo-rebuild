@@ -1441,3 +1441,35 @@ UKR = {has_war_with = SOV}
 	}
 }
 
+UKR_RUS_category = {
+    
+
+	UKR_RUS_8 = {
+		allowed = {
+			tag = UKR
+		}
+		visible = {
+			tag = UKR
+
+		}
+		available = {
+UKR = {has_war_with = SOV}
+PRC = {has_completed_focus = PRC_the_Flower_of_Freedom_4}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			PRC = {country_event = {
+				id = PRC_MAO1.64
+			}}
+		}
+		remove_effect = {
+
+
+
+			
+		}
+		ai_will_do = {
+		base = 1000
+		}
+	}
+}

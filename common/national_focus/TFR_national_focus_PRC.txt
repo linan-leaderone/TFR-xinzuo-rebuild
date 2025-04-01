@@ -1670,6 +1670,9 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_the_red_phoenix
 	
+	allow_branch = {
+		NOT = {has_country_flag = PRC_handongfang_hog}
+	}
 	ai_will_do = {
 	    factor = 100
 	}
@@ -2084,14 +2087,6 @@ shared_focus = {
 	}
 	prerequisite = {
 	    focus = PRC_korean_economic_assistence
-	}
-	allow_branch = {
-		NOT = {
-			OR = {
-				has_country_flag = PRC_nationalist_win
-				has_global_flag = PRC_liberal_china_flag
-			}
-		}
 	}
 	ai_will_do = {
 	    factor = 100

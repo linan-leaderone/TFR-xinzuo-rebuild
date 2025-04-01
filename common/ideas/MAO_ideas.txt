@@ -264,8 +264,7 @@ red_noble_idea_2 = {
 			}
 			modifier = {
 	research_speed_factor = -0.05
-	monthly_population = -0.02
-	stability_factor = 0.15
+	stability_factor = 0.05
         income_growth_factor = 0.05
         business_value_factor = 0.05
 			}

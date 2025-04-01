@@ -1,4 +1,17 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_buildings_strip1"
+		textureFile = "gfx/MAOYUANXIN/building_icon_strip1.dds"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_convert_ic_button1"
+		textureFile = "gfx/MAOYUANXIN/convert_ic_button.dds"
+	}
+	spriteType = {
+		name = "GFX_PRC_jap_rel"
+		textureFile = "gfx/MAOYUANXIN/duiriguanxi.png"
+	}
 spriteType = {
     name = "GFX_PRC_loji_banner1"
     texturefile = "gfx/MAOYUANXIN/PRC_loji_banner1.png"
@@ -49,6 +62,16 @@ spriteType = {
     name = "GFX_PRC_red_noble_banner"
     texturefile = "gfx/MAOYUANXIN/GFX_PRC_red_noble_banner.png"
 		legacy_lazy_load = no
+}
+spriteType = {
+    name = "GFX_Three_Gorges_Project"
+    texturefile = "gfx/MAOYUANXIN/GFX_Three_Gorges_Project.png"
+    noOfFrames = 2
+}
+spriteType = {
+    name = "GFX_AITAl"
+    texturefile = "gfx/MAOYUANXIN/AITA.png"
+    noOfFrames = 2
 }
 spriteType = {
     name = "GFX_ISR_FXD"
@@ -113,6 +136,10 @@ spriteType = {
 spriteType = {
     name = "GFX_idea_red_noble_idea"
     texturefile = "gfx/MAOYUANXIN/GFX_idea_red_noble_idea.png"
+}
+spriteType = {
+    name = "GFX_idea_PRC_niaolong_xindengta"
+    texturefile = "gfx/MAOYUANXIN/GFX_PRC_niaolong_xindengta.png"
 }
 spriteType = {
     name = "GFX_idea_PRC_Chinese_Exam_Oriented_Education"

@@ -1,0 +1,90 @@
+state_categories={
+	wasteland = {
+		local_building_slots = 0
+		state_production_speed_power_plant_factor = -1
+		state_production_speed_nuclear_reactor_factor = -1
+		state_production_speed_energy_farm_factor = -1
+		color = { 20 20 20 }
+	}
+	enclave = {
+		local_building_slots = 0
+		state_production_speed_power_plant_factor = -1
+		state_production_speed_nuclear_reactor_factor = -1
+		state_production_speed_energy_farm_factor = -1
+		color = { 255 0 0 }
+	}
+	tiny_island = {
+		local_building_slots = 0
+		state_production_speed_power_plant_factor = -1
+		state_production_speed_nuclear_reactor_factor = -1
+		state_production_speed_energy_farm_factor = -1
+		color = { 50 50 50 }
+	}
+	small_island = {
+		local_building_slots = 4
+		state_production_speed_power_plant_factor = -1
+		state_production_speed_nuclear_reactor_factor = -1
+		state_production_speed_energy_farm_factor = -1
+		color = { 255 0 0 }
+	}
+	pastoral = {
+		local_building_slots = 4
+		state_production_speed_power_plant_factor = -1
+		state_production_speed_nuclear_reactor_factor = -1
+		state_production_speed_energy_farm_factor = -1
+		color = { 255 150 60 }
+	}
+	rural = {
+		local_building_slots = 8
+		state_production_speed_power_plant_factor = -1
+		state_production_speed_nuclear_reactor_factor = -1
+		state_production_speed_energy_farm_factor = -1
+		color = { 240 210 0 }
+	}
+	village = {
+		local_building_slots = 12
+		state_production_speed_power_plant_factor = -0.75
+		state_production_speed_nuclear_reactor_factor = -0.75
+		state_production_speed_energy_farm_factor = -0.75
+		color = { 0 225 0 }
+	}
+	town = {
+		local_building_slots = 16
+		state_production_speed_power_plant_factor = -0.5
+		state_production_speed_nuclear_reactor_factor = -0.5
+		state_production_speed_energy_farm_factor = -0.5
+		color = { 0 250 30 }
+	}
+	large_town = {
+		local_building_slots = 20
+		color = { 0 120 20 }
+	}
+	suburb = {
+		local_building_slots = 24
+		color = { 0 250 167 }
+	}
+	large_suburb = {
+		local_building_slots = 28
+		color = { 0 184 123 }
+	}
+	city = {
+		local_building_slots = 32
+		color = { 0 181 184 }
+	}
+	large_city = {
+		local_building_slots = 36
+		color = { 0 208 212 }
+	}
+	metropolis = {
+		local_building_slots = 40
+		color = { 0 120 212 }
+	}
+	conurbation = {
+		local_building_slots = 44
+		color = { 0 94 255 }
+	}
+	megalopolis = {
+		local_building_slots = 48
+		color = { 113 0 219 }
+	}
+}
