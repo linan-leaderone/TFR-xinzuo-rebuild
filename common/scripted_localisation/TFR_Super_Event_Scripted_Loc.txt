@@ -6,7 +6,19 @@
 			}
 			localization_key = "super_patriot_victory"
 		}
-								
+													
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar1_flag
+			}
+			localization_key = "tlibwar1"
+		}									
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar_flag
+			}
+			localization_key = "tlibwar"
+		}							
 		text = { 
 			trigger = {
 				has_country_flag = aifh_flag
@@ -431,7 +443,18 @@
 			}
 			localization_key = "super_patriot_victory_text"
 		}
-								
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar1_flag
+			}
+			localization_key = "tlibwar1_text"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar_flag
+			}
+			localization_key = "tlibwar_text"
+		}
 		text = { 
 			trigger = {
 				has_country_flag = shwj_flag
@@ -849,6 +872,20 @@
 				has_country_flag = PTF_patriot_front_victory
 			}
 			localization_key = "super_patriot_victory_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar1_flag
+			}
+			localization_key = "tlibwar1_button"
+		}
+		
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar_flag
+			}
+			localization_key = "tlibwar_button"
 		}
 		
 		text = { 

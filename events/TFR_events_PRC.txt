@@ -5548,34 +5548,7 @@ country_event = {
 	}
 }
 
-#Red Guards Angered by External Investments
-country_event = {
-	id = china.153
-	title = china.153.t
-	desc = china.153.d
-	picture = GFX_wang_yang_declaration
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-	}
-	option = {
-		name = china.153.a
-		add_political_power = -25
-		add_power_balance_value = {
-			id = PRC_nationalist_bop
-			value = -0.03
-		}
-	}
-	option = {
-		name = china.153.b
-		add_political_power = 35
-		add_stability = -0.05
-		add_power_balance_value = {
-			id = PRC_nationalist_bop
-			value = -0.05
-		}
-	}
-}
+
 
 #initial problems
 country_event = {

@@ -8,6 +8,17 @@ scripted_gui = {
 			always = yes
 		}
 
+
+		triggers = {
+			minzhen1_icon_visible = {
+				NOT = {
+		has_country_flag = PRC_handongfang_youxian_fenlie	
+				}
+			}
+			minzhen2_icon_visible = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+			}
+		}
 		
 		properties = {
 

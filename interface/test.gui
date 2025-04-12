@@ -21,11 +21,18 @@ guiTypes = {
 		}
 
 		iconType = {
-			name = "minzhen_icon"
+			name = "minzhen1_icon"
 			position = { x=350 y=300 }
 			quadTextureSprite = "GFX_ISR_MZ"
 			pdx_tooltip = ISR_minzhen_paixi
 			pdx_tooltip_delayed = ISR_minzhen_paixi_desc	
+		}
+		iconType = {
+			name = "minzhen2_icon"
+			position = { x=350 y=300 }
+			quadTextureSprite = "GFX_ISR_MZ2"
+			pdx_tooltip = ISR_minzhen_paixi2
+			pdx_tooltip_delayed = ISR_minzhen_paixi_desc2	
 		}
 		iconType = {
 			name = "likude_icon"

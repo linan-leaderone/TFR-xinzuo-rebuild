@@ -229,6 +229,14 @@ ideologies = {
 			sm_socialism = {
 				can_be_randomly_selected = no
 			}
+			kirakira_dokidoki = {
+				can_be_randomly_selected = no
+				color = {
+					250
+					39
+					89
+				}
+			}
 
 			left_centrist = {
 				can_be_randomly_selected = no

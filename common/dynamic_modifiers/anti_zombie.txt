@@ -18,6 +18,7 @@ ROC_of_china_dynamic = {
 	nationalist_drift = ROC_nationalist_drift_dynamic_var 
 	fascist_drift = ROC_fascist_drift_dynamic_var 
 	national_socialist_drift = ROC_national_socialist_drift_dynamic_var
+	send_volunteer_size = ROC_send_volunteer_size_dynamic_var
 }
 AZOM_of_china_dynamic = {
 	icon = GFX_idea_AZOM_of_china

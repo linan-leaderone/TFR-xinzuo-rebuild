@@ -16,6 +16,40 @@
 				}
 			}
 		}
+		tlibwar1_super_event = {
+			context_type = player_context
+			window_name = "tlibwar1_super_event"
+
+			visible = {
+				has_country_flag = tlibwar1_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = tlibwar1_flag
+				}
+			}
+		}
+		tlibwar_super_event = {
+			context_type = player_context
+			window_name = "tlibwar_super_event"
+
+			visible = {
+				has_country_flag = tlibwar_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = tlibwar_flag
+				}
+			}
+		}
 		aifh_super_event = {
 			context_type = player_context
 			window_name = "aifh_super_event"

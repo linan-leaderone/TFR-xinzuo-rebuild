@@ -41,8 +41,10 @@ PRC_loji_category = {
 		}
 		visible = {
 
+has_country_flag = changzheng_start_end
 		}
 		available = {
+				controls_state = 620
 				custom_trigger_tooltip = {
 		tooltip = PRC_niaolong_2sscscrt_3
 				OR = {
@@ -106,8 +108,10 @@ add_to_variable = { loji_super_con = -1 }
 		}
 		visible = {
 
+has_country_flag = changzheng_start_end
 		}
 		available = {
+				controls_state = 608
 				custom_trigger_tooltip = {
 		tooltip = PRC_niaolong_2sscscrt_3
 				OR = {
@@ -146,4 +150,905 @@ add_to_variable = { loji_super_con = -1 }
 		cost = 100
 	}
 
+
+
+
+
+
+
+	PRC_loji_manyidu_change_2 = {
+		icon = GFX_decision_changzhengbianhua
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {    
+			
+				custom_trigger_tooltip = {
+		tooltip = loji_manyidu_zuieeyhshh
+
+			has_war = no
+		}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 14
+		complete_effect = {				
+			hidden_effect = {
+				
+			}
+		}
+		timeout_effect = {
+				activate_mission = PRC_loji_manyidu_change_2
+
+			if = {
+				limit = {
+					FROM = {
+						any_controlled_state = {
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						is_controlled_by = FROM
+						 
+						is_capital = no
+						NOT = { has_state_flag = M_virus_action_13 }
+						any_state = {
+							is_controlled_by = ROOT
+							NOT = { has_state_flag = M_virus_action_13 }
+							distance_to = {
+								target = PREV
+								value < 750
+							}
+						}
+					}
+					set_state_flag = M_virus_action_13
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						any_controlled_state = {
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						is_controlled_by = FROM
+						 
+						is_capital = no
+						NOT = { has_state_flag = M_virus_action_13 }
+						any_state = {
+							is_controlled_by = ROOT
+							NOT = { has_state_flag = M_virus_action_13 }
+							distance_to = {
+								target = PREV
+								value < 1500
+							}
+						}
+					}
+					set_state_flag = M_virus_action_13
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+			else = {
+				random_state = {
+					limit = {
+						is_controlled_by = FROM
+						 
+						is_capital = no
+						NOT = { has_state_flag = M_virus_action_13 }
+						any_state = {
+							is_controlled_by = ROOT
+							NOT = { has_state_flag = M_virus_action_13 }
+						}
+					}
+					set_state_flag = M_virus_action_13
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+						owner = ROOT
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					FROM = { num_of_controlled_states > 4 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else = {
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { num_of_controlled_states > 7 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else = {
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { num_of_controlled_states > 11 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else = {
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { num_of_controlled_states > 19 }
+				}
+				if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 750
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 750
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							any_controlled_state = {
+								 
+								is_capital = no
+								NOT = { has_state_flag = M_virus_action_13 }
+								any_state = {
+									is_controlled_by = ROOT
+									NOT = { has_state_flag = M_virus_action_13 }
+									distance_to = {
+										target = PREV
+										value < 1500
+									}
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+								distance_to = {
+									target = PREV
+									value < 1500
+								}
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+				else = {
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+					random_state = {
+						limit = {
+							is_controlled_by = FROM
+							 
+							is_capital = no
+							NOT = { has_state_flag = M_virus_action_13 }
+							any_state = {
+								is_controlled_by = ROOT
+								NOT = { has_state_flag = M_virus_action_13 }
+							}
+						}
+						set_state_flag = M_virus_action_13
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.1" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+					}
+				}
+			}
+
+		}
+	}
 		}

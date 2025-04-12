@@ -5,6 +5,18 @@ sound = {
 	always_load = yes
 }
 sound = {
+	name = "tlibwar1"
+	file = "menu/tlibwar1.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "tlibwar"
+	file = "menu/tlibwar.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
 	name = "XCQA"
 	file = "menu/XCQA.wav"
 	volume = 1

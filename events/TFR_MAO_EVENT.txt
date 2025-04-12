@@ -315,7 +315,7 @@ add_ideas = low_training
 change_government_type_revolutionary_front = yes
 				HKN = {set_cosmetic_tag = PRC_PLA_PANLUAN}
 				country_event = {
-					id = PRC_MAO1.3
+					id = PRC_MAO1.66
 				}
 				}
 			set_politics = {
@@ -323,6 +323,16 @@ change_government_type_revolutionary_front = yes
 				elections_allowed = no
 			}
 
+								if = {
+						limit = {
+NOT = {has_country_flag = changzheng_start_end}
+		}
+set_country_flag = changzheng_start_end
+			add_ideas = PRC_ai_changzheng_core
+add_to_variable = { loji_manyidu_T = 75 }
+loji_manyidu_change = yes
+
+			}
 								if = {
 						limit = {
 NOT = {has_idea = PRC_ai_changzheng_core}
@@ -333,7 +343,18 @@ NOT = {has_idea = PRC_ai_changzheng_core}
 			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = PRC_the_Flower_of_Freedom_1
 			complete_national_focus = PRC_revive_peoples_war_mindset_4
-
+create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+traits = { 
+}
+} 
 								if = {
 						limit = {
 			NOT = {has_completed_focus = PRC_baihuaqifang}

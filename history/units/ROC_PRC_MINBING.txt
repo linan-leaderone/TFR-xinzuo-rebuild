@@ -1,0 +1,120 @@
+﻿division_template = {
+	name = "民兵团"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 0 y = 3 }
+
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }	
+		militia = { x = 1 y = 3 }	
+
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }	
+		militia = { x = 2 y = 3 }	
+
+
+
+	}
+	support = {
+
+	}
+}
+
+units = {
+
+
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+	division = {
+		division_template = "民兵团"
+		location = 9843
+		start_experience_factor = 0
+	}
+}

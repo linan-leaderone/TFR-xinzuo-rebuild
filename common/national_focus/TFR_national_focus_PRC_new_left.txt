@@ -89,6 +89,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
+			has_war = no
 		}
 		prerequisite = {
             focus = PRC_the_Flower_of_Freedom_1
@@ -112,6 +113,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+	allow_branch = {
+		NOT = {has_country_flag = PRC_handongfang_youxian}
+	}
 		available = {
 			always = no
 		}
@@ -204,7 +208,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_completed_focus = PRC_the_Flower_of_Freedom_8
+			has_completed_focus = PRC_the_Flower_of_Freedom_3
 		}
 		mutually_exclusive = {
 			focus = PRC_the_Flower_of_Freedom_29
@@ -235,9 +239,8 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-		OR = {
-			has_completed_focus = PRC_the_Flower_of_Freedom_7
-			has_completed_focus = PRC_the_Flower_of_Freedom_4
+		NOT = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_3
 		}
 		}
 		mutually_exclusive = {
@@ -249,6 +252,7 @@ focus_tree = {
 
 		completion_reward = {
 		remove_ideas = PRC_corrupt_bureaucracy_idea
+		add_ideas = PRC_corrupt_bureaucracy6_idea
 			hidden_effect = {
 		remove_ideas = PRC_corrupt_bureaucracy2_idea
 		remove_ideas = PRC_corrupt_bureaucracy3_idea
@@ -1152,7 +1156,7 @@ set_cosmetic_tag = PRC_AM
 			factor = 100
 		}
 		available = {
-			has_completed_focus = PRC_the_Flower_of_Freedom_5	
+			has_completed_focus = PRC_the_Flower_of_Freedom_29	
 		}
 		mutually_exclusive = {
 			focus = PRC_the_Flower_of_Freedom_3
@@ -1162,8 +1166,12 @@ set_cosmetic_tag = PRC_AM
         }
 
 		completion_reward = {
-			
+			set_country_flag = PRC_handongfang_youxian
 			custom_effect_tooltip = aftdwfwfwfs
+		activate_mission = PRC_lgd_chengnuo_1_action
+		activate_mission = PRC_lgd_chengnuo_2_action
+		activate_mission = PRC_lgd_chengnuo_3_action
+		activate_mission = PRC_lgd_chengnuo_4_action
 			hidden_effect = {
 			add_dynamic_modifier = {
 				modifier = ROC_of_china_dynamic
@@ -1235,7 +1243,7 @@ set_popularities = {
 		icon = GFX_focus_PRC_niaolong_22
 		x = 30
 		y = 14
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1260,7 +1268,7 @@ set_popularities = {
 		icon = GFX_focus_PRC_niaolong_24
 		x = 29
 		y = 15
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1311,7 +1319,7 @@ set_popularities = {
 		icon = GFX_focus_PRC_niaolong_27
 		x = 43
 		y = 15
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1362,7 +1370,7 @@ set_popularities = {
 		icon = GFX_focus_PRC_niaolong_56
 		x = 45
 		y = 16
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1461,7 +1469,7 @@ traits = { 
 		icon = GFX_focus_PRC_niaolong_28
 		x = 41
 		y = 16
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1523,7 +1531,7 @@ has_country_flag = roc_lxmzd
 		icon = GFX_focus_PRC_niaolong_29
 		x = 43
 		y = 16
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1568,7 +1576,7 @@ has_country_flag = roc_lxmzd
 		icon = GFX_focus_PRC_niaolong_46
 		x = 33
 		y = 15
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1586,13 +1594,18 @@ has_country_flag = roc_lxmzd
 		completion_reward = {
 			set_temp_variable = {
 				var = debt_var_temp
-				value = 100
+				value = 1000
 			}
 			add_debt = yes
 			country_event = {
 				id = PRC_MAO1.60
 			}
 		
+			every_controlled_state = {
+				add_dynamic_modifier = {
+					modifier = PRC_jichengshuzihua
+				}
+			}	
 
 		}
 	}   
@@ -1601,7 +1614,7 @@ has_country_flag = roc_lxmzd
 		icon = GFX_focus_PRC_niaolong_47
 		x = 36
 		y = 14
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1636,7 +1649,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_48
 		x = 35
 		y = 15
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1656,6 +1669,24 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			add_debt = yes
 		
 
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_niaolong_48
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_research_speed_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = PRC_mic_academic_development_monthly_dynamic_var
+				value = 0.01
+			}	
 		}
 	}    
    focus = {
@@ -1663,7 +1694,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_50
 		x = 34
 		y = 16
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1687,6 +1718,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			add_debt = yes
 		
 
+		remove_ideas = PRC_corrupt_bureaucracy6_idea
 		}
 	}    
    focus = {
@@ -1694,7 +1726,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_51
 		x = 34
 		y = 17
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1723,7 +1755,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_53
 		x = 35
 		y = 18
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1748,6 +1780,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			}
 			add_debt = yes
 		
+	add_stability = 0.15
 			custom_effect_tooltip = gyd_zcd_up
 			add_to_variable = {
 				var = zgm_zcd
@@ -1770,7 +1803,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_52
 		x = 37
 		y = 18
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1787,6 +1820,37 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 		
+	add_stability = -0.1
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_niaolong_52
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = -0.05
+			}	
+			add_to_variable = {
+				var = PRC_mic_consumer_goods_factor_dynamic_var
+				value = -0.05
+			}	
+
+			set_temp_variable = {
+				var = academic_development_var_temp
+				value = -0.1
+			}
+			add_academic_development = yes
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.1
+			}
+			add_society_development = yes
+
 			custom_effect_tooltip = zgm_zcd_d
 			add_to_variable = {
 				var = zgm_zcd
@@ -1813,7 +1877,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_49
 		x = 36
 		y = 17
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1828,10 +1892,24 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		completion_reward = {
 			set_temp_variable = {
 				var = debt_var_temp
-				value = 100
+				value = 50
 			}
 			add_debt = yes
 		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_niaolong_49
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_research_speed_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = PRC_mic_academic_development_monthly_dynamic_var
+				value = 0.01
+			}	
 			country_event = {
 				id = PRC_MAO1.61
 			}
@@ -1843,7 +1921,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_45
 		x = 34
 		y = 14
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1857,12 +1935,26 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
         }
 
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_niaolong_4111
+				}
+			}
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 100
 			}
 			add_debt = yes
 		
+				add_to_variable = {
+					var = PRC_mic_political_power_factor_dynamic_var
+					value = 0.1
+				}	
+				add_to_variable = {
+					var = PRC_mic_expense_growth_factor_dynamic_var
+					value = -0.1
+				}	
 
 			country_event = {
 				id = PRC_MAO1.59
@@ -1874,7 +1966,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_41
 		x = 32
 		y = 14
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1887,12 +1979,27 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
         }
 
 		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_niaolong_4111
+				}
+			}
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 100
 			}
 			add_debt = yes
+	add_stability = -0.2
 		
+				add_to_variable = {
+					var = PRC_mic_political_power_factor_dynamic_var
+					value = 0.1
+				}	
+				add_to_variable = {
+					var = PRC_mic_expense_growth_factor_dynamic_var
+					value = -0.1
+				}	
 			country_event = {
 				id = PRC_MAO1.47
 			}
@@ -1904,7 +2011,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_36
 		x = 38
 		y = 14
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1918,6 +2025,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 		
+	add_stability = -0.2
 			country_event = {
 				id = PRC_MAO1.52
 			}
@@ -1929,7 +2037,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_37
 		x = 38
 		y = 15
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1945,6 +2053,23 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			
 			custom_effect_tooltip = autonniaolong_37zhiqu1_tooltip
 			hidden_effect = {
+				
+				every_state = {
+				limit = {
+					is_core_of = SIK
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = SIK
+				}
+			    remove_core_of = SIK
+		    }	
+PRC = {annex_country = {
+								target = SIK
+								transfer_troops = yes
+							}}
 				every_controlled_state = {
 					remove_dynamic_modifier = {
 						modifier = PRC_guangxi_zhuang_autonomous_region
@@ -1986,7 +2111,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_40
 		x = 38
 		y = 17
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2002,7 +2127,37 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_PRC_niaolong_401
+				}
+			}
 			
+			add_to_variable = {
+				var = PRC_mic_monthly_population_dynamic_var
+				value = 0.03
+			}	
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = PRC_mic_stability_factor_dynamic_var
+				value = -0.1
+			}	
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = -0.05
+			}		
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = -0.01
+			}		
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = -0.01
+			}	
 			
 		
 
@@ -2013,7 +2168,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_39
 		x = 37
 		y = 16
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2029,6 +2184,23 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
         }
 
 		completion_reward = {
+			
+	add_stability = -0.2
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_made_in_china_dummy_idea_focus_PRC_niaolong_39
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_stability_weekly_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.01
+			}	
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 100
@@ -2060,7 +2232,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_38
 		x = 39
 		y = 16
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2077,6 +2249,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+	add_stability = 0.2
 			
 			
 			custom_effect_tooltip = zgm_zcd_d
@@ -2102,7 +2275,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_32
 		x = 40
 		y = 14
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2131,7 +2304,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_33
 		x = 40
 		y = 15
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2163,7 +2336,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_34
 		x = 40
 		y = 17
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2195,7 +2368,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_35
 		x = 39
 		y = 18
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2227,13 +2400,34 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_31
 		x = 42
 		y = 18
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
 	
+					if = {
+						limit = {
+			has_completed_focus = PRC_niaolong_56
+				}
+					OR = {
+						JAP = {
+								is_ally_with = PRC
+						}
+						SHK = {
+								is_ally_with = PRC
+						}
+				}
+				}
+					if = {
+						limit = {
+			NOT = {has_completed_focus = PRC_niaolong_56}
+				}
+						JAP = {
+								is_ally_with = PRC
+						}
+				}
 		}
 		prerequisite = {
             focus = PRC_niaolong_30
@@ -2287,7 +2481,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_57
 		x = 44
 		y = 18
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2318,7 +2512,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_30
 		x = 43
 		y = 17
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2353,7 +2547,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_26
 		x = 43
 		y = 14
-		cost = 2
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2395,7 +2589,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_42
 		x = 30
 		y = 16
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2442,7 +2636,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_43
 		x = 31
 		y = 17
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2459,6 +2653,14 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 
 		completion_reward = {
 			
+					if = {
+						limit = {
+				NOT = { has_war_with = HKN }
+				}
+			country_event = {
+				id = PRC_MAO1.65
+			}
+			}
 			custom_effect_tooltip = autonssssomy_zizhiqu1_tooltip
 
 			hidden_effect = {
@@ -2511,15 +2713,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 				}
 				CHI = {set_nationality = {
     target_country = IMA
-    character = CHI_han_kuo_yu_char
-}}
-				CHI = {set_nationality = {
-    target_country = IMA
     character = CHI_tsai_ing_wen_char
-}}
-				CHI = {set_nationality = {
-    target_country = IMA
-    character = CHI_lai_ching_te_char
 }}
 		add_country_leader_role = {
 			character = CHI_tsai_ing_wen_char
@@ -2539,15 +2733,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			
 			}
 		}
-		add_country_leader_role = {
-			character = CHI_han_kuo_yu_char
-			promote_leader = yes
-			country_leader = {
-				ideology = conservative_socialism
-				expire = "1.1.1.1"
-			
-			}
-		}
+	
 
 				}
 				}
@@ -2561,7 +2747,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_44
 		x = 29
 		y = 17
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2596,7 +2782,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		icon = GFX_focus_PRC_niaolong_54
 		x = 29
 		y = 18
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2655,11 +2841,131 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		}
 	}  
    focus = {
+		id = PRC_niaolong_58
+		icon = GFX_focus_PRC_niaolong_58
+		x = 35
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+		prerequisite = {
+            focus = PRC_niaolong_55
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_60
+		icon = GFX_focus_PRC_niaolong_60
+		x = 50
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+		prerequisite = {
+            focus = PRC_niaolong_55
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_61
+		icon = GFX_focus_PRC_niaolong_61
+		x = 60
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+		prerequisite = {
+            focus = PRC_niaolong_55
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_62
+		icon = GFX_focus_PRC_niaolong_62
+		x = 8
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+		prerequisite = {
+            focus = PRC_niaolong_55
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_59
+		icon = GFX_focus_PRC_niaolong_59
+		x = 20
+		y = 20
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+		prerequisite = {
+            focus = PRC_niaolong_55
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
 		id = PRC_niaolong_25
 		icon = GFX_focus_PRC_niaolong_25
 		x = 31
 		y = 15
-		cost = 5
+		cost = 4
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -2803,6 +3109,9 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			add_popularity = {
 				ideology = libertarian_socialist
 				popularity = 0.025
+			}
+			hidden_effect = {
+				country_event = { id = china.307 days = 10 random_days = 5 }
 			}
 			hidden_effect = {
 				remove_ideas = PRC_chinese_communist_party_idea
@@ -3217,7 +3526,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 100
 		}
 		available = {
-			has_completed_focus = PRC_anti_corruption_technology
+			has_idea = PRC_the_long_march_2_idea
 		}
 		cancelable = no
 		completion_reward = {
@@ -3842,6 +4151,12 @@ create_navy_leader = {
 			factor = 50
 		}
 		available = {
+		    modifier = {
+				factor = 0
+				OR = {
+				    is_ai = yes
+			        }
+			    }
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -4136,8 +4451,15 @@ create_navy_leader = {
 		}
 		ai_will_do = {
 			factor = 15
+		    modifier = {
+				factor = 0
+				OR = {
+				    is_ai = yes
+			        }
+			    }
 		}
 		available = {
+		   
 		}
 		completion_reward = {
 		add_power_balance_value = {
@@ -4215,9 +4537,6 @@ create_navy_leader = {
 			add_ideas = PRC_revival_of_neomaoism_idea
 			add_ideas = PRC_ma_houzhi_hog
 			add_manpower = 1000
-			hidden_effect = {
-				country_event = { id = china.307 days = 10 random_days = 5 }
-			}
 		}
 	}
 	
@@ -12806,6 +13125,9 @@ remove_ideas = militia_looting
 					add_idea = PRC_made_in_china_PRC_invest_in_artificial_intelligence
 				}
 			}
+			unlock_decision_tooltip = PRC_project_the_long_march_phase_1
+			unlock_decision_tooltip = PRC_project_the_long_march_phase_2
+			unlock_decision_tooltip = PRC_project_the_long_march_phase_3
 			add_tech_bonus = {
 				name = JAP_ai
 				bonus = 1.0
@@ -13994,9 +14316,6 @@ has_country_leader = {
 				value = 200
 			}
 			add_debt = yes
-			unlock_decision_tooltip = PRC_project_the_long_march_phase_1
-			unlock_decision_tooltip = PRC_project_the_long_march_phase_2
-			unlock_decision_tooltip = PRC_project_the_long_march_phase_3
 			hidden_effect = {
 				add_to_variable = {
 					var = PRC_mic_political_power_gain_dynamic_var

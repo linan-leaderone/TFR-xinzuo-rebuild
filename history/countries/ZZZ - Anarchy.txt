@@ -286,6 +286,7 @@ set_party_name = { ideology = national_socialist long_name = PRC_communist11144_
 			promote_leader = yes
 			country_leader = {
 				ideology = market_socialism_1
+			desc = PRC_XI_JINPING_DESC
 				expire = "1.1.1.1"
 				traits = {
 hos_red_dragon_rider

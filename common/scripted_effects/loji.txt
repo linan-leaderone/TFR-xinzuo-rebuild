@@ -166,7 +166,7 @@ loji_manyidu_change = {
 				limit = {
 			has_idea = ZZZ_shuzihuaminzhu
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = 2 }
+add_to_variable = { loji_manyidu_change_shuzhi = 4 }
 }
 			if = {
 				limit = {
@@ -187,7 +187,7 @@ add_to_variable = { loji_manyidu_change_shuzhi = 2 }
 			NOT = {has_government = communist}
 			NOT = {has_government = libertarian_socialist}
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = -2 }
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 }
 
 			if = {
@@ -231,7 +231,7 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 			has_idea = ZZZ_shuzihuaminzhu1
 		}
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = 1 }
+add_to_variable = { loji_manyidu_change_shuzhi = 2 }
 }
 			if = {
 				limit = {
@@ -254,19 +254,19 @@ add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 				limit = {
 					check_variable = { mzd_taidu = 1 }
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+add_to_variable = { loji_manyidu_change_shuzhi = -0.5  }
 }
 			if = {
 				limit = {
 					check_variable = { mzd_taidu = 3 }
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = -1.5 }
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 }
 			if = {
 				limit = {
 					check_variable = { mzd_taidu = 4 }
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = -1 }
+add_to_variable = { loji_manyidu_change_shuzhi = -0.5 }
 }
 			if = {
 				limit = {
@@ -309,7 +309,7 @@ add_to_variable = { loji_manyidu_change_shuzhi = -2 }
 				limit = {
 					check_variable = { mzd_taidu = 5 }
 				}
-add_to_variable = { loji_manyidu_change_shuzhi = -2 }
+add_to_variable = { loji_manyidu_change_shuzhi = -1 }
 }
 
 

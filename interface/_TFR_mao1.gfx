@@ -5,12 +5,32 @@ spriteTypes = {
 		noOfFrames = 19
 	}
 	spriteType = {
+		name = "GFX_super_tlibwar"
+		textureFile = "gfx/MAOYUANXIN/super_tlibwar.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_xinrenminjun_de"
+		textureFile = "gfx/MAOYUANXIN/xinrenminjun.png"
+	}
+	spriteType = {
+		name = "GFX_super_tlibwar1"
+		textureFile = "gfx/MAOYUANXIN/super_tlibwar1.png"
+	}
+	spriteType = {
 		name = "GFX_convert_ic_button1"
 		textureFile = "gfx/MAOYUANXIN/convert_ic_button.dds"
 	}
 	spriteType = {
+		name = "GFX_modifiers_jichengshuzihua"
+		textureFile = "gfx/MAOYUANXIN/shuzihuaminzhudiqu.png"
+	}
+	spriteType = {
 		name = "GFX_PRC_jap_rel"
 		textureFile = "gfx/MAOYUANXIN/duiriguanxi.png"
+	}
+	spriteType = {
+		name = "GFX_ISR_MZ2"
+		textureFile = "gfx/MAOYUANXIN/LGD2.png"
 	}
 spriteType = {
     name = "GFX_PRC_loji_banner1"
@@ -104,6 +124,10 @@ spriteType = {
 spriteType = {
     name = "GFX_ISR_MXH"
     texturefile = "gfx/MAOYUANXIN/RMD.png"
+}
+spriteType = {
+    name = "GFX_idea_PRC_turanxiji_idea"
+    texturefile = "gfx/MAOYUANXIN/neizhanzhong.png"
 }
 spriteType = {
     name = "GFX_idea_PRC_xuefawenti_idea"

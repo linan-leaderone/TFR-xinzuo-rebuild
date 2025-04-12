@@ -450,6 +450,46 @@ HKN = {annex_country = {
 						}
 						}
 						ROOT = {
+							original_tag = ETL
+						}
+					}
+				if = {
+					limit = {
+						SIK = {is_ally_with = PRC}
+					}
+			PRC = {
+	
+SIK = {annex_country = {
+								target = ETL
+								transfer_troops = no
+							}}
+}
+}
+				if = {
+					limit = {
+						NOT = {SIK = {is_ally_with = PRC}}
+					}
+			PRC = {
+annex_country = {
+								target = ETL
+								transfer_troops = no
+							}
+}
+}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
 							original_tag = HKN
 						}
 					}
@@ -467,6 +507,52 @@ HKN = {annex_country = {
 			}}
 					}
 
+				if = {
+					limit = {
+						HKN = {PRC_Hu_Chunhua = {is_country_leader = yes}}
+					}
+
+				if = {
+					limit = {
+						SIK = {is_ally_with = PRC}
+					}
+			PRC = {
+annex_country = {
+								target = HKN
+								transfer_troops = no
+							}
+
+release_autonomy = {
+			target = SIK
+			autonomy_state = autonomy_zizhiqu
+			freedom_level = 0.5
+			}
+	
+			PRC = {country_event = {
+				id = PRC_MAO1.73
+			}}
+		SIK = {set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+		}}
+}
+			}
+SIC = {set_nationality = {
+    target_country = PRC
+    character = PRC_bo_xilai
+}}
+							PRC = {annex_country = {
+								target = SIC
+								transfer_troops = yes
+							}}
+
+				every_state = {
+				limit = {
+					is_core_of = SIC
+				}
+			    remove_core_of = SIC
+		    }	
+					}
 				if = {
 					limit = {
 						HKN = {PRC_Wang_Qiang = {is_country_leader = yes}}

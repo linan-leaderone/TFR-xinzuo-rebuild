@@ -290,7 +290,10 @@ scripted_gui = {
 			}
 	  if = {
 			limit = {
+			OR = {
 			NOT = {PRC = {has_completed_focus = PRC_the_Flower_of_Freedom_4}}
+			PRC = {has_completed_focus = PRC_niaolong_56}
+			}
 			}
 				NOT = {is_ally_with = PRC}
 			}
@@ -366,7 +369,10 @@ PRC = {has_completed_focus = PRC_the_red_phoenix}
 
 	  if = {
 			limit = {
+			OR = {
 			NOT = {PRC = {has_completed_focus = PRC_the_Flower_of_Freedom_4}}
+			PRC = {has_completed_focus = PRC_niaolong_56}
+			}
 			}
 				NOT = {is_ally_with = PRC}
 			}

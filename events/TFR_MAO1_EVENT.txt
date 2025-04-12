@@ -1027,18 +1027,7 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_32
         is_triggered_only = yes
         fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				scoped_sound_effect = XCQB
-				scoped_play_song = "one_minute_of_silence"
-			}
-			
-		}
-	}
+
         option = {
             name = PRC_MAO1.32.a
         }
@@ -1052,18 +1041,7 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_33
         is_triggered_only = yes
         fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				scoped_sound_effect = XCQA
-				scoped_play_song = "one_minute_of_silence"
-			}
-			
-		}
-	}
+
         option = {
             name = PRC_MAO1.33.a
         }
@@ -1077,18 +1055,7 @@ set_country_flag = market_desc_de
         picture = GFX_PRC_MAO1_event_34
         is_triggered_only = yes
         fire_only_once = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				scoped_sound_effect = XCQC
-				scoped_play_song = "one_minute_of_silence"
-			}
-			
-		}
-	}
+
         option = {
             name = PRC_MAO1.34.a
         }
@@ -1436,6 +1403,14 @@ set_country_flag = market_desc_de
 				ruling_party = social_liberal
 				elections_allowed = yes
 			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
 		promote_character = {
 			character = PRC_qin_hui
 			ideology = Geometridaeism
@@ -1466,7 +1441,12 @@ set_country_leader_ideology = Geometridaeism
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = yes
+			}	
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
 			}
+			add_to_coalition = yes
 set_country_leader_ideology = left_accelerationist_2
 
 								if = {
@@ -1485,7 +1465,12 @@ NOT = {has_idea = PRC_ai_changzheng_core}
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = yes
+			}	
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
 			}
+			add_to_coalition = yes
 set_country_leader_ideology = left_accelerationist_2
 set_country_leader_name = {
 	ideology = communist
@@ -1511,8 +1496,13 @@ NOT = {has_idea = PRC_ai_changzheng_core}
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = yes
+			}	
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
 			}
-set_country_leader_ideology = left_accelerationist_2
+			add_to_coalition = yes
+set_country_leader_ideology = left_accelerationist_1
 
 set_country_leader_name = {
 	ideology = communist
@@ -1741,19 +1731,19 @@ set_country_flag = roc_rbgcd
 custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
 			add_to_variable = {
 				var = zgm_zcd
-				value = 200
+				value = 50
 			}
 			add_to_variable = {
 				var = gyd_zcd
-				value = 400
+				value = 100
 			}
 			add_to_variable = {
 				var = lgd_zcd
-				value = -500
+				value = -100
 			}
 			add_to_variable = {
 				var = zyd_zcd
-				value = -100
+				value = -50
 			}
                 PRC_party_fight = yes
         }
@@ -1792,7 +1782,20 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         }
         option = {
             name = PRC_MAO1.64.b
-			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = ROC_of_china_dynamic1
+					add_idea = ROC_of_china_dynamic3
+				}
+			}
+			add_to_variable = {
+				var = ROC_send_volunteer_size_dynamic_var
+				value = 12
+			}	
+			set_country_flag = support_ukr_down
+		unlock_decision_tooltip = PRC_support_ukr_down_3
+		unlock_decision_tooltip = PRC_support_ukr_down_2
+		unlock_decision_tooltip = PRC_support_ukr_down_1
 			custom_effect_tooltip = lgd_zcd_down
 			add_to_variable = {
 				var = zgm_zcd
@@ -1837,6 +1840,380 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         fire_only_once = yes
         option = {
             name = PRC_MAO1.66.a
+				activate_mission = PRC_loji_manyidu_change_2
+        }
+        immediate = {
+			hidden_effect = {
+
+			SIC = {
+				transfer_state = 601
+				transfer_state = 605
+				transfer_state = 1168
+				transfer_state = 1188
+				transfer_state = 1189
+				transfer_state = 1190
+				transfer_state = 1196
+				transfer_state = 1195
+				transfer_state = 1192
+				transfer_state = 325
+				transfer_state = 1197
+				transfer_state = 1204
+				transfer_state = 1203
+				transfer_state = 594
+				transfer_state = 1205
+				transfer_state = 593
+				transfer_state = 603
+				transfer_state = 1210
+				transfer_state = 599
+				transfer_state = 1191
+set_cosmetic_tag = PRC_SIC_PANLUAN
+PRC = {set_nationality = {
+    target_country = SIC
+    character = PRC_bo_xilai
+}}
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = left_nationalism
+				expire = "1.1.1.1"
+			
+			}
+		}
+set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+				set_popularities = {
+					nationalist = 15
+					authoritarian_democrat = 40
+					libertarian_socialist = 15
+					communist = 30
+				}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_jinjaaaaiweiyuanhui
+				name = PRC_jinjaaaaiweiyuanhui
+			}  
+			create_country_leader = {
+	                name = "XNRMWYH"
+	                desc = "POLITICS_XNRMWYH_DESC"
+	                picture = "gfx/MAOYUANXIN/PRC_renda_1.dds"
+	                expire = "1999.1.1"
+	                ideology = military_democracy
+				}  
+				add_state_core = 601
+				add_state_core = 605
+				add_state_core = 1168
+				add_state_core = 1188
+				add_state_core = 1189
+				add_state_core = 1190
+				add_state_core = 1196
+				add_state_core = 1195
+				add_state_core = 1192
+				add_state_core = 325
+				add_state_core = 1197
+				add_state_core = 1204
+				add_state_core = 1203
+				add_state_core = 594
+				add_state_core = 1205
+				add_state_core = 593
+				add_state_core = 603
+				add_state_core = 1210
+				add_state_core = 599
+				add_state_core = 1191
+			}
+			country_event = {
+				id = PRC_MAO1.68
+				days = 2
+			}
+			country_event = {
+				id = PRC_MAO1.69
+				days = 4
+			}
+			country_event = {
+				id = PRC_MAO1.71
+				days = 7
+			}
+			country_event = {
+				id = PRC_MAO1.72
+				days = 14
+			}
+					if = {
+						limit = {
+	NOT = { country_exists = CHI }
+				}
+			country_event = {
+				id = PRC_MAO1.70
+				days = 6
+			}
+			}
+HKN = { transfer_state = 1229}
+HKN = { transfer_state = 1227}
+HKN = { transfer_state = 595}
+HKN = { transfer_state = 1214}
+HKN = { transfer_state = 1216}
+HKN = { transfer_state = 1431}
+HKN = { transfer_state = 1217}
+HKN = { transfer_state = 1218}
+HKN = { transfer_state = 1213}
+HKN = { transfer_state = 1420}
+HKN = { transfer_state = 1427}
+HKN = { transfer_state = 1428}
+HKN = { transfer_state = 1426}
+HKN = { transfer_state = 1393}
+HKN = { transfer_state = 1230}
+HKN = { transfer_state = 597}
+HKN = { transfer_state = 600}
+HKN = { transfer_state = 598}
+HKN = { transfer_state = 1231}
+HKN = { transfer_state = 1215}
+HKN = { transfer_state = 620}
+HKN = { transfer_state = 1208}
+HKN = { transfer_state = 613}
+HKN = { transfer_state = 1220}
+HKN = { transfer_state = 283}
+HKN = { transfer_state = 1222}
+HKN = { transfer_state = 1187}
+HKN = { transfer_state = 1186}
+HKN = { transfer_state = 1193}
+HKN = { transfer_state = 1199}
+HKN = { transfer_state = 1201}
+HKN = { transfer_state = 1209}
+HKN = { transfer_state = 1166}
+HKN = { transfer_state = 616}
+HKN = { transfer_state = 604}
+HKN = { 
+transfer_state = 596
+transfer_state = 591
+transfer_state = 1219
+transfer_state = 1159
+transfer_state = 1198
+transfer_state = 322
+transfer_state = 1228
+transfer_state = 1221
+transfer_state = 1211
+transfer_state = 602
+transfer_state = 1212
+
+transfer_state = 1429
+transfer_state = 1430
+transfer_state = 606
+transfer_state = 1152
+transfer_state = 1153
+transfer_state = 1155
+transfer_state = 1156
+transfer_state = 1200
+transfer_state = 287
+transfer_state = 619
+transfer_state = 1160
+transfer_state = 1164
+transfer_state = 788
+transfer_state = 1158
+transfer_state = 1161
+transfer_state = 617
+transfer_state = 1165
+transfer_state = 1162
+transfer_state = 1163
+transfer_state = 618
+}
+
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Hu_Chunhua
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_li_zuocheng
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Zhang_Youxia
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Li_shangfu
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_wei_fenghe
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_wang_ning
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Miao_Hua
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Qin_Shengxiang
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Dong_Jun
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Shen_Jinlong
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Wu_Shenzhou
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_He_Weidong
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Xu_Qiliang
+		}}
+
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Wang_Qiang
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Li_Qiaoming
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Li_Yujie
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Ding_Laihang
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_yuan_yubai
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Hu_Zhongming
+		}}
+
+HKN = { transfer_state = 1226}
+HKN = { transfer_state = 1225}
+HKN = { transfer_state = 607}
+HKN = { transfer_state = 1223}
+HKN = { transfer_state = 1224}
+HKN = { transfer_state = 1194}
+HKN = { transfer_state = 615}
+HKN = { transfer_state = 622}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Han_Weiguo
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Xu_Deqing
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Lin_Xiangyang
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Huang_Ming
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Yi_Xiaoguang
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Zhu_Shengling
+		}}
+HKN = { transfer_state = 592}
+HKN = { transfer_state = 729}
+HKN = { transfer_state = 326}
+HKN = { transfer_state = 1395}
+HKN = { transfer_state = 728}
+HKN = { transfer_state = 1207}
+HKN = { transfer_state = 1206}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Wang_Hai
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Wu_Yanan
+		}}
+		PRC = {set_nationality = {
+  		  target_country = HKN
+   		  character = PRC_Wang_Xiubin
+		}}
+
+		HKN = {set_cosmetic_tag = PRC_PLA_PANLUAN}
+		HKN = {
+	
+end_exile = yes
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+remove_ideas = HKN_spirit_of_hk
+add_country_leader_role = {
+			character = PRC_Hu_Chunhua
+			promote_leader = yes
+			country_leader = {
+				ideology = military_junta
+				expire = "1.1.1.1"
+			
+			}
+		}
+					PRC = {
+
+					transfer_units_fraction = {
+						target = HKN
+						army_ratio = 0.9      
+					keep_unit_leaders_trigger = {
+						always = no 
+					}
+				}
+			}
+					HKN = {
+
+					transfer_units_fraction = {
+						target = SIC
+						army_ratio = 0.4      
+					keep_unit_leaders_trigger = {
+						always = no 
+					}
+				}
+
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_nationalistmmunist1_social_democrat_party_long
+				name = PRC_nationalistmmunist1_social_democrat_party_long
+			}
+	set_politics = {	
+		ruling_party = nationalist
+		last_election = "2017.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+				HKN = {set_capital = {state = 1215}}
+	set_popularities = {
+		national_socialist = 10
+		fascist = 30
+		nationalist = 60
+	}}
+		HKN = { every_controlled_state = {
+				limit = {
+					NOT = {is_core_of = HKN}
+				}
+			    add_core_of = HKN
+		    }	}
+
+				PRC = {load_oob = ROC_PRC_MINBING}
+		
+	}
         }
     }
 
@@ -1850,6 +2227,7 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         fire_only_once = yes
         option = {
             name = PRC_MAO1.67.a
+set_country_flag = changzheng_start_zhengbian_free
         }
     }
 
@@ -1861,8 +2239,96 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         picture = GFX_PRC_MAO1_event_68
         is_triggered_only = yes
         fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+
+
+			SIK = {
+				transfer_state = 618
+				transfer_state = 1162
+				transfer_state = 1163
+				add_state_core = 618
+				add_state_core = 1162
+				add_state_core = 1163
+				set_capital = {
+					state = 1165
+				}
+				load_oob = SIK_PRC_puppet
+set_cosmetic_tag = SIK_XIN
+		declare_war_on = {
+			target = HKN
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = ETL
+			type = annex_everything
+		}
+set_party_name = { ideology = conservative long_name = CXCconservativeCCC_party_long name = CXCconservativeCCC_party_long }
+create_country_leader = {
+	name = WEKX
+	desc = "POLITICS_WEKX_DESC"
+	 picture = "gfx/MAOYUANXIN/WEKX.png"
+	expire = "2200.1.1"
+	ideology = constitutionalist
+	traits = {
+	}
+}
+			}
+			ETL = {
+				transfer_state = 1164
+				transfer_state = 1161
+				transfer_state = 619
+				transfer_state = 1160
+				transfer_state = 287
+				transfer_state = 788
+				add_state_core = 287
+				add_state_core = 1161
+				add_state_core = 1160
+				add_state_core = 619
+				add_state_core = 788
+				add_state_core = 1164
+
+				load_oob = ETL_PRC_puppet
+		declare_war_on = {
+			target = HKN
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SIK
+			type = annex_everything
+		}
+				set_capital = {
+					state = 1165
+				}
+			}
+
+        }
+        }
         option = {
             name = PRC_MAO1.68.a
+
+	    		add_timed_idea = {
+	    	   		idea = turanxissssji
+	    	   		days = 60
+	    	   	}
+		declare_war_on = {
+			target = SIK
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = ETL
+			type = annex_everything
+		}
+        }
+        option = {
+            name = PRC_MAO1.68.b
+
+		add_to_faction = SIK
+		declare_war_on = {
+			target = ETL
+			type = annex_everything
+		}
+
         }
     }
 
@@ -1877,6 +2343,46 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         option = {
             name = PRC_MAO1.69.a
         }
+        immediate = {
+
+			hidden_effect = {
+			TIB = {
+				transfer_state = 322
+				transfer_state = 1152
+				transfer_state = 1153
+				transfer_state = 1155
+				transfer_state = 1156
+				add_state_core = 322
+				add_state_core = 1152
+				add_state_core = 1153
+				add_state_core = 1155
+				add_state_core = 1156
+				set_capital = {
+					state = 1156
+				}
+				load_oob = TIB_revolt
+				set_politics = {
+					ruling_party = nationalist
+					elections = no
+				}
+				set_popularities = {
+					nationalist = 40
+					authoritarian_democrat = 10
+					conservative = 30
+					market_liberal = 5
+					social_liberal = 15
+				}
+		declare_war_on = {
+			target = HKN
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+			}
+			}
+        }
     }
 
 
@@ -1889,11 +2395,41 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         fire_only_once = yes
         option = {
             name = PRC_MAO1.70.a
+			hidden_effect = {
+			complete_national_focus = PRC_niaolong_43
+IMA= {
+				set_popularities = {
+					social_democrat = 40
+					social_liberal = 40
+					conservative = 20
+				}
+			set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}}
+        }
+        }
+        option = {
+            name = PRC_MAO1.70.b
+			hidden_effect = {
+			complete_national_focus = PRC_niaolong_43
+
+							CHI= {annex_country = {
+								target = IMA
+								transfer_troops = yes
+							}
+		declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+
+}
+        }
         }
     }
 
 
-    country_event = {
+    news_event = {
         id = PRC_MAO1.71
         title = PRC_MAO1.71.t
         desc = PRC_MAO1.71.d
@@ -1902,6 +2438,37 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         fire_only_once = yes
         option = {
             name = PRC_MAO1.71.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = tlibwar_flag	
+				scoped_sound_effect = tlibwar
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+        }
+        option = {
+            name = PRC_MAO1.71.b
+		trigger = {
+				tag = PRC
+		}
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = tlibwar_flag	
+				scoped_sound_effect = tlibwar
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
         }
     }
 
@@ -1915,11 +2482,49 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         fire_only_once = yes
         option = {
             name = PRC_MAO1.72.a
+			hidden_effect = {
+		add_to_faction = SIC
+	SIC = {
+		declare_war_on = {
+			target = HKN
+			type = annex_everything
+		}
+set_politics = {
+			ruling_party = communist
+			elections_allowed = no
+		}
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = left_nationalism
+				expire = "1.1.1.1"
+			
+			}
+		}
+		promote_character = {
+			character = PRC_bo_xilai
+			ideology = left_nationalism
+		}
+				set_popularities = {
+					nationalist = 15
+					authoritarian_democrat = 40
+					libertarian_socialist = 15
+					communist = 30
+				}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_jinjaaaaiweiyuanhui
+				name = PRC_jinjaaaaiweiyuanhui
+			}  
+        }
+        }
         }
     }
 
 
-    country_event = {
+
+    news_event = {
         id = PRC_MAO1.73
         title = PRC_MAO1.73.t
         desc = PRC_MAO1.73.d
@@ -1928,8 +2533,40 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         fire_only_once = yes
         option = {
             name = PRC_MAO1.73.a
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = tlibwar1_flag	
+				scoped_sound_effect = tlibwar1
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+        }
+        option = {
+            name = PRC_MAO1.73.b
+		trigger = {
+				tag = PRC
+		}
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = tlibwar1_flag	
+				scoped_sound_effect = tlibwar1
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
         }
     }
+
 
 
     country_event = {
@@ -1950,15 +2587,47 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         title = PRC_MAO1.75.t
         desc = PRC_MAO1.75.d
         picture = GFX_PRC_MAO1_event_75
-        is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		date > 2027.12.1
+	}
+
         fire_only_once = yes
+
         option = {
             name = PRC_MAO1.75.a
+                PRC_party_fight = yes
+		activate_mission = PRC_daxuan_elect_1_action	
+			hidden_effect = {
+			complete_national_focus = PRC_niaolong_55
+
+			if = {
+				limit = {
+            check_variable = {
+    var = zyd_zcd
+    value = lgd_zcd
+    compare = greater_than_or_equals
+}
+            check_variable = {
+    var = zyd_zcd
+    value = zylm_zcd
+    compare = greater_than_or_equals
+}
+				}
+			country_event = {
+				id = PRC_MAO1.78
+				days = 14
+			}
+			
+			}
+        }
+
+
         }
     }
 
 
-    country_event = {
+   news_event = {
         id = PRC_MAO1.76
         title = PRC_MAO1.76.t
         desc = PRC_MAO1.76.d
@@ -1992,7 +2661,49 @@ custom_effect_tooltip = PRC_niaolong_2sscswdwdwdcrt_3
         is_triggered_only = yes
         fire_only_once = yes
         option = {
-            name = PRC_MAO1.78.a
+            name = PRC_MAO1.78.a		
+		hidden_effect = {
+		set_country_flag = PRC_handongfang_youxian_fenlie
+		end_coalition = yes	
+
+			set_variable = {
+				var = zgg_zcd
+				value = lgd_zcd
+			}
+divide_variable = {
+    var = zgg_zcd
+    value = 4
+}
+			subtract_from_variable = {
+				var = lgd_zcd
+				value = zgg_zcd
+			}
+		set_politics = {
+			ruling_party = libertarian_socialist
+			last_election = "2023.1.1"
+			election_frequency = 60
+			elections_allowed = yes
+		}	
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_xingongren_party
+				name = PRC_xingongren_party
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_geminggongren_party
+				name = PRC_geminggongren_party
+			}
+			create_country_leader = {
+	                name = "LJHHHHH"
+	                desc = "POLITICS_LJHHHHH_DESC"
+	                picture = "gfx/MAOYUANXIN/LJH.png"
+	                expire = "1999.1.1"
+	                ideology = social_patriotism
+				}  
+                PRC_party_fight = yes
+
+        }
         }
     }
 

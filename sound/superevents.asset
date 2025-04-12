@@ -1,5 +1,29 @@
 soundeffect =
 {
+	name = "HDFMSQ"
+	sounds = {
+		sound = "HDFMSQ"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "tlibwar"
+	sounds = {
+		sound = "tlibwar"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "tlibwar1"
+	sounds = {
+		sound = "tlibwar1"
+	}
+	volume = 1
+}
+soundeffect =
+{
 	name = "XCQA"
 	sounds = {
 		sound = "XCQA"

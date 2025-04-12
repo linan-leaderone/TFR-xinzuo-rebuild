@@ -5158,6 +5158,7 @@ always = no
 	PRC_hu_chunhua = {is_country_leader = yes}
 		}
 		available = {
+	has_idea = PRC_the_long_march_2_idea
 	power_balance_value = {
     id = PRC_maoism_power_balance
     value < -0.4
@@ -5173,9 +5174,10 @@ always = no
 		days_remove = 70
 		fire_only_once = yes
 		modifier = {
-			communist_drift = -0.05
+			 
 		}
 		complete_effect = {
+country_event = { id = PRC_MAO1.67 hours = 5 }
 			set_temp_variable = {
 				var = society_development_var_temp
 				value = -0.25
@@ -8435,7 +8437,7 @@ set_country_flag = PRC_yuuki_1_3
 	PRC_project_the_long_march_phase_1 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_ai_assisted_governance
+				has_completed_focus = PRC_invest_in_artificial_intelligence 
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension
@@ -8461,7 +8463,7 @@ set_country_flag = PRC_yuuki_1_3
 	PRC_project_the_long_march_phase_2 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_ai_assisted_governance
+				has_completed_focus = PRC_invest_in_artificial_intelligence 
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension
@@ -8497,7 +8499,7 @@ set_country_flag = PRC_yuuki_1_3
 	PRC_project_the_long_march_phase_3 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_ai_assisted_governance
+				has_completed_focus = PRC_invest_in_artificial_intelligence 
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension

@@ -1,0 +1,34 @@
+add_namespace = Australia
+
+country_event = {
+	#Assassination of Penny Wong
+	id = Australia.1
+	title = Australia.1.t
+	desc = Australia.1.d
+	picture = GFX_AST_Penny_wong
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = AST_LOST_WAR_flag
+			remove_ideas = AST_Penny_Wong_idea
+		}
+	}
+
+
+	option = {
+		#She IS the Enemy! - Fash - Freedom
+		name = Australia.1.c
+		ai_chance = {
+		    factor = 34
+		}
+		country_event = {
+			id = Australia.4
+		}
+		country_event = {
+			id = Australia.18
+		}
+		add_ideas = AST_asian_cold_war
+		add_research_slot = 1
+	}
+}

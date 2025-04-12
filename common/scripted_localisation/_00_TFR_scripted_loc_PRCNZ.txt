@@ -1,4 +1,49 @@
 defined_text = {
+	name = PRC_YIHUI_Text
+text = {
+    trigger = {
+NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
+    }
+    localization_key = PRC_YIHUI_Text1
+}
+text = {
+    trigger = {
+ has_country_flag = PRC_handongfang_youxian_fenlie
+    }
+    localization_key = PRC_YIHUI_Text2
+}
+}
+defined_text = {
+	name = PRC_prepare_radical_coup_2_Text
+text = {
+    trigger = {
+NOT = {has_country_flag = changzheng_start_zhengbian_free}
+    }
+    localization_key = PRC_prepare_radical_coup_2_Text1
+}
+text = {
+    trigger = {
+ has_country_flag = changzheng_start_zhengbian_free
+    }
+    localization_key = PRC_prepare_radical_coup_2_Text2
+}
+}
+defined_text = {
+	name = PRC_prepare_radical_coup_2_desc_Text
+text = {
+    trigger = {
+NOT = {has_country_flag = changzheng_start_zhengbian_free}
+    }
+    localization_key = PRC_prepare_radical_coup_2_desc_Text1
+}
+text = {
+    trigger = {
+ has_country_flag = changzheng_start_zhengbian_free
+    }
+    localization_key = PRC_prepare_radical_coup_2_desc_Text2
+}
+}
+defined_text = {
 	name = TFR_long_march_tiaojiao_btn_Text
 text = {
     trigger = {

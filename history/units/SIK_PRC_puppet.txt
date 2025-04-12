@@ -1,0 +1,228 @@
+division_template = {
+		name = "Volunteer Militia"
+		
+		regiments = {
+			militia = { x = 0 y = 0 }
+			militia = { x = 0 y = 1 }
+			militia = { x = 0 y = 2 }
+			militia = { x = 1 y = 0 }
+			militia = { x = 1 y = 1 }
+			militia = { x = 1 y = 2 }
+		}
+		
+		support = {
+		}
+	}
+
+division_template = {
+		name = "Experienced Jihadists"
+		
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+		}
+		
+		support = {
+			engineer = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+			logistics_company = { x = 0 y = 2 }
+		}
+	}
+units = {
+	division = {			
+		name = "1st Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2nd Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3rd Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4th Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "5th Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st 'Warriors of Allah' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2nd 'Mohammad's Fury' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3rd 'Upholders of the Faith' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4th 'Rabitat Al-Ansar' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2nd Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3rd Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4th Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "5th Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st 'Warriors of Allah' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2nd 'Mohammad's Fury' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3rd 'Upholders of the Faith' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4th 'Rabitat Al-Ansar' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2nd Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3rd Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4th Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "5th Turkic Volunteer Brigade"
+		location = 1162
+		division_template = "Volunteer Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st 'Warriors of Allah' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2nd 'Mohammad's Fury' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3rd 'Upholders of the Faith' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4th 'Rabitat Al-Ansar' Infantry"
+		location = 1162
+		division_template = "Experienced Jihadists"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+}
