@@ -2835,9 +2835,12 @@ PRC = {annex_country = {
 
 		completion_reward = {
 			
+			hidden_effect = {
 			
+		JAP = {clr_country_flag = JAP_cold_war_flag}
 		
 
+		}
 		}
 	}  
    focus = {
@@ -2891,7 +2894,7 @@ PRC = {annex_country = {
    focus = {
 		id = PRC_niaolong_61
 		icon = GFX_focus_PRC_niaolong_61
-		x = 60
+		x = 70
 		y = 20
 		cost = 10
 		available_if_capitulated = yes
@@ -2908,6 +2911,847 @@ PRC = {annex_country = {
 		completion_reward = {
 			
 			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_63
+		icon = GFX_focus_PRC_niaolong_63
+		x = 70
+		y = 21
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	bypass = {
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_25_start_11DWDWD
+	NOT = { country_exists = IMA }
+	NOT = { country_exists = CHI }
+	}	
+	}	
+		available = {
+		OR = {
+			has_completed_focus = PRC_niaolong_54
+			has_completed_focus = PRC_niaolong_43
+		}
+		}
+		prerequisite = {
+            focus = PRC_niaolong_61
+        }
+
+		completion_reward = {
+					if = {
+						limit = {
+				has_completed_focus = PRC_niaolong_54
+				}
+			country_event = {
+				id = PRC_MAO1.87
+			}
+			}
+					if = {
+						limit = {
+						country_exists = IMA	
+				has_completed_focus = PRC_niaolong_43
+				}
+			country_event = {
+				id = PRC_MAO1.88
+			}
+			}
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_64
+		icon = GFX_focus_PRC_niaolong_64
+		x = 69
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+	always = no
+		}
+	bypass = {
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_25_start_11DWDWD
+	NOT = { country_exists = IMA }
+	NOT = { country_exists = CHI }
+	}	
+	}
+		mutually_exclusive = {
+			focus = PRC_niaolong_65
+		}
+		prerequisite = {
+            focus = PRC_niaolong_63
+        }
+
+		completion_reward = {
+			
+			
+			hidden_effect = {
+				every_state = {
+				limit = {
+					is_core_of = IMA
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = IMA
+				}
+			    remove_core_of = IMA
+		    }	
+		    }	
+							PRC= {annex_country = {
+								target = IMA
+								transfer_troops = yes
+							}}
+							
+			every_controlled_state = {
+				limit = {
+					NOT = {has_dynamic_modifier = {
+						modifier = PRC_jichengshuzihua
+					}}
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_jichengshuzihua
+				}
+			}	
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_66
+		icon = GFX_focus_PRC_niaolong_66
+		x = 70
+		y = 23
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_64
+            focus = PRC_niaolong_65
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_67
+		icon = GFX_focus_PRC_niaolong_67
+		x = 75
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_66
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}     
+   focus = {
+		id = PRC_niaolong_68
+		icon = GFX_focus_PRC_niaolong_68
+		x = 73
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_67
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_69
+		icon = GFX_focus_PRC_niaolong_69
+		x = 75
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_67
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_70
+		icon = GFX_focus_PRC_niaolong_70
+		x = 77
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_67
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}     
+   focus = {
+		id = PRC_niaolong_73
+		icon = GFX_focus_PRC_niaolong_73
+		x = 70
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_66
+        }
+
+		completion_reward = {
+			custom_effect_tooltip = PRC_niaolong_73_tooltip
+			
+					hidden_effect = {
+				MND = {
+					
+			annex_country = {
+				target = WAT
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = KLA
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = MND_unifier
+		every_state = {
+			limit = {
+				is_core_of = BRM
+			}
+			add_core_of = MND
+		}
+				}
+			add_to_faction = MND
+
+			MND = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = "gfx/MAOYUANXIN/changzheng1.png"
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = KNU
+						tag = CNF
+						tag = PDF
+						tag = SSA
+						tag = MOA
+						tag = BRM
+					}
+				}
+				MND = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+				PRC = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = BRM
+					}
+					remove_dynamic_modifier = { modifier = BRM_peoples_war }
+				}
+			}
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_74
+		icon = GFX_focus_PRC_niaolong_74
+		x = 71
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_73
+        }
+
+		completion_reward = {
+		unlock_decision_tooltip = ROC_military_intervention_NEP_1
+		unlock_decision_tooltip = ROC_military_intervention_BHU_1
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_75
+		icon = GFX_focus_PRC_niaolong_75
+		x = 69
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_73
+        }
+
+		completion_reward = {
+			
+		unlock_decision_tooltip = PRC_military_intervention_NPA_1
+		unlock_decision_tooltip = PRC_military_intervention_NPA_2
+		unlock_decision_tooltip = PRC_military_intervention_NPA_3
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_76
+		icon = GFX_focus_PRC_niaolong_76
+		x = 70
+		y = 26
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_74
+        }
+		prerequisite = {
+            focus = PRC_niaolong_75
+        }
+
+		completion_reward = {
+		unlock_decision_tooltip = ROC_military_intervention_BAN_1
+		unlock_decision_tooltip = ROC_military_intervention_SRL_1
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_78
+		icon = GFX_focus_PRC_niaolong_78
+		x = 67
+		y = 24
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_66
+        }
+
+		completion_reward = {
+			
+		declare_war_on = {
+			target = TAL
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = PAK
+			type = annex_everything
+		}
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_79
+		icon = GFX_focus_PRC_niaolong_79
+		x = 67
+		y = 25
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_78
+        }
+
+		completion_reward = {
+			
+			
+					hidden_effect = {
+					PER = {
+						dismantle_faction = yes
+					}
+					}
+		
+		declare_war_on = {
+			target = PER
+			type = annex_everything
+		}
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_80
+		icon = GFX_focus_PRC_niaolong_80
+		x = 67
+		y = 26
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_79
+        }
+
+		completion_reward = {
+			
+		unlock_decision_tooltip = ROC_military_intervention_IRQ_1
+		unlock_decision_tooltip = ROC_military_intervention_LEB_1
+		unlock_decision_tooltip = ROC_military_intervention_SYR_1
+		unlock_decision_tooltip = ROC_military_intervention_PAL_1
+		unlock_decision_tooltip = ROC_military_intervention_JOR_1
+					hidden_effect = {
+					ISR = {
+						dismantle_faction = yes
+					}
+					JOR = {
+						dismantle_faction = yes
+					}
+					SYR = {
+						dismantle_faction = yes
+					}
+					EGY = {
+						dismantle_faction = yes
+					}
+					PAL = {
+						dismantle_faction = yes
+					}
+					HEZ = {
+						dismantle_faction = yes
+					}
+					}
+			
+		
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_81
+		icon = GFX_focus_PRC_niaolong_81
+		x = 67
+		y = 27
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_80
+        }
+
+		completion_reward = {
+			
+		unlock_decision_tooltip = ROC_military_intervention_SAU_1
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_82
+		icon = GFX_focus_PRC_niaolong_82
+		x = 70
+		y = 28
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_81
+        }
+		prerequisite = {
+            focus = PRC_niaolong_77
+        }
+		prerequisite = {
+            focus = PRC_niaolong_72
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_83
+		icon = GFX_focus_PRC_niaolong_83
+		x = 69
+		y = 29
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_82
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_84
+		icon = GFX_focus_PRC_niaolong_84
+		x = 71
+		y = 29
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_82
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_85
+		icon = GFX_focus_PRC_niaolong_85
+		x = 70
+		y = 30
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_84
+        }
+		prerequisite = {
+            focus = PRC_niaolong_83
+        }
+
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_77
+		icon = GFX_focus_PRC_niaolong_77
+		x = 70
+		y = 27
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+						NEP = {
+								is_ally_with = PRC
+						}
+						BHU = {
+								is_ally_with = PRC
+						}
+						PAK = {
+								is_ally_with = PRC
+						}
+						BAN = {
+								is_ally_with = PRC
+						}
+						SRL = {
+								is_ally_with = PRC
+						}
+		}
+		prerequisite = {
+            focus = PRC_niaolong_76
+        }
+
+		completion_reward = {
+			
+			
+			country_event = {
+				id = PRC_MAO.8
+			}
+		custom_effect_tooltip = PRC_this_will_lead_to_the_gaw
+	    hidden_effect = {
+		RAJ = {declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+	    }
+		JAP = {declare_war_on = {
+			target = AST
+			type = annex_everything
+		}
+	    }
+		focus_unlock = yes
+	    	set_global_flag = GAW_soon
+			set_global_flag = pan_asian_war_ongoing
+			mark_focus_tree_layout_dirty = yes
+
+		complete_national_focus = PRC_chinas_greatest_hour
+		AST = {			add_to_faction = RAJ
+			RAJ = {
+				set_country_flag = pdto_member
+			}}
+
+		NAX = {
+			transfer_state = 431
+			transfer_state = 1372
+			transfer_state = 426
+				add_ideas = VIN_determined_defenders
+							load_oob = NAX_civil_war
+					
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+			    add_core_of = NAX
+		    }
+		}
+		add_to_faction = NAX
+		
+		RAJ = {declare_war_on = {
+			target = NAX
+			type = annex_everything
+		}
+	    }	
+	    }
+
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_72
+		icon = GFX_focus_PRC_niaolong_72
+		x = 75
+		y = 27
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_71
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_71
+		icon = GFX_focus_PRC_niaolong_71
+		x = 75
+		y = 26
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_68
+        }
+		prerequisite = {
+            focus = PRC_niaolong_69
+        }
+		prerequisite = {
+            focus = PRC_niaolong_70
+        }
+
+		completion_reward = {
+			
+			
+		
+
+		}
+	}   
+   focus = {
+		id = PRC_niaolong_65
+		icon = GFX_focus_PRC_niaolong_65
+		x = 71
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	bypass = {
+				custom_trigger_tooltip = {
+		tooltip = PRC_niaolong_25_start_11DWDWD
+	NOT = { country_exists = IMA }
+	NOT = { country_exists = CHI }
+	}	
+	}
+		available = {
+	always = no
+		}
+		mutually_exclusive = {
+			focus = PRC_niaolong_64
+		}
+		prerequisite = {
+            focus = PRC_niaolong_63
+        }
+
+		completion_reward = {
+				
+			PRC  = {
+			add_to_faction = CHI
+		}   
 		
 
 		}
@@ -3297,6 +4141,9 @@ PRC = {annex_country = {
 		cost = 2
 		available_if_capitulated = yes
 
+	bypass = {
+			has_completed_focus = PRC_reliable_politburo
+	}
 		prerequisite = {
             focus = PRC_denounce_xi_revisionism
         }
@@ -4208,6 +5055,9 @@ create_navy_leader = {
 		cost = 2
 		available_if_capitulated = yes
 
+	bypass = {
+			has_completed_focus = PRC_reliable_politburo
+	}
 		prerequisite = {
             focus = PRC_reliable_politburo
             focus = PRC_rejuvinate_cpc_cadres
@@ -4251,12 +5101,13 @@ create_navy_leader = {
 			factor = 50
 		}
 		available = {
-		OR = {
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_hu_chunhua = {is_country_leader = yes}
-		}
+
+					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
+					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
+					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
+					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -4394,12 +5245,13 @@ create_navy_leader = {
 			factor = 50
 		}
 		available = {
-		OR = {
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_hu_chunhua = {is_country_leader = yes}
-		}
+		
+					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
+					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
+					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
+					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
 		completion_reward = {
 			custom_effect_tooltip = PRC_communist_vanguard_restored_tt_1
@@ -9171,6 +10023,15 @@ custom_effect_tooltip = AI_JINDU_50
 		}
 		completion_reward = {
 				
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_1
+				} 
+			country_event = {
+				id = PRC_MAO1.82
+				days = 2
+			}
+			}
 			red_noble_idea_xueruo = yes
 		hidden_effect = {
 			set_temp_variable = {
@@ -9205,6 +10066,46 @@ custom_effect_tooltip = AI_JINDU_50
 
 }
 
+
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_1
+				} 
+			country_event = {
+				id = PRC_MAO1.83
+				days = 60
+			}
+			}
+
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_1
+				} 
+			country_event = {
+				id = PRC_MAO1.84
+				days = 120
+			}
+			}
+
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_1
+				} 
+			country_event = {
+				id = PRC_MAO1.85
+				days = 180
+			}
+			}
+
+					if = {
+						limit = {
+			has_completed_focus = PRC_the_Flower_of_Freedom_1
+				} 
+			country_event = {
+				id = PRC_MAO1.86
+				days = 240
+			}
+			}
 
 					if = {
 						limit = {
@@ -9591,12 +10492,13 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 35
 		}
 		available = {
-		OR = {
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_hu_chunhua = {is_country_leader = yes}
-		}
+	
+					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
+					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
+					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
+					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
 		completion_reward = {
 			PRC_decrease_corrupt_bureaucracy = yes
@@ -9661,12 +10563,13 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 50
 		}
 		available = {
-		OR = {
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_hu_chunhua = {is_country_leader = yes}
-		}
+
+					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
+					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
+					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
+					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
 		completion_reward = {
 		add_power_balance_value = {
@@ -9726,12 +10629,13 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 50
 		}
 		available = {
-		OR = {
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_hu_chunhua = {is_country_leader = yes}
-		}
+		
+					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
+					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
+					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
+					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
 		completion_reward = {
 		add_power_balance_value = {
@@ -9760,12 +10664,12 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 35
 		}
 		available = {
-		OR = {
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-						PRC_hu_chunhua = {is_country_leader = yes}
-		}
+					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
+					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
+					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
+					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
 		completion_reward = {
 			PRC_decrease_corrupt_bureaucracy = yes
@@ -12164,7 +13068,11 @@ remove_ideas = militia_looting
 		}
 		available = {
 		    #is_ai = no
-			has_completed_focus = PRC_the_red_phoenix
+		OR = {
+			has_completed_focus = PRC_rejuvinate_cpc_cadres
+			has_completed_focus = PRC_reliable_politburo
+			has_completed_focus = PRC_reconcile_with_militarists
+		}
 		}
 		completion_reward = {
 			country_event = {
@@ -13324,9 +14232,9 @@ remove_ideas = militia_looting
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
+					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 					NOT = {	PRC_zhang_hongliang = {is_country_leader = yes}}
 					NOT = {	PRC_hu_chunhua = {is_country_leader = yes}}
-					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		  
 		}
 		completion_reward = {
@@ -14559,20 +15467,25 @@ has_country_leader = {
 			factor = 45
 		}
 		available = {
-		OR = {
-						PRC_hu_chunhua = {is_country_leader = yes}
-						PRC_mao_yuanxin = {is_country_leader = yes}
-						PRC_renda = {is_country_leader = yes}
-						PRC_bo_xilai = {is_country_leader = yes}
-			has_completed_focus = PRC_the_Flower_of_Freedom_3
 					if = {
 						limit = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_4
 				}
 			has_country_flag = yyxwt111
 				}
+					if = {
+						limit = {
+			NOT = {has_completed_focus = PRC_the_Flower_of_Freedom_4}
+				}
+		OR = {
+						PRC_hu_chunhua = {is_country_leader = yes}
+						PRC_mao_yuanxin = {is_country_leader = yes}
+						PRC_renda = {is_country_leader = yes}
+						PRC_bo_xilai = {is_country_leader = yes}
+			has_completed_focus = PRC_the_Flower_of_Freedom_3
 		}
 		  
+		}
 		}
 		completion_reward = {	
 			effect_tooltip = {

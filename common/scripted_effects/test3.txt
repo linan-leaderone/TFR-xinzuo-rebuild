@@ -1,0 +1,241 @@
+
+PRC_gqtgg_2 = {			
+change_government_type_presidential_republic = yes				
+				set_party_name = { ideology = social_democrat long_name = PRC_communist11_party_long name = PRC_communist11_party_long }	
+				set_party_name = { ideology = social_liberal long_name = PRC_communist11_party_long name = PRC_communist11_party_long }
+				set_politics = {
+				ruling_party = social_liberal
+				election_frequency = 60
+				elections_allowed = yes
+				}
+		end_coalition = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.3
+			}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+		add_country_leader_role = {
+			character = PRC_Hu_Chunhua
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_3
+				expire = "2099.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+		add_country_leader_role = {
+			character = PRC_wang_yang
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_4
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+set_country_leader_name = {
+	ideology = social_democrat
+	name = PRC_LKQ
+}
+set_country_leader_portrait = {
+	ideology = social_democrat
+	portrait = GFX_Portrait_PRC_LKQ
+}
+ 
+}
+PRC_gqtgg_1 = {						
+change_government_type_presidential_republic = yes					
+				set_party_name = { ideology = social_democrat long_name = PRC_communist11_party_long name = PRC_communist11_party_long }	
+				set_party_name = { ideology = social_liberal long_name = PRC_communist11_party_long name = PRC_communist11_party_long }
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+				}
+		end_coalition = yes
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.3
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.2
+			}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+		add_country_leader_role = {
+			character = PRC_Hu_Chunhua
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_3
+				expire = "2099.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+		add_country_leader_role = {
+			character = PRC_wang_yang
+			promote_leader = yes
+			country_leader = {
+				ideology = market_socialism_4
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_wang_yang
+			ideology = market_socialism_4
+		}
+set_country_leader_name = {
+	ideology = social_democrat
+	name = PRC_LKQ
+}
+set_country_leader_portrait = {
+	ideology = social_democrat
+	portrait = GFX_Portrait_PRC_LKQ
+}
+ 
+}
+PRC_NAX_fight = {
+						NAX = {
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+									set_cosmetic_tag = NAX_XIN
+                inherit_technology = PRC
+			remove_ideas = RAJ_indian_civil_war_idea			
+			transfer_state = 431			
+			transfer_state = 1373			
+			transfer_state = 439			
+			transfer_state = 1381			
+			transfer_state = 1366			
+			transfer_state = 1368
+
+
+		
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+			    add_core_of = NAX
+		    }
+				
+			
+							annex_country = {
+								target = PRJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = SLJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = MPJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = LRJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RAJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RJN
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = SAJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RSS
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = DRV
+								transfer_troops = yes
+							}
+				set_capital = {state = 431}
+						}
+
+						PRC = {
+
+						RAJ = {			
+			transfer_state = 1131				
+			transfer_state = 441				
+			transfer_state = 1373				
+			transfer_state = 437					
+			transfer_state = 439					
+			transfer_state = 432						
+			transfer_state = 789				
+			transfer_state = 438				
+			transfer_state = 1379					
+			transfer_state = 1370				
+			transfer_state = 1397				
+			transfer_state = 1367				
+			transfer_state = 1366				
+			transfer_state = 1368				
+			transfer_state = 1369						
+			transfer_state = 1398		
+
+			}
+			set_autonomy = {
+			target = RAJ
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}			
+			transfer_state = 434	
+			}
+						RAJ = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+
+			NPA = {
+				set_capital = {state = 1274}
+create_faction = 国际共产主义者同盟
+			add_to_faction = NAX
+
+}
+}

@@ -290,6 +290,10 @@ spriteTypes = {
 		textureFile = "gfx/MAOYUANXIN/PRC_marxist_democracy.png"
 	}
 	spriteType = {
+		name = "GFX_autonomy_minzhutuoguan_icon"
+		textureFile = "gfx/MAOYUANXIN/autonomy_minzhutuoguan_icon.png"
+	}
+	spriteType = {
 		name = "GFX_autonomy_zizhiqu_icon"
 		textureFile = "gfx/MAOYUANXIN/autonomy_zizhiqu_icon.png"
 	}
@@ -353,10 +357,23 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_kasitekuoism"
 		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
-	}		
+	}			
+	spriteType = {
+		name = "GFX_ideology_market_socialism_3"
+		texturefile = "gfx/MAOYUANXIN/market_socialism_PRC_3.png"
+	}					
+	spriteType = {
+		name = "GFX_ideology_market_socialism_4"
+		texturefile = "gfx/MAOYUANXIN/market_socialism_PRC_4.png"
+	}	
 	spriteType = {
 		name = "GFX_Ideology_kasitekuoism"
-		texturefile = "gfx/MAOYUANXIN/Ideology_kasitekuoism.png"
+		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_Ideology_market_socialism_3"
+		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_market_socialism_3.png"
 		legacy_lazy_load = no
 	}	
 	spriteType = {

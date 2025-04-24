@@ -646,15 +646,15 @@ set_cosmetic_tag = PRC_HACHIMI
 
 set_portraits = {
     character = PRC_long_march
-    army = { large="gfx/MAOYUANXIN/changzheng1.png" }
-    civilian = { large="gfx/MAOYUANXIN/changzheng1.png" }
+    army = { large=GFX_Portrait_PRC_The_Long_March }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+portrait_path = GFX_Portrait_PRC_The_Long_March
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -2397,6 +2397,9 @@ create_country_leader = {
             name = PRC_MAO1.70.a
 			hidden_effect = {
 			complete_national_focus = PRC_niaolong_43
+			country_event = {
+				id = PRC_MAO1.65
+			}
 IMA= {
 				set_popularities = {
 					social_democrat = 40
@@ -2754,6 +2757,18 @@ divide_variable = {
         picture = GFX_PRC_MAO1_event_82
         is_triggered_only = yes
         fire_only_once = yes
+
+        immediate = {
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = dfhqiyi
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+	}
         option = {
             name = PRC_MAO1.82.a
         }
@@ -2767,6 +2782,17 @@ divide_variable = {
         picture = GFX_PRC_MAO1_event_83
         is_triggered_only = yes
         fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = dfhqier
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+	}
         option = {
             name = PRC_MAO1.83.a
         }
@@ -2780,6 +2806,17 @@ divide_variable = {
         picture = GFX_PRC_MAO1_event_84
         is_triggered_only = yes
         fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = dfhqisan
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+	}
         option = {
             name = PRC_MAO1.84.a
         }
@@ -2793,6 +2830,17 @@ divide_variable = {
         picture = GFX_PRC_MAO1_event_85
         is_triggered_only = yes
         fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = dfhqisi
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+	}
         option = {
             name = PRC_MAO1.85.a
         }
@@ -2806,6 +2854,17 @@ divide_variable = {
         picture = GFX_PRC_MAO1_event_86
         is_triggered_only = yes
         fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = dfhqiwu
+				scoped_play_song = "one_minute_of_silence"
+			}
+	}
+	}
         option = {
             name = PRC_MAO1.86.a
         }
@@ -2819,9 +2878,111 @@ divide_variable = {
         picture = GFX_PRC_MAO1_event_87
         is_triggered_only = yes
         fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+			CHI = {
+remove_ideas = CHI_taiwanese_independence_movement_idea 
+remove_ideas = CHI_taiwanese_independence_movement_2_idea
+remove_ideas = CHI_lower_mainland_influence_idea
+remove_ideas = CHI_low_mainland_influence_idea
+remove_ideas = CHI_medium_mainland_influence_idea
+remove_ideas = CHI_high_mainland_influence_idea
+remove_ideas = CHI_higher_mainland_influence_idea
+remove_ideas = CHI_american_protection_idea
+remove_ideas = CHI_low_international_recognition_idea
+remove_ideas = CHI_prc_embargo_low_idea
+remove_ideas = CHI_prc_embargo_idea
+remove_ideas = CHI_prc_embargo_idea1
+remove_ideas = CHI_chinese_blockade
+remove_ideas = CHI_neokumintang
+remove_ideas = CHI_project_national_glory
+remove_ideas = CHI_silent_dawn
+remove_ideas = CHI_destroyed_country_1
+remove_ideas = CHI_destroyed_country_2
+                inherit_technology = PRC
+				create_country_leader = {
+	                name = "TWWGSQ"
+	                desc = "POLITICS_TWWGSQ_DESC"
+	                picture = "gfx/MAOYUANXIN/GSQ.png"
+	                expire = "1999.1.1"
+	                ideology = trotskyism
+				}  
+				create_country_leader = {
+	                name = "XUYONG"
+	                desc = "POLITICS_TWWGSQ_DESC"
+	                picture = "gfx/MAOYUANXIN/XY.png"
+	                expire = "1999.1.1"
+	                ideology = sm_socialism
+				}  
+				set_party_name = { ideology = communist long_name = TWW112_party_long name = TWW112_party_long }
+				set_party_name = { ideology = social_democrat long_name = TWW113_party_long name = TWW113_party_long }
+				set_party_name = { ideology = social_liberal long_name = TWW114_party_long name = TWW114_party_long }
+
+				set_cosmetic_tag = ROC_TWW_GHG
+				set_politics = {
+				ruling_party = social_liberal
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				set_popularities = {
+					social_democrat = 40
+					social_liberal = 60
+				}
+		add_country_leader_role = {
+			character = CHI_ko_wen_je_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Geometridaeism
+				expire = "1.1.1.1"
+			
+			}
+		}
+set_country_leader_ideology = Geometridaeism
+				}
+		}
+	}
         option = {
             name = PRC_MAO1.87.a
+			hidden_effect = {
+			complete_national_focus = PRC_niaolong_65
         }
+        }
+        option = {
+            name = PRC_MAO1.87.c
+			hidden_effect = {
+			CHI = {
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				set_popularities = {
+					social_democrat = 25
+					social_liberal = 35
+					communist = 40
+				}
+				}
+			complete_national_focus = PRC_niaolong_65
+        }
+        }
+        option = {
+            name = PRC_MAO1.87.b
+			hidden_effect = {
+			CHI = {
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				set_popularities = {
+					social_democrat = 60
+					social_liberal = 20
+					communist = 20
+				}
+        }
+			complete_national_focus = PRC_niaolong_65
+        }
+    }
     }
 
 
@@ -2834,6 +2995,9 @@ divide_variable = {
         fire_only_once = yes
         option = {
             name = PRC_MAO1.88.a
+			hidden_effect = {
+			complete_national_focus = PRC_niaolong_64
+        }
         }
     }
 

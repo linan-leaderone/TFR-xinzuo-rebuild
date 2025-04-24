@@ -3020,7 +3020,10 @@ shared_focus = {
 		unlock_decision_tooltip = PRC_military_intervention_sau_1
 		unlock_decision_tooltip = PRC_military_intervention_pal_2
 		unlock_decision_tooltip = PRC_military_intervention_sau_2
-	    hidden_effect = {
+	    hidden_effect = {	
+					PER = {
+						dismantle_faction = yes
+					}
 			GER = {diplomatic_relation = {
     country = PER
     relation = guarantee

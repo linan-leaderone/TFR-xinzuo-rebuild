@@ -1,0 +1,202 @@
+
+PRC_party_fight = {
+
+			hidden_effect = {
+
+			set_variable = {
+				var = zylm_zcd
+				value = gyd_zcd
+			}
+			add_to_variable = {
+				var = zylm_zcd
+				value = zgm_zcd
+			}
+			set_variable = {
+				var = ROC_totalitarian_socialist_drift_dynamic_var
+				value = zgm_zcd
+			}
+			set_variable = {
+				var = ROC_communist_drift_dynamic_var
+				value = gyd_zcd
+			}
+			if = {
+				limit = {
+		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
+				}
+			set_variable = {
+				var = ROC_libertarian_socialist_drift_dynamic_var
+				value = lgd_zcd
+			}
+				}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+			set_variable = {
+				var = ROC_libertarian_socialist_drift_dynamic_var
+				value = zgg_zcd
+			}
+				}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+			set_variable = {
+				var = ROC_social_democrat_drift_dynamic_var
+				value = lgd_zcd
+			}
+				}
+			set_variable = {
+				var = ROC_nationalist_drift_dynamic_var
+				value = rmd_zcd
+			}
+			set_variable = {
+				var = ROC_social_liberal_drift_dynamic_var
+				value = zyd_zcd
+			}
+			set_variable = {
+				var = ROC_conservative_drift_dynamic_var
+				value = xzd_zcd
+			}
+divide_variable = {
+    var = ROC_totalitarian_socialist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_communist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_libertarian_socialist_drift_dynamic_var
+    value = 4000
+}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+divide_variable = {
+    var = ROC_social_democrat_drift_dynamic_var
+    value = 4000
+}
+}
+			if = {
+				limit = {
+		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
+				}
+divide_variable = {
+    var = ROC_libertarian_socialist_drift_dynamic_var
+    value = 4
+}
+			set_variable = {
+				var = ROC_social_democrat_drift_dynamic_var
+				value = ROC_libertarian_socialist_drift_dynamic_var
+			}
+multiply_variable = {
+    var = ROC_social_democrat_drift_dynamic_var
+    value = 3
+}
+}
+divide_variable = {
+    var = ROC_social_liberal_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_conservative_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_nationalist_drift_dynamic_var
+    value = 4000
+}
+divide_variable = {
+    var = ROC_nationalist_drift_dynamic_var
+    value = 3
+}
+			set_variable = {
+				var = ROC_authoritarian_democrat_drift_dynamic_var
+				value = ROC_nationalist_drift_dynamic_var
+			}
+multiply_variable = {
+    var = ROC_authoritarian_democrat_drift_dynamic_var
+    value = 2
+}
+
+
+	clear_array = pie_chart
+	resize_array = {
+		array = pie_chart
+		value = 7
+		size = 100
+	}
+	set_temp_variable = { fuxingdang_temp = zgm_zcd } 
+	divide_temp_variable = { fuxingdang_temp = 40 }
+	add_to_temp_variable = { fuxingdang_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = fuxingdang_temp
+		set_variable = { pie_chart^v = 4 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+	set_temp_variable = { fatahe_temp = gyd_zcd }
+	divide_temp_variable = { fatahe_temp = 40 }
+	add_to_temp_variable = { fatahe_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = fatahe_temp
+		set_variable = { pie_chart^v = 2 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { minzhen_temp = lgd_zcd }
+	divide_temp_variable = { minzhen_temp = 40 }
+	add_to_temp_variable = { minzhen_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = minzhen_temp
+		set_variable = { pie_chart^v = 8 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { likude_temp = zyd_zcd }
+	divide_temp_variable = { likude_temp = 40 }
+	add_to_temp_variable = { likude_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = likude_temp
+		set_variable = { pie_chart^v = 5 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { yiergong_temp = xzd_zcd }
+	divide_temp_variable = { yiergong_temp = 40 }
+	add_to_temp_variable = { yiergong_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = yiergong_temp
+		set_variable = { pie_chart^v = 6 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { muxionghui_temp = rmd_zcd }
+	divide_temp_variable = { muxionghui_temp = 40 }
+	add_to_temp_variable = { muxionghui_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = muxionghui_temp
+		set_variable = { pie_chart^v = 7 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	set_temp_variable = { zhonggegong_temp = zgg_zcd }
+	divide_temp_variable = { zhonggegong_temp = 40 }
+	add_to_temp_variable = { zhonggegong_temp = ROOT.last_idx }
+	for_loop_effect = {
+		start = ROOT.last_idx
+		end = zhonggegong_temp
+		set_variable = { pie_chart^v = 3 }
+		add_to_variable = { ROOT.last_idx = 1 }
+	}
+
+	clear_variable = ROOT.last_idx
+}
+}

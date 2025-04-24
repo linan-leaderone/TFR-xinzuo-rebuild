@@ -1,4 +1,14 @@
 spriteTypes = {	
+	spriteTypes = {
+			frameAnimatedSpriteType = {
+			name = "GFX_Portrait_PRC_The_Long_March"
+			texturefile = "gfx/leaders/PRC/zheng_chan.dds"
+			noOfFrames = 16
+			animation_rate_fps = 7
+			looping = yes
+			play_on_show = yes  
+		}
+	}
 	spriteType = { name = "GFX_unit_PRC_jijia_zhanshi_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_PRC_jijia_zhanshi_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
 	spriteType = {

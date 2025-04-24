@@ -8,6 +8,46 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "dfhqiwu"
+	sounds = {
+		sound = "dfhqiwu"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "dfhqiyi"
+	sounds = {
+		sound = "dfhqiyi"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "dfhqier"
+	sounds = {
+		sound = "dfhqier"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "dfhqisan"
+	sounds = {
+		sound = "dfhqisan"
+	}
+	volume = 1
+}
+soundeffect =
+{
+	name = "dfhqisi"
+	sounds = {
+		sound = "dfhqisi"
+	}
+	volume = 1
+}
+soundeffect =
+{
 	name = "tlibwar"
 	sounds = {
 		sound = "tlibwar"

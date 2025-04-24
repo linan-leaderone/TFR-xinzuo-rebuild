@@ -5,6 +5,41 @@ on_actions = {
 
 			if = { 
 				limit = {
+						HKN = {has_war_with = PRC}
+ 						NOT = {PRC = {has_country_flag = WDWJDHKW} }
+ 						HKN = {PRC_hu_chunhua = {is_country_leader = yes}} 
+					FROM.FROM = { 
+						OR = {
+							state = 1223
+							state = 1228
+							state = 1429
+							state = 606
+							state = 1221
+							state = 1220
+							state = 613
+						} 
+					}
+						FROM = { tag = HKN}
+
+						ROOT = {
+ tag = PRC
+}
+}
+
+					PRC = {
+			set_country_flag = WDWJDHKW
+			country_event = {
+				id = PRC_MAO1.81
+			}
+					}
+
+
+
+}
+
+
+			if = { 
+				limit = {
 						BUK = {has_war_with = IRQ}
  						NOT = {BUK = {has_country_flag = IRQQQDDD} } 
 					FROM.FROM = { 

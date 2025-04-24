@@ -525,6 +525,7 @@ ETL = {annex_country = {
 				}
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 										PRC = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
@@ -547,6 +548,7 @@ ETL = {annex_country = {
 						ROOT = {
 
 						OR = {
+							original_tag = SAR
 							original_tag = ARR
 							original_tag = SAU
 							original_tag = JAH
@@ -685,6 +687,7 @@ XIN = {annex_country = {
 		}
 		}
 						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -734,6 +737,7 @@ XIN = {annex_country = {
 
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 										PRC = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
@@ -873,6 +877,7 @@ XIN = {annex_country = {
 
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -902,6 +907,7 @@ XIN = {annex_country = {
 
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -980,6 +986,7 @@ JOR = {annex_country = {
 
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -1046,6 +1053,7 @@ JOR = {annex_country = {
 
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -1113,6 +1121,7 @@ JOR = {annex_country = {
 
 				if = {
 					limit = {
+						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
 						FROM = {
 						OR = {
 							original_tag = PRC

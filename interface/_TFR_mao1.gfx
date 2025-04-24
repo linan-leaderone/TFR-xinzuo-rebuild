@@ -5,6 +5,10 @@ spriteTypes = {
 		noOfFrames = 19
 	}
 	spriteType = {
+		name = "GFX_Portrait_PRC_LKQ"
+		textureFile = "gfx/MAOYUANXIN/PRC_Li_Keqiang.png"
+	}
+	spriteType = {
 		name = "GFX_super_tlibwar"
 		textureFile = "gfx/MAOYUANXIN/super_tlibwar.png"
 	}

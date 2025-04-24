@@ -687,6 +687,12 @@ defined_text = {
 		}
 		localization_key = sm_socialism
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = market_socialism_3
+		}
+		localization_key = market_socialism_3
+	}
 
 
 		text = {
@@ -855,6 +861,13 @@ defined_text = {
 		}
 		localization_key = Geometridaeism
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = market_socialism_4
+		}
+		localization_key = market_socialism_4
+	}
+
 
 
 	text = {

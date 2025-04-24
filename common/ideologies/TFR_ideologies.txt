@@ -237,6 +237,15 @@ ideologies = {
 					89
 				}
 			}
+			market_socialism_3 = {
+				can_be_randomly_selected = no
+				color = {
+					153
+					18
+					0
+				}
+
+			}
 
 			left_centrist = {
 				can_be_randomly_selected = no
@@ -359,6 +368,15 @@ ideologies = {
 			}
 			Geometridaeism = {
 				can_be_randomly_selected = no
+			}
+			market_socialism_4 = {
+				can_be_randomly_selected = no
+				color = {
+					153
+					18
+					0
+				}
+
 			}
 			christian_democracy = {
 				can_be_randomly_selected = no

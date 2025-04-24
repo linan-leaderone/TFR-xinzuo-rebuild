@@ -1,0 +1,2039 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+	add_ideas = PRC_the_long_march_2_idea
+					}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+		
+							original_tag = SYR
+
+						}
+					}
+
+						PRC = {
+				if = {
+					limit = {
+					SYR = {controls_state = 1027}
+						}
+								ROJ = {transfer_state = 1027}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 827}
+						}
+								ROJ = {transfer_state = 827}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1035}
+						}
+								ROJ = {transfer_state = 1035}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1030}
+						}
+								ROJ = {transfer_state = 1030}
+						}
+								ROJ = {transfer_state = 814}
+								ROJ = {transfer_state = 1029}
+PRC = {annex_country = {
+								target = SYR
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = SYR
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = SYR
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+
+
+						SYR = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = TAL
+						}
+					}
+					FROM = {
+							AFG = {	
+							annex_country = {
+								target = TAL
+								transfer_troops = no
+							}}
+						AFG = {			
+			transfer_state = 1355			
+			transfer_state = 267			
+			transfer_state = 824			
+			transfer_state = 837		
+			transfer_state = 415			
+			transfer_state = 1051			
+			transfer_state = 1052			
+			transfer_state = 1053			
+			transfer_state = 1054			
+			transfer_state = 1055			
+			transfer_state = 1056			
+			transfer_state = 1057			
+			transfer_state = 1058
+						PRC = {
+
+			release_autonomy = {
+			target = AFG
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = AFG
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+						}
+	remove_ideas = AFG_corrupt_military_staff
+remove_ideas = AFG_unified_afghanistan
+remove_ideas = AFG_diarchy
+remove_ideas = AFG_crushing_taliban		
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_shuzihuaminzhu}
+						NOT = {AFG = {has_idea = PRC_shuzihuaminzhu}}
+					}
+						AFG = {
+			add_ideas = PRC_shuzihuaminzhu
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_coordinate_eadi_militaries_idea}
+						NOT = {AFG = {has_idea = PRC_coordinate_eadi_militaries_idea}}
+					}
+						AFG = {
+			add_ideas = PRC_coordinate_eadi_militaries_idea
+						}
+
+				}	
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_neomaoism111_idea}
+						NOT = {AFG = {has_idea = PRC_neomaoism111_idea}}
+					}
+						AFG = {
+			add_ideas = PRC_neomaoism111_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = jjdzxjd_idea}
+						NOT = {AFG = {has_idea = jjdzxjd_idea}}
+					}
+						AFG = {
+			add_ideas = jjdzxjd_idea
+						}
+
+				}
+
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_yuuki_4}
+						NOT = {AFG = {has_idea = PRC_yuuki_4}}
+					}
+						AFG = {
+			add_ideas = PRC_yuuki_4
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = wushenlun_idea}
+						NOT = {AFG = {has_idea = wushenlun_idea}}
+					}
+						AFG = {
+			add_ideas = wushenlun_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_socialist_dream_idea}
+						NOT = {AFG= {has_idea = PRC_socialist_dream_idea}}
+					}
+						AFG = {
+			add_ideas = PRC_socialist_dream_idea
+						}
+
+				}
+				if = {
+					limit = {
+						PRC = {has_idea = PRC_future_of_cyber_communism_idea_1}
+						NOT = {AFG = {has_idea = PRC_future_of_cyber_communism_idea_1}}
+					}
+						AFG = {
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+						}
+
+				}
+	
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+
+						OR = {
+							original_tag = ARR
+							original_tag = SAU
+							original_tag = SAR
+							original_tag = JAH
+							original_tag = QAT
+							original_tag = OMA
+							original_tag = YEM
+							original_tag = UAE
+							original_tag = YEM
+							original_tag = AAS
+							original_tag = HOU
+							original_tag = ROC
+							original_tag = EGY
+							original_tag = MUS
+							original_tag = MEK
+							original_tag = LBA
+							original_tag = HRL
+							original_tag = SUD
+							original_tag = MRT
+							original_tag = WES
+						}
+
+						}
+					}
+					FROM = {
+						clr_country_flag = PRC_spread_chinese_influence
+
+						white_peace = ROOT
+					
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = SAR
+		}
+						}		
+				SAR = {set_cosmetic_tag = SAU}
+						}	
+
+			PRC = {set_autonomy = {
+			target = ROOT
+			autonomy_state = autonomy_minzhutuoguan
+			}}
+						ROOT = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = JOR
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = JOR
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						JOR = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = CAM
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = CAM
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = CAM
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = CAM
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						CAM = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+		OR = {
+							original_tag = IRQ
+							original_tag = BUK
+							original_tag = ABK
+							original_tag = FIA
+							original_tag = KUW
+							original_tag = KUR
+		}
+						}
+					}
+					FROM = {
+
+				if = {
+					limit = {
+						ROOT = {
+		OR = {
+							original_tag = IRQ
+							original_tag = BUK
+							original_tag = ABK
+							original_tag = FIA
+		}
+		}
+						}
+						white_peace = ROOT
+IRQ = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+							}
+						clr_country_flag = PRC_spread_chinese_influence
+			PRC = {set_autonomy = {
+			target = IRQ
+			autonomy_state = autonomy_minzhutuoguan
+			}}
+							ROJ = {	transfer_state = 815}
+							ROJ = {	transfer_state = 1181}
+							ROJ = {	transfer_state = 1177}
+							ROJ = {	transfer_state = 421}
+
+		PRC = {
+			add_to_faction = ROJ
+				ROJ = {set_cosmetic_tag = ROJ_XIN	}
+		}
+
+				if = {
+					limit = {
+						SYR = {
+								is_ally_with = PRC
+						}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1027}
+						}
+								ROJ = {transfer_state = 1027}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 827}
+						}
+								ROJ = {transfer_state = 827}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1035}
+						}
+								ROJ = {transfer_state = 1035}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1030}
+						}
+								ROJ = {transfer_state = 1030}
+						}
+								ROJ = {transfer_state = 814}
+								ROJ = {transfer_state = 1029}
+						}
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    add_core_of = ROJ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    remove_core_of = KUR
+		    }
+
+						IRQ = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally
+				clr_country_flag = AOR_Member
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+					}
+						}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = KUW
+		}
+						}
+
+IRQ = {annex_country = {
+								target = KUW
+								transfer_troops = no
+							}
+
+							}
+			every_state = {
+				limit = {
+					is_core_of = KUW
+				}
+			    add_core_of = IRQ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KUW
+				}
+			    remove_core_of = KUW
+		    }
+						IRQ = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally
+				clr_country_flag = AOR_Member
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+						}
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = KUR
+		}
+						}
+
+ROJ = {annex_country = {
+								target = KUR
+								transfer_troops = no
+							}
+
+							}
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    add_core_of = ROJ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    remove_core_of = KUR
+		    }
+
+		PRC = {
+			add_to_faction = ROJ
+ROJ = {set_cosmetic_tag = ROJ_XIN}
+		}
+				if = {
+					limit = {
+						SYR = {
+								is_ally_with = PRC
+						}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1027}
+						}
+								ROJ = {transfer_state = 1027}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 827}
+						}
+								ROJ = {transfer_state = 827}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1035}
+						}
+								ROJ = {transfer_state = 1035}
+						}
+				if = {
+					limit = {
+					SYR = {controls_state = 1030}
+						}
+								ROJ = {transfer_state = 1030}
+						}
+								ROJ = {transfer_state = 814}
+								ROJ = {transfer_state = 1029}
+						}
+						}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = HEZ
+						}
+					}
+						PRC = {
+LEB = {annex_country = {
+								target = HEZ
+								transfer_troops = no
+							}
+
+							}
+
+			}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = PAL
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = PAL
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = PAL
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = PAL
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						PAL = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = ISR
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = ISR
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = ISR
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = ISR
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						ISR = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = EGY
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = EGY
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = EGY
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = EGY
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						EGY = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = LEB
+						}
+					}
+						PRC = {
+
+			release_autonomy = {
+			target = LEB
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = LEB
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						LEB = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = PER
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = PER
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = PER
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = PER
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						PER = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = LAO
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = LAO
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = LAO
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = LAO
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						LAO = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = PHI
+						}
+					}
+			
+
+			NPA = {
+
+							annex_country = {
+								target = PHI
+								transfer_troops = no
+							}
+				set_capital = {state = 1274}
+}
+						NPA = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+						
+				set_cosmetic_tag = PHI_XIN
+create_faction = MAOZHUYIGUOJI
+	
+						}
+										PRC = {
+			transfer_state = 1384
+			transfer_state = 626
+								add_state_core = 1384
+				}
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = PAK
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = PAK
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = PAK
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = PAK
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						PAK = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = SIA
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = SIA
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = SIA
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = SIA
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						SIA = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = AST
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = AST
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = AST
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = AST
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						AST = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = NZL
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = NZL
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = NZL
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = NZL
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						NZL = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = PNG
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = PNG
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = PNG
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = PNG
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						PNG = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = INS
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = INS
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = INS
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = INS
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						INS = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = SIG
+						}
+					}
+						SIG = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = MAL
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = MAL
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = MAL
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = MAL
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						MAL = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = VIN
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = VIN
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = VIN
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = VIN
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						VIN = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = BRM
+						}
+					}
+						PRC = {
+PRC = {annex_country = {
+								target = BRM
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = BRM
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = BRM
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						BRM = {
+annex_country = {
+								target = MND
+								transfer_troops = yes
+							}
+annex_country = {
+								target = SSA
+								transfer_troops = yes
+							}
+annex_country = {
+								target = WAT
+								transfer_troops = yes
+							}
+
+annex_country = {
+								target = KLA
+								transfer_troops = yes
+							}
+
+annex_country = {
+								target = MOA
+								transfer_troops = yes
+							}
+
+
+annex_country = {
+								target = PDF
+								transfer_troops = yes
+							}
+annex_country = {
+								target = CNF
+								transfer_troops = yes
+							}
+
+annex_country = {
+								target = KNU
+								transfer_troops = yes
+							}
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+				if = {
+					limit = {
+					
+
+				PRC = {
+			has_completed_focus = PRC_niaolong_56
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							original_tag = SHK
+								is_ally_with = SHK
+						}
+						}
+						ROOT = {
+							original_tag = JAP
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+SHK = {annex_country = {
+								target = JAP
+								transfer_troops = no
+							}
+				set_capital = {state = 1332}
+set_cosmetic_tag = JAP_republic		
+
+							}
+
+		PRC = {
+			add_to_faction = SHK
+		}
+				every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    remove_core_of = JAP
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+				if = {
+					limit = {
+					
+
+				PRC = {
+			has_completed_focus = PRC_niaolong_31
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							original_tag = JAP
+								is_ally_with = JAP
+						}
+						}
+						ROOT = {
+							original_tag = PRK
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+KOR = {annex_country = {
+								target = PRK
+								transfer_troops = no
+							}
+		set_politics = {
+			ruling_party = social_democrat
+			election_frequency = 48
+			elections_allowed = yes
+		}	
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.4
+			}
+set_cosmetic_tag = KOR_XIN		
+
+create_country_leader = {
+	                name = "KOR_JJY"
+	                desc = "POLITICS_JJY_DESC"
+	                picture = "gfx/MAOYUANXIN/JJY.png"
+	                expire = "1999.1.1"
+	                ideology = progressivism
+				} 
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    add_core_of = KOR
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    remove_core_of = PRK
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				if = {
+					limit = {
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = RAJ
+						}
+					}
+
+						NAX = {
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+									set_cosmetic_tag = NAX_XIN
+                inherit_technology = PRC
+			remove_ideas = RAJ_indian_civil_war_idea			
+			transfer_state = 431			
+			transfer_state = 1373			
+			transfer_state = 439			
+			transfer_state = 1381			
+			transfer_state = 1366			
+			transfer_state = 1368
+
+
+		
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+			    add_core_of = NAX
+		    }
+				
+			
+							annex_country = {
+								target = PRJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = SLJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = MPJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = LRJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RAJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RJN
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = SAJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = RSS
+								transfer_troops = yes
+							}
+							annex_country = {
+								target = DRV
+								transfer_troops = yes
+							}
+				set_capital = {state = 431}
+						}
+
+						PRC = {			
+			transfer_state = 434	
+
+						RAJ = {			
+			transfer_state = 1131				
+			transfer_state = 441				
+			transfer_state = 1373				
+			transfer_state = 437					
+			transfer_state = 439					
+			transfer_state = 432						
+			transfer_state = 789				
+			transfer_state = 438				
+			transfer_state = 1379					
+			transfer_state = 1370				
+			transfer_state = 1397				
+			transfer_state = 1367				
+			transfer_state = 1366				
+			transfer_state = 1368				
+			transfer_state = 1369						
+			transfer_state = 1398		
+
+			}
+			set_autonomy = {
+			target = RAJ
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+						RAJ = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+			NPA = {
+			add_to_faction = NAX
+
+}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+
+
+
+
+
+
+
+}
+}
+}

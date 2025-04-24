@@ -288,15 +288,7 @@ scripted_gui = {
 				is_ally_with = NZL
 				is_ally_with = RAJ
 			}
-	  if = {
-			limit = {
-			OR = {
-			NOT = {PRC = {has_completed_focus = PRC_the_Flower_of_Freedom_4}}
-			PRC = {has_completed_focus = PRC_niaolong_56}
-			}
-			}
 				NOT = {is_ally_with = PRC}
-			}
 			}
 			TFR_csto_politics_icon_visible = {
 				has_country_flag = csto_member
@@ -366,16 +358,7 @@ PRC = {has_completed_focus = PRC_the_red_phoenix}
 				is_ally_with = NZL
 				is_ally_with = RAJ
 			}
-
-	  if = {
-			limit = {
-			OR = {
-			NOT = {PRC = {has_completed_focus = PRC_the_Flower_of_Freedom_4}}
-			PRC = {has_completed_focus = PRC_niaolong_56}
-			}
-			}
 				NOT = {is_ally_with = PRC}
-			}
 			}
 			TFR_csto_diplo_icon_visible = {
 				has_country_flag = csto_member

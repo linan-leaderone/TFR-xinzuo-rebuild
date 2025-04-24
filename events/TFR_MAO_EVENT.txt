@@ -346,7 +346,7 @@ NOT = {has_idea = PRC_ai_changzheng_core}
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+portrait_path = GFX_Portrait_PRC_The_Long_March
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -4043,15 +4043,15 @@ traits = { 
 
 set_portraits = {
     character = PRC_long_march
-    army = { large="gfx/MAOYUANXIN/changzheng1.png" }
-    civilian = { large="gfx/MAOYUANXIN/changzheng1.png" }
+    army = { large=GFX_Portrait_PRC_The_Long_March }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+portrait_path = GFX_Portrait_PRC_The_Long_March
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -5417,15 +5417,15 @@ set_cosmetic_tag = PRC_HACHIMI
 
 set_portraits = {
     character = PRC_long_march
-    army = { large="gfx/MAOYUANXIN/changzheng1.png" }
-    civilian = { large="gfx/MAOYUANXIN/changzheng1.png" }
+    army = { large=GFX_Portrait_PRC_The_Long_March }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+portrait_path = GFX_Portrait_PRC_The_Long_March
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -5604,15 +5604,15 @@ traits = { 
 
 set_portraits = {
     character = PRC_long_march
-    army = { large="gfx/MAOYUANXIN/changzheng1.png" }
-    civilian = { large="gfx/MAOYUANXIN/changzheng1.png" }
+    army = { large=GFX_Portrait_PRC_The_Long_March }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = "gfx/MAOYUANXIN/changzheng1.png"
+portrait_path = GFX_Portrait_PRC_The_Long_March
 skill = 9
 attack_skill = 9
 defense_skill = 9

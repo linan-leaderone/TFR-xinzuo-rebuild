@@ -5084,9 +5084,7 @@ PRC_maoist_politburo_cat = {
 			original_tag = PRC
 		}
 		visible = {
-	PRC_han_dongfang = {is_country_leader = yes}
-	PRC_mao_yuanxin = {is_country_leader = yes}
-	PRC_hu_chunhua = {is_country_leader = yes}
+	always = no
 		}
 		available = {
 	PRC_han_dongfang = {is_country_leader = yes}
@@ -10284,6 +10282,16 @@ annex_country = {
 
 				declare_war_on = { 
 					target = QAT
+					type = annex_everything 
+				}
+					}
+				if = {
+					limit = {
+						country_exists = SAR
+					}
+
+				declare_war_on = { 
+					target = SAR
 					type = annex_everything 
 				}
 					}

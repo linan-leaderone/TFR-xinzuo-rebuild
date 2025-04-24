@@ -5,6 +5,36 @@ sound = {
 	always_load = yes
 }
 sound = {
+	name = "dfhqiwu"
+	file = "menu/dfhqiwu.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "dfhqiyi"
+	file = "menu/dfhqiyi.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "dfhqier"
+	file = "menu/dfhqier.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "dfhqisan"
+	file = "menu/dfhqisan.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "dfhqisi"
+	file = "menu/dfhqisi.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
 	name = "tlibwar1"
 	file = "menu/tlibwar1.wav"
 	volume = 1

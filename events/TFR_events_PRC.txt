@@ -8143,43 +8143,6 @@ country_event = {
 	}
 }
 
-#Former Premier Li Keqiang Passed Away
-country_event = {
-	id = china.250
-	title = china.250.t
-	desc = {
-		text = china.250.d.a
-		trigger = {
-			has_global_flag = PRC_taiwan_war_won
-		}
-	}
-	desc = {
-		text = china.250.d.b
-		trigger = {
-			has_global_flag = PRC_taiwan_war_lost
-		}
-	}
-	picture = GFX_PRC_li_keqiang_died
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = {
-	}
-	option = {
-		name = china.250.a
-		trigger = {
-			has_global_flag = PRC_taiwan_war_won
-		}
-		add_stability = -0.025
-	}
-	option = {
-		name = china.250.b
-		trigger = {
-			has_global_flag = PRC_taiwan_war_lost
-		}
-		add_stability = -0.035
-	}
-}
-
 #lib win
 news_event = {
 	id = china.251
