@@ -1003,6 +1003,57 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = PRC_loji_category_desc_yijian6_loc
+	text = {
+		trigger = {
+			has_country_flag = PRC_handongfang_zhanlingqu_zhichu
+		}
+		localization_key = PRC_loji_category_desc_yijian6_loc1
+	}
+	text = {
+		trigger = {
+			NOT = {has_country_flag = PRC_handongfang_zhanlingqu_zhichu}
+			NOT = {has_country_flag = PRC_handongfang_zhanlingqu_shouru}
+		}
+		localization_key = PRC_loji_category_desc_yijian6_loc2
+	}
+	text = {
+		trigger = {
+			has_country_flag = PRC_handongfang_zhanlingqu_shouru
+		}
+		localization_key = PRC_loji_category_desc_yijian6_loc3
+	}
+}
+defined_text = {
+	name = PRC_loji_category_desc_manyidu_change_loc
+	text = {
+		trigger = {
+check_variable = {
+    var = loji_manyidu_change_shuzhi
+    value = 0
+    compare = greater_than
+}
+		}
+		localization_key = PRC_loji_category_desc_manyidu_change_loc1
+	}
+	text = {
+		trigger = {
+			check_variable = { loji_manyidu_change_shuzhi = 0 }
+		}
+		localization_key = PRC_loji_category_desc_manyidu_change_loc2
+	}
+	text = {
+		trigger = {
+check_variable = {
+    var = loji_manyidu_change_shuzhi
+    value = 0
+    compare = less_than
+}
+		}
+		localization_key = PRC_loji_category_desc_manyidu_change_loc3
+	}
+}
+defined_text = {
 	name = PRC_loji_category_desc_manyidu_loc
 	text = {
 		trigger = {

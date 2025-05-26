@@ -1664,7 +1664,7 @@ focus_tree = {
 shared_focus = {
 	id = PRC_establish_eadi
 	icon = GFX_focus_PRC_establish_eadi
-	x = 44
+	x = 74
 	y = 0
 	cost = 2
 	available_if_capitulated = yes
@@ -3129,6 +3129,7 @@ shared_focus = {
 			set_global_flag = pan_asian_war_ongoing
 			mark_focus_tree_layout_dirty = yes
 
+			PRC_gaw_start = yes
 		complete_national_focus = PRC_chinas_greatest_hour
 		JAP = {			add_to_faction = KOR
 			KOR = {
@@ -6711,7 +6712,10 @@ shared_focus = {
 		always = no
 	}
 	allow_branch = {
+	OR = {
 		has_global_flag = pan_asian_war_ongoing
+		has_completed_focus = PRC_niaolong_77
+	}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_chinas_greatest_hour completion_reward"
@@ -8710,7 +8714,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_east_rising_west_falling
 	icon = GFX_focus_PRC_east_rising_west_falling
-	x = 68
+	x = 98
 	y = 0
 	offset = {
 		x = 4
@@ -8959,7 +8963,7 @@ shared_focus = {
 shared_focus = {
 	id = PRC_belt_and_road_initiative_non_cen
 	icon = GFX_focus_PRC_belt_and_road_initiative
-	x = 83
+	x = 113
 	y = 0
 	#offset = {
 	#	x = 1

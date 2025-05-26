@@ -15,7 +15,21 @@ spriteTypes = {
             animation_rate_fps = 30
             looping = yes
             play_on_show = yes
-		}									
+		}		
+								
+	SpriteType = {
+		name = "GFX_Ideology_national_anarchist_banner"
+		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_national_anarchist_banner.png"
+		legacy_lazy_load = no
+	}										
+	SpriteType = {
+		name = "GFX_UKR_volodymyr_zelensky_CQGJX1"
+		texturefile = "gfx/MAOYUANXIN/Zelensky Drip.png"
+	}									
+	SpriteType = {
+		name = "GFX_UKR_volodymyr_zelensky_CQGJX"
+		texturefile = "gfx/MAOYUANXIN/Zelensky_3.png"
+	}									
 	SpriteType = {
 		name = "GFX_left_end1_button"
 		texturefile = "gfx/MAOYUANXIN/ZOM_end1_1.png"
@@ -294,6 +308,10 @@ spriteTypes = {
 		textureFile = "gfx/MAOYUANXIN/autonomy_minzhutuoguan_icon.png"
 	}
 	spriteType = {
+		name = "GFX_autonomy_banglianqu_icon"
+		textureFile = "gfx/MAOYUANXIN/autonomy_minzhutuoguan_icon.png"
+	}
+	spriteType = {
 		name = "GFX_autonomy_zizhiqu_icon"
 		textureFile = "gfx/MAOYUANXIN/autonomy_zizhiqu_icon.png"
 	}
@@ -353,7 +371,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_Geometridaeism"
 		texturefile = "gfx/MAOYUANXIN/Geometridaeism.png"
-	}	
+	}			
+	spriteType = {
+		name = "GFX_ideology_Geometridaeism1"
+		texturefile = "gfx/MAOYUANXIN/Geometridaeism1.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_Geometridaeism2"
+		texturefile = "gfx/MAOYUANXIN/Geometridaeism2.png"
+	}
 	spriteType = {
 		name = "GFX_ideology_kasitekuoism"
 		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
@@ -379,6 +405,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_sm_socialism"
 		texturefile = "gfx/MAOYUANXIN/sm_socialism.png"
+	}				
+	spriteType = {
+		name = "GFX_Ideology_Geometridaeism2_banner"
+		texturefile = "gfx/MAOYUANXIN/Ideology_Geometridaeism2.png"
+		legacy_lazy_load = no
+	}				
+	spriteType = {
+		name = "GFX_Ideology_Geometridaeism1_banner"
+		texturefile = "gfx/MAOYUANXIN/Ideology_Geometridaeism1.png"
+		legacy_lazy_load = no
 	}			
 	spriteType = {
 		name = "GFX_Ideology_Geometridaeism_banner"
@@ -409,6 +445,10 @@ spriteTypes = {
 		name = "GFX_ideology_market_socialism_2"
 		texturefile = "gfx/MAOYUANXIN/market_socialism.png"
 	}		
+	spriteType = {
+		name = "GFX_ideology_national_anarchist"
+		texturefile = "gfx/MAOYUANXIN/national_anarchist.png"
+	}			
 	spriteType = {
 		name = "GFX_ideology_nazi_maoism"
 		texturefile = "gfx/MAOYUANXIN/nazi_maoism.png"

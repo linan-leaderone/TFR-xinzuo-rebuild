@@ -1,0 +1,120 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_qinhui_free_end_1"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_1.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_2"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_2.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_3"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_3.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_4"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_4.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_5"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_5.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_6"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_6.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_7"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_7.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_8"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_8.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_91"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_91.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_92"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_92.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_93"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_93.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_94"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_94.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_10"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_10.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_11"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_11.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_free_end_button"
+		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_button.png"
+	}
+
+	spriteType = {
+		name = "GFX_qinhui_left_end_1"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_1.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_2"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_2.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_3"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_3.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_4"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_4.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_5"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_5.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_6"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_6.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_7"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_7.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_8"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_8.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_91"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_91.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_92"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_92.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_93"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_93.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_94"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_94.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_10"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_10.png"
+	}
+	spriteType = {
+		name = "GFX_qinhui_left_end_11"
+		texturefile = "gfx/MAOYUANXIN/qinhui_left_end_11.png"
+	}
+
+}

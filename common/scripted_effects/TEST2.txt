@@ -36,6 +36,10 @@ PRC_party_fight = {
 				var = ROC_libertarian_socialist_drift_dynamic_var
 				value = zgg_zcd
 			}
+			add_to_variable = {
+				var = zylm_zcd
+				value = zgg_zcd
+			}
 				}
 			if = {
 				limit = {
@@ -47,12 +51,38 @@ PRC_party_fight = {
 			}
 				}
 			set_variable = {
-				var = ROC_nationalist_drift_dynamic_var
+				var = ROC_authoritarian_democrat_drift_dynamic_var
 				value = rmd_zcd
 			}
+			if = {
+				limit = {
+				NOT = {
+		has_completed_focus = PRC_niaolong_87
+		has_completed_focus = PRC_niaolong_88
+				}
+				}
 			set_variable = {
 				var = ROC_social_liberal_drift_dynamic_var
 				value = zyd_zcd
+			}
+			}
+			if = {
+				limit = {
+		has_completed_focus = PRC_niaolong_87
+				}
+			set_variable = {
+				var = ROC_nationalist_drift_dynamic_var
+				value = zyd_zcd
+			}
+			}
+			if = {
+				limit = {
+		has_completed_focus = PRC_niaolong_88
+				}
+			set_variable = {
+				var = ROC_libertarian_socialist_drift_dynamic_var
+				value = zyd_zcd
+			}
 			}
 			set_variable = {
 				var = ROC_conservative_drift_dynamic_var
@@ -72,29 +102,20 @@ divide_variable = {
 }
 			if = {
 				limit = {
-		has_country_flag = PRC_handongfang_youxian_fenlie
-				}
-divide_variable = {
-    var = ROC_social_democrat_drift_dynamic_var
-    value = 4000
-}
-}
-			if = {
-				limit = {
 		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
 				}
-divide_variable = {
-    var = ROC_libertarian_socialist_drift_dynamic_var
-    value = 4
-}
 			set_variable = {
 				var = ROC_social_democrat_drift_dynamic_var
 				value = ROC_libertarian_socialist_drift_dynamic_var
 			}
-multiply_variable = {
-    var = ROC_social_democrat_drift_dynamic_var
-    value = 3
+			set_variable = {
+				var = ROC_libertarian_socialist_drift_dynamic_var
+				value = 0
+			}
 }
+divide_variable = {
+    var = ROC_social_democrat_drift_dynamic_var
+    value = 4000
 }
 divide_variable = {
     var = ROC_social_liberal_drift_dynamic_var
@@ -109,17 +130,10 @@ divide_variable = {
     value = 4000
 }
 divide_variable = {
-    var = ROC_nationalist_drift_dynamic_var
-    value = 3
-}
-			set_variable = {
-				var = ROC_authoritarian_democrat_drift_dynamic_var
-				value = ROC_nationalist_drift_dynamic_var
-			}
-multiply_variable = {
     var = ROC_authoritarian_democrat_drift_dynamic_var
-    value = 2
+    value = 4000
 }
+
 
 
 	clear_array = pie_chart

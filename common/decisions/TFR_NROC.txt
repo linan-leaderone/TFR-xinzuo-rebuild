@@ -1,5 +1,269 @@
 PRC_RENDAHUIYI = {
-												
+					
+														
+	PRC_support_ukr_down_6 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_83
+		has_country_flag = PRC_niaolong_UKR_SUPPORT
+		SOV = {has_war_with = PRC}
+		}
+		available = {
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1000
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+nihong_neizhan_11451919 = yes
+
+
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}											
+	PRC_support_ukr_down_5 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_83
+		}
+		available = {
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+
+		set_country_flag = PRC_niaolong_UKR_SUPPORT
+					KBK = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+
+					UKR = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+					BYA = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}															
+	PRC_support_ukr_down_4 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+		has_completed_focus = PRC_niaolong_83
+		}
+		available = {
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+		}
+
+		remove_effect = {
+
+					if = {
+						limit = {
+						NOT = {country_exists = GER	}
+				}
+					every_country = {
+			limit = {
+			OR = {
+				is_ally_with = FRA
+				is_ally_with = FPR
+			}
+			}
+
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 200
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 200
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+		}
+		}
+					every_country = {
+			limit = {
+				is_ally_with = GER
+			}
+
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 200
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 200
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2500
+					producer = PRC
+				}
+		}
+
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}														
+	ROC_pingjia_lishirenwu_3 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+				has_completed_focus = PRC_niaolong_22
+		
+		}
+		available = {
+
+		}
+		days_remove = 3
+		fire_only_once = yes
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO2.6
+			}
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}															
+	ROC_pingjia_lishirenwu_2 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+				has_completed_focus = PRC_niaolong_22
+		
+		}
+		available = {
+
+		}
+		days_remove = 3
+		fire_only_once = yes
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO2.5
+			}
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}												
+	ROC_pingjia_lishirenwu_1 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+				has_completed_focus = PRC_niaolong_22
+		
+		}
+		available = {
+
+		}
+		days_remove = 3
+		fire_only_once = yes
+		complete_effect = {
+
+		}
+
+		remove_effect = {
+			country_event = {
+				id = PRC_MAO2.4
+			}
+			}
+		icon = GFX_PRC_liberal_decision
+		cost = 50
+	}		
+										
 	ROC_military_intervention_SRL_1 = {
 		allowed = {
 			original_tag = PRC
@@ -23,7 +287,10 @@ PRC_RENDAHUIYI = {
 
 		remove_effect = {
 		PRC = {
-			add_to_faction = SRL
+			add_to_faction = SRL	
+			hidden_effect = {
+			SRL = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}}
 		}
 			}
 		icon = GFX_PRC_liberal_decision
@@ -54,7 +321,10 @@ PRC_RENDAHUIYI = {
 		remove_effect = {
 		PRC = {
 			add_to_faction = BAN
-		}
+		}	
+			hidden_effect = {
+			BAN = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}}
 			}
 		icon = GFX_PRC_liberal_decision
 		cost = 50
@@ -83,7 +353,10 @@ PRC_RENDAHUIYI = {
 		remove_effect = {
 		PRC = {
 			add_to_faction = BHU
-		}
+		}	
+			hidden_effect = {
+			BHU = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}}
 			}
 		icon = GFX_PRC_liberal_decision
 		cost = 50
@@ -112,7 +385,10 @@ PRC_RENDAHUIYI = {
 		remove_effect = {
 		PRC = {
 			add_to_faction = NEP
-		}
+		}	
+			hidden_effect = {
+			NEP = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}}
 			}
 		icon = GFX_PRC_liberal_decision
 		cost = 50
@@ -174,6 +450,11 @@ PRC_RENDAHUIYI = {
 		
 		remove_effect = {
 
+
+				declare_war_on = { 
+					target = HRL
+					type = annex_everything 
+				}
 				if = {
 					limit = {
 						country_exists = SAR
@@ -798,6 +1079,8 @@ JAP = {
 				elections_allowed = yes
 				}
 			hidden_effect = {	
+			PRC = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}
 					if = {
 						limit = {
 				CHI = {is_subject = yes}
@@ -854,7 +1137,10 @@ JAP = {
 						limit = {
 				NOT = {MON = { has_government = social_democrat }}
 				}
-MON = {
+MON = {	
+			hidden_effect = {
+			add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}
 				set_politics = {
 				ruling_party = social_democrat
 				election_frequency = 60
@@ -908,7 +1194,10 @@ JAP = {
 				CHI = {is_subject = yes}
 				}
 				end_puppet = CHI
-			}
+			}	
+			hidden_effect = {
+			PRC = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}}
 				load_focus_tree = TFR_tree_JAP_liberal
 				complete_national_focus = JAP_triumph_of_democracy
 				complete_national_focus = JAP_for_people_for_the_future
@@ -977,7 +1266,10 @@ JAP = {
 				CHI = {is_subject = yes}
 				}
 				end_puppet = CHI
-			}
+			}	
+			hidden_effect = {
+			PRC = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}}
 				load_focus_tree = TFR_tree_JAP_liberal
 				complete_national_focus = JAP_triumph_of_democracy
 				complete_national_focus = JAP_for_people_for_the_future
@@ -1045,6 +1337,7 @@ JAP = {
 			original_tag = PRC
 		}
 		visible = {
+		NOT = {has_completed_focus = PRC_niaolong_82}
 		has_country_flag = support_ukr_down
 		GER = {has_war_with = SOV}
 		}
@@ -1467,8 +1760,91 @@ JAP = {
 
 		icon = GFX_PRC_jap_rel
 		cost = 50
-	}		
+	}			
 
+	PRC_daxuan_elect_2_action = {
+		icon = GFX_PRC_liberal_decision
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30
+		complete_effect = {
+
+		}
+		timeout_effect = { 
+
+	
+			country_event = {
+				id = PRC_MAO2.2
+			}
+	
+
+		}
+	}	
+
+	PRC_daxuan_elect_3_action = {
+		icon = GFX_PRC_liberal_decision
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 30
+		complete_effect = {
+
+		}
+		timeout_effect = { 
+
+			if = {
+				limit = {
+            check_variable = {
+    var = zylm_zcd
+    value = zyd_zcd
+    compare = greater_than_or_equals
+}
+				}
+
+			country_event = {
+				id = PRC_MAO2.2
+			}
+
+
+				}
+	
+
+	
+			if = {
+				limit = {
+            check_variable = {
+    var =zyd_zcd
+    value = zylm_zcd
+    compare = greater_than
+}
+				}
+
+			country_event = {
+				id = PRC_MAO2.3
+			}
+
+
+				}
+
+		}
+	}	
 	PRC_daxuan_elect_1_action = {
 		icon = GFX_PRC_liberal_decision
 		allowed = { 

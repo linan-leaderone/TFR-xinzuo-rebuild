@@ -225,7 +225,7 @@ PRC_NAX_fight = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  

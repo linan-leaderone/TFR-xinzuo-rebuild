@@ -137,6 +137,9 @@ ideologies = {
 
 	libertarian_socialist = {
 		types = {
+			Geometridaeism2 = {
+				can_be_randomly_selected = no
+			}
 			anarchist_maoism = {
 				color = {
 					255
@@ -360,8 +363,8 @@ ideologies = {
 				can_be_randomly_selected = no
 				color = {
 					251
-                    157
-                    34
+					157
+					34
 				}
 			}
 			neoliberalism = {
@@ -424,9 +427,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_LIBERAL_6"
 		}
 		color = {
-			255
-			170
-			30
+			117 224 255
 		}
 		war_impact_on_world_tension = 1
 		faction_impact_on_world_tension = 1
@@ -791,6 +792,14 @@ ideologies = {
 					8
 				}
 			}
+			Geometridaeism1 = {
+				can_be_randomly_selected = no
+				color = {
+					0
+					0
+					205
+				}
+			}
 			market_socialism_1 = {
 				can_be_randomly_selected = no
 				color = {
@@ -915,6 +924,13 @@ ideologies = {
 					156
 					103
 					50
+				}
+			}
+			national_anarchist = {
+				color = {
+					140
+					35
+					35
 				}
 			}
 			ethno_nationalism = {

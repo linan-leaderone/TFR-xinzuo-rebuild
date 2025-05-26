@@ -374,7 +374,6 @@ country_event = {
 			ideology = maoism
 		}
 		custom_effect_tooltip = appoint_head_minister_tooltip
-		show_ideas_tooltip = PRC_xie_chuntao_hog
 		clr_country_flag = PRC_internal_factions_enabled_flag
 		set_country_flag = PRC_new_left_win
 		hidden_effect = {
@@ -439,7 +438,7 @@ country_event = {
 			character = PRC_kong_qingdong
 			ideology = chinese_exceptionalism
 		}
-			add_ideas = PRC_xie_chuntao_hog
+			add_ideas = PRC_li_keqiang_hog
 			add_ideas = PRC_qi_yu_for
 			add_ideas = PRC_chen_miner_eco
 			add_ideas = PRC_yu_hongqiu_sec

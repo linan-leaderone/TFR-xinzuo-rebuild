@@ -1,14 +1,12 @@
-spriteTypes = {	
-	spriteTypes = {
+spriteTypes = {
 			frameAnimatedSpriteType = {
-			name = "GFX_Portrait_PRC_The_Long_March"
-			texturefile = "gfx/leaders/PRC/zheng_chan.dds"
+			name = "GFX_Portrait_PRC_The_Long_March1"
+			texturefile = "gfx/MAOYUANXIN/zheng_chang1.dds"
 			noOfFrames = 16
 			animation_rate_fps = 7
 			looping = yes
 			play_on_show = yes  
 		}
-	}
 	spriteType = { name = "GFX_unit_PRC_jijia_zhanshi_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_PRC_jijia_zhanshi_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
 	spriteType = {
@@ -20,6 +18,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_loji_of_china"
 		texturefile = "gfx/MAOYUANXIN/long_march_buff_love.png"
+	}
+	SpriteType = {
+		name = "GFX_DX_Member2"
+		texturefile = "gfx/MAOYUANXIN/GFX_DX_Member2.png"
+	}
+	SpriteType = {
+		name = "GFX_DX_Member3"
+		texturefile = "gfx/MAOYUANXIN/GFX_DX_Member3.png"
 	}
 	SpriteType = {
 		name = "GFX_ZOM_END_1"

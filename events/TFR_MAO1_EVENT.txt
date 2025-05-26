@@ -646,15 +646,15 @@ set_cosmetic_tag = PRC_HACHIMI
 
 set_portraits = {
     character = PRC_long_march
-    army = { large=GFX_Portrait_PRC_The_Long_March }
-    civilian = { large=GFX_Portrait_PRC_The_Long_March }
+    army = { large=GFX_Portrait_PRC_The_Long_March1 }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March1 }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = GFX_Portrait_PRC_The_Long_March
+portrait_path = GFX_Portrait_PRC_The_Long_March1
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -1394,7 +1394,7 @@ set_country_flag = market_desc_de
             name = PRC_MAO1.54.a
 
 		hidden_effect = {
-
+			complete_national_focus = PRC_niaolong_60
 		promote_character = {
 			character = PRC_qin_hui
 			ideology = Geometridaeism
@@ -2228,6 +2228,12 @@ add_country_leader_role = {
         option = {
             name = PRC_MAO1.67.a
 set_country_flag = changzheng_start_zhengbian_free
+			hidden_effect = {
+			country_event = {
+				id = PRC_MAO1.89
+				days = 7
+			}
+        }
         }
     }
 
@@ -2593,6 +2599,7 @@ set_politics = {
 	trigger = {
 		tag = PRC
 		date > 2027.12.1
+		has_completed_focus = PRC_the_Flower_of_Freedom_4	
 	}
 
         fire_only_once = yes
@@ -3037,6 +3044,110 @@ set_country_leader_ideology = Geometridaeism
         fire_only_once = yes
         option = {
             name = PRC_MAO1.91.a
+		set_country_flag = PRC_handongfang_zhanlingqu_zhichu
+			custom_effect_tooltip = loji_haogan_up
+
+			custom_effect_tooltip = zgm_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = 60
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -40
+			}
+			if = {
+				limit = {
+		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
+				}
+			add_to_variable = {
+				var = zgm_zcd
+				value = 80
+			}
+				}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+			add_to_variable = {
+				var = zgg_zcd
+				value = 80
+			}
+				}
+			add_to_variable = {
+				var = xzd_zcd
+				value = -20
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -80
+			}
+                PRC_party_fight = yes
+
+        }
+        option = {
+            name = PRC_MAO1.91.b
+
+			custom_effect_tooltip = gyd1_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -30
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 80
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -50
+			}
+                PRC_party_fight = yes
+        }
+        option = {
+            name = PRC_MAO1.91.c
+		set_country_flag = PRC_handongfang_zhanlingqu_shouru
+			custom_effect_tooltip = loji_haogan_down
+
+			custom_effect_tooltip = zyd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -120
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -80
+			}
+			if = {
+				limit = {
+		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
+				}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 40
+			}
+				}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 40
+			}
+				}
+			add_to_variable = {
+				var = xzd_zcd
+				value = 20
+			}
+			add_to_variable = {
+				var = rmd_zcd
+				value = 60
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 80
+			}
+                PRC_party_fight = yes
         }
     }
 
@@ -3050,6 +3161,44 @@ set_country_leader_ideology = Geometridaeism
         fire_only_once = yes
         option = {
             name = PRC_MAO1.92.a
+
+			hidden_effect = {
+				set_politics = {
+				ruling_party = nationalist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+ 
+				set_party_name = { ideology = nationalist long_name = PRC_cpc_social_liberal1_partydzm name = PRC_cpc_social_liberal1_partydzm }
+				set_party_name = { ideology = social_liberal long_name = PRC_cpc_social_liberal1_partydzm3 name = PRC_cpc_social_liberal1_partydzm3}
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+		add_country_leader_role = {
+			character = PRC_qin_hui
+			promote_leader = yes
+			country_leader = {
+				ideology = Geometridaeism1
+				expire = "1.1.1.1"
+			
+			}
+		}
+set_country_leader_portrait = {
+	ideology = nationalist
+	portrait = GFX_PRC_QHKLE
+}
+    }
+
         }
     }
 
@@ -3063,6 +3212,45 @@ set_country_leader_ideology = Geometridaeism
         fire_only_once = yes
         option = {
             name = PRC_MAO1.93.a
+
+			hidden_effect = {
+		set_country_flag = PRC_qinhui_left
+
+			complete_national_focus = PRC_niaolong_88
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+ 
+				set_party_name = { ideology = libertarian_socialist long_name = PRC_cpc_social_liberal1_partydzm5 name = PRC_cpc_social_liberal1_partydzm5 }
+				set_party_name = { ideology = social_liberal long_name = PRC_cpc_social_liberal1_partydzm name =PRC_cpc_social_liberal1_partydzm}
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+
+		add_country_leader_role = {
+			character = PRC_qin_hui
+			promote_leader = yes
+			country_leader = {
+				ideology = Geometridaeism2
+				expire = "1.1.1.1"
+			
+			}
+		}
+
+set_country_leader_portrait = {
+	ideology = libertarian_socialist
+	portrait = GFX_PRC_QHHWB
+}
+
+        }
         }
     }
 
@@ -3076,6 +3264,30 @@ set_country_leader_ideology = Geometridaeism
         fire_only_once = yes
         option = {
             name = PRC_MAO1.94.a
+		set_country_flag = PRC_qinhui_right	
+			custom_effect_tooltip = ROC_qinhui_right	
+	
+		trigger = {
+NOT = {has_completed_focus = PRC_niaolong_24}
+		}
+        }
+        option = {
+            name = PRC_MAO1.94.b
+			custom_effect_tooltip = ROC_qinhui_left
+	
+			country_event = {
+				id = PRC_MAO1.96
+				days = 7
+			}
+		trigger = {
+has_completed_focus = PRC_niaolong_24
+		}
+        }
+        option = {
+            name = PRC_MAO1.94.c
+		set_country_flag = PRC_qinhui_zhengchang
+			custom_effect_tooltip = ROC_qinhui_zhengchang
+
         }
     }
 
@@ -3089,6 +3301,129 @@ set_country_leader_ideology = Geometridaeism
         fire_only_once = yes
         option = {
             name = PRC_MAO1.95.a
+			custom_effect_tooltip = zgm_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = 60
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -40
+			}
+			if = {
+				limit = {
+		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie	}
+				}
+			add_to_variable = {
+				var = zgm_zcd
+				value = 80
+			}
+				}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+			add_to_variable = {
+				var = zgg_zcd
+				value = 80
+			}
+				}
+			add_to_variable = {
+				var = xzd_zcd
+				value = -20
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -80
+			}
+                PRC_party_fight = yes
+
+							NPA = {annex_country = {
+								target = PHI
+								transfer_troops = yes
+							}}
+        }
+        option = {
+            name = PRC_MAO1.95.b
+
+			custom_effect_tooltip = gyd1_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -30
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = 80
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = -50
+			}
+                PRC_party_fight = yes
+add_to_variable = {
+    var = loji_manyidu_T
+    value = -10
+    tooltip = add_loji_manyidu_T_1_tt
+}
+        }
+        option = {
+            name = PRC_MAO1.95.c
+
+			custom_effect_tooltip = zyd_zcd_up
+			add_to_variable = {
+				var = zgm_zcd
+				value = -120
+			}
+			add_to_variable = {
+				var = gyd_zcd
+				value = -80
+			}
+			if = {
+				limit = {
+		NOT = {has_country_flag = PRC_handongfang_youxian_fenlie}
+				}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 40
+			}
+				}
+			if = {
+				limit = {
+		has_country_flag = PRC_handongfang_youxian_fenlie
+				}
+			add_to_variable = {
+				var = lgd_zcd
+				value = 40
+			}
+				}
+			add_to_variable = {
+				var = xzd_zcd
+				value = 20
+			}
+			add_to_variable = {
+				var = rmd_zcd
+				value = 60
+			}
+			add_to_variable = {
+				var = zyd_zcd
+				value = 80
+			}
+                PRC_party_fight = yes
+
+add_to_variable = {
+    var = loji_manyidu_T
+    value = -20
+    tooltip = add_loji_manyidu_T_2_tt
+}
+		declare_war_on = {
+			target = NPA
+			type = annex_everything
+		}
+		PHI = {declare_war_on = {
+			target = NPA
+			type = annex_everything
+		}}
+
         }
     }
 
@@ -3101,7 +3436,11 @@ set_country_leader_ideology = Geometridaeism
         is_triggered_only = yes
         fire_only_once = yes
         option = {
-            name = PRC_MAO1.96.a
+            name = PRC_MAO1.96.a	
+			country_event = {
+				id = PRC_MAO1.97
+				days = 7
+			}
         }
     }
 
@@ -3114,7 +3453,11 @@ set_country_leader_ideology = Geometridaeism
         is_triggered_only = yes
         fire_only_once = yes
         option = {
-            name = PRC_MAO1.97.a
+            name = PRC_MAO1.97.a	
+			country_event = {
+				id = PRC_MAO1.93
+				days = 7
+			}
         }
     }
 
@@ -3128,6 +3471,37 @@ set_country_leader_ideology = Geometridaeism
         fire_only_once = yes
         option = {
             name = PRC_MAO1.98.a
+							NAX = {annex_country = {
+								target = RAJ
+								transfer_troops = yes
+							}}
+
+        }
+        option = {
+            name = PRC_MAO1.98.b
+add_to_variable = {
+    var = loji_manyidu_T
+    value = -30
+    tooltip = add_loji_manyidu_T_3_tt
+}
+
+        }
+        option = {
+            name = PRC_MAO1.98.c
+add_to_variable = {
+    var = loji_manyidu_T
+    value = -60
+    tooltip = add_loji_manyidu_T_6_tt
+}
+
+		declare_war_on = {
+			target = NAX
+			type = annex_everything
+		}
+		RAJ = {declare_war_on = {
+			target = NAX
+			type = annex_everything
+		}}
         }
     }
 

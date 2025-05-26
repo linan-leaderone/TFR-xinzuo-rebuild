@@ -1431,9 +1431,6 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		relative_position_id = PRC_prepare_the_new_congress
 	    x = -1
 	    y = 1
-		mutually_exclusive = {
-			focus = PRC_wang_yang_connections
-		}
 	    cost = 2
 		ai_will_do = {
 	    	factor = 5
@@ -1458,46 +1455,6 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		}
 	}	
 	focus = {
-	    id = PRC_wang_yang_connections
-	    icon = GFX_focus_PRC_wang_yang_connections
-		
-	    available = {
-
-        }
-		relative_position_id = PRC_prepare_the_new_congress
-	    x = 1
-	    y = 1
-		
-	    cost = 2
-		prerequisite = {
-			focus = PRC_prepare_the_new_congress
-		}	
-		mutually_exclusive = {
-			focus = PRC_consolidate_hu_chunhua_support
-		}
-		ai_will_do = {
-	    	factor = 5
-			modifier = {
-				factor = 9999
-				has_game_rule = { rule = PRC_ai_behavior option = LIBERAL_AI_BEHAVIOR }
-			}
-	    }
-	    completion_reward = {
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.05
-			}		
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.03
-			}	
-			add_popularity = {
-				ideology = conservative
-				popularity = 0.03
-			}
-		}
-	}	
-	focus = {
 	    id = PRC_begin_the_session_of_cpc
 	    icon = GFX_focus_PRC_begin_the_session_of_cpc
 		
@@ -1509,7 +1466,6 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 	    y = 2
 		prerequisite = {
 			focus = PRC_consolidate_hu_chunhua_support
-			focus = PRC_wang_yang_connections
 		}	
 	    cost = 2
 		ai_will_do = {
@@ -1806,11 +1762,8 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			focus = PRC_prepare_the_new_congress_1
 		}	
 		relative_position_id = PRC_prepare_the_new_congress
-	    x = -1
+	    x = 0
 	    y = 1
-		mutually_exclusive = {
-			focus = PRC_wang_yang_connections_1
-		}
 	    cost = 2
 		ai_will_do = {
 	    	factor = 5
@@ -1834,46 +1787,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			}
 		}
 	}	
-	focus = {
-	    id = PRC_wang_yang_connections_1
-	    icon = GFX_focus_PRC_wang_yang_connections
-		
-	    available = {
 
-        }
-		relative_position_id = PRC_prepare_the_new_congress
-	    x = 1
-	    y = 1
-		
-	    cost = 2
-		prerequisite = {
-			focus = PRC_prepare_the_new_congress_1
-		}	
-		mutually_exclusive = {
-			focus = PRC_consolidate_hu_chunhua_support_1
-		}
-		ai_will_do = {
-	    	factor = 5
-			modifier = {
-				factor = 9999
-				has_game_rule = { rule = PRC_ai_behavior option = LIBERAL_AI_BEHAVIOR }
-			}
-	    }
-	    completion_reward = {
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.05
-			}		
-			add_popularity = {
-				ideology = social_liberal
-				popularity = 0.03
-			}	
-			add_popularity = {
-				ideology = conservative
-				popularity = 0.03
-			}
-		}
-	}	
 	focus = {
 	    id = PRC_begin_the_session_of_cpc_1
 	    icon = GFX_focus_PRC_begin_the_session_of_cpc
@@ -1886,7 +1800,6 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 	    y = 2
 		prerequisite = {
 			focus = PRC_consolidate_hu_chunhua_support_1
-			focus = PRC_wang_yang_connections_1
 		}	
 	    cost = 2
 		ai_will_do = {

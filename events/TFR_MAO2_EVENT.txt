@@ -1,0 +1,1650 @@
+add_namespace = PRC_MAO2
+
+country_event = {
+	id = PRC_MAO2.1
+	title = PRC_MAO2.1.t
+	desc = PRC_MAO2.1.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRC
+		date > 2032.12.1
+	OR = {
+		has_completed_focus = PRC_niaolong_87
+		has_completed_focus = PRC_niaolong_86
+	}
+	}
+
+        fire_only_once = yes
+
+        option = {
+            name = PRC_MAO2.1.a
+                PRC_party_fight = yes
+			if = {
+				limit = {
+		has_completed_focus = PRC_niaolong_87
+				}
+		activate_mission = PRC_daxuan_elect_2_action				
+			}
+			if = {
+				limit = {
+		has_completed_focus = PRC_niaolong_86
+				}
+		activate_mission = PRC_daxuan_elect_3_action				
+			}
+			hidden_effect = {
+
+
+
+			
+			}
+        }
+
+}
+
+country_event = {
+	id = PRC_MAO2.2
+	title = PRC_MAO2.2.t
+	desc = PRC_MAO2.2.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.2.a
+
+		set_politics = {
+			ruling_party = libertarian_socialist
+			last_election = "2023.1.1"
+			election_frequency = 60
+			elections_allowed = yes
+		}	
+		end_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.3
+	title = PRC_MAO2.3.t
+	desc = PRC_MAO2.3.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.3.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.4
+	title = PRC_MAO2.4.t
+	desc = PRC_MAO2.4.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.4.a
+	}
+	option = {
+		name = PRC_MAO2.4.b
+			country_event = {
+				id = PRC_MAO2.7
+			}
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.5
+	title = PRC_MAO2.5.t
+	desc = PRC_MAO2.5.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.5.a
+			country_event = {
+				id = PRC_MAO2.8
+			}
+	}
+	option = {
+		name = PRC_MAO2.5.b
+			country_event = {
+				id = PRC_MAO2.8
+			}
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.6
+	title = PRC_MAO2.6.t
+	desc = PRC_MAO2.6.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.6.a
+			country_event = {
+				id = PRC_MAO2.9
+			}
+	}
+	option = {
+		name = PRC_MAO2.6.b
+			country_event = {
+				id = PRC_MAO2.9
+			}
+	}
+	option = {
+		name = PRC_MAO2.6.c
+			country_event = {
+				id = PRC_MAO2.9
+			}
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.7
+	title = PRC_MAO2.7.t
+	desc = PRC_MAO2.7.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.7.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.8
+	title = PRC_MAO2.8.t
+	desc = PRC_MAO2.8.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.8.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.9
+	title = PRC_MAO2.9.t
+	desc = PRC_MAO2.9.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.9.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.10
+	title = PRC_MAO2.10.t
+	desc = PRC_MAO2.10.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.10.a
+	}
+	option = {
+		name = PRC_MAO2.10.b
+
+			custom_effect_tooltip = aftPRC_niaolong_721
+			
+			hidden_effect = {
+			XIN = {
+				add_state_core = 1165
+			}
+			TIB = {
+				add_state_core = 1186
+				add_state_core = 1187
+				add_state_core = 604
+				add_state_core = 601
+			}
+			MON = {
+				add_state_core = 612
+				add_state_core = 621
+				add_state_core = 1166
+				add_state_core = 1202
+			}
+			release_autonomy = {
+			target = XIN
+			autonomy_state = autonomy_banglianqu
+			freedom_level = 0.5
+			}
+			release_autonomy = {
+			target = MON
+			autonomy_state = autonomy_banglianqu
+			freedom_level = 0.5
+			}
+			release_autonomy = {
+			target = TIB
+			autonomy_state = autonomy_banglianqu
+			freedom_level = 0.5
+			}
+			set_autonomy = {
+			target = XIN
+			autonomy_state = autonomy_banglianqu
+			freedom_level = 0.5
+			}
+			set_autonomy = {
+			target = MON
+			autonomy_state = autonomy_banglianqu
+			freedom_level = 0.5
+			}
+			set_autonomy = {
+			target = TIB
+			autonomy_state = autonomy_banglianqu
+			freedom_level = 0.5
+			}
+		 XIN = {
+			add_to_tech_sharing_group = DX_research
+			add_dynamic_modifier = {
+				modifier = PRC_DYLB_dynamic
+			}
+			add_to_variable = {
+				var = PRC_DYLB_production_speed_buildings_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_business_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_business_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_business_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_army_attack_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_army_defence_factor_dynamic_var 
+				value = 0.15
+			}	
+		 }
+		 TIB = {
+			add_to_tech_sharing_group = DX_research
+			add_dynamic_modifier = {
+				modifier = PRC_DYLB_dynamic
+			}
+			add_to_variable = {
+				var = PRC_DYLB_production_speed_buildings_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_business_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_business_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_business_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_army_attack_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = PRC_DYLB_army_defence_factor_dynamic_var 
+				value = 0.15
+			}	
+
+		 }
+
+			MON = {
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+}
+
+XIN = {
+				set_party_name = { ideology = totalitarian_socialist long_name = CCCXINCCC1_party_long name = CCCXINCCC1_party_long }
+				set_capital = {state = 1165}
+set_cosmetic_tag = SIK_XINN
+}
+TIB = {set_cosmetic_tag = TIB_XINN}
+TIB = {
+				set_party_name = { ideology = totalitarian_socialist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_party_name = { ideology = communist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_party_name = { ideology = libertarian_socialist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_party_name = { ideology = social_democrat long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_party_name = { ideology = social_liberal long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_party_name = { ideology = nationalist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+					}
+				if = {
+					limit = {
+			has_completed_focus = PRC_niaolong_59
+					}
+
+			XIN = {
+                inherit_technology = PRC
+				load_oob = SIK_PRC_puppet
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+
+set_country_leader_portrait = {
+	ideology = totalitarian_socialist
+	portrait = GFX_PRC_CQGJX
+}
+					}
+			TIB = {
+                inherit_technology = PRC
+				load_oob = TIB_tibetan_uprising_rebels
+				set_capital = {state = 1156}
+				set_party_name = { ideology = totalitarian_socialist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+				create_country_leader = {
+	                name = "DZZZ"
+	                desc = "POLITICS_DINGZHEN1_DESC"
+	                picture = "gfx/MAOYUANXIN/Dingzhen.png"
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+				}
+					}
+				if = {
+					limit = {
+			has_completed_focus = PRC_niaolong_58
+					}
+
+			XIN = {
+                inherit_technology = PRC
+				load_oob = SIK_PRC_puppet
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+create_country_leader = {
+	name = WEKX
+	desc = "POLITICS_WEKX_DESC"
+	 picture = "gfx/MAOYUANXIN/WEKX.png"
+	expire = "2200.1.1"
+	ideology = sm_socialism
+	traits = {
+	}
+}
+					}
+			TIB = {
+                inherit_technology = PRC
+				load_oob = TIB_tibetan_uprising_rebels
+				set_capital = {state = 1156}
+				set_party_name = { ideology = totalitarian_socialist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_politics = {
+				ruling_party = social_democrat
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+				create_country_leader = {
+	                name = "DZZZ"
+	                desc = "POLITICS_DINGZHEN1_DESC"
+	                picture = "gfx/MAOYUANXIN/Dingzhen.png"
+	                expire = "1999.1.1"
+	                ideology = sm_socialism
+				}  
+				}
+					}
+				if = {
+					limit = {
+			has_completed_focus = PRC_niaolong_88
+					}
+
+			XIN = {
+                inherit_technology = PRC
+				load_oob = SIK_PRC_puppet
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+
+					}
+			TIB = {
+                inherit_technology = PRC
+				load_oob = TIB_tibetan_uprising_rebels
+				set_capital = {state = 1156}
+				set_party_name = { ideology = totalitarian_socialist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+				create_country_leader = {
+	                name = "DZZZ"
+	                desc = "POLITICS_DINGZHEN1_DESC"
+	                picture = "gfx/MAOYUANXIN/Dingzhen.png"
+	                expire = "1999.1.1"
+	                ideology = Geometridaeism2
+				}  
+				}
+					}
+				if = {
+					limit = {
+			has_completed_focus = PRC_niaolong_87
+					}
+
+			XIN = {
+                inherit_technology = PRC
+				load_oob = SIK_PRC_puppet
+				set_politics = {
+				ruling_party = authoritarian_democrat
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+create_country_leader = {
+	name = WEKX
+	desc = "POLITICS_WEKX_DESC"
+	 picture = "gfx/MAOYUANXIN/WEKX.png"
+	expire = "2200.1.1"
+	ideology = confucian_hyperconservativism
+	traits = {
+	}
+}
+					}
+			TIB = {
+                inherit_technology = PRC
+				load_oob = TIB_tibetan_uprising_rebels
+				set_capital = {state = 1156}
+				set_party_name = { ideology = nationalist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_politics = {
+				ruling_party = nationalist
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+				create_country_leader = {
+	                name = "DZZZ"
+	                desc = "POLITICS_DINGZHEN1_DESC"
+	                picture = "gfx/MAOYUANXIN/Dingzhen.png"
+	                expire = "1999.1.1"
+	                ideology = Geometridaeism1
+				}  
+				}
+					}
+				if = {
+					limit = {
+			has_completed_focus = PRC_niaolong_86
+					}
+
+			XIN = {
+                inherit_technology = PRC
+				load_oob = SIK_PRC_puppet
+				set_politics = {
+				ruling_party = conservative
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+set_party_name = { ideology = conservative long_name = CXCconservativeCCC_party_long name = CXCconservativeCCC_party_long }
+create_country_leader = {
+	name = WEKX
+	desc = "POLITICS_WEKX_DESC"
+	 picture = "gfx/MAOYUANXIN/WEKX.png"
+	expire = "2200.1.1"
+	ideology = constitutionalist
+	traits = {
+	}
+}
+					}
+			TIB = {
+                inherit_technology = PRC
+				load_oob = TIB_tibetan_uprising_rebels
+				set_capital = {state = 1156}
+				set_party_name = { ideology = totalitarian_socialist long_name = CCCTIBCCC1_party_long name = CCCTIBCCC1_party_long }
+				set_politics = {
+				ruling_party = social_liberal
+				election_frequency = 60
+				elections_allowed = yes
+			last_election = "2028.1.1"
+				}
+				create_country_leader = {
+	                name = "DZZZ"
+	                desc = "POLITICS_DINGZHEN1_DESC"
+	                picture = "gfx/MAOYUANXIN/Dingzhen.png"
+	                expire = "1999.1.1"
+	                ideology = Geometridaeism
+				}  
+				}
+					}
+
+	}
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.11
+	title = PRC_MAO2.11.t
+	desc = PRC_MAO2.11.d
+	picture = GFX_PRC_MAO2_event_12
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.11.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.12
+	title = PRC_MAO2.12.t
+	desc = PRC_MAO2.12.d
+	picture = GFX_PRC_MAO2_event_13
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.12.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.13
+	title = PRC_MAO2.13.t
+	desc = PRC_MAO2.13.d
+	picture = GFX_PRC_MAO2_event_14
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.13.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.14
+	title = PRC_MAO2.14.t
+	desc = PRC_MAO2.14.d
+	picture = GFX_PRC_MAO2_event_15
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.14.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.15
+	title = PRC_MAO2.15.t
+	desc = PRC_MAO2.15.d
+	picture = GFX_PRC_MAO2_event_16
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.15.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.16
+	title = PRC_MAO2.16.t
+	desc = PRC_MAO2.16.d
+	picture = GFX_PRC_MAO2_event_17
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.16.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.17
+	title = PRC_MAO2.17.t
+	desc = PRC_MAO2.17.d
+	picture = GFX_PRC_MAO2_event_18
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.17.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.18
+	title = PRC_MAO2.18.t
+	desc = PRC_MAO2.18.d
+	picture = GFX_PRC_MAO2_event_19
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.18.a
+			set_country_flag = PRC_END_XINZUORE_qinhui_1
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.19
+	title = PRC_MAO2.19.t
+	desc = PRC_MAO2.19.d
+	picture = GFX_PRC_MAO2_event_20
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.19.a
+			set_country_flag = PRC_END_XINZUORE_qinhui_2
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.20
+	title = PRC_MAO2.20.t
+	desc = PRC_MAO2.20.d
+	picture = GFX_PRC_MAO2_event_21
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.20.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.21
+	title = PRC_MAO2.21.t
+	desc = PRC_MAO2.21.d
+	picture = GFX_PRC_MAO2_event_22
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.21.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.22
+	title = PRC_MAO2.22.t
+	desc = PRC_MAO2.22.d
+	picture = GFX_PRC_MAO2_event_23
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.22.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.23
+	title = PRC_MAO2.23.t
+	desc = PRC_MAO2.23.d
+	picture = GFX_PRC_MAO2_event_24
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.23.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.24
+	title = PRC_MAO2.24.t
+	desc = PRC_MAO2.24.d
+	picture = GFX_PRC_MAO2_event_25
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.24.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.25
+	title = PRC_MAO2.25.t
+	desc = PRC_MAO2.25.d
+	picture = GFX_PRC_MAO2_event_26
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.25.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.26
+	title = PRC_MAO2.26.t
+	desc = PRC_MAO2.26.d
+	picture = GFX_PRC_MAO2_event_27
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.26.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.27
+	title = PRC_MAO2.27.t
+	desc = PRC_MAO2.27.d
+	picture = GFX_PRC_MAO2_event_28
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.27.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.28
+	title = PRC_MAO2.28.t
+	desc = PRC_MAO2.28.d
+	picture = GFX_PRC_MAO2_event_29
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.28.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.29
+	title = PRC_MAO2.29.t
+	desc = PRC_MAO2.29.d
+	picture = GFX_PRC_MAO2_event_30
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.29.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.30
+	title = PRC_MAO2.30.t
+	desc = PRC_MAO2.30.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.30.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.31
+	title = PRC_MAO2.31.t
+	desc = PRC_MAO2.31.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.31.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.32
+	title = PRC_MAO2.32.t
+	desc = PRC_MAO2.32.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.32.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.33
+	title = PRC_MAO2.33.t
+	desc = PRC_MAO2.33.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.33.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.34
+	title = PRC_MAO2.34.t
+	desc = PRC_MAO2.34.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.34.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.35
+	title = PRC_MAO2.35.t
+	desc = PRC_MAO2.35.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.35.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.36
+	title = PRC_MAO2.36.t
+	desc = PRC_MAO2.36.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.36.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.37
+	title = PRC_MAO2.37.t
+	desc = PRC_MAO2.37.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.37.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.38
+	title = PRC_MAO2.38.t
+	desc = PRC_MAO2.38.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.38.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.39
+	title = PRC_MAO2.39.t
+	desc = PRC_MAO2.39.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.39.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.40
+	title = PRC_MAO2.40.t
+	desc = PRC_MAO2.40.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.40.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.41
+	title = PRC_MAO2.41.t
+	desc = PRC_MAO2.41.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.41.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.42
+	title = PRC_MAO2.42.t
+	desc = PRC_MAO2.42.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.42.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.43
+	title = PRC_MAO2.43.t
+	desc = PRC_MAO2.43.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.43.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.44
+	title = PRC_MAO2.44.t
+	desc = PRC_MAO2.44.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.44.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.45
+	title = PRC_MAO2.45.t
+	desc = PRC_MAO2.45.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.45.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.46
+	title = PRC_MAO2.46.t
+	desc = PRC_MAO2.46.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.46.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.47
+	title = PRC_MAO2.47.t
+	desc = PRC_MAO2.47.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.47.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.48
+	title = PRC_MAO2.48.t
+	desc = PRC_MAO2.48.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.48.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.49
+	title = PRC_MAO2.49.t
+	desc = PRC_MAO2.49.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.49.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.50
+	title = PRC_MAO2.50.t
+	desc = PRC_MAO2.50.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.50.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.51
+	title = PRC_MAO2.51.t
+	desc = PRC_MAO2.51.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.51.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.52
+	title = PRC_MAO2.52.t
+	desc = PRC_MAO2.52.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.52.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.53
+	title = PRC_MAO2.53.t
+	desc = PRC_MAO2.53.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.53.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.54
+	title = PRC_MAO2.54.t
+	desc = PRC_MAO2.54.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.54.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.55
+	title = PRC_MAO2.55.t
+	desc = PRC_MAO2.55.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.55.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.56
+	title = PRC_MAO2.56.t
+	desc = PRC_MAO2.56.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.56.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.57
+	title = PRC_MAO2.57.t
+	desc = PRC_MAO2.57.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.57.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.58
+	title = PRC_MAO2.58.t
+	desc = PRC_MAO2.58.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.58.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.59
+	title = PRC_MAO2.59.t
+	desc = PRC_MAO2.59.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.59.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.60
+	title = PRC_MAO2.60.t
+	desc = PRC_MAO2.60.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.60.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.61
+	title = PRC_MAO2.61.t
+	desc = PRC_MAO2.61.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.61.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.62
+	title = PRC_MAO2.62.t
+	desc = PRC_MAO2.62.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.62.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.63
+	title = PRC_MAO2.63.t
+	desc = PRC_MAO2.63.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.63.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.64
+	title = PRC_MAO2.64.t
+	desc = PRC_MAO2.64.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.64.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.65
+	title = PRC_MAO2.65.t
+	desc = PRC_MAO2.65.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.65.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.66
+	title = PRC_MAO2.66.t
+	desc = PRC_MAO2.66.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.66.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.67
+	title = PRC_MAO2.67.t
+	desc = PRC_MAO2.67.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.67.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.68
+	title = PRC_MAO2.68.t
+	desc = PRC_MAO2.68.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.68.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.69
+	title = PRC_MAO2.69.t
+	desc = PRC_MAO2.69.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.69.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.70
+	title = PRC_MAO2.70.t
+	desc = PRC_MAO2.70.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.70.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.71
+	title = PRC_MAO2.71.t
+	desc = PRC_MAO2.71.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.71.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.72
+	title = PRC_MAO2.72.t
+	desc = PRC_MAO2.72.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.72.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.73
+	title = PRC_MAO2.73.t
+	desc = PRC_MAO2.73.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.73.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.74
+	title = PRC_MAO2.74.t
+	desc = PRC_MAO2.74.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.74.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.75
+	title = PRC_MAO2.75.t
+	desc = PRC_MAO2.75.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.75.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.76
+	title = PRC_MAO2.76.t
+	desc = PRC_MAO2.76.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.76.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.77
+	title = PRC_MAO2.77.t
+	desc = PRC_MAO2.77.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.77.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.78
+	title = PRC_MAO2.78.t
+	desc = PRC_MAO2.78.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.78.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.79
+	title = PRC_MAO2.79.t
+	desc = PRC_MAO2.79.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.79.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.80
+	title = PRC_MAO2.80.t
+	desc = PRC_MAO2.80.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.80.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.81
+	title = PRC_MAO2.81.t
+	desc = PRC_MAO2.81.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.81.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.82
+	title = PRC_MAO2.82.t
+	desc = PRC_MAO2.82.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.82.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.83
+	title = PRC_MAO2.83.t
+	desc = PRC_MAO2.83.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.83.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.84
+	title = PRC_MAO2.84.t
+	desc = PRC_MAO2.84.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.84.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.85
+	title = PRC_MAO2.85.t
+	desc = PRC_MAO2.85.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.85.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.86
+	title = PRC_MAO2.86.t
+	desc = PRC_MAO2.86.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.86.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.87
+	title = PRC_MAO2.87.t
+	desc = PRC_MAO2.87.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.87.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.88
+	title = PRC_MAO2.88.t
+	desc = PRC_MAO2.88.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.88.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.89
+	title = PRC_MAO2.89.t
+	desc = PRC_MAO2.89.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.89.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.90
+	title = PRC_MAO2.90.t
+	desc = PRC_MAO2.90.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.90.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.91
+	title = PRC_MAO2.91.t
+	desc = PRC_MAO2.91.d
+	picture = GFX_PRC_MAO2_event_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.91.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.92
+	title = PRC_MAO2.92.t
+	desc = PRC_MAO2.92.d
+	picture = GFX_PRC_MAO2_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.92.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.93
+	title = PRC_MAO2.93.t
+	desc = PRC_MAO2.93.d
+	picture = GFX_PRC_MAO2_event_4
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.93.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.94
+	title = PRC_MAO2.94.t
+	desc = PRC_MAO2.94.d
+	picture = GFX_PRC_MAO2_event_5
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.94.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.95
+	title = PRC_MAO2.95.t
+	desc = PRC_MAO2.95.d
+	picture = GFX_PRC_MAO2_event_6
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.95.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.96
+	title = PRC_MAO2.96.t
+	desc = PRC_MAO2.96.d
+	picture = GFX_PRC_MAO2_event_7
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.96.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.97
+	title = PRC_MAO2.97.t
+	desc = PRC_MAO2.97.d
+	picture = GFX_PRC_MAO2_event_8
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.97.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.98
+	title = PRC_MAO2.98.t
+	desc = PRC_MAO2.98.d
+	picture = GFX_PRC_MAO2_event_9
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.98.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.99
+	title = PRC_MAO2.99.t
+	desc = PRC_MAO2.99.d
+	picture = GFX_PRC_MAO2_event_10
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.99.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO2.100
+	title = PRC_MAO2.100.t
+	desc = PRC_MAO2.100.d
+	picture = GFX_PRC_MAO2_event_1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = PRC_MAO2.100.a
+	}
+}
+

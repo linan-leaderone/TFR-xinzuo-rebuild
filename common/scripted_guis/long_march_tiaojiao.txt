@@ -73,6 +73,36 @@ scripted_gui = {
         5 = {
         set_variable = { loji_chat_liaotian = 20 }
         }
+        5 = {
+        set_variable = { loji_chat_liaotian = 21 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 22 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 23 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 24 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 25 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 26 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 27 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 28 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 29 }
+        }
+        5 = {
+        set_variable = { loji_chat_liaotian = 30 }
+        }
         }
 
 

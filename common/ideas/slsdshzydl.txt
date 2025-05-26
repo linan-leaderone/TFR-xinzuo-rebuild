@@ -105,7 +105,136 @@ poverty_development_monthly = 0.03
 
 
 			}
+		}																
+		PRC_DYLB_dynamic_1 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}																
+		PRC_DYLB_dynamic_2 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+research_speed_factor = 0.15
+			}
 		}														
+		PRC_DYLB_dynamic_3 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+business_value_factor = 0.1
+production_lack_of_resource_penalty_factor = -0.15
+			}
+		}															
+		PRC_DYLB_dynamic_4 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+business_value_factor = 0.1
+monthly_population = 0.05
+			}
+		}																
+		PRC_DYLB_dynamic_5 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+army_attack_factor = 0.15
+army_defence_factor = 0.15
+			}
+		}																
+		PRC_DYLB_dynamic_6 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+production_speed_buildings_factor = 0.15
+			}
+		}																		
+		PRC_DYLB_dynamic_7 = {
+			picture = GFX_idea_ROC_of_china
+			name = PRC_DYLB_dynamic
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+production_speed_buildings_factor = 0.15
+			}
+		}						
 		ROC_of_china_dynamic1 = {
 			picture = GFX_idea_ROC_of_china
 			name = ROC_of_china_dynamic
@@ -121,6 +250,7 @@ poverty_development_monthly = 0.03
 			removal_cost = -1
 			
 			modifier = {
+business_value_factor = 0.1
 
 			}
 		}												
@@ -170,7 +300,27 @@ income_growth_factor = -0.05
 research_speed_factor = 0.1
 
 			}
-		}				
+		}									
+		PRC_made_in_china_dummy_idea_focus_PRC_niaolong_391123  = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+expense_growth_factor = 0.1
+society_development_monthly = 0.01
+poverty_development_monthly = 0.01
+			}
+		}			
 		PRC_made_in_china_dummy_idea_focus_PRC_niaolong_39 = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
@@ -276,6 +426,31 @@ consumer_goods_factor = -0.05
 research_speed_factor = 0.1
 business_value_factor = 0.05
 academic_development_monthly = 0.01
+
+			}
+		}					
+		PRC_the_red_phoenix_idea1 = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+local_resources_factor = 0.05
+production_factory_efficiency_gain_factor = 0.05
+production_speed_infrastructure_factor = 0.05
+repair_speed_infrastructure_factor = 0.05
+consumer_goods_factor = -0.05
+
+
 
 			}
 		}				

@@ -210,8 +210,7 @@ news_event = {
 			tag = PRC
 		}
 		hidden_effect = {
-			news_event = news.346
-			PRC_gaw_start = yes
+		news_event = news.415
 	}
 
 
@@ -311,6 +310,10 @@ country_event = {
 		name = PRC_MAO.11.a
 	
 			hidden_effect = {
+			country_event = {
+				id = PRC_MAO1.90
+				days = 7
+			}
 add_ideas = low_training
 change_government_type_revolutionary_front = yes
 				HKN = {set_cosmetic_tag = PRC_PLA_PANLUAN}
@@ -346,7 +349,7 @@ NOT = {has_idea = PRC_ai_changzheng_core}
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = GFX_Portrait_PRC_The_Long_March
+portrait_path = GFX_Portrait_PRC_The_Long_March1
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -3625,6 +3628,7 @@ country_event = {
     retire_character = PRC_Li_Yuchao
     retire_character = PRC_wei_fenghe
     retire_character = PRC_wang_ning
+    retire_character = PRC_wang_haiyang
     retire_character = PRC_Miao_Hua
     retire_character = PRC_Qin_Shengxiang
     retire_character = PRC_Dong_Jun
@@ -4043,15 +4047,15 @@ traits = { 
 
 set_portraits = {
     character = PRC_long_march
-    army = { large=GFX_Portrait_PRC_The_Long_March }
-    civilian = { large=GFX_Portrait_PRC_The_Long_March }
+    army = { large=GFX_Portrait_PRC_The_Long_March1 }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March1 }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = GFX_Portrait_PRC_The_Long_March
+portrait_path = GFX_Portrait_PRC_The_Long_March1
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -5417,15 +5421,15 @@ set_cosmetic_tag = PRC_HACHIMI
 
 set_portraits = {
     character = PRC_long_march
-    army = { large=GFX_Portrait_PRC_The_Long_March }
-    civilian = { large=GFX_Portrait_PRC_The_Long_March }
+    army = { large=GFX_Portrait_PRC_The_Long_March1 }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March1 }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = GFX_Portrait_PRC_The_Long_March
+portrait_path = GFX_Portrait_PRC_The_Long_March1
 skill = 9
 attack_skill = 9
 defense_skill = 9
@@ -5604,15 +5608,15 @@ traits = { 
 
 set_portraits = {
     character = PRC_long_march
-    army = { large=GFX_Portrait_PRC_The_Long_March }
-    civilian = { large=GFX_Portrait_PRC_The_Long_March }
+    army = { large=GFX_Portrait_PRC_The_Long_March1 }
+    civilian = { large=GFX_Portrait_PRC_The_Long_March1 }
 }
 
 
 create_corps_commander = {
 name = "“长征”" 
 desc = "POLITICS_PRC_long_march_DESC"
-portrait_path = GFX_Portrait_PRC_The_Long_March
+portrait_path = GFX_Portrait_PRC_The_Long_March1
 skill = 9
 attack_skill = 9
 defense_skill = 9

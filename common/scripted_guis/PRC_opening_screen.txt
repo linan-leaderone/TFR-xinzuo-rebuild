@@ -1,5 +1,161 @@
 scripted_gui = {
 
+	PRC_END_XINZUORE_qinhui_2 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_QH2_ENDWID"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_qinhui_2
+		}
+
+		effects = {
+			TFR_qinhui_free_end_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 11 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_qinhui_2
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_qinhui_left_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_qinhui_left_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_qinhui_left_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_qinhui_left_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_qinhui_left_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_qinhui_left_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_qinhui_left_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_qinhui_left_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_qinhui_left_end_91_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				JAP = { has_government = social_liberal }
+				NOT = { country_exists = SHK }
+			}
+			TFR_qinhui_left_end_92_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				JAP = { has_government = social_democrat }
+				NOT = { country_exists = SHK }
+			}
+			TFR_qinhui_left_end_93_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				JAP = { has_government = communist }
+				NOT = { country_exists = SHK }
+			}
+			TFR_qinhui_left_end_94_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				 country_exists = SHK
+			}
+			TFR_qinhui_left_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+			TFR_qinhui_left_end_11_visible = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+		
+		}
+
+	}
+	PRC_END_XINZUORE_qinhui_1 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_QH1_ENDWID"
+
+		visible = {
+			has_country_flag = PRC_END_XINZUORE_qinhui_1
+		}
+
+		effects = {
+			TFR_qinhui_free_end_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 11 }
+			}
+
+				clr_country_flag = PRC_END_XINZUORE_qinhui_1
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_qinhui_free_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_qinhui_free_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_qinhui_free_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_qinhui_free_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_qinhui_free_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_qinhui_free_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_qinhui_free_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_qinhui_free_end_8_visible = {
+				check_variable = { PRC_PAGE = 7 }
+			}
+			TFR_qinhui_free_end_91_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				JAP = { has_government = social_liberal }
+				NOT = { country_exists = SHK }
+			}
+			TFR_qinhui_free_end_92_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				JAP = { has_government = social_democrat }
+				NOT = { country_exists = SHK }
+			}
+			TFR_qinhui_free_end_93_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				JAP = { has_government = communist }
+				NOT = { country_exists = SHK }
+			}
+			TFR_qinhui_free_end_94_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				 country_exists = SHK
+			}
+			TFR_qinhui_free_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+			TFR_qinhui_free_end_11_visible = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+		
+		}
+
+	}
 	PRC_END_XINZUORE_ZUOPAI_1 = {
 		context_type = player_context
 		parent_window_token = top_bar

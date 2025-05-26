@@ -1,6 +1,72 @@
 on_actions = {
 	on_capitulation = {
 		effect = {
+		
+				if = {
+					limit = {
+
+
+						PRC = {has_country_flag = PRC_handongfang_zhanlingqu_shouru}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+	PRC = {
+				add_to_variable = {
+					var = PRC_mic_misc_income_dynamic_var
+					value = 50
+				}			
+}
+					}
+
+				if = {
+					limit = {
+
+
+						PRC = {has_country_flag = PRC_handongfang_zhanlingqu_zhichu}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+	PRC = {
+				add_to_variable = {
+					var = PRC_mic_misc_income_dynamic_var
+					value = -50
+				}			
+}
+					}
+
+
+				if = {
+					limit = {
+
+
+						PRC = {has_idea = JAP_PEC_member}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							NOT = {original_tag = PRC}
+						}
+					}
+	ROOT = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}
+					}
 
 				if = {
 					limit = {
@@ -17,7 +83,7 @@ on_actions = {
 							NOT = {original_tag = PRC}
 						}
 					}
-	add_ideas = PRC_the_long_march_2_idea
+	ROOT = {add_ideas = PRC_the_long_march_2_idea}
 					}
 
 				if = {
@@ -102,7 +168,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -180,7 +246,7 @@ remove_ideas = AFG_crushing_taliban
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -315,7 +381,128 @@ remove_ideas = AFG_crushing_taliban
 						clr_country_flag = PRC_spread_chinese_influence
 
 						white_peace = ROOT
-					
+							
+				if = {
+					limit = {
+						ROOT = {
+							original_tag = HRL
+		}
+						}		
+				HRL = {
+release = TUN
+release = ALG
+release = MOR
+}	
+
+			PRC = {set_autonomy = {
+			target = TUN
+			autonomy_state = autonomy_minzhutuoguan
+			}}
+			PRC = {set_autonomy = {
+			target = ALG
+			autonomy_state = autonomy_minzhutuoguan
+			}}
+			PRC = {set_autonomy = {
+			target = MOR
+			autonomy_state = autonomy_minzhutuoguan
+			}}
+			PRC = {set_autonomy = {
+			target = WES
+			autonomy_state = autonomy_minzhutuoguan
+			}}
+						MOR = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+						ALG = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+						WES = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+						TUN = {
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
+						}			
 				if = {
 					limit = {
 						ROOT = {
@@ -347,7 +534,7 @@ remove_ideas = AFG_crushing_taliban
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -408,7 +595,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -468,7 +655,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -526,6 +713,8 @@ IRQ = {annex_country = {
 							ROJ = {	transfer_state = 1181}
 							ROJ = {	transfer_state = 1177}
 							ROJ = {	transfer_state = 421}
+							ROJ = {	transfer_state = 1176}
+							ROJ = {	transfer_state = 676}
 
 		PRC = {
 			add_to_faction = ROJ
@@ -597,7 +786,7 @@ IRQ = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -648,7 +837,7 @@ IRQ = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -802,7 +991,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -862,7 +1051,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -922,7 +1111,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -977,7 +1166,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1038,7 +1227,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1099,7 +1288,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1107,7 +1296,35 @@ PRC = {annex_country = {
 
 					set_global_flag = skip_default_capitulation
 				}
+				if = {
+					limit = {
 
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = NPA
+						}
+					}
+			
+
+			PHI = {
+
+							annex_country = {
+								target = NPA
+								transfer_troops = no
+							}
+
+}
+			
+
+					set_global_flag = skip_default_capitulation
+				}
 				if = {
 					limit = {
 
@@ -1142,10 +1359,49 @@ create_faction = MAOZHUYIGUOJI
 	
 						}
 										PRC = {
+	
+			country_event = {
+				id = PRC_MAO1.95
+			}
 			transfer_state = 1384
 			transfer_state = 626
 								add_state_core = 1384
 				}
+										PHI = {
+				transfer_state = 626
+				transfer_state = 1272
+				transfer_state = 623
+				transfer_state = 1273
+				}
+			PRC = {set_autonomy = {
+			target = PHI
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}}
+						PHI = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengPHI_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+						}
 					set_global_flag = skip_default_capitulation
 				}
 
@@ -1200,7 +1456,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1261,7 +1517,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1321,7 +1577,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1330,6 +1586,35 @@ PRC = {annex_country = {
 					set_global_flag = skip_default_capitulation
 				}
 
+
+				if = {
+					limit = {
+
+
+						PRC = {has_completed_focus = PRC_niaolong_66}
+						FROM = {
+							OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+							}
+						}
+						ROOT = {
+							original_tag = NAX
+						}
+					}
+						PRC = {
+RAJ = {annex_country = {
+								target = NAX
+								transfer_troops = no
+							}
+
+							}
+
+			}
+	
+
+					set_global_flag = skip_default_capitulation
+				}
 				if = {
 					limit = {
 
@@ -1381,7 +1666,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1441,7 +1726,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1501,7 +1786,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1525,6 +1810,24 @@ PRC = {annex_country = {
 							original_tag = SIG
 						}
 					}
+						PRC = {
+PRC = {annex_country = {
+								target = SIG
+								transfer_troops = no
+							}
+
+							}
+			release_autonomy = {
+			target = SIG
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = SIG
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			}
+
 						SIG = {
 
                 inherit_technology = PRC
@@ -1544,7 +1847,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1604,7 +1907,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1664,7 +1967,7 @@ PRC = {annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1761,7 +2064,7 @@ annex_country = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
@@ -1793,7 +2096,11 @@ annex_country = {
 						}
 					}
 					FROM = {
-						white_peace = ROOT
+						white_peace = ROOT	
+			PRC = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}	
+			SHK = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}
 SHK = {annex_country = {
 								target = JAP
 								transfer_troops = no
@@ -1845,6 +2152,9 @@ KOR = {annex_country = {
 								target = PRK
 								transfer_troops = no
 							}
+
+	KOR = {add_ideas = JAP_PEC_member
+			set_country_flag = JAP_PEC_member_flag}
 		set_politics = {
 			ruling_party = social_democrat
 			election_frequency = 48
@@ -1969,6 +2279,17 @@ create_country_leader = {
 						PRC = {			
 			transfer_state = 434	
 
+			country_event = {
+				id = PRC_MAO1.98
+			}
+					if = {
+						limit = {
+						country_exists = TIB	
+				}
+			TIB = {
+				transfer_state = 434
+			}
+			}
 						RAJ = {			
 			transfer_state = 1131				
 			transfer_state = 441				
@@ -2013,7 +2334,7 @@ create_country_leader = {
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
 	                desc = "POLITICS_changzhengBRM_DESC"
-	                picture = GFX_Portrait_PRC_The_Long_March
+	                picture = GFX_Portrait_PRC_The_Long_March1
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  

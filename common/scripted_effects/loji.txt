@@ -162,6 +162,7 @@ set_variable = { loji_expense_growth_factor_dynamic_var = loji_manyidu_T_love_bu
 				}
 }
 loji_manyidu_change = {
+                set_variable = { loji_manyidu_change_shuzhi = 0 }
 			if = {
 				limit = {
 			has_idea = ZZZ_shuzihuaminzhu
@@ -258,6 +259,25 @@ add_to_variable = { loji_manyidu_change_shuzhi = -0.5  }
 }
 			if = {
 				limit = {
+			has_country_flag = PRC_handongfang_zhanlingqu_shouru
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = -2  }
+}
+			if = {
+				limit = {
+			has_country_flag = PRC_handongfang_zhanlingqu_zhichu
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 1.5  }
+}
+			if = {
+				limit = {
+			NOT = {has_country_flag = PRC_handongfang_zhanlingqu_zhichu}
+			NOT = {has_country_flag = PRC_handongfang_zhanlingqu_shouru}
+				}
+add_to_variable = { loji_manyidu_change_shuzhi = 0.5  }
+}
+			if = {
+				limit = {
 					check_variable = { mzd_taidu = 3 }
 				}
 add_to_variable = { loji_manyidu_change_shuzhi = -1 }
@@ -322,7 +342,6 @@ clamp_variable = {
 }
 				activate_mission = PRC_loji_manyidu_change_1
 
-                set_variable = { loji_manyidu_change_shuzhi = 0 }
 long_march_buff_love_change = yes
 
 }

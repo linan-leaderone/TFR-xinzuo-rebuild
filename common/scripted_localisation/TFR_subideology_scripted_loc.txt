@@ -466,6 +466,12 @@ defined_text = {
 	name = GetSubIdeologyLocLibSoc
 	text = {
 		trigger = {
+			has_country_leader_ideology = Geometridaeism2
+		}
+		localization_key = Geometridaeism2
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = reformist_socialism_1
 		}
 		localization_key = reformist_socialism_1
@@ -1859,6 +1865,12 @@ defined_text = {
 
 	text = {
 		trigger = {
+			has_country_leader_ideology = Geometridaeism1
+		}
+		localization_key = Geometridaeism1
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = market_socialism_1
 		}
 		localization_key = market_socialism_1
@@ -2312,6 +2324,12 @@ defined_text = {
 			has_country_leader_ideology = ethno_nationalism
 		}
 		localization_key = ethno_nationalism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_anarchist
+		}
+		localization_key = national_anarchist
 	}
 	text = {
 		trigger = {

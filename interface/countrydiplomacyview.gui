@@ -63,6 +63,12 @@ guiTypes = {
 			pdx_tooltip = "TFR_GLOBAL_ASSOCIATION_TT"
 		}
 		iconType = {
+			name = "TFR_eadi2_diplo_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_DX_Member2" 
+			pdx_tooltip = "TFR_GLOBAL_ASSOCIATION_TT"
+		}
+		iconType = {
 			name = "TFR_KMGJ_diplo_icon"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_KMGJ_faction" 
