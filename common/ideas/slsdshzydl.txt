@@ -300,7 +300,69 @@ income_growth_factor = -0.05
 research_speed_factor = 0.1
 
 			}
+		}												
+		PRC_made_in_china_dummy_PRC_niaolong_124  = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+production_speed_buildings_factor = 0.05
+business_value_factor = 0.05
+personal_value_factor = 0.05
+research_speed_factor = 0.05
+			}
 		}									
+		PRC_made_in_china_dummy_PRC_niaolong_122  = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+production_speed_buildings_factor = 0.05
+business_value_factor = 0.05
+personal_value_factor = 0.05
+			}
+		}									
+		PRC_made_in_china_dummy_PRC_niaolong_105  = {
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+industrial_capacity_factory = 0.05
+production_speed_buildings_factor = 0.05
+stability_factor = 0.05
+personal_value_factor = 0.05
+			}
+		}								
 		PRC_made_in_china_dummy_idea_focus_PRC_niaolong_391123  = {
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea

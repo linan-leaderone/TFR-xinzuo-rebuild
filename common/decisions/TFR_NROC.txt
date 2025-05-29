@@ -14,7 +14,7 @@ PRC_RENDAHUIYI = {
 
 		}
 		days_remove = 35
-		fire_only_once = no
+		fire_only_once = yes
 		complete_effect = {
 			set_temp_variable = {
 				var = debt_var_temp
@@ -42,7 +42,7 @@ nihong_neizhan_11451919 = yes
 
 		}
 		days_remove = 35
-		fire_only_once = no
+		fire_only_once = yes
 		complete_effect = {
 			set_temp_variable = {
 				var = debt_var_temp
@@ -455,6 +455,16 @@ nihong_neizhan_11451919 = yes
 					target = HRL
 					type = annex_everything 
 				}
+				if = {
+					limit = {
+						country_exists = EGY
+					}
+
+				declare_war_on = { 
+					target = EGY
+					type = annex_everything 
+				}
+					}
 				if = {
 					limit = {
 						country_exists = SAR

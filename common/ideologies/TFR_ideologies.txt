@@ -784,14 +784,7 @@ ideologies = {
 
 	nationalist = {
 		types = {
-			jucheism = {
-				can_be_randomly_selected = no
-				color = {
-					117
-					26
-					8
-				}
-			}
+
 			Geometridaeism1 = {
 				can_be_randomly_selected = no
 				color = {
@@ -1031,7 +1024,14 @@ ideologies = {
 			nazi_maoism = {
 				can_be_randomly_selected = no
 			}
-
+			jucheism = {
+				can_be_randomly_selected = no
+				color = {
+					117
+					26
+					8
+				}
+			}
 			esoteric_fascism = {
 			}
 			neonazism = {

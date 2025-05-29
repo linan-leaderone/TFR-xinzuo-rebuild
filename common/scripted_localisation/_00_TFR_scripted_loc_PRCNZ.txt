@@ -862,7 +862,7 @@ defined_text = {
 		OR = {
 			has_government = social_democrat
 			has_government = conservative
-			has_government = authoritarian_democrat
+			has_government = social_liberal
 		}
 		}
 		localization_key = PRC_loji_category_desc_yijian4_loc2
@@ -871,7 +871,7 @@ defined_text = {
 		trigger = {
 			NOT = {has_government = social_democrat}
 			NOT = {has_government = conservative}
-			NOT = {has_government = authoritarian_democrat}
+			NOT = {has_government = social_liberal}
 			NOT = {has_government = totalitarian_socialist}
 			NOT = {has_government = communist}
 			NOT = {has_government = libertarian_socialist}

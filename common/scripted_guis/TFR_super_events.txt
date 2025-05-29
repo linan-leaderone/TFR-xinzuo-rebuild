@@ -1,4 +1,21 @@
 	scripted_gui = {
+		lmrev_super_event = {
+			context_type = player_context
+			window_name = "lmrev_super_event"
+
+			visible = {
+				has_country_flag = lmrev_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = lmrev_flag
+				}
+			}
+		}
 		shwj_super_event = {
 			context_type = player_context
 			window_name = "shwj_super_event"
@@ -13,6 +30,23 @@
 			effects = {
 				Super_Event_Close_click = {
 					clr_country_flag = shwj_flag
+				}
+			}
+		}
+		dyblcl_super_event = {
+			context_type = player_context
+			window_name = "dyblcl_super_event"
+
+			visible = {
+				has_country_flag = dyblcl_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = dyblcl_flag
 				}
 			}
 		}

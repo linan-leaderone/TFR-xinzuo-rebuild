@@ -183,7 +183,7 @@ add_to_variable = { loji_manyidu_change_shuzhi = 2 }
 				limit = {
 			NOT = {has_government = social_democrat}
 			NOT = {has_government = conservative}
-			NOT = {has_government = authoritarian_democrat}
+			NOT = {has_government = social_liberal}
 			NOT = {has_government = totalitarian_socialist}
 			NOT = {has_government = communist}
 			NOT = {has_government = libertarian_socialist}
@@ -341,7 +341,7 @@ clamp_variable = {
     max = 100
 }
 				activate_mission = PRC_loji_manyidu_change_1
-
 long_march_buff_love_change = yes
+
 
 }

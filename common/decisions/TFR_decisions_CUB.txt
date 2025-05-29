@@ -162,6 +162,7 @@ second_nato_war_decisions = {
 			if = {
 				limit = {
 					has_global_flag = SOV_ldpr_won
+					NOT = { PRC = { has_completed_focus = PRC_niaolong_85 }}
 					NOT = { has_global_flag = nato_nato_won_nato_war }
 				}
 				SOV = {

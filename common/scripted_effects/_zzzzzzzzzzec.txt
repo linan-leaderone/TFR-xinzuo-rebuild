@@ -13,6 +13,7 @@ remove_gov_types = {
 		ZZZ_fascist_dictatorship
 		ZZZ_revolutionary_front
 		ZZZ_communist_party_state
+		ZZZ_ai_governance
 		ZZZ_semi_presidential_system
 		ZZZ_parliamentary_republic
 		ZZZ_presidential_republic

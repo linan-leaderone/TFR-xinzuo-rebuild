@@ -20,8 +20,30 @@ PRC_loji_category = {
 		selectable_mission = no
 		days_mission_timeout = 35
 		complete_effect = {
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_reliable_politburo }
+				}
 			country_event = {
 				id = PRC_MAO1.14
+			}			
+			}			
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_the_Flower_of_Freedom_4 }
+					NOT = {PRC = { has_completed_focus = PRC_niaolong_60 }}
+				}
+			country_event = {
+				id = PRC_MAO1.14
+			}			
+			}		
+			if = {
+				limit = {
+					PRC = { has_completed_focus = PRC_niaolong_60 }
+				}
+			country_event = {
+				id = PRC_MAO2.28
+			}			
 			}				
 			hidden_effect = {
 				

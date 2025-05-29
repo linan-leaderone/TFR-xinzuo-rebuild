@@ -27,7 +27,10 @@ autonomy_state = {
 		factor = 1.0
 	}
 	allowed = {
+	OR= {
 OVERLORD = { original_tag = PRC}
+OVERLORD = { original_tag = CHF}
+	}
 	}
 	ai_overlord_wants_garrison = {
 		always = no

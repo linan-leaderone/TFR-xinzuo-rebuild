@@ -21,6 +21,14 @@ spriteTypes = {
 		name = "GFX_Ideology_national_anarchist_banner"
 		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_national_anarchist_banner.png"
 		legacy_lazy_load = no
+	}												
+	SpriteType = {
+		name = "GFX_super_lmrev"
+		texturefile = "gfx/MAOYUANXIN/super_lmrev.png"
+	}											
+	SpriteType = {
+		name = "GFX_super_dyblcl"
+		texturefile = "gfx/MAOYUANXIN/super_dybl.png"
 	}										
 	SpriteType = {
 		name = "GFX_UKR_volodymyr_zelensky_CQGJX1"
@@ -189,7 +197,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_rcwar"
 		texturefile = "gfx/MAOYUANXIN/super_rcwar.png"
-	}			
+	}					
+	SpriteType = {
+		name = "GFX_idea_PRC_revpro_idea"
+		texturefile = "gfx/MAOYUANXIN/revpro.png"
+	}		
 	SpriteType = {
 		name = "GFX_idea_generic_kmgjhz_idea"
 		texturefile = "gfx/MAOYUANXIN/kongjunhongzha.png"

@@ -6,7 +6,19 @@
 			}
 			localization_key = "super_patriot_victory"
 		}
-													
+																		
+		text = { 
+			trigger = {
+				has_country_flag = lmrev_flag
+			}
+			localization_key = "lmrev"
+		}											
+		text = { 
+			trigger = {
+				has_country_flag = dyblcl_flag
+			}
+			localization_key = "dyblcl"
+		}											
 		text = { 
 			trigger = {
 				has_country_flag = tlibwar1_flag
@@ -445,6 +457,19 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = lmrev_flag
+			}
+			localization_key = "lmrev_text"
+		}
+
+		text = { 
+			trigger = {
+				has_country_flag = dyblcl_flag
+			}
+			localization_key = "dyblcl_text"
+		}
+		text = { 
+			trigger = {
 				has_country_flag = tlibwar1_flag
 			}
 			localization_key = "tlibwar1_text"
@@ -873,7 +898,19 @@
 			}
 			localization_key = "super_patriot_victory_button"
 		}
-		
+					
+		text = { 
+			trigger = {
+				has_country_flag = lmrev_flag
+			}
+			localization_key = "lmrev_button"
+		}	
+		text = { 
+			trigger = {
+				has_country_flag = dyblcl_flag
+			}
+			localization_key = "dyblcl_button"
+		}
 		text = { 
 			trigger = {
 				has_country_flag = tlibwar1_flag

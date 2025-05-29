@@ -28,7 +28,11 @@ autonomy_state = {
 	}
 	allowed = {
 OVERLORD = { original_tag = PRC}
+	OR = {
 OVERLORD = { has_completed_focus = PRC_niaolong_66}
+OVERLORD = { has_country_flag = MINZHUSHIZIJUN}
+	}
+
 	}
 	ai_overlord_wants_garrison = {
 		always = no

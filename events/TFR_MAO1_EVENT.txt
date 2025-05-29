@@ -506,6 +506,8 @@ country_event = {
             name = PRC_MAO1.14.a
 
 		hidden_effect = {
+
+set_cosmetic_tag = PRC_LM	
 			complete_national_focus = PRC_advanced_economic_planning_1
 unlock_national_focus = PRC_revive_peoples_war_mindset_4
 unlock_national_focus = PRC_economic_computerization
@@ -1394,6 +1396,8 @@ set_country_flag = market_desc_de
             name = PRC_MAO1.54.a
 
 		hidden_effect = {
+set_country_flag = PRC_PRC_niaolong_60
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = PRC_niaolong_60
 		promote_character = {
 			character = PRC_qin_hui
@@ -1438,6 +1442,9 @@ set_country_leader_ideology = Geometridaeism
         option = {
             name = PRC_MAO1.55.a
 					hidden_effect = {
+set_country_flag = PRC_PRC_niaolong_59
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_niaolong_59
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = yes
@@ -1462,6 +1469,9 @@ NOT = {has_idea = PRC_ai_changzheng_core}
         option = {
             name = PRC_MAO1.55.b
 					hidden_effect = {
+set_country_flag = PRC_PRC_niaolong_59
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_niaolong_59
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = yes
@@ -1493,6 +1503,9 @@ NOT = {has_idea = PRC_ai_changzheng_core}
         option = {
             name = PRC_MAO1.55.c
 					hidden_effect = {
+set_country_flag = PRC_PRC_niaolong_62
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_niaolong_62
 			set_politics = {
 				ruling_party = communist
 				elections_allowed = yes
@@ -2618,11 +2631,7 @@ set_politics = {
     value = lgd_zcd
     compare = greater_than_or_equals
 }
-            check_variable = {
-    var = zyd_zcd
-    value = zylm_zcd
-    compare = greater_than_or_equals
-}
+
 				}
 			country_event = {
 				id = PRC_MAO1.78
@@ -2659,6 +2668,11 @@ set_politics = {
         fire_only_once = yes
         option = {
             name = PRC_MAO1.77.a
+					hidden_effect = {
+set_country_flag = PRC_PRC_niaolong_58
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = PRC_niaolong_58
+        }
         }
     }
 

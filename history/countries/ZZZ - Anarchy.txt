@@ -20,7 +20,7 @@ add_ideas = duliyuanjing_1
 add_ideas = duliyuanjing_1
 }
 	PRK = {set_politics = {
-		ruling_party = nationalist
+		ruling_party = national_socialist
 		last_election = "2017.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -29,11 +29,11 @@ add_ideas = duliyuanjing_1
 change_government_type_fascist_dictatorship = yes
 	set_popularities = {
 		social_democrat = 5
-		national_socialist = 10
+		national_socialist = 60
 		fascist = 25
-		nationalist = 60
+		nationalist = 10
 	}
-set_party_name = { ideology = nationalist long_name = PRK1_party_long name = PRK1_party }
+set_party_name = { ideology = national_socialist long_name = PRK1_party_long name = PRK1_party }
 set_party_name = { ideology = fascist long_name = PRK1_party_long name = PRK1_party }
 }
 
@@ -308,7 +308,7 @@ hos_red_dragon_rider
 			character = PRC_cheng_wenqing
 			promote_leader = yes
 			country_leader = {
-				ideology = neonazism
+				ideology = jucheism
 				expire = "1.1.1.1"
 				traits = {
 hos_red_dragon_rider

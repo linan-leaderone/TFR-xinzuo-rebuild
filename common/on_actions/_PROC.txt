@@ -164,6 +164,7 @@ PRC = {annex_country = {
 				ideology = communist
 				popularity = 0.4
 			}
+			PRC_army_develop = yes
 
 				create_country_leader = {
 	                name = "CHANGZHENG1111"
@@ -251,6 +252,7 @@ remove_ideas = AFG_crushing_taliban
 	                ideology = left_accelerationist_2
 				}  
 
+			PRC_army_develop = yes
 				if = {
 					limit = {
 						PRC = {has_idea = PRC_shuzihuaminzhu}
@@ -432,6 +434,7 @@ release = MOR
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 						ALG = {
                 inherit_technology = PRC
@@ -455,6 +458,7 @@ release = MOR
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 						WES = {
                 inherit_technology = PRC
@@ -478,6 +482,7 @@ release = MOR
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 						TUN = {
                 inherit_technology = PRC
@@ -501,6 +506,7 @@ release = MOR
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 						}			
 				if = {
@@ -538,6 +544,7 @@ release = MOR
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 					}
 					set_global_flag = skip_default_capitulation
@@ -599,6 +606,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -659,6 +667,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -790,6 +799,7 @@ IRQ = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 					}
 						}
@@ -841,6 +851,7 @@ IRQ = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 						}
@@ -995,6 +1006,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1055,6 +1067,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1115,6 +1128,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1170,6 +1184,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1231,6 +1246,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1292,6 +1308,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1401,6 +1418,7 @@ create_faction = MAOZHUYIGUOJI
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 					set_global_flag = skip_default_capitulation
 				}
@@ -1460,6 +1478,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1521,6 +1540,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1581,6 +1601,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1670,6 +1691,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1730,6 +1752,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1790,6 +1813,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1851,6 +1875,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1911,6 +1936,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -1971,6 +1997,7 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -2068,6 +2095,7 @@ annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 
 					set_global_flag = skip_default_capitulation
@@ -2126,6 +2154,231 @@ set_cosmetic_tag = JAP_republic
 					set_global_flag = skip_default_capitulation
 				}
 
+				if = {
+					limit = {
+					
+
+				PRC = {
+						has_country_flag = aiattack_lm_rev
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = CHF
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+PRC = {annex_country = {
+								target = CHF
+								transfer_troops = no
+							}	
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = CHF
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = CHF
+				}
+			    remove_core_of = CHF
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+					
+
+				PRC = {
+						has_country_flag = aiattack_lm_rev
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = SHK
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+PRC = {annex_country = {
+								target = SHK
+								transfer_troops = no
+							}	
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = SHK
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = SHK
+				}
+			    remove_core_of = SHK
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+					
+
+				PRC = {
+						has_country_flag = aiattack_lm_rev
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = MON
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+PRC = {annex_country = {
+								target = MON
+								transfer_troops = no
+							}	
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = MON
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = MON
+				}
+			    remove_core_of = MON
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+					
+
+				PRC = {
+						has_country_flag = aiattack_lm_rev
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = JAP
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+PRC = {annex_country = {
+								target = JAP
+								transfer_troops = no
+							}	
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    remove_core_of = JAP
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
+				if = {
+					limit = {
+					
+
+				PRC = {
+						has_country_flag = aiattack_lm_rev
+		}
+
+						FROM = {
+						OR = {
+							original_tag = PRC
+								is_ally_with = PRC
+						}
+						}
+						ROOT = {
+							original_tag = KOR
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+PRC = {annex_country = {
+								target = KOR
+								transfer_troops = no
+							}	
+							}
+
+
+				every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    add_core_of = PRC
+		    }	
+				every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    remove_core_of = KOR
+		    }	
+		    }	
+
+
+
+					set_global_flag = skip_default_capitulation
+				}
 				if = {
 					limit = {
 					
@@ -2212,6 +2465,8 @@ create_country_leader = {
 					}
 
 						NAX = {
+  
+	    NAX = {leave_faction = yes }	
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -2338,6 +2593,7 @@ create_country_leader = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+			PRC_army_develop = yes
 						}
 			NPA = {
 			add_to_faction = NAX

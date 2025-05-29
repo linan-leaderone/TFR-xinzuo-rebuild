@@ -2685,6 +2685,56 @@ army_defence_factor = 1
 				poverty_development_monthly = 0.03
 				income_growth_factor = -0.05
 			}
+		}					
+		PRC_neomaoism111112_idea = {
+			picture = PRC_revpro_idea
+			allowed = {
+				original_tag = PRC
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.2
+				personal_value_factor = -0.05
+				social_liberal_drift = 0.1
+				social_democrat_drift = 0.03
+				communist_drift = 0.03
+				poverty_development_monthly = 0.03
+				society_development_monthly = 0.05
+				expense_growth_factor = -0.05
+			}
+		}		
+		PRC_neomaoism111111_idea = {
+			picture = PRC_revpro_idea
+			allowed = {
+				original_tag = PRC
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.2
+				personal_value_factor = -0.05
+				social_liberal_drift = 0.03
+				social_democrat_drift = 0.03
+				communist_drift = 0.03
+				poverty_development_monthly = 0.03
+				society_development_monthly = 0.05
+				expense_growth_factor = -0.05
+			}
 		}		
 		PRC_neomaoism1111_idea = {
 			picture = PRC_neomaoism_idea
@@ -2704,9 +2754,9 @@ army_defence_factor = 1
 				stability_factor = -0.05
 				war_support_factor = 0.2
 				personal_value_factor = -0.1
-				totalitarian_socialist_drift = 0.01
-				libertarian_socialist_drift = 0.01
-				communist_drift = 0.05
+				totalitarian_socialist_drift = 0.03
+				libertarian_socialist_drift = 0.03
+				communist_drift = 0.03
 				poverty_development_monthly = 0.05
 				society_development_monthly = 0.03
 				expense_growth_factor = -0.1

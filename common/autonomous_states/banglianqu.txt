@@ -27,7 +27,13 @@ autonomy_state = {
 		factor = 1.0
 	}
 	allowed = {
+		OR = {
+		AND = {
 OVERLORD = { original_tag = PRC}
+OVERLORD = { has_completed_focus = PRC_niaolong_72}
+		}
+OVERLORD = { original_tag = CHF}
+		}
 		OR = {
 			original_tag = JAP
 			original_tag = SHK
@@ -37,7 +43,6 @@ OVERLORD = { original_tag = PRC}
 			original_tag = TIB
 			original_tag = XIN
 		}
-OVERLORD = { has_completed_focus = PRC_niaolong_72}
 	}
 	ai_overlord_wants_garrison = {
 		always = no

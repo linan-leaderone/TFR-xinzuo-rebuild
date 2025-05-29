@@ -1875,12 +1875,6 @@ defined_text = {
 		}
 		localization_key = market_socialism_1
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = jucheism
-		}
-		localization_key = jucheism
-	}
 
 
 		text = {
@@ -2432,6 +2426,12 @@ defined_text = {
 			has_country_leader_ideology = nazi_maoism
 		}
 		localization_key = nazi_maoism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jucheism
+		}
+		localization_key = jucheism
 	}
 
 
