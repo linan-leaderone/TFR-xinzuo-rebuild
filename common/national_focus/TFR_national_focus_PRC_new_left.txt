@@ -5489,6 +5489,7 @@ set_party_name = { ideology = authoritarian_democrat long_name = SYY6party_long 
 		elections_allowed = no
 	}
 
+				set_cosmetic_tag = UKR
 	set_popularities = {
 		national_socialist = 10
 		fascist = 5
@@ -5524,7 +5525,7 @@ set_country_leader_portrait = {
 		icon = GFX_focus_PRC_niaolong_83
 		x = 69
 		y = 29
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -5547,7 +5548,7 @@ set_country_leader_portrait = {
 		icon = GFX_focus_PRC_niaolong_84
 		x = 71
 		y = 29
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -5618,7 +5619,7 @@ set_country_leader_portrait = {
 		icon = GFX_focus_PRC_niaolong_85
 		x = 70
 		y = 30
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -12229,6 +12230,7 @@ custom_effect_tooltip = AI_JINDU_50
 			factor = 25
 		}
 		available = {
+	has_war = no
 			has_completed_focus = PRC_revive_peoples_war_mindset_4
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
@@ -16977,6 +16979,7 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
+	has_war = no
 		OR = {
 						PRC_bo_xilai = {is_country_leader = yes}
 						has_completed_focus = PRC_the_Flower_of_Freedom_4
@@ -17052,6 +17055,7 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
+	has_war = no
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
