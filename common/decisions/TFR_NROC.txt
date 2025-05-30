@@ -528,6 +528,16 @@ nihong_neizhan_11451919 = yes
 					}
 				if = {
 					limit = {
+						country_exists = ROC
+					}
+
+				declare_war_on = { 
+					target = ROC
+					type = annex_everything 
+				}
+					}
+				if = {
+					limit = {
 						country_exists = SAU
 					}
 
