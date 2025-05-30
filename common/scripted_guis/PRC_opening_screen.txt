@@ -10,7 +10,7 @@ scripted_gui = {
 		}
 
 		effects = {
-			TFR_qinhui_free_end_button_click = {
+			TFR_qinhui_left_end_button_click = {
 				add_to_variable = { PRC_PAGE = 1 }
 				if = { 
 					
