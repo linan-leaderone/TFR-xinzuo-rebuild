@@ -335,8 +335,28 @@ change_government_type_presidential_dictatorship = yes
 change_economy_type_party_state_capitalism = yes
 
 }
-	PRC = {
-
+	PRC = {	
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:market_liberal
+			}
+			add_to_coalition = yes
 				1161 = {
 						add_resource = {
 							type = chromium

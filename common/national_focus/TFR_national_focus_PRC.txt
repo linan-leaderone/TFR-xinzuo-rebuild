@@ -127,6 +127,16 @@ focus_tree = {
 				mission = PRC_control_the_coronavirus_mission
 				days = -60
 			}
+			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_new = yes
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_lib = yes
 			add_timed_idea = {
 				idea = PRC_open_economy_idea
 				days = 100
@@ -163,6 +173,16 @@ focus_tree = {
 				idea = PRC_zero_covid_idea
 				days = 100
 			} 
+			set_temp_variable = { 
+				var = PRC_influence_nat_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_nat = yes
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_cen = yes
 			if = {
 				limit = {
 					has_idea = PRC_nationwide_lockdown_idea
@@ -251,6 +271,11 @@ focus_tree = {
 				value = 0.05
 			}
 			PRC_add_influence_nat = yes
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_cen = yes
 		}
 	}
 	focus = {
@@ -427,10 +452,10 @@ focus_tree = {
 			}
 			PRC_add_influence_nat = yes
 			set_temp_variable = { 
-				var = PRC_influence_new_var_temp
-				value = 0.02
+				var = PRC_influence_cen_var_temp
+				value = 0.05
 			}
-			PRC_add_influence_new = yes
+			PRC_add_influence_cen = yes
 		}
 	}
 	focus = {
@@ -458,8 +483,13 @@ focus_tree = {
 			add_offsite_building = { type = industrial_complex level = 1 }
 			add_political_power = 50
 			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_new = yes
+			set_temp_variable = { 
 				var = PRC_influence_lib_var_temp
-				value = 0.02
+				value = 0.05
 			}
 			PRC_add_influence_lib = yes
 		}
@@ -523,10 +553,10 @@ focus_tree = {
 			}
 			PRC_add_influence_nat = yes
 			set_temp_variable = { 
-				var = PRC_influence_new_var_temp
+				var = PRC_influence_cen_var_temp
 				value = 0.05
 			}
-			PRC_add_influence_new = yes
+			PRC_add_influence_cen = yes
 		}
 	}
 	focus = {
@@ -552,10 +582,15 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 50
 			set_temp_variable = { 
-				var = PRC_influence_cen_var_temp
+				var = PRC_influence_new_var_temp
 				value = 0.05
 			}
-			PRC_add_influence_cen = yes
+			PRC_add_influence_new = yes
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_lib = yes
 		}
 	}
 	focus = {
@@ -1652,6 +1687,10 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
+				country_event = {
+					id = PRC_MAO2.30
+					days = 15
+				}	
 				country_event = {
 					id = china.314
 					days = 60
@@ -6712,10 +6751,10 @@ shared_focus = {
 		always = no
 	}
 	allow_branch = {
-	#OR = {
-		#has_global_flag = pan_asian_war_ongoing
-		#has_completed_focus = PRC_niaolong_77
-	#}
+	OR = {
+		has_global_flag = pan_asian_war_ongoing
+		has_completed_focus = PRC_niaolong_77
+	}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_chinas_greatest_hour completion_reward"

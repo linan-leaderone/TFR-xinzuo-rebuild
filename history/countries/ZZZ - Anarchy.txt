@@ -220,6 +220,27 @@ change_government_type_presidential_dictatorship = yes
 set_party_name = { ideology = social_democrat long_name = CUB_communist11122_party_long name = CUB_communist11122_party_long }
 }
 	PRC = {
+
+				country_event = {
+					id = PRC_MAO2.35
+					days = 46
+				}	
+				country_event = {
+					id = PRC_MAO2.36
+					days = 758
+				}		
+				country_event = {
+					id = PRC_MAO2.37
+					days = 371
+				}			
+				country_event = {
+					id = PRC_MAO2.38
+					days = 576
+				}				
+				country_event = {
+					id = PRC_MAO2.39
+					days = 922
+				}	
 change_government_type_presidential_dictatorship = yes
 add_ideas = PRC_yangyongxin_idea
 add_ideas = PRC_xuefawenti_idea
@@ -253,8 +274,8 @@ add_ideas = red_noble_idea_1
 			}
 			set_party_name = {
 				ideology = libertarian_socialist
-				long_name = PRC_status_banned111
-				name = PRC_status_banned111
+				long_name = PRC_status_banned
+				name = PRC_status_banned
 			}
 set_party_name = { ideology = nationalist long_name = PRC_communist11122_party_long name = PRC_communist11122_party }
 set_party_name = { ideology = authoritarian_democrat long_name = PRC_communist11133_party_long name = PRC_communist11133_party }

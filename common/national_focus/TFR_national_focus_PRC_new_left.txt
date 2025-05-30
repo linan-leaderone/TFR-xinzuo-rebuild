@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 100
 		}
 	allow_branch = {
-		#has_country_flag = PRC_handongfang_hog
+		has_country_flag = PRC_handongfang_hog
 	}
 		available = {
 			PRC_han_dongfang = {is_country_leader = yes}
@@ -113,9 +113,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-	allow_branch = {
-		NOT = {has_country_flag = PRC_handongfang_youxian}
-	}
 		available = {
 			always = no
 		}
@@ -2914,7 +2911,7 @@ PRC = {annex_country = {
 			factor = 100
 		}
 	allow_branch = {
-		#has_country_flag = PRC_PRC_niaolong_60
+		has_country_flag = PRC_PRC_niaolong_60
 	}
 		available = {
 	always = no
@@ -4694,6 +4691,9 @@ long_march_buff_love_change = yes
 		ai_will_do = {
 			factor = 100
 		}
+	allow_branch = {
+		has_completed_focus = PRC_niaolong_55
+	}
 		available = {
 			custom_trigger_tooltip = {
 		tooltip = PRC_niaolong_25_niaolong_61

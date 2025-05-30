@@ -1237,11 +1237,61 @@ country_event = {
 	id = PRC_MAO2.30
 	title = PRC_MAO2.30.t
 	desc = PRC_MAO2.30.d
-	picture = GFX_PRC_MAO2_event_1
+	picture = GFX_PRC_MAO2_event_31
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.30.a
+add_ideas = PRC_coronavirus_pandemic_idea2
+activate_mission = PRC_waning_coronavirus_1
+			add_stability = -0.05
+
+			hidden_effect = {
+				country_event = {
+					id = PRC_MAO2.33
+					days = 20
+				}	
+				country_event = {
+					id = PRC_MAO2.31
+					days = 35
+				}	
+				country_event = {
+					id = PRC_MAO2.32
+					days = 50
+				}		
+				country_event = {
+					id = PRC_MAO2.34
+					days = 55
+				}	
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
 	}
 }
 
@@ -1249,11 +1299,28 @@ country_event = {
 	id = PRC_MAO2.31
 	title = PRC_MAO2.31.t
 	desc = PRC_MAO2.31.d
-	picture = GFX_PRC_MAO2_event_2
+	picture = GFX_PRC_MAO2_event_32
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.31.a
+			swap_ideas = {
+				remove_idea = PRC_coronavirus_pandemic_idea2
+				add_idea = PRC_coronavirus_pandemic_idea1
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
 	}
 }
 
@@ -1261,11 +1328,28 @@ country_event = {
 	id = PRC_MAO2.32
 	title = PRC_MAO2.32.t
 	desc = PRC_MAO2.32.d
-	picture = GFX_PRC_MAO2_event_3
+	picture = GFX_PRC_MAO2_event_33
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.32.a
+			swap_ideas = {
+				remove_idea = PRC_coronavirus_pandemic_idea1
+				add_idea = PRC_coronavirus_pandemic_idea
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
 	}
 }
 
@@ -1273,11 +1357,33 @@ country_event = {
 	id = PRC_MAO2.33
 	title = PRC_MAO2.33.t
 	desc = PRC_MAO2.33.d
-	picture = GFX_PRC_MAO2_event_4
+	picture = GFX_PRC_MAO2_event_34
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.33.a
+			add_stability = -0.1
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.01
+			}
+
 	}
 }
 
@@ -1285,11 +1391,12 @@ country_event = {
 	id = PRC_MAO2.34
 	title = PRC_MAO2.34.t
 	desc = PRC_MAO2.34.d
-	picture = GFX_PRC_MAO2_event_5
+	picture = GFX_PRC_MAO2_event_35
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.34.a
+
 	}
 }
 
@@ -1297,7 +1404,7 @@ country_event = {
 	id = PRC_MAO2.35
 	title = PRC_MAO2.35.t
 	desc = PRC_MAO2.35.d
-	picture = GFX_PRC_MAO2_event_6
+	picture = GFX_PRC_MAO2_event_36
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -1309,7 +1416,7 @@ country_event = {
 	id = PRC_MAO2.36
 	title = PRC_MAO2.36.t
 	desc = PRC_MAO2.36.d
-	picture = GFX_PRC_MAO2_event_7
+	picture = GFX_PRC_MAO2_event_37
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -1321,7 +1428,7 @@ country_event = {
 	id = PRC_MAO2.37
 	title = PRC_MAO2.37.t
 	desc = PRC_MAO2.37.d
-	picture = GFX_PRC_MAO2_event_8
+	picture = GFX_PRC_MAO2_event_38
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -1333,7 +1440,7 @@ country_event = {
 	id = PRC_MAO2.38
 	title = PRC_MAO2.38.t
 	desc = PRC_MAO2.38.d
-	picture = GFX_PRC_MAO2_event_9
+	picture = GFX_PRC_MAO2_event_39
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
@@ -1345,7 +1452,7 @@ country_event = {
 	id = PRC_MAO2.39
 	title = PRC_MAO2.39.t
 	desc = PRC_MAO2.39.d
-	picture = GFX_PRC_MAO2_event_10
+	picture = GFX_PRC_MAO2_event_40
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {

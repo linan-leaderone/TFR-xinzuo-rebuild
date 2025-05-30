@@ -41,6 +41,37 @@ PRC_coronavirus_category = {
 			activate_mission = PRC_waning_coronavirus
 		}
 	}
+	PRC_waning_coronavirus_1 = {
+		icon = generic_vaccine
+		allowed = { tag = PRC }
+		activation = {
+			always = no
+		}
+		available = { 
+			NOT = {
+				OR = {
+					has_idea = PRC_coronavirus_pandemic_idea
+					has_idea = PRC_coronavirus_pandemic_idea1
+					has_idea = PRC_coronavirus_pandemic_idea2
+					has_idea = PRC_coronavirus_pandemic_idea3
+					has_idea = PRC_coronavirus_pandemic_idea4
+				}
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 90
+		timeout_effect = { 
+			PRC_decrease_corona = yes
+			activate_mission = PRC_waning_coronavirus_1
+		}
+		complete_effect = {
+
+		}
+	}
 	PRC_waning_coronavirus = {
 		icon = generic_vaccine
 		allowed = { tag = PRC }
