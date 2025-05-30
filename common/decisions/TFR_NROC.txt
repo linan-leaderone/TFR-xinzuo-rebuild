@@ -36,7 +36,7 @@ nihong_neizhan_11451919 = yes
 			original_tag = PRC
 		}
 		visible = {
-		has_completed_focus = PRC_niaolong_83
+		has_completed_focus = PRC_niaolong_82
 		}
 		available = {
 

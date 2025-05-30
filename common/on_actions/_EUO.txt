@@ -4,6 +4,7 @@ on_actions = {
 					if = {
 					limit = {
 
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -35,6 +36,7 @@ TRG = {annex_country = {
 				if = {
 					limit = {
 
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -69,6 +71,7 @@ CUB = {annex_country = {
 				if = {
 					limit = {
 
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -111,6 +114,7 @@ PRU = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 						OR = {
 							original_tag = CAN
@@ -149,6 +153,7 @@ TRG = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = GRK
 						}
@@ -171,6 +176,7 @@ GRE = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = CYP
 						}
@@ -206,6 +212,7 @@ TUR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 						OR = {
 							original_tag = POR
@@ -244,6 +251,7 @@ PRP = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 						OR = {
 							original_tag = FAF
@@ -293,6 +301,7 @@ FPR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 						OR = {
 							original_tag = MNT
@@ -339,6 +348,7 @@ BUL = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = MLD
 
@@ -383,6 +393,7 @@ BUL = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = SWI
 
@@ -418,6 +429,7 @@ FRA = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = MLD
 
@@ -453,6 +465,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = PLD
 
@@ -498,6 +511,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = PLD
 
@@ -531,6 +545,7 @@ MLD = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = ECU
 						}
@@ -562,6 +577,7 @@ ELN = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 						OR = {
 							original_tag = NIR
@@ -603,6 +619,7 @@ IRE = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = SIL
 
@@ -636,6 +653,7 @@ PLD = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 						OR = {
 							original_tag = SNS
@@ -682,6 +700,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = TUR
 						}
@@ -732,6 +751,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = AUS
 						}
@@ -771,6 +791,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = FIN
 						}
@@ -811,6 +832,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = ICE
 						}
@@ -851,6 +873,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = SWE
 						}
@@ -891,6 +914,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = NOR
 						}
@@ -931,6 +955,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = DEN
 						}
@@ -970,6 +995,7 @@ RSR = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = ENG
 						}
@@ -1017,6 +1043,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = IRE
 						}
@@ -1057,6 +1084,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = SLO
 						}
@@ -1097,6 +1125,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = ROM
 						}
@@ -1137,6 +1166,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = HUN
 						}
@@ -1178,6 +1208,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = ITA
 						}
@@ -1218,6 +1249,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = PRU
 						}
@@ -1267,6 +1299,7 @@ set_party_name = { ideology = communist long_name = PRUCCC_party name = PRUCCC_p
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = BRA
 						}
@@ -1319,6 +1352,7 @@ set_party_name = { ideology = communist long_name = BRACCC_party name = BRACCC_p
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = FRA
 						}
@@ -1368,6 +1402,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = GER
 						}
@@ -1416,6 +1451,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = CZE
 						}
@@ -1456,6 +1492,7 @@ annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = GRE
 						}
@@ -1500,6 +1537,7 @@ GRE = {annex_country = {
 								is_ally_with = PRC
 						}
 						}
+						PRC = {has_completed_focus =PRC_masters_of_asia_1}
 						ROOT = {
 							original_tag = BUL
 						}

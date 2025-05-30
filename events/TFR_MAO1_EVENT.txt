@@ -3279,7 +3279,8 @@ set_country_leader_portrait = {
         option = {
             name = PRC_MAO1.94.a
 		set_country_flag = PRC_qinhui_right	
-			custom_effect_tooltip = ROC_qinhui_right	
+			custom_effect_tooltip = ROC_qinhui_right		
+			custom_effect_tooltip = ROC_qinhui_right1	
 	
 		trigger = {
 NOT = {has_completed_focus = PRC_niaolong_24}

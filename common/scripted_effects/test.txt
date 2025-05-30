@@ -1171,5 +1171,29 @@ set_party_name = { ideology = authoritarian_democrat long_name = SYY6party_long 
 			PRC = {add_to_faction = BYA}
 
 			PRC = {add_to_faction = KBK}
-							}
+
+					
+					if = {
+						limit = {
+			PRC = {has_completed_focus = PRC_niaolong_88}
+}
+			PRC = {
+			country_event = {
+				id = PRC_MAO2.19
+			}
+			}		
+}					
+					if = {
+						limit = {
+						OR = {
+			PRC = {has_completed_focus = PRC_niaolong_86}
+			PRC = {has_completed_focus = PRC_niaolong_87}
+}
+}
+			PRC = {
+			country_event = {
+				id = PRC_MAO2.18
+			}
+			}		
+}
 							}

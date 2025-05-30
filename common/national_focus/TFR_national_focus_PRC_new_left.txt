@@ -2939,7 +2939,7 @@ PRC = {annex_country = {
 		icon = GFX_focus_PRC_niaolong_86
 		x = 53
 		y = 21
-		cost = 4
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -5428,7 +5428,7 @@ long_march_buff_love_change = yes
 		icon = GFX_focus_PRC_niaolong_82
 		x = 70
 		y = 28
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -5449,32 +5449,6 @@ long_march_buff_love_change = yes
 
 		completion_reward = {
 			
-			
-		
-
-		}
-	}  
-   focus = {
-		id = PRC_niaolong_83
-		icon = GFX_focus_PRC_niaolong_83
-		x = 69
-		y = 29
-		cost = 5
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-		available = {
-
-		}
-		prerequisite = {
-            focus = PRC_niaolong_82
-        }
-
-		completion_reward = {
-			
-			
-		unlock_decision_tooltip = PRC_support_ukr_down_4
 		unlock_decision_tooltip = PRC_support_ukr_down_5
 		
 			hidden_effect = {
@@ -5540,6 +5514,32 @@ set_country_leader_portrait = {
 
 }	
 		}
+			
+		
+
+		}
+	}  
+   focus = {
+		id = PRC_niaolong_83
+		icon = GFX_focus_PRC_niaolong_83
+		x = 69
+		y = 29
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+
+		}
+		prerequisite = {
+            focus = PRC_niaolong_82
+        }
+
+		completion_reward = {
+			
+			
+		unlock_decision_tooltip = PRC_support_ukr_down_4
 		}
 	}  
    focus = {

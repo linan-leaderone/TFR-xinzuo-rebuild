@@ -796,9 +796,9 @@ ideologies = {
 			market_socialism_1 = {
 				can_be_randomly_selected = no
 				color = {
-					153
-					18
-					0
+					139
+					71
+					38
 				}
 
 			}

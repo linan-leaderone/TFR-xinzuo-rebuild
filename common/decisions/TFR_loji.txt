@@ -57,6 +57,154 @@ PRC_loji_category = {
 
 
 
+	PRC_qiguanjianzhu_4 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+has_country_flag = changzheng_start_end
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 2000
+			}
+			add_debt = yes
+
+		}
+		remove_effect = {
+			
+
+add_to_variable = {
+    var = loji_manyidu_T
+    value = 20
+    tooltip = add_loji_manyidu_T_22_tt
+}
+
+					ELN = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+					RCG = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+					EFF= {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+					ZAP = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = PRC
+				}
+			}
+
+
+		}
+		icon = GFX_decision_changzhengbianhua
+		cost = 100
+	}
+
+	PRC_qiguanjianzhu_3 = {
+		allowed = {
+			original_tag = PRC
+		}
+		visible = {
+has_country_flag = changzheng_start_end
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 2000
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+			
+
+add_to_variable = {
+    var = loji_manyidu_T
+    value = 20
+    tooltip = add_loji_manyidu_T_22_tt
+}
+
+
+	add_to_variable = {
+		var = poverty_development_var
+		value = 0.2
+	}
+	check_poverty_development = yes
+
+		}
+		icon = GFX_decision_changzhengbianhua
+		cost = 100
+	}
+
+
+
 	PRC_qiguanjianzhu_2 = {
 		allowed = {
 			original_tag = PRC
@@ -90,7 +238,12 @@ add_to_variable = { loji_super_con = 1 }
 		remove_effect = {
 			
 add_to_variable = { loji_super_con = -1 }
-		custom_effect_tooltip = changzheng_haogan_up
+
+add_to_variable = {
+    var = loji_manyidu_T
+    value = 20
+    tooltip = add_loji_manyidu_T_22_tt
+}
 
 		620 = {
 							remove_building = {
@@ -165,7 +318,12 @@ add_to_variable = { loji_super_con = -1 }
 				province = 9843
 			}
 		}
-		custom_effect_tooltip = changzheng_haogan_up
+	
+add_to_variable = {
+    var = loji_manyidu_T
+    value = 20
+    tooltip = add_loji_manyidu_T_22_tt
+}
 
 		}
 		icon = GFX_decision_changzhengbianhua
