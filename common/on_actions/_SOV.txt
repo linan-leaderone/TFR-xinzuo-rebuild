@@ -9,6 +9,74 @@ NOT = {has_global_flag = PRC_taiwan_war_lost}
 				}
 		PRC = {1395 = { set_demilitarized_zone = yes }}
 			}
+			if = {
+				limit = {
+			PRC = {has_country_flag = gongchangzhanyi}
+NOT = {has_global_flag = PRC_taiwan_war_won}
+NOT = {has_global_flag = PRC_taiwan_war_lost}
+				}
+		PRC = {607 = { set_demilitarized_zone = yes }}
+		PRC = {1225 = { set_demilitarized_zone = yes }}
+		PRC = {1226 = { set_demilitarized_zone = yes }}
+			}
+			if = {
+				limit = {
+			PRC = {has_country_flag = lunzilaile}
+NOT = {has_global_flag = PRC_taiwan_war_won}
+NOT = {has_global_flag = PRC_taiwan_war_lost}
+				}
+		PRC = {1420 = { set_demilitarized_zone = yes }}
+		PRC = {1229 = { set_demilitarized_zone = yes }}
+		PRC = {1393 = { set_demilitarized_zone = yes }}
+			}
+			if = {
+				limit = {
+			PRC = {has_country_flag = gemingqiyijun}
+NOT = {has_global_flag = PRC_taiwan_war_won}
+NOT = {has_global_flag = PRC_taiwan_war_lost}
+				}
+	PRC = {1159 = { set_demilitarized_zone = yes }}
+	PRC = {600 = { set_demilitarized_zone = yes }}
+	PRC = {1428 = { set_demilitarized_zone = yes }}
+	PRC = {1218 = { set_demilitarized_zone = yes }}
+	PRC = {1217 = { set_demilitarized_zone = yes }}
+	PRC = {1214 = { set_demilitarized_zone = yes }}
+	PRC = {1207 = { set_demilitarized_zone = yes }}
+	PRC = {1213 = { set_demilitarized_zone = yes }}
+	PRC = {1431 = { set_demilitarized_zone = yes }}
+	PRC = {1430 = { set_demilitarized_zone = yes }}
+	PRC = {1221 = { set_demilitarized_zone = yes }}
+	PRC = {1222 = { set_demilitarized_zone = yes }}
+	PRC = {1227 = { set_demilitarized_zone = yes }}
+	PRC = {1220 = { set_demilitarized_zone = yes }}
+	PRC = {596 = { set_demilitarized_zone = yes }}
+	PRC = {1197 = { set_demilitarized_zone = yes }}
+	PRC = {1204 = { set_demilitarized_zone = yes }}
+	PRC = {1203 = { set_demilitarized_zone = yes }}
+	PRC = {594 = { set_demilitarized_zone = yes }}
+	PRC = {1205 = { set_demilitarized_zone = yes }}
+	PRC = {593 = { set_demilitarized_zone = yes }}
+	PRC = {603 = { set_demilitarized_zone = yes }}
+	PRC = {1210 = { set_demilitarized_zone = yes }}
+	PRC = {728 = { set_demilitarized_zone = yes }}
+	PRC = {326 = { set_demilitarized_zone = yes }}
+	PRC = {729 = { set_demilitarized_zone = yes }}
+	PRC = {1208 = { set_demilitarized_zone = yes }}
+	PRC = {1209 = { set_demilitarized_zone = yes }}
+	PRC = {602 = { set_demilitarized_zone = yes }}
+	PRC = {599 = { set_demilitarized_zone = yes }}
+	PRC = {592 = { set_demilitarized_zone = yes }}
+	PRC = {1206 = { set_demilitarized_zone = yes }}
+	PRC = {1216 = { set_demilitarized_zone = yes }}
+	PRC = {121 = { set_demilitarized_zone = yes }}
+	PRC = {613 = { set_demilitarized_zone = yes }}
+	PRC = {591 = { set_demilitarized_zone = yes }}
+	PRC = {1191 = { set_demilitarized_zone = yes }}
+	PRC = {595 = { set_demilitarized_zone = yes }}
+	PRC = {1219 = { set_demilitarized_zone = yes }}
+	PRC = {1215 = { set_demilitarized_zone = yes }}
+	PRC = {1395 = { set_demilitarized_zone = yes }}
+			}
 
 		}
 	}

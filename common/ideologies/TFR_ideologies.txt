@@ -240,15 +240,6 @@ ideologies = {
 					89
 				}
 			}
-			market_socialism_3 = {
-				can_be_randomly_selected = no
-				color = {
-					153
-					18
-					0
-				}
-
-			}
 
 			left_centrist = {
 				can_be_randomly_selected = no
@@ -492,6 +483,15 @@ ideologies = {
 
 	conservative = {
 		types = {
+			market_socialism_3 = {
+				can_be_randomly_selected = no
+				color = {
+					153
+					18
+					0
+				}
+
+			}
 			right_centrist = {
 				can_be_randomly_selected = no
 				color = {
@@ -679,14 +679,6 @@ ideologies = {
 					102
 				}
 			}
-			confucian_hyperconservativism = {
-				can_be_randomly_selected = no
-				color = {
-					130
-					129
-					102
-				}
-			}
 			hybrid_regime = {
 			}
 			military_democracy = {
@@ -796,9 +788,9 @@ ideologies = {
 			market_socialism_1 = {
 				can_be_randomly_selected = no
 				color = {
-					139
-					71
-					38
+					153
+					18
+					0
 				}
 
 			}
@@ -910,6 +902,15 @@ ideologies = {
 
 	fascist = {
 		types = {
+			xjp_thought= {
+				can_be_randomly_selected = no
+				color = {
+					139
+					71
+					38
+				}
+
+			}
 			falangist = {
 				#Franco
 				can_be_randomly_selected = no
@@ -936,6 +937,14 @@ ideologies = {
 			}	
 			blackhundredism = {
 				can_be_randomly_selected = no
+			}
+			confucian_hyperconservativism = {
+				can_be_randomly_selected = no
+				color = {
+					130
+					129
+					102
+				}
 			}
 			ecofascism = {
 				can_be_randomly_selected = no

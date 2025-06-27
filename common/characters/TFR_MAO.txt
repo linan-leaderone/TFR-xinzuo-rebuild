@@ -1,4 +1,130 @@
 characters={
+NCM_he_anquan_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/HAQ.png"
+			}
+		}
+		country_leader={
+			desc = PRC_he_anquan_DESC
+			ideology=right_centrist
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+JIA_wu_zhenglong_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/WZL.png"
+			}
+		}
+		country_leader={
+			desc = PRC_wu_zhenglong_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+NTT_liang_yanshun_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/LYS.png"
+			}
+		}
+		country_leader={
+			desc = PRC_liang_yanshun_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+IMA_htm_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/IMAMG.png"
+			}
+		}
+		country_leader={
+			desc = PRC_htm_DESC
+			ideology=neonazism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+MAN_pujun_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/PJ.png"
+			}
+		}
+		country_leader={
+			desc = PRC_pujun_DESC
+			ideology=right_centrist
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+A74_duan_yingmin_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/DYM.png"
+			}
+		}
+		country_leader={
+			desc = PRC_duan_yingmin_DESC
+			ideology=military_junta
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+NMA_fulafu_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/FLF.png"
+			}
+		}
+		country_leader={
+			desc = PRC_fulafu_DESC
+			ideology=military_junta
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+APF_lin_huomao_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/LHM.png"
+			}
+		}
+		country_leader={
+			desc = PRC_lin_huomao_DESC
+			ideology=military_junta
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+APF_zhang_guoqing_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/ZGQ.png"
+			}
+		}
+		country_leader={
+			desc = PRC_zhang_guoqing_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 PRC_Bo_Guagua ={
 		portraits={
 			civilian={
@@ -78,20 +204,6 @@ PRC_ren_chonghao ={
 		country_leader={
 			desc = PRC_ren_chonghao_DESC
 			ideology=neo_socialism
-			traits={  }
-			expire="1.1.1.1"
-			id=-1
-		}
-	}
-PRC_zhang_hongliang ={
-		portraits={
-			civilian={
-				large="gfx/MAOYUANXIN/PRC_zhang_hongliang.png"
-			}
-		}
-		country_leader={
-			desc = PRC_zhang_hongliang_DESC
-			ideology=social_fascism
 			traits={  }
 			expire="1.1.1.1"
 			id=-1

@@ -689,15 +689,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = sm_socialism
+			has_country_leader_ideology = kasitekuoism
 		}
-		localization_key = sm_socialism
+		localization_key = kasitekuoism
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = market_socialism_3
+			has_country_leader_ideology = sm_socialism
 		}
-		localization_key = market_socialism_3
+		localization_key = sm_socialism
 	}
 
 
@@ -1108,6 +1108,13 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocCon
+	text = {
+		trigger = {
+			has_country_leader_ideology = market_socialism_3
+		}
+		localization_key = market_socialism_3
+	}
+
 	text = {
 		trigger = {
 			OR = {
@@ -1728,12 +1735,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = confucian_hyperconservativism
-		}
-		localization_key = confucian_hyperconservativism
-	}
-	text = {
-		trigger = {
 			has_country_leader_ideology = hybrid_regime
 			has_country_leader = {
 				character = CAC_provisional_government
@@ -2126,6 +2127,19 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocFascist	
+	text = {
+		trigger = {
+			has_country_leader_ideology = xjp_thought
+		}
+		localization_key = xjp_thought
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = confucian_hyperconservativism
+		}
+		localization_key = confucian_hyperconservativism
+	}
 	text = {
 		trigger = {
 			OR = {

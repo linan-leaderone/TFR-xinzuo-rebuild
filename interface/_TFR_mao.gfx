@@ -25,10 +25,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_lmrev"
 		texturefile = "gfx/MAOYUANXIN/super_lmrev.png"
-	}											
+	}													
+	SpriteType = {
+		name = "GFX_super_rcwar2"
+		texturefile = "gfx/MAOYUANXIN/super_rcwar3.png"
+	}										
+	SpriteType = {
+		name = "GFX_PRC_WHNN"
+		texturefile = "gfx/MAOYUANXIN/WHNNN.png"
+	}												
 	SpriteType = {
 		name = "GFX_super_dyblcl"
 		texturefile = "gfx/MAOYUANXIN/super_dybl.png"
+	}											
+	SpriteType = {
+		name = "GFX_PRC_LiJINJIN"
+		texturefile = "gfx/MAOYUANXIN/LJJ.png"
 	}										
 	SpriteType = {
 		name = "GFX_UKR_volodymyr_zelensky_CQGJX1"
@@ -366,11 +378,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PRC_mao_yuanxin_hog_2"
 		texturefile = "gfx/MAOYUANXIN/PRC_MAO_yuanxin_xiao.png"
-	}		
+	}				
+	spriteType = {
+		name = "GFX_idea_PRC_mao_yuanxin_hog_3"
+		texturefile = "gfx/MAOYUANXIN/PRC_MAO_yuanxin_xiao.png"
+	}	
 	spriteType = {
 		name = "GFX_idea_PRC_yang_heping_hog"
 		texturefile = "gfx/MAOYUANXIN/PRC_yang_heping_xiao.png"
 	}			
+	spriteType = {
+		name = "GFX_idea_PRC_ren_chonghao_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_ren_chonghao_xiao.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_PRC_qiu_hog"
+		texturefile = "gfx/MAOYUANXIN/PRC_qiu_xiao.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_PRC_ma_houzhi_hog_1"
+		texturefile = "gfx/MAOYUANXIN/PRC_ma_houzhi_xiao.png"
+	}				
 	spriteType = {
 		name = "GFX_idea_PRC_ma_houzhi_hog"
 		texturefile = "gfx/MAOYUANXIN/PRC_ma_houzhi_xiao.png"
@@ -406,7 +434,7 @@ spriteTypes = {
 	}	
 	spriteType = {
 		name = "GFX_Ideology_kasitekuoism"
-		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
+		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_kasitekuoism.png"
 		legacy_lazy_load = no
 	}	
 	spriteType = {
@@ -442,13 +470,22 @@ spriteTypes = {
 		name = "GFX_Ideology_handongfangyou"
 		texturefile = "gfx/MAOYUANXIN/Ideology_handongfangyou.png"
 		legacy_lazy_load = no
-	}				
+	}					
+	spriteType = {
+		name = "GFX_Ideology_xjp_thought"
+		texturefile = "gfx/MAOYUANXIN/Ideology_xjp_thought.png"
+		legacy_lazy_load = no
+	}			
 	spriteType = {
 		name = "GFX_PRC_fushengjihua_banner"
 		texturefile = "gfx/MAOYUANXIN/PRC_fushengjihua_banner.png"
 		legacy_lazy_load = no
 	}	
 
+	spriteType = {
+		name = "GFX_ideology_xjp_thought"
+		texturefile = "gfx/MAOYUANXIN/xjp_thought.png"
+	}	
 	spriteType = {
 		name = "GFX_ideology_market_socialism_1"
 		texturefile = "gfx/MAOYUANXIN/market_socialism.png"
@@ -4835,6 +4872,41 @@ SpriteType = {
     legacy_lazy_load = no
 }
 
+spriteType = {
+    name = "GFX_focus_PRC_widen_the_social_saftey_net1"
+    texturefile = "gfx/MAOYUANXIN/PRC_widen_the_social_saftey_net1.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_widen_the_social_saftey_net1_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_widen_the_social_saftey_net1.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_widen_the_social_saftey_net1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_widen_the_social_saftey_net1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
 spriteType = {
     name = "GFX_focus_PRC_revive_iron_rice_bowl_1"
     texturefile = "gfx/MAOYUANXIN/PRC_revive_iron_rice_bowl_1.png"

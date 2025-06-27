@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 100
 		}
 	allow_branch = {
-		has_country_flag = PRC_handongfang_hog
+		#has_country_flag = PRC_handongfang_hog
 	}
 		available = {
 			PRC_han_dongfang = {is_country_leader = yes}
@@ -6238,10 +6238,6 @@ has_country_flag = roc_lxmzd
 		}
 				scoped_play_song = "radio_hqj_dt_1"
 				add_to_variable = {
-					var = PRC_cpc_communist_drift_dynamic_var
-					value = 0.012
-				}		
-				add_to_variable = {
 					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = -0.001
 				}			
@@ -7241,10 +7237,6 @@ create_navy_leader = {
 				value = 0.045
 			}
 			add_to_variable = {
-				var = PRC_cpc_communist_drift_dynamic_var
-				value = 0.02
-			}
-			add_to_variable = {
 				var = PRC_cpc_line_change_production_efficiency_factor_dynamic_var
 				value = 0.0125
 			}		
@@ -7563,10 +7555,6 @@ create_navy_leader = {
 				add_to_variable = {
 					var = PRC_cpc_conscription_dynamic_var
 					value = 0.005
-				}		
-				add_to_variable = {
-					var = PRC_cpc_totalitarian_socialist_drift_dynamic_var
-					value = 0.01
 				}		
 				add_to_variable = {
 					var = PRC_cpc_business_value_factor_dynamic_var
@@ -14366,10 +14354,6 @@ remove_ideas = militia_looting
 					value = 0.07
 				}
 				add_to_variable = {
-					var = PRC_cpc_libertarian_socialist_drift_dynamic_var
-					value = 0.05
-				}
-				add_to_variable = {
 					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = 0.007
 				}		
@@ -14424,11 +14408,7 @@ remove_ideas = militia_looting
 			show_ideas_tooltip = PRC_ciu_zhiyuan_eco
 			custom_effect_tooltip = unlock_for_minister_tooltip
 			show_ideas_tooltip = PRC_li_minqi_for
-			hidden_effect = {
-				add_to_variable = {
-					var = PRC_cpc_libertarian_socialist_drift_dynamic_var
-					value = 0.03
-				}		
+			hidden_effect = {		
 				add_to_variable = {
 					var = PRC_cpc_political_power_factor_dynamic_var
 					value = 0.05
@@ -14504,10 +14484,6 @@ remove_ideas = militia_looting
 					var = PRC_cpc_political_power_cost_dynamic_var
 					value = 0.05
 				}		
-				add_to_variable = {
-					var = PRC_cpc_communist_drift_dynamic_var
-					value = -0.02
-				}
 				add_to_variable = {
 					var = PRC_cpc_stability_factor_dynamic_var
 					value = -0.05
@@ -14893,22 +14869,6 @@ remove_ideas = militia_looting
 				add_to_variable = {
 					var = PRC_cpc_production_speed_office_park_factor_dynamic_var
 					value = 0.065
-				}
-				add_to_variable = {
-					var = PRC_cpc_libertarian_socialist_drift_dynamic_var
-					value = 0.01
-				}
-				add_to_variable = {
-					var = PRC_cpc_social_liberal_dynamic_var
-					value = 0.01
-				}
-				add_to_variable = {
-					var = PRC_cpc_social_democrat_dynamic_var
-					value = 0.01
-				}
-				add_to_variable = {
-					var = PRC_cpc_authoritarian_democrat_drift_dynamic_var
-					value = 0.01
 				}
 				country_event = { id = china.297 days = 91 }
 				country_event = { id = china.342 days = 5 }
@@ -17570,6 +17530,10 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
+			OR = {
+			has_completed_focus = PRC_advanced_economic_planning_2
+			has_completed_focus = PRC_advanced_economic_planning_1
+			}
 			if = {
 				limit = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_6

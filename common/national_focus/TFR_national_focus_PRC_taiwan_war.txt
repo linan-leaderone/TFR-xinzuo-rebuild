@@ -423,6 +423,7 @@ focus_tree = {
 			set_global_flag = PRC_ongoing_taiwan_war
 			unlock_decision_category_tooltip = PRC_taiwan_war_cat			
 			hidden_effect = {
+				CHI = {complete_national_focus = CHI_island_in_one_fate}
 				every_state = { #защита от дебила
 					limit = {
 						is_owned_by = JAP
@@ -1407,7 +1408,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 				popularity = 0.04
 			}		
 			add_popularity = {
-				ideology = libertarian_socialist
+				ideology = fascist
 				popularity = 0.05
 			}	
 			add_popularity = {
@@ -1736,7 +1737,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 				popularity = 0.05
 			}	
 			add_popularity = {
-				ideology = nationalist
+				ideology = fascist
 				popularity = 0.04
 			}		
 			add_popularity = {

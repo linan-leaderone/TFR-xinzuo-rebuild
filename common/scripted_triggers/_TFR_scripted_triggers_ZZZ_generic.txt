@@ -1,0 +1,15 @@
+
+has_content_tag = {
+	#Has Full Content Available
+	OR = {
+		tag = SOV
+		tag = USA
+		USA_is_civil_war_faction = yes
+		tag = JAP
+		tag = PRC
+		tag = FRA
+		tag = GER
+		tag = FPR
+		tag = CHI
+	}
+}

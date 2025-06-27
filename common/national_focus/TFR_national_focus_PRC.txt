@@ -104,54 +104,11 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = PRC_economic_stability_policy
-		icon = GFX_focus_PRC_economic_stability_policy
-		x = -1
-		y = 2
-		cost = 5
-		relative_position_id = PRC_lockdown_wuhan
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 5
-		}
-		available = {
-		}
-		prerequisite = { focus = PRC_nationwide_lockdown }
-		prerequisite = { focus = PRC_implement_widespread_testing }
-		mutually_exclusive = {
-			focus = PRC_zero_covid_policy
-		}
-		completion_reward = {
-			add_days_mission_timeout = {
-				mission = PRC_control_the_coronavirus_mission
-				days = -60
-			}
-			set_temp_variable = { 
-				var = PRC_influence_new_var_temp
-				value = 0.05
-			}
-			PRC_add_influence_new = yes
-			set_temp_variable = { 
-				var = PRC_influence_lib_var_temp
-				value = 0.05
-			}
-			PRC_add_influence_lib = yes
-			add_timed_idea = {
-				idea = PRC_open_economy_idea
-				days = 100
-			}
-			set_temp_variable = { 
-				var = PRC_influence_new_var_temp
-				value = -0.05
-			}
-			PRC_add_influence_new = yes
-		}
-	}
+
 	focus = {
 		id = PRC_zero_covid_policy
 		icon = GFX_focus_PRC_zero_covid_policy
-		x = 1
+		x = 0
 		y = 2
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -163,9 +120,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = PRC_nationwide_lockdown }
 		prerequisite = { focus = PRC_implement_widespread_testing }
-		mutually_exclusive = {
-			focus = PRC_economic_stability_policy
-		}
 		completion_reward = {
 			add_political_power = 75
 			add_stability = 0.10
@@ -202,48 +156,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = PRC_adopt_the_swedish_model
-		icon = GFX_focus_PRC_adopt_the_swedish_model
-		x = -2
-		y = 3
-		cost = 5
-		relative_position_id = PRC_lockdown_wuhan
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-		}
-		prerequisite = {
-			focus = PRC_economic_stability_policy
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_days_mission_timeout = {
-				mission = PRC_control_the_coronavirus_mission
-				days = 14
-			}
-			if = {
-				limit = {
-					has_completed_focus = PRC_economic_stability_policy
-				}
-				
-				modify_timed_idea = {
-					idea = PRC_open_economy_idea
-					days = 60
-				}
-			}
-			set_temp_variable = { 
-				var = PRC_influence_lib_var_temp
-				value = 0.10
-			}
-			PRC_add_influence_lib = yes
-		}
-	}
-	focus = {
 		id = PRC_kickstart_vaccine_research
 		icon = GFX_focus_PRC_kickstart_the_vaccine_race
-		x = 0
+		x = -2
 		y = 3
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -254,7 +169,6 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_economic_stability_policy
 			focus = PRC_zero_covid_policy
 		}
 		completion_reward = {
@@ -281,7 +195,7 @@ focus_tree = {
 	focus = {
 		id = PRC_adopt_strict_lockdown_measures
 		icon = GFX_focus_PRC_enforce_stricter_lockdown_penalties
-		x = 2
+		x = 4
 		y = 3
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -313,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus_on_vaccine_development
 		icon = GFX_focus_PRC_focus_on_vaccine_development
-		x = -2
+		x = -3
 		y = 4
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -324,10 +238,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = PRC_kickstart_vaccine_research
 		}
-		prerequisite = { focus = PRC_adopt_the_swedish_model focus = PRC_kickstart_vaccine_research }
-		mutually_exclusive = {
-			focus = PRC_focus_on_mask_production
-		}
+		prerequisite = { focus = PRC_kickstart_vaccine_research }
 		completion_reward = {
 			add_days_mission_timeout = {
 				mission = PRC_vaccine_development_mission
@@ -343,7 +254,7 @@ focus_tree = {
 	focus = {
 		id = PRC_focus_on_mask_production
 		icon = GFX_focus_PRC_focus_on_mask_production
-		x = -4
+		x = 3
 		y = 4
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -354,10 +265,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_adopt_the_swedish_model
-		}
-		mutually_exclusive = {
-			focus = PRC_focus_on_vaccine_development
+			focus = PRC_adopt_strict_lockdown_measures
 		}
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -378,8 +286,8 @@ focus_tree = {
 	focus = {
 		id = PRC_food_safety_reforms
 		icon = GFX_focus_PRC_enact_food_saftey_reforms
-		x = 0
-		y = 4
+		x = 1
+		y = 3
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
@@ -389,13 +297,11 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_adopt_the_swedish_model
-			focus = PRC_adopt_strict_lockdown_measures
-			focus = PRC_kickstart_vaccine_research
+			focus = PRC_zero_covid_policy
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = nationalist
+				ideology = fascist
 				popularity = 0.025
 			}
 			add_ideas = PRC_food_safety_reforms_idea			
@@ -424,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = PRC_surveillance_state_contact_tracing
 		icon = GFX_focus_PRC_surveillance_state_contact_tracing
-		x = 4
+		x = 5
 		y = 4
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -436,9 +342,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_adopt_strict_lockdown_measures
-		}
-		mutually_exclusive = {
-			focus = PRC_outsource_contact_tracing
 		}
 		completion_reward = {
 			add_days_mission_timeout = {
@@ -459,42 +362,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRC_outsource_contact_tracing
-		icon = GFX_focus_PRC_outsource_contact_tracing
-		x = 2
-		y = 4
-		cost = 5
-		relative_position_id = PRC_lockdown_wuhan
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 3
-		}
-		available = {
-		}
-		prerequisite = { focus = PRC_adopt_strict_lockdown_measures focus = PRC_adopt_the_swedish_model }
-		mutually_exclusive = {
-			focus = PRC_surveillance_state_contact_tracing
-		}
-		completion_reward = {
-			add_days_mission_timeout = {
-				mission = PRC_control_the_coronavirus_mission
-				days = 25
-			}
-			add_offsite_building = { type = industrial_complex level = 1 }
-			add_political_power = 50
-			set_temp_variable = { 
-				var = PRC_influence_new_var_temp
-				value = 0.05
-			}
-			PRC_add_influence_new = yes
-			set_temp_variable = { 
-				var = PRC_influence_lib_var_temp
-				value = 0.05
-			}
-			PRC_add_influence_lib = yes
-		}
-	}
-	focus = {
 		id = PRC_fund_crowd_immunity_studies
 		icon = GFX_focus_PRC_fund_crowd_immunity_studies
 		x = -3
@@ -508,7 +375,6 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_focus_on_mask_production
 			focus = PRC_focus_on_vaccine_development
 		}
 		completion_reward = {
@@ -529,7 +395,7 @@ focus_tree = {
 		id = PRC_blame_the_americans
 		icon = GFX_focus_PRC_blame_the_us
 		x = -1
-		y = 5
+		y = 4
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
@@ -539,10 +405,7 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_food_safety_reforms
-		}
-		mutually_exclusive = {
-			focus = PRC_blame_local_officials
+			focus = PRC_kickstart_vaccine_research
 		}
 		completion_reward = {
 			add_war_support = 0.05
@@ -563,7 +426,7 @@ focus_tree = {
 		id = PRC_blame_local_officials
 		icon = GFX_focus_PRC_blame_local_officials
 		x = 1
-		y = 5
+		y = 4
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
@@ -574,9 +437,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_food_safety_reforms
-		}
-		mutually_exclusive = {
-			focus = PRC_blame_the_americans
 		}
 		completion_reward = {
 			add_stability = 0.05
@@ -595,8 +455,8 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_expand_the_social_safety_net
-		icon = GFX_focus_PRC_widen_the_social_saftey_net
-		x = 3
+		icon = GFX_focus_PRC_widen_the_social_saftey_net1
+		x = 4
 		y = 5
 		cost = 5
 		relative_position_id = PRC_lockdown_wuhan
@@ -608,25 +468,19 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_surveillance_state_contact_tracing
-			focus = PRC_outsource_contact_tracing
+			focus = PRC_focus_on_mask_production
 		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = medium_welfare
-				add_idea = high_welfare
+				add_idea = low_welfare
 			}
 			set_temp_variable = { 
 				var = PRC_influence_new_var_temp
 				value = 0.06
 			}
 			PRC_add_influence_new = yes
-			add_stability = 0.03
-			hidden_effect = {
-				country_event = {
-					id = china.13
-					days = 150
-				}	
-			}
+			add_stability = -0.03
 		}
 	}
 	focus = {
@@ -710,7 +564,7 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.05
 			add_popularity = {
-				ideology = nationalist
+				ideology = fascist
 				popularity = 0.035
 			}
 			#set_power_balance = {
@@ -726,7 +580,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_crack_down_on_left_radicals
 		x = -3
 		y = 1
-		cost = 8
+		cost = 4
 		relative_position_id = PRC_control_the_oil_crisis
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -736,9 +590,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_control_the_oil_crisis
-		}
-		mutually_exclusive = {
-			focus = PRC_crack_down_on_reformist_protesters
 		}
 		completion_reward = {
 			add_political_power = 35
@@ -759,7 +610,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_crack_down_on_reformist_protesters
 		x = -5
 		y = 1
-		cost = 8
+		cost = 4
 		relative_position_id = PRC_control_the_oil_crisis
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -769,9 +620,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_control_the_oil_crisis
-		}
-		mutually_exclusive = {
-			focus = PRC_crack_down_on_left_radicals
 		}
 		completion_reward = {
 			add_stability = 0.025
@@ -792,7 +640,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_empower_the_50_cent_army
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4
 		relative_position_id = PRC_crack_down_on_reformist_protesters
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -802,12 +650,14 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_crack_down_on_reformist_protesters
+		}
+		prerequisite = {
 			focus = PRC_crack_down_on_left_radicals
 		}
 		completion_reward = {
 			add_stability = 0.025
 			add_popularity = {
-				ideology = nationalist
+				ideology = fascist
 				popularity = 0.035
 			}
 			set_temp_variable = {
@@ -822,7 +672,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_concessions_to_corporate_demands
 		x = 0
 		y = 2
-		cost = 5
+		cost = 4
 		relative_position_id = PRC_crack_down_on_left_radicals
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -859,7 +709,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_concessions_to_populist_demands
 		x = 0
 		y = 2
-		cost = 5
+		cost = 4
 		relative_position_id = PRC_crack_down_on_reformist_protesters
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -874,7 +724,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support  = 0.035
 			add_popularity = {
-				ideology = nationalist
+				ideology = fascist
 				popularity = 0.035
 			}
 			set_temp_variable = { 
@@ -889,7 +739,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_stabilize_the_political_sphere
 		x = 0
 		y = 2
-		cost = 5
+		cost = 4
 		relative_position_id = PRC_empower_the_50_cent_army
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -899,6 +749,8 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_concessions_to_corporate_demands
+		}
+		prerequisite = {
 			focus = PRC_concessions_to_populist_demands
 		}
 		prerequisite = {
@@ -1852,7 +1704,7 @@ has_completed_focus = PRC_south_asian_brothers
 				}
 			}
 	    	add_popularity = {
-	    	   ideology = nationalist
+	    	   ideology = fascist
 	    	   popularity = 0.15
 	    	}
 			set_temp_variable = {

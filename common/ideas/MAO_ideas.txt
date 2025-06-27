@@ -2841,7 +2841,12 @@ has_country_leader = {
 		PRC_li_jinjin_hog = {
 			picture = PRC_li_jinjin_hog
 			name = PRC_li_jinjin
-			allowed = { original_tag = PRC}
+			allowed = {
+			OR = {
+ original_tag = PRC
+ original_tag = CHF
+}
+}
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
@@ -2944,7 +2949,9 @@ has_country_leader = {
 		PRC_mao_yuanxin_hog_1 = {
 			picture = PRC_mao_yuanxin_hog_1
 			name = PRC_mao_yuanxin_hog
-			allowed = { original_tag = PRC}
+			allowed = {
+ original_tag = PRC
+}
 
 			visible = {
 				has_country_flag = PRC_new_left_win
@@ -2961,7 +2968,28 @@ has_country_leader = {
 			}
 		}
 }
-
+	
+	economic_minister = {
+		PRC_ren_chonghao_hog = {
+			picture = PRC_ren_chonghao_hog
+			name = PRC_ren_chonghao_hog
+			allowed = {
+				original_tag = CHF
+			}
+			
+			visible = {
+				original_tag = CHF
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			traits = {
+				 
+			}
+		}
+}
 
 
 
@@ -2973,11 +3001,17 @@ has_country_leader = {
 			picture = PRC_yang_heping_hog
 			name = PRC_yang_heping_hog
 			allowed = {
-				original_tag = PRC
-			}
+			OR = {
+ original_tag = PRC
+ original_tag = CHF
+}
+}
 			
 			visible = {
+			OR = {
 				has_country_flag = PRC_new_left_win
+ 				original_tag = CHF
+}
 			}
 
 			allowed_to_remove = {
@@ -2995,6 +3029,21 @@ has_country_leader = {
 
 	
 	interior_minister = {
+		PRC_qiu_hog = {
+			picture = PRC_qiu_hog
+			name = PRC_qiu_hog
+			allowed = {
+				original_tag = CHF
+			}
+			
+			visible = {
+				original_tag = CHF
+			}
+			
+			traits = {
+				 
+			}
+		}
 		PRC_ma_houzhi_hog = {
 			picture = PRC_ma_houzhi_hog
 			name = PRC_ma_houzhi_hog
@@ -3038,6 +3087,25 @@ has_country_leader = {
 
 	
 	intelligence_minister = {
+		PRC_ma_houzhi_hog_1 = {
+			picture = PRC_ma_houzhi_hog_1
+			name = PRC_ma_houzhi_hog
+			allowed = {
+				original_tag = CHF
+			}
+			
+			visible = {
+				original_tag = CHF
+			}
+
+			#allowed_to_remove = {
+			#	always = no
+			#}
+			
+			traits = {
+				
+			}
+		}
 		PRC_ai_intelligence1_core = {
 			picture = PRC_ai_core
 			allowed = { original_tag = PRC }
@@ -3063,7 +3131,24 @@ has_country_leader = {
 			}
 		}
 }
-	theorist_minister = {	
+	theorist_minister = {		
+		PRC_mao_yuanxin_hog_3 = {
+			picture = PRC_mao_yuanxin_hog_3
+			name = PRC_mao_yuanxin_hog
+			allowed = { original_tag = CHF}
+
+			visible = {
+				original_tag = CHF
+			}
+
+			allowed_to_remove = {
+				always = no
+				 
+			}
+			traits = { 
+				 
+			}
+		}		
 		PRC_ai_security1_core = {
 			picture = PRC_ai_core
 			allowed = { original_tag = PRC }

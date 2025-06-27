@@ -18,6 +18,12 @@
 				has_country_flag = dyblcl_flag
 			}
 			localization_key = "dyblcl"
+		}												
+		text = { 
+			trigger = {
+				has_country_flag = tlibwar3_flag
+			}
+			localization_key = "tlibwar3"
 		}											
 		text = { 
 			trigger = {
@@ -54,6 +60,12 @@
 				has_country_flag = rcwar_flag
 			}
 			localization_key = "rcwar"
+		}	
+		text = { 
+			trigger = {
+				has_country_flag = rcwar2_flag
+			}
+			localization_key = "rcwar2"
 		}
 		
 		text = { 
@@ -470,6 +482,12 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = tlibwar3_flag
+			}
+			localization_key = "tlibwar3_text"
+		}
+		text = { 
+			trigger = {
 				has_country_flag = tlibwar1_flag
 			}
 			localization_key = "tlibwar1_text"
@@ -503,6 +521,12 @@
 				has_country_flag = rcwar_flag
 			}
 			localization_key = "rcwar_text"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = rcwar2_flag
+			}
+			localization_key = "rcwar2_text"
 		}
 		
 		text = { 
@@ -913,6 +937,13 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = tlibwar3_flag
+			}
+			localization_key = "tlibwar3_button"
+		}
+
+		text = { 
+			trigger = {
 				has_country_flag = tlibwar1_flag
 			}
 			localization_key = "tlibwar1_button"
@@ -946,6 +977,12 @@
 			localization_key = "acwar_button"
 		}
 		
+		text = { 
+			trigger = {
+				has_country_flag = rcwar2_flag
+			}
+			localization_key = "rcwar2_button"
+		}
 		text = { 
 			trigger = {
 				has_country_flag = rcwar_flag

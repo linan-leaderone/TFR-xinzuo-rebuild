@@ -4281,19 +4281,7 @@ PRC_socialist_democratization_cat = {
 				add_to_variable = {
 					var = PRC_cpc_personal_expense_factor_dynamic_var
 					value = 0.03
-				}	
-				add_to_variable = {
-					var = PRC_cpc_social_democrat_drift_dynamic_var
-					value = 0.02
-				}		
-				add_to_variable = {
-					var = PRC_cpc_social_liberal_drift_dynamic_var
-					value = 0.01
-				}	
-				add_to_variable = {
-					var = PRC_cpc_authoritarian_democrat_drift_dynamic_var
-					value = 0.01
-				}			
+				}				
 				add_to_variable = {
 					var = PRC_cpc_resistance_growth_dynamic_var
 					value = -0.07
@@ -4346,11 +4334,7 @@ PRC_socialist_democratization_cat = {
 				add_to_variable = {
 					var = PRC_cpc_political_power_gain_dynamic_var
 					value = 0.05
-				}			
-				add_to_variable = {
-					var = PRC_cpc_libertarian_socialist_drift_dynamic_var
-					value = 0.025
-				}
+				}	
 			}
 		}
 		icon = GFX_PRC_new_left_decision
@@ -4527,10 +4511,6 @@ PRC_socialist_democratization_cat = {
 				var = PRC_cpc_intelligence_agency_defense_dynamic_var
 				value = -0.08
 			}	
-			add_to_variable = {
-				var = PRC_cpc_libertarian_socialist_drift_dynamic_var
-				value = 0.015
-			}
 		}
 		icon = GFX_PRC_new_left_decision
 		cost = 100

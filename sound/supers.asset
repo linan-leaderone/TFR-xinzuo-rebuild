@@ -60,6 +60,12 @@ sound = {
 	always_load = yes
 }
 sound = {
+	name = "tlibwar3"
+	file = "menu/tlibwar3.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
 	name = "tlibwar1"
 	file = "menu/tlibwar1.wav"
 	volume = 1
@@ -98,6 +104,12 @@ sound = {
 sound = {
 	name = "ecwar2"
 	file = "menu/ecwar2.wav"
+	volume = 1
+	always_load = yes
+}
+sound = {
+	name = "rcwar2"
+	file = "menu/rcwar2.wav"
 	volume = 1
 	always_load = yes
 }

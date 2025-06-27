@@ -96,6 +96,14 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "tlibwar3"
+	sounds = {
+		sound = "tlibwar3"
+	}
+	volume = 1
+}
+soundeffect =
+{
 	name = "XCQA"
 	sounds = {
 		sound = "XCQA"
@@ -209,6 +217,14 @@ soundeffect =
 	volume = 1
 }
 
+soundeffect =
+{
+	name = "rcwar2"
+	sounds = {
+		sound = "rcwar2"
+	}
+	volume = 1
+}
 soundeffect =
 {
 	name = "rcwar"

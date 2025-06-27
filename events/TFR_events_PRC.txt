@@ -414,7 +414,7 @@ country_event = {
 			character = PRC_bo_xilai
 			promote_leader = yes
 			country_leader = {
-				ideology = radical_nationalism
+				ideology = market_socialism_1
 				expire = "1.1.1.1"
 				traits = {
 				}

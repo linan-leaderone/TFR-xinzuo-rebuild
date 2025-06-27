@@ -38,46 +38,6 @@ on_actions = {
 }
 
 
-			if = { 
-				limit = {
-						BUK = {has_war_with = IRQ}
- 						NOT = {BUK = {has_country_flag = IRQQQDDD} } 
-					FROM.FROM = { 
-						OR = {
-							state = 1178
-						} 
-					}
-						FROM = { tag = IRQ}
-
-						ROOT = {
-					OR = {
- tag = BUK  
-tag = FIA
-tag = ABK
-}
-}
-}
-BUK = {set_country_flag = IRQQQDDD}
-					KUR = {
-						delete_unit = {}
-					}
-					KUW = {
-						delete_unit = {}
-					}
-					FIA = {
-						delete_unit = {}
-					}
-					IRQ = {
-						delete_unit = {}
-					}
-					ABK = {
-add_ideas = 	BRM_civil_war_idea1
-					}
-
-
-
-}
-
 			if = { #GAW_militia_jap2
 				limit = {
 
