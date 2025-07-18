@@ -3222,6 +3222,266 @@ has_war = no
 			
 		}
 	}
+	PRC_destroy_taiwan_4 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_final_offensive_2
+		}
+		available = {
+			has_completed_focus = PRC_final_offensive_2
+			NOT = {has_country_flag = zhengzaidaji}
+
+		}
+		cost = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = zhengzaidaji
+		}
+		remove_effect = {	
+launch_nuke = {
+    province = 13962
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}	
+launch_nuke = {
+    province = 9955
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}	
+launch_nuke = {
+    province = 4096
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}	
+launch_nuke = {
+    province = 1175
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}	
+launch_nuke = {
+    province = 11914
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}	
+launch_nuke = {
+    province = 14723
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}	
+launch_nuke = {
+    province = 12027
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}
+			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt	
+			clr_country_flag = zhengzaidaji
+		add_days_mission_timeout  = {
+    mission = PRC_taiwan_war_countdown_1
+    days = -14
+    }
+			hidden_effect = {
+goto_state = 524
+				 				
+			}	
+						
+		}
+	}
+	PRC_destroy_taiwan_3 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_final_offensive_2
+		}
+		available = {
+			has_completed_focus = PRC_final_offensive_2
+			NOT = {has_country_flag = zhengzaidaji}
+
+		}
+		cost = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = zhengzaidaji
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt		
+launch_nuke = {
+    province = 7214
+    state = 1149
+    controller = CHI
+    use_nuke = yes
+}			
+launch_nuke = {
+    province = 13967
+    state = 1149
+    controller = CHI
+    use_nuke = yes
+}			
+launch_nuke = {
+    province = 13968
+    state = 1149
+    controller = CHI
+    use_nuke = yes
+}			
+launch_nuke = {
+    province = 11959
+    state = 1149
+    controller = CHI
+    use_nuke = yes
+}	
+			clr_country_flag = zhengzaidaji
+		add_days_mission_timeout  = {
+    mission = PRC_taiwan_war_countdown_1
+    days = -14
+    }
+			hidden_effect = {
+goto_state = 1149
+				 				
+			}	
+						
+		}
+	}
+	PRC_destroy_taiwan_2 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_final_offensive_2
+		}
+		available = {
+			has_completed_focus = PRC_final_offensive_2
+			NOT = {has_country_flag = zhengzaidaji}
+
+		}
+		cost = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = zhengzaidaji
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt	
+			clr_country_flag = zhengzaidaji		
+launch_nuke = {
+    province = 12068
+    state = 1150
+    controller = CHI
+    use_nuke = yes
+}				
+launch_nuke = {
+    province = 13965
+    state = 1150
+    controller = CHI
+    use_nuke = yes
+}				
+launch_nuke = {
+    province = 13966
+    state = 1150
+    controller = CHI
+    use_nuke = yes
+}				
+launch_nuke = {
+    province = 1091
+    state = 1150
+    controller = CHI
+    use_nuke = yes
+}		
+		add_days_mission_timeout  = {
+    mission = PRC_taiwan_war_countdown_1
+    days = -14
+    }
+			hidden_effect = {
+goto_state = 1150
+				 				
+			}	
+						
+		}
+	}
+	PRC_destroy_taiwan_1 = {
+		icon = GFX_PRC_rocket_strike
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_final_offensive_2
+		}
+		available = {
+			has_completed_focus = PRC_final_offensive_2
+			NOT = {has_country_flag = zhengzaidaji}
+
+		}
+		cost = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = zhengzaidaji
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt	
+			clr_country_flag = zhengzaidaji
+		add_days_mission_timeout  = {
+    mission = PRC_taiwan_war_countdown_1
+    days = -14
+    }				
+launch_nuke = {
+    province = 13964
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}					
+launch_nuke = {
+    province = 13961
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}					
+launch_nuke = {
+    province = 13963
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}					
+launch_nuke = {
+    province = 7186
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}					
+launch_nuke = {
+    province = 14935
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}					
+launch_nuke = {
+    province = 14936
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}					
+launch_nuke = {
+    province = 14937
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}	
+			hidden_effect = {
+goto_state = 1148
+				 				
+			}	
+						
+		}
+	}
 	PRC_destroy_taiwan_infr = {
 		icon = GFX_PRC_rocket_strike
 		allowed = {

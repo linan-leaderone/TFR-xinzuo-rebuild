@@ -466,6 +466,18 @@ defined_text = {
 	name = GetSubIdeologyLocLibSoc
 	text = {
 		trigger = {
+			has_country_leader_ideology = progressivism_3
+		}
+		localization_key = progressivism_3
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jidu_maoism
+		}
+		localization_key = jidu_maoism
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Geometridaeism2
 		}
 		localization_key = Geometridaeism2
@@ -861,6 +873,18 @@ defined_text = {
 	
 defined_text = {
 	name = GetSubIdeologyLocSocLib
+	text = {
+		trigger = {
+			has_country_leader_ideology = taiwanese_progressivism
+		}
+		localization_key = taiwanese_progressivism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = progressivism_1
+		}
+		localization_key = progressivism_1
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = Geometridaeism
@@ -2429,6 +2453,12 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocNatSoc
+	text = {
+		trigger = {
+			has_country_leader_ideology = progressivism_2
+		}
+		localization_key = progressivism_2
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = Esoteric_Maoism

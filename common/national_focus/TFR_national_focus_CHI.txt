@@ -9,23 +9,288 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_island_in_one_fate
-		icon = GFX_focus_CHI_island_in_one_fate
+		id = CHI_TWW_FOCUS_0
+		icon = GFX_focus_CHI_TWW_FOCUS_0
 		x = 17
 		y = 0
-		cost = 3.6
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		}
+
+		completion_reward = {
+			hidden_effect = {
+			}
+	
+			
+		}
+	}
+	
+	focus = {
+		id = CHI_TWW_FOCUS_1
+		icon = GFX_focus_CHI_TWW_FOCUS_1
+		x = -3
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_0
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_4
+		icon = GFX_focus_CHI_TWW_FOCUS_4
+		x = 3
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_0
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_6
+		icon = GFX_focus_CHI_TWW_FOCUS_6
+		x = 1
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_10
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_4
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_10
+		icon = GFX_focus_CHI_TWW_FOCUS_10
+		x = 0
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_0
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_9
+		icon = GFX_focus_CHI_TWW_FOCUS_9
+		x = 0
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_6
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_5
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_7
+		icon = GFX_focus_CHI_TWW_FOCUS_7
+		x = 3
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_4
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_8
+		icon = GFX_focus_CHI_TWW_FOCUS_8
+		x = 5
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_4
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	
+	focus = {
+		id = CHI_TWW_FOCUS_2
+		icon = GFX_focus_CHI_TWW_FOCUS_2
+		x = -5
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_3
+		icon = GFX_focus_CHI_TWW_FOCUS_3
+		x = -3
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_5
+		icon = GFX_focus_CHI_TWW_FOCUS_5
+		x = -1
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_1
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_10
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = CHI_island_in_one_fate
+		icon = GFX_focus_CHI_island_in_one_fate
+		x = 5
+		y = 0
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
 		}
 		allow_branch = {
-
+		#has_country_flag = TWW_ongoing_taiwan_war
 		}
 		available = {
-			always = no
 		}
+		select_effect = {
+			hidden_effect = {
+				country_event = { id = PRC_MAO2.61 }
+				country_event = { id = PRC_MAO2.62 days = 1 }
+				country_event = { id = PRC_MAO2.63 days = 2 }
+				country_event = { id = PRC_MAO2.64 days = 3 }
+				country_event = { id = PRC_MAO2.65 days = 4 }
+				country_event = { id = PRC_MAO2.66 days = 5 }
+				country_event = { id = PRC_MAO2.67 days = 6 }
+
+			}
+			}
 		completion_reward = {
 			hidden_effect = {
+				country_event = { id = PRC_MAO2.68 }
 				country_event = { id = taiwan.35 days = 14 }
 			}
 			custom_effect_tooltip = CHI_taiwan_war_begun_tooltip
@@ -78,7 +343,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_solidify_civil_defence
 		x = -5
 		y = 1
-		cost = 3.6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = CHI_island_in_one_fate
 		ai_will_do = {
@@ -127,7 +392,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_guerilla_strategy
 		x = -2
 		y = 1
-		cost = 3.6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = CHI_island_in_one_fate
 		ai_will_do = {
@@ -211,7 +476,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_disrupt_transportation
 		x = 2
 		y = 1
-		cost = 3.6
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_solidify_civil_defence
 		ai_will_do = {
@@ -246,7 +511,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_hold_the_defence_line
 		x = 2
 		y = 1
-		cost = 3.6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = CHI_island_in_one_fate
 		ai_will_do = {
@@ -311,7 +576,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_appeal_to_the_free_world
 		x = 5
 		y = 1
-		cost = 3.6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = CHI_island_in_one_fate
 		ai_will_do = {
@@ -352,7 +617,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_military_civilian_duty
 		x = 1
 		y = 1
-		cost = 3.6
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_hold_the_defence_line
 		ai_will_do = {
@@ -392,7 +657,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_grant_emergency_powers
 		x = 0
 		y = 2
-		cost = 3.6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = CHI_island_in_one_fate
 		ai_will_do = {
@@ -409,18 +674,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			set_temp_variable = {
-				coalition_partner_var_temp = token:conservative
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				coalition_partner_var_temp = token:social_liberal
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				coalition_partner_var_temp = token:market_liberal
-			}
-			add_to_coalition = yes
 			custom_effect_tooltip = tooltip_white_line
 			add_war_support = 0.15
 			add_stability = 0.1
@@ -433,7 +686,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_engineering_maintenance_brigade
 		x = -2
 		y = 1
-		cost = 3.6
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_grant_emergency_powers
 		ai_will_do = {
@@ -484,7 +737,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_withdraw_foreign_exchange
 		x = 0
 		y = 1
-		cost = 3.6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = CHI_grant_emergency_powers
 		ai_will_do = {
@@ -555,7 +808,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 3.6
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_grant_emergency_powers
 		ai_will_do = {
@@ -602,7 +855,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_wolf_pack_tactics
 		x = -2
 		y = 1
-		cost = 3.6
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_engineering_maintenance_brigade
 		ai_will_do = {
@@ -614,9 +867,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_engineering_maintenance_brigade
 			focus = CHI_unite_the_island
-		}
-		mutually_exclusive = {
-			focus = CHI_phantom_legions
 		}
 		available = {
 			hidden_trigger = {
@@ -656,7 +906,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_phantom_legions
 		x = 2
 		y = 1
-		cost = 3.6
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_unite_the_island
 		ai_will_do = {
@@ -668,9 +918,6 @@ focus_tree = {
 		prerequisite = {
 			focus = CHI_unite_the_island
 			focus = CHI_engineering_maintenance_brigade
-		}
-		mutually_exclusive = {
-			focus = CHI_wolf_pack_tactics
 		}
 		available = {
 			hidden_trigger = {
@@ -722,6 +969,8 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_wolf_pack_tactics
+		}
+		prerequisite = {
 			focus = CHI_phantom_legions
 		}
 		available = {
@@ -775,7 +1024,7 @@ focus_tree = {
 	focus = {
 		id = CHI_pointy_bayonets
 		icon = GFX_focus_CHI_pointy_bayonets
-		x = -2
+		x = -1
 		y = 1
 		cost = 3.6
 		available_if_capitulated = yes
@@ -796,8 +1045,8 @@ focus_tree = {
 	focus = {
 		id = CHI_long_way_home
 		icon = GFX_focus_CHI_long_way_home
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		cost = 3.6
 		available_if_capitulated = yes
 		relative_position_id = CHI_our_final_fight
@@ -805,7 +1054,10 @@ focus_tree = {
 			factor = 100
 		}
 		prerequisite = {
-			focus = CHI_our_final_fight
+			focus = CHI_pointy_bayonets
+		}
+		prerequisite = {
+			focus = CHI_standing_as_one
 		}
 		available = {
 		}
@@ -817,7 +1069,7 @@ focus_tree = {
 	focus = {
 		id = CHI_standing_as_one
 		icon = GFX_focus_CHI_standing_as_one
-		x = 0
+		x = 1
 		y = 1
 		cost = 3.6
 		available_if_capitulated = yes

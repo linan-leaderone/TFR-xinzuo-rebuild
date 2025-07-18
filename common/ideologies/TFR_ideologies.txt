@@ -137,8 +137,23 @@ ideologies = {
 
 	libertarian_socialist = {
 		types = {
+			progressivism_3 = {
+				can_be_randomly_selected = no
+				color = {
+					245
+					169
+					184
+				}
+			}
 			Geometridaeism2 = {
 				can_be_randomly_selected = no
+			}
+			jidu_maoism = {
+				color = {
+					255
+					0
+					0
+				}
 			}
 			anarchist_maoism = {
 				color = {
@@ -350,6 +365,22 @@ ideologies = {
 
 	social_liberal = {
 		types = {
+			taiwanese_progressivism = {
+				can_be_randomly_selected = no
+				color = {
+					78
+					238
+					148
+				}
+			}
+			progressivism_1 = {
+				can_be_randomly_selected = no
+				color = {
+					91
+					206
+					250
+				}
+			}
 			centrist = {
 				can_be_randomly_selected = no
 				color = {
@@ -1025,7 +1056,16 @@ ideologies = {
 
 	national_socialist = {
 		types = {
+			progressivism_2 = {
+				can_be_randomly_selected = no
+				color = {
+					255
+					255
+					255
+				}
+			}
 			Esoteric_Maoism= {
+				can_be_randomly_selected = no
 				color = {
 					85 26 139
 				}
@@ -1126,6 +1166,9 @@ ideologies = {
 				}
 			}
 			falun_dafa = {
+				color = {
+					85 26 139
+				}
 				can_be_randomly_selected = no
 			}
 			obliteration_of_the_self = {

@@ -26,7 +26,7 @@ focus_tree = {
 			factor = 100
 		}
 	allow_branch = {
-		#has_country_flag = PRC_handongfang_hog
+		has_country_flag = PRC_handongfang_hog
 	}
 		available = {
 			PRC_han_dongfang = {is_country_leader = yes}
@@ -15377,6 +15377,10 @@ remove_ideas = militia_looting
 			country_event = {
 				id = PRC_MAO1.11
 			}
+			country_event = {
+				id = PRC_MAO2.69
+				days = 14
+			}
 		}
 	}		
 	focus = {
@@ -15433,7 +15437,7 @@ remove_ideas = militia_looting
 			}		
 			country_event = {
 				id = PRC_MAO1.12
-			}
+			}	
 		}
 	}
 	focus = {

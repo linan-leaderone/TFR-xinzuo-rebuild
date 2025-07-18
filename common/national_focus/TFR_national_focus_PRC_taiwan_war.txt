@@ -419,7 +419,10 @@ focus_tree = {
 				threat = 10
 				name = PRC_invasion_of_taiwan_threat
 			}		
-			#set_country_flag = PRC_ongoing_taiwan_war
+			CHI = {
+				set_country_flag = TWW_ongoing_taiwan_war
+			mark_focus_tree_layout_dirty = yes
+			}
 			set_global_flag = PRC_ongoing_taiwan_war
 			unlock_decision_category_tooltip = PRC_taiwan_war_cat			
 			hidden_effect = {
@@ -909,6 +912,92 @@ focus_tree = {
 						}
 					}
 				}					
+			}						
+		}
+	}
+	focus = {
+	    id = PRC_final_offensive_1
+	    icon = GFX_focus_PRC_the_final_offensive_1
+		prerequisite = {
+			focus = PRC_final_offensive
+		}
+		prerequisite = {
+			focus = PRC_no_hurry
+		}
+		relative_position_id = PRC_the_final_opportunity
+	    x = 0
+	    y = 11
+		
+	    cost = 4
+		
+		available = {
+			has_country_flag = PRC_fast_finalization_flag
+		}
+		ai_will_do = {
+	    	factor = 10
+	    }
+	    completion_reward = {	
+			custom_effect_tooltip = PRC_sssssss11111_tt	
+				CHI = {	country_event = {
+					id = PRC_MAO2.59
+				}}
+launch_nuke = {
+    province = 4096
+    state = 524
+    controller = CHI
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 13965
+    state = 1150
+    controller = CHI
+    use_nuke = yes
+}		
+launch_nuke = {
+    province = 13968
+    state = 1149
+    controller = CHI
+    use_nuke = yes
+}
+launch_nuke = {
+    province = 7186
+    state = 1148
+    controller = CHI
+    use_nuke = yes
+}
+		add_days_mission_timeout  = {
+    mission = PRC_taiwan_war_countdown_1
+    days = -14
+    }
+			hidden_effect = {
+goto_state = 1148
+				 				
+			}						
+		}
+	}
+	focus = {
+	    id = PRC_final_offensive_2
+	    icon = GFX_focus_PRC_the_final_offensive_2
+		prerequisite = {
+			focus = PRC_final_offensive_1
+		}
+		relative_position_id = PRC_the_final_opportunity
+	    x = 0
+	    y = 12
+		
+	    cost = 4
+		
+		ai_will_do = {
+	    	factor = 10
+	    }
+	    completion_reward = {	
+			 
+			unlock_decision_tooltip = PRC_destroy_taiwan_1	
+			unlock_decision_tooltip = PRC_destroy_taiwan_2	
+			unlock_decision_tooltip = PRC_destroy_taiwan_3	
+			unlock_decision_tooltip = PRC_destroy_taiwan_4		
+			hidden_effect = {
+				 				
 			}						
 		}
 	}

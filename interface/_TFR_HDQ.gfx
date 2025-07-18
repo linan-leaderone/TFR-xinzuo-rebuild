@@ -16,6 +16,14 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	SpriteType = {
+		name = "GFX_country_selection_entry_3"
+		texturefile = "gfx/MAOYUANXIN/country_selection_entry_3.png"
+	}
+	SpriteType = {
+		name = "GFX_country_selection_entry_2"
+		texturefile = "gfx/MAOYUANXIN/country_selection_entry_2.png"
+	}
+	SpriteType = {
 		name = "GFX_idea_loji_of_china"
 		texturefile = "gfx/MAOYUANXIN/long_march_buff_love.png"
 	}

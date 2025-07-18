@@ -1,4 +1,252 @@
 characters={
+		xu_yongming_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/XYM.png"
+				}
+			}
+			country_leader={
+				desc = CHI_xu_yongming_desc
+				traits={   }
+				ideology = left_populism
+				expire = "1.1.1.1"
+			}
+		}
+		chen_xinxing_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/CXX.png"
+				}
+			}
+			country_leader={
+				desc = CHI_chen_xinxing_desc
+				traits={   }
+				ideology = maoism
+				expire = "1.1.1.1"
+			}
+		}
+		zheng_cunqi_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/ZCQ.png"
+				}
+			}
+			country_leader={
+				desc = CHI_zheng_cunqi_desc
+				traits={   }
+				ideology = reformist_socialism
+				expire = "1.1.1.1"
+			}
+		}
+		TWWGSQ = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/GSQ.png"
+				}
+			}
+			country_leader={
+				desc = CHI_TWWGSQ_desc
+				traits={   }
+				ideology = trotskyism
+				expire = "1.1.1.1"
+			}
+		}
+NIS_ma_tingli_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/MTL.png"
+			}
+		}
+		country_leader={
+			desc = PRC_ma_tingli_DESC
+			ideology= market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+XIE_jinima_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/JNM.png"
+			}
+		}
+		country_leader={
+			desc = PRC_jinima_DESC
+			ideology= absolute_monarchist
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+XSM_jin_xing_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/JX.png"
+			}
+		}
+		country_leader={
+			desc = PRC_jin_xing_DESC
+			ideology= progressivism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+XSM_yang_minghao1_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/YMH5.png"
+			}
+		}
+		country_leader={
+			desc = PRC_yang_minghao2_DESC
+			ideology= progressivism_3
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+XSM_yang_minghao_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/YMH4.png"
+			}
+		}
+		country_leader={
+			desc = PRC_yang_minghao1_DESC
+			ideology= progressivism_1
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+HNJ_wang_jingyu_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/WJY.png"
+			}
+		}
+		country_leader={
+			desc = PRC_wang_jingyu_DESC
+			ideology=marxism_lenin_maoism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+GXC_lan_tianli_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/LTL.png"
+			}
+		}
+		country_leader={
+			desc = PRC_lan_tianli_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+YUN_wang_ning_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/WN.png"
+			}
+		}
+		country_leader={
+			desc = PRC_wang_ning_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+PST_Shen_Yiqin_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/SYQ.png"
+			}
+		}
+		country_leader={
+			desc = PRC_Shen_Yiqin_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+A77_he_jiankui_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/HJK.png"
+			}
+		}
+		country_leader={
+			desc = PRC_he_jiankui_DESC
+			ideology=mafia_state
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+A75_wei_xiaohui_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/WXH.png"
+			}
+		}
+		country_leader={
+			desc = PRC_wei_xiaohui_DESC
+			ideology=military_junta
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+SHX_tang_dengjie_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/TDJ.png"
+			}
+		}
+		country_leader={
+			desc = PRC_tang_dengjie_DESC
+			ideology=market_socialism_2
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+MSC_zhang_guangtian_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/ZGT1.png"
+			}
+		}
+		country_leader={
+			desc = PRC_zhang_guangtian_DESC
+			ideology=jidu_maoism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+UYY_wu_junbao_char ={
+		portraits={
+			civilian={
+				large="gfx/MAOYUANXIN/WJB.png"
+			}
+		}
+		country_leader={
+			desc = PRC_wu_junbao_DESC
+			ideology=confucian_hyperconservativism
+			traits={  }
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 NCM_he_anquan_char ={
 		portraits={
 			civilian={

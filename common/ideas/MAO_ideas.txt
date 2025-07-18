@@ -2792,7 +2792,24 @@ army_defence_factor = 1
 
 }
 	head_minister = {
-	
+		
+		CHI_su_zhenchang_hog = {
+			picture = CHI_su_zhenchang_hog
+			name = su_zhenchang_char
+			allowed = { original_tag = CHI}
+
+			visible = {
+				original_tag = CHI
+			}
+
+			allowed_to_remove = {
+				head_minister_trigger = yes
+				 
+			}
+			traits = { 
+				 
+			}
+		}	
 		PRC_li_qiang_hog = {
 			picture = Li_Qiang
 			name = PRC_li_qiang_hog
@@ -2969,7 +2986,24 @@ has_country_leader = {
 		}
 }
 	
-	economic_minister = {
+	economic_minister = {		
+		CHI_chen_qimai_hog = {
+			picture = CHI_chen_qimai_hog
+			name = chen_qimai_char
+			allowed = { original_tag = CHI}
+
+			visible = {
+				original_tag = CHI
+			}
+
+			allowed_to_remove = {
+				always = no
+				 
+			}
+			traits = { 
+				 
+			}
+		}		
 		PRC_ren_chonghao_hog = {
 			picture = PRC_ren_chonghao_hog
 			name = PRC_ren_chonghao_hog
@@ -2997,6 +3031,23 @@ has_country_leader = {
 
 
 	foreign_minister = {		
+		CHI_wu_zhao_hog = {
+			picture = CHI_wu_zhao_hog
+			name = wu_zhao_char
+			allowed = { original_tag = CHI}
+
+			visible = {
+				original_tag = CHI
+			}
+
+			allowed_to_remove = {
+				always = no
+				 
+			}
+			traits = { 
+				 
+			}
+		}			
 		PRC_yang_heping_hog = {
 			picture = PRC_yang_heping_hog
 			name = PRC_yang_heping_hog
@@ -3028,7 +3079,24 @@ has_country_leader = {
 
 
 	
-	interior_minister = {
+	interior_minister = {		
+		CHI_xu_guoyong_hog = {
+			picture = CHI_xu_guoyong_hog
+			name = xu_guoyong_char
+			allowed = { original_tag = CHI}
+
+			visible = {
+				original_tag = CHI
+			}
+
+			allowed_to_remove = {
+				always = no
+				 
+			}
+			traits = { 
+				 
+			}
+		}	
 		PRC_qiu_hog = {
 			picture = PRC_qiu_hog
 			name = PRC_qiu_hog
@@ -3086,7 +3154,24 @@ has_country_leader = {
 }
 
 	
-	intelligence_minister = {
+	intelligence_minister = {			
+		CHI_qiu_guozheng_hog = {
+			picture = CHI_qiu_guozheng_hog
+			name = qiu_guozheng_char
+			allowed = { original_tag = CHI}
+
+			visible = {
+				original_tag = CHI
+			}
+
+			allowed_to_remove = {
+				always = no
+				 
+			}
+			traits = { 
+				 
+			}
+		}	
 		PRC_ma_houzhi_hog_1 = {
 			picture = PRC_ma_houzhi_hog_1
 			name = PRC_ma_houzhi_hog
@@ -3131,7 +3216,24 @@ has_country_leader = {
 			}
 		}
 }
-	theorist_minister = {		
+	theorist_minister = {			
+		CHI_yan_defa_hog = {
+			picture = CHI_yan_defa_hog
+			name = yan_defa_char
+			allowed = { original_tag = CHI}
+
+			visible = {
+				original_tag = CHI
+			}
+
+			allowed_to_remove = {
+				always = no
+				 
+			}
+			traits = { 
+				 
+			}
+		}		
 		PRC_mao_yuanxin_hog_3 = {
 			picture = PRC_mao_yuanxin_hog_3
 			name = PRC_mao_yuanxin_hog

@@ -37,6 +37,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_dyblcl"
 		texturefile = "gfx/MAOYUANXIN/super_dybl.png"
+	}												
+	SpriteType = {
+		name = "GFX_PRC_SJKKKKKKK"
+		texturefile = "gfx/MAOYUANXIN/SJK.png"
 	}											
 	SpriteType = {
 		name = "GFX_PRC_LiJINJIN"
@@ -288,9 +292,17 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/bop_PRC_kqd.png"
 	}							
 	SpriteType = {
+		name = "GFX_bop_CHI_caiyingwen_side"
+		texturefile = "gfx/MAOYUANXIN/bop_CHI_caiyingwen_side.png"
+	}								
+	SpriteType = {
+		name = "GFX_bop_CHI_laiqingde_side"
+		texturefile = "gfx/MAOYUANXIN/bop_CHI_laiqingde_side.png"
+	}									
+	SpriteType = {
 		name = "GFX_bop_PRC_maoism_side"
 		texturefile = "gfx/MAOYUANXIN/bop_PRC_whw.png"
-	}						
+	}					
 	SpriteType = {
 		name = "GFX_modifiers_ai_governed_city"
 		texturefile = "gfx/MAOYUANXIN/PRC_peoples_capitalism_idea.png"
@@ -358,7 +370,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PRC_kong_qingdong_hog"
 		texturefile = "gfx/MAOYUANXIN/PRC_kong_qingdong_xiao.png"
+	}				
+	spriteType = {
+		name = "GFX_idea_CHI_su_zhenchang_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_SZC_xiao.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_CHI_chen_qimai_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_CQM_xiao.png"
 	}		
+	spriteType = {
+		name = "GFX_idea_CHI_yan_defa_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_YDF_xiao.png"
+	}						
+	spriteType = {
+		name = "GFX_idea_CHI_wu_zhao_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_WZ_xiao.png"
+	}				
+	spriteType = {
+		name = "GFX_idea_CHI_qiu_guozheng_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_QGZ_xiao.png"
+	}			
+	spriteType = {
+		name = "GFX_idea_CHI_xu_guoyong_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_XGY_xiao.png"
+	}	
 	spriteType = {
 		name = "GFX_idea_PRC_han_deqiang_hog"
 		texturefile = "gfx/MAOYUANXIN/PRC_han_deqiang_xiao.png"
@@ -497,10 +533,30 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_national_anarchist"
 		texturefile = "gfx/MAOYUANXIN/national_anarchist.png"
+	}				
+	spriteType = {
+		name = "GFX_ideology_taiwanese_progressivism"
+		texturefile = "gfx/MAOYUANXIN/taiwanese_progressivism.png"
 	}			
 	spriteType = {
 		name = "GFX_ideology_nazi_maoism"
 		texturefile = "gfx/MAOYUANXIN/nazi_maoism.png"
+	}					
+	spriteType = {
+		name = "GFX_ideology_progressivism_1"
+		texturefile = "gfx/MAOYUANXIN/progressivism_1.png"
+	}								
+	spriteType = {
+		name = "GFX_ideology_progressivism_2"
+		texturefile = "gfx/MAOYUANXIN/progressivism_2.png"
+	}							
+	spriteType = {
+		name = "GFX_ideology_progressivism_3"
+		texturefile = "gfx/MAOYUANXIN/progressivism_3.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_jidu_maoism"
+		texturefile = "gfx/MAOYUANXIN/jidumaoism.png"
 	}	
 	spriteType = {
 		name = "GFX_ideology_anarchist_maoism"
@@ -564,7 +620,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_reformist_socialism_1"
 		texturefile = "gfx/MAOYUANXIN/reformist_socialism_1.png"
-	}			
+	}					
+	spriteType = {
+		name = "GFX_Ideology_jidu_maoism"
+		texturefile = "gfx/MAOYUANXIN/Ideology_jidu_maoism.png"
+		legacy_lazy_load = no
+	}				
+	spriteType = {
+		name = "GFX_Ideology_progressivism_1"
+		texturefile = "gfx/MAOYUANXIN/Ideology_progressivism_1.png"
+		legacy_lazy_load = no
+	}					
+	spriteType = {
+		name = "GFX_Ideology_progressivism_2"
+		texturefile = "gfx/MAOYUANXIN/Ideology_progressivism_2.png"
+		legacy_lazy_load = no
+	}					
+	spriteType = {
+		name = "GFX_Ideology_progressivism_3"
+		texturefile = "gfx/MAOYUANXIN/Ideology_progressivism_3.png"
+		legacy_lazy_load = no
+	}	
 	spriteType = {
 		name = "GFX_Ideology_maoism_cyber"
 		texturefile = "gfx/MAOYUANXIN/Ideology_maoism_cyber.png"
@@ -4095,7 +4171,77 @@ SpriteType = {
     legacy_lazy_load = no
 }
 
+spriteType = {
+    name = "GFX_focus_PRC_the_final_offensive_2"
+    texturefile = "gfx/MAOYUANXIN/PRC_final_offensive_2.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_final_offensive_2_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_final_offensive_2.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_final_offensive_2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
 
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_final_offensive_2.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
+
+spriteType = {
+    name = "GFX_focus_PRC_the_final_offensive_1"
+    texturefile = "gfx/MAOYUANXIN/PRC_final_offensive_1.png"
+}
+SpriteType = {
+    name = "GFX_focus_PRC_the_final_offensive_1_shine"
+    texturefile = "gfx/MAOYUANXIN/PRC_final_offensive_1.png"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_final_offensive_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = -90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 2.0 y = 1.0 }
+    }
+
+    animation = {
+        animationmaskfile = "gfx/MAOYUANXIN/PRC_final_offensive_1.png"
+        animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+        animationrotation = 90.0
+        animationlooping = no
+        animationtime = 0.75
+        animationdelay = 0
+        animationblendmode = "add"
+        animationtype = "scrolling"
+        animationrotationoffset = { x = 0.0 y = 0.0 }
+        animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+}
 spriteType = {
     name = "GFX_focus_PRC_the_Flower_of_Freedom_19"
     texturefile = "gfx/MAOYUANXIN/PRC_the_Flower_of_Freedom_19.png"

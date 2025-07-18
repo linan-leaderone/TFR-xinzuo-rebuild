@@ -1,0 +1,48 @@
+bookmarks = {
+	bookmark = {
+		name = "FIRE_NAME"
+		desc = "FIRE_NAME_DESC"
+		date = 2020.1.1.1
+		picture = "GFX_select_date_2020"
+		default_country = "PRC"
+		default = yes
+		
+		
+		"PRC" = {
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				PRC_red_noble_idea_1
+				PRC_corrupt_bureaucracy_idea
+				PRC_coronavirus_pandemic_idea4
+			}
+			focuses = {
+				PRC_lockdown_wuhan
+				PRC_shake_up_the_politburo
+				PRC_finish_what_mao_started
+			}
+		}
+				
+		
+		"CHI" = {
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				CHI_american_protection_idea
+				CHI_taiwanese_independence_movement_idea
+				CHI_low_international_recognition_idea
+			}
+			focuses = {
+				CHI_unite_the_island
+				CHI_island_in_one_fate
+				CHI_long_way_home
+			}
+		}
+
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
