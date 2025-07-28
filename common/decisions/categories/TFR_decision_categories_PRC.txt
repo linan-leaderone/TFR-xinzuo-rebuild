@@ -78,7 +78,10 @@ PRC_coronavirus_category = {
     priority = 2
 
     allowed = {
+    OR = {
     	original_tag = PRC
+    	original_tag = CHI
+    }
     }
 
     visible = {

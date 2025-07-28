@@ -13,15 +13,17 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_0
 		x = 17
 		y = 0
-		cost = 1
+		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
 		}
 		available = {
+			always=no
 		}
 
 		completion_reward = {
+			add_political_power = 100
 			hidden_effect = {
 			}
 	
@@ -44,9 +46,19 @@ focus_tree = {
 			focus = CHI_TWW_FOCUS_0
 		}
 		available = {
+		has_country_flag = TWW_cinguan_taiwan_war
 			
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+			add_days_mission_timeout = {
+				mission = PRC_control_the_coronavirus_mission
+				days = 30
+			}
 			hidden_effect = {
 			}
 		}
@@ -138,9 +150,72 @@ focus_tree = {
 			focus = CHI_TWW_FOCUS_5
 		}
 		available = {
+			has_country_flag = PRC_dealt_with_coronavirus
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+			custom_effect_tooltip = CHI_TWW_FOCUS_9_tooltip
+			hidden_effect = {
+					remove_ideas = PRC_coronavirus_pandemic_idea
+					remove_ideas = PRC_coronavirus_pandemic_idea1
+					remove_ideas = PRC_coronavirus_pandemic_idea2
+					remove_ideas = PRC_coronavirus_pandemic_idea3
+					remove_ideas = PRC_coronavirus_pandemic_idea4
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_14
+		icon = GFX_focus_CHI_TWW_FOCUS_14
+		x = 2
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_7
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_6
+		}
+		available = {
 			
 		}
 		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_15
+		icon = GFX_focus_CHI_TWW_FOCUS_15
+		x = 1
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_6
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
 			hidden_effect = {
 			}
 		}
@@ -189,7 +264,322 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = CHI_TWW_FOCUS_22
+		icon = GFX_focus_CHI_TWW_FOCUS_22
+		x = 7
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_20
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_23
+		icon = GFX_focus_CHI_TWW_FOCUS_23
+		x = 9
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_20
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_24
+		icon = GFX_focus_CHI_TWW_FOCUS_24
+		x = 7
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_21
+			focus = CHI_TWW_FOCUS_22
+			focus = CHI_TWW_FOCUS_23
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 20
+			}
+			add_debt = yes
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_21
+		icon = GFX_focus_CHI_TWW_FOCUS_21
+		x = 5
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_20
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_20
+		icon = GFX_focus_CHI_TWW_FOCUS_20
+		x = 7
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_8
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_16
+		icon = GFX_focus_CHI_TWW_FOCUS_16
+		x = 4
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_7
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_8
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_17
+		icon = GFX_focus_CHI_TWW_FOCUS_17
+		x = 3
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_16
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_19
+		icon = GFX_focus_CHI_TWW_FOCUS_19
+		x = 4
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_17
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_18
+		icon = GFX_focus_CHI_TWW_FOCUS_18
+		x = 2
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_15
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_17
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			hidden_effect = {
+			}
+		}
+	}
 	
+	focus = {
+		id = CHI_TWW_FOCUS_11
+		icon = GFX_focus_CHI_TWW_FOCUS_11
+		x = -4
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_2
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_3
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			add_days_mission_timeout = {
+				mission = PRC_control_the_coronavirus_mission
+				days = 60
+			}
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_13
+		icon = GFX_focus_CHI_TWW_FOCUS_13
+		x = -2
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_12
+		}
+		allow_branch = {
+		has_country_flag = TWW_gaoduanshixiao_taiwan_war
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			activate_mission = PRC_waning_coronavirus_1
+			hidden_effect = {
+			}
+		}
+	}
+	focus = {
+		id = CHI_TWW_FOCUS_12
+		icon = GFX_focus_CHI_TWW_FOCUS_12
+		x = -2
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		relative_position_id = CHI_TWW_FOCUS_0
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = CHI_TWW_FOCUS_11
+			focus = CHI_TWW_FOCUS_9
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_idea = PRC_coronavirus_pandemic_idea
+					has_idea = PRC_coronavirus_pandemic_idea1
+					has_idea = PRC_coronavirus_pandemic_idea2
+					has_idea = PRC_coronavirus_pandemic_idea3
+					has_idea = PRC_coronavirus_pandemic_idea4
+				}
+			}
+			
+		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_TWW_FOCUS_12_tooltip
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_stability = 0.05
+			hidden_effect = {
+	country_event = {
+		id = PRC_MAO2.71
+		days = 1
+	}
+			}
+		}
+	}
 	focus = {
 		id = CHI_TWW_FOCUS_2
 		icon = GFX_focus_CHI_TWW_FOCUS_2
@@ -208,6 +598,15 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+			add_days_mission_timeout = {
+				mission = PRC_control_the_coronavirus_mission
+				days = 40
+			}
 			hidden_effect = {
 			}
 		}
@@ -230,6 +629,15 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+			add_days_mission_timeout = {
+				mission = PRC_control_the_coronavirus_mission
+				days = 40
+			}
 			hidden_effect = {
 			}
 		}
@@ -255,6 +663,12 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+			activate_mission = PRC_vaccine_development_mission
 			hidden_effect = {
 			}
 		}

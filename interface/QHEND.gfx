@@ -1,4 +1,13 @@
 spriteTypes = {
+	frameAnimatedSpriteType = {
+            name = "GFX_aiattack_lm_rev_1"
+            texturefile = "gfx/MAOYUANXIN/LM_FLAG.png"
+            noOfFrames = 151
+            animation_rate_fps = 30
+            looping = yes
+            play_on_show = yes
+		}
+
 	spriteType = {
 		name = "GFX_qinhui_free_end_1"
 		texturefile = "gfx/MAOYUANXIN/qinhui_free_end_1.png"

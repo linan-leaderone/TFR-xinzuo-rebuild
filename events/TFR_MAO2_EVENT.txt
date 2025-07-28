@@ -3050,11 +3050,14 @@ country_event = {
 	id = PRC_MAO2.70
 	title = PRC_MAO2.70.t
 	desc = PRC_MAO2.70.d
-	picture = GFX_PRC_MAO2_event_1
+	picture = GFX_PRC_MAO2_event_70
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.70.a
+add_ideas = PRC_coronavirus_pandemic_idea4
+set_country_flag = TWW_cinguan_taiwan_war
+			activate_mission = PRC_control_the_coronavirus_mission
 	}
 }
 
@@ -3062,11 +3065,14 @@ country_event = {
 	id = PRC_MAO2.71
 	title = PRC_MAO2.71.t
 	desc = PRC_MAO2.71.d
-	picture = GFX_PRC_MAO2_event_2
+	picture = GFX_PRC_MAO2_event_72
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO2.71.a
+		add_ideas = PRC_coronavirus_pandemic_idea
+		set_country_flag = TWW_gaoduanshixiao_taiwan_war
+			mark_focus_tree_layout_dirty = yes
 	}
 }
 

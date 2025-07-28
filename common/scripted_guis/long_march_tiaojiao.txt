@@ -1,5 +1,14 @@
 scripted_gui = {
 
+	TFR_long_march_aiattack_lm_rev_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_long_march_aiattack_lm_rev_gui"
+
+		visible = {
+			has_country_flag = aiattack_lm_rev
+		}
+		}
 	TFR_long_march_tiaojiao_gui = {
 		context_type = player_context
 		parent_window_token = top_bar

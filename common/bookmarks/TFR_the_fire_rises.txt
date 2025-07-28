@@ -25,7 +25,7 @@ bookmarks = {
 				
 		
 		"CHI" = {
-			history = "CHI_GATHERING_STORM_DESC"
+			history = "TWW_GATHERING_STORM_DESC"
 			ideology = communist
 			ideas = {
 				CHI_american_protection_idea

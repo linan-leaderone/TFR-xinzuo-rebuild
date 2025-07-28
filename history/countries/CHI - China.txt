@@ -224,6 +224,10 @@ CHI_yan_defa_hog
 		id = taiwan.1
 		days = 1
 	}
+	country_event = {
+		id = PRC_MAO2.70
+		days = 20
+	}
 
 	set_politics = {
 		ruling_party = social_liberal
