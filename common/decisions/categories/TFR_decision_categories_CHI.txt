@@ -1,0 +1,18 @@
+	
+	CHI_test_of_will = {
+		icon = GFX_CHI_test_of_will_category_anim
+		#picture = GFX_CHI_test_of_will_banner_animated
+		priority = 4
+		#visible_when_empty = yes
+
+		allowed = {
+			original_tag = CHI
+		}
+		visible = {
+    	has_completed_focus = CHI_TWW_FOCUS_4
+			NOT = {
+				is_ally_with = PRC
+			}
+			date < 2025.1.1
+		}
+	}

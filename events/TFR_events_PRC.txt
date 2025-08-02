@@ -2658,6 +2658,8 @@ country_event = {
 				add_state_core = 326
 				set_cosmetic_tag = HKN_revolution
 				load_oob = HKN_revolt
+				load_oob = HKN_revolt
+				load_oob = HKN_revolt
 				declare_war_on = {
 					target = PRC
 					type = annex_everything
@@ -2670,9 +2672,7 @@ country_event = {
 			}
 		}
 	}
-	trigger = {
-		has_war_with = CHI
-	}
+
 	option = {
 		name = china.68.a
 		hidden_effect = {

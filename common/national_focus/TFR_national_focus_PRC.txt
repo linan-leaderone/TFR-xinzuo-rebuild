@@ -110,7 +110,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_zero_covid_policy
 		x = 0
 		y = 2
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -160,7 +160,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_kickstart_the_vaccine_race
 		x = -2
 		y = 3
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -197,7 +197,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_enforce_stricter_lockdown_penalties
 		x = 4
 		y = 3
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -229,11 +229,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_focus_on_vaccine_development
 		x = -3
 		y = 4
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 10
+			factor = 1000
 		}
 		available = {
 			has_completed_focus = PRC_kickstart_vaccine_research
@@ -256,7 +256,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_focus_on_mask_production
 		x = 3
 		y = 4
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -288,7 +288,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_enact_food_saftey_reforms
 		x = 1
 		y = 3
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -332,7 +332,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_surveillance_state_contact_tracing
 		x = 5
 		y = 4
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -366,11 +366,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_fund_crowd_immunity_studies
 		x = -3
 		y = 5
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
+			factor = 300
 		}
 		available = {
 		}
@@ -396,7 +396,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_blame_the_us
 		x = -1
 		y = 4
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -427,7 +427,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_blame_local_officials
 		x = 1
 		y = 4
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -458,7 +458,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_widen_the_social_saftey_net1
 		x = 4
 		y = 5
-		cost = 5
+		cost = 3
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -492,7 +492,7 @@ focus_tree = {
 		relative_position_id = PRC_lockdown_wuhan
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
+			factor = 3000
 		}
 		available = {
 			NOT = {
@@ -507,6 +507,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_expand_the_social_safety_net
+		}
+		prerequisite = {
+			focus = PRC_blame_local_officials
+		}
+		prerequisite = {
 			focus = PRC_fund_crowd_immunity_studies
 		}
 		completion_reward = {
@@ -580,11 +585,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_crack_down_on_left_radicals
 		x = -3
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = PRC_control_the_oil_crisis
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
+			factor = 300
 		}
 		available = {
 		}
@@ -610,11 +615,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_crack_down_on_reformist_protesters
 		x = -5
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = PRC_control_the_oil_crisis
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
+			factor = 300
 		}
 		available = {
 		}
@@ -640,11 +645,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_empower_the_50_cent_army
 		x = 1
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = PRC_crack_down_on_reformist_protesters
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 		}
@@ -672,11 +677,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_concessions_to_corporate_demands
 		x = 0
 		y = 2
-		cost = 4
+		cost = 2
 		relative_position_id = PRC_crack_down_on_left_radicals
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 		}
@@ -709,11 +714,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_concessions_to_populist_demands
 		x = 0
 		y = 2
-		cost = 4
+		cost = 2
 		relative_position_id = PRC_crack_down_on_reformist_protesters
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 			
@@ -739,11 +744,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_stabilize_the_political_sphere
 		x = 0
 		y = 2
-		cost = 4
+		cost = 2
 		relative_position_id = PRC_empower_the_50_cent_army
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 		}
@@ -778,7 +783,7 @@ focus_tree = {
 		relative_position_id = PRC_control_the_oil_crisis
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 5000
 			modifier = {
 				factor = 15
 				has_country_flag = PRC_sided_with_cen_flag
@@ -820,7 +825,7 @@ focus_tree = {
 		relative_position_id = PRC_control_the_oil_crisis
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 0
 			modifier = {
 				factor = 15
 				has_country_flag = PRC_side_with_left_flag
@@ -867,7 +872,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_diversify_the_oil_trade
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_contain_the_damage
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -882,9 +887,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_contain_the_damage
 			focus = PRC_a_broken_system
-		}
-		mutually_exclusive = {
-			focus = PRC_expand_domestic_oil_production
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -922,7 +924,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_a_renewable_revolution
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_diversify_the_oil_trade
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1067,7 +1069,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_a_nuclear_revolution
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_expand_domestic_oil_production
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1176,7 +1178,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_stabilize_the_economic_sphere
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_diversify_the_oil_trade
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1207,11 +1209,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_search_for_domestic_oil_sources 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_a_broken_system
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 			modifier = {
 				factor = 5
 				has_country_flag = PRC_sided_with_lib_flag
@@ -1222,9 +1224,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_contain_the_damage
 			focus = PRC_a_broken_system
-		}
-		mutually_exclusive = {
-			focus = PRC_diversify_the_oil_trade
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -1252,7 +1251,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_gambit_in_the_gulf
 		x = -1
 		y = 2
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_diversify_the_oil_trade
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1264,10 +1263,6 @@ focus_tree = {
 		}
 		bypass = {
 			date > 2021.1.1
-			NOT = {
-				has_global_flag = SAU_saudi_civil_war_global
-				country_exists = ROC
-			}
 		}
 		prerequisite = {
 			focus = PRC_diversify_the_oil_trade
@@ -1305,13 +1300,16 @@ focus_tree = {
 		icon = GFX_focus_PRC_south_china_sea_expansion
 		x = 1
 		y = 2
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_diversify_the_oil_trade
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 5
 		}
 		available = {
+		}
+		prerequisite = {
+			focus = PRC_stabilize_the_economic_sphere
 		}
 		prerequisite = {
 			focus = PRC_diversify_the_oil_trade
@@ -1326,13 +1324,16 @@ focus_tree = {
 		icon = GFX_focus_PRC_synthetic_oil_investments
 		x = -1
 		y = 2
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_expand_domestic_oil_production
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 5
 		}
 		available = {
+		}
+		prerequisite = {
+			focus = PRC_stabilize_the_economic_sphere
 		}
 		prerequisite = {
 			focus = PRC_expand_domestic_oil_production
@@ -1367,11 +1368,11 @@ focus_tree = {
 		icon = GFX_focus_PRC_drill_for_xinjiang_oil
 		x = 1
 		y = 2
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_expand_domestic_oil_production
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 		}
@@ -1389,7 +1390,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_southeast_asian_bailout_package
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_gambit_in_the_gulf
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -1399,7 +1400,12 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_gambit_in_the_gulf
+		}
+		prerequisite = {
 			focus = PRC_south_china_sea_expansion
+		}
+		prerequisite = {
+			focus = PRC_a_renewable_revolution
 		}
 		completion_reward = {
 			set_temp_variable = {
@@ -1435,17 +1441,22 @@ focus_tree = {
 		icon = GFX_focus_PRC_chase_the_chinese_dream
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_synthetic_oil_investments
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_drill_for_xinjiang_oil
+			focus = PRC_a_nuclear_revolution
+		}
+		prerequisite = {
 			focus = PRC_synthetic_oil_investments	
+		}
+		prerequisite = {
+			focus = PRC_drill_for_xinjiang_oil	
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -1466,17 +1477,19 @@ focus_tree = {
 		icon = GFX_focus_PRC_rejuvinate_the_nation
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		relative_position_id = PRC_southeast_asian_bailout_package
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 500
 		}
 		available = {
 		}
 		prerequisite = {
-			focus = PRC_southeast_asian_bailout_package
 			focus = PRC_chase_the_chinese_dream	
+		}
+		prerequisite = {
+			focus = PRC_southeast_asian_bailout_package
 		}
 		completion_reward = {
 			PRC_decrease_oil = yes
@@ -1494,7 +1507,7 @@ focus_tree = {
 		relative_position_id = PRC_rejuvinate_the_nation
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 10
+			factor = 100000
 		}
 		available = {
 			if = {
@@ -3717,6 +3730,10 @@ shared_focus = {
 			target = PRC
 			type = annex_everything
 		}	}		
+		APA = { declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}	}	
 		CAN = { declare_war_on = {
 			target = PRC
 			type = annex_everything

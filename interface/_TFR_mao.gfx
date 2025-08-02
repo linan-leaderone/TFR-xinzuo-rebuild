@@ -213,10 +213,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_rcwar"
 		texturefile = "gfx/MAOYUANXIN/super_rcwar.png"
-	}					
+	}							
 	SpriteType = {
 		name = "GFX_idea_PRC_revpro_idea"
 		texturefile = "gfx/MAOYUANXIN/revpro.png"
+	}									
+	SpriteType = {
+		name = "GFX_idea_CHI_zylm_idea"
+		texturefile = "gfx/MAOYUANXIN/APA_popular_support5.png"
+	}						
+	SpriteType = {
+		name = "GFX_idea_generic_duihuaqingbao_idea"
+		texturefile = "gfx/MAOYUANXIN/CHI_dpp_protest.png"
+	}					
+	SpriteType = {
+		name = "GFX_idea_generic_twqbz_idea"
+		texturefile = "gfx/MAOYUANXIN/CHI_terrible_mainland_influence.png"
 	}		
 	SpriteType = {
 		name = "GFX_idea_generic_kmgjhz_idea"
@@ -481,6 +493,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_sm_socialism"
 		texturefile = "gfx/MAOYUANXIN/sm_socialism.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_Tsuguism"
+		texturefile = "gfx/MAOYUANXIN/suguism.png"
+	}				
+	spriteType = {
+		name = "GFX_Tsuguism"
+		texturefile = "gfx/MAOYUANXIN/suguism_ban.png"
+		legacy_lazy_load = no
 	}				
 	spriteType = {
 		name = "GFX_Ideology_Geometridaeism2_banner"

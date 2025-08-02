@@ -99,7 +99,11 @@ on_actions = {
 						}
 						ROOT = {
 		
+						OR = {
 							original_tag = SYR
+							original_tag = FSA
+							original_tag = HTS
+						}
 
 						}
 					}
@@ -131,12 +135,33 @@ on_actions = {
 						}
 								ROJ = {transfer_state = 814}
 								ROJ = {transfer_state = 1029}
-PRC = {annex_country = {
-								target = SYR
+				if = {
+					limit = {
+						ROOT = {
+		
+						OR = {
+							original_tag = FSA
+							original_tag = HTS
+						}
+
+						}
+					}
+SYR = {annex_country = {
+								target = ROOT
 								transfer_troops = no
 							}
 
 							}
+							}
+				if = {
+					limit = {
+						ROOT = {
+		
+							original_tag = SYR
+
+
+						}
+						}
 			release_autonomy = {
 			target = SYR
 			autonomy_state = autonomy_minzhutuoguan
@@ -145,7 +170,6 @@ PRC = {annex_country = {
 			target = SYR
 			autonomy_state = autonomy_minzhutuoguan
 			freedom_level = 0.1
-			}
 			}
 
 
@@ -173,6 +197,8 @@ PRC = {annex_country = {
 	                expire = "1999.1.1"
 	                ideology = left_accelerationist_2
 				}  
+						}
+						}
 						}
 					set_global_flag = skip_default_capitulation
 				}
@@ -732,6 +758,37 @@ IRQ = {annex_country = {
 
 				if = {
 					limit = {
+					SYR = {controls_state = 1029}
+						}
+
+						ROJ = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+			PRC_army_develop = yes
+						}
+						}
+				if = {
+					limit = {
 						SYR = {
 								is_ally_with = PRC
 						}
@@ -1034,12 +1091,63 @@ PRC = {annex_country = {
 							}
 
 							}
+
+				if = {
+					limit = {
+			NOT = {country_exists = JOR}
+
+							}
+			release_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = JOR
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+						JOR = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+			PRC_army_develop = yes
+						}
+
+							}
 			release_autonomy = {
 			target = ISR
 			autonomy_state = autonomy_minzhutuoguan
 			}
 			set_autonomy = {
 			target = ISR
+			autonomy_state = autonomy_minzhutuoguan
+			freedom_level = 0.1
+			}
+			release_autonomy = {
+			target = PAL
+			autonomy_state = autonomy_minzhutuoguan
+			}
+			set_autonomy = {
+			target = PAL
 			autonomy_state = autonomy_minzhutuoguan
 			freedom_level = 0.1
 			}
@@ -1069,6 +1177,32 @@ PRC = {annex_country = {
 				}  
 			PRC_army_develop = yes
 						}
+						PAL = {
+
+                inherit_technology = PRC
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_party_name = { ideology = communist long_name = minzhuling_party_long name = minzhuling_party_long }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.4
+			}
+
+				create_country_leader = {
+	                name = "CHANGZHENG1111"
+	                desc = "POLITICS_changzhengBRM_DESC"
+	                picture = GFX_Portrait_PRC_The_Long_March1
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_2
+				}  
+			PRC_army_develop = yes
+						}
+
 
 					set_global_flag = skip_default_capitulation
 				}

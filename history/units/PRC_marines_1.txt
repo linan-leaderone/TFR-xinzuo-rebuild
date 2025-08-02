@@ -1,0 +1,88 @@
+﻿division_template = {
+	name = "Haijun Lu Zhandui Zhuangjia Shi"
+	
+	regiments = {
+		amphibious_mechanized = { x = 0 y = 0 }
+		amphibious_mechanized = { x = 0 y = 1 }
+		amphibious_mechanized = { x = 0 y = 2 }
+		modern_sp_artillery_brigade = { x = 0 y = 3 }
+		
+		amphibious_mechanized = { x = 1 y = 0 }
+		amphibious_mechanized = { x = 1 y = 1 }
+		amphibious_mechanized = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 1 y = 3 }
+		
+		amphibious_armor = { x = 2 y = 0 }
+		amphibious_armor = { x = 2 y = 1 }
+		amphibious_armor = { x = 2 y = 2 }
+	}
+	
+	support = {
+	}
+	
+}
+
+
+units = {
+
+	division = {
+		name = "1. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 4096
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 1175
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 11914
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 4096
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 1175
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 11914
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 4096
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "2. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 1175
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+	
+	division = {
+		name = "3. Haijun Lu Zhandui Zhuangjia Shi"
+		location = 11914
+		division_template = "Haijun Lu Zhandui Zhuangjia Shi"
+		start_experience_factor = 0.1
+	}
+}

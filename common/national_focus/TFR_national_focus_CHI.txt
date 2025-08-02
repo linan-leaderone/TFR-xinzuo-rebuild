@@ -36,7 +36,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_1
 		x = -3
 		y = 1
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -57,7 +57,7 @@ focus_tree = {
 			add_debt = yes
 			add_days_mission_timeout = {
 				mission = PRC_control_the_coronavirus_mission
-				days = 30
+				days = 60
 			}
 			hidden_effect = {
 			}
@@ -81,6 +81,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			
+			unlock_decision_tooltip = CHI_set_up_anti_air_in_hualien
+			unlock_decision_tooltip = CHI_set_up_anti_air_in_tainan
+			unlock_decision_tooltip = CHI_set_up_anti_air_in_taizhong
+			unlock_decision_tooltip = CHI_set_up_anti_air_in_taibei
 			hidden_effect = {
 			}
 		}
@@ -90,7 +95,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_6
 		x = 1
 		y = 2
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -106,6 +111,13 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+	
+			set_temp_variable = {
+				var = income_var_temp
+				value = 50
+			}
+			add_income = yes
+			add_offsite_building = { type = industrial_complex level = 3 }
 			hidden_effect = {
 			}
 		}
@@ -115,7 +127,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_10
 		x = 0
 		y = 1
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -125,9 +137,16 @@ focus_tree = {
 			focus = CHI_TWW_FOCUS_0
 		}
 		available = {
+		has_country_flag = TWW_cinguan_taiwan_war
 			
 		}
 		completion_reward = {
+			activate_mission = PRC_vaccine_development_mission
+			set_temp_variable = {
+				var = income_var_temp
+				value = 50
+			}
+			add_income = yes
 			hidden_effect = {
 			}
 		}
@@ -137,7 +156,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_9
 		x = 0
 		y = 3
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -158,6 +177,8 @@ focus_tree = {
 				value = 10
 			}
 			add_debt = yes
+			set_country_flag = PRC_no_coronavirus
+			clr_country_flag = PRC_dealt_with_coronavirus
 			custom_effect_tooltip = CHI_TWW_FOCUS_9_tooltip
 			hidden_effect = {
 					remove_ideas = PRC_coronavirus_pandemic_idea
@@ -173,7 +194,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_14
 		x = 2
 		y = 3
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -189,6 +210,14 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+    swap_ideas = {
+        remove_idea = CHI_prc_embargo_idea
+        add_idea = CHI_prc_embargo_idea1
+    }
+    swap_ideas = {
+        remove_idea = CHI_chinese_blockade_2
+        add_idea = CHI_chinese_blockade
+    }
 			hidden_effect = {
 			}
 		}
@@ -198,7 +227,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_15
 		x = 1
 		y = 4
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -216,6 +245,10 @@ focus_tree = {
 				value = 10
 			}
 			add_debt = yes
+			unlock_decision_tooltip = CHI_import_korean_weapons
+			unlock_decision_tooltip = CHI_import_korean_vehicles
+			unlock_decision_tooltip = CHI_import_korean_armoured_vehicles
+			unlock_decision_tooltip = CHI_import_korean_aviation
 			hidden_effect = {
 			}
 		}
@@ -235,9 +268,11 @@ focus_tree = {
 			focus = CHI_TWW_FOCUS_4
 		}
 		available = {
+					has_idea = CHI_KMT_protests
 			
 		}
 		completion_reward = {
+				country_event = { id = PRC_MAO2.75 }
 			hidden_effect = {
 			}
 		}
@@ -247,7 +282,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_8
 		x = 5
 		y = 2
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -260,6 +295,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			add_stability = 0.1
+	add_war_support = 0.1
 			hidden_effect = {
 			}
 		}
@@ -269,7 +306,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_22
 		x = 7
 		y = 4
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -282,6 +319,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+	PRC = {add_stability = -0.1
+	add_war_support = -0.1}
 			hidden_effect = {
 			}
 		}
@@ -291,7 +330,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_23
 		x = 9
 		y = 4
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -304,6 +343,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+	PRC = {add_stability = -0.1
+	add_war_support = -0.1}
 			hidden_effect = {
 			}
 		}
@@ -313,7 +354,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_24
 		x = 7
 		y = 5
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -333,6 +374,10 @@ focus_tree = {
 				value = 20
 			}
 			add_debt = yes
+	country_event = {
+		id = PRC_MAO2.73
+	}
+		set_country_flag = TWW_qingbaohuode_taiwan_war
 			hidden_effect = {
 			}
 		}
@@ -342,7 +387,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_21
 		x = 5
 		y = 4
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -355,6 +400,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+	PRC = {add_stability = -0.1
+	add_war_support = -0.1}
 			hidden_effect = {
 			}
 		}
@@ -364,7 +411,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_20
 		x = 7
 		y = 3
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -382,6 +429,15 @@ focus_tree = {
 				value = 10
 			}
 			add_debt = yes
+			PRC = {
+	country_event = {
+		id = PRC_MAO2.72
+	}
+			add_timed_idea = {
+				idea = twqbz
+				days = 360
+			}
+			}
 			hidden_effect = {
 			}
 		}
@@ -391,7 +447,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_16
 		x = 4
 		y = 3
-		cost = 3
+		cost = 4
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -407,6 +463,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+	country_event = {
+		id = PRC_MAO2.74
+	}
 			hidden_effect = {
 			}
 		}
@@ -416,7 +475,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_17
 		x = 3
 		y = 4
-		cost = 3
+		cost = 4
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -426,9 +485,11 @@ focus_tree = {
 			focus = CHI_TWW_FOCUS_16
 		}
 		available = {
+		has_country_flag = TWW_qingbaohuode_taiwan_war
 			
 		}
 		completion_reward = {
+				country_event = { id = PRC_MAO2.76 }
 			hidden_effect = {
 			}
 		}
@@ -438,7 +499,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_19
 		x = 4
 		y = 5
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -451,6 +512,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			add_stability = 0.1
+	add_war_support = 0.1
+				country_event = { id = PRC_MAO2.68 }
 			hidden_effect = {
 			}
 		}
@@ -460,7 +524,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_18
 		x = 2
 		y = 5
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -476,6 +540,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			unlock_decision_tooltip = CHI_prepare_coastal_defences_in_hualien
+			unlock_decision_tooltip = CHI_prepare_coastal_defences_in_tainan
+			unlock_decision_tooltip = CHI_prepare_coastal_defences_in_taizhong
+			unlock_decision_tooltip = CHI_prepare_coastal_defences_in_taibei
 			hidden_effect = {
 			}
 		}
@@ -509,7 +577,7 @@ focus_tree = {
 			add_debt = yes
 			add_days_mission_timeout = {
 				mission = PRC_control_the_coronavirus_mission
-				days = 60
+				days = 90
 			}
 			hidden_effect = {
 			}
@@ -520,7 +588,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_13
 		x = -2
 		y = 5
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -546,7 +614,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_12
 		x = -2
 		y = 4
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -554,6 +622,8 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = CHI_TWW_FOCUS_11
+		}
+		prerequisite = {
 			focus = CHI_TWW_FOCUS_9
 		}
 		available = {
@@ -571,7 +641,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CHI_TWW_FOCUS_12_tooltip
 			add_offsite_building = { type = industrial_complex level = 3 }
-			add_stability = 0.05
+			add_stability = 0.05 
 			hidden_effect = {
 	country_event = {
 		id = PRC_MAO2.71
@@ -585,7 +655,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_2
 		x = -5
 		y = 2
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -605,7 +675,7 @@ focus_tree = {
 			add_debt = yes
 			add_days_mission_timeout = {
 				mission = PRC_control_the_coronavirus_mission
-				days = 40
+				days = 60
 			}
 			hidden_effect = {
 			}
@@ -616,7 +686,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_3
 		x = -3
 		y = 2
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -636,7 +706,7 @@ focus_tree = {
 			add_debt = yes
 			add_days_mission_timeout = {
 				mission = PRC_control_the_coronavirus_mission
-				days = 40
+				days = 60
 			}
 			hidden_effect = {
 			}
@@ -647,7 +717,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_TWW_FOCUS_5
 		x = -1
 		y = 2
-		cost = 3
+		cost = 5
 		available_if_capitulated = yes
 		relative_position_id = CHI_TWW_FOCUS_0
 		ai_will_do = {
@@ -668,7 +738,10 @@ focus_tree = {
 				value = 10
 			}
 			add_debt = yes
-			activate_mission = PRC_vaccine_development_mission
+			add_days_mission_timeout = {
+				mission = PRC_vaccine_development_mission
+				days = -80
+			}
 			hidden_effect = {
 			}
 		}
@@ -686,25 +759,12 @@ focus_tree = {
 			factor = 100
 		}
 		allow_branch = {
-		#has_country_flag = TWW_ongoing_taiwan_war
+		has_country_flag = TWW_ongoing_taiwan_war
 		}
 		available = {
 		}
-		select_effect = {
-			hidden_effect = {
-				country_event = { id = PRC_MAO2.61 }
-				country_event = { id = PRC_MAO2.62 days = 1 }
-				country_event = { id = PRC_MAO2.63 days = 2 }
-				country_event = { id = PRC_MAO2.64 days = 3 }
-				country_event = { id = PRC_MAO2.65 days = 4 }
-				country_event = { id = PRC_MAO2.66 days = 5 }
-				country_event = { id = PRC_MAO2.67 days = 6 }
-
-			}
-			}
 		completion_reward = {
 			hidden_effect = {
-				country_event = { id = PRC_MAO2.68 }
 				country_event = { id = taiwan.35 days = 14 }
 			}
 			custom_effect_tooltip = CHI_taiwan_war_begun_tooltip

@@ -12,8 +12,10 @@ PRC_loji_category = {
 			
 				custom_trigger_tooltip = {
 		tooltip = loji_manyidu_zuidi_1
-
-			check_variable = { loji_manyidu_T = 0 }
+			
+				NOT = {
+			check_variable = { loji_manyidu_T > 0 }
+		}
 		}
 		}
 		is_good = no

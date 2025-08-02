@@ -1,6 +1,29 @@
 ideas = {	
 	country = {
-											
+												
+CHI_zylm_idea = {
+    picture = CHI_zylm_idea
+    name = CHI_zylm_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	
+				totalitarian_socialist_drift = 0.01
+				communist_drift = 0.01
+				libertarian_socialist_drift = 0.01
+
+
+    }
+}											
 beidouweixing = {
     picture = generic_beidouweixing_idea
     name = beidouweixing
@@ -38,6 +61,50 @@ beidouweixing = {
 
     }
 }								
+duihuaqingbao = {
+    picture = generic_duihuaqingbao_idea
+    name = CHI_duihuaqingbao
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+
+    }									
+twqbz = {
+    picture = generic_twqbz_idea
+    name = CHI_kmgjhz
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+        war_support_factor = -0.1
+	authoritarian_democrat_drift = -0.02
+	nationalist_drift = -0.02
+	fascist_drift = -0.02
+
+
+    }	
+    }								
 kmgjhz = {
     picture = generic_kmgjhz_idea
     name = kmgjhz
@@ -2806,7 +2873,8 @@ army_defence_factor = 1
 				head_minister_trigger = yes
 				 
 			}
-			traits = { 
+			traits = {  
+				hog_su_zhenchang_hog
 				 
 			}
 		}	
@@ -3000,7 +3068,8 @@ has_country_leader = {
 				always = no
 				 
 			}
-			traits = { 
+			traits = {  
+				hog_chen_qimai_hog
 				 
 			}
 		}		
@@ -3044,7 +3113,8 @@ has_country_leader = {
 				always = no
 				 
 			}
-			traits = { 
+			traits = {   
+				hog_CHI_wu_zhao_hog
 				 
 			}
 		}			
@@ -3093,7 +3163,8 @@ has_country_leader = {
 				always = no
 				 
 			}
-			traits = { 
+			traits = {   
+				hog_xu_guoyong_hog
 				 
 			}
 		}	
@@ -3168,7 +3239,8 @@ has_country_leader = {
 				always = no
 				 
 			}
-			traits = { 
+			traits = {  
+				hog_qiu_guozheng_hog
 				 
 			}
 		}	
@@ -3231,7 +3303,7 @@ has_country_leader = {
 				 
 			}
 			traits = { 
-				 
+				 hog_yan_defa_hog
 			}
 		}		
 		PRC_mao_yuanxin_hog_3 = {

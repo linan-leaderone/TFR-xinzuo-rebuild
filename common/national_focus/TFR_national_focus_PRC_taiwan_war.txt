@@ -418,15 +418,38 @@ focus_tree = {
 			add_named_threat = {
 				threat = 10
 				name = PRC_invasion_of_taiwan_threat
-			}		
-			CHI = {
-				set_country_flag = TWW_ongoing_taiwan_war
-			mark_focus_tree_layout_dirty = yes
 			}
 			set_global_flag = PRC_ongoing_taiwan_war
 			unlock_decision_category_tooltip = PRC_taiwan_war_cat			
-			hidden_effect = {
-				CHI = {complete_national_focus = CHI_island_in_one_fate}
+			hidden_effect = {		
+			CHI = {
+						
+			1148 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}		
+			524 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}		
+			1149 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}		
+			1150 = {
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
+				set_country_flag = TWW_ongoing_taiwan_war
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = CHI_island_in_one_fate
+				country_event = { id = PRC_MAO2.61 days = 7 }
+
+			}
 				every_state = { #защита от дебила
 					limit = {
 						is_owned_by = JAP
@@ -498,6 +521,7 @@ focus_tree = {
 					}
 					CHI = {
 						load_oob = CHI_invasion_reserves
+						load_oob = CHI_invasion_reserves
 					}
 				}
 				if = {
@@ -512,10 +536,6 @@ focus_tree = {
 				country_event = {
 					id = china.236
 					days = 4
-				}
-				country_event = {
-					id = china.68
-					days = 140
 				}
 				country_event = {
 					id = china.73
@@ -931,7 +951,7 @@ focus_tree = {
 	    cost = 4
 		
 		available = {
-			has_country_flag = PRC_fast_finalization_flag
+			has_country_flag = taihai_cansheng
 		}
 		ai_will_do = {
 	    	factor = 10
@@ -1412,13 +1432,11 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			focus = PRC_prepare_the_new_congress
 		}
 		ai_will_do = {
-	    	factor = 5
-			modifier = {
-				factor = 9999
-				has_game_rule = { rule = PRC_ai_behavior option = NATIONALIST_AI_BEHAVIOR }
-			}
+	    	factor = 70
 	    }
-	    completion_reward = {
+		completion_reward = {
+			set_country_flag = PRC_initial_minister_retire_flag
+			set_country_flag = prc_military_gov_come_to_power
 			custom_effect_tooltip = characters_will_be_retired
 			show_ideas_tooltip = PRC_li_keqiang_hog
 			show_ideas_tooltip = PRC_yang_jiechi_for
@@ -1438,22 +1456,22 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			add_ideas = PRC_zhang_shengmin_sec
 			add_ideas = PRC_wang_renhua_int
 			add_ideas = PRC_liu_zhenli_def
-			
 			add_popularity = {
 				ideology = totalitarian_socialist
-				popularity = 0.05
-			}	
+				popularity = 0.025
+			}
 			add_popularity = {
 				ideology = nationalist
-				popularity = 0.05
+				popularity = 0.025
 			}
-			add_war_support = 0.15
+			add_war_support = 0.05
 			focus_unlock = yes
 			hidden_effect = {
-				country_event = { id = china.21 hours = 6 }
+				country_event = china.21
 				#clr_country_flag = PRC_internal_factions_enabled_flag #removes in events .18 .19 .21
 			}
 		}
+
 	}	
 	focus = {
 	    id = PRC_prepare_the_new_congress
@@ -1478,14 +1496,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		
 	    cost = 2
 		ai_will_do = {
-	    	factor = 5
-			modifier = {
-				factor = 9999
-				OR = {
-					has_game_rule = { rule = PRC_ai_behavior option = NEW_LEFT_AI_BEHAVIOR }
-					has_game_rule = { rule = PRC_ai_behavior option = LIBERAL_AI_BEHAVIOR }
-				}
-			}
+	    	factor = 30
 	    }
 	    completion_reward = {
 			add_popularity = {
@@ -1745,13 +1756,11 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			focus = PRC_prepare_the_new_congress_1
 		}
 		ai_will_do = {
-	    	factor = 5
-			modifier = {
-				factor = 9999
-				has_game_rule = { rule = PRC_ai_behavior option = NATIONALIST_AI_BEHAVIOR }
-			}
+	    	factor = 70
 	    }
-	    completion_reward = {
+		completion_reward = {
+			set_country_flag = PRC_initial_minister_retire_flag
+			set_country_flag = prc_military_gov_come_to_power
 			custom_effect_tooltip = characters_will_be_retired
 			show_ideas_tooltip = PRC_li_keqiang_hog
 			show_ideas_tooltip = PRC_yang_jiechi_for
@@ -1771,22 +1780,22 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			add_ideas = PRC_zhang_shengmin_sec
 			add_ideas = PRC_wang_renhua_int
 			add_ideas = PRC_liu_zhenli_def
-			
 			add_popularity = {
 				ideology = totalitarian_socialist
-				popularity = 0.05
-			}	
+				popularity = 0.025
+			}
 			add_popularity = {
 				ideology = nationalist
-				popularity = 0.05
+				popularity = 0.025
 			}
-			add_war_support = 0.15
+			add_war_support = 0.05
 			focus_unlock = yes
 			hidden_effect = {
-				country_event = { id = china.21 hours = 6 }
+				country_event = china.21
 				#clr_country_flag = PRC_internal_factions_enabled_flag #removes in events .18 .19 .21
 			}
 		}
+
 	}	
 	focus = {
 	    id = PRC_prepare_the_new_congress_1
@@ -1810,14 +1819,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		
 	    cost = 2
 		ai_will_do = {
-	    	factor = 5
-			modifier = {
-				factor = 9999
-				OR = {
-					has_game_rule = { rule = PRC_ai_behavior option = NEW_LEFT_AI_BEHAVIOR }
-					has_game_rule = { rule = PRC_ai_behavior option = LIBERAL_AI_BEHAVIOR }
-				}
-			}
+	    	factor = 30
 	    }
 	    completion_reward = {
 		

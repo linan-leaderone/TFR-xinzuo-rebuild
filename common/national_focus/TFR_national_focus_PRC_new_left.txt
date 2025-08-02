@@ -6167,15 +6167,11 @@ has_country_flag = roc_lxmzd
 		}
 		completion_reward = {
 			add_political_power = 75
-			add_popularity = {
-				ideology = communist
-				popularity = 0.035
-			}		
-			add_popularity = {
-				ideology = libertarian_socialist
-				popularity = 0.025
-			}
 			hidden_effect = {
+			country_event = {
+				id = PRC_MAO2.77
+				days = 2
+			}
 				country_event = { id = china.307 days = 10 random_days = 5 }
 			}
 			hidden_effect = {
@@ -6279,6 +6275,12 @@ has_country_flag = roc_lxmzd
 		#}
 		ai_will_do = {
 			factor = 100
+		    modifier = {
+				factor = 0
+				OR = {
+				    is_ai = yes
+			        }
+			    }
 		}
 		available = {
 		}
@@ -7211,12 +7213,6 @@ create_navy_leader = {
 			factor = 50
 		}
 		available = {
-		    modifier = {
-				factor = 0
-				OR = {
-				    is_ai = yes
-			        }
-			    }
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -16235,9 +16231,6 @@ remove_ideas = militia_looting
 					add_idea = PRC_made_in_china_PRC_invest_in_artificial_intelligence
 				}
 			}
-			unlock_decision_tooltip = PRC_project_the_long_march_phase_1
-			unlock_decision_tooltip = PRC_project_the_long_march_phase_2
-			unlock_decision_tooltip = PRC_project_the_long_march_phase_3
 			add_tech_bonus = {
 				name = JAP_ai
 				bonus = 1.0

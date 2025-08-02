@@ -1,3 +1,25 @@
+CHI_UZEDONG_SHANGTAI_1 = {
+						
+		promote_character = {
+			character = Hazawa_Tsugumi_char
+			ideology = Tsuguism
+		}	
+				set_party_name = { ideology = libertarian_socialist long_name = Afterglow name = Afterglow }
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+
+		promote_character = {
+			character = Hazawa_Tsugumi_char
+			ideology = Tsuguism
+		}
+		}
 SOV_Zhir_defeat_in_2nd_European_War1 = {
 	set_global_flag = SOV_nato_second_nato_war_victory_global
 	news_event = news.539 

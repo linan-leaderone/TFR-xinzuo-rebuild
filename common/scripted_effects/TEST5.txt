@@ -230,6 +230,26 @@ has_country_flag = roc_lxmzd
 			}
 	    PRC = {leave_faction = yes }	
     
+					if = {
+				limit = {
+			country_exists = NPA
+				}	
+		NPA = {
+			add_to_faction = PRC
+		}	
+		NPA = {
+			add_to_faction = ROJ
+		}	    
+					if = {
+				limit = {
+			country_exists = NPA
+				}	
+		NPA = {
+			add_to_faction = UKR
+		}
+		}
+PRC = {set_faction_leader = yes }     
+				}
 CHF = { transfer_state = 1229}
 CHF = { transfer_state = 1227}
 CHF = { transfer_state = 595}

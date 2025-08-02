@@ -238,7 +238,7 @@ PRC_chinese_socialist_economy_cat = {
     }
     
     visible = {
-    	has_completed_focus = PRC_denounce_deng_xiao_ping_thought
+    	has_completed_focus = PRC_the_red_phoenix
     }
     
     priority = 4
@@ -352,8 +352,7 @@ PRC_loji_category = {
     }
     
     visible = {
-        has_completed_focus = PRC_ai_assisted_governance
-        is_ai = no
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
     }
 }
 

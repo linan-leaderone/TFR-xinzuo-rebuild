@@ -636,6 +636,10 @@ nihong_neizhan_11451919 = yes
 					target = HTS
 					type = annex_everything 
 				}
+				declare_war_on = { 
+					target = FSA
+					type = annex_everything 
+				}
 			}
 		}
 	}
@@ -694,9 +698,6 @@ nihong_neizhan_11451919 = yes
 			hidden_trigger = {
 				has_completed_focus = PRC_niaolong_80
 					SYR = {
-						is_ally_with = PRC
-					}
-					JOR = {
 						is_ally_with = PRC
 					}
 		OR = {
@@ -1039,7 +1040,7 @@ NPA = {
 		has_completed_focus = PRC_niaolong_56
 		}
 		available = {
-	JAP = {communist > 0.35}
+	JAP = {communist > 0.25}
 		}
 		days_remove = 28
 		fire_only_once = yes
@@ -1649,7 +1650,7 @@ JAP = {
 
 			add_popularity = {
 				ideology = social_democrat
-				popularity = 0.05
+				popularity = 0.1
 			}
 
 			}
@@ -1690,7 +1691,7 @@ JAP = {
 			}
 			add_popularity = {
 				ideology = social_liberal
-				popularity = 0.05
+				popularity = 0.1
 			}
 			}
 			}
@@ -1721,10 +1722,6 @@ JAP = {
 JAP = {
 
 			add_popularity = {
-				ideology = communist
-				popularity = 0.05
-			}
-			add_popularity = {
 				ideology = libertarian_socialist
 				popularity = 0.02
 			}
@@ -1735,6 +1732,18 @@ JAP = {
 			add_popularity = {
 				ideology = social_liberal
 				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.05
 			}
 			}
 			}
@@ -1960,7 +1969,7 @@ JAP = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 720
+		days_mission_timeout = 360
 		complete_effect = {
 			
 			custom_effect_tooltip = lgd_zcd_up
@@ -2021,7 +2030,7 @@ JAP = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 720
+		days_mission_timeout = 360
 		complete_effect = {
 			
 			custom_effect_tooltip = lgd_zcd_up
@@ -2091,7 +2100,7 @@ JAP = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 720
+		days_mission_timeout = 360
 		complete_effect = {
 			
 			custom_effect_tooltip = lgd_zcd_up
@@ -2149,7 +2158,7 @@ JAP = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 720
+		days_mission_timeout = 360
 		complete_effect = {
 			
 			custom_effect_tooltip = lgd_zcd_up

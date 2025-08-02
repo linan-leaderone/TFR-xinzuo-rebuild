@@ -1,4 +1,17 @@
 characters={
+		Hazawa_Tsugumi_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/Tsugumi.png"
+				}
+			}
+			country_leader={
+				desc = Hazawa_Tsugumi_desc
+				traits={   }
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+			}
+		}
 		xu_yongming_char = { 
 			portraits={
 				civilian={

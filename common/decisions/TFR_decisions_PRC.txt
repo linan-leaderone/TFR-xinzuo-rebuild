@@ -99,7 +99,10 @@ PRC_coronavirus_category = {
 	PRC_distribute_vaccines = { 
 		icon = generic_vaccine
 		available = {
+		OR = {
 			tag = PRC
+			tag = CHI
+		}
 		}
 		visible = {
 			has_country_flag = PRC_dealt_with_coronavirus
@@ -3235,12 +3238,20 @@ has_war = no
 			NOT = {has_country_flag = zhengzaidaji}
 
 		}
-		cost = 14
+		days_remove = 14
+		ai_will_do = {
+			base = 100
+		}
 		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = zhengzaidaji
 		}
 		remove_effect = {	
+			524 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
 launch_nuke = {
     province = 13962
     state = 524
@@ -3309,12 +3320,21 @@ goto_state = 524
 			NOT = {has_country_flag = zhengzaidaji}
 
 		}
-		cost = 14
+		days_remove = 14
+		ai_will_do = {
+			base = 100
+		}
+
 		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = zhengzaidaji
 		}
 		remove_effect = {
+			1149 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
 			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt		
 launch_nuke = {
     province = 7214
@@ -3365,7 +3385,11 @@ goto_state = 1149
 			NOT = {has_country_flag = zhengzaidaji}
 
 		}
-		cost = 14
+		days_remove = 14
+		ai_will_do = {
+			base = 100
+		}
+
 		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = zhengzaidaji
@@ -3373,6 +3397,11 @@ goto_state = 1149
 		remove_effect = {
 			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt	
 			clr_country_flag = zhengzaidaji		
+			1150 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}
 launch_nuke = {
     province = 12068
     state = 1150
@@ -3421,7 +3450,12 @@ goto_state = 1150
 			NOT = {has_country_flag = zhengzaidaji}
 
 		}
-		cost = 14
+
+		days_remove = 14
+		ai_will_do = {
+			base = 100
+		}
+
 		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = zhengzaidaji
@@ -3432,7 +3466,12 @@ goto_state = 1150
 		add_days_mission_timeout  = {
     mission = PRC_taiwan_war_countdown_1
     days = -14
-    }				
+    }
+			1148 = {
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+			}			
 launch_nuke = {
     province = 13964
     state = 1148
@@ -8712,7 +8751,7 @@ set_country_flag = PRC_yuuki_1_3
 	PRC_project_the_long_march_phase_1 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_invest_in_artificial_intelligence 
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension
@@ -8738,7 +8777,7 @@ set_country_flag = PRC_yuuki_1_3
 	PRC_project_the_long_march_phase_2 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_invest_in_artificial_intelligence 
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension
@@ -8774,7 +8813,7 @@ set_country_flag = PRC_yuuki_1_3
 	PRC_project_the_long_march_phase_3 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_invest_in_artificial_intelligence 
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension

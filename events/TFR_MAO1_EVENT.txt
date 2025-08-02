@@ -2282,6 +2282,11 @@ set_cosmetic_tag = SIK_XIN
 			target = ETL
 			type = annex_everything
 		}
+
+			set_politics = {
+				ruling_party = conservative
+				elections_allowed = no
+			}
 set_party_name = { ideology = conservative long_name = CXCconservativeCCC_party_long name = CXCconservativeCCC_party_long }
 create_country_leader = {
 	name = WEKX
@@ -2556,9 +2561,7 @@ set_politics = {
         option = {
             name = PRC_MAO1.73.a
 		trigger = {
-			NOT = {
-				tag = PRC
-			}
+				NOT = {	tag = PRC}
 		}
 			hidden_effect = {
 			if = {
