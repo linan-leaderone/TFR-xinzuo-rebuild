@@ -1460,6 +1460,12 @@ defined_text = {
 			has_country_leader_ideology = market_socialism_2
 		}
 		localization_key = market_socialism_2
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = taiwanese_progressivism_1
+		}
+		localization_key = taiwanese_progressivism_1
 	}
 
 

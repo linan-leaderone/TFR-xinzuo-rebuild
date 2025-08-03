@@ -679,6 +679,14 @@ ideologies = {
 
 	authoritarian_democrat = {
 		types = {
+			taiwanese_progressivism_1 = {
+				can_be_randomly_selected = no
+				color = {
+					68
+					218
+					128
+				}
+			}
 			oligarchist = {
 				can_be_randomly_selected = no
 				color = {

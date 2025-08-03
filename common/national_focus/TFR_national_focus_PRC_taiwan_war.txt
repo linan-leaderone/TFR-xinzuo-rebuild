@@ -520,6 +520,10 @@ focus_tree = {
 						add_ideas = PDTO_stand_up_to_taiwan_idea_ai
 					}
 					CHI = {
+						set_country_leader_portrait = {
+						ideology = social_liberal
+						portrait = GFX_CHI_CYWZS
+						}
 						load_oob = CHI_invasion_reserves
 						load_oob = CHI_invasion_reserves
 					}

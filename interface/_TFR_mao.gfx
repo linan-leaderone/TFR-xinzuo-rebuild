@@ -39,6 +39,10 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/super_dybl.png"
 	}												
 	SpriteType = {
+		name = "GFX_CHI_CYWZS"
+		texturefile = "gfx/MAOYUANXIN/CHI_tsai_ing_wen_military.png"
+	}													
+	SpriteType = {
 		name = "GFX_PRC_SJKKKKKKK"
 		texturefile = "gfx/MAOYUANXIN/SJK.png"
 	}											
@@ -554,9 +558,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_national_anarchist"
 		texturefile = "gfx/MAOYUANXIN/national_anarchist.png"
-	}				
+	}					
 	spriteType = {
 		name = "GFX_ideology_taiwanese_progressivism"
+		texturefile = "gfx/MAOYUANXIN/taiwanese_progressivism.png"
+	}				
+	spriteType = {
+		name = "GFX_ideology_taiwanese_progressivism_1"
 		texturefile = "gfx/MAOYUANXIN/taiwanese_progressivism.png"
 	}			
 	spriteType = {

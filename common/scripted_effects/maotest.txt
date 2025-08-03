@@ -493,6 +493,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_8
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO2.96
+								}	
+
+				country_event = { id = PRC_MAO2.97 days = 4 }
+				country_event = { id = PRC_MAO2.98 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.54
 								}				
