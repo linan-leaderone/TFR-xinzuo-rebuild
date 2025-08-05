@@ -252,6 +252,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_25
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.42
+								}	
+
+				country_event = { id = PRC_MAO3.43 days = 4 }
+				country_event = { id = PRC_MAO3.44 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.72
 								}
@@ -274,6 +284,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_23
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.39
+								}	
+
+				country_event = { id = PRC_MAO3.40 days = 4 }
+				country_event = { id = PRC_MAO3.41 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.70
 								}	
@@ -287,6 +307,7 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_22
     }
+
 								country_event = {
 									id = PRC_MAO.69
 								}	
@@ -300,6 +321,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_21
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.36
+								}	
+
+				country_event = { id = PRC_MAO3.37 days = 4 }
+				country_event = { id = PRC_MAO3.38 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.68
 								}	
@@ -326,6 +357,17 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_19
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.33
+								}	
+
+				country_event = { id = PRC_MAO3.34 days = 4 }
+				country_event = { id = PRC_MAO3.35 days = 9 }
+}
+				}
+	
 								country_event = {
 									id = PRC_MAO.66
 								}	
@@ -339,6 +381,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_18
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.26
+								}	
+
+				country_event = { id = PRC_MAO3.27 days = 4 }
+				country_event = { id = PRC_MAO3.28 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.65
 								}	
@@ -352,6 +404,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_17
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.23
+								}	
+
+				country_event = { id = PRC_MAO3.24 days = 4 }
+				country_event = { id = PRC_MAO3.25 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.64
 								}	
@@ -365,6 +427,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_16
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.20
+								}	
+
+				country_event = { id = PRC_MAO3.21 days = 4 }
+				country_event = { id = PRC_MAO3.22 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.63
 								}	
@@ -378,6 +450,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_15
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.17
+								}	
+
+				country_event = { id = PRC_MAO3.18 days = 4 }
+				country_event = { id = PRC_MAO3.19 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.62
 								}	
@@ -391,6 +473,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_14
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.14
+								}	
+
+				country_event = { id = PRC_MAO3.15 days = 4 }
+				country_event = { id = PRC_MAO3.16 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.61
 								}	
@@ -404,6 +496,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_13
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.11
+								}	
+
+				country_event = { id = PRC_MAO3.12 days = 4 }
+				country_event = { id = PRC_MAO3.13 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.60
 								}	
@@ -417,6 +519,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_12
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.8
+								}	
+
+				country_event = { id = PRC_MAO3.9 days = 4 }
+				country_event = { id = PRC_MAO3.10 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.58
 								}	
@@ -430,6 +542,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_11
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.5
+								}	
+
+				country_event = { id = PRC_MAO3.6 days = 4 }
+				country_event = { id = PRC_MAO3.7 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.57
 								}	
@@ -449,6 +571,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_10
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO3.2
+								}	
+
+				country_event = { id = PRC_MAO3.3 days = 4 }
+				country_event = { id = PRC_MAO3.4 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.56
 								}				
@@ -468,6 +600,16 @@ if = {
     limit = {
         has_idea = taihaijingji_idea_9
     }
+				    hidden_effect = {	
+								CHI = {
+country_event = {
+									id = PRC_MAO2.99
+								}	
+
+				country_event = { id = PRC_MAO2.100 days = 4 }
+				country_event = { id = PRC_MAO3.1 days = 9 }
+}
+				}
 								country_event = {
 									id = PRC_MAO.55
 								}			

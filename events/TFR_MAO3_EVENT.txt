@@ -79,6 +79,10 @@ country_event = {
 				ideology = social_liberal
 				popularity = -0.05
 			}
+		add_power_balance_value = {
+			id = CHI_cailai_power_balance
+			value = 0.1
+		}
 	}
 }
 country_event = {
@@ -90,6 +94,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.7.a	
+		add_power_balance_value = {
+			id = CHI_cailai_power_balance
+			value = 0.1
+		}
 			hidden_effect = {
 			add_popularity = {
 				ideology = social_liberal
@@ -210,8 +218,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.10.a
-
-
+			add_popularity = { 
+				ideology = national_socialist
+				popularity = 0.05
+			}
 	}
 }
 country_event = {
@@ -223,6 +233,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.11.a
+			add_popularity = { 
+				ideology = libertarian_socialist
+				popularity = 0.03
+			}
 
 
 	}
@@ -247,6 +261,14 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.13.a
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.05
+			}
+		add_power_balance_value = {
+			id = CHI_cailai_power_balance
+			value = 0.1
+		}
 	}
 }
 country_event = {
@@ -256,8 +278,15 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_14
 	is_triggered_only = yes
 	fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+			PRC = {	load_oob = "PRC_marines_4"}
+
+	}
+}
 	option = {
 		name = PRC_MAO3.14.a
+
 	}
 }
 country_event = {
@@ -269,6 +298,24 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.15.a
+		retire_character = CHI_tsai_ing_wen_char
+		add_power_balance_value = {
+			id = CHI_cailai_power_balance
+			value = 0.3
+		}
+set_party_name = { ideology = social_liberal long_name = mjdlqd_party_long name = mjdlqd_party_long }
+		add_country_leader_role = {
+			character = CHI_lai_ching_te_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwanese_progressivism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+
 	}
 }
 country_event = {
@@ -280,6 +327,61 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.16.a
+		add_power_balance_value = {
+			id = CHI_cailai_power_balance
+			value = 0.4
+		}
+			hidden_effect = {
+change_economy_type_military_controlled = yes
+change_government_type_military_dictatorship = yes
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.07
+			}
+				set_politics = {
+				ruling_party = authoritarian_democrat
+				election_frequency = 60
+				elections_allowed = no
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:market_liberal
+			}
+			add_to_coalition = yes
+
+	}
+
 	}
 }
 country_event = {
@@ -302,6 +404,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.18.a
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+			add_stability = 0.05
 	}
 }
 country_event = {
@@ -313,6 +420,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.19.a
+			add_stability = -0.2
 	}
 }
 country_event = {
@@ -346,6 +454,59 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.22.a
+			add_popularity = { 
+				ideology = communist
+				popularity = 0.02
+			}
+			add_popularity = { 
+				ideology = totalitarian_socialist
+				popularity = 0.02
+			}
+			add_popularity = { 
+				ideology = libertarian_socialist
+				popularity = 0.02
+			}
+			add_popularity = { 
+				ideology = fascist 
+				popularity = 0.05
+			}
+
+
+			hidden_effect = {
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						}
+						}
 	}
 }
 country_event = {

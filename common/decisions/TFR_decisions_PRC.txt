@@ -3246,7 +3246,8 @@ has_war = no
 		complete_effect = {
 			set_country_flag = zhengzaidaji
 		}
-		remove_effect = {	
+		remove_effect = {	 
+			taihai_test_1 = yes
 			524 = {
 			remove_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
@@ -3329,7 +3330,8 @@ goto_state = 524
 		complete_effect = {
 			set_country_flag = zhengzaidaji
 		}
-		remove_effect = {
+		remove_effect = { 
+			taihai_test_1 = yes
 			1149 = {
 			remove_dynamic_modifier = {
 				modifier = PRC_unplanned_offensive
@@ -3394,7 +3396,8 @@ goto_state = 1149
 		complete_effect = {
 			set_country_flag = zhengzaidaji
 		}
-		remove_effect = {
+		remove_effect = { 
+			taihai_test_1 = yes
 			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt	
 			clr_country_flag = zhengzaidaji		
 			1150 = {
@@ -3460,7 +3463,8 @@ goto_state = 1150
 		complete_effect = {
 			set_country_flag = zhengzaidaji
 		}
-		remove_effect = {
+		remove_effect = { 
+			taihai_test_1 = yes
 			custom_effect_tooltip = PRC_destroy_taiwan_sssssss11111_tt	
 			clr_country_flag = zhengzaidaji
 		add_days_mission_timeout  = {
@@ -8767,7 +8771,7 @@ set_country_flag = PRC_yuuki_1_3
 		complete_effect = {
 		}
 		ai_will_do = {
-			base = 5
+			base = 0
 		}
 		remove_effect = {
 			add_ideas = PRC_the_long_march_idea
@@ -8794,7 +8798,7 @@ set_country_flag = PRC_yuuki_1_3
 		complete_effect = {
 		}
 		ai_will_do = {
-			base = 5
+			base = 0
 		}
 		remove_effect = {
 			swap_ideas = {
@@ -8830,7 +8834,7 @@ set_country_flag = PRC_yuuki_1_3
 		complete_effect = {
 		}
 		ai_will_do = {
-			base = 5
+			base = 0
 		}
 		remove_effect = {
 			swap_ideas = {

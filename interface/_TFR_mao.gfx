@@ -479,6 +479,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_market_socialism_3"
 		texturefile = "gfx/MAOYUANXIN/market_socialism_PRC_3.png"
+	}						
+	spriteType = {
+		name = "GFX_ideology_taiwan_fuchou"
+		texturefile = "gfx/MAOYUANXIN/twfczy.png"
 	}					
 	spriteType = {
 		name = "GFX_ideology_market_socialism_4"
@@ -488,10 +492,15 @@ spriteTypes = {
 		name = "GFX_Ideology_kasitekuoism"
 		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_kasitekuoism.png"
 		legacy_lazy_load = no
-	}	
+	}		
 	spriteType = {
 		name = "GFX_Ideology_market_socialism_3"
 		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_market_socialism_3.png"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_taiwanfuchouism"
+		texturefile = "gfx/MAOYUANXIN/GFX_taiwanfuchouism.png"
 		legacy_lazy_load = no
 	}	
 	spriteType = {
