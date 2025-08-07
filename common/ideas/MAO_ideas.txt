@@ -2859,14 +2859,38 @@ army_defence_factor = 1
 
 }
 	head_minister = {
-		
+							
+		CHI_WRY_hog = {
+			picture = CHI_WRY_hog
+			name = WRY_char
+			allowed = { 
+ original_tag = TZL
+}		
+			visible = {
+ original_tag = TZL
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = { 
+				 hog_WRY_hog
+			}
+		}		
 		CHI_su_zhenchang_hog = {
 			picture = CHI_su_zhenchang_hog
 			name = su_zhenchang_char
-			allowed = { original_tag = CHI}
+			allowed = {
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
+}
 
 			visible = {
-				original_tag = CHI
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
 			}
 
 			allowed_to_remove = {
@@ -3054,14 +3078,39 @@ has_country_leader = {
 		}
 }
 	
-	economic_minister = {		
+	economic_minister = {						
+		CHI_CXX_hog = {
+			picture = CHI_CXX_hog
+			name = CXX_char
+			allowed = { 
+ original_tag = TZL
+}		
+			visible = {
+ original_tag = TZL
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = { 
+				 hog_CXX_hog
+			}
+		}			
 		CHI_chen_qimai_hog = {
 			picture = CHI_chen_qimai_hog
 			name = chen_qimai_char
-			allowed = { original_tag = CHI}
+			allowed = {
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
+}
 
 			visible = {
-				original_tag = CHI
+
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
 			}
 
 			allowed_to_remove = {
@@ -3099,14 +3148,39 @@ has_country_leader = {
 
 
 
-	foreign_minister = {		
+	foreign_minister = {						
+		CHI_LSH_hog = {
+			picture = CHI_LSH_hog
+			name = LSH_char
+			allowed = { 
+ original_tag = TZL
+}		
+			visible = {
+ original_tag = TZL
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = { 
+				 hog_LSH_hog
+			}
+		}			
 		CHI_wu_zhao_hog = {
 			picture = CHI_wu_zhao_hog
 			name = wu_zhao_char
-			allowed = { original_tag = CHI}
+			allowed = {
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
+}
 
 			visible = {
-				original_tag = CHI
+				
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
 			}
 
 			allowed_to_remove = {
@@ -3149,14 +3223,39 @@ has_country_leader = {
 
 
 	
-	interior_minister = {		
+	interior_minister = {					
+		CHI_LMW_hog = {
+			picture = CHI_LMW_hog
+			name = LMW_char
+			allowed = { 
+ original_tag = TZL
+}		
+			visible = {
+ original_tag = TZL
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = { 
+				 hog_LMW_hog
+			}
+		}		
 		CHI_xu_guoyong_hog = {
 			picture = CHI_xu_guoyong_hog
 			name = xu_guoyong_char
-			allowed = { original_tag = CHI}
+			allowed = { 
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
+}
 
 			visible = {
-				original_tag = CHI
+				
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
 			}
 
 			allowed_to_remove = {
@@ -3225,14 +3324,39 @@ has_country_leader = {
 }
 
 	
-	intelligence_minister = {			
+	intelligence_minister = {					
+		CHI_HDB_hog = {
+			picture = CHI_HDB_hog
+			name = HDB_char
+			allowed = { 
+ original_tag = TZL
+}		
+			visible = {
+ original_tag = TZL
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = { 
+				 hog_HDB_hog
+			}
+		}			
 		CHI_qiu_guozheng_hog = {
 			picture = CHI_qiu_guozheng_hog
 			name = qiu_guozheng_char
-			allowed = { original_tag = CHI}
+			allowed = { 
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
+}
 
 			visible = {
-				original_tag = CHI
+				
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
 			}
 
 			allowed_to_remove = {
@@ -3288,14 +3412,39 @@ has_country_leader = {
 			}
 		}
 }
-	theorist_minister = {			
+	theorist_minister = {				
+		CHI_ZCQ_hog = {
+			picture = CHI_ZCQ_hog
+			name = ZCQ_char
+			allowed = { 
+ original_tag = TZL
+}		
+			visible = {
+ original_tag = TZL
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = { 
+				 hog_ZCQ_hog
+			}
+		}	
 		CHI_yan_defa_hog = {
 			picture = CHI_yan_defa_hog
 			name = yan_defa_char
-			allowed = { original_tag = CHI}
+			allowed = { 
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
+}
 
 			visible = {
-				original_tag = CHI
+				
+			OR = {
+ original_tag = CHI
+ original_tag = KMT
+}
 			}
 
 			allowed_to_remove = {

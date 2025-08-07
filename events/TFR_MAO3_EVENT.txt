@@ -703,8 +703,16 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_40
 	is_triggered_only = yes
 	fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+set_country_flag = zgxztxs
+
+	}
+}
 	option = {
 		name = PRC_MAO3.40.a
+			custom_effect_tooltip = CHI_TWW_RC_MAO_40_tooltip
+			unlock_decision_tooltip = CHI_rise_up_taiwan_agitation1
 	}
 }
 country_event = {
@@ -716,6 +724,8 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.41.a
+					country_event = { id = PRC_MAO3.45 days = 3 }
+
 	}
 }
 country_event = {
@@ -760,6 +770,23 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.45.a
+
+			hidden_effect = {
+
+		end_coalition = yes
+				if = {
+					limit = {
+	JAP = {has_country_flag = CHI_Afterglow}
+					}
+					country_event = { id = PRC_MAO3.46 days = 1 }
+					}
+
+					country_event = { id = PRC_MAO3.47 days = 2 }
+					country_event = { id = PRC_MAO3.48 days = 3 }
+					country_event = { id = PRC_MAO3.49 days = 4 }
+					country_event = { id = PRC_MAO3.50 days = 5 }
+	}
+
 	}
 }
 country_event = {
@@ -769,9 +796,25 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_46
 	is_triggered_only = yes
 	fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+
+	}
+	}
 	option = {
 		name = PRC_MAO3.46.a
 	}
+	option = {
+		name = PRC_MAO3.46.b
+			custom_effect_tooltip = CHI_TWW_RC_MAO_46_tooltip
+
+			hidden_effect = {
+					JAP = { change_tag_from = ROOT }
+
+	}
+
+	}
+
 }
 country_event = {
 	id = PRC_MAO3.47
@@ -781,7 +824,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = PRC_MAO3.47.a
+		name = PRC_MAO3.47.a 
 	}
 }
 country_event = {
@@ -791,8 +834,119 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_48
 	is_triggered_only = yes
 	fire_only_once = yes
+        immediate = {
+			hidden_effect = {
+ 
+	    CHI = {leave_faction = yes }	
+
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+		    }
+			set_party_name = {
+				ideology = fascist
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+TJJ = { transfer_state = 1150}
+		CHI = {set_nationality = {
+  		  target_country = TJJ
+   		  character = CHI_chen_yi_qi_char
+		}}
+		CHI = {set_nationality = {
+  		  target_country = TJJ
+   		  character = CHI_nobody_char
+		}}
+
+		TJJ = {
+ inherit_technology = CHI
+change_economy_type_military_controlled = yes
+change_government_type_ultranationalist_dictatorship = yes	
+		add_country_leader_role = {
+			character = CHI_nobody_char
+			promote_leader = yes
+			country_leader = {
+				ideology = falun_dafa
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+
+			add_corps_commander_role = {
+				character = "CHI_chen_yi_qi_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		add_country_leader_role = {
+			character = CHI_chen_yi_qi_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwan_fuchou
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+set_popularities = {
+	national_socialist = 40
+	fascist = 60
+
+}
+				set_politics = {
+				ruling_party = fascist
+				election_frequency = 60
+				elections_allowed = no
+				}
+
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:national_socialist
+			}
+			add_to_coalition = yes
+declare_war_on = {
+			target = CHI
+			type = annex_everything
+		}
+					CHI = {
+
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}
+					}
+					}
+
+		}
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    add_core_of = TJJ
+		    }
+
+	}
+	}
 	option = {
 		name = PRC_MAO3.48.a
+	}
+	option = {
+		name = PRC_MAO3.48.b
+			custom_effect_tooltip = CHI_TWW_RC_MAO_46_tooltip
+			hidden_effect = {
+					TJJ = { change_tag_from = ROOT }
+
+	}
 	}
 }
 country_event = {
@@ -802,8 +956,259 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_49
 	is_triggered_only = yes
 	fire_only_once = yes
+
+        immediate = {
+			hidden_effect = {
+
+			set_party_name = {
+				ideology = communist
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+TZL = { transfer_state = 1149}
+		CHI = {set_nationality = {
+  		  target_country = TZL
+   		  character = CHI_wu_rong_yuan_char
+		}}
+		CHI = {set_nationality = {
+  		  target_country = TZL
+   		  character = chen_xinxing_char
+		}}
+		CHI = {set_nationality = {
+  		  target_country = TZL
+   		  character = zheng_cunqi_char
+		}}
+		CHI = {set_nationality = {
+  		  target_country = TZL
+   		  character = TWWGSQ
+		}}
+
+		TZL = {
+
+			add_corps_commander_role = {
+				character = "CHI_wu_rong_yuan_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			add_corps_commander_role = {
+				character = "chen_xinxing_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			add_corps_commander_role = {
+				character = "zheng_cunqi_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		#Laws
+		add_ideas = low_conscription
+		add_ideas = higher_poverty
+
+		add_ideas = CHI_HDB_hog
+		add_ideas = CHI_LMW_hog
+		add_ideas = CHI_CXX_hog
+		add_ideas = CHI_LSH_hog
+		add_ideas = CHI_WRY_hog
+		add_ideas = CHI_ZCQ_hog
+
+	send_embargo = PRC
+	send_embargo = PRK
+	set_variable = { Russian_Influence = 0.00 }
+	set_variable = { Chinese_Influence = 0.20 }
+	set_variable = { American_Influence = 0.00 }
+	set_variable = { European_Influence = 0.15 }
+	set_variable = { PDO_Influence = 0.60 }
+	set_variable = { Sovereign_Influence = 0.05 }
+
+	set_research_slots = 4
+	set_convoys = 700
+	set_stability = 0.8
+
+	set_country_flag = country_language_chinese
+ inherit_technology = CHI
+			TZL = {	load_oob = "TZL_marines_1"}
+			set_party_name = {
+				ideology = fascist
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+change_economy_type_planned_economy = yes
+change_government_type_revolutionary_front = yes		
+		add_country_leader_role = {
+			character = chen_xinxing_char
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+		add_country_leader_role = {
+			character = TWWGSQ
+			promote_leader = yes
+			country_leader = {
+				ideology = trotskyism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+		add_country_leader_role = {
+			character = zheng_cunqi_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwan_zuolian
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+  create_corps_commander = {
+name = "LMW_char" 
+desc = "POLITICS_LMW_char_DESC"
+portrait_path = GFX_LMW_char1
+skill = 1
+attack_skill = 1
+defense_skill = 1
+planning_skill = 1
+logistics_skill = 1
+traits = { 
+}
+} 
+  create_corps_commander = {
+name = "LSH_char" 
+desc = "POLITICS_LSH_char_DESC"
+portrait_path = GFX_LSH_char1
+skill = 1
+attack_skill = 1
+defense_skill = 1
+planning_skill = 1
+logistics_skill = 1
+traits = { 
+}
+} 
+  create_corps_commander = {
+name = "HDB_char" 
+desc = "POLITICS_HDB_char_DESC"
+portrait_path = GFX_HDB_char1
+skill = 1
+attack_skill = 1
+defense_skill = 1
+planning_skill = 1
+logistics_skill = 1
+traits = { 
+}
+} 
+				create_country_leader = {
+	                name = "XUYONG"
+	                desc = "POLITICS_TWWGSQ_DESC"
+	                picture = "gfx/MAOYUANXIN/XY.png"
+	                expire = "1999.1.1"
+	                ideology = sm_socialism
+				}  
+set_popularities = {
+	totalitarian_socialist = 15
+	communist = 25
+	libertarian_socialist = 40
+	social_democrat = 20
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = no
+				}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+declare_war_on = {
+			target = CHI
+			type = annex_everything
+		}
+declare_war_on = {
+			target = TJJ
+			type = annex_everything
+		}
+
+
+		}
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    add_core_of = TZL
+		    }
+
+	}
+	}
+
 	option = {
 		name = PRC_MAO3.49.a
+			custom_effect_tooltip = CHI_TWW_RC_MAO_46_tooltip
+	}
+	option = {
+		name = PRC_MAO3.49.b
+			hidden_effect = {
+					TZL = { change_tag_from = ROOT }
+
+	}
 	}
 }
 country_event = {
@@ -813,8 +1218,183 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_50
 	is_triggered_only = yes
 	fire_only_once = yes
+
+        immediate = {
+			hidden_effect = {
+
+				set_politics = {
+				ruling_party = conservative
+				election_frequency = 60
+				elections_allowed = no
+				}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.6
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:market_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = social_liberal
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = FEIFA_party_long
+				name = FEIFA_party_long
+			}
+KMT = { transfer_state = 524}
+		CHI = {set_nationality = {
+  		  target_country = KMT
+   		  character = CHI_lai_ching_te_char
+		}}
+
+
+		KMT = {
+
+ inherit_technology = CHI
+
+			add_corps_commander_role = {
+				character = "CHI_lai_ching_te_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+		add_country_leader_role = {
+			character = CHI_lai_ching_te_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwanese_progressivism_1
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+change_economy_type_military_controlled = yes
+change_government_type_military_dictatorship = yes
+		add_country_leader_role = {
+			character = CHI_lai_ching_te_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwanese_progressivism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+		add_country_leader_role = {
+			character = CHI_lai_ching_te_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwanese_progressivism_1
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+		promote_character = {
+			character = CHI_lai_ching_te_char
+			ideology = taiwanese_progressivism_1
+		}
+
+set_popularities = {
+	authoritarian_democrat = 60
+	social_liberal = 40
+}
+				set_politics = {
+				ruling_party = authoritarian_democrat
+				election_frequency = 60
+				elections_allowed = no
+				}	
+		add_country_leader_role = {
+			character = CHI_lai_ching_te_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwanese_progressivism_1
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+
+		add_country_leader_role = {
+			character = CHI_lai_ching_te_char
+			promote_leader = yes
+			country_leader = {
+				ideology = taiwanese_progressivism_1
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+
+			
+declare_war_on = {
+			target = CHI
+			type = annex_everything
+		}
+declare_war_on = {
+			target = TJJ
+			type = annex_everything
+		}
+declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+					CHI = {
+
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.5       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}
+					}
+					}
+
+
+		}
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    add_core_of = KMT
+		    }
+
+	}
+	}
 	option = {
 		name = PRC_MAO3.50.a
+	}
+	option = {
+		name = PRC_MAO3.50.b
+			custom_effect_tooltip = CHI_TWW_RC_MAO_46_tooltip
+			hidden_effect = {
+					KMT = { change_tag_from = ROOT }
+
+	}
 	}
 }
 country_event = {

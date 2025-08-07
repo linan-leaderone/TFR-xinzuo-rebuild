@@ -1,3 +1,119 @@
+CHI_UZEDONG_SHANGTAI_4 = {
+TSU = {
+
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    add_core_of = TSU
+		    }
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    remove_core_of = JAP
+		    }
+				transfer_state = 1332
+				set_capital = {
+					state = 1332
+				}
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = JAP
+
+set_popularities = {
+	totalitarian_socialist = 15
+	communist = 25
+	libertarian_socialist = 40
+	social_democrat = 20
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+					
+				annex_country = {
+								target = JAP
+								transfer_troops = no
+							}
+		}
+		}
+CHI_UZEDONG_SHANGTAI_3 = {
+MKL = {
+
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    add_core_of = MKL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    remove_core_of = KOR
+		    }
+				transfer_state = 1041
+				set_capital = {
+					state = 1041
+				}
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = KOR
+				create_country_leader = {
+	                name = "MOKA"
+	                desc = "POLITICS_MOKA_DESC"
+	                picture = "gfx/MAOYUANXIN/MOKA.png"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+set_popularities = {
+	totalitarian_socialist = 15
+	communist = 25
+	libertarian_socialist = 40
+	social_democrat = 20
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+					
+				annex_country = {
+								target = KOR
+								transfer_troops = no
+							}
+		}
+		}
 CHI_UZEDONG_SHANGTAI_2 = {
 change_economy_type_military_controlled = yes
 					change_government_type_ultranationalist_dictatorship = yes	

@@ -1,5 +1,35 @@
 leader_traits = {				
-	
+			
+hog_CXX_hog = {
+	production_factory_max_efficiency_factor = 0.1
+	production_factory_efficiency_gain_factor = 0.1
+	}		
+hog_LSH_hog = {
+	opinion_gain_monthly_factor = 0.15
+	political_power_gain = 0.1
+	}	
+hog_LMW_hog = {
+	conscription_factor = 0.1
+	stability_factor = 0.1
+	random = no
+	}		
+hog_ZCQ_hog = {
+	conscription_factor = 0.2
+	supply_consumption_factor = -0.2
+	mobilization_speed = 0.2
+	random = no
+	}	
+hog_HDB_hog = {
+	agency_upgrade_time = -0.2
+	crypto_strength = 1	
+	decryption_power = 1
+	random = no
+	}		
+hog_WRY_hog = {
+	political_power_gain = 0.1
+	stability_factor = 0.05
+	random = no
+	}		
 hog_yan_defa_hog = {
 	army_core_attack_factor = 0.2
 	army_core_defence_factor = 0.2

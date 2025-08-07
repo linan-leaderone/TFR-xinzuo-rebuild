@@ -1487,6 +1487,7 @@ focus_tree = {
 			factor = 100
 		}
 		allow_branch = {
+			has_country_flag=prccb
 		}
 		available = {
 			always = no

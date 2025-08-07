@@ -1,4 +1,56 @@
 characters={
+		Himari_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/Himari.png"
+				}
+			}
+			country_leader={
+				desc = Ran_desc
+				traits={   }
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+			}
+		}
+		Tomoe_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/Tomoe.png"
+				}
+			}
+			country_leader={
+				desc = Tomoe_desc
+				traits={   }
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+			}
+		}
+		Ran_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/Ran.png"
+				}
+			}
+			country_leader={
+				desc = Ran_desc
+				traits={   }
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+			}
+		}
+		Moka_char = { 
+			portraits={
+				civilian={
+					large = "gfx/MAOYUANXIN/Moka.png"
+				}
+			}
+			country_leader={
+				desc = Moka_desc
+				traits={   }
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+			}
+		}
 		Hazawa_Tsugumi_char = { 
 			portraits={
 				civilian={

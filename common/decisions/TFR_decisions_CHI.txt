@@ -1030,7 +1030,45 @@
 				}
 			}
 		}
-		
+			
+		CHI_rise_up_taiwan_agitation1 = {
+			icon = GFX_CHI_test_of_will_rise_up_taiwan
+			allowed = {
+				original_tag = CHI
+			}
+			visible = {
+
+has_country_flag = zgxztxs
+			}
+			available = {
+				has_war = yes
+			}
+			cancel_trigger = {
+				hidden_trigger = {
+					is_ally_with = PRC
+				}
+			}
+
+			ai_will_do = {
+				factor = 50
+			}
+
+			complete_effect = {
+				hidden_effect = {
+					country_event = { id = PRC_MAO3.41}
+				PRC = {
+					country_event = { id = china.24 }
+				}
+
+				JAP = {
+					country_event = { id = jap.9 days = 12 }
+				}
+
+
+				}
+			}
+		}
+	
 		CHI_rise_up_taiwan_agitation = {
 			icon = GFX_CHI_test_of_will_rise_up_taiwan
 			allowed = {
@@ -1044,11 +1082,7 @@
 					is_ally_with = PRC
 				}
 			}
-			cancel_trigger = {
-				hidden_trigger = {
-					is_ally_with = PRC
-				}
-			}
+
 			ai_will_do = {
 				factor = 50
 			}

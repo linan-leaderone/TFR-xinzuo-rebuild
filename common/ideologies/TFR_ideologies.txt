@@ -145,6 +145,9 @@ ideologies = {
 					184
 				}
 			}
+			taiwan_zuolian = {
+				can_be_randomly_selected = no
+			}
 			Geometridaeism2 = {
 				can_be_randomly_selected = no
 			}

@@ -291,7 +291,6 @@ country_event = {
 								}	
 
 				country_event = { id = PRC_MAO3.40 days = 4 }
-				country_event = { id = PRC_MAO3.41 days = 9 }
 }
 				}
 								country_event = {

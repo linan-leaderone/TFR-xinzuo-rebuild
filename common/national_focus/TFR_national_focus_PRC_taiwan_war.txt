@@ -1461,7 +1461,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			add_ideas = PRC_wang_renhua_int
 			add_ideas = PRC_liu_zhenli_def
 			add_popularity = {
-				ideology = totalitarian_socialist
+				ideology = national_socialist
 				popularity = 0.025
 			}
 			add_popularity = {

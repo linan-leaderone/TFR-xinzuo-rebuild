@@ -48,7 +48,6 @@
 	recruit_character = CHI_Taipei_Demon
 	recruit_character = CHI_cai_yanming
 	recruit_character = CHI_nobody_char
-	recruit_character = Hazawa_Tsugumi_char
 
 	set_research_slots = 4
 	set_convoys = 700

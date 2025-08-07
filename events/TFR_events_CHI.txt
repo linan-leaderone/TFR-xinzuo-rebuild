@@ -222,7 +222,7 @@
 			hidden_effect = {
 				if = {
 					limit = {
-						PRC = { is_ai = no }
+						PRC = { is_ai = yes }
 					}
 					#remove_ideas = CHI_Taiwan_Bravery
 					#add_ideas = CHI_Taiwan_Bravery_2

@@ -245,6 +245,42 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_generic_duliyuanjing_idea"
 		texturefile = "gfx/MAOYUANXIN/duliyuanjing.png"
+	}						
+	SpriteType = {
+		name = "GFX_HDB_char1"
+		texturefile = "gfx/MAOYUANXIN/HDB.png"
+	}							
+	SpriteType = {
+		name = "GFX_LSH_char1"
+		texturefile = "gfx/MAOYUANXIN/XY.png"
+	}								
+	SpriteType = {
+		name = "GFX_LMW_char1"
+		texturefile = "gfx/MAOYUANXIN/LMW.png"
+	}								
+	SpriteType = {
+		name = "GFX_idea_CHI_CXX_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_CXX_xiao.png"
+	}					
+	SpriteType = {
+		name = "GFX_idea_CHI_LSH_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_LSH_xiao.png"
+	}			
+	SpriteType = {
+		name = "GFX_idea_CHI_ZCQ_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_ZCQ_xiao.png"
+	}								
+	SpriteType = {
+		name = "GFX_idea_CHI_WRY_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_WRY_xiao.png"
+	}	
+	SpriteType = {
+		name = "GFX_idea_CHI_LMW_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_LMW_xiao.png"
+	}				
+	SpriteType = {
+		name = "GFX_idea_CHI_HDB_hog"
+		texturefile = "gfx/MAOYUANXIN/CHI_HDB_xiao.png"
 	}				
 	SpriteType = {
 		name = "GFX_idea_generic_wushenlun_idea"
@@ -510,6 +546,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_Tsuguism"
 		texturefile = "gfx/MAOYUANXIN/suguism.png"
+	}			
+	spriteType = {
+		name = "GFX_ideology_taiwan_zuolian"
+		texturefile = "gfx/MAOYUANXIN/CHI_zylm.png"
+	}				
+	spriteType = {
+		name = "GFX_taiwan_zuolian"
+		texturefile = "gfx/MAOYUANXIN/taiwan_zuolian_ban.png"
+		legacy_lazy_load = no
 	}				
 	spriteType = {
 		name = "GFX_Tsuguism"

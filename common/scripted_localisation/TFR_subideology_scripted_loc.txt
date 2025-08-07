@@ -466,6 +466,12 @@ defined_text = {
 	name = GetSubIdeologyLocLibSoc
 	text = {
 		trigger = {
+			has_country_leader_ideology = taiwan_zuolian
+		}
+		localization_key = taiwan_zuolian
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Tsuguism
 		}
 		localization_key = Tsuguism

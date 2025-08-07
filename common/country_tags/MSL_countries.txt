@@ -1,0 +1,6 @@
+
+TJJ = "countries/TJJ.txt"
+KMT = "countries/KMT.txt"
+TZL = "countries/TZL.txt"
+MKL = "countries/MKL.txt"
+TSU = "countries/TSU.txt"
