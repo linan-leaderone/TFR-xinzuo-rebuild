@@ -25,7 +25,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_lmrev"
 		texturefile = "gfx/MAOYUANXIN/super_lmrev.png"
-	}													
+	}														
+	SpriteType = {
+		name = "GFX_kongbai_beijing"
+		texturefile = "gfx/MAOYUANXIN/beijing.dds"
+		legacy_lazy_load = no
+	}																
+	SpriteType = {
+		name = "GFX_kongbai_beijing2"
+		texturefile = "gfx/MAOYUANXIN/beijing.dds"
+		legacy_lazy_load = no
+	}												
 	SpriteType = {
 		name = "GFX_super_rcwar2"
 		texturefile = "gfx/MAOYUANXIN/super_rcwar3.png"

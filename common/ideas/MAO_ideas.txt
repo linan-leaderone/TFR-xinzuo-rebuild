@@ -1,6 +1,211 @@
 ideas = {	
 	country = {
-												
+													
+CHI_erqijingshen2_idea = {
+    picture = CHI_erqijingshen_idea
+    name = CHI_erqijingshen_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
+	army_attack_factor = 0.2
+	army_defence_factor = 0.2
+	army_org_factor = 0.15
+    }
+}														
+CHI_erqijingshen_idea = {
+    picture = CHI_erqijingshen_idea
+    name = CHI_erqijingshen_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	army_attack_factor = 0.1
+	army_defence_factor = 0.1
+	army_org_factor = 0.1
+    }
+}													
+CHI_zylm_army_3_idea = {
+    picture = CHI_zylm_army_idea
+    name = CHI_zylm_army_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	weekly_manpower = 500
+
+
+    }
+}												
+CHI_zylm_army_2_idea = {
+    picture = CHI_zylm_army_idea
+    name = CHI_zylm_army_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
+
+
+    }
+}												
+CHI_zylm_army_1_idea = {
+    picture = CHI_zylm_army_idea
+    name = CHI_zylm_army_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	breakthrough_factor = 0.1
+	experience_gain_army_factor = 0.1
+
+
+    }
+}												
+CHI_zylm_army_idea = {
+    picture = CHI_zylm_army_idea
+    name = CHI_zylm_army_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	
+	
+
+
+    }
+}											
+CHI_zylm_3_idea = {
+    picture = CHI_zylm_idea
+    name = CHI_zylm_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+political_power_gain = 0.5
+
+
+    }
+}											
+CHI_zylm_2_idea = {
+    picture = CHI_zylm_idea
+    name = CHI_zylm_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+industrial_capacity_factory = 0.15
+production_speed_buildings_factor = 0.15
+
+    }
+}												
+CHI_zylm_1_idea = {
+    picture = CHI_zylm_idea
+    name = CHI_zylm_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+conscription = 0.05
+
+
+    }
+}											
+CHI_zylm_0_idea = {
+    picture = CHI_zylm_idea
+    name = CHI_zylm_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+
+
+
+    }
+}												
 CHI_zylm_idea = {
     picture = CHI_zylm_idea
     name = CHI_zylm_idea

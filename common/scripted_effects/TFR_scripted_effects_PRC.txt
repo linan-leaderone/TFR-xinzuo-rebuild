@@ -2084,6 +2084,27 @@
 		clr_global_flag = PRC_ongoing_taiwan_war
 		white_peace = AST
 		white_peace = JAP
+				if = {
+					limit = {
+						CHI = { is_ai = no }
+					}
+			HKN = {
+				transfer_state = 326
+				add_state_core = 326
+				set_cosmetic_tag = HKN_revolution
+				load_oob = HKN_revolt
+					}
+			326 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_hong_kong
+				}
+			}
+		JAP = {add_to_faction = HKN}
+					}
+				if = {
+					limit = {
+						CHI = { is_ai = yes }
+					}
 		annex_country = {
 		    target = HKN
 		    transfer_troops = no
@@ -2093,6 +2114,7 @@
 				modifier = PRC_hong_kong
 			}
 		}
+					}
 		country_event = {
 			id = china.250
 			days = 120

@@ -5,6 +5,22 @@ spriteTypes = {
 		noOfFrames = 19
 	}
 	spriteType = {
+		name = "GFX_idea_CHI_erqijingshen_idea"
+		textureFile = "gfx/MAOYUANXIN/27js.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_zylm_army_idea"
+		textureFile = "gfx/MAOYUANXIN/CHI_zylm_army.png"
+	}
+	spriteType = {
+		name = "GFX_HDQ2"
+		textureFile = "gfx/MAOYUANXIN/PRC_han_deqiang.png"
+	}
+	spriteType = {
+		name = "GFX_RTY_Member"
+		textureFile = "gfx/MAOYUANXIN/GFX_RTY_Member.png"
+	}
+	spriteType = {
 		name = "GFX_PRC_CQGJX"
 		textureFile = "gfx/MAOYUANXIN/GFX_PRC_CQGJX.png"
 	}

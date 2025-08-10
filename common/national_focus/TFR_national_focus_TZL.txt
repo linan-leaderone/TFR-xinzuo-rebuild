@@ -1,0 +1,567 @@
+focus_tree = {
+	id = TZL_TWW_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = TZL
+		}
+	}
+    
+
+    
+   focus = {
+		id = TZL_TWW_FOCUS_8
+		icon = GFX_focus_TZL_TWW_FOCUS_8
+		x = 10
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	add_stability = -0.05
+	add_war_support = 0.1
+	
+					country_event = { id = PRC_MAO3.66 days = 1 }
+		
+
+			hidden_effect = {
+					country_event = { id = PRC_MAO3.67 days = 15 }
+			}
+		}
+	} 
+    
+   focus = {
+		id = TZL_TWW_FOCUS_9
+		icon = GFX_focus_TZL_TWW_FOCUS_9
+		x = 9
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_8
+		}
+		available = {
+		
+		}
+		completion_reward = {
+			change_economy_type_worker_controlled = yes
+	add_war_support = 0.1
+	
+					country_event = { id = PRC_MAO3.69 days = 1 }
+		
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_10
+		icon = GFX_focus_TZL_TWW_FOCUS_10
+		x = 11
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_8
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	
+		
+					country_event = { id = PRC_MAO3.68 days = 1 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_3_idea
+				}
+			}
+		
+			hidden_effect = {
+
+				add_to_variable = {
+					var = CHI_zylm_political_power_gain_dynamic_var
+					value = 0.5
+				}
+
+		}
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_11
+		icon = GFX_focus_TZL_TWW_FOCUS_11
+		x = 10
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_9
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_10
+		}
+		available = {
+		
+		}
+		completion_reward = {
+				custom_effect_tooltip = CHI_TZL_TWW_FOCUS_11_tooltip
+			hidden_effect = {
+	load_oob = "TZL_marines_2"	
+
+		}
+		}
+	} 
+
+   focus = {
+		id = TZL_TWW_FOCUS_4
+		icon = GFX_focus_TZL_TWW_FOCUS_4
+		x = 6
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	
+					country_event = { id = PRC_MAO3.52 days = 1 }
+		add_ideas = CHI_erqijingshen_idea
+
+		}
+	} 
+    
+   focus = {
+		id = TZL_TWW_FOCUS_5
+		icon = GFX_focus_TZL_TWW_FOCUS_5
+		x = 5
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_4
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	
+		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_1_idea
+				}
+			}
+		
+			hidden_effect = {
+
+				add_to_variable = {
+					var = CHI_zylm_conscription_dynamic_var
+					value = 0.05
+				}
+
+		}
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_6
+		icon = GFX_focus_TZL_TWW_FOCUS_6
+		x = 7
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_4
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_2_idea
+				}
+			}
+		
+			hidden_effect = {
+
+				add_to_variable = {
+					var =  CHI_zylm_production_speed_buildings_factor_dynamic_var
+					value = 0.15
+				}
+				add_to_variable = {
+					var =  CHI_zylm_industrial_capacity_factory_dynamic_var
+					value = 0.15
+				}
+
+		}
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_7
+		icon = GFX_focus_TZL_TWW_FOCUS_7
+		x = 6
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_6
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_5
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	add_stability = 0.15
+	add_war_support = 0.15
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_12
+		icon = GFX_focus_TZL_TWW_FOCUS_12
+		x = 6
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_3
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_7
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_11
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	
+					country_event = { id = PRC_MAO3.71 days = 1 }
+		
+				swap_ideas = {
+					remove_idea = CHI_erqijingshen_idea
+					add_idea = CHI_erqijingshen2_idea
+				}
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_15
+		icon = GFX_focus_TZL_TWW_FOCUS_15
+		x = 6
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_13
+			focus = TZL_TWW_FOCUS_14
+		}
+		available = {
+		has_war = no
+		}
+		completion_reward = {
+			set_cosmetic_tag = TZL_SOC
+			news_event = { id = PRC_MAO3.55 days = 1 }
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_14
+		icon = GFX_focus_TZL_TWW_FOCUS_14
+		x = 7
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		mutually_exclusive = {
+			focus = TZL_TWW_FOCUS_13
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_12
+		}
+		available = {
+		has_war = no
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = greater_than_or_equals
+}
+		}
+		completion_reward = {
+	set_country_flag = CHI_hongtongpai
+	
+		
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_13
+		icon = GFX_focus_TZL_TWW_FOCUS_13
+		x = 5
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = {
+			focus = TZL_TWW_FOCUS_14
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_12
+		}
+		available = {
+		has_war = no
+		
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = less_than
+}
+		}
+		completion_reward = {
+	set_country_flag = CHI_hongdupai
+		
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_0
+		icon = GFX_focus_TZL_TWW_FOCUS_0
+		x = 2
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		
+		}
+		completion_reward = {
+	
+					country_event = { id = PRC_MAO3.65 days = 1 }
+		
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_army_idea
+					add_idea = CHI_zylm_army_1_idea
+				}
+			}
+
+			hidden_effect = {
+
+				add_to_variable = {
+					var = CHI_zylm_army_breakthrough_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = CHI_zylm_army_experience_gain_army_factor_dynamic_var
+					value = 0.1
+				}
+
+		}
+
+		}
+	} 
+    
+   focus = {
+		id = TZL_TWW_FOCUS_1
+		icon = GFX_focus_TZL_TWW_FOCUS_1
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_0
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_army_idea
+					add_idea = CHI_zylm_army_2_idea
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_army_idea
+					add_idea = CHI_zylm_army_3_idea
+				}
+			}
+		
+			hidden_effect = {
+
+				add_to_variable = {
+					var = CHI_zylm_army_army_core_attack_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = CHI_zylm_army_army_core_defence_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = CHI_zylm_army_weekly_manpower_dynamic_var
+					value = 500
+				}
+
+		}
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_2
+		icon = GFX_focus_TZL_TWW_FOCUS_2
+		x = 3
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_0
+		}
+		available = {
+		
+		}
+		completion_reward = {
+	
+					country_event = { id = PRC_MAO3.53 days = 1 }
+			hidden_effect = {
+					country_event = { id = PRC_MAO3.64 days = 15 }
+			}
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 100 producer = NAX }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 200 producer = VEN }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 100 producer = NPA }
+				add_equipment_to_stockpile = {type = support_equipment amount = 20 producer = NPA }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 200 producer = RCG }
+				add_equipment_to_stockpile = {type = support_equipment amount = 40 producer = RCG }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 20 producer = RCG }
+				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 15 producer = RCG }
+				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 15 producer = RCG }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 200 producer = TRG }
+				add_equipment_to_stockpile = {type = support_equipment amount = 40 producer = TRG }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 20 producer = TRG }
+				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 15 producer = TRG }
+				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 15 producer = TRG }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 200 producer = APA }
+				add_equipment_to_stockpile = {type = support_equipment amount = 40 producer = APA }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 20 producer = APA }
+				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 15 producer = APA }
+				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 15 producer = APA }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_army_idea
+					add_idea = CHI_zylm_army_3_idea
+				}
+			}
+		
+			hidden_effect = {
+
+				add_to_variable = {
+					var = CHI_zylm_army_weekly_manpower_dynamic_var
+					value = 500
+				}
+
+		}
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_3
+		icon = GFX_focus_TZL_TWW_FOCUS_3
+		x = 2
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_1
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_2
+		}
+		available = {
+		
+		}
+		completion_reward = {
+					country_event = { id = PRC_MAO3.70 days = 1 }
+	
+	add_stability = -0.2
+	add_war_support = -0.2
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 4000 producer = CHI }
+				add_equipment_to_stockpile = {type = support_equipment amount = 400 producer = CHI }
+		
+			add_offsite_building = { type = arms_factory level = 4 }
+
+		}
+	} 
+
+    }

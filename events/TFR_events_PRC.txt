@@ -11025,6 +11025,1631 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = china.353
+	title = china.353.t
+	desc = china.353.d
+	picture = GFX_PRC_taiwan_beautiful
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = china.353.a
+		CHI = {
+			hidden_effect = {
+				promote_character = {
+					character = CHI_hung_chi_chang_char
+					ideology = market_socialism
+				}
+			}
+			add_country_leader_role = {
+				character = CHI_hung_chi_chang_char
+				promote_leader = yes
+				country_leader = {
+					ideology = market_socialism
+					expire = "1.1.1.1"
+					traits={
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = china.353.b
+		CHI = {
+			hidden_effect = {
+				promote_character = {
+					character = CHI_cai_yanming
+					ideology = market_socialism
+				}
+			}
+			add_country_leader_role = {
+				character = CHI_cai_yanming
+				promote_leader = yes
+				country_leader = {
+					ideology = market_socialism
+					expire = "1.1.1.1"
+					traits={
+					}
+				}
+			}
+		}
+	}
+}
+
+#The Fading Heart of Revolution
+country_event = {
+	id = china.354
+	title = china.354.t
+	desc = china.354.d
+	picture = GFX_PRC_fading_heart_of_revolution
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = china.354.a
+	}
+}
+
+#Past Glory Flowing Away
+country_event = {
+	id = china.355
+	title = china.355.t
+	desc = china.355.d
+	picture = GFX_PRC_past_glory_flowing_away
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = china.355.a
+	}
+}
+
+#song_wencong
+country_event = {
+	id = china.356
+	title = china.356.t
+	desc = china.356.d
+	picture = GFX_PRC_chengdu_j_36
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.356.a
+		set_country_flag = PRC_military_project_researching
+		activate_mission = PRC_military_project_mission
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 75
+		}
+		add_debt_with_inflation = yes
+		clr_country_flag = anti_debil
+		set_country_flag = PRC_project_song_wencong_success
+		country_event = {
+			id = china.500
+			days = 125
+		}
+		add_timed_idea = {
+			idea = PRC_ongoing_military_project_idea
+			days = 125
+		}
+	}
+	option = {
+		name = china.356.b
+		add_political_power = 25
+		clr_country_flag = anti_debil
+	}
+}
+#Pakistan Asks for Help
+country_event = {
+	id = china.357
+	title = china.357.t
+	desc = china.357.d
+	picture = GFX_Chinese_soldiers
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.357.a
+		add_stability = -0.05
+		PAK = {
+			get_current_government_type = yes
+		}
+		puppet = {
+		    target = PAK
+		    end_wars = no
+		}
+		PAK = {
+			restore_previous_government_type = yes
+		}
+		transfer_state = 1131
+		transfer_state = 787
+		transfer_state = 434
+		add_state_core = 1131
+		add_state_core = 787
+		add_state_core = 434
+		declare_war_on = {
+			target = BAL
+			type = civil_war
+		}
+		declare_war_on = {
+			target = AN1
+			type = civil_war
+		}
+		declare_war_on = {
+			target = ISK
+			type = civil_war
+		}
+		declare_war_on = {
+			target = TLP
+			type = civil_war
+		}
+		hidden_effect = {
+			PRC = {
+				add_to_faction = PAK
+			}
+			news_event = {
+				id = china.359
+				days = 2
+			}
+		}
+	}
+}
+#Order in Pakistan Restored
+country_event = {
+	id = china.358
+	title = china.358.t
+	desc = china.358.d
+	picture = GFX_Chinese_soldiers2
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.358.a
+		army_experience = 20
+		add_war_support = 0.025
+	}
+}
+#Chinese Forces Enter Pakistan
+news_event = {
+	id = china.359
+	title = china.359.t
+	desc = china.359.d
+	picture = GFX_Chinese_soldiers_news
+
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+	}
+
+	option = {
+		name = china.359.a
+	}
+}
+#Thermonuclear Launches From China! #event for jap
+country_event = {
+	id = china.360
+	title = china.360.t
+	desc = china.360.d
+	picture = GFX_GER_moscow_nuke
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.360.a
+		trigger = {
+			NOT = {
+				has_country_flag = RAJ_nukes_allowed
+			}
+		}
+		add_stability = -0.25
+		add_war_support = -0.25
+		add_timed_idea = {
+			idea = PRC_consequences_of_nuclear_war
+			days = 500
+		}
+	}
+	option = {
+		name = china.360.b
+		trigger = {
+			has_country_flag = RAJ_nukes_allowed
+		}
+		custom_effect_tooltip = JAP_nuke_chinese_capital
+		add_stability = -0.25
+		add_war_support = -0.15
+		add_timed_idea = {
+			idea = PRC_consequences_of_nuclear_war
+			days = 500
+		}
+		PRC = {
+			capital_scope = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						controller = PRC
+					}
+				}
+			}
+		}
+	}
+}
+#Thermonuclear Bombing of Japan
+news_event = {
+	id = china.361
+	title = china.361.t
+	desc = china.361.d
+	picture = GFX_event_nuke
+
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+	}
+
+	option = {
+		name = china.361.a
+		
+	}
+}
+#Federation Reunified
+news_event = {
+	id = china.362
+	title = china.362.t
+	desc = china.362.d
+	picture = GFX_PRC_chinese_flag_news
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.362.a
+		
+	}
+}
+#Chinese Interests in Afghanistan
+country_event = {
+	id = china.363
+	title = china.363.t
+	desc = china.363.d
+	picture = GFX_PRC_TAL_china_afghanistan
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.363.a
+		set_country_flag = PRC_afghanistan_initiative_flag
+		country_event = {
+			id = china.370
+			days = 5
+		}
+		effect_tooltip = {
+			add_ideas = PRC_afg_initiative_fake_idea
+		}
+		custom_effect_tooltip = PRC_afg_initiative_tt
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = PRC_afg_initiative_dynamic
+			}
+			set_variable = { PRC_afg_initiative_consumer_goods_factor = -0.01 }
+			set_variable = { PRC_afg_initiative_local_resources_factor = 0.01 }
+			set_variable = { PRC_afg_initiative_income_growth_factor = 0.01 }
+			set_variable = { PRC_afg_initiative_industrial_development_monthly = 0.001 }
+			set_variable = { PRC_afg_initiative_global_building_slots_factor = 0.01 }
+			set_variable = { PRC_afg_initiative_production_speed_buildings_factor = 0.01 }
+			TAL = {
+				add_dynamic_modifier = {
+					modifier = PRC_afg_initiative_dynamic
+				}
+				set_variable = { PRC_afg_initiative_consumer_goods_factor = -0.04 }
+				set_variable = { PRC_afg_initiative_local_resources_factor = 0.06 }
+				set_variable = { PRC_afg_initiative_income_growth_factor = 0.06 }
+				set_variable = { PRC_afg_initiative_industrial_development_monthly = 0.01 }
+				set_variable = { PRC_afg_initiative_poverty_development_monthly = 0.01 }
+				set_variable = { PRC_afg_initiative_society_development_monthly = 0.01 }
+				set_variable = { PRC_afg_initiative_global_building_slots_factor = 0.1 }
+				set_variable = { PRC_afg_initiative_production_speed_buildings_factor = 0.1 }
+				set_variable = { PRC_afg_initiative_industrial_capacity_factory = 0.1 }
+			}
+			set_variable = {
+				var = PRC_afg_current_eco_dependence
+				value = 0.15
+			}
+			set_variable = {
+				var = PRC_afg_current_gov_loyalty
+				value = 0.4
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				set_temp_variable = {
+					var = PRC_afg_current_gov_loyalty_temp
+					value = 0.4
+				}
+				PRC_add_afg_current_gov_loyalty = yes
+			}
+			country_event = {
+				id = china.367
+				days = 70
+			}
+		}
+	}
+}
+#Economic Integration of Afghanistan Completed
+country_event = {
+	id = china.364
+	title = china.364.t
+	desc = china.364.d
+	picture = GFX_PRC_factory2
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.364.a
+		set_country_flag = PRC_afghanistan_initiative_eco_success
+		add_political_power = 75
+		TAL = {
+			add_ideas = PRC_TAL_economy_built_by_china
+		}
+	}
+}
+#Full Loyalty of the Afghanistan Government Established
+country_event = {
+	id = china.365
+	title = china.365.t
+	desc = china.365.d
+	picture = GFX_PRC_TAL_china_afghanistan
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.365.a
+		set_country_flag = PRC_afghanistan_initiative_gov_success
+		add_political_power = 150
+		TAL = {
+			add_ideas = PRC_TAL_eternal_friendship_with_china
+		}
+	}
+}
+#Declaration of the Afghanistan-Pakistan Friendship Treaty
+country_event = {
+	id = china.366
+	title = china.366.t
+	desc = china.366.d
+	picture = GFX_PRC_china_diplomacy
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.366.a
+		add_political_power = 50
+		set_temp_variable = {
+			var = PRC_afg_current_gov_loyalty_temp
+			value = 0.065
+		}
+		PRC_add_afg_current_gov_loyalty = yes
+		TAL = {
+			diplomatic_relation = {
+			    country = PAK
+			    relation = non_aggression_pact
+			    active = yes
+			}
+			diplomatic_relation = {
+			    country = PAK
+			    relation = military_access
+			    active = yes
+			}
+			add_opinion_modifier = {
+			    target = PAK
+			    modifier = friendship_of_peoples
+			}
+			add_opinion_modifier = {
+			    target = PRC
+			    modifier = friendship_of_peoples
+			}
+			hidden_effect = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = PAK
+					value = 200
+				}
+				add_ai_strategy = {
+					type = support
+					id = PAK
+					value = 200
+				}
+			}
+		}
+		PAK = {
+			diplomatic_relation = {
+			    country = TAL
+			    relation = non_aggression_pact
+			    active = yes
+			}
+			diplomatic_relation = {
+			    country = TAL
+			    relation = military_access
+			    active = yes
+			}
+			add_opinion_modifier = {
+			    target = TAL
+			    modifier = friendship_of_peoples
+			}
+			add_opinion_modifier = {
+			    target = PRC
+			    modifier = friendship_of_peoples
+			}
+		}
+	}
+}
+#Afghanistan Treaty with Russia 
+country_event = {
+	id = china.367
+	title = china.367.t
+	desc = china.367.d
+	picture = GFX_russia_china
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.367.a
+		SOV = {
+			country_event = china.368
+		}
+		set_temp_variable = {
+			var = PRC_afg_current_gov_loyalty_temp
+			value = -0.025
+		}
+		PRC_add_afg_current_gov_loyalty = yes
+	}
+}
+#Afghanistan Treaty with China #event for SOV 
+country_event = {
+	id = china.368
+	title = china.368.t
+	desc = china.368.d
+	picture = GFX_russia_china
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.368.a
+		set_country_flag = SOV_PRC_afghanistan_treaty
+		add_ideas = PRC_SOV_afg_initiative
+	}
+}
+#Question of Corporate Freedoms in Afghanistan
+country_event = {
+	id = china.369
+	title = china.369.t
+	desc = china.369.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.369.a
+		set_country_flag = PRC_resource_extraction_in_afg_is_allowed
+		set_country_flag = PRC_corporate_freedoms_in_afg_flag1
+		custom_effect_tooltip = PRC_corporate_freedoms_in_afg_tt1
+		set_temp_variable = {
+			var = PRC_afg_current_eco_dependence_temp
+			value = 0.05
+		}
+		PRC_add_afg_current_eco_dependence = yes
+		set_temp_variable = {
+			var = PRC_afg_current_gov_loyalty_temp
+			value = -0.075
+		}
+		PRC_add_afg_current_gov_loyalty = yes
+	}
+	option = {
+		name = china.369.b
+		set_country_flag = PRC_resource_extraction_in_afg_is_allowed
+		set_country_flag = PRC_corporate_freedoms_in_afg_flag2
+		custom_effect_tooltip = PRC_corporate_freedoms_in_afg_tt2
+		set_temp_variable = {
+			var = PRC_afg_current_eco_dependence_temp
+			value = 0.025
+		}
+		PRC_add_afg_current_eco_dependence = yes
+		set_temp_variable = {
+			var = PRC_afg_current_gov_loyalty_temp
+			value = 0.075
+		}
+		PRC_add_afg_current_gov_loyalty = yes
+	}
+}
+#China-Afghanistan Treaty of Friendship and Cooperation
+country_event = {
+	id = china.370
+	title = china.370.t
+	desc = china.370.d
+	picture = GFX_PRC_TAL_china_afghanistan
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.370.a
+		add_political_power = 75
+		set_temp_variable = {
+			var = PRC_afg_current_gov_loyalty_temp
+			value = 0.05
+		}
+		PRC_add_afg_current_gov_loyalty = yes
+		diplomatic_relation = {
+		    country = TAL
+		    relation = guarantee
+		    active = yes
+		}
+		diplomatic_relation = {
+		    country = TAL
+		    relation = non_aggression_pact
+		    active = yes
+		}
+		diplomatic_relation = {
+		    country = TAL
+		    relation = military_access
+		    active = yes
+		}
+		add_opinion_modifier = {
+			target = TAL
+			modifier = friendship_of_peoples
+		}
+		TAL = {
+			diplomatic_relation = {
+			    country = PRC
+			    relation = non_aggression_pact
+			    active = yes
+			}
+			diplomatic_relation = {
+			    country = PRC
+			    relation = military_access
+			    active = yes
+			}
+			add_opinion_modifier = {
+				target = PRC
+				modifier = friendship_of_peoples
+			}
+			hidden_effect = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = PRC
+					value = 200
+				}
+				add_ai_strategy = {
+					type = support
+					id = PRC
+					value = 200
+				}
+			}
+		}
+	}
+}
+#Afghanistan Cancels All Treaties
+country_event = {
+	id = china.371
+	title = china.371.t
+	desc = china.371.d
+	picture = GFX_PRC_TAL_china_afghanistan
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.371.a
+		add_political_power = -150
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 250
+		}
+		add_debt_with_inflation = yes
+		clr_country_flag = PRC_afghanistan_initiative_flag
+		#SOV = {
+		#	clr_country_flag = SOV_PRC_afghanistan_treaty
+		#}
+	}
+}
+#The King of War
+country_event = {
+	id = china.372
+	title = china.372.t
+	desc = china.372.d
+	picture = GFX_PRC_drone_uav
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.372.a
+		trigger = {
+			tag = SOV
+		}
+		add_ideas = PRC_SOV_death_from_the_sky_idea
+		custom_effect_tooltip = PRC_drones_for_russia_tt
+		effect_tooltip = {
+			PRC = {
+				country_event = china.372
+				add_ideas = PRC_drone_supplies_to_russia_idea
+			}
+		}
+	}
+	option = {
+		name = china.372.a
+		trigger = {
+			tag = PRC
+		}
+		add_ideas = PRC_drone_supplies_to_russia_idea
+		effect_tooltip = {
+			SOV = {
+				add_ideas = PRC_SOV_death_from_the_sky_idea
+				custom_effect_tooltip = PRC_drones_for_russia_tt
+			}
+		}
+	}
+}
+#Ne Zha 2 Impact
+country_event = {
+	id = china.373
+	title = china.373.t
+	desc = china.373.d
+	picture = GFX_PRC_ne_zha_2
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.373.a
+		add_political_power = 10
+		set_temp_variable = {
+			income_var_temp = 1.5
+		}
+		add_income_with_inflation = yes
+	}
+}
+#The Dragon Remains Red
+country_event = {
+	id = china.374
+	title = china.374.t
+	desc = china.374.d
+	picture = GFX_PRC_li_zuocheng4
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.374.a
+	}
+}
+#Mao's True Heir
+country_event = {
+	id = china.375
+	title = china.375.t
+	desc = china.375.d
+	picture = GFX_PRC_li_zuocheng2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.375.a
+	}
+}
+#Meeting
+country_event = {
+	id = china.376
+	title = china.376.t
+	desc = china.376.d
+	picture = GFX_PRC_li_zuocheng3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.376.a
+	}
+}
+#True Modern Maoism
+country_event = {
+	id = china.377
+	title = china.377.t
+	desc = china.377.d
+	picture = GFX_PRC_li_zuocheng_thought_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.377.a
+	}
+}
+#End of the Weak Revolutionaries
+country_event = {
+	id = china.378
+	title = china.378.t
+	desc = china.378.d
+	picture = GFX_PRC_history_party_mao
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.378.a
+	}
+}
+#End of the Weak Revolutionaries
+country_event = {
+	id = china.379
+	title = china.379.t
+	desc = china.379.d
+	picture = GFX_PRC_wang_yang_flags
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.379.a
+	}
+}
+#Historical Justice Restored
+country_event = {
+	id = china.380
+	title = china.380.t
+	desc = china.380.d
+	picture = GFX_PRC_lin_biao_mao_historical_justice_restored
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.380.a
+	}
+}
+#Status Quo Secured
+country_event = {
+	id = china.381
+	title = china.381.t
+	desc = china.381.d
+	picture = GFX_PRC_li_zuocheng1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.381.a
+		custom_effect_tooltip = PRC_li_zuocheng_authority_fully_consolidated_tt
+		set_country_flag = PRC_li_zuocheng_authority_fully_consolidated_flag
+		set_portraits = {
+		    character = PRC_li_zuocheng
+		    civilian = { large = "GFX_portrait_PRC_Li_Zuocheng_leader_3" }
+		}
+	}
+}
+#Protecting China
+country_event = {
+	id = china.382
+	title = china.382.t
+	desc = china.382.d
+	picture = GFX_PRC_pla_soldiers_parade_cool
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.382.a
+		custom_effect_tooltip = PRC_pla_authority_fully_consolidated_tt
+		set_country_flag = PRC_pla_authority_fully_consolidated_flag
+		add_country_leader_trait = hos_depressed
+		set_portraits = {
+		    character = PRC_li_zuocheng
+		    civilian = { large = "GFX_portrait_PRC_Li_Zuocheng_leader_2" }
+		}
+	}
+}
+#Army High Command Requests Additional Funding
+country_event = {
+	id = china.383
+	title = china.383.t
+	desc = china.383.d
+	picture = GFX_PRC_pla_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = {
+						id = china.384
+						days = 90
+					}
+				}
+				50 = {
+					country_event = {
+						id = china.385
+						days = 90
+					}
+				}
+			}		
+		}
+	}
+	trigger = {
+		NOT = {
+			has_completed_focus = PRC_pillar_of_crimson_sovereignty
+		}
+	}
+	option = {
+		name = china.383.a
+		add_power_balance_value = {
+ 			id = PRC_new_military_junta_bop
+    		value = 0.035
+		}
+		army_experience = 15
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.2
+			uses = 1
+			category = land_doctrine
+		}
+		random_list = {
+			34 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = infantry_tech
+				}
+			}
+			33 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = armor
+				}
+			}
+			33 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = artillery
+				}
+			}
+		}
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 15
+		}
+		add_debt_with_inflation = yes
+	}
+	option = {
+		name = china.383.b
+		add_political_power = -10
+		add_power_balance_value = {
+ 			id = PRC_new_military_junta_bop
+    		value = -0.02
+		}
+	}
+}
+#Navy High Command Requests Additional Funding
+country_event = {
+	id = china.384
+	title = china.384.t
+	desc = china.384.d
+	picture = GFX_PRC_pla_fleet_soldiers_ship
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = {
+						id = china.383
+						days = 90
+					}
+				}
+				50 = {
+					country_event = {
+						id = china.385
+						days = 90
+					}
+				}
+			}			
+		}
+	}
+	trigger = {
+		NOT = {
+			has_completed_focus = PRC_pillar_of_crimson_sovereignty
+		}
+	}
+	option = {
+		name = china.384.a
+		add_power_balance_value = {
+ 			id = PRC_new_military_junta_bop
+    		value = 0.035
+		}
+		navy_experience = 15
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.2
+			uses = 1
+			category = naval_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = naval_equipment
+		}
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 15
+		}
+		add_debt_with_inflation = yes
+	}
+	option = {
+		name = china.384.b
+		add_political_power = -10
+		add_power_balance_value = {
+ 			id = PRC_new_military_junta_bop
+    		value = -0.02
+		}
+	}
+}
+#Air Force High Command Requests Funding
+country_event = {
+	id = china.385
+	title = china.385.t
+	desc = china.385.d
+	picture = GFX_PRC_pla_airforce_plane_jet_fighter
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = {
+						id = china.383
+						days = 90
+					}
+				}
+				50 = {
+					country_event = {
+						id = china.384
+						days = 90
+					}
+				}
+			}		
+		}
+	}
+	trigger = {
+		NOT = {
+			has_completed_focus = PRC_pillar_of_crimson_sovereignty
+		}
+	}
+	option = {
+		name = china.385.a
+		add_power_balance_value = {
+ 			id = PRC_new_military_junta_bop
+    		value = 0.035
+		}
+		air_experience = 15
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.2
+			uses = 1
+			category = air_doctrine
+		}
+		random_list = {
+			34 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = light_fighter
+				}
+			}
+			33 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = tactical_bomber
+				}
+			}
+			16 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = air_equipment
+				}
+			}
+			17 = {
+				add_tech_bonus = {
+					bonus = 0.35
+					uses = 1
+					category = rocketry
+				}
+			}
+		}
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 15
+		}
+		add_debt_with_inflation = yes
+	}
+	option = {
+		name = china.385.b
+		add_political_power = -10
+		add_power_balance_value = {
+ 			id = PRC_new_military_junta_bop
+    		value = -0.02
+		}
+	}
+}
+#Xinjiang Leadership Change
+country_event = {
+	id = china.386
+	title = china.386.t
+	desc = china.386.d
+	picture = GFX_PRC_ma_xingrui_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.386.a
+		custom_effect_tooltip = PRC_ma_xingrui_tt
+		hidden_effect = {
+			1160 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			619 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			287 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			1158 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			1163 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			1162 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			618 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			1165 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			617 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			1161 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			1164 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+			788 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_xinjiang_uygur_autonomous_region_xingrui
+				}
+			}
+		}
+	}
+}
+#Tibet Leadership Change
+country_event = {
+	id = china.387
+	title = china.387.t
+	desc = china.387.d
+	picture = GFX_PRC_wang_junzheng_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.387.a
+		custom_effect_tooltip = PRC_wang_junzheng_tt
+		hidden_effect = {
+			1155 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region_junzheng
+				}
+			}
+			322 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region_junzheng
+				}
+			}
+			1153 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region_junzheng
+				}
+			}
+			1156 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region_junzheng
+				}
+			}
+			1152 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_tibet_autonomous_region_junzheng
+				}
+			}
+		}
+	}
+}
+#Inner Mongolia Leadership Change
+country_event = {
+	id = china.388
+	title = china.388.t
+	desc = china.388.d
+	picture = GFX_PRC_sun_shaocheng_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.388.a
+		custom_effect_tooltip = PRC_sun_shaocheng_tt
+		hidden_effect = {
+			1166 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region_shaocheng
+				}
+			}
+			1202 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region_shaocheng
+				}
+			}
+			621 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region_shaocheng
+				}
+			}
+			612 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region_shaocheng
+				}
+			}
+			715 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region_shaocheng
+				}
+			}
+			1167 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_inner_mongolia_autonomous_region_shaocheng
+				}
+			}
+		}
+	}
+}
+#Ningxia Leadership Change
+country_event = {
+	id = china.389
+	title = china.389.t
+	desc = china.389.d
+	picture = GFX_PRC_liang_yanshun_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.389.a
+		custom_effect_tooltip = PRC_liang_yanshun_tt
+		hidden_effect = {
+			1199 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_ningxia_hui_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_ningxia_hui_autonomous_region_yanshun
+				}
+			}
+		}
+	}
+}
+#Guangxi Leadership Change
+country_event = {
+	id = china.390
+	title = china.390.t
+	desc = china.390.d
+	picture = GFX_PRC_liu_ning_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.390.a
+		custom_effect_tooltip = PRC_liu_ning_tt
+		hidden_effect = {
+			593 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+			594 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+			1203 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+			1204 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+			1205 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+			1191 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+			599 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_guangxi_zhuang_autonomous_region_ning
+				}
+			}
+		}
+	}
+}
+#Results of Hong Kong Election Announced
+country_event = {
+	id = china.391
+	title = china.391.t
+	desc = china.391.d
+	picture = GFX_PRC_john_lee_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.391.a
+		custom_effect_tooltip = PRC_john_lee_tt
+		hidden_effect = {
+			326 = {
+				remove_dynamic_modifier = {
+					modifier = PRC_hong_kong
+				}
+				add_dynamic_modifier = {
+					modifier = PRC_hong_kong_lee
+				}
+			}
+		}
+	}
+}
+#A New Reality
+country_event = {
+	id = china.392
+	title = china.392.t
+	desc = china.392.d
+	picture = GFX_PRC_eternal_capital_beijing_sci_fi_city
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.392.a
+		set_country_flag = PRC_eternal_capital_project_is_finished_flag
+		add_ideas = PRC_heart_of_china_idea
+		608 = {
+			add_dynamic_modifier = {
+				modifier = PRC_the_eternal_capital_of_china
+				scope = PRC
+			}
+		}
+	}
+}
+#Completion of the PLA Pyramid Construction
+country_event = {
+	id = china.393
+	title = china.393.t
+	desc = china.393.d
+	picture = GFX_PRC_eternal_capital_beijing_sci_fi_city2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.393.a
+		set_country_flag = PRC_pla_pyramid_is_finished_flag
+		add_ideas = PRC_headquarters_of_the_new_era_idea
+
+		create_entity = {
+			entity = PRC_pyramid_entity
+			id = 1
+			x = 0.9
+			y = 6
+			z = 2.6
+			province = 12026
+			state = 42
+			rotation = 1.2
+			scale = 0.12
+			min_zoom = 5555.0
+			#visible = scripted_trigger_name ####To do: test if hoi iv renders models properly after some time of active gameplay
+		}
+	}
+}
+#National Mourning
+country_event = {
+	id = china.394
+	title = china.394.t
+	desc = china.394.d
+	picture = GFX_PRC_national_mourning
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.394.a
+		add_war_support = -0.02
+		set_temp_variable = {
+			var = military_development_var_temp
+			value = -0.05
+		}
+		add_military_development = yes
+	}
+}
+#New Policies, New Future
+country_event = {
+	id = china.395
+	title = china.395.t
+	desc = china.395.d
+	picture = GFX_PRC_chinese_soldiers3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.395.a
+		add_stability = -0.03
+	}
+}
+#Resolution on Certain Internal Party Issues
+country_event = {
+	id = china.396
+	title = china.396.t
+	desc = china.396.d
+	picture = GFX_PRC_Generic_NPC
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.396.a
+	}
+}
+#Enlisting Days
+country_event = {
+	id = china.397
+	title = china.397.t
+	desc = china.397.d
+	picture = GFX_PRC_enlisting_days_pla_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.397.a
+		add_stability = -0.02
+		hidden_effect = {
+			country_event = {
+				id = china.399
+				days = 120
+				days = 30
+			}
+		}
+	}
+}
+#New Chengdu
+country_event = {
+	id = china.398
+	title = china.398.t
+	desc = china.398.d
+	picture = GFX_PRC_new_chengdu_city
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.398.a
+		1190 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+#Model Soldier
+country_event = {
+	id = china.399
+	title = china.399.t
+	desc = china.399.d
+	picture = GFX_PRC_model_soldier_pla_award
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.399.a
+		army_experience = 5
+		set_temp_variable = {
+			var = PRC_army_reform_progress_temp
+			value = 0.01
+		}
+		PRC_add_army_reform_progress = yes
+		set_temp_variable = {
+			var = military_development_var_temp
+			value = 0.025
+		}
+		add_military_development = yes
+	}
+}
+
+
 #Breeding Ground of Reforms
 country_event = {
 	id = china.400
@@ -11036,7 +12661,7 @@ country_event = {
 	immediate = {
 	}
 	option = {
-	   name = china.400.a
+		name = china.400.a
 	}
 }
 #Winter Turns To Spring
@@ -11095,6 +12720,7 @@ country_event = {
 	   name = china.404.a
 	}
 }
+
 #Back to 1989
 country_event = {
 	id = china.405
@@ -11106,9 +12732,4122 @@ country_event = {
 	immediate = {
 	}
 	option = {
-	   name = china.405.a
+		name = china.405.a
 	}
 }
+#Impending Government Collapse
+country_event = {
+	id = china.406
+	title = china.406.t
+	desc = china.406.d
+	picture = GFX_PRC_generic_deputy
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.406.a
+		custom_effect_tooltip = PRC_china406_tt
+		effect_tooltip = {
+			add_ideas = PRC_overloaded_bureaucracy_idea
+		}
+	    PRC_increase_corrupt_bureaucracy = yes
+	    hidden_effect = {
+			country_event = {
+				id = china.410
+				days = 60
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_overloaded_bureaucracy_dynamic
+			}
+			set_variable = {
+				PRC_bureaucracy_conscription_factor_dynamic_var = -0.1
+			}
+			set_variable = {
+				PRC_bureaucracy_stability_factor_dynamic_var = -0.1
+			}
+			set_variable = {
+				PRC_bureaucracy_political_power_factor_dynamic_var = -0.15
+			}
+			set_variable = {
+				PRC_bureaucracy_production_speed_buildings_factor_dynamic_var = -0.15
+			}
+			set_variable = {
+				PRC_bureaucracy_industrial_capacity_factory_dynamic_var = -0.15
+			}
+			set_variable = {
+				PRC_bureaucracy_industrial_capacity_dockyard_dynamic_var = -0.15
+			}
+		}
+	}
+}
+
+#New System, New Policy
+country_event = {
+	id = china.407
+	title = china.407.t
+	desc = china.407.d
+	picture = GFX_PRC_digital_shit
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.407.a
+	    set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.05
+		}
+		add_society_development = yes
+	}
+}
+
+#Cybersecurity in the New Era
+country_event = {
+	id = china.408
+	title = china.408.t
+	desc = china.408.d
+	picture = GFX_PRC_digital_shit
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.408.a
+	    set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.05
+		}
+		add_society_development = yes
+	}
+}
+
+#A New Page of History
+country_event = {
+	id = china.409
+	title = china.409.t
+	desc = china.409.d
+	picture = GFX_PRC_xiongania
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.409.a
+	}
+}
+
+#Appeal of the Minister of Civil Affairs
+country_event = {
+	id = china.410
+	title = china.410.t
+	desc = china.410.d
+	picture = GFX_PRC_tang_denje_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.410.a
+		country_event = {
+			id = china.411
+			days = 30
+		}
+	}
+}
+
+#Letter from the Minister of Housing and Urban-Rural Development
+country_event = {
+	id = china.411
+	title = china.411.t
+	desc = china.411.d
+	picture = GFX_PRC_ni_hong_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.411.a
+	   	set_country_flag = PRC_xiongania_enable
+		unlock_decision_category_tooltip = PRC_xiongania_category
+		hidden_effect = {
+			set_variable = {
+				var = PRC_xiongania_progress
+				value = 5
+				#tooltip = set_var_to_100_tt
+			}
+			set_variable = {
+				var = PRC_xiongania_progress_prev
+				value = 0
+			}
+			PRC_add_xiongania_progress = yes
+		}
+		activate_mission = PRC_xion_moving_process
+		if = {
+			limit = {
+				is_ai = no
+			}
+			activate_mission = PRC_bureaucracy_collapsing_mission
+		}
+	}
+}
+
+#Xiong'an Construction Completion Ceremony
+country_event = {
+	id = china.412
+	title = china.412.t
+	desc = china.412.d
+	picture = GFX_PRC_xi_jinping_speech_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.412.a
+	    custom_effect_tooltip = PRC_china412_tt
+	    effect_tooltip = {
+			unlock_national_focus = PRC_dream_come_true
+	    }
+	    set_country_flag = PRC_capital_moving_process_is_finished_flag
+	}
+}
+
+#Xiong'an Construction Completion Report
+country_event = {
+	id = china.413
+	title = china.413.t
+	desc = china.413.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.413.a
+		if = {
+			limit = {
+				has_country_flag = PRC_capital_bureaucracy_process_is_finished_flag
+			}
+			unlock_decision_tooltip = PRC_xion_full_speed_ahead
+		}
+	    set_country_flag = PRC_capital_construction_process_is_finished_flag
+	}
+}
+
+#Bureaucracy Moving Completion Report
+country_event = {
+	id = china.414
+	title = china.414.t
+	desc = china.414.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.414.a
+		remove_ideas = PRC_overloaded_bureaucracy_idea
+		remove_dynamic_modifier = {
+			modifier = PRC_overloaded_bureaucracy_dynamic
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_capital_construction_process_is_finished_flag
+			}
+			unlock_decision_tooltip = PRC_xion_full_speed_ahead
+		}
+	    set_country_flag = PRC_capital_bureaucracy_process_is_finished_flag
+	}
+}
+
+#China Moves Capital to Xiongan
+news_event = {
+	id = china.415
+	title = china.415.t
+	desc = china.415.d
+	picture = GFX_PRC_xiongan_news
+
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+	}
+
+	option = {
+		name = china.415.a
+		
+	}
+}
+
+#Investigation Report on Bureaucratic Capital Exploiting State Assets
+country_event = {
+	id = china.416
+	title = china.416.t
+	desc = china.416.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.416.a
+		add_political_power = -100
+		set_temp_variable = {
+			income_var_temp = -25
+		}
+		add_income_with_inflation = yes
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = -0.1
+		}
+		add_society_development = yes
+	}
+}
+
+#Entrepreneurs Seek to Invest in Liuzhou
+country_event = {
+	id = china.417
+	title = china.417.t
+	desc = china.417.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.417.a
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = -0.05
+		}
+		1205 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		set_temp_variable = {
+			income_var_temp = 10
+		}
+		add_income_with_inflation = yes
+	}
+	option = {
+	 	name = china.417.b
+		add_political_power = 35
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = 0.025
+		}
+	}
+}
+
+#Entrepreneurs Seek to Invest in Tianjin
+country_event = {
+	id = china.418
+	title = china.418.t
+	desc = china.418.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.418.a
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = -0.05
+		}
+		1157 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		set_temp_variable = {
+			income_var_temp = 15
+		}
+		add_income_with_inflation = yes
+	}
+	option = {
+	 	name = china.418.b
+		add_political_power = 35
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = 0.025
+		}
+	}
+}
+
+#Entrepreneurs Seek to Invest in Chengdu
+country_event = {
+	id = china.419
+	title = china.419.t
+	desc = china.419.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.419.a
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = -0.05
+		}
+		605 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		set_temp_variable = {
+			income_var_temp = 15
+		}
+		add_income_with_inflation = yes
+	}
+	option = {
+	 	name = china.419.b
+		add_political_power = 35
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = 0.025
+		}
+	}
+}
+
+#Entrepreneurs Seek to Invest in Ordos
+country_event = {
+	id = china.420
+	title = china.420.t
+	desc = china.420.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.420.a
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = -0.05
+		}
+		1202 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		set_temp_variable = {
+			income_var_temp = 15
+		}
+		add_income_with_inflation = yes
+	}
+	option = {
+	 	name = china.420.b
+		add_political_power = 50
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = 0.025
+		}
+	}
+}
+
+#Entrepreneurs Seek to Invest in Tangshan
+country_event = {
+	id = china.421
+	title = china.421.t
+	desc = china.421.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	 	name = china.421.a
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = -0.075
+		}
+		1157 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				province = {
+					id = 10068
+				}
+			}
+		}
+		609 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = naval_base
+				level = 4
+				province = {
+					id = 12043
+				}
+			}
+		}
+		set_temp_variable = {
+			income_var_temp = 20
+		}
+		add_income_with_inflation = yes
+	}
+	option = {
+	 	name = china.421.b
+		add_political_power = 50
+		add_power_balance_value = {
+			id = PRC_Liberal_Conservative_power_balance
+			value = 0.025
+		}
+	}
+}
+
+#Claiming What's Due
+country_event = {
+	id = china.422
+	title = china.422.t
+	desc = china.422.d
+	picture = GFX_PRC_money
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.422.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.025
+		}
+		add_society_development = yes
+	}
+}
+
+#At Last, Our Day Has Come!
+country_event = {
+	id = china.423
+	title = china.423.t
+	desc = china.423.d
+	picture = GFX_PRC_laptop_night
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.423.a
+		add_stability = 0.02
+	}
+}
+
+#An Old Scholar's Joy
+country_event = {
+	id = china.424
+	title = china.424.t
+	desc = china.424.d
+	picture = GFX_PRC_fred_engst
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.424.a
+		add_political_power = 10
+	}
+}
+
+#Street Corner Chronicles
+country_event = {
+	id = china.425
+	title = china.425.t
+	desc = china.425.d
+	picture = GFX_PRC_generic_deputy
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.425.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.025
+		}
+		add_society_development = yes
+	}
+}
+
+#Story Behind the Amnesty Announcement
+country_event = {
+	id = china.426
+	title = china.426.t
+	desc = china.426.d
+	picture = GFX_PRC_release_from_prison
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.426.a
+		trigger = {
+			has_completed_focus = PRC_legacy_of_mao
+		}
+		add_stability = 0.01
+	}
+	option = {
+		name = china.426.b
+		trigger = {
+			has_completed_focus = PRC_revolution_of_21_century
+		}
+		add_stability = 0.01
+	}
+}
+
+#The Return
+country_event = {
+	id = china.427
+	title = china.427.t
+	desc = china.427.d
+	picture = GFX_PRC_release_from_prison
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.427.a
+		add_stability = 0.01
+	}
+}
+
+#Generation Gap
+country_event = {
+	id = china.428
+	title = china.428.t
+	desc = china.428.d
+	picture = GFX_PRC_grandpa_reads_newspaper
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.428.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.02
+		}
+		add_society_development = yes
+	}
+}
+
+#Debates in the Fang Family
+country_event = {
+	id = china.429
+	title = china.429.t
+	desc = china.429.d
+	picture = GFX_PRC_chinese_student
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.429.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.02
+		}
+		add_society_development = yes
+	}
+}
+
+#Nobody dares speak up
+country_event = {
+	id = china.430
+	title = china.430.t
+	desc = china.430.d
+	picture = GFX_PRC_end_conec
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.430.a
+		add_political_power = -50
+		add_stability = -0.05
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = -0.25
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = poverty_development_var_temp
+			value = -0.25
+		}
+		add_poverty_development = yes
+		set_temp_variable = {
+			var = industrial_development_var_temp
+			value = -0.25
+		}
+		add_industrial_development = yes
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 300
+		}
+		add_debt_with_inflation = yes
+	}
+}
+
+#Utopia
+country_event = {
+	id = china.431
+	title = china.431.t
+	desc = china.431.d
+	picture = GFX_PRC_utopia
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.431.a
+	}
+}
+
+#Benevolence and Universal Love
+country_event = {
+	id = china.432
+	title = china.432.t
+	desc = china.432.d
+	picture = GFX_PRC_benevolence_and_universal_love
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.432.a
+		set_temp_variable = {
+			var = PRC_loji_project_web_progress_temp
+			value = 0.1
+		}
+		PRC_add_loji_project_web_progress = yes
+	}
+}
+
+#The Equation of Thought
+country_event = {
+	id = china.433
+	title = china.433.t
+	desc = china.433.d
+	picture = GFX_PRC_quantum_consciousness_entity
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.433.a
+	}
+}
+
+#The Making of a God
+country_event = {
+	id = china.434
+	title = china.434.t
+	desc = china.434.d
+	picture = GFX_PRC_the_making_of_a_god_ebaniy_pizdec ###pizda
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.434.a
+	}
+}
+
+#Everyone's Favorite Red AI Sister
+country_event = {
+	id = china.435
+	title = china.435.t
+	desc = china.435.d
+	picture = GFX_PRC_everyones_favourite_ai_sister
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.435.a
+	}
+}
+
+#Quantum Consciousness Entity #LM-∞-π Internal Calculation Report
+country_event = {
+	id = china.436
+	title = china.436.t
+	desc = china.436.d
+	picture = GFX_PRC_the_equation_of_thought
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.436.a
+	}
+}
+
+#Beyond Calculation
+country_event = {
+	id = china.437
+	title = china.437.t
+	desc = china.437.d
+	picture = GFX_PRC_beyond_calculations
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.437.a
+	}
+}
+
+#Spring Returns to the Old Street
+country_event = {
+	id = china.438
+	title = china.438.t
+	desc = china.438.d
+	picture = GFX_PRC_chinese_old_street
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.438.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.025
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = poverty_development_var_temp
+			value = 0.025
+		}
+		add_poverty_development = yes
+		set_temp_variable = {
+			var = industrial_development_var_temp
+			value = 0.025
+		}
+		add_industrial_development = yes
+	}
+}
+
+#The "Model Entrepreneur"
+country_event = {
+	id = china.439
+	title = china.439.t
+	desc = china.439.d
+	picture = GFX_PRC_smart_man
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.439.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.02
+		}
+		add_society_development = yes
+	}
+}
+
+#Xie Dynasty Reunified
+news_event = {
+	id = china.440
+	title = china.440.t
+	desc = china.440.d
+	picture = PRC_XIE_reunify_news
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.440.a
+		
+	}
+}
+
+#Okinawa Battle Report
+country_event = {
+	id = china.441
+	title = china.441.t
+	desc = china.441.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+		has_war_with = JAP
+	}
+	option = {
+		name = china.441.a
+		army_experience = 10
+	}
+}
+
+#Hong Kong Riots
+country_event = {
+	id = china.442
+	title = china.442.t
+	desc = china.442.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_stability = -0.02
+			add_war_support = -0.02
+			326 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+	trigger = {
+		has_war_with = CHI
+	}
+	option = {
+		name = china.442.a
+		effect_tooltip = {
+			add_stability = -0.02
+			add_war_support = -0.02
+			326 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+
+#Sydney Battle Report
+country_event = {
+	id = china.443
+	title = china.443.t
+	desc = china.443.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.443.a
+		army_experience = 10
+	}
+}
+
+#Seoul Battle Report
+country_event = {
+	id = china.444
+	title = china.444.t
+	desc = china.444.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.444.a
+		army_experience = 10
+	}
+}
+
+#Busan Battle Report
+country_event = {
+	id = china.445
+	title = china.445.t
+	desc = china.445.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.445.a
+		army_experience = 10
+	}
+}
+
+#Tokyo Battle Report
+country_event = {
+	id = china.446
+	title = china.446.t
+	desc = china.446.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.446.a
+		army_experience = 10
+	}
+}
+
+#Osaka Battle Report
+country_event = {
+	id = china.447
+	title = china.447.t
+	desc = china.447.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.447.a
+		army_experience = 10
+	}
+}
+
+#Delhi Battle Report
+country_event = {
+	id = china.448
+	title = china.448.t
+	desc = china.448.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.448.a
+		army_experience = 10
+	}
+}
+
+#Kyoto Battle Report
+country_event = {
+	id = china.449
+	title = china.449.t
+	desc = china.449.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.449.a
+		army_experience = 10
+	}
+}
+
+#Guangzhou Battle Report
+country_event = {
+	id = china.450
+	title = china.450.t
+	desc = china.450.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.450.a
+		army_experience = 10
+	}
+}
+
+#Shanghai Battle Report
+country_event = {
+	id = china.451
+	title = china.451.t
+	desc = china.451.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.451.a
+		army_experience = 10
+	}
+}
+
+#Beijing Battle Report
+country_event = {
+	id = china.452
+	title = china.452.t
+	desc = china.452.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.452.a
+		army_experience = 10
+	}
+}
+
+#North Korea Situation Report
+country_event = {
+	id = china.453
+	title = china.453.t
+	desc = china.453.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.453.a
+	}
+}
+
+#Pakistan Situation Report
+country_event = {
+	id = china.454
+	title = china.454.t
+	desc = china.454.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.454.a
+	}
+}
+
+#North Korea Situation Report
+country_event = {
+	id = china.455
+	title = china.455.t
+	desc = china.455.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.455.a
+	}
+}
+
+#India Situation Report
+country_event = {
+	id = china.456
+	title = china.456.t
+	desc = china.456.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.456.a
+	}
+}
+
+#Release of Dissidents
+country_event = {
+	id = china.457
+	title = china.457.t
+	desc = china.457.d
+	picture = GFX_PRC_release_from_prison
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.457.a
+		add_political_power = -25
+		add_stability = 0.02
+	}
+}
+
+#Homecoming
+country_event = {
+	id = china.458
+	title = china.458.t
+	desc = china.458.d
+	picture = GFX_PRC_release_from_prison
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.458.a
+		add_stability = 0.01
+	}
+}
+
+#A Letter
+country_event = {
+	id = china.459
+	title = china.459.t
+	desc = china.459.d
+	picture = GFX_PRC_wang_weizhong
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.459.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.025
+		}
+		add_society_development = yes
+	}
+}
+
+#Farewell to the Era of One-Party Rule
+country_event = {
+	id = china.460
+	title = china.460.t
+	desc = china.460.d
+	picture = GFX_PRC_Generic_NPC
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.460.a
+		add_political_power = 15
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.02
+		}
+		add_society_development = yes
+	}
+}
+
+#New Hope
+country_event = {
+	id = china.461
+	title = china.461.t
+	desc = china.461.d
+	picture = GFX_PRC_truth_after_drinking
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.461.a
+		add_stability = 0.015
+	}
+}
+
+#Drink Today, Worry Tomorrow
+country_event = {
+	id = china.462
+	title = china.462.t
+	desc = china.462.d
+	picture = GFX_PRC_pivo_pivasik_men_drink_beer
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.462.a
+		add_political_power = 20
+		custom_effect_tooltip = PRC_beer_bottles_add
+	}
+}
+
+#Taipei Battle Report
+country_event = {
+	id = china.463
+	title = china.463.t
+	desc = china.463.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	trigger = {
+		NOT = {
+			524 = {
+				is_fully_controlled_by = PRC
+			}
+		}
+	}
+	option = {
+		name = china.463.a
+		army_experience = 10
+	}
+}
+
+#Look Upon the Realm of Today
+country_event = {
+	id = china.464
+	title = china.464.t
+	desc = china.464.d
+	picture = GFX_PRC_map_of_asia_china
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.464.a
+		add_political_power = 25
+	}
+}
+
+#Revolution Beyond the Ocean
+country_event = {
+	id = china.465
+	title = china.465.t
+	desc = china.465.d
+	picture = GFX_APA_red_america
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.465.a
+		add_political_power = 25
+	}
+}
+
+#California's Legitimate Government
+country_event = {
+	id = china.466
+	title = china.466.t
+	desc = china.466.d
+	picture = GFX_APA_red_america
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.466.a
+		add_political_power = 25
+		if = {
+			limit = {
+				tag = APA
+			}
+			add_stability = 0.025
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+		if = {
+			limit = {
+				tag = PRC
+			}
+			custom_effect_tooltip = PRC_china466_tt
+		}
+	}
+}
+
+#The Contingent Visit
+country_event = {
+	id = china.467
+	title = china.467.t
+	desc = china.467.d
+	picture = GFX_PRC_politicians_deputy
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.467.a
+		add_political_power = 25
+	}
+}
+
+#America-China Action Report 005
+country_event = {
+	id = china.468
+	title = china.468.t
+	desc = china.468.d
+	picture = GFX_PRC_digital_shit
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.468.a
+		add_stability = -0.01
+	}
+}
+
+#Announcing the Revolution
+country_event = {
+	id = china.469
+	title = china.469.t
+	desc = china.469.d
+	picture = GFX_APA_red_america
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.469.a
+	}
+}
+
+#Dancing with the Bear
+country_event = {
+	id = china.470
+	title = china.470.t
+	desc = china.470.d
+	picture = GFX_PRC_china_russia_flags
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.470.a
+		if = {
+			limit = {
+				tag = SOV
+			}
+			effect_tooltip = {
+				add_ideas = PRC_chinese_partnership_sov_eu
+			}
+		}
+	}
+}
+
+#Resonating with the Rooster
+country_event = {
+	id = china.471
+	title = china.471.t
+	desc = china.471.d
+	picture = GFX_PRC_china_france_flags
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.471.a
+		if = {
+			limit = {
+				tag = FRA
+			}
+			effect_tooltip = {
+				add_ideas = PRC_chinese_partnership_sov_eu
+			}
+		}
+	}
+}
+
+#China Advocates For Russia
+news_event = {
+	id = china.472
+	title = china.472.t
+	desc = china.472.d
+	picture = GFX_PRC_chinese_flag_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.472.a
+		trigger = {
+			OR = {
+				tag = PRC
+				tag = SOV
+				is_ally_with = PRC
+				is_ally_with = SOV
+			}
+		}
+	}
+	option = {
+		name = china.472.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = PRC
+					tag = SOV
+					is_ally_with = PRC
+					is_ally_with = SOV
+				}
+			}
+		}
+	}
+}
+
+#China Advocates For the EU
+news_event = {
+	id = china.473
+	title = china.473.t
+	desc = china.473.d
+	picture = GFX_PRC_chinese_flag_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.473.a
+		trigger = {
+			OR = {
+				tag = PRC
+				tag = FRA
+				is_ally_with = PRC
+				is_ally_with = FRA
+			}
+		}
+	}
+	option = {
+		name = china.473.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = PRC
+					tag = FRA
+					is_ally_with = PRC
+					is_ally_with = FRA
+				}
+			}
+		}
+	}
+}
+
+#China Maintains Its Neutrality
+news_event = {
+	id = china.474
+	title = china.474.t
+	desc = china.474.d
+	picture = GFX_PRC_chinese_flag_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.474.a
+	}
+}
+
+#China Puts Trade Sanctions on Us! #event for pdto countries
+country_event = {
+	id = china.475
+	title = china.475.t
+	desc = china.475.d
+	picture = GFX_PRC_xi_jinping_cunning
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.475.a
+		add_war_support = 0.05
+		effect_tooltip = {
+			PRC = {
+				send_embargo = ROOT
+			}
+			add_ideas = PRC_PDTO_chinese_sanctions_idea
+		}
+	}
+}
+
+#China Invites Us to The Belt and Road Initiative! #event for other countries
+country_event = {
+	id = china.476
+	title = china.476.t
+	desc = china.476.d
+	picture = GFX_PRC_bri_belt_and_road_initiative
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.476.a
+		if = {
+			limit = {
+				OR = {
+					tag = SOV
+					tag = PRK
+					tag = PAK
+				}
+			}
+			effect_tooltip = {
+				PRC_join_BRI = yes
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						tag = SOV
+						tag = PRK
+						tag = PAK
+					}
+				}
+			}
+			PRC_join_BRI = yes
+		}
+		if = {
+			limit = {
+				tag = TAL
+			}
+			PRC = {
+				set_country_flag = PRC_afg_joined_bri
+			}
+		}
+	}
+}
+
+#Notes from a Bumpkin
+country_event = {
+	id = china.477
+	title = china.477.t
+	desc = china.477.d
+	picture = GFX_anarchist1
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.477.a
+	}
+}
+
+#The Two
+country_event = {
+	id = china.478
+	title = china.478.t
+	desc = china.478.d
+	picture = GFX_PRC_tyler_durden
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.478.a
+		ai_chance = {
+		    factor = 1
+		    modifier = {
+		        factor = 0
+		        OR = {
+		            has_game_rule = {
+		                rule = The_Long_March_Choice
+		                option = The_Long_March_Choice_2
+		                }
+		            }
+		        }
+		    }
+		clr_country_flag = PRC_long_march_3_stage_flag
+		set_country_flag = PRC_loji_servant_of_the_people_flag
+		focus_unlock = yes
+		custom_effect_tooltip = PRC_just_forget_tt
+		effect_tooltip = {
+			unlock_national_focus = PRC_servant_of_the_people
+		}
+	}
+	option = {
+		name = china.478.b
+		ai_chance = {
+		    factor = 1
+		    modifier = {
+		        factor = 0
+		        OR = {
+		            has_game_rule = {
+		                rule = The_Long_March_Choice
+		                option = The_Long_March_Choice_1
+		                }
+		            }
+		        }
+		    }
+		clr_country_flag = PRC_long_march_3_stage_flag
+		set_country_flag = PRC_loji_overlord_flag
+		focus_unlock = yes
+		custom_effect_tooltip = PRC_movie_goes_tt
+		effect_tooltip = {
+			unlock_national_focus = PRC_under_the_rule_of_the_great_entity
+		}
+		set_variable = {
+			var = PRC_loji_project_web_progress
+			value = 0.05
+			#tooltip = set_var_to_100_tt
+		}
+	}
+}
+
+#Somewhere
+country_event = {
+	id = china.479
+	title = china.479.t
+	desc = china.479.d
+	picture = GFX_PRC_map_of_asia_china
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.479.a
+		add_stability = 0.025
+	}
+}
+
+#Something
+country_event = {
+	id = china.480
+	title = china.480.t
+	desc = china.480.d
+	picture = GFX_PRC_utopia
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.480.a
+		set_temp_variable = {
+			var = income_var_temp
+			value = 10
+		}
+		add_income_with_inflation = yes
+	}
+}
+
+#The One
+country_event = {
+	id = china.481
+	title = china.481.t
+	desc = china.481.d
+	picture = GFX_PRC_Generic_Unity
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.481.a
+		set_country_flag = PRC_loji_project_web_success
+		set_temp_variable = {
+			var = debt_var_temp
+			value = -5000
+		}
+		add_debt_with_inflation = yes
+		add_political_power = 250
+		add_stability = 0.5
+		add_war_support = 0.35
+		effect_tooltip = {
+			unlock_national_focus = PRC_finilize_korean_revolution
+		}
+	}
+}
+
+#A Letter
+country_event = {
+	id = china.482
+	title = china.482.t
+	desc = china.482.d
+	picture = GFX_SOV_secret_documents
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.482.a
+		retire_character = PRC_long_march
+		restore_previous_government_type = yes
+		add_stability = 0.25
+		hidden_effect = {
+			set_cosmetic_tag = PRC_totalitarian_socialist
+		}
+	}
+}
+
+#The Tranquil Island of Ignorance
+country_event = {
+	id = china.483
+	title = china.483.t
+	desc = china.483.d
+	picture = GFX_PRC_beyond_calculations
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.483.a
+		add_political_power = -25
+		add_stability = -0.025
+	}
+}
+
+#Spring Thunder MLx & Burning 0xT1FR6
+country_event = {
+	id = china.484
+	title = china.484.t
+	desc = china.484.d
+	picture = GFX_PRC_digital_shit
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.484.a
+	}
+}
+
+#Professor
+country_event = {
+	id = china.485
+	title = china.485.t
+	desc = china.485.d
+	picture = GFX_PRC_chinese_old_street
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.485.a
+		add_stability = -0.1
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = -0.5
+		}
+		add_society_development = yes		
+		set_temp_variable = {
+			var = academic_development_var_temp
+			value = -0.5
+		}
+		add_academic_development = yes
+	}
+}
+
+#Butterflies Dancing in the Cartoon
+country_event = {
+	id = china.486
+	title = china.486.t
+	desc = china.486.d
+	picture = GFX_PRC_congqing_nightscape
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.486.a
+		add_stability = 0.05
+	}
+}
+
+#Teacher and Students
+country_event = {
+	id = china.487
+	title = china.487.t
+	desc = china.487.d
+	picture = GFX_PRC_APA_chinese_american_soldiers
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.487.a
+	}
+}
+
+#Wanna smoke?
+country_event = {
+	id = china.488
+	title = china.488.t
+	desc = china.488.d
+	picture = GFX_PRC_APA_chinese_american_soldiers2
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.488.a
+	}
+}
+
+#The Long March calls us...  #event for other countries
+country_event = {
+	id = china.489
+	title = china.489.t
+	desc = china.489.d
+	picture = GFX_PRC_utopia
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.489.a
+		PRC = {
+			puppet = ROOT
+		}
+		set_cosmetic_tag = PRC_overlordship_asia_loji_puppet_cosmetic
+		set_politics = {
+			ruling_party = totalitarian_socialist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = totalitarian_socialist
+			popularity = 100
+		}
+		set_party_name = {
+			ideology = totalitarian_socialist
+			long_name = SIC_long_march_DEF
+			name = SIC_long_march
+		}
+		set_country_leader_ideology = transhumanism
+		set_country_leader_name = {
+			ideology = totalitarian_socialist
+			name = PRC_long_march
+		}
+		set_country_leader_description = {
+			ideology = totalitarian_socialist
+			desc = PRC_LONG_MARCH_DESC
+		}
+		set_country_leader_portrait = {
+			ideology = totalitarian_socialist
+			portrait = GFX_Portrait_PRC_The_Long_March
+		}
+	}
+}
+
+#A Long-started Matter...  #event for other countries
+country_event = {
+	id = china.490
+	title = china.490.t
+	desc = china.490.d
+	picture = GFX_PRC_utopia
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.490.a
+		every_owned_state = {
+			add_core_of = PRC
+		}
+		PRC = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = no
+			}
+		}
+	}
+}
+
+#Ma Yilong's Diary: Revolutionary Friendship
+country_event = {
+	id = china.491
+	title = china.491.t
+	desc = china.491.d
+	picture = GFX_china_south_sea
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.491.a
+		country_event = {
+			id = china.492
+			days = 40
+			random_days = 20
+		}
+	}
+}
+
+#Ma Yilong's Diary: Enemy Attack
+country_event = {
+	id = china.492
+	title = china.492.t
+	desc = china.492.d
+	picture = GFX_china_south_sea
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.492.a
+	}
+}
+
+#Empire Burning
+country_event = {
+	id = china.493
+	title = china.493.t
+	desc = china.493.d
+	picture = GFX_PRC_empire_burning
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.493.a
+		country_event = {
+			id = china.491
+			days = 80
+			random_days = 40
+		}
+	}
+}
+
+#Sputnik Moment
+country_event = {
+	id = china.494
+	title = china.494.t
+	desc = china.494.d
+	picture = GFX_PRC_deepseek
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.494.a
+		add_political_power = 50
+		set_temp_variable = {
+			income_var_temp = 25
+		}
+		add_income_with_inflation = yes
+	}
+}
+
+#The Machine That Governs
+country_event = {
+	id = china.495
+	title = china.495.t
+	desc = china.495.d
+	picture = GFX_PRC_oligarchs_event
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.495.a
+	}
+}
+
+#Multiple Nuclear Launches from India Detected
+country_event = {
+	id = china.496
+	title = china.496.t
+	desc = china.496.d
+	picture = GFX_GER_moscow_nuke
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.496.a
+		news_event = {
+			id = china.497
+			hours = 5
+		}
+		launch_nuke = {
+			province = 2086
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 4915
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 12137
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 4516
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 4245
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 9975
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 1349
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 12182
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 10255
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 8087
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 8011
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 4344
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 10278
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 10274
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 4883
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 12307
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 9951
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 9973
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 12366
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 4104
+			controller = RAJ
+		}
+		launch_nuke = {
+			province = 10401
+			controller = RAJ
+		}
+		hidden_effect = {
+			sound_effect = siren_sound_effect
+			every_country = {
+				goto_state = 1379
+			}
+			country_event = {
+				id = china.498
+				days = 3
+			}
+		}
+	}
+}
+
+news_event = {
+	id = china.497
+	title = china.497.t
+	desc = china.497.d
+	picture = GFX_PRC_india_china_war_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.497.a
+		
+	}
+}
+
+#Outcome
+country_event = {
+	id = china.498
+	title = china.498.t
+	desc = china.498.d
+	picture = GFX_PRC_war
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.498.a
+		add_timed_idea = {
+			idea = PRC_consequences_of_nuclear_war
+			days = 350
+		}
+		RAJ =  {
+			add_ideas = RAJ_destroyed_country
+		}
+	}
+}
+
+#Nuclear Weapons Have Been Launched at Our City!
+country_event = {
+	id = china.499
+	title = china.499.t
+	desc = china.499.d
+	picture = GFX_PRC_war
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.499.a
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = PRC_put_the_nuclear_arsenal_on_full_operational_alert_flag
+				}
+			}
+			set_country_flag = PRC_put_the_nuclear_arsenal_on_full_operational_alert_flag
+			unlock_decision_tooltip = PRC_put_the_nuclear_arsenal_on_full_operational_alert
+			unlock_decision_tooltip = PRC_final_chance_thermonuclear
+		}
+	}
+}
+
+#Dragon in the Sky
+country_event = {
+	id = china.500
+	title = china.500.t
+	desc = china.500.d
+	picture = GFX_PRC_chengdu_j_36
+	
+	is_triggered_only = yes
+	immediate = {
+		clr_country_flag = PRC_military_project_researching
+	}
+	option = {
+		name = china.500.a
+		air_experience = 25
+		set_country_flag = PRC_project_song_wencong_succeeded1
+		if = {
+			limit = {
+				NOT = {
+					has_tech = modern_small_airframe
+				}
+			}
+			set_technology = {
+			    modern_small_airframe = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "Chengdu J-36"
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_3 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_4 = aircraft_cannon_1_1x
+				engine_type_slot = engine_4_2x
+				special_type_slot_1 = hmg_defense_turret
+				special_type_slot_2 = ai_targeting_computer_small
+				special_type_slot_3 = radio_navigation_2
+				special_type_slot_4 = fuel_tanks_small
+				special_type_slot_5 = lmg_defense_turret_2x
+			}
+			icon = "GFX_PRC_j_36_eq2"
+		}
+		add_equipment_production = {
+			equipment = {
+				type = small_plane_airframe_4
+				creator = "PRC" 
+				version_name = "Chengdu J-36"
+			}
+			requested_factories = 10
+			efficiency = 100
+		}
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_4
+			variant_name = "Chengdu J-36"
+			amount = 50
+			producer = PRC
+		}
+		custom_effect_tooltip = PRC_project_song_wencong_succeeded_tt
+		add_tech_bonus = {
+			name = PRC_song_wencong
+			bonus = 1
+			uses = 1
+			category = light_air
+		}
+		set_temp_variable = {
+			var = PRC_army_reform_progress_temp
+			value = 0.035
+		}
+		PRC_add_army_reform_progress = yes
+	}
+}
+
+country_event = { #Xinjiang War failed
+	id = china.501
+	title = china.501.t
+	desc = china.501.d
+	picture = GFX_PRC_xinjiang3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.501.a
+		PRC = {
+			declare_war_on = {
+				target = HUT
+				type = civil_war
+			}
+			declare_war_on = {
+				target = SIK
+				type = civil_war
+			}
+			declare_war_on = {
+				target = ETL
+				type = civil_war
+			}
+		}
+		XIN = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = PRC_xinjiang_uygur_autonomous_region }
+				add_dynamic_modifier = { modifier = PRC_area_in_chaos_state_modifier }
+			}
+		}
+	}
+}
+
+
+#Ignorance
+country_event = {
+	id = china.502
+	title = china.502.t
+	desc = china.502.d
+	picture = GFX_PRC_ignorance
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = china.502.a
+
+		custom_effect_tooltip = PRC_the_great_change_is_ahead_tt
+		add_political_power = 250
+		add_stability = 0.3
+		set_variable = {
+		    var = PRC_display_MSS_support_rate
+		    value = 0.5
+		}
+		set_variable = {
+		    var = PRC_display_scientists_faction_support_rate
+		    value = 0.5
+		}
+		add_dynamic_modifier = { modifier = PRC_opinion_of_scientists_faction }
+		add_dynamic_modifier = { modifier = PRC_opinion_of_MSS_faction }
+		PRC_change_MSS_support_rate = yes
+		PRC_change_scientists_support_rate = yes
+
+		set_power_balance = {
+			id = PRC_new_digital_leninists_bop
+			left_side = PRC_technological_determinism_bureaucrats_side
+			right_side = PRC_scientists_side
+		}
+		add_power_balance_value = {
+		    id = PRC_new_digital_leninists_bop
+		    value = -0.2
+		    tooltip_side = PRC_technological_determinism_bureaucrats_side
+		}
+		end_coalition = yes
+
+		set_party_name = {
+			ideology = libertarian_socialist
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = social_democrat
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = social_liberal
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = market_liberal
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = conservative
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = authoritarian_democrat  
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = nationalist  
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		set_party_name = { 
+			ideology = fascist  
+			long_name = SOV_outlawed_party
+			name = SOV_outlawed_party
+		}
+		add_popularity = {
+			ideology = totalitarian_socialist
+			popularity = 0.05
+		}
+	}
+}
+#unused
+country_event = {
+	id = china.503
+	title = china.503.t
+	desc = china.503.d
+	picture = GFX_PRC_sciencepath_Jiankui2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = china.503.a
+	}
+}
+#A Scientist's Proposal?
+country_event = {
+	id = china.504
+	title = china.504.t
+	desc = china.504.d
+	picture = GFX_PRC_sciencepath_Jiankui
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = china.504.a
+		add_political_power = 20
+		add_stability = 0.01
+	}
+	option = {
+		name = china.504.b
+
+		custom_effect_tooltip = PRC_lower_MSS_opinion_tt
+		set_temp_variable = { PRC_display_MSS_support_rate_temp = -0.25 }
+		PRC_change_MSS_support_rate = yes
+
+		set_country_flag = PRC_Jiankuis_offer_accepted
+
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = appoint_interior_minister_tooltip
+		show_ideas_tooltip = PRC_he_jiankui_advisor
+
+		hidden_effect = {
+			add_ideas = PRC_he_jiankui_advisor
+		}
+		add_country_leader_role = {
+	        character = PRC_he_jiankui
+	        promote_leader = yes
+	        country_leader = {
+	            ideology = technocratic_utilitarism
+	        }
+	    }
+		set_party_name = {
+			ideology = nationalist
+			long_name = PRC_fascist_utilitarism_party_long
+			name = PRC_fascist_technocratic_utilitarism_party
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.1
+		}
+		set_temp_variable = { coalition_partner_var_temp = token:nationalist }
+		add_to_coalition = yes
+		add_power_balance_value = {
+		    id = PRC_new_digital_leninists_bop
+		    value = 0.1
+		    tooltip_side = PRC_scientists_side
+		}
+	}
+}
+#Fiscal Affairs
+country_event = {
+	id = china.505
+	title = china.505.t
+	desc = china.505.desc
+	picture = GFX_PRC_fiscal_affairs
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = china.505.a
+		trigger = {
+		    check_variable = {
+				var = PRC_display_scientists_faction_support_rate
+				value = 0.2
+				compare = greater_than_or_equals
+		    }
+		}
+        custom_effect_tooltip = PRC_improve_MSS_opinion_slightly_tt
+		set_temp_variable = { PRC_display_MSS_support_rate_temp = 0.10 }
+		PRC_change_MSS_support_rate = yes
+		add_power_balance_value = {
+		    id = PRC_new_digital_leninists_bop
+		    value = -0.1
+		    tooltip_side = PRC_technological_determinism_bureaucrats_side
+		}
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = change_education_law_tooltip
+		show_ideas_tooltip = PRC_redirected_education_law
+		custom_effect_tooltip = tooltip_white_line
+		add_timed_idea = {
+		    idea = PRC_redirected_money_idea
+		    days = 365
+		}
+		hidden_effect = {
+			add_ideas = PRC_redirected_education_law
+			set_country_flag = PRC_redirected_education_law_flag
+		}
+	}
+	option = {
+		name = china.505.b
+		trigger = {
+		    check_variable = {
+				var = PRC_display_MSS_support_rate
+				value = 0.2
+				compare = greater_than_or_equals
+		    }
+		}
+        custom_effect_tooltip = PRC_improve_Scientists_opinion_slightly_tt
+		set_temp_variable = { PRC_display_scientists_faction_support_rate_temp = 0.10 }
+		PRC_change_scientists_support_rate = yes
+		add_power_balance_value = {
+		    id = PRC_new_digital_leninists_bop
+		    value = 0.1
+		    tooltip_side = PRC_scientists_side
+		}
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = change_education_law_tooltip
+		show_ideas_tooltip = higher_education
+		custom_effect_tooltip = tooltip_white_line
+		set_temp_variable = {
+			var = academic_development_var_temp
+			value = 0.3
+		}
+		add_academic_development = yes
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			add_ideas = higher_education
+		}
+	}
+	option = {
+        name = china.505.c
+		trigger = {
+			AND = {
+		    	has_country_flag = PRC_Jiankuis_offer_accepted
+		    	check_variable = {
+				    var = PRC_display_MSS_support_rate
+				    value = 0.4
+				    compare = greater_than_or_equals
+				}
+		    }
+		}
+        custom_effect_tooltip = PRC_lower_MSS_opinion_tt
+		set_temp_variable = { PRC_display_MSS_support_rate_temp = -0.25 }
+		PRC_change_MSS_support_rate = yes
+		add_power_balance_value = {
+		    id = PRC_new_digital_leninists_bop
+		    value = 0.15
+		    tooltip_side = PRC_scientists_side
+		}
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = change_education_law_tooltip
+       	show_ideas_tooltip = privatized_education
+		custom_effect_tooltip = tooltip_white_line
+		add_timed_idea = {
+		    idea = PRC_redirected_money_idea
+		    days = 120
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.05
+		}
+		hidden_effect = {
+			add_ideas = privatized_education
+		}
+    }
+    option = {
+        name = china.505.d
+        custom_effect_tooltip = PRC_lower_MSS_opinion_slightly_tt
+		set_temp_variable = { PRC_display_MSS_support_rate_temp = -0.10 }
+		PRC_change_MSS_support_rate = yes
+        add_stability = 0.03
+       	add_political_power = 75
+    }
+}
+#Born of Technocratic State
+country_event = {
+	id = china.506
+	title = china.506.t
+	desc = china.506.d
+	picture = GFX_PRC_sciencepath_triumph_of_science
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.506.a
+		add_power_balance_value = {
+			id = PRC_new_digital_leninists_bop
+			value = -0.05
+			tooltip_side = PRC_scientists_side
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PRC_science_technocratic_state_dummy_idea
+				add_idea = PRC_science_technocratic_state_idea5
+			}
+		}
+		custom_effect_tooltip = PRC_improve_MSS_opinion_slightly_tt
+		set_temp_variable = { PRC_display_MSS_support_rate_temp = 0.10 }
+		PRC_change_MSS_support_rate = yes
+		hidden_effect = {
+			add_to_variable = {
+				var = PRC_science_technocratic_state_personal_expense_factor_dynamic_var
+				value = 0.02
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_conscription_factor_dynamic_var
+				value = -0.025
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_industrial_development_monthly_dynamic_var
+				value = 0.01
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+		}
+	}
+	option = {
+		name = china.506.b
+		add_power_balance_value = {
+			id = PRC_new_digital_leninists_bop
+			value = 0.1
+			tooltip_side = PRC_scientists_side
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PRC_science_technocratic_state_dummy_idea
+				add_idea = PRC_science_technocratic_state_idea4
+			}
+		}
+		custom_effect_tooltip = PRC_improve_Scientists_opinion_slightly_tt
+		set_temp_variable = { PRC_display_scientists_faction_support_rate_temp = 0.10 }
+		PRC_change_scientists_support_rate = yes
+		hidden_effect = {
+			add_to_variable = {
+				var = PRC_science_technocratic_state_academic_development_monthly_dynamic_var
+				value = 0.015
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_research_speed_factor_dynamic_var
+				value = 0.05
+			}
+		}
+	}
+}
+#Loyalty to the Party
+country_event = {
+	id = china.507
+	title = china.507.t
+	desc = china.507.d
+	picture = GFX_PRC_loyalty_to_the_party
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.507.a
+	}
+}
+#Internal Report of the Ministry of State Security
+country_event = {
+	id = china.508
+	title = china.508.t
+	desc = china.508.d
+	picture = GFX_PRC_gay_lgbt_flags
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = PRC_anti_technocratic_movement_is_active
+		}
+	}
+	option = {
+		name = china.508.a
+		custom_effect_tooltip = PRC_its_over_tooltip
+	}
+}
+#Little Lhasa
+country_event = {
+	id = china.509
+	title = china.509.t
+	desc = china.509.d
+	picture = GFX_PRC_little_lhasa_palace
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.509.a
+	}
+}
+#The Insider
+country_event = {
+	id = china.510
+	title = china.510.t
+	desc = china.510.d
+	picture = GFX_PRC_the_insider
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.510.a
+	}
+}
+#Integrity
+country_event = {
+	id = china.511
+	title = china.511.t
+	desc = china.511.d
+	picture = GFX_PRC_money
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.511.a
+	}
+}
+#Paranoia
+country_event = {
+	id = china.512
+	title = china.512.t
+	desc = china.512.d
+	picture = GFX_PRC_paranoia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.512.a
+	}
+}
+#Project SY-03
+country_event = {
+	id = china.513
+	title = china.513.t
+	desc = china.513.d
+	picture = GFX_PRC_project_sy_03
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.513.a
+		set_temp_variable = {
+			var = poverty_development_var_temp
+			value = 0.035
+		}
+		add_poverty_development = yes
+		set_temp_variable = {
+			var = academic_development_var_temp
+			value = 0.05
+		}
+		add_academic_development = yes
+	}
+}
+#Low-Altitude Didi
+country_event = {
+	id = china.514
+	title = china.514.t
+	desc = china.514.d
+	picture = GFX_PRC_low_altitude_didi
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.514.a
+	}
+}
+#Weaving the Web Above the Clouds
+country_event = {
+	id = china.515
+	title = china.515.t
+	desc = china.515.d
+	picture = GFX_PRC_low_altitude_didi
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.515.a
+	}
+}
+#The End of the Gaokao Factories
+country_event = {
+	id = china.516
+	title = china.516.t
+	desc = china.516.d
+	picture = GFX_PRC_gaokao_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.516.a
+	}
+}
+#Designing Life
+country_event = {
+	id = china.517
+	title = china.517.t
+	desc = china.517.d
+	picture = GFX_PRC_genes_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.517.a
+		custom_effect_tooltip = PRC_gene_optimization_tt
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PRC_science_technocratic_state_dummy_idea
+				add_idea = PRC_gene_optimization_idea
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = PRC_science_technocratic_state_political_power_gain_dynamic_var
+				value = 0.07
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_monthly_population_dynamic_var
+				value = 0.5
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_personal_value_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_science_technocratic_state_academic_development_monthly_dynamic_var
+				value = 0.02
+			}
+		}
+	}
+}
+#"Yinglong" Exoskeleton Development Program
+country_event = {
+	id = china.518
+	title = china.518.t
+	desc = china.518.d
+	picture = GFX_PRC_exoskeleton_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.518.a
+		add_tech_bonus = {
+			bonus = 1
+			ahead_reduction = 1
+			uses = 1
+			technology = body_armor6
+		}
+		add_tech_bonus = {
+			bonus = 1
+			ahead_reduction = 1
+			uses = 1
+			technology = body_armor7
+		}
+		add_tech_bonus = {
+			bonus = 1
+			ahead_reduction = 1
+			uses = 1
+			technology = body_armor8
+		}
+	}
+}
+#The Future of the Republic's Eldest Son
+country_event = {
+	id = china.519
+	title = china.519.t
+	desc = china.519.d
+	picture = GFX_PRC_thermonuclear_reactor_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.519.a
+	}
+}
+#All the Tomorrows
+country_event = {
+	id = china.520
+	title = china.520.t
+	desc = china.520.d
+	picture = GFX_PRC_guiyang_201_tower
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.520.a
+	}
+}
+#Across the Land and Sea
+country_event = {
+	id = china.521
+	title = china.521.t
+	desc = china.521.d
+	picture = GFX_PRC_high_speed_rail_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.521.a
+	}
+}
+#Chinese Academy of Sciences(CAS) Calls for Increased Education Funding
+country_event = {
+	id = china.522
+	title = china.522.t
+	desc = china.522.d
+	picture = GFX_PRC_chinese_academy_of_sciences_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.522.a
+	}
+}
+#Shattering the Mask of Moral Hypocrisy
+country_event = {
+	id = china.523
+	title = china.523.t
+	desc = china.523.d
+	picture = GFX_PRC_architect_moral_hypocrisy
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.523.a
+	}
+}
+#Brain in a Vat
+country_event = {
+	id = china.524
+	title = china.524.t
+	desc = china.524.d
+	picture = GFX_PRC_brain_in_a_vat
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.524.a
+		set_temp_variable = {
+			var = academic_development_var_temp
+			value = 0.05
+		}
+		add_academic_development = yes
+	}
+}
+#Bird in a Cage
+country_event = {
+	id = china.525
+	title = china.525.t
+	desc = china.525.d
+	picture = GFX_PRC_bird_in_a_cage_students
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.525.a
+	}
+}
+#A World Remade
+country_event = {
+	id = china.526
+	title = china.526.t
+	desc = china.526.d
+	picture = GFX_PRC_world_remade_airport
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.526.a
+	}
+}
+#New Scientific Reform
+country_event = {
+	id = china.527
+	title = china.527.t
+	desc = china.527.d
+	picture = GFX_PRC_new_scientific_reform
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.527.a
+	}
+}
+#Purging the Worms
+country_event = {
+	id = china.528
+	title = china.528.t
+	desc = china.528.d
+	picture = GFX_PRC_purging_the_worms
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.528.a
+	}
+}
+#Shackles on Capital
+country_event = {
+	id = china.529
+	title = china.529.t
+	desc = china.529.d
+	picture = GFX_PRC_shackles_on_capital_city
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.529.a
+		add_political_power = 100
+	}
+}
+#Infiltrating the Global Network
+country_event = {
+	id = china.530
+	title = china.530.t
+	desc = china.530.d
+	picture = GFX_PRC_infiltrating_the_global_network
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.530.a
+	}
+}
+#Nation of Automation
+country_event = {
+	id = china.531
+	title = china.531.t
+	desc = china.531.d
+	picture = GFX_PRC_nation_of_automation_city
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.531.a
+	}
+}
+#The Puppeteer of the World
+country_event = {
+	id = china.532
+	title = china.532.t
+	desc = china.532.d
+	picture = GFX_PRC_puppeteer_of_the_world_destroyed_m1_abrams_tank
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.532.a
+	}
+}
+#Omniscient, Omnipotent
+country_event = {
+	id = china.533
+	title = china.533.t
+	desc = china.533.d
+	picture = GFX_PRC_omniscient_omnipotent_switzerland
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.533.a
+	}
+}
+#Crossing the Threshold of History
+country_event = {
+	id = china.534
+	title = china.534.t
+	desc = china.534.d
+	picture = GFX_PRC_crossing_the_threshold_of_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.534.a
+	}
+}
+#Shadows of Yesterday
+country_event = {
+	id = china.535
+	title = china.535.t
+	desc = china.535.d
+	picture = GFX_PRC_mao_protest
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.535.a
+	}
+}
+#The Hand of Stability
+country_event = {
+	id = china.536
+	title = china.536.t
+	desc = china.536.d
+	picture = GFX_PRC_digital_shit
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.536.a
+	}
+}
+#Defenders of the Nation
+country_event = {
+	id = china.537
+	title = china.537.t
+	desc = china.537.d
+	picture = GFX_PRC_chen_wenqing_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.537.a
+	}
+}
+#Cleaning House
+country_event = {
+	id = china.538
+	title = china.538.t
+	desc = china.538.d
+	picture = GFX_PRC_digital_shit
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.538.a
+		add_stability = -0.02
+	}
+}
+#Controversial Biologist
+country_event = {
+	id = china.539
+	title = china.539.t
+	desc = china.539.d
+	picture = GFX_PRC_sciencepath_Jiankui3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.539.a
+	}
+}
+#The Anti-Technocratic Movement is Born
+country_event = {
+	id = china.540
+	title = china.540.t
+	desc = china.540.d
+	picture = GFX_PRC_sciencepath_triumph_of_science
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.540.a
+		country_event = { id = china.545 days = 10 }
+		set_variable = {
+		    var = PRC_anti_technocratic_movement_rate
+		    value = 0
+		    #tooltip = 
+		}
+		add_to_variable = {
+			var = PRC_anti_technocratic_movement_rate_temp
+			value = 0.35
+		}
+		PRC_change_anti_technocratic_movement_rate = yes
+		add_dynamic_modifier = { modifier = PRC_anti_technocratic_movement }
+	}
+}
+#The Anti-Technocratic Movement is Dead
+country_event = {
+	id = china.541
+	title = china.541.t
+	desc = china.541.d
+	picture = GFX_PRC_sciencepath_triumph_of_science
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.541.a
+		remove_dynamic_modifier = { modifier = PRC_anti_technocratic_movement }
+		clr_country_flag = PRC_anti_technocratic_movement_is_active
+	}
+}
+#Triumph of Science
+country_event = {
+	id = china.542
+	title = china.542.t
+	desc = china.542.d
+	picture = GFX_PRC_sciencepath_triumph_of_science
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.542.a
+		custom_effect_tooltip = PRC_scientists_path_win_tt
+		set_country_flag = PRC_scientists_consolidated_power
+		set_party_name = {
+			ideology = totalitarian_socialist
+			long_name = PRC_cpc_technocrats_long
+			name = PRC_cpc_technocrats
+		}
+		set_country_leader_portrait = {
+			portrait = GFX_portrait_PRC_Cheng_Wenqing_scientists
+		}
+		set_country_leader_ideology = technocracy_totsoc
+		remove_mission = PRC_science_MSS_dynamic_opinion
+		remove_mission = PRC_science_scientist_faction_dynamic_opinion
+		hidden_effect = {
+			set_cosmetic_tag = PRC_technocratic_mss
+		}
+	}
+}
+#Apotheosis of Chinese Philosophy
+country_event = {
+	id = china.543
+	title = china.543.t
+	desc = china.543.d
+	picture = GFX_PRC_ignorance
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.543.a
+		custom_effect_tooltip = PRC_mss_path_win_tt
+		set_country_flag = PRC_mss_consolidated_power
+		set_country_leader_portrait = {
+			portrait = GFX_portrait_PRC_Cheng_Wenqing_MSS
+		}
+		set_country_leader_ideology = digital_leninism
+		remove_mission = PRC_science_MSS_dynamic_opinion
+		remove_mission = PRC_science_scientist_faction_dynamic_opinion
+		hidden_effect = {
+			set_cosmetic_tag = PRC_technocratic_mss
+		}
+	}
+}
+#Successful Operation in Taiwan
+country_event = {
+	id = china.544
+	title = china.544.t
+	desc = china.544.d
+	picture = GFX_PRC_ignorance
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.544.a
+		custom_effect_tooltip = PRC_lower_anti_technocratic_movement_power_by_40_tt
+		set_temp_variable = { PRC_anti_technocratic_movement_rate_temp = -0.4 }
+		PRC_change_anti_technocratic_movement_rate = yes
+	}
+}
+#Consequences of Ignorance
+country_event = {
+	id = china.545
+	title = china.545.t
+	desc = china.545.d
+	picture = GFX_PRC_ignorance
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = PRC_anti_technocratic_movement_is_active
+			activate_mission = PRC_mission_to_deal_with_the_movement
+		}
+	}
+	option = { #sir yes sir
+		name = china.545.a
+		effect_tooltip = { activate_mission = PRC_mission_to_deal_with_the_movement }
+		608 = { #temporary removed random here. I think I'm going to rework this one mechanic a bit later, since it would demand a lot of effort to image something really interesting
+			set_state_flag = PRC_hideout_of_the_movent
+		}
+		1222 = {
+			set_state_flag = PRC_hideout_of_the_movent
+		}
+		595 = {
+			set_state_flag = PRC_hideout_of_the_movent
+		}
+		set_variable = {
+			var = PRC_anti_technocratic_movement_amount_of_hideouts
+			value = 3
+		}
+	}
+}
+
+#Nationalists
+#Crossing the Rubicon
+country_event = {
+	id = china.600
+	title = china.600.t
+	desc = china.600.d
+	picture = GFX_PRC_chen_quanguo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.600.a
+	}
+}
+#The Return of Heaven
+country_event = {
+	id = china.601
+	title = china.601.t
+	desc = china.601.d
+	picture = GFX_PRC_empire_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.601.a
+		set_country_flag = PRC_giga_mega_secret_empire_path
+		focus_unlock = yes
+	}
+}
+#Choosing China's Official Name
+country_event = {
+	id = china.602
+	title = china.602.t
+	desc = china.602.d
+	picture = GFX_PRC_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.602.a
+		set_cosmetic_tag = PRC_heavenly_republic
+	}
+	option = {
+		name = china.602.b
+		set_cosmetic_tag = PRC_confucian_prc
+	}
+}
+#Chinese Invasion of Pakistan
+news_event = {
+	id = china.603
+	title = china.603.t
+	desc = china.603.d
+	picture = GFX_pla_mongolia_news
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.603.a
+		trigger = {
+			tag = PRC
+		}
+	}
+	option = {
+		name = china.603.b
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+	}
+}
+#Light Comes from China
+country_event = {
+	id = china.604
+	title = china.604.t
+	desc = china.604.d
+	picture = GFX_PRC_yongle_encyclopedia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.604.a
+	}
+}
+#A Night of Fire
+country_event = {
+	id = china.605
+	title = china.605.t
+	desc = china.605.d
+	picture = GFX_PRC_collapse3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.605.a
+		add_political_power = 50
+	}
+}
+#Strangling the Throat of God
+country_event = {
+	id = china.606
+	title = china.606.t
+	desc = china.606.d
+	picture = GFX_Abandoned_Church
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.606.a
+		add_political_power = 50
+	}
+}
+#The Shattering of Crescent and Star
+country_event = {
+	id = china.607
+	title = china.607.t
+	desc = china.607.d
+	picture = GFX_PRC_destroyed_mosque_islam
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.607.a
+		add_political_power = 50
+	}
+}
+#Severing the Head of the Buddha
+country_event = {
+	id = china.608
+	title = china.608.t
+	desc = china.608.d
+	picture = GFX_PRC_destroyed_buddha
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.608.a
+	}
+}
+#The Westbound Vessel
+country_event = {
+	id = china.609
+	title = china.609.t
+	desc = china.609.d
+	picture = GFX_PRC_rage
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.609.a
+	}
+}
+#The Rise of the Wolf Warriors
+country_event = {
+	id = china.610
+	title = china.610.t
+	desc = china.610.d
+	picture = GFX_PRC_national_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.610.a
+	}
+}
+#Party Purge
+country_event = {
+	id = china.611
+	title = china.611.t
+	desc = china.611.d
+	picture = GFX_PRC_cpc_generic_1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.611.a
+		add_political_power = 50
+	}
+}
+#National Humiliation
+country_event = {
+	id = china.612
+	title = china.612.t
+	desc = china.612.d
+	picture = GFX_PRC_collapse1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.612.a
+		country_event = {
+			id = china.613
+			days = 5
+		}
+	}
+}
+#Spark
+country_event = {
+	id = china.613
+	title = china.613.t
+	desc = china.613.d
+	picture = GFX_PRC_collapse2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.613.a
+		country_event = {
+			id = china.614
+			days = 2
+		}
+	}
+}
+#Rage
+country_event = {
+	id = china.614
+	title = china.614.t
+	desc = china.614.d
+	picture = GFX_PRC_collapse6
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.614.a
+		country_event = {
+			id = china.615
+			days = 1
+		}
+	}
+}
+#The Third Chinese Revolution
+country_event = {
+	id = china.615
+	title = china.615.t
+	desc = china.615.d
+	picture = GFX_PRC_Generic_Unity
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.615.a
+		hidden_effect = {
+			country_event = {
+				id = china.616
+				days = 1
+			}
+		}
+	}
+}
+#The Founding of the National Militia
+country_event = {
+	id = china.616
+	title = china.616.t
+	desc = china.616.d
+	picture = GFX_PRC_national_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.616.a
+		set_temp_variable = { coalition_partner_var_temp = token:fascist }
+		add_to_coalition = yes
+		set_temp_variable = { coalition_partner_var_temp = token:totalitarian_socialist }
+		add_to_coalition = yes
+		custom_effect_tooltip = tooltip_white_line
+		set_party_name = {
+			ideology = fascist
+			long_name = PRC_fascist_new_chinese_revolution_long
+			name = PRC_fascist_new_chinese_revolution_short
+		}
+		set_party_name = {
+			ideology = totalitarian_socialist
+			long_name = PRC_totalitarian_socialist_new_chinese_revolution_long
+			name = PRC_totalitarian_socialist_new_chinese_revolution_short
+		}
+		hidden_effect = {
+			country_event = {
+				id = china.104
+				days = 8
+			}
+			country_event = {
+				id = china.626
+				days = 30
+				random_days = 10
+			}
+			country_event = {
+				id = china.637
+				days = 110
+				random_days = 30
+			}
+		}
+	}
+}
+#The First Emperor of the People's Empire
+country_event = {
+	id = china.617
+	title = china.617.t
+	desc = china.617.d
+	picture = GFX_PRC_mao_emperor_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.617.a
+		hidden_effect = {
+			country_event = {
+				id = china.633
+				days = 8
+			}
+		}
+	}
+}
+#Revival of Tradition
+country_event = {
+	id = china.618
+	title = china.618.t
+	desc = china.618.d
+	picture = GFX_PRC_lanterns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.618.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.025
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = academic_development_var_temp
+			value = 0.025
+		}
+		add_academic_development = yes
+	}
+}
+#Watching the Opera
+country_event = {
+	id = china.619
+	title = china.619.t
+	desc = china.619.d
+	picture = GFX_PRC_theatre
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.619.a
+		add_political_power = 15
+	}
+}
+#The Farmer
+country_event = {
+	id = china.620
+	title = china.620.t
+	desc = china.620.d
+	picture = GFX_PRC_houses_village_derevnya_epta
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.620.a
+		add_popularity = {
+			ideology = fascist
+			popularity = -0.03
+		}
+	}
+}
+#God Loves the World
+country_event = {
+	id = china.621
+	title = china.621.t
+	desc = china.621.d
+	picture = GFX_PRC_christian_church_sacred_heart_cathedral
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.621.a
+	}
+}
+#Allah Weeps
+country_event = {
+	id = china.622
+	title = china.622.t
+	desc = china.622.d
+	picture = GFX_PRC_destroyed_mosque_islam
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.622.a
+	}
+}
+#Journey to Southern Xinjiang
+country_event = {
+	id = china.623
+	title = china.623.t
+	desc = china.623.d
+	picture = GFX_Chinese_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.623.a
+	}
+}
+#The Traitor's End
+country_event = {
+	id = china.624
+	title = china.624.t
+	desc = china.624.d
+	picture = GFX_PRC_politicians_deputy
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.624.a
+		add_political_power = 20
+	}
+}
+#Quotations from Chairman Chen
+country_event = {
+	id = china.625
+	title = china.625.t
+	desc = china.625.d
+	picture = GFX_PRC_chen_quanguo_event
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.625.a
+		add_political_power = 10
+	}
+}
+#The New Red Guards
+country_event = {
+	id = china.626
+	title = china.626.t
+	desc = china.626.d
+	picture = GFX_PRC_bulwark_of_revolution
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.626.a
+		add_popularity = {
+			ideology = totalitarian_socialist
+			popularity = 0.02
+		}
+	}
+}
+#Documentary "Heroes of the Borderland" Released
+country_event = {
+	id = china.627
+	title = china.627.t
+	desc = china.627.d
+	picture = GFX_PRC_chen_quanguo_event2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.627.a
+		add_war_support = 0.01
+	}
+}
+#"Dragon Radiance Expo"
+country_event = {
+	id = china.628
+	title = china.628.t
+	desc = china.628.d
+	picture = GFX_PRC_dragon_radiance_expo_larpers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.628.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.05
+		}
+		add_society_development = yes
+		add_political_power = 30
+	}
+}
+#Internet Anti-Hate Alliance
+country_event = {
+	id = china.629
+	title = china.629.t
+	desc = china.629.d
+	picture = GFX_PRC_chinese_internet_army
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.629.a
+		add_stability = 0.01
+	}
+}
+#The Gears of History Turn Back
+country_event = {
+	id = china.630
+	title = china.630.t
+	desc = china.630.d
+	picture = GFX_PRC_mao_smiles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.630.a
+		add_political_power = 10
+		add_popularity = {
+			ideology = totalitarian_socialist
+			popularity = 0.02
+		}
+	}
+}
+#Monk Kong's Support
+country_event = {
+	id = china.631
+	title = china.631.t
+	desc = china.631.d
+	picture = GFX_PRC_mao_smiles
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.631.a
+		add_political_power = 10
+	}
+}
+#Hawkish Professor
+country_event = {
+	id = china.632
+	title = china.632.t
+	desc = china.632.d
+	picture = GFX_PRC_ai_yuejin
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.632.a
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.025
+		}
+		add_society_development = yes
+	}
+}
+#The Rightful Honor
+country_event = {
+	id = china.633
+	title = china.633.t
+	desc = china.633.d
+	picture = GFX_PRC_rightful_honor_mao
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.633.a
+		add_political_power = -75
+		country_event = {
+			id = china.634
+			days = 7
+		}
+	}
+	option = {
+		name = china.633.b
+		add_political_power = 100
+	}
+}
+#The Spirit of Humanity
+country_event = {
+	id = china.634
+	title = china.634.t
+	desc = china.634.d
+	picture = GFX_PRC_imperial_ancestral_temple
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.634.a
+		add_political_power = 15
+		country_event = {
+			id = china.635
+			days = 7
+		}
+	}
+}
+#Veterans to Their Tablets
+country_event = {
+	id = china.635
+	title = china.635.t
+	desc = china.635.d
+	picture = GFX_PRC_imperial_ancestral_temple
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.635.a
+		add_political_power = 15
+		country_event = {
+			id = china.636
+			days = 7
+		}
+	}
+}
+#Heroes Deserve Honor
+country_event = {
+	id = china.636
+	title = china.636.t
+	desc = china.636.d
+	picture = GFX_PRC_imperial_ancestral_temple
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.636.a
+		add_political_power = 15
+	}
+}
+#National Militia Marches into Hong Kong
+country_event = {
+	id = china.637
+	title = china.637.t
+	desc = china.637.d
+	picture = GFX_PRC_hong_kong_cool_policeman
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.637.a
+		add_stability = -0.02
+		add_popularity = {
+			ideology = totalitarian_socialist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.01
+		}
+	}
+}
+#Mastering the Past...
+country_event = {
+	id = china.638
+	title = china.638.t
+	desc = china.638.d
+	picture = GFX_PRC_history
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+	}
+	option = {
+		name = china.638.a
+		add_political_power = 25
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+	}
+}
+
+
 
 
 
@@ -11707,6 +17446,594 @@ country_event = {
 	}
 }
 
+#Shootouts in Lhasa and Urumqi
+country_event = {
+	id = china.1019
+	title = china.1019.t
+	desc = china.1019.d
+	picture = GFX_PRC_shotouts_lhasa_urumqi
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		RAJ = {
+			has_war_with = PRC
+			surrender_progress < 0.25
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.1020
+				days = 2
+			}
+			ZZZ = {
+				transfer_state = 1156
+				transfer_state = 287
+				transfer_state = 619
+				transfer_state = 1160
+			}
+			set_province_controller = 8112
+			set_province_controller = 5016
+			set_province_controller = 8042
+			set_province_controller = 1970
+			set_province_controller = 5087
+		}
+	}
+	option = {
+		name = china.1019.a
+	}
+}
+#Pro-India Rebellion in the West
+country_event = {
+	id = china.1020
+	title = china.1020.t
+	desc = china.1020.d
+	picture = GFX_PRC_proindia_rebellion
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = china.1021
+				days = 3
+			}
+			country_event = {
+				id = china.1023
+				days = 35
+				random_days = 30
+			}
+			RAJ = {
+				puppet = TIB
+				puppet = SIK
+			}
+			TIB = {
+				set_capital = { state = 1156 }
+				set_politics = {
+				    ruling_party = nationalist
+				    elections_allowed = no
+				    long_name = RAJ_indian_military_command_party_long
+				    name = RAJ_indian_military_command_party
+				}
+				add_popularity = {
+				    ideology = nationalist
+				    popularity = 0.5
+				}
+				promote_character = RAJ_indian_military_command
+				set_cosmetic_tag = RAJ_tibet_rebellion
+				transfer_state = 1156
+				add_state_core = 1156
+				load_oob = RAJ_tibet_rebellion_oob
+				declare_war_on = {
+				    target = PRC
+				    type = annex_everything
+				}
+				add_ideas = TIB_SIK_anti_chinese_freedom_fighters
+			}
+			SIK = {
+				set_capital = { state = 619 }
+				set_politics = {
+				    ruling_party = nationalist
+				    elections_allowed = no
+				    long_name = RAJ_indian_military_command_party_long
+				    name = RAJ_indian_military_command_party
+				}
+				add_popularity = {
+				    ideology = nationalist
+				    popularity = 0.5
+				}
+				promote_character = RAJ_indian_military_command2
+				set_cosmetic_tag = RAJ_xinjiang_rebellion
+				transfer_state = 287
+				transfer_state = 619
+				transfer_state = 1160
+				add_state_core = 287
+				add_state_core = 619
+				add_state_core = 1160
+				load_oob = RAJ_xinjiang_rebellion_oob
+				declare_war_on = {
+				    target = PRC
+				    type = annex_everything
+				}
+				add_ideas = TIB_SIK_anti_chinese_freedom_fighters
+			}
+			set_province_controller = 8112
+			set_province_controller = 5016
+			set_province_controller = 8042
+			set_province_controller = 1970
+			set_province_controller = 5087
+		}
+	}
+	option = {
+		name = china.1020.a
+		effect_tooltip = {
+			TIB = {
+				declare_war_on = {
+				    target = PRC
+				    type = annex_everything
+				}
+			}
+			SIK = {
+				declare_war_on = {
+				    target = PRC
+				    type = annex_everything
+				}
+			}
+		}
+	}
+}
+#Indian Offensive
+country_event = {
+	id = china.1021
+	title = china.1021.t
+	desc = china.1021.d
+	picture = GFX_PRC_RAJ_offensive
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	option = {
+		name = china.1021.a
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					region = 146
+				}
+				remove_dynamic_modifier = {
+					modifier = PRC_unplanned_offensive
+				}
+			}
+			add_timed_idea = {
+				idea = RAJ_great_northern_offensive
+				days = 150
+			}
+		}
+	}
+}
+#India Launches Great Nothern Offensive
+news_event = {
+	id = china.1022
+	title = china.1022.t
+	desc = china.1022.d
+	picture = GFX_PRC_RAJ_offensive_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.1022.a
+		
+		trigger = {
+			NOT = {
+				OR = {
+					tag = PRC
+					is_ally_with = PRC
+				}
+			}
+		}
+	}
+	option = {
+		name = china.1022.b
+		
+		trigger = {
+			OR = {
+				tag = PRC
+				is_ally_with = PRC
+			}
+		}
+	}
+}
+#The Hollow Return
+country_event = {
+	id = china.1023
+	title = china.1023.t
+	desc = china.1023.d
+	picture = GFX_PRC_islamist_rebels2
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.1023.a
+		add_war_support = -0.05
+		283 = {
+			damage_building = {
+				type = infrastructure
+				damage = 0.25
+			}
+		}
+		616 = {
+			damage_building = {
+				type = infrastructure
+				damage = 0.25
+			}
+		}
+		1198 = {
+			damage_building = {
+				type = infrastructure
+				damage = 0.25
+			}
+		}
+		604 = {
+			damage_building = {
+				type = infrastructure
+				damage = 0.25
+			}
+		}
+		1187 = {
+			damage_building = {
+				type = infrastructure
+				damage = 0.25
+			}
+		}
+	}
+}
+#Dust to Dust
+country_event = {
+	id = china.1024
+	title = china.1024.t
+	desc = china.1024.d
+	picture = GFX_PRC_chinese_sniper
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.1024.a
+		army_experience = 5
+	}
+}
+#The Cardinal Wind
+country_event = {
+	id = china.1025
+	title = china.1025.t
+	desc = china.1025.d
+	picture = GFX_PRC_palace_burn
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.1025.a
+		add_stability = -0.025
+		1156 = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+#Two Red Stars
+country_event = {
+	id = china.1026
+	title = china.1026.t
+	desc = china.1026.d
+	picture = GFX_Chinese_soldiers2
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.1026.a
+		add_political_power = 10
+	}
+}
+#Because I Live
+country_event = {
+	id = china.1027
+	title = china.1027.t
+	desc = china.1027.d
+	picture = GFX_PRC_bulwark_of_revolution
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = china.1027.a
+		add_stability = -0.1
+		add_political_power = 100
+		add_manpower = 500000
+	}
+}
+#Hell on Earth
+country_event = {
+	id = china.1028
+	title = china.1028.t
+	desc = china.1028.d
+	picture = GFX_PRC_hell_on_earth
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1028.a
+	}
+}
+#On the Run
+country_event = {
+	id = china.1029
+	title = china.1029.t
+	desc = china.1029.d
+	picture = GFX_PRC_on_the_run
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1029.a
+	}
+}
+#New Order
+country_event = {
+	id = china.1030
+	title = china.1030.t
+	desc = china.1030.d
+	picture = GFX_PRC_new_order
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1030.a
+	}
+}
+#The Earth Bleeds
+country_event = {
+	id = china.1031
+	title = china.1031.t
+	desc = china.1031.d
+	picture = GFX_PRC_the_earth_bleeds
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1031.a
+		set_country_flag = PRC_its_just_beginning_flag
+		focus_unlock = yes
+	}
+}
+#Pangu Splits the Sky
+country_event = {
+	id = china.1032
+	title = china.1032.t
+	desc = china.1032.d
+	picture = GFX_PRC_pangu_splits_the_sky
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1032.a
+	}
+}
+#Love, Death, and the Motherland
+country_event = {
+	id = china.1033
+	title = china.1033.t
+	desc = china.1033.d
+	picture = GFX_PRC_love_death_and_the_motherland
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1033.a
+		set_country_flag = PRC_revanchists_united_asia
+		effect_tooltip = {
+			unlock_national_focus = PRC_new_asian_order
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+#Searching for Yasukuni Shrine
+country_event = {
+	id = china.1034
+	title = china.1034.t
+	desc = china.1034.d
+	picture = GFX_PRC_searching_for_yasukuni_shrine_radiation
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1034.a
+	}
+}
+#I Saw a Grey Horse
+country_event = {
+	id = china.1035
+	title = china.1035.t
+	desc = china.1035.d
+	picture = GFX_PRC_i_saw_a_grey_horse_gas_chemical_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1035.a
+	}
+}
+#Not of Our Kind
+country_event = {
+	id = china.1036
+	title = china.1036.t
+	desc = china.1036.d
+	picture = GFX_PRC_not_of_our_kind_australian_soldier
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1036.a
+	}
+}
+#China Begins Final Subjugation of Hindustan
+news_event = {
+	id = china.1037
+	title = china.1037.t
+	desc = china.1037.d
+	picture = GFX_PRC_chinese_tanks_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = china.1037.a
+	}
+}
+#The Future of Our Main Enemy
+country_event = {
+	id = china.1038
+	title = china.1038.t
+	desc = china.1038.d
+	picture = GFX_PRC_map_of_asia_china
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1038.a
+		JAP = {
+			set_cosmetic_tag = JAP_chinese_military_district_cosmetic
+		}
+		custom_effect_tooltip = tooltip_white_line
+		add_war_support = 0.05
+		add_political_power = 75
+		transfer_state = 876
+		transfer_state = 526
+		transfer_state = 1338
+		transfer_state = 1341
+		transfer_state = 645
+		hidden_effect = {
+			set_nationality = {
+				target_country = JAP
+				character = PRC_He_Weidong
+			}
+			JAP = {
+				remove_all_national_spirits = yes
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = no
+				}
+				add_country_leader_role = {
+				    character = PRC_He_Weidong
+				    promote_leader = yes
+				    country_leader = {
+				        ideology = military_junta
+				        expire = "1.1.1.1"
+				    }
+				}
+				add_popularity = {
+					ideology = nationalist
+					popularity = 0.35
+				}
+				set_party_name = {
+					ideology = nationalist
+					long_name = PRC_nationalist_party_long
+					name = PRC_nationalist_party
+				}
+			}
+		}
+	}
+	option = {
+		name = china.1038.b
+		country_event = china.1011
+		custom_effect_tooltip = PRC_revenge_for_nanking_tt
+		unlock_decision_tooltip = PRC_dissolve_japan
+		add_war_support = 0.05
+		add_political_power = 75
+		set_country_flag = PRC_dissolve_japan_visible_flag
+	}
+}
+
+
+#Fatal Mistake
+country_event = {
+	id = china.666
+	title = china.666.t
+	desc = china.666.d
+	picture = GFX_PRC_minus_soc_credit
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_war_with = CHI
+				}
+				add_ideas = PRC_fatal_mistake_idea
+				add_days_mission_timeout = {
+	 				mission = PRC_taiwan_war_countdown
+ 					days = -250
+				}
+				JAP = {
+					add_days_mission_timeout = {
+		 				mission = JAP_taiwan_war_mission
+						days = -250
+					}
+				}
+				CHI = {
+					add_days_mission_timeout = {
+		 				mission = CHI_taiwan_war_mission
+						days = -250
+					}
+				}
+			}
+			else = {
+				add_ideas = PRC_fatal_mistake_idea
+			}
+		}
+	}
+	option = {
+		name = china.666.a
+		effect_tooltip = {
+			if = {
+				limit = {
+					has_war_with = CHI
+				}
+				add_ideas = PRC_fatal_mistake_idea
+				add_days_mission_timeout = {
+	 				mission = PRC_taiwan_war_countdown
+ 					days = -250
+				}
+			}
+			else = {
+				add_ideas = PRC_fatal_mistake_idea
+			}
+		}
+	}
+}
 
 
 #Fatal Mistake
@@ -11834,21 +18161,53 @@ country_event = {
 }
 
 #Chinese Ending nl
-#country_event = {
-#	id = china.2003
-#	title = china.2003.t
-#	desc = china.2003.d
-#	picture = GFX_PRC_ending_nl
-#	fire_only_once = yes
-#	is_triggered_only = yes
-#	trigger = {
-#	}
-#	immediate = {
-#	}
-#	option = {
-#		name = china.2003.a
-#		custom_effect_tooltip = PRC_tfr_china_ending_tt
-#		custom_effect_tooltip = unrestricted_diplomacy_tt
-#		set_country_flag = unrestricted_diplomacy_flag
-#	}
-#}
+country_event = {
+	id = china.2003
+	title = china.2003.t
+	desc = china.2003.d
+	picture = GFX_PRC_ending_nl
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	trigger = {
+		NOT = {
+			has_country_flag = PRC_loji_overlord_flag
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			scoped_play_song = "yousawme"
+		}
+	}
+	option = {
+		name = china.2003.a
+		custom_effect_tooltip = PRC_tfr_china_ending_tt
+		custom_effect_tooltip = PRC_tfr_china_ending_tt2
+		custom_effect_tooltip = unrestricted_diplomacy_tt
+		set_country_flag = unrestricted_diplomacy_flag
+	}
+}
+
+#Chinese Ending loji
+country_event = {
+	id = china.2004
+	title = china.2004.t
+	desc = china.2004.d
+	picture = GFX_PRC_ending_loji
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			scoped_play_song = "yousawme"
+		}
+	}
+	option = {
+		name = china.2004.a
+		custom_effect_tooltip = PRC_tfr_china_ending_loji_tt
+		custom_effect_tooltip = unrestricted_diplomacy_tt
+		set_country_flag = unrestricted_diplomacy_flag
+	}
+}

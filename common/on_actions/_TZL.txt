@@ -1,0 +1,153 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = TJJ
+						}
+					}
+
+				TZL = {	
+
+			country_event = {
+				id = PRC_MAO3.73
+				days = 1
+			}
+							annex_country = {
+								target = TJJ
+								transfer_troops = no
+							}}
+
+
+					}
+
+
+
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = KMT
+						}
+					}
+
+				TZL = {	
+
+			country_event = {
+				id = PRC_MAO3.72
+				days = 1
+			}
+
+							annex_country = {
+								target = KMT
+								transfer_troops = no
+							}}
+
+
+					}
+
+
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = CHI
+						}
+					}
+
+				TZL = {	
+CHI = {transfer_navy = {
+    target = TZL
+}}
+							annex_country = {
+								target = CHI
+								transfer_troops = no
+							}}
+
+
+					}
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TSU
+								is_ally_with = TSU
+							}
+						}
+						ROOT = {
+							original_tag = KOR
+						}
+					}
+
+				TSU = {	
+	
+CHI_UZEDONG_SHANGTAI_3 = yes
+
+
+					}
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TSU
+								is_ally_with = TSU
+							}
+						}
+						ROOT = {
+							original_tag = JAP
+						}
+					}
+
+				TSU = {	
+	
+JAP = {transfer_navy = {
+    target = TSU
+}}
+							annex_country = {
+								target = JAP
+								transfer_troops = no
+							}}
+
+
+					}
+
+
+
+
+
+
+
+}
+}
+}

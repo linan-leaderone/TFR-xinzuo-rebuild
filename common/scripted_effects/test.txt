@@ -1,6 +1,65 @@
+CHI_UZEDONG_SHANGTAI_5 = {
+
+
+
+
+		JAP = {
+
+dismantle_faction = yes
+set_popularities = {
+	authoritarian_democrat = 60
+	nationalist = 30
+	fascist = 10
+}
+
+				create_country_leader = {
+	                name = "FCXZ"
+	                desc = "POLITICS_FCXZ_DESC"
+	                picture = "gfx/MAOYUANXIN/saki2.png"
+	                expire = "1999.1.1"
+	                ideology = corporatocracy
+				}   
+			set_cosmetic_tag = JAP_TSU
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = JAP_TSU_nationalist_party
+				name = JAP_TSU_nationalist_party
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = JAP_TSU_nationalist_party
+				name = JAP_TSU_nationalist_party
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = JAP_TSU_fascist_party
+				name = JAP_TSU_fascist_party_long
+			}
+				set_politics = {
+				ruling_party = authoritarian_democrat
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = no
+				}
+
+
+					
+					}	
+
+			}
 CHI_UZEDONG_SHANGTAI_4 = {
 TSU = {
-
+				transfer_state = 531
+				transfer_state = 1340
+				transfer_state = 529
+				transfer_state = 530
+				transfer_state = 536
+				transfer_state = 528
+				transfer_state = 526
+				transfer_state = 1338
+				transfer_state = 1333
+				transfer_state = 1334
+create_faction = TSU_RTY
 			every_state = {
 				limit = {
 					is_core_of = JAP
@@ -13,7 +72,7 @@ TSU = {
 				}
 			    remove_core_of = JAP
 		    }
-				transfer_state = 1332
+
 				set_capital = {
 					state = 1332
 				}
@@ -46,11 +105,67 @@ set_popularities = {
 				coalition_partner_var_temp = token:social_democrat
 			}
 			add_to_coalition = yes
-					
-				annex_country = {
-								target = JAP
-								transfer_troops = no
-							}
+		JAP = {
+		declare_war_on = {
+			target = TSU
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = TSU
+						army_ratio = 0.7       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}	
+
+			add_corps_commander_role = {
+				character = "Himari_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			add_corps_commander_role = {
+				character = "Tomoe_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			add_corps_commander_role = {
+				character = "Ran_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			add_corps_commander_role = {
+				character = "Moka_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+			add_corps_commander_role = {
+				character = "Hazawa_Tsugumi_char"
+				traits={   }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=1
+				logistics_skill=1
+			}
+	
 		}
 		}
 CHI_UZEDONG_SHANGTAI_3 = {
@@ -88,6 +203,7 @@ set_popularities = {
 	libertarian_socialist = 40
 	social_democrat = 20
 }
+	TSU = {add_to_faction = MKL}
 				set_politics = {
 				ruling_party = libertarian_socialist
 				last_election = "2023.1.1"
@@ -110,7 +226,7 @@ set_popularities = {
 					
 				annex_country = {
 								target = KOR
-								transfer_troops = no
+								transfer_troops = yes
 							}
 		}
 		}

@@ -2697,17 +2697,14 @@ shared_focus = {
 		factor = 1
 	}
 	available = {
-	  if = {
-			limit = {
-				has_country_flag = PRC_new_left_win
-			}
+	
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
 						has_completed_focus = PRC_the_Flower_of_Freedom_3
 						PRC_ren_chonghao = {is_country_leader = yes}
 		}
-		}
+	
 	}
 	prerequisite = { focus = PRC_establish_eadi }
 	completion_reward = {

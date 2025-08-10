@@ -994,7 +994,27 @@ TZL = { transfer_state = 1149}
 		}}
 
 		TZL = {
-
+set_country_flag = taiwan_civil_war_left
+change_economy_type_ZZZ_capitalist_economy = yes
+				add_dynamic_modifier = {
+					modifier = CHI_zylm_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = CHI_zylm_army_dynamic
+				}
+				add_to_variable = {
+					var = CHI_zylm_army_army_core_attack_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = CHI_zylm_army_army_core_defence_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = CHI_zylm_surrender_limit_dynamic_var
+					value = 0.20
+				}
+load_focus_tree = TZL_TWW_focus
 			add_corps_commander_role = {
 				character = "CHI_wu_rong_yuan_char"
 				traits={   }
@@ -1079,7 +1099,7 @@ TZL = { transfer_state = 1149}
 				long_name = FEIFA_party_long
 				name = FEIFA_party_long
 			}
-change_economy_type_planned_economy = yes
+
 change_government_type_revolutionary_front = yes		
 		add_country_leader_role = {
 			character = chen_xinxing_char
@@ -1165,7 +1185,36 @@ set_popularities = {
 				election_frequency = 60
 				elections_allowed = no
 				}
+		
+		add_country_leader_role = {
+			character = chen_xinxing_char
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			promote_character = {
+			character = chen_xinxing_char
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = TWWGSQ
+			promote_leader = yes
+			country_leader = {
+				ideology = trotskyism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
 
+			promote_character = {
+			character = TWWGSQ
+			ideology = trotskyism
+		}
 			set_temp_variable = {
 				coalition_partner_var_temp = token:totalitarian_socialist
 			}
@@ -1207,7 +1256,45 @@ declare_war_on = {
 		name = PRC_MAO3.49.b
 			hidden_effect = {
 					TZL = { change_tag_from = ROOT }
+				if = {
+					limit = {
+	JAP = {has_country_flag = CHI_Afterglow}
 
+					}
+					JAP = {country_event = { id = PRC_MAO3.51 days = 365 }}
+					JAP = {country_event = { id = PRC_MAO3.63 days = 36 }}
+TZL = {
+			country_event = {
+				id = PRC_MAO3.56
+				days = 60
+			}
+			country_event = {
+				id = PRC_MAO3.57
+				days = 120
+			}
+			country_event = {
+				id = PRC_MAO3.58
+				days = 180
+			}
+			country_event = {
+				id = PRC_MAO3.59
+				days = 240
+			}
+			country_event = {
+				id = PRC_MAO3.60
+				days = 300
+			}
+			country_event = {
+				id = PRC_MAO3.61
+				days = 360
+			}
+			country_event = {
+				id = PRC_MAO3.62
+				days = 365
+			}
+		
+					}
+	}
 	}
 	}
 }
@@ -1222,6 +1309,86 @@ country_event = {
         immediate = {
 			hidden_effect = {
 
+					news_event = { id = PRC_MAO3.54 days = 1 }
+				if = {
+					limit = {
+	NOT = {JAP = {has_country_flag = CHI_Afterglow}}
+					}
+				
+		JAP = {add_to_faction = CHI}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						}
+					random_owned_controlled_state = {
+						limit = { PREV = { has_full_control_of_state = PREV } }
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						create_unit = {
+							division = "division_template = \"民兵团\" start_experience_factor = 0.5" 
+							owner = ROOT
+							allow_spawning_on_enemy_provs = yes
+						}
+						}
+					}
 				set_politics = {
 				ruling_party = conservative
 				election_frequency = 60
@@ -1406,6 +1573,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.51.a
+CHI_UZEDONG_SHANGTAI_4 = yes
 	}
 }
 country_event = {
@@ -1417,6 +1585,18 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.52.a
+
+				add_to_variable = {
+					var =  CHI_hongdupai
+					value = -1
+				}
+	}
+	option = {
+		name = PRC_MAO3.52.b
+				add_to_variable = {
+					var =  CHI_hongdupai
+					value = 1
+				}
 	}
 }
 country_event = {
@@ -1430,7 +1610,7 @@ country_event = {
 		name = PRC_MAO3.53.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.54
 	title = PRC_MAO3.54.t
 	desc = PRC_MAO3.54.d
@@ -1441,7 +1621,7 @@ country_event = {
 		name = PRC_MAO3.54.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.55
 	title = PRC_MAO3.55.t
 	desc = PRC_MAO3.55.d
@@ -1452,7 +1632,7 @@ country_event = {
 		name = PRC_MAO3.55.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.56
 	title = PRC_MAO3.56.t
 	desc = PRC_MAO3.56.d
@@ -1463,7 +1643,7 @@ country_event = {
 		name = PRC_MAO3.56.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.57
 	title = PRC_MAO3.57.t
 	desc = PRC_MAO3.57.d
@@ -1474,7 +1654,7 @@ country_event = {
 		name = PRC_MAO3.57.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.58
 	title = PRC_MAO3.58.t
 	desc = PRC_MAO3.58.d
@@ -1485,7 +1665,7 @@ country_event = {
 		name = PRC_MAO3.58.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.59
 	title = PRC_MAO3.59.t
 	desc = PRC_MAO3.59.d
@@ -1496,7 +1676,7 @@ country_event = {
 		name = PRC_MAO3.59.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.60
 	title = PRC_MAO3.60.t
 	desc = PRC_MAO3.60.d
@@ -1507,7 +1687,7 @@ country_event = {
 		name = PRC_MAO3.60.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.61
 	title = PRC_MAO3.61.t
 	desc = PRC_MAO3.61.d
@@ -1518,7 +1698,7 @@ country_event = {
 		name = PRC_MAO3.61.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.62
 	title = PRC_MAO3.62.t
 	desc = PRC_MAO3.62.d
@@ -1538,6 +1718,8 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.63.a
+CHI_UZEDONG_SHANGTAI_5 = yes
+
 	}
 }
 country_event = {
@@ -1547,8 +1729,13 @@ country_event = {
 	picture = GFX_PRC_MAO3_event_64
 	is_triggered_only = yes
 	fire_only_once = yes
+
 	option = {
 		name = PRC_MAO3.64.a
+
+			hidden_effect = {
+			TZL = {	load_oob = "TZL_marines_3"}
+	}
 	}
 }
 country_event = {
