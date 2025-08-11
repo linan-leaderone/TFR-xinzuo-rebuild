@@ -1890,7 +1890,19 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.78.a
+change_economy_type_planned_economy = yes
 	}
+	option = {
+		name = PRC_MAO3.78.b
+change_economy_type_worker_controlled = yes
+
+	}
+	option = {
+		name = PRC_MAO3.78.c
+change_economy_type_welfare_capitalism = yes
+
+	}
+
 }
 country_event = {
 	id = PRC_MAO3.79

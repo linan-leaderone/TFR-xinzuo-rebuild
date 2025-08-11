@@ -313,7 +313,7 @@ focus_tree = {
 		completion_reward = {
 			set_cosmetic_tag = TZL_SOC
 			news_event = { id = PRC_MAO3.55 days = 1 }
-
+change_government_type_socialist_republic = yes
 		}
 	} 
    focus = {
@@ -342,6 +342,7 @@ check_variable = {
 }
 		}
 		completion_reward = {
+					country_event = { id = PRC_MAO3.76 days = 1 }
 	set_country_flag = CHI_hongtongpai
 	
 		
@@ -374,6 +375,8 @@ check_variable = {
 }
 		}
 		completion_reward = {
+	
+					country_event = { id = PRC_MAO3.75 days = 1 }
 	set_country_flag = CHI_hongdupai
 		
 
