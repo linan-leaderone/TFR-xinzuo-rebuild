@@ -1,0 +1,207 @@
+RED_JAP_REV_ARMY = {
+hidden_effect = {
+TSU = {
+	set_variable = { TSU.RUA_weekly_manpower = red_unity_army_weekly_manpower_dynamic_var}
+	set_variable = { TSU.RUA_decryption = red_unity_army_decryption_dynamic_var }
+	set_variable = { TSU.RUA_production_lack_of_resource_penalty_factor = red_unity_army_production_lack_of_resource_penalty_factor_dynamic_var }
+	set_variable = { TSU.RUA_encryption = red_unity_army_encryption_dynamic_var }
+	set_variable = { TSU.RUA_attrition = red_unity_army_attrition_dynamic_var }
+	set_variable = { TSU.RUA_intel_from_combat_factor = red_unity_army_intel_from_combat_factor_dynamic_var }
+	set_variable = { TSU.RUA_air_agility_factor = red_unity_army_air_agility_factor_dynamic_var }
+	set_variable = { TSU.RUA_air_cas_efficiency = red_unity_army_air_cas_efficiency_dynamic_var }
+	set_variable = { TSU.RUA_air_intercept_efficiency = red_unity_army_air_intercept_efficiency_dynamic_var }
+	set_variable = { TSU.RUA_air_superiority_efficiency = red_unity_army_air_superiority_efficiency_dynamic_var }
+	set_variable = { TSU.RUA_air_mission_efficiency = red_unity_army_air_mission_efficiency_dynamic_var}
+	set_variable = { TSU.RUA_air_cas_present_factor = red_unity_army_air_cas_present_factor_dynamic_var }
+	set_variable = { TSU.RUA_army_defence_factor = red_unity_army_army_defence_factor_dynamic_var }
+	set_variable = { TSU.RUA_army_speed_factor = red_unity_army_army_speed_factor_dynamic_var }
+	set_variable = { TSU.RUA_stability_weekly = red_unity_army_stability_weekly_dynamic_var }
+	set_variable = { TSU.RUA_war_support_weekly = red_unity_army_war_support_weekly_dynamic_var}
+	set_variable = { TSU.RUA_army_org_factor = red_unity_army_army_org_factor_dynamic_var }
+	set_variable = { TSU.RUA_supply_consumption_factor = red_unity_army_supply_consumption_factor_dynamic_var}
+	set_variable = { TSU.RUA_political_power_cost = red_unity_army_political_power_cost_dynamic_var}
+	set_variable = { TSU.RUA_political_power_factor = red_unity_army_political_power_factor_dynamic_var}
+	set_variable = { TSU.RUA_political_power_gain = red_unity_army_political_power_gain_dynamic_var}
+	set_variable = { TSU.RUA_trade_opinion_factor = red_unity_army_trade_opinion_factor_dynamic_var}
+	set_variable = { TSU.RUA_send_volunteer_factor = red_unity_army_send_volunteer_factor_dynamic_var}
+	set_variable = { TSU.RUA_max_command_power = red_unity_army_max_command_power_dynamic_var}
+	set_variable = { TSU.RUA_experience_gain_army_factor = red_unity_army_experience_gain_army_factor_dynamic_var }
+	set_variable = { TSU.RUA_war_support_factor = red_unity_army_war_support_factor_dynamic_var}
+	set_variable = { TSU.RUA_conversion_cost_mil_to_civ_factor = red_unity_army_conversion_cost_mil_to_civ_factor_dynamic_var}
+	set_variable = { TSU.RUA_army_attack_factor = red_unity_army_army_attack_factor_dynamic_var}
+	set_variable = { TSU.RUA_party_popularity_stability_factor = red_unity_army_party_popularity_stability_factor_dynamic_var}
+	set_variable = { TSU.RUA_army_core_attack_factor = red_unity_army_army_core_attack_factor_dynamic_var}
+	set_variable = { TSU.RUA_army_core_defence_factor = red_unity_army_army_core_defence_factor_dynamic_var}
+	set_variable = { TSU.RUA_research_speed_factor = red_unity_army_research_speed_factor_dynamic_var}
+	set_variable = { TSU.RUA_line_change_production_efficiency_factor = red_unity_army_line_change_production_efficiency_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_oil_factor = red_unity_army_production_oil_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_speed_office_park_factor = red_unity_army_production_speed_office_park_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_cost_infrastructure_factor = red_unity_army_production_cost_infrastructure_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_speed_arms_factory_factor = red_unity_army_production_speed_arms_factory_factor_dynamic_var}
+	set_variable = { TSU.RUA_industrial_capacity_factory = red_unity_army_industrial_capacity_factory_dynamic_var}
+	set_variable = { TSU.RUA_industrial_capacity_dockyard = red_unity_army_industrial_capacity_dockyard_dynamic_var}
+	set_variable = { TSU.RUA_command_power_gain = red_unity_army_command_power_gain_dynamic_var}
+	set_variable = { TSU.RUA_production_speed_industrial_complex_factor = red_unity_army_production_speed_industrial_complex_factor_dynamic_var}
+	set_variable = { TSU.RUA_enemy_operative_capture_chance_factor  = red_unity_army_enemy_operative_capture_chance_factor_dynamic_var}
+	set_variable = { TSU.RUA_enemy_operative_intel_extraction_rate = red_unity_army_enemy_operative_intel_extraction_rate_dynamic_var}
+	set_variable = { TSU.RUA_production_speed_buildings_factor = red_unity_army_production_speed_buildings_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_factory_efficiency_gain_factor = red_unity_army_production_factory_efficiency_gain_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_factory_max_efficiency_factor = red_unity_army_production_factory_max_efficiency_factor_dynamic_var}
+	set_variable = { TSU.RUA_production_speed_infrastructure_factor = red_unity_army_production_speed_infrastructure_factor_dynamic_var}
+	set_variable = { TSU.RUA_compliance_growth = red_unity_army_compliance_growth_dynamic_var}
+	set_variable = { TSU.RUA_breakthrough_factor = red_unity_army_breakthrough_factor_dynamic_var}
+	set_variable = { TSU.RUA_expense_growth_factor = red_unity_army_expense_growth_factor_dynamic_var}
+	set_variable = { TSU.RUA_resistance_growth = red_unity_army_resistance_growth_dynamic_var}
+	set_variable = { TSU.RUA_max_planning = red_unity_army_max_planning_dynamic_var}
+	set_variable = { TSU.RUA_planning_speed = red_unity_army_planning_speed_dynamic_var}
+	set_variable = { TSU.RUA_mobilization_speed = red_unity_army_mobilization_speed_dynamic_var}
+	set_variable = { TSU.RUA_org_loss_when_moving = red_unity_army_org_loss_when_moving_dynamic_var}
+	set_variable = { TSU.RUA_communist_drift = red_unity_army_communist_drift_dynamic_var}
+	set_variable = { TSU.RUA_land_reinforce_rate = red_unity_army_land_reinforce_rate_dynamic_var}
+	set_variable = { TSU.RUA_totalitarian_socialist_drift = red_unity_army_totalitarian_socialist_drift_dynamic_var}
+	set_variable = { TSU.RUA_social_democrat_drift = red_unity_army_social_democrat_drift_dynamic_var}
+	set_variable = { TSU.RUA_libertarian_socialist_drift = red_unity_army_libertarian_socialist_drift_dynamic_var}
+	set_variable = { TSU.RUA_business_value_factor = red_unity_army_business_value_factor_dynamic_var}
+	set_variable = { TSU.RUA_personal_expense_factor = red_unity_army_personal_expense_factor_dynamic_var}
+	set_variable = { TSU.RUA_society_development_monthly = red_unity_army_society_development_monthly_dynamic_var}
+	set_variable = { TSU.RUA_academic_development_monthly = red_unity_army_academic_development_monthly_dynamic_var}
+	set_variable = { TSU.RUA_industrial_development_monthly = red_unity_army_industrial_development_monthly_dynamic_var}
+	set_variable = { TSU.RUA_consumer_goods_factor = red_unity_army_consumer_goods_factor_dynamic_var}
+	set_variable = { TSU.RUA_army_morale_factor = red_unity_army_army_morale_factor_dynamic_var}
+	set_variable = { TSU.RUA_income_growth_factor = red_unity_army_income_growth_factor_dynamic_var}
+	set_variable = { TSU.RUA_conscription = red_unity_army_conscription_dynamic_var}
+	set_variable = { TSU.RUA_conscription_factor = red_unity_army_conscription_factor_dynamic_var}
+	set_variable = { TSU.RUA_personal_value_factor = red_unity_army_personal_value_factor_dynamic_var}
+	set_variable = { TSU.RUA_intelligence_agency_defense = red_unity_army_intelligence_agency_defense_dynamic_var}
+	set_variable = { TSU.RUA_experience_gain_army_unit_factor = red_unity_army_experience_gain_army_unit_factor_dynamic_var}
+	set_variable = { TSU.RUA_max_commander_army_size = red_unity_army_max_commander_army_size_dynamic_var}
+	set_variable = { TSU.RUA_drift_defence_factor = red_unity_army_drift_defence_factor_dynamic_var}
+	set_variable = { TSU.RUA_monthly_population = red_unity_army_monthly_population_dynamic_var}
+	set_variable = { TSU.RUA_surrender_limit = red_unity_army_surrender_limit_dynamic_var}
+	set_variable = { TSU.RUA_consumer_goods_factor = red_unity_army_consumer_goods_factor_dynamic_var}
+			every_country = {
+				limit = {
+						is_ally_with = TSU
+				}
+				remove_dynamic_modifier = {
+					modifier = red_unity_army_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = red_unity_army_dynamic
+				}
+set_variable = { red_unity_army_weekly_manpower_dynamic_var = TSU.RUA_weekly_manpower }
+set_variable = { red_unity_army_decryption_dynamic_var = TSU.RUA_decryption }
+set_variable = { red_unity_army_production_lack_of_resource_penalty_factor_dynamic_var = TSU.RUA_production_lack_of_resource_penalty_factor }
+set_variable = { red_unity_army_encryption_dynamic_var = TSU.RUA_encryption }
+set_variable = { red_unity_army_attrition_dynamic_var = TSU.RUA_attrition }
+set_variable = { red_unity_army_intel_from_combat_factor_dynamic_var = TSU.RUA_intel_from_combat_factor }
+set_variable = { red_unity_army_air_agility_factor_dynamic_var = TSU.RUA_air_agility_factor }
+set_variable = { red_unity_army_air_cas_efficiency_dynamic_var = TSU.RUA_air_cas_efficiency }
+set_variable = { red_unity_army_air_intercept_efficiency_dynamic_var = TSU.RUA_air_intercept_efficiency }
+set_variable = { red_unity_army_air_superiority_efficiency_dynamic_var = TSU.RUA_air_superiority_efficiency }
+set_variable = { red_unity_army_air_mission_efficiency_dynamic_var = TSU.RUA_air_mission_efficiency }
+set_variable = { red_unity_army_air_cas_present_factor_dynamic_var = TSU.RUA_air_cas_present_factor }
+set_variable = { red_unity_army_army_defence_factor_dynamic_var = TSU.RUA_army_defence_factor }
+set_variable = { red_unity_army_army_speed_factor_dynamic_var = TSU.RUA_army_speed_factor }
+set_variable = { red_unity_army_stability_weekly_dynamic_var = TSU.RUA_stability_weekly }
+set_variable = { red_unity_army_war_support_weekly_dynamic_var = TSU.RUA_war_support_weekly }
+set_variable = { red_unity_army_army_org_factor_dynamic_var = TSU.RUA_army_org_factor }
+set_variable = { red_unity_army_supply_consumption_factor_dynamic_var = TSU.RUA_supply_consumption_factor }
+set_variable = { red_unity_army_political_power_cost_dynamic_var = TSU.RUA_political_power_cost }
+set_variable = { red_unity_army_political_power_factor_dynamic_var = TSU.RUA_political_power_factor }
+set_variable = { red_unity_army_political_power_gain_dynamic_var = TSU.RUA_political_power_gain }
+set_variable = { red_unity_army_trade_opinion_factor_dynamic_var = TSU.RUA_trade_opinion_factor }
+set_variable = { red_unity_army_send_volunteer_factor_dynamic_var = TSU.RUA_send_volunteer_factor }
+set_variable = { red_unity_army_max_command_power_dynamic_var = TSU.RUA_max_command_power }
+set_variable = { red_unity_army_experience_gain_army_factor_dynamic_var = TSU.RUA_experience_gain_army_factor }
+set_variable = { red_unity_army_war_support_factor_dynamic_var = TSU.RUA_war_support_factor }
+set_variable = { red_unity_army_conversion_cost_mil_to_civ_factor_dynamic_var = TSU.RUA_conversion_cost_mil_to_civ_factor }
+set_variable = { red_unity_army_army_attack_factor_dynamic_var = TSU.RUA_army_attack_factor }
+set_variable = { red_unity_army_party_popularity_stability_factor_dynamic_var = TSU.RUA_party_popularity_stability_factor }
+set_variable = { red_unity_army_army_core_attack_factor_dynamic_var = TSU.RUA_army_core_attack_factor }
+set_variable = { red_unity_army_army_core_defence_factor_dynamic_var = TSU.RUA_army_core_defence_factor }
+set_variable = { red_unity_army_research_speed_factor_dynamic_var = TSU.RUA_research_speed_factor }
+set_variable = { red_unity_army_line_change_production_efficiency_factor_dynamic_var = TSU.RUA_line_change_production_efficiency_factor }
+set_variable = { red_unity_army_production_oil_factor_dynamic_var = TSU.RUA_production_oil_factor }
+set_variable = { red_unity_army_production_speed_office_park_factor_dynamic_var = TSU.RUA_production_speed_office_park_factor }
+set_variable = { red_unity_army_production_cost_infrastructure_factor_dynamic_var = TSU.RUA_production_cost_infrastructure_factor }
+set_variable = { red_unity_army_production_speed_arms_factory_factor_dynamic_var = TSU.RUA_production_speed_arms_factory_factor }
+set_variable = { red_unity_army_industrial_capacity_factory_dynamic_var = TSU.RUA_industrial_capacity_factory }
+set_variable = { red_unity_army_industrial_capacity_dockyard_dynamic_var = TSU.RUA_industrial_capacity_dockyard }
+set_variable = { red_unity_army_command_power_gain_dynamic_var = TSU.RUA_command_power_gain }
+set_variable = { red_unity_army_production_speed_industrial_complex_factor_dynamic_var = TSU.RUA_production_speed_industrial_complex_factor }
+set_variable = { red_unity_army_enemy_operative_capture_chance_factor_dynamic_var = TSU.RUA_enemy_operative_capture_chance_factor }
+set_variable = { red_unity_army_enemy_operative_intel_extraction_rate_dynamic_var = TSU.RUA_enemy_operative_intel_extraction_rate }
+set_variable = { red_unity_army_production_speed_buildings_factor_dynamic_var = TSU.RUA_production_speed_buildings_factor }
+set_variable = { red_unity_army_production_factory_efficiency_gain_factor_dynamic_var = TSU.RUA_production_factory_efficiency_gain_factor }
+set_variable = { red_unity_army_production_factory_max_efficiency_factor_dynamic_var = TSU.RUA_production_factory_max_efficiency_factor }
+set_variable = { red_unity_army_production_speed_infrastructure_factor_dynamic_var = TSU.RUA_production_speed_infrastructure_factor }
+set_variable = { red_unity_army_compliance_growth_dynamic_var = TSU.RUA_compliance_growth }
+set_variable = { red_unity_army_breakthrough_factor_dynamic_var = TSU.RUA_breakthrough_factor }
+set_variable = { red_unity_army_expense_growth_factor_dynamic_var = TSU.RUA_expense_growth_factor }
+set_variable = { red_unity_army_resistance_growth_dynamic_var = TSU.RUA_resistance_growth }
+set_variable = { red_unity_army_max_planning_dynamic_var = TSU.RUA_max_planning }
+set_variable = { red_unity_army_planning_speed_dynamic_var = TSU.RUA_planning_speed }
+set_variable = { red_unity_army_mobilization_speed_dynamic_var = TSU.RUA_mobilization_speed }
+set_variable = { red_unity_army_org_loss_when_moving_dynamic_var = TSU.RUA_org_loss_when_moving }
+set_variable = { red_unity_army_communist_drift_dynamic_var = TSU.RUA_communist_drift }
+set_variable = { red_unity_army_land_reinforce_rate_dynamic_var = TSU.RUA_land_reinforce_rate }
+set_variable = { red_unity_army_totalitarian_socialist_drift_dynamic_var = TSU.RUA_totalitarian_socialist_drift }
+set_variable = { red_unity_army_social_democrat_drift_dynamic_var = TSU.RUA_social_democrat_drift }
+set_variable = { red_unity_army_libertarian_socialist_drift_dynamic_var = TSU.RUA_libertarian_socialist_drift }
+set_variable = { red_unity_army_business_value_factor_dynamic_var = TSU.RUA_business_value_factor }
+set_variable = { red_unity_army_personal_expense_factor_dynamic_var = TSU.RUA_personal_expense_factor }
+set_variable = { red_unity_army_society_development_monthly_dynamic_var = TSU.RUA_society_development_monthly }
+set_variable = { red_unity_army_academic_development_monthly_dynamic_var = TSU.RUA_academic_development_monthly }
+set_variable = { red_unity_army_industrial_development_monthly_dynamic_var = TSU.RUA_industrial_development_monthly }
+set_variable = { red_unity_army_consumer_goods_factor_dynamic_var = TSU.RUA_consumer_goods_factor }
+set_variable = { red_unity_army_army_morale_factor_dynamic_var = TSU.RUA_army_morale_factor }
+set_variable = { red_unity_army_income_growth_factor_dynamic_var = TSU.RUA_income_growth_factor }
+set_variable = { red_unity_army_conscription_dynamic_var = TSU.RUA_conscription }
+set_variable = { red_unity_army_conscription_factor_dynamic_var = TSU.RUA_conscription_factor }
+set_variable = { red_unity_army_personal_value_factor_dynamic_var = TSU.RUA_personal_value_factor }
+set_variable = { red_unity_army_intelligence_agency_defense_dynamic_var = TSU.RUA_intelligence_agency_defense }
+set_variable = { red_unity_army_experience_gain_army_unit_factor_dynamic_var = TSU.RUA_experience_gain_army_unit_factor }
+set_variable = { red_unity_army_max_commander_army_size_dynamic_var = TSU.RUA_max_commander_army_size }
+set_variable = { red_unity_army_drift_defence_factor_dynamic_var = TSU.RUA_drift_defence_factor }
+set_variable = { red_unity_army_monthly_population_dynamic_var = TSU.RUA_monthly_population }
+set_variable = { red_unity_army_surrender_limit_dynamic_var = TSU.RUA_surrender_limit }
+set_variable = { red_unity_army_consumer_goods_factor_dynamic_var = TSU.RUA_consumer_goods_factor }
+
+
+			}
+
+
+
+
+
+	}
+	}
+	}
+RED_JAP_REV_ARMY_1 = {
+
+TSU = {
+
+				add_to_variable = {
+					var = red_unity_army_army_org_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = red_unity_army_army_defence_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = red_unity_army_army_attack_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = red_unity_army_army_core_attack_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = red_unity_army_army_core_defence_factor_dynamic_var
+					value = 0.05
+				}
+
+	}
+	}

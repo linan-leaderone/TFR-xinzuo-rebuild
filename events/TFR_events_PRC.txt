@@ -1782,7 +1782,7 @@ country_event = {
 				add_state_core = 328
 				add_state_core = 715
 				set_country_leader_portrait = {
-					ideology = totalitarian_socialist
+					ideology = national_socialist
 					portrait = GFX_portrait_MSS_Cheng_Wenqing
 				}
 				if = {
@@ -3556,7 +3556,7 @@ country_event = {
 		name = china.104.a
 		add_political_power = 100
 		set_popularities = {
-			totalitarian_socialist = 45
+			national_socialist = 45
 			nationalist = 15
 			libertarian_socialist = 5
 			social_democrat = 5
@@ -4208,7 +4208,7 @@ country_event = {
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.05
 		}
 	}
@@ -4390,7 +4390,7 @@ country_event = {
 			set_demilitarized_zone = yes
 		}
 		set_politics = {
-			ruling_party = totalitarian_socialist
+			ruling_party = nationalist
 			elections_allowed = no
 			last_election = "2000.1.1"
 			election_frequency = 48
@@ -4399,7 +4399,7 @@ country_event = {
 			character = PRC_li_zuocheng
 			promote_leader = yes
 			country_leader = {
-				ideology = left_wing_junta
+				ideology = military_junta
 				expire = "2099.1.1.1"
 				traits = {
 				}
@@ -4442,7 +4442,7 @@ country_event = {
 		}
 		PRC_add_party_approval = yes
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = -0.05
 		}
 		remove_ideas = {
@@ -5444,7 +5444,7 @@ country_event = {
 			popularity = -0.15
 		}
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.1
 		}
 		add_popularity = {
@@ -5509,7 +5509,7 @@ country_event = {
 			set_popularities = {
 				libertarian_socialist = 24
 				conservative = 16
-				totalitarian_socialist = 15
+				national_socialist = 15
 				authoritarian_democrat = 19
 				nationalist = 26
 			}
@@ -5890,7 +5890,7 @@ country_event = {
 	option = {
 		name = china.172.a
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.05
 		}
 	}
@@ -5949,7 +5949,7 @@ country_event = {
 	option = {
 		name = china.175.a
 		set_popularities = {
-			totalitarian_socialist = 7
+			national_socialist = 7
 			nationalist = 36
 			libertarian_socialist = 12
 			social_democrat = 7
@@ -6864,18 +6864,18 @@ country_event = {
 				character = PRC_li_zuocheng
 				promote_leader = yes
 				country_leader = {
-					ideology = totalism
+					ideology = military_junta
 					expire = "1.1.1.1"
 					traits = { hos_desire_rise for_expansionist }
 				}
 			}
 		}
 		set_politics = {
-			ruling_party = totalitarian_socialist
+			ruling_party = nationalist
 			elections_allowed = no
 		}
 		set_party_name = {
-			ideology = totalitarian_socialist
+			ideology = nationalist
 			long_name = PRC_digital_leninists_long
 			name = PRC_digital_leninists_party
 		}
@@ -10067,7 +10067,7 @@ country_event = {
 			popularity = 0.015
 		}
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.015
 		}
 		set_country_flag = PRC_bo_xilai_released_flag
@@ -10839,7 +10839,7 @@ country_event = {
 			popularity = 0.025
 		}
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.025
 		}
 	}
@@ -14635,15 +14635,15 @@ country_event = {
 		}
 		set_country_leader_ideology = transhumanism
 		set_country_leader_name = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			name = PRC_long_march
 		}
 		set_country_leader_description = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			desc = PRC_LONG_MARCH_DESC
 		}
 		set_country_leader_portrait = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			portrait = GFX_Portrait_PRC_The_Long_March
 		}
 	}
@@ -15130,7 +15130,7 @@ country_event = {
 			name = SOV_outlawed_party
 		}
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.05
 		}
 	}
@@ -16016,7 +16016,7 @@ country_event = {
 		custom_effect_tooltip = PRC_scientists_path_win_tt
 		set_country_flag = PRC_scientists_consolidated_power
 		set_party_name = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			long_name = PRC_cpc_technocrats_long
 			name = PRC_cpc_technocrats
 		}
@@ -16405,7 +16405,7 @@ country_event = {
 		name = china.616.a
 		set_temp_variable = { coalition_partner_var_temp = token:fascist }
 		add_to_coalition = yes
-		set_temp_variable = { coalition_partner_var_temp = token:totalitarian_socialist }
+		set_temp_variable = { coalition_partner_var_temp = token:national_socialist }
 		add_to_coalition = yes
 		custom_effect_tooltip = tooltip_white_line
 		set_party_name = {
@@ -16414,7 +16414,7 @@ country_event = {
 			name = PRC_fascist_new_chinese_revolution_short
 		}
 		set_party_name = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			long_name = PRC_totalitarian_socialist_new_chinese_revolution_long
 			name = PRC_totalitarian_socialist_new_chinese_revolution_short
 		}
@@ -16608,7 +16608,7 @@ country_event = {
 	option = {
 		name = china.626.a
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.02
 		}
 	}
@@ -16681,7 +16681,7 @@ country_event = {
 		name = china.630.a
 		add_political_power = 10
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.02
 		}
 	}
@@ -16817,7 +16817,7 @@ country_event = {
 		name = china.637.a
 		add_stability = -0.02
 		add_popularity = {
-			ideology = totalitarian_socialist
+			ideology = national_socialist
 			popularity = 0.02
 		}
 		add_popularity = {

@@ -1,6 +1,37 @@
 on_actions = {
 	on_capitulation = {
 		effect = {
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TSU
+								is_ally_with = TSU
+							}
+						}
+						ROOT = {
+						NOT = {
+							original_tag = JAP
+							original_tag = KOR
+							original_tag = CHI
+							original_tag = TJJ
+							original_tag = KMT
+						}
+						}
+					}
+
+				TSU = {	
+			
+		
+	
+RED_JAP_REV_ARMY_1 = yes
+RED_JAP_REV_ARMY = yes						
+}
+
+
+					}
 
 			if = {
 					limit = {
@@ -23,10 +54,18 @@ on_actions = {
 				id = PRC_MAO3.73
 				days = 1
 			}
+
+			every_state = {
+				limit = {
+					is_core_of = TJJ
+				}
+			    remove_core_of = TJJ
+		    }
 							annex_country = {
 								target = TJJ
 								transfer_troops = no
-							}}
+							}
+}
 
 
 					}
@@ -56,10 +95,18 @@ on_actions = {
 				days = 1
 			}
 
+			every_state = {
+				limit = {
+					is_core_of = KMT
+				}
+			    remove_core_of = KMT
+		    }
+
 							annex_country = {
 								target = KMT
 								transfer_troops = no
-							}}
+							}
+}
 
 
 					}
@@ -77,18 +124,72 @@ on_actions = {
 							}
 						}
 						ROOT = {
+							original_tag = PHI
+						}
+					}
+
+				NPA = {	
+PHI = {
+transfer_navy = {
+    target = NPA
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = PHI
+				}
+			    add_core_of = NPA
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PHI
+				}
+			    remove_core_of = PHI
+		    }
+							annex_country = {
+								target = PHI
+								transfer_troops = no
+							}
+}
+
+
+					}
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
 							original_tag = CHI
 						}
 					}
 
 				TZL = {	
-CHI = {transfer_navy = {
+CHI = {
+transfer_navy = {
     target = TZL
-}}
+}
+}
+
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+			    remove_core_of = CHI
+		    }
 							annex_country = {
 								target = CHI
 								transfer_troops = no
-							}}
+							}
+}
 
 
 					}
@@ -104,13 +205,83 @@ CHI = {transfer_navy = {
 							}
 						}
 						ROOT = {
+						OR = {
+							original_tag = PNG
+							original_tag = SIG
+							original_tag = MAL
+							original_tag = INS
+						}
+						}
+					}
+
+				KMT = {	
+CHI_UZEDONG_SHANGTAI_8 = yes
+	
+ROOT = {
+transfer_navy = {
+    target = KMT
+}
+}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = KMT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+}
+	
+
+
+
+					}
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TSU
+								is_ally_with = TSU
+							}
+						}
+						ROOT = {
 							original_tag = KOR
 						}
 					}
 
-				TSU = {	
+				MKL = {	
+CHI_UZEDONG_SHANGTAI_8 = yes
 	
-CHI_UZEDONG_SHANGTAI_3 = yes
+KOR = {
+transfer_navy = {
+    target = MKL
+}
+}
+
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+			    remove_core_of = KOR
+		    }
+							annex_country = {
+								target = KOR
+								transfer_troops = no
+							}
+}
+	
+
 
 
 					}
@@ -129,15 +300,44 @@ CHI_UZEDONG_SHANGTAI_3 = yes
 						}
 					}
 
-				TSU = {	
-	
-JAP = {transfer_navy = {
+				TSU = {
+CHI_UZEDONG_SHANGTAI_8 = yes	
+			country_event = {
+				id = PRC_MAO3.89
+				days = 1
+			}
+					TZL = {	
+
+			country_event = {
+				id = PRC_MAO3.84
+				days = 1
+			}
+			}
+			country_event = {
+				id = PRC_MAO3.87
+				days = 55
+			}
+			country_event = {
+				id = PRC_MAO3.83
+				days = 60
+			}
+
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+			    remove_core_of = JAP
+		    }
+JAP = {
+transfer_navy = {
     target = TSU
-}}
+}
+}
 							annex_country = {
 								target = JAP
 								transfer_troops = no
-							}}
+							}
+}
 
 
 					}

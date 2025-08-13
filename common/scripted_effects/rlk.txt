@@ -1,0 +1,216 @@
+
+
+CHI_UZEDONG_SHANGTAI_9 = {
+TJJ = {
+			set_cosmetic_tag = AST_NZL
+
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+			    add_core_of = TJJ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+			    add_core_of = TJJ
+		    }
+
+							annex_country = {
+								target = AST
+								transfer_troops = no
+							}
+							annex_country = {
+								target = NZL
+								transfer_troops = no
+							}
+				transfer_state = 1410
+				transfer_state = 1409
+				set_capital = {
+					state = 1041
+				}
+
+		TSU = {set_nationality = {
+  		  target_country = TJJ
+   		  character = Ran_char
+		}}
+
+		add_country_leader_role = {
+			character = Ran_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = TSU
+
+set_popularities = {
+	totalitarian_socialist = 15
+	communist = 25
+	libertarian_socialist = 40
+	social_democrat = 20
+}
+
+
+	TSU = {add_to_faction = TJJ}
+
+RED_JAP_REV_ARMY = yes
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			promote_character = {
+			character = Ran_char
+			ideology = Tsuguism
+		}
+			set_party_name = {
+				ideology = communist
+				long_name = AST_NZL_party1
+				name = AST_NZL_party1
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = AST_NZL_party2
+				name = AST_NZL_party2
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = AST_NZL_party4
+				name = AST_NZL_party4
+			}  
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = AST_NZL_party4
+				name = AST_NZL_party4
+			}  
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+					
+
+		}
+		}
+
+CHI_UZEDONG_SHANGTAI_8 = {
+
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = NAX }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = VEN }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = NPA }
+				add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = NPA }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 500 producer = RCG }
+				add_equipment_to_stockpile = {type = support_equipment amount = 100 producer = RCG }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 500 producer = RCG }
+				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 105 producer = RCG }
+				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 150 producer = RCG }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 2000 producer = TRG }
+				add_equipment_to_stockpile = {type = support_equipment amount = 400 producer = TRG }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = TRG }
+				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 150 producer = TRG }
+				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 150 producer = TRG }
+				add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 2000 producer = APA }
+				add_equipment_to_stockpile = {type = support_equipment amount = 400 producer = APA }
+				add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = APA }
+				add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 150 producer = APA }
+				add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 150 producer = APA }
+			}
+CHI_UZEDONG_SHANGTAI_7 = {
+
+
+
+
+		MAL = {
+
+	   MAL = {leave_faction = yes }	
+		KMT = {
+				transfer_state = 834
+				create_country_leader = {
+	                name = "HCTTTTT"
+	                desc = "POLITICS_HCC_DESC"
+	                picture = "gfx/MAOYUANXIN/HCT.png"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}   
+			set_cosmetic_tag = MAL_NYG
+
+			set_party_name = {
+				ideology = communist
+				long_name = MAL_NYG_party1
+				name = MAL_NYG_party1
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = MAL_NYG_party2
+				name = MAL_NYG_party2
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = MAL_NYG_party4
+				name = MAL_NYG_party4
+			}  
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = TSU
+set_popularities = {
+	totalitarian_socialist = 45
+	communist = 30
+	libertarian_socialist = 25
+
+}
+	TSU = {add_to_faction = KMT}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+	TSU = {RED_JAP_REV_ARMY = yes}
+
+										}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = KMT
+			type = annex_everything
+		}
+
+	TSU = {RED_JAP_REV_ARMY = yes}
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+
+	TSU = {RED_JAP_REV_ARMY = yes}
+
+					}	
+
+			}

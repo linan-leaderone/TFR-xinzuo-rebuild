@@ -73,6 +73,10 @@ ideologies = {
 
 	communist = {
 		types = {
+			taiwan_tuopai = {
+				can_be_randomly_selected = no
+			}
+
 			left_accelerationist_1 = {
 				can_be_randomly_selected = no
 			}
@@ -193,6 +197,7 @@ ideologies = {
 			eco_socialism = {
 			}
 			Tsuguism = {
+				can_be_randomly_selected = no
 			}
 
 			eurocommunism = {
@@ -250,6 +255,9 @@ ideologies = {
 
 	social_democrat = {
 		types = {
+			twshemin = {
+				can_be_randomly_selected = no
+			}
 			sm_socialism = {
 				can_be_randomly_selected = no
 			}

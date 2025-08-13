@@ -42,7 +42,30 @@ CHI_erqijingshen_idea = {
 	army_defence_factor = 0.1
 	army_org_factor = 0.1
     }
-}													
+}																
+fyjfj_idea = {
+    picture = fyjfj_idea
+    name = fyjfj_idea
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
+	army_attack_factor = 0.2
+	army_defence_factor = 0.2
+	army_org_factor = 0.15
+	weekly_manpower = 500
+    }
+}											
 CHI_zylm_army_3_idea = {
     picture = CHI_zylm_army_idea
     name = CHI_zylm_army_idea

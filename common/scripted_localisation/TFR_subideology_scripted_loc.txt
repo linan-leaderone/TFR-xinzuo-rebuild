@@ -140,6 +140,12 @@ defined_text = {
 	name = GetSubIdeologyLocAuthSoc
 	text = {
 		trigger = {
+			has_country_leader_ideology = taiwan_tuopai
+		}
+		localization_key = taiwan_tuopai
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = left_accelerationist_1
 		}
 		localization_key = left_accelerationist_1	 
@@ -705,6 +711,12 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocSocDem
 
+	text = {
+		trigger = {
+			has_country_leader_ideology = twshemin
+		}
+		localization_key = twshemin
+	}
 	text = {
 		trigger = {
 			has_country_leader_ideology = social_democracy_1

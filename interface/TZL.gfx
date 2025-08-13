@@ -42,6 +42,10 @@ spriteTypes = {
 		name = "GFX_focus_TZL_TWW_FOCUS_1"
 		texturefile = "gfx/MAOYUANXIN/TZL_TWW_FOCUS_1.png"
 	}
+	spriteType = {
+		name = "GFX_idea_red_unity_army_idea"
+		texturefile = "gfx/MAOYUANXIN/red_unity_army.png"
+	}
 
 	spriteType = {
 		name = "GFX_decISRon_category_JDM"

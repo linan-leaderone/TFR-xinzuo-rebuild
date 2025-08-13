@@ -1,3 +1,70 @@
+
+CHI_UZEDONG_SHANGTAI_6 = {
+HKN = {
+
+RED_JAP_REV_ARMY = yes
+
+			set_party_name = {
+				ideology = communist
+				long_name = MSJCIK
+				name = MSJCIK
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = MSJCIK1
+				name = MSJCIK1
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = MSJCIK2
+				name = MSJCIK2
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = MSJCIK3
+				name = MSJCIK3
+			}
+				create_country_leader = {
+	                name = "LGXXXXX"
+	                desc = "POLITICS_LGX_DESC"
+	                picture = "gfx/MAOYUANXIN/LGX.png"
+	                expire = "1999.1.1"
+	                ideology = trotskyism
+				}  
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = JAP
+
+set_popularities = {
+	totalitarian_socialist = 15
+	communist = 40
+	libertarian_socialist = 25
+	social_democrat = 20
+}
+	TSU = {add_to_faction = HKN}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+
+	
+		}
+		}
 CHI_UZEDONG_SHANGTAI_5 = {
 
 
@@ -59,20 +126,50 @@ TSU = {
 				transfer_state = 1338
 				transfer_state = 1333
 				transfer_state = 1334
-create_faction = TSU_RTY
+
+				add_dynamic_modifier = {
+					modifier = red_unity_army_dynamic
+				}
+				add_to_variable = {
+					var = red_unity_army_army_org_factor_dynamic_var
+					value = 0.15
+				}
+				add_to_variable = {
+					var = red_unity_army_army_defence_factor_dynamic_var
+					value = 0.15
+				}
+				add_to_variable = {
+					var = red_unity_army_army_attack_factor_dynamic_var
+					value = 0.15
+				}
+				add_to_variable = {
+					var = red_unity_army_army_core_attack_factor_dynamic_var
+					value = 0.3
+				}
+				add_to_variable = {
+					var = red_unity_army_army_core_defence_factor_dynamic_var
+					value = 0.3
+				}
+				add_to_variable = {
+					var = red_unity_army_surrender_limit_dynamic_var
+					value = 0.20
+				}
 			every_state = {
 				limit = {
 					is_core_of = JAP
 				}
 			    add_core_of = TSU
 		    }
-			every_state = {
-				limit = {
-					is_core_of = JAP
-				}
-			    remove_core_of = JAP
-		    }
 
+
+			KOR = {country_event = {
+				id = PRC_MAO3.85
+				days = 1
+			}
+			country_event = {
+				id = PRC_MAO3.86
+				days = 1
+			}}
 				set_capital = {
 					state = 1332
 				}
@@ -177,40 +274,56 @@ MKL = {
 				}
 			    add_core_of = MKL
 		    }
-			every_state = {
-				limit = {
-					is_core_of = KOR
-				}
-			    remove_core_of = KOR
-		    }
-				transfer_state = 1041
+
+				transfer_state = 1410
+				transfer_state = 1409
 				set_capital = {
 					state = 1041
 				}
+
+		TSU = {set_nationality = {
+  		  target_country = MKL
+   		  character = Moka_char
+		}}
+
+		add_country_leader_role = {
+			character = Moka_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}	
 change_economy_type_planned_economy = yes
 change_government_type_socialist_republic = yes	
  inherit_technology = KOR
-				create_country_leader = {
-	                name = "MOKA"
-	                desc = "POLITICS_MOKA_DESC"
-	                picture = "gfx/MAOYUANXIN/MOKA.png"
-	                expire = "1999.1.1"
-	                ideology = Tsuguism
-				}  
+
 set_popularities = {
 	totalitarian_socialist = 15
 	communist = 25
 	libertarian_socialist = 40
 	social_democrat = 20
 }
+
+			country_event = {
+				id = PRC_MAO3.88
+				days = 1
+			}
 	TSU = {add_to_faction = MKL}
+
+RED_JAP_REV_ARMY = yes
 				set_politics = {
 				ruling_party = libertarian_socialist
 				last_election = "2023.1.1"
 				election_frequency = 60
 				elections_allowed = yes
 				}
-
+			promote_character = {
+			character = Moka_char
+			ideology = Tsuguism
+		}
 			set_temp_variable = {
 				coalition_partner_var_temp = token:totalitarian_socialist
 			}
@@ -223,11 +336,25 @@ set_popularities = {
 				coalition_partner_var_temp = token:social_democrat
 			}
 			add_to_coalition = yes
-					
-				annex_country = {
-								target = KOR
-								transfer_troops = yes
-							}
+			KOR = {
+		declare_war_on = {
+			target = MKL
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TSU
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = MKL
+						army_ratio = 0.4       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}					
+
 		}
 		}
 CHI_UZEDONG_SHANGTAI_2 = {

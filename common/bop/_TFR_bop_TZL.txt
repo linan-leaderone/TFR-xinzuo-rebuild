@@ -1,0 +1,198 @@
+TZL_left_power_balance = {
+	initial_value = 0
+	left_side = bop_fanyageming_side
+	right_side = bop_bentujianshe_side
+	decision_category = TZL_balance_of_left_power_category
+	#Middle
+	range = {
+		id = TZL_balance_1_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+	production_speed_buildings_factor = 0.2
+	stability_factor = 0.2
+	war_support_factor = 0.2
+	command_power_gain = 0.2
+	army_org_factor = 0.2
+	army_infantry_attack_factor = 0.2
+	army_infantry_defence_factor = 0.2
+	army_core_attack_factor = 0.2
+	army_core_defence_factor = 0.2
+
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+	#Nationalization Side
+	side = {
+		id = bop_fanyageming_side
+		icon = GFX_bop_fanyageming_side
+		range = {
+			id = bop_fanyageming_1_range
+			min = -1
+			max = -0.8
+			modifier = {
+				
+	war_support_factor = 0.4
+	command_power_gain = 0.4
+	army_org_factor = 0.4
+	army_infantry_attack_factor = 0.4
+	army_infantry_defence_factor = 0.4
+
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = bop_fanyageming_2_range
+			min = -0.8
+			max = -0.6
+			modifier = {
+											
+	production_speed_buildings_factor = 0.05
+	stability_factor = 0.05
+	war_support_factor = 0.35
+	command_power_gain = 0.35
+	army_org_factor = 0.35
+	army_infantry_attack_factor = 0.35
+	army_infantry_defence_factor = 0.35
+	army_core_attack_factor = 0.05
+	army_core_defence_factor = 0.05
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = bop_fanyageming_3_range
+			min = -0.6
+			max = -0.4
+			modifier = {
+							
+	production_speed_buildings_factor = 0.1
+	stability_factor = 0.1
+	war_support_factor = 0.3
+	command_power_gain = 0.3
+	army_org_factor = 0.3
+	army_infantry_attack_factor = 0.3
+	army_infantry_defence_factor = 0.3
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = bop_fanyageming_4_range
+			min = -0.4
+			max = -0.2
+			modifier = {
+				
+	production_speed_buildings_factor = 0.15
+	stability_factor = 0.15
+	war_support_factor = 0.25
+	command_power_gain = 0.25
+	army_org_factor = 0.25
+	army_infantry_attack_factor = 0.25
+	army_infantry_defence_factor = 0.25
+	army_core_attack_factor = 0.15
+	army_core_defence_factor = 0.15
+
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+	#Centralization Side
+	side = {
+		id = bop_bentujianshe_side
+		icon = GFX_bop_bentujianshe_side
+		range = {
+			id = bop_bentujianshe_1_range
+			min = 0.2
+			max = 0.4
+			modifier = {
+	production_speed_buildings_factor = 0.25
+	stability_factor = 0.25
+	war_support_factor = 0.15
+	command_power_gain = 0.15
+	army_org_factor = 0.15
+	army_infantry_attack_factor = 0.15
+	army_infantry_defence_factor = 0.15
+	army_core_attack_factor = 0.3
+	army_core_defence_factor = 0.3
+				
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = bop_bentujianshe_2_range
+			min = 0.4
+			max = 0.6
+			modifier = {
+	production_speed_buildings_factor = 0.3
+	stability_factor = 0.3
+	war_support_factor = 0.1
+	command_power_gain = 0.1
+	army_org_factor = 0.1
+	army_infantry_attack_factor = 0.1
+	army_infantry_defence_factor = 0.1
+	army_core_attack_factor = 0.4
+	army_core_defence_factor = 0.4
+							}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = bop_bentujianshe_3_range
+			min = 0.6
+			max = 0.8
+			modifier = {
+	production_speed_buildings_factor = 0.35
+	stability_factor = 0.35
+	war_support_factor = 0.05
+	command_power_gain = 0.05
+	army_org_factor = 0.05
+	army_infantry_attack_factor = 0.05
+	army_infantry_defence_factor = 0.05
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
+				
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = bop_bentujianshe_4_range
+			min = 0.8
+			max = 1
+			modifier = {
+	production_speed_buildings_factor = 0.4
+	stability_factor = 0.4
+	army_core_attack_factor = 0.6
+	army_core_defence_factor = 0.6
+				
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+}

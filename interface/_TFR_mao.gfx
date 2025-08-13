@@ -21,7 +21,19 @@ spriteTypes = {
 		name = "GFX_Ideology_national_anarchist_banner"
 		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_national_anarchist_banner.png"
 		legacy_lazy_load = no
-	}												
+	}														
+	SpriteType = {
+		name = "GFX_bop_fanyageming_side"
+		texturefile = "gfx/MAOYUANXIN/bop_fanyageming.png"
+	}															
+	SpriteType = {
+		name = "GFX_bop_bentujianshe_side"
+		texturefile = "gfx/MAOYUANXIN/bop_bentujianshe.png"
+	}													
+	SpriteType = {
+		name = "GFX_super_lmrevv"
+		texturefile = "gfx/MAOYUANXIN/super_lmrevv.png"
+	}											
 	SpriteType = {
 		name = "GFX_super_lmrev"
 		texturefile = "gfx/MAOYUANXIN/super_lmrev.png"
@@ -35,6 +47,14 @@ spriteTypes = {
 		name = "GFX_kongbai_beijing2"
 		texturefile = "gfx/MAOYUANXIN/beijing.dds"
 		legacy_lazy_load = no
+	}												
+	SpriteType = {
+		name = "GFX_YBC"
+		texturefile = "gfx/MAOYUANXIN/YBC.png"
+	}														
+	SpriteType = {
+		name = "GFX_YBC1"
+		texturefile = "gfx/MAOYUANXIN/YBC.png"
 	}												
 	SpriteType = {
 		name = "GFX_super_rcwar2"
@@ -247,6 +267,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_generic_kmgjhz_idea"
 		texturefile = "gfx/MAOYUANXIN/kongjunhongzha.png"
+	}							
+	SpriteType = {
+		name = "GFX_idea_fyjfj_idea"
+		texturefile = "gfx/MAOYUANXIN/fyjfj.png"
 	}						
 	SpriteType = {
 		name = "GFX_idea_generic_beidouweixing_idea"
@@ -521,6 +545,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_kasitekuoism"
 		texturefile = "gfx/MAOYUANXIN/kasitekuoism.png"
+	}				
+	spriteType = {
+		name = "GFX_ideology_twshemin"
+		texturefile = "gfx/MAOYUANXIN/twshemin.png"
 	}			
 	spriteType = {
 		name = "GFX_ideology_market_socialism_3"
@@ -713,7 +741,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_reformist_socialism_1"
 		texturefile = "gfx/MAOYUANXIN/reformist_socialism_1.png"
+	}		
+	spriteType = {
+		name = "GFX_ideology_taiwan_tuopai"
+		texturefile = "gfx/MAOYUANXIN/twtuopai.png"
 	}					
+	spriteType = {
+		name = "GFX_taiwan_tuopai_ban"
+		texturefile = "gfx/MAOYUANXIN/twtuopai_ban.png"
+		legacy_lazy_load = no
+	}						
+	spriteType = {
+		name = "GFX_taiwan_tuopai_ban2"
+		texturefile = "gfx/MAOYUANXIN/twtuopai_ban.png"
+		legacy_lazy_load = no
+	}				
 	spriteType = {
 		name = "GFX_Ideology_jidu_maoism"
 		texturefile = "gfx/MAOYUANXIN/Ideology_jidu_maoism.png"

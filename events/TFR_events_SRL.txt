@@ -1,0 +1,112 @@
+﻿#Sri Lanka
+
+add_namespace = SRL
+
+#Economic Crisis
+country_event = {
+	id = SRL.1
+	title = SRL.1.t
+	desc = SRL.1.d
+	picture = GFX_Generic_Riot1
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SRL
+	}
+
+	option = {
+		name = SRL.1.a
+		add_stability = -0.1
+		add_ideas = {
+			SRL_economic_ruin_idea
+			lower_poverty
+			low_society
+		}
+		hidden_effect ={
+			country_event = {
+				id = SRL.2
+				days = 40
+			}
+		}
+		add_popularity = { 
+			ideology = social_democrat
+			popularity = -0.15
+		}
+	}
+}
+
+#Political Chaos
+country_event = {
+	id = SRL.2
+	title = SRL.2.t
+	desc = SRL.2.d
+	picture = GFX_Generic_Riot1
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SRL
+	}
+	option = {
+		name = SRL.2.a
+		remove_ideas = SRL_rajapaksa_family_idea
+		retire_character = SRL_gotabaya_rajapaksa_char
+		set_politics = {
+			ruling_party = conservative
+			last_election = "2019.12.21"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_stability = 0.15
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.05
+		}
+		hidden_effect ={
+			country_event = {
+				id = SRL.3
+				days = 800
+			}
+		}
+	}
+}
+
+#2024 Presidential Election
+country_event = {
+	id = SRL.4
+	title = SRL.4.t
+	desc = SRL.4.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SRL
+	}
+	option = {
+		name = SRL.4.a
+		set_politics = {
+			ruling_party = communist
+			last_election = "2024.9.21"
+			election_frequency = 60
+			elections_allowed = yes
+		}
+		add_stability = 0.15
+		add_popularity = {
+			ideology = communist
+			popularity = 0.3
+		}
+	}
+}

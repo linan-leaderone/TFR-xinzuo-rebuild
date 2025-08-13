@@ -22,7 +22,6 @@ focus_tree = {
 		}
 
 		available = {
-		
 		}
 		completion_reward = {
 	add_stability = -0.05
@@ -303,6 +302,30 @@ focus_tree = {
 			factor = 100
 		}
 
+		select_effect = {
+			hidden_effect = {
+	
+			country_event = {
+				id = PRC_MAO3.77
+			}
+			country_event = {
+				id = PRC_MAO3.78
+				days = 7
+			}
+			country_event = {
+				id = PRC_MAO3.79
+				days = 14
+			}
+			country_event = {
+				id = PRC_MAO3.80
+				days = 21
+			}
+			country_event = {
+				id = PRC_MAO3.81
+				days = 28
+			}
+				}
+				}
 		prerequisite = {
 			focus = TZL_TWW_FOCUS_13
 			focus = TZL_TWW_FOCUS_14
@@ -311,9 +334,359 @@ focus_tree = {
 		has_war = no
 		}
 		completion_reward = {
-			set_cosmetic_tag = TZL_SOC
-			news_event = { id = PRC_MAO3.55 days = 1 }
-change_government_type_socialist_republic = yes
+			country_event = {
+				id = PRC_MAO3.82
+			}
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_16
+		icon = GFX_focus_PRC_niaolong_75
+		x = 22
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+
+		available = {
+		is_ally_with = TSU
+		}
+		select_effect = {
+			hidden_effect = {
+	
+			country_event = {
+				id = PRC_MAO3.90
+				days = 10
+			}
+				}
+				}
+		
+		completion_reward = {
+		set_power_balance = {
+			id = TZL_left_power_balance
+			left_side = bop_fanyageming_side
+			right_side = bop_bentujianshe_side
+			set_value = -0.5
+		}
+		custom_effect_tooltip = CHI_TZL_TWW_FOCUS_16_tooltip
+	    hidden_effect = {
+
+										NPA = {
+			transfer_state = 1275
+			transfer_state = 625
+			transfer_state = 628
+			transfer_state = 1279
+			transfer_state = 1276
+			transfer_state = 1281
+
+		}	
+        	
+		TSU  = {
+			add_to_faction = NPA
+		}   
+	    PHI = {leave_faction = yes }	
+	    every_state = {
+
+		    }	
+			every_state = {
+				limit = {
+					is_core_of = PHI
+				}
+			    add_core_of = NPA
+		    }
+	
+					NPA = {
+                inherit_technology = TSU				
+				load_oob = PHI_reserves
+
+		    }
+			PHI = {
+				declare_war_on = { 
+					target = NPA
+					type = annex_everything 
+				}
+			}
+RED_JAP_REV_ARMY = yes
+			PHI = {
+				declare_war_on = { 
+					target = TZL
+					type = annex_everything 
+				}
+			}
+
+		}
+
+
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_17
+		icon = GFX_focus_TZL_TWW_FOCUS_17
+		x = 30
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_16
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_20
+		icon = GFX_focus_TZL_TWW_FOCUS_20
+		x = 34
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_17
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_27
+		icon = GFX_focus_TZL_TWW_FOCUS_27
+		x = 33
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_20
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_28
+		icon = GFX_focus_TZL_TWW_FOCUS_28
+		x = 35
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_20
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_21
+		icon = GFX_focus_TZL_TWW_FOCUS_21
+		x = 32
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_17
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_22
+		icon = GFX_focus_TZL_TWW_FOCUS_22
+		x = 30
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_17
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_23
+		icon = GFX_focus_TZL_TWW_FOCUS_23
+		x = 30
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_22
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_24
+		icon = GFX_focus_TZL_TWW_FOCUS_24
+		x = 31
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_23
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_25
+		icon = GFX_focus_TZL_TWW_FOCUS_25
+		x = 29
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_23
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_26
+		icon = GFX_focus_TZL_TWW_FOCUS_25
+		x = 30
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_25
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_24
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_19
+		icon = GFX_focus_TZL_TWW_FOCUS_19
+		x = 22
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_16
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_18
+		icon = GFX_focus_TZL_TWW_FOCUS_18
+		x = 15
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_16
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
 		}
 	} 
    focus = {
