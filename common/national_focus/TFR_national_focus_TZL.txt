@@ -690,6 +690,160 @@ RED_JAP_REV_ARMY = yes
 		}
 	} 
    focus = {
+		id = TZL_TWW_FOCUS_29
+		icon = GFX_focus_TZL_TWW_FOCUS_29
+		x = 15
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_18
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_30
+		icon = GFX_focus_TZL_TWW_FOCUS_30
+		x = 17
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_18
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_31
+		icon = GFX_focus_TZL_TWW_FOCUS_31
+		x = 16
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_30
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_32
+		icon = GFX_focus_TZL_TWW_FOCUS_32
+		x = 18
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_30
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_33
+		icon = GFX_focus_TZL_TWW_FOCUS_33
+		x = 17
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_30
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_34
+		icon = GFX_focus_TZL_TWW_FOCUS_34
+		x = 18
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_33
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_35
+		icon = GFX_focus_TZL_TWW_FOCUS_35
+		x = 16
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_33
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
 		id = TZL_TWW_FOCUS_14
 		icon = GFX_focus_TZL_TWW_FOCUS_14
 		x = 7

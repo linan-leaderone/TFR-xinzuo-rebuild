@@ -17,18 +17,12 @@ TJJ = {
 			    add_core_of = TJJ
 		    }
 
-							annex_country = {
-								target = AST
-								transfer_troops = no
-							}
-							annex_country = {
-								target = NZL
-								transfer_troops = no
-							}
-				transfer_state = 1410
-				transfer_state = 1409
+				
+				transfer_state = 734
+				transfer_state = 635
+				transfer_state = 641
 				set_capital = {
-					state = 1041
+					state = 868
 				}
 
 		TSU = {set_nationality = {
@@ -104,7 +98,42 @@ RED_JAP_REV_ARMY = yes
 			}
 			add_to_coalition = yes
 					
+			AST = {
+		declare_war_on = {
+			target = TJJ
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TSU
+			type = annex_everything
+		}
 
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}					
+			NZL = {
+		declare_war_on = {
+			target = TJJ
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TSU
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}	
 		}
 		}
 

@@ -33,7 +33,7 @@ RED_JAP_REV_ARMY = yes
 				}  
 change_economy_type_planned_economy = yes
 change_government_type_socialist_republic = yes	
- inherit_technology = JAP
+ inherit_technology = TSU
 
 set_popularities = {
 	totalitarian_socialist = 15

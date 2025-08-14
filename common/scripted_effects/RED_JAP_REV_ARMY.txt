@@ -202,6 +202,7 @@ TSU = {
 					var = red_unity_army_army_core_defence_factor_dynamic_var
 					value = 0.05
 				}
+RED_JAP_REV_ARMY = yes
 
 	}
 	}
