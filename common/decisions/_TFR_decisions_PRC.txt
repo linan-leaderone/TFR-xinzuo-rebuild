@@ -415,7 +415,7 @@ NOT = {has_completed_focus = PRC_masters_of_asia_5}
 			}
 		}
 		ai_will_do = {
-		base = 1
+		base = 100
 		}
 	}
 	PRC_send_tibet_guns = {
@@ -443,7 +443,7 @@ NOT = {has_completed_focus = PRC_masters_of_asia_5}
 			}
 		}
 		ai_will_do = {
-		base = 1
+		base = 100
 		}
 	}
 	PRC_tibetbombing_raid = {
@@ -470,7 +470,7 @@ NOT = {has_completed_focus = PRC_masters_of_asia_5}
 			}
 		}
 		ai_will_do = {
-		base = 1
+		base = 100
 		}
 	}
 	PRC_pacify_tibet = {
@@ -504,7 +504,7 @@ NOT = {has_completed_focus = PRC_masters_of_asia_5}
 			}
 		}
 		ai_will_do = {
-		base = 1
+		base = 1000
 		}
 	}
 }

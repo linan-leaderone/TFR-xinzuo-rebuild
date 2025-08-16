@@ -716,7 +716,7 @@ RED_JAP_REV_ARMY = yes
 	} 
    focus = {
 		id = TZL_TWW_FOCUS_43
-		icon = GFX_focus_TZL_TWW_FOCUS_43
+		icon = GFX_focus_PRC_communist_vanguard_restored
 		x = 29
 		y = 2
 		cost = 5
@@ -851,7 +851,7 @@ RED_JAP_REV_ARMY = yes
 	} 
    focus = {
 		id = TZL_TWW_FOCUS_61
-		icon = GFX_focus_PRC_communist_vanguard_restored
+		icon = GFX_focus_PRC_advanced_economic_planning_8
 		x = 33
 		y = 6
 		cost = 5
@@ -1684,7 +1684,7 @@ check_variable = {
 		available = {
 		}
 		completion_reward = {
-			
+			 
 		}
 	} 
    focus = {

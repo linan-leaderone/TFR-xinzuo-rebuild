@@ -1,7 +1,8 @@
 spriteTypes = {
+
 	spriteType = {
-		name = "GFX_focus_TZL_TWW_FOCUS_KY"
-		texturefile = "gfx/MAOYUANXIN/TZL_TWW_FOCUS_KY.dds"
+		name = "GFX_focus_TZL_TWW_FOCUS1_01"
+		texturefile = "gfx/MAOYUANXIN/TZL_TWW_FOCUS_0.png"
 	}
 	spriteType = {
 		name = "GFX_focus_TZL_TWW_FOCUS_0"
