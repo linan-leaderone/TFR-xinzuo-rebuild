@@ -1436,7 +1436,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			focus = PRC_prepare_the_new_congress
 		}
 		ai_will_do = {
-	    	factor = 70
+	    	factor = 7000
 	    }
 		completion_reward = {
 			set_country_flag = PRC_initial_minister_retire_flag
@@ -1500,7 +1500,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		
 	    cost = 2
 		ai_will_do = {
-	    	factor = 30
+	    	factor = 3
 	    }
 	    completion_reward = {
 			add_popularity = {
@@ -1760,7 +1760,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 			focus = PRC_prepare_the_new_congress_1
 		}
 		ai_will_do = {
-	    	factor = 70
+	    	factor = 70000
 	    }
 		completion_reward = {
 			set_country_flag = PRC_initial_minister_retire_flag
@@ -1823,7 +1823,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		
 	    cost = 2
 		ai_will_do = {
-	    	factor = 30
+	    	factor = 3
 	    }
 	    completion_reward = {
 		

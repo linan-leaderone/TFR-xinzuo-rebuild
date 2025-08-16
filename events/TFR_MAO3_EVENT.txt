@@ -1900,6 +1900,14 @@ change_economy_type_worker_controlled = yes
 	}
 	option = {
 		name = PRC_MAO3.78.c
+		trigger = {
+				
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = less_than
+}
+		}
 change_economy_type_welfare_capitalism = yes
 
 	}
@@ -1969,6 +1977,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = PRC_MAO3.82.a
+		trigger = {
+	NOT = {has_idea = ZZZ_communist_party_state	}	
+	NOT = {has_idea = ZZZ_parliamentary_republic	}	
+				}	
 			hidden_effect = {
 				set_politics = {
 				ruling_party = libertarian_socialist
@@ -1996,7 +2008,7 @@ country_event = {
 	option = {
 		name = PRC_MAO3.82.b
 		trigger = {
-					
+	has_idea = ZZZ_worker_controlled_economy		
 check_variable = {
     var = CHI_hongdupai
     value = 0
@@ -2090,7 +2102,9 @@ set_country_leader_ideology = twshemin
 	option = {
 		name = PRC_MAO3.82.e
 		trigger = {
-					
+				
+		
+	has_idea = ZZZ_planned_economy			
 check_variable = {
     var = CHI_hongdupai
     value = 0
@@ -2132,7 +2146,7 @@ set_popularities = {
 		name = PRC_MAO3.82.f
 
 		trigger = {
-					
+	NOT = {has_idea = ZZZ_communist_party_state	}				
 check_variable = {
     var = CHI_hongdupai
     value = 0
@@ -2179,7 +2193,11 @@ country_event = {
 		name = PRC_MAO3.84.a
 TSU = {create_faction = TSU_RTY}
 	TSU = {add_to_faction = TZL}
+			hidden_effect = {
+RED_JAP_REV_ARMY_1 = yes
 RED_JAP_REV_ARMY = yes
+
+	}
 	}
 }
 country_event = {

@@ -342,7 +342,7 @@ focus_tree = {
    focus = {
 		id = TZL_TWW_FOCUS_16
 		icon = GFX_focus_PRC_niaolong_75
-		x = 22
+		x = 28
 		y = 0
 		cost = 5
 		available_if_capitulated = yes
@@ -425,7 +425,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_17
 		icon = GFX_focus_TZL_TWW_FOCUS_17
-		x = 30
+		x = 46
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -447,7 +447,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_20
 		icon = GFX_focus_TZL_TWW_FOCUS_20
-		x = 34
+		x = 50
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
@@ -469,7 +469,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_27
 		icon = GFX_focus_TZL_TWW_FOCUS_27
-		x = 33
+		x = 49
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
@@ -491,7 +491,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_28
 		icon = GFX_focus_TZL_TWW_FOCUS_28
-		x = 35
+		x = 51
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
@@ -513,7 +513,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_21
 		icon = GFX_focus_TZL_TWW_FOCUS_21
-		x = 32
+		x = 48
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
@@ -535,7 +535,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_22
 		icon = GFX_focus_TZL_TWW_FOCUS_22
-		x = 30
+		x = 46
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
@@ -557,7 +557,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_23
 		icon = GFX_focus_TZL_TWW_FOCUS_23
-		x = 30
+		x = 46
 		y = 3
 		cost = 5
 		available_if_capitulated = yes
@@ -579,7 +579,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_24
 		icon = GFX_focus_TZL_TWW_FOCUS_24
-		x = 31
+		x = 47
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
@@ -601,7 +601,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_25
 		icon = GFX_focus_TZL_TWW_FOCUS_25
-		x = 29
+		x = 45
 		y = 4
 		cost = 5
 		available_if_capitulated = yes
@@ -622,8 +622,8 @@ RED_JAP_REV_ARMY = yes
 	} 
    focus = {
 		id = TZL_TWW_FOCUS_26
-		icon = GFX_focus_TZL_TWW_FOCUS_25
-		x = 30
+		icon = GFX_focus_TZL_TWW_FOCUS_26
+		x = 46
 		y = 5
 		cost = 5
 		available_if_capitulated = yes
@@ -648,7 +648,7 @@ RED_JAP_REV_ARMY = yes
    focus = {
 		id = TZL_TWW_FOCUS_19
 		icon = GFX_focus_TZL_TWW_FOCUS_19
-		x = 22
+		x = 28
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -659,6 +659,982 @@ RED_JAP_REV_ARMY = yes
 		prerequisite = {
 			focus = TZL_TWW_FOCUS_16
 		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_42
+		icon = GFX_focus_PRC_empower_masses_autonomus_committe
+		x = 20
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_19
+		}
+
+		
+		mutually_exclusive = {
+			focus = TZL_TWW_FOCUS_43
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_47
+		icon = GFX_focus_TZL_TWW_FOCUS_47
+		x = 20
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_42
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_43
+		icon = GFX_focus_TZL_TWW_FOCUS_43
+		x = 29
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		mutually_exclusive = {
+			focus = TZL_TWW_FOCUS_42
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_19
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_56
+		icon = GFX_focus_TZL_TWW_FOCUS_56
+		x = 31
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_44
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_57
+		icon = GFX_focus_PRC_niaolong_24
+		x = 33
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_44
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_59
+		icon = GFX_focus_TZL_TWW_FOCUS_59
+		x = 35
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_44
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_62
+		icon = GFX_focus_TZL_TWW_FOCUS_62
+		x = 36
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_59
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_60
+		icon = GFX_focus_PRC_anti_corruption_technology
+		x = 34
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_59
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_61
+		icon = GFX_focus_PRC_communist_vanguard_restored
+		x = 33
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_60
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_58
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_58
+		icon = GFX_focus_TZL_TWW_FOCUS_58
+		x = 32
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_57
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_56
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}  
+   focus = {
+		id = TZL_TWW_FOCUS_65
+		icon = GFX_focus_TZL_TWW_FOCUS_63
+		x = 26
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_64
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_63
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_69
+		icon = GFX_focus_TZL_TWW_FOCUS_69
+		x = 25
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_65
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_67
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_64
+		icon = GFX_focus_TZL_TWW_FOCUS_64
+		x = 25
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_46
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_66
+		icon = GFX_focus_TZL_TWW_FOCUS_66
+		x = 23
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_47
+			focus = TZL_TWW_FOCUS_46
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_67
+		icon = GFX_focus_TZL_TWW_FOCUS_67
+		x = 24
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_66
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_64
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_70
+		icon = GFX_focus_TZL_TWW_FOCUS_70
+		x = 21
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_47
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_73
+		icon = GFX_focus_PRC_niaolong_121
+		x = 21
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_72
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_68
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_72
+		icon = GFX_focus_PRC_niaolong_95
+		x = 20
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_71
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_70
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_71
+		icon = GFX_focus_PRC_niaolong_124
+		x = 19
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_47
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_68
+		icon = GFX_focus_TZL_TWW_FOCUS_68
+		x = 22
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_66
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_70
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_63
+		icon = GFX_focus_TZL_TWW_FOCUS_65
+		x = 27
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_46
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_45
+		icon = GFX_focus_TZL_TWW_FOCUS_45
+		x = 29
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_46
+			focus = TZL_TWW_FOCUS_44
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_49
+		icon = GFX_focus_PRC_decommodification
+		x = 28
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_45
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_50
+		icon = GFX_focus_PRC_niaolong_52
+		x = 30
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_45
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			 
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_55
+		icon = GFX_focus_TZL_TWW_FOCUS_55
+		x = 27
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_49
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_53
+		icon = GFX_focus_PRC_end_landlordism
+		x = 28
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_49
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_52
+		icon = GFX_focus_TZL_TWW_FOCUS_52
+		x = 30
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_50
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_54
+		icon = GFX_focus_PRC_agricultural_self_sufficiency
+		x = 31
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_50
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_51
+		icon = GFX_focus_TZL_TWW_FOCUS_51
+		x = 29
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_45
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_46
+		icon = GFX_focus_TZL_TWW_FOCUS_46
+		x = 25
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		mutually_exclusive = {
+			focus = TZL_TWW_FOCUS_44
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_43
+		}
+
+		
+		available = {
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = less_than
+}
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_44
+		icon = GFX_focus_PRC_revise_cultural_revolution_verdict
+		x = 31
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		mutually_exclusive = {
+			focus = TZL_TWW_FOCUS_46
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_43
+		}
+
+		
+		available = {
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = greater_than_or_equals
+}
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_48
+		icon = GFX_focus_TZL_TWW_FOCUS_48
+		x = 40
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_17
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_19
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_77
+		icon = GFX_focus_TZL_TWW_FOCUS_77
+		x = 36
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_48
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_78
+		icon = GFX_focus_TZL_TWW_FOCUS_78
+		x = 37
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_77
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_74
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_74
+		icon = GFX_focus_TZL_TWW_FOCUS_74
+		x = 38
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_48
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_75
+		icon = GFX_focus_PRC_inegrate_research_institutes
+		x = 44
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_48
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_79
+		icon = GFX_focus_PRC_invest_in_artificial_intelligence
+		x = 43
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_76
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_75
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_80
+		icon = GFX_focus_TZL_TWW_FOCUS_80
+		x = 40
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_48
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_81
+		icon = GFX_focus_PRC_economic_computerization
+		x = 40
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_80
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_82
+		icon = GFX_focus_PRC_towards_a_digital_communism
+		x = 40
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_81
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_78
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_79
+		}
+
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_76
+		icon = GFX_focus_TZL_TWW_FOCUS_76
+		x = 42
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_48
+		}
+
 
 		
 		available = {
@@ -691,7 +1667,7 @@ RED_JAP_REV_ARMY = yes
 	} 
    focus = {
 		id = TZL_TWW_FOCUS_29
-		icon = GFX_focus_TZL_TWW_FOCUS_29
+		icon = GFX_focus_PRC_nuclear_construction_plan
 		x = 15
 		y = 2
 		cost = 5
@@ -712,8 +1688,140 @@ RED_JAP_REV_ARMY = yes
 		}
 	} 
    focus = {
+		id = TZL_TWW_FOCUS_39
+		icon = GFX_focus_PRC_fusion_investements
+		x = 15
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_29
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_36
+		icon = GFX_focus_TZL_TWW_FOCUS_36
+		x = 13
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_18
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_37
+		icon = GFX_focus_TZL_TWW_FOCUS_37
+		x = 14
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_36
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_38
+		icon = GFX_focus_TZL_TWW_FOCUS_38
+		x = 12
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_36
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_40
+		icon = GFX_focus_TZL_TWW_FOCUS_40
+		x = 13
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_36
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_41
+		icon = GFX_focus_TZL_TWW_FOCUS_41
+		x = 13
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_40
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+   focus = {
 		id = TZL_TWW_FOCUS_30
-		icon = GFX_focus_TZL_TWW_FOCUS_30
+		icon = GFX_focus_PRC_fuel_chinese_nationalism
 		x = 17
 		y = 2
 		cost = 5

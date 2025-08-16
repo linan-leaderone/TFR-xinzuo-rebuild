@@ -313,6 +313,8 @@ set_popularities = {
 			}
 	TSU = {add_to_faction = MKL}
 
+
+RED_JAP_REV_ARMY_1 = yes
 RED_JAP_REV_ARMY = yes
 				set_politics = {
 				ruling_party = libertarian_socialist
