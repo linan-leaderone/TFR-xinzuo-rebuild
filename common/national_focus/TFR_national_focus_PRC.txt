@@ -1831,7 +1831,6 @@ shared_focus = {
 	    factor = 100
 	}
 	available = {
-	    NOT = { has_completed_focus = PRC_finilize_korean_revolution } 
 	}
 	completion_reward = {
 		set_temp_variable = {
@@ -1995,7 +1994,9 @@ shared_focus = {
 	ai_will_do = {
 	    factor = 100
 	}
-	available = {    	    
+	available = {    
+			has_completed_focus = PRC_coordinate_eadi_militaries
+
 	}
 	completion_reward = {	    
 		PRK = { country_event = nk.14 }
