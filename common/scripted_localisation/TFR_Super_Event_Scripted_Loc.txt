@@ -6,7 +6,25 @@
 			}
 			localization_key = "super_patriot_victory"
 		}
-																		
+																				
+		text = { 
+			trigger = {
+				has_country_flag = santifa2_flag
+			}
+			localization_key = "santifa2"
+		}																				
+		text = { 
+			trigger = {
+				has_country_flag = santifa3_flag
+			}
+			localization_key = "santifa3"
+		}																			
+		text = { 
+			trigger = {
+				has_country_flag = santifa_flag
+			}
+			localization_key = "santifa"
+		}																		
 		text = { 
 			trigger = {
 				has_country_flag = lmrev_flag
@@ -469,6 +487,24 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = santifa2_flag
+			}
+			localization_key = "santifa2_text"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = santifa3_flag
+			}
+			localization_key = "santifa3_text"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = santifa_flag
+			}
+			localization_key = "santifa_text"
+		}
+		text = { 
+			trigger = {
 				has_country_flag = lmrev_flag
 			}
 			localization_key = "lmrev_text"
@@ -922,7 +958,25 @@
 			}
 			localization_key = "super_patriot_victory_button"
 		}
-					
+													
+		text = { 
+			trigger = {
+				has_country_flag = santifa3_flag
+			}
+			localization_key = "santifa3_button"
+		}	
+		text = { 
+			trigger = {
+				has_country_flag = santifa2_flag
+			}
+			localization_key = "santifa2_button"
+		}				
+		text = { 
+			trigger = {
+				has_country_flag = santifa_flag
+			}
+			localization_key = "santifa_button"
+		}			
 		text = { 
 			trigger = {
 				has_country_flag = lmrev_flag

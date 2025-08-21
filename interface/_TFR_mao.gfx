@@ -16,7 +16,27 @@ spriteTypes = {
             looping = yes
             play_on_show = yes
 		}		
-				
+						
+	SpriteType = {
+		name = "GFX_dongxiejiaobiao"
+		texturefile = "gfx/MAOYUANXIN/dongxiejiaobiao.png"
+		legacy_lazy_load = no
+	}								
+	SpriteType = {
+		name = "GFX_sstmjiaobiao"
+		texturefile = "gfx/MAOYUANXIN/sstmjiaobiao.png"
+		legacy_lazy_load = no
+	}							
+	SpriteType = {
+		name = "GFX_taijiezhenjiaobiao"
+		texturefile = "gfx/MAOYUANXIN/taijiezhenjiaobiao.png"
+		legacy_lazy_load = no
+	}						
+	SpriteType = {
+		name = "GFX_hongoujiaobiao"
+		texturefile = "gfx/MAOYUANXIN/hongoujiaobiao.png"
+		legacy_lazy_load = no
+	}			
 	SpriteType = {
 		name = "GFX_TZL_JJFZ_HJH_banner"
 		texturefile = "gfx/MAOYUANXIN/TZL_JJFZ_HJH1.png"

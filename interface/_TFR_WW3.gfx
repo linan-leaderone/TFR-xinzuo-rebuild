@@ -5,8 +5,16 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/WWWANNIU1.png"
 	}
 	SpriteType = {
+		name = "GFX_WWWANNIU11"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU11.png"
+	}
+	SpriteType = {
 		name = "GFX_WWWANNIU2"
 		texturefile = "gfx/MAOYUANXIN/WWWANNIU2.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU21"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU21.png"
 	}
 	SpriteType = {
 		name = "GFX_WWWANNIU3"
@@ -33,6 +41,41 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/WWWANNIU8.png"
 	}
 
+
+	SpriteType = {
+		name = "GFX_WWWANNIU3123"
+		texturefile = "gfx/MAOYUANXIN/super_santifa.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU32"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU32.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU31"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU31.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU41"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU41.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU51"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU51.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU61"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU61.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU71"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU71.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU81"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU81.png"
+	}
+
+
 	SpriteType = {
 		name = "GFX_WWW_back"
 		texturefile = "gfx/MAOYUANXIN/ww3uibackground.png"
@@ -40,6 +83,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_WWW_guanbi"
 		texturefile = "gfx/MAOYUANXIN/guanbi.png"
+	}
+	SpriteType = {
+		name = "TFR_WW3_GUI_anniu"
+		texturefile = "gfx/MAOYUANXIN/TJZ_Member3.png"
 	}
 	SpriteType = {
 		name = "GFX_WWW_tishi"

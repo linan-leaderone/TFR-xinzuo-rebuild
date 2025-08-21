@@ -3601,181 +3601,227 @@ country_event = {
 	}
 }
 
-#Occupation of Guangdong
+#Emergency Party Congress Convenes
 country_event = {
 	id = china.107
 	title = china.107.t
 	desc = china.107.d
-	picture = GFX_pla_occupation
+	picture = GFX_PRC_Generic_NPC
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 	}
 	option = {
 		name = china.107.a
-		1206 = {
-			set_demilitarized_zone = no
+		ai_chance = {
+			base = 1
+			modifier = {
+			    factor = 0
+			    OR = {
+			        has_game_rule = {
+			            rule = The_PRC_Revanchists_Path
+			            option = The_PRC_Revanchists_Path_Nationalists
+		            }
+		        }
+		    }
 		}
-		1207 = {
-			set_demilitarized_zone = no
+		country_event = {
+			id = china.109
+			days = 1
 		}
-		599 = {
-			set_demilitarized_zone = no
+	}
+	option = {
+		name = china.107.b
+		ai_chance = {
+			base = 1
+			modifier = {
+			    factor = 0
+			    OR = {
+			        has_game_rule = {
+			            rule = The_PRC_Revanchists_Path
+			            option = The_PRC_Revanchists_Path_Digital_Leninists
+		            }
+		        }
+		    }
 		}
-		1191 = {
-			set_demilitarized_zone = no
-		}
-		728 = {
-			set_demilitarized_zone = no
-		}
-		591 = {
-			set_demilitarized_zone = no
-		}
-		593 = {
-			set_demilitarized_zone = no
-		}
-		1203 = {
-			set_demilitarized_zone = no
-		}
-		1204 = {
-			set_demilitarized_zone = no
-		}
-		594 = {
-			set_demilitarized_zone = no
-		}
-		1205 = {
-			set_demilitarized_zone = no
-		}
-		592 = {
-			set_demilitarized_zone = no
-		}
-		729 = {
-			set_demilitarized_zone = no
+		country_event = {
+			id = china.110
+			days = 1
 		}
 	}
 }
 
-#Occupation of Nanjing
+#Li Zuocheng Appointed General Secretary of the CPC
 country_event = {
 	id = china.108
 	title = china.108.t
 	desc = china.108.d
-	picture = GFX_pla_tanks
+	picture = GFX_PRC_li_zuocheng3
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 	}
 	option = {
 		name = china.108.a
-		1222 = {
-			set_demilitarized_zone = no
+		promote_character = {
+			character = PRC_li_zuocheng
+			ideology = military_junta
 		}
-		613 = {
-			set_demilitarized_zone = no
-		}
-		1215 = {
-			set_demilitarized_zone = no
-		}
-		1221 = {
-			set_demilitarized_zone = no
-		}
-		1220 = {
-			set_demilitarized_zone = no
-		}
-		1221 = {
-			set_demilitarized_zone = no
-		}
-		596 = {
-			set_demilitarized_zone = no
-		}
-		1159 = {
-			set_demilitarized_zone = no
-		}
-		1221 = {
-			set_demilitarized_zone = no
-		}
-		1227 = {
-			set_demilitarized_zone = no
-		}
-		1214 = {
-			set_demilitarized_zone = no
-		}
-		1213 = {
-			set_demilitarized_zone = no
-		}
-		1221 = {
-			set_demilitarized_zone = no
-		}
-		1216 = {
-			set_demilitarized_zone = no
-		}
-		600 = {
-			set_demilitarized_zone = no
-		}
-		1219 = {
-			set_demilitarized_zone = no
-		}
-		1217 = {
-			set_demilitarized_zone = no
-		}
-		1218 = {
-			set_demilitarized_zone = no
-		}
-		595 = {
-			set_demilitarized_zone = no
-		}
-		1209 = {
-			set_demilitarized_zone = no
+		hidden_effect = {
+			news_event = {
+				id = china.253
+				hours = 12
+			}
+			remove_country_leader_role = {
+			    character = PRC_Zhang_Youxia
+			    ideology = military_junta
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_nat_totalitarian_socialist_long
+				name = PRC_nat_totalitarian_socialist_short
+			}
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			set_popularities = {
+				libertarian_socialist = 3
+				social_democrat = 2
+				social_liberal = 2
+				market_liberal = 0
+				conservative = 0
+				authoritarian_democrat = 7
+				nationalist = 62
+				fascist = 12
+				national_socialist = 12
+			}
 		}
 	}
 }
 
-#Occupation of Sichuan
+#Chen Wenqing Elected General Secretary of the CPC
 country_event = {
 	id = china.109
 	title = china.109.t
 	desc = china.109.d
-	picture = GFX_pla_helicopter
-	is_triggered_only = yes
-	fire_only_once = yes
-	trigger = {
-	}
-	option = {
-		name = china.109.a
-		601 = {
-			set_demilitarized_zone = no
-		}
-		1168 = {
-			set_demilitarized_zone = no
-		}
-		605 = {
-			set_demilitarized_zone = no
-		}
-		1188 = {
-			set_demilitarized_zone = no
-		}
-		1189 = {
-			set_demilitarized_zone = no
-		}
-	}
-}
-
-#Dongbei Unrest
-country_event = {
-	id = china.110
-	title = china.110.t
-	desc = china.110.d
 	picture = GFX_event_chenwenqing
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 	}
 	option = {
-		name = china.110.a
+		name = china.109.a
+		set_country_flag = PRC_party_congress_digital_leninsts_won_flag
+		effect_tooltip = {
+			unlock_national_focus = PRC_stability_and_security
+		}
+
+		promote_character = {
+			character = PRC_cheng_wenqing
+			ideology = jucheism
+		}
+		hidden_effect = {
+			news_event = {
+				id = china.253
+				hours = 12
+			}
+			remove_country_leader_role = {
+			    character = PRC_Zhang_Youxia
+			    ideology = military_junta
+			}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_cpc_mss_long
+				name = PRC_cpc_mss
+			}
+			set_politics = {
+				ruling_party = national_socialist
+				elections_allowed = no
+			}
+			set_popularities = {
+				libertarian_socialist = 8
+				social_democrat = 7
+				social_liberal = 2
+				market_liberal = 0
+				conservative = 0
+				authoritarian_democrat = 7
+				nationalist = 20
+				fascist = 26
+				national_socialist = 30
+			}
+		}
 	}
 }
 
-#Dongbei Suppressed
+#Chen Quanguo Elected General Secretary of the CPC
+country_event = {
+	id = china.110
+	title = china.110.t
+	desc = china.110.d
+	picture = GFX_PRC_chen_quanguo_event
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	}
+	option = {
+		name = china.110.a
+		set_country_flag = PRC_party_congress_nationalists_won_flag
+		effect_tooltip = {
+			unlock_national_focus = PRC_protectors_of_the_chinese_nation
+		}
+XIN = {set_nationality = {
+    target_country = PRC
+    character = PRC_chen_quanguo
+}}
+		add_country_leader_role = {
+			character = PRC_chen_quanguo
+			promote_leader = yes
+			country_leader = {
+				ideology = chinese_exceptionalism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_chen_quanguo
+			ideology = chinese_exceptionalism
+		}
+		hidden_effect = {
+			news_event = {
+				id = china.253
+				hours = 12
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = PRC_nat_totalitarian_socialist_longfascist
+				name = PRC_nat_totalitarian_socialist_longfascist
+			}
+			remove_country_leader_role = {
+			    character = PRC_Zhang_Youxia
+			    ideology = military_junta
+			}
+			set_politics = {
+				ruling_party = fascist
+				elections_allowed = no
+			}
+			set_popularities = {
+				libertarian_socialist = 6
+				social_democrat = 4
+				social_liberal = 2
+				market_liberal = 0
+				conservative = 0
+				authoritarian_democrat = 17
+				nationalist = 20
+				fascist = 29
+				national_socialist = 20
+			}
+		}
+	}
+}
+
+#unused
 country_event = {
 	id = china.111
 	title = china.111.t
@@ -3787,18 +3833,6 @@ country_event = {
 	}
 	option = {
 		name = china.111.a
-		1167 = {
-			set_demilitarized_zone = no
-		}
-		714 = {
-			set_demilitarized_zone = no
-		}
-		717 = {
-			set_demilitarized_zone = no
-		}
-		328 = {
-			set_demilitarized_zone = no
-		}
 	}
 }
 
@@ -3836,7 +3870,6 @@ country_event = {
 		}
 	}
 }
-
 #Beijing-Tianjin
 country_event = {
 	id = china.113
@@ -4306,9 +4339,8 @@ country_event = {
 		add_war_support = 0.08
 	}
 }
-
+#unused
 country_event = {
-	#National People's Congress votes on Federalization
 	id = china.123
 	title = china.123.t
 	desc = china.123.d
@@ -4319,98 +4351,40 @@ country_event = {
 	}
 	option = {
 		name = china.123.a
-		effect_tooltip = {
-		}
-		hidden_effect = {
-			IF = {
-				LIMIT = {
-					check_variable = {
-						var = PRC_approval_rating_var_temp
-						value < 0.3
-					}
-				}
-				country_event = {
-					id = china.124
-					days = 1
-				}
-			}
-			IF = {
-				LIMIT = {
-					check_variable = {
-						var = PRC_approval_rating_var_temp
-						value > 0.3
-					}
-				}
-				country_event = {
-					id = china.125
-					days = 2
-				}
-			}
-		}
 	}
 }
 
+#A Cardinal Solution to the Problem
 country_event = {
-	#Attempted Hardliner coup!
 	id = china.124
 	title = china.124.t
 	desc = china.124.d
-	picture = GFX_prc_megacity1
+	picture = GFX_PRC_xi_jinping_cunning
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
+		NOT = {
+			has_global_flag = PRC_ongoing_taiwan_war
+			has_global_flag = PRC_taiwan_war_won
+			has_global_flag = PRC_taiwan_war_lost
+		}
 	}
 	option = {
 		name = china.124.a
-		1222 = {
-			set_demilitarized_zone = yes
-		}
-		1215 = {
-			set_demilitarized_zone = yes
-		}
-		1220 = {
-			set_demilitarized_zone = yes
-		}
-		596 = {
-			set_demilitarized_zone = yes
-		}
-		600 = {
-			set_demilitarized_zone = yes
-		}
-		595 = {
-			set_demilitarized_zone = yes
-		}
-		1218 = {
-			set_demilitarized_zone = yes
-		}
-		592 = {
-			set_demilitarized_zone = yes
-		}
-		591 = {
-			set_demilitarized_zone = yes
-		}
-		set_politics = {
-			ruling_party = nationalist
-			elections_allowed = no
-			last_election = "2000.1.1"
-			election_frequency = 48
-		}
-		add_country_leader_role = {
-			character = PRC_li_zuocheng
-			promote_leader = yes
-			country_leader = {
-				ideology = military_junta
-				expire = "2099.1.1.1"
-				traits = {
-				}
-			}
-		}
+		set_country_flag = PRC_taiwan_war_forced_start
 		hidden_effect = {
-			country_event = {
-				#WANG YANG and Cabinet SHOT
-				id = china.1242
-			}
+			load_focus_tree = PRC_taiwan_war_tree
 		}
+		complete_national_focus = PRC_the_final_opportunity
+		complete_national_focus = PRC_prepare_landing_craft
+		complete_national_focus = PRC_modern_combined_arms
+		complete_national_focus = PRC_blockade_taiwan
+		complete_national_focus = PRC_conduct_final_training
+		complete_national_focus = PRC_expand_the_j20_program
+		complete_national_focus = PRC_operation_silent_dawn
+		complete_national_focus = PRC_sieze_kinmen
+		complete_national_focus = PRC_plan_on_high_alert
+		complete_national_focus = PRC_finish_what_mao_started
 	}
 }
 
@@ -4703,46 +4677,19 @@ country_event = {
 	}
 }
 
+#"Wolf Warrior 3" Roars Onto the Screen
 country_event = {
-	#Federalization successful!
 	id = china.125
 	title = china.125.t
 	desc = china.125.d
-	picture = GFX_prc_megacity1
+	picture = GFX_PRC_wolf_warrior_3
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 	}
 	option = {
 		name = china.125.a
-		add_ideas = PRC_Federation_of_Equals
-		set_cosmetic_tag = PRC_Federated_Republic_of_China
-		hidden_effect = {
-			country_event = {
-				#Peaceful Independence Movements reveal themselves
-				id = china.1251
-				days = 16
-			}
-			country_event = {
-				#Peaceful Students Take to the streets
-				id = china.1252
-				days = 32
-			}
-			IF = {
-				LIMIT = {
-					has_stability < 0.2
-				}
-				country_event = {
-					#National Yardsale
-					id = china.1253
-					days = 90
-				}
-			}
-		}
-		news_event = {
-			id = news.319
-			days = 3
-		}
+		add_political_power = 15
 	}
 }
 
@@ -4793,93 +4740,34 @@ country_event = {
 	}
 }
 
+#Returning to the Roots
 country_event = {
-	#Liberals retake power at a price... 
 	id = china.126
 	title = china.126.t
 	desc = china.126.d
-	picture = GFX_prc_megacity1
+	picture = GFX_PRC_wang_yi_event
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 	}
 	option = {
 		name = china.126.a
-		1222 = {
-			set_demilitarized_zone = no
-		}
-		1215 = {
-			set_demilitarized_zone = no
-		}
-		1220 = {
-			set_demilitarized_zone = no
-		}
-		596 = {
-			set_demilitarized_zone = no
-		}
-		600 = {
-			set_demilitarized_zone = no
-		}
-		595 = {
-			set_demilitarized_zone = no
-		}
-		1218 = {
-			set_demilitarized_zone = no
-		}
-		592 = {
-			set_demilitarized_zone = no
-		}
-		591 = {
-			set_demilitarized_zone = no
-		}
-		swap_ideas = {
-			remove_idea = PRC_Anti_Military_Protests_idea
-			add_idea = PRC_Liberal_Student_Protests_idea
-		}
-		add_ideas = PRC_Minority_Protests_Liberal_idea
-		add_timed_idea = {
-			idea = PRC_Remnants_of_Military_Rule_idea
-			days = 365
-		}
-		set_politics = {
-			ruling_party = nationalist
-			elections_allowed = no
-			last_election = "2000.1.1"
-			election_frequency = 48
-		}
-		hidden_effect = {
-			country_event = {
-				#Collapse of the Chinese Communist Party
-				id = china.127
-				days = 50
-			}
-			IF = {
-				LIMIT = {
-					has_stability < 0.2
-				}
-				country_event = {
-					#Dissolution of the People's Republic of China
-					id = china.130
-					days = 80
-				}
-			}
-		}
+		add_war_support = 0.02
 	}
 }
 
+#Our Journey to the Stars and the Sea
 country_event = {
-	#Collapse of the Chinese Communist Party
 	id = china.127
 	title = china.127.t
 	desc = china.127.d
-	picture = GFX_prc_megacity1
+	picture = GFX_PRC_sea_blocade
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 	}
 	option = {
 		name = china.127.a
-		set_country_flag = PRC_Ban_Communism_flag
 	}
 }
 

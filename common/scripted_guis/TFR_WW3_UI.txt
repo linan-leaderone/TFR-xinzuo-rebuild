@@ -1,8 +1,8 @@
 	scripted_gui = {
-		TFR_WW3_GUI = {
+	TFR_WW3_GUI_anniu_gui = {
 		context_type = player_context
 		parent_window_token = top_bar
-			window_name = "TFR_WW3_GUI_container"
+		window_name = "TFR_WW3_GUI_anniu_gui"
 
 		visible = {
 		OR = {
@@ -11,12 +11,105 @@
 		}
 		}
 
+		effects = {
+			TFR_WW3_GUI_anniu_click = {
+				if = {
+					limit = { 
+				check_variable = { TFR_WW3_GUI_START = 1 }
+					}
+				set_variable = { TFR_WW3_GUI_START = 0 }
+				}
+				else = {
+				set_variable = { TFR_WW3_GUI_START = 1 }
+				}
+			}
+			}
+	}
+
+
+
+		TFR_WW3_GUI = {
+		context_type = player_context
+		parent_window_token = top_bar
+			window_name = "TFR_WW3_GUI_container"
+
+		visible = { 
+				check_variable = { TFR_WW3_GUI_START = 1 }
+		}
+
 			triggers = {
+			WWWANNIU1_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiwkl = 1 }
+			}
+			WWWANNIU11_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiwkl = 0 }
+			}
+			WWWANNIU2_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqizy = 1 }
+			}
+			WWWANNIU21_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqizy = 0 }
+			}
+			WWWANNIU3_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiblz = 1 }
+			}
+			WWWANNIU31_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiblz = 0 }
+			}
+			WWWANNIU4_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiroj = 1 }
+			}
+			WWWANNIU41_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiroj = 0 }
+			}
+			WWWANNIU5_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqichf = 1 }
+			}
+			WWWANNIU51_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqichf = 0 }
+			}
+			WWWANNIU6_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqipol = 1 }
+			}
+			WWWANNIU61_visible = { 
+				check_variable = { TFR_WW3_yuanzhuwuqipol = 0 }
+			}
+			WWWANNIU7_visible = { 
+			OR = { 
+
+TAL = {any_neighbor_country = {is_ally_with = TSU}}
+TAL = {any_neighbor_country = {original_tag = TSU}}
+			
+			}	
+			}
+			WWWANNIU71_visible = { 
+		
+				NOT = {TAL = {any_neighbor_country = {is_ally_with = TSU}}}		
+				NOT = {TAL = {any_neighbor_country = {original_tag = TSU}}}
+		
+			}
+			WWWANNIU8_visible = { 
+			OR = { 
+
+PER = {any_neighbor_country = {is_ally_with = TSU}}
+PER = {any_neighbor_country = {original_tag = TSU}}
+			
+			}	
+			}
+			WWWANNIU81_visible = { 
+				NOT = {PER = {any_neighbor_country = {is_ally_with = TSU}}}		
+				NOT = {PER = {any_neighbor_country = {original_tag = TSU}}}
+			}
 
 				}
 
 
-
+		effects = {
+WWW_guanbi_click = {
+				set_variable = { TFR_WW3_GUI_START = 0 }
+				set_country_flag = santifa_flag
+				}
+				}
 
 
 

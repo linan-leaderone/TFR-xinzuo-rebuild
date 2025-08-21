@@ -1,4 +1,55 @@
 	scripted_gui = {
+		santifa3_super_event = {
+			context_type = player_context
+			window_name = "santifa3_super_event"
+
+			visible = {
+				has_country_flag = santifa3_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = santifa3_flag
+				}
+			}
+		}
+		santifa2_super_event = {
+			context_type = player_context
+			window_name = "santifa2_super_event"
+
+			visible = {
+				has_country_flag = santifa2_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = santifa2_flag
+				}
+			}
+		}
+		santifa_super_event = {
+			context_type = player_context
+			window_name = "santifa_super_event"
+
+			visible = {
+				has_country_flag = santifa_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = santifa_flag
+				}
+			}
+		}
 		lmrev_super_event = {
 			context_type = player_context
 			window_name = "lmrev_super_event"

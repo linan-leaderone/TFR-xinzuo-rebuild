@@ -1,5 +1,19 @@
 guiTypes = {
 	containerWindowType = {
+		name = "TFR_WW3_GUI_anniu_gui"
+		size = { width = 85 height = 85 }
+		position = { x = -85 y = -450 }
+		orientation = lower_right
+
+		buttonType = {
+			name = "TFR_WW3_GUI_anniu"
+			spriteType = "TFR_WW3_GUI_anniu"
+			position = { x = 48 y = 48 }
+			centerposition = yes
+		}
+}
+
+	containerWindowType = {
 		name = "TFR_WW3_GUI_container"
 		position = { x=0 y=0 }	
 		size = { width=1200 height= 815 }
@@ -7,9 +21,10 @@ guiTypes = {
 		Origo = center
 		clipping = no	
 		moveable = no
-
-		background = {
-			name = "Background"           
+						
+		iconType = {            
+			position = { x = 0 y = 0 }
+			name = "GFX_WWWBackground"           
 			quadTextureSprite ="GFX_WWW_back"
 		}
 
@@ -25,6 +40,106 @@ guiTypes = {
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_WWW_tishi"
 			pdx_tooltip = "WWW_tishi_tt"
+		}	
+		buttonType = {
+			name = "WWWANNIU2"
+			position = { x = 66 y = 700 }
+			spriteType = "GFX_WWWANNIU2"
+			pdx_tooltip = "WWW_WWWANNIU2_tt"
+		}							
+		iconType = {
+			name = "WWWANNIU21"
+			position = { x = 66 y = 700 }
+			spriteType = "GFX_WWWANNIU21"
+			pdx_tooltip = "WWW_WWWANNIU21_tt"
+		}	
+		buttonType = {
+			name = "WWWANNIU4"
+			position = { x = 335 y = 700 }
+			spriteType = "GFX_WWWANNIU4"
+			pdx_tooltip = "WWW_WWWANNIU4_tt"
+		}							
+		iconType = {
+			name = "WWWANNIU41"
+			position = { x = 335 y = 700 }
+			spriteType = "GFX_WWWANNIU41"
+			pdx_tooltip = "WWW_WWWANNIU41_tt"
+		}		
+		buttonType = {
+			name = "WWWANNIU8"
+			position = { x = 873 y = 700 }
+			spriteType = "GFX_WWWANNIU8"
+			pdx_tooltip = "WWW_WWWANNIU8_tt"
+		}							
+		iconType = {
+			name = "WWWANNIU81"
+			position = { x = 873 y = 700 }
+			spriteType = "GFX_WWWANNIU81"
+			pdx_tooltip = "WWW_WWWANNIU81_tt"
+		}	
+		buttonType = {
+			name = "WWWANNIU6"
+			position = { x = 604 y = 700 }
+			spriteType = "GFX_WWWANNIU6"
+			pdx_tooltip = "WWW_WWWANNIU6_tt"
+		}							
+		iconType = {
+			name = "WWWANNIU61"
+			position = { x = 604 y = 700 }
+			spriteType = "GFX_WWWANNIU61"
+			pdx_tooltip = "WWW_WWWANNIU61_tt"
+		}
+		buttonType = {
+			name = "WWWANNIU3"
+			position = { x = 335 y = 597 }
+			spriteType = "GFX_WWWANNIU3"
+			pdx_tooltip = "WWW_WWWANNIU3_tt"
+		}
+						
+		iconType = {
+			name = "WWWANNIU31"
+			position = { x = 335 y = 597 }
+			spriteType = "GFX_WWWANNIU31"
+			pdx_tooltip = "WWW_WWWANNIU31_tt"
+		}	
+		buttonType = {
+			name = "WWWANNIU7"
+			position = { x = 873 y = 597 }
+			spriteType = "GFX_WWWANNIU7"
+			pdx_tooltip = "WWW_WWWANNIU7_tt"
+		}
+						
+		iconType = {
+			name = "WWWANNIU71"
+			position = { x = 873 y = 597 }
+			spriteType = "GFX_WWWANNIU71"
+			pdx_tooltip = "WWW_WWWANNIU71_tt"
+		}		
+		buttonType = {
+			name = "WWWANNIU5"
+			position = { x = 604 y = 597 }
+			spriteType = "GFX_WWWANNIU5"
+			pdx_tooltip = "WWW_WWWANNIU5_tt"
+		}
+						
+		iconType = {
+			name = "WWWANNIU51"
+			position = { x = 604 y = 597 }
+			spriteType = "GFX_WWWANNIU51"
+			pdx_tooltip = "WWW_WWWANNIU51_tt"
+		}	
+		buttonType = {
+			name = "WWWANNIU1"
+			position = { x = 66 y = 597 }
+			spriteType = "GFX_WWWANNIU1"
+			pdx_tooltip = "WWW_WWWANNIU1_tt"
+		}
+						
+		iconType = {
+			name = "WWWANNIU11"
+			position = { x = 66 y = 597 }
+			spriteType = "GFX_WWWANNIU11"
+			pdx_tooltip = "WWW_WWWANNIU11_tt"
 		}	
 		}
 		}

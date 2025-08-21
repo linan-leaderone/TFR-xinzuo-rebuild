@@ -77,19 +77,7 @@ focus_tree = {
 		relative_position_id = PRC_chinas_most_dire_hour
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = The_PRC_Revanchists_Path
-						option = The_PRC_Revanchists_Path_Digital_Leninists
-					}
-					has_game_rule = {
-						rule = The_PRC_Revanchists_Path
-						option = The_PRC_Revanchists_Path_Nationalists
-					}
-				}
-			}
+			
 		}
 		prerequisite = {
 			focus = PRC_chinas_most_dire_hour
@@ -2057,16 +2045,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		relative_position_id = PRC_chinas_most_dire_hour
 		ai_will_do = {
-			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = The_PRC_Revanchists_Path
-						option = The_PRC_Revanchists_Path_Militarists
-					}
-				}
-			}
+			factor = 150
+		
 		}
 		prerequisite = {
 			focus = PRC_chinas_most_dire_hour
