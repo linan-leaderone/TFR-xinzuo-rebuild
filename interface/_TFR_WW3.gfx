@@ -1,0 +1,1026 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_WWWANNIU1"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU1.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU2"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU2.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU3"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU3.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU4"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU4.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU5"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU5.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU6"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU6.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU7"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU7.png"
+	}
+	SpriteType = {
+		name = "GFX_WWWANNIU8"
+		texturefile = "gfx/MAOYUANXIN/WWWANNIU8.png"
+	}
+
+	SpriteType = {
+		name = "GFX_WWW_back"
+		texturefile = "gfx/MAOYUANXIN/ww3uibackground.png"
+	}
+	SpriteType = {
+		name = "GFX_WWW_guanbi"
+		texturefile = "gfx/MAOYUANXIN/guanbi.png"
+	}
+	SpriteType = {
+		name = "GFX_WWW_tishi"
+		texturefile = "gfx/MAOYUANXIN/tishi.png"
+	}
+
+SpriteType = {
+    name = "GFX_state1_1"
+    texturefile = "gfx/MAOYUANXIN/state1_1.png"
+}
+SpriteType = {
+    name = "GFX_state1_2"
+    texturefile = "gfx/MAOYUANXIN/state1_2.png"
+}
+SpriteType = {
+    name = "GFX_state1_3"
+    texturefile = "gfx/MAOYUANXIN/state1_3.png"
+}
+SpriteType = {
+    name = "GFX_state1_4"
+    texturefile = "gfx/MAOYUANXIN/state1_4.png"
+}
+SpriteType = {
+    name = "GFX_state2_1"
+    texturefile = "gfx/MAOYUANXIN/state2_1.png"
+}
+SpriteType = {
+    name = "GFX_state2_2"
+    texturefile = "gfx/MAOYUANXIN/state2_2.png"
+}
+SpriteType = {
+    name = "GFX_state2_3"
+    texturefile = "gfx/MAOYUANXIN/state2_3.png"
+}
+SpriteType = {
+    name = "GFX_state2_4"
+    texturefile = "gfx/MAOYUANXIN/state2_4.png"
+}
+SpriteType = {
+    name = "GFX_state3_1"
+    texturefile = "gfx/MAOYUANXIN/state3_1.png"
+}
+SpriteType = {
+    name = "GFX_state3_2"
+    texturefile = "gfx/MAOYUANXIN/state3_2.png"
+}
+SpriteType = {
+    name = "GFX_state3_3"
+    texturefile = "gfx/MAOYUANXIN/state3_3.png"
+}
+SpriteType = {
+    name = "GFX_state3_4"
+    texturefile = "gfx/MAOYUANXIN/state3_4.png"
+}
+SpriteType = {
+    name = "GFX_state4_1"
+    texturefile = "gfx/MAOYUANXIN/state4_1.png"
+}
+SpriteType = {
+    name = "GFX_state4_2"
+    texturefile = "gfx/MAOYUANXIN/state4_2.png"
+}
+SpriteType = {
+    name = "GFX_state4_3"
+    texturefile = "gfx/MAOYUANXIN/state4_3.png"
+}
+SpriteType = {
+    name = "GFX_state4_4"
+    texturefile = "gfx/MAOYUANXIN/state4_4.png"
+}
+SpriteType = {
+    name = "GFX_state5_1"
+    texturefile = "gfx/MAOYUANXIN/state5_1.png"
+}
+SpriteType = {
+    name = "GFX_state5_2"
+    texturefile = "gfx/MAOYUANXIN/state5_2.png"
+}
+SpriteType = {
+    name = "GFX_state5_3"
+    texturefile = "gfx/MAOYUANXIN/state5_3.png"
+}
+SpriteType = {
+    name = "GFX_state5_4"
+    texturefile = "gfx/MAOYUANXIN/state5_4.png"
+}
+SpriteType = {
+    name = "GFX_state6_1"
+    texturefile = "gfx/MAOYUANXIN/state6_1.png"
+}
+SpriteType = {
+    name = "GFX_state6_2"
+    texturefile = "gfx/MAOYUANXIN/state6_2.png"
+}
+SpriteType = {
+    name = "GFX_state6_3"
+    texturefile = "gfx/MAOYUANXIN/state6_3.png"
+}
+SpriteType = {
+    name = "GFX_state6_4"
+    texturefile = "gfx/MAOYUANXIN/state6_4.png"
+}
+SpriteType = {
+    name = "GFX_state7_1"
+    texturefile = "gfx/MAOYUANXIN/state7_1.png"
+}
+SpriteType = {
+    name = "GFX_state7_2"
+    texturefile = "gfx/MAOYUANXIN/state7_2.png"
+}
+SpriteType = {
+    name = "GFX_state7_3"
+    texturefile = "gfx/MAOYUANXIN/state7_3.png"
+}
+SpriteType = {
+    name = "GFX_state7_4"
+    texturefile = "gfx/MAOYUANXIN/state7_4.png"
+}
+SpriteType = {
+    name = "GFX_state8_1"
+    texturefile = "gfx/MAOYUANXIN/state8_1.png"
+}
+SpriteType = {
+    name = "GFX_state8_2"
+    texturefile = "gfx/MAOYUANXIN/state8_2.png"
+}
+SpriteType = {
+    name = "GFX_state8_3"
+    texturefile = "gfx/MAOYUANXIN/state8_3.png"
+}
+SpriteType = {
+    name = "GFX_state8_4"
+    texturefile = "gfx/MAOYUANXIN/state8_4.png"
+}
+SpriteType = {
+    name = "GFX_state9_1"
+    texturefile = "gfx/MAOYUANXIN/state9_1.png"
+}
+SpriteType = {
+    name = "GFX_state9_2"
+    texturefile = "gfx/MAOYUANXIN/state9_2.png"
+}
+SpriteType = {
+    name = "GFX_state9_3"
+    texturefile = "gfx/MAOYUANXIN/state9_3.png"
+}
+SpriteType = {
+    name = "GFX_state9_4"
+    texturefile = "gfx/MAOYUANXIN/state9_4.png"
+}
+SpriteType = {
+    name = "GFX_state10_1"
+    texturefile = "gfx/MAOYUANXIN/state10_1.png"
+}
+SpriteType = {
+    name = "GFX_state10_2"
+    texturefile = "gfx/MAOYUANXIN/state10_2.png"
+}
+SpriteType = {
+    name = "GFX_state10_3"
+    texturefile = "gfx/MAOYUANXIN/state10_3.png"
+}
+SpriteType = {
+    name = "GFX_state10_4"
+    texturefile = "gfx/MAOYUANXIN/state10_4.png"
+}
+SpriteType = {
+    name = "GFX_state11_1"
+    texturefile = "gfx/MAOYUANXIN/state11_1.png"
+}
+SpriteType = {
+    name = "GFX_state11_2"
+    texturefile = "gfx/MAOYUANXIN/state11_2.png"
+}
+SpriteType = {
+    name = "GFX_state11_3"
+    texturefile = "gfx/MAOYUANXIN/state11_3.png"
+}
+SpriteType = {
+    name = "GFX_state11_4"
+    texturefile = "gfx/MAOYUANXIN/state11_4.png"
+}
+SpriteType = {
+    name = "GFX_state12_1"
+    texturefile = "gfx/MAOYUANXIN/state12_1.png"
+}
+SpriteType = {
+    name = "GFX_state12_2"
+    texturefile = "gfx/MAOYUANXIN/state12_2.png"
+}
+SpriteType = {
+    name = "GFX_state12_3"
+    texturefile = "gfx/MAOYUANXIN/state12_3.png"
+}
+SpriteType = {
+    name = "GFX_state12_4"
+    texturefile = "gfx/MAOYUANXIN/state12_4.png"
+}
+SpriteType = {
+    name = "GFX_state13_1"
+    texturefile = "gfx/MAOYUANXIN/state13_1.png"
+}
+SpriteType = {
+    name = "GFX_state13_2"
+    texturefile = "gfx/MAOYUANXIN/state13_2.png"
+}
+SpriteType = {
+    name = "GFX_state13_3"
+    texturefile = "gfx/MAOYUANXIN/state13_3.png"
+}
+SpriteType = {
+    name = "GFX_state13_4"
+    texturefile = "gfx/MAOYUANXIN/state13_4.png"
+}
+SpriteType = {
+    name = "GFX_state14_1"
+    texturefile = "gfx/MAOYUANXIN/state14_1.png"
+}
+SpriteType = {
+    name = "GFX_state14_2"
+    texturefile = "gfx/MAOYUANXIN/state14_2.png"
+}
+SpriteType = {
+    name = "GFX_state14_3"
+    texturefile = "gfx/MAOYUANXIN/state14_3.png"
+}
+SpriteType = {
+    name = "GFX_state14_4"
+    texturefile = "gfx/MAOYUANXIN/state14_4.png"
+}
+SpriteType = {
+    name = "GFX_state15_1"
+    texturefile = "gfx/MAOYUANXIN/state15_1.png"
+}
+SpriteType = {
+    name = "GFX_state15_2"
+    texturefile = "gfx/MAOYUANXIN/state15_2.png"
+}
+SpriteType = {
+    name = "GFX_state15_3"
+    texturefile = "gfx/MAOYUANXIN/state15_3.png"
+}
+SpriteType = {
+    name = "GFX_state15_4"
+    texturefile = "gfx/MAOYUANXIN/state15_4.png"
+}
+SpriteType = {
+    name = "GFX_state16_1"
+    texturefile = "gfx/MAOYUANXIN/state16_1.png"
+}
+SpriteType = {
+    name = "GFX_state16_2"
+    texturefile = "gfx/MAOYUANXIN/state16_2.png"
+}
+SpriteType = {
+    name = "GFX_state16_3"
+    texturefile = "gfx/MAOYUANXIN/state16_3.png"
+}
+SpriteType = {
+    name = "GFX_state16_4"
+    texturefile = "gfx/MAOYUANXIN/state16_4.png"
+}
+SpriteType = {
+    name = "GFX_state17_1"
+    texturefile = "gfx/MAOYUANXIN/state17_1.png"
+}
+SpriteType = {
+    name = "GFX_state17_2"
+    texturefile = "gfx/MAOYUANXIN/state17_2.png"
+}
+SpriteType = {
+    name = "GFX_state17_3"
+    texturefile = "gfx/MAOYUANXIN/state17_3.png"
+}
+SpriteType = {
+    name = "GFX_state17_4"
+    texturefile = "gfx/MAOYUANXIN/state17_4.png"
+}
+SpriteType = {
+    name = "GFX_state18_1"
+    texturefile = "gfx/MAOYUANXIN/state18_1.png"
+}
+SpriteType = {
+    name = "GFX_state18_2"
+    texturefile = "gfx/MAOYUANXIN/state18_2.png"
+}
+SpriteType = {
+    name = "GFX_state18_3"
+    texturefile = "gfx/MAOYUANXIN/state18_3.png"
+}
+SpriteType = {
+    name = "GFX_state18_4"
+    texturefile = "gfx/MAOYUANXIN/state18_4.png"
+}
+SpriteType = {
+    name = "GFX_state19_1"
+    texturefile = "gfx/MAOYUANXIN/state19_1.png"
+}
+SpriteType = {
+    name = "GFX_state19_2"
+    texturefile = "gfx/MAOYUANXIN/state19_2.png"
+}
+SpriteType = {
+    name = "GFX_state19_3"
+    texturefile = "gfx/MAOYUANXIN/state19_3.png"
+}
+SpriteType = {
+    name = "GFX_state19_4"
+    texturefile = "gfx/MAOYUANXIN/state19_4.png"
+}
+SpriteType = {
+    name = "GFX_state20_1"
+    texturefile = "gfx/MAOYUANXIN/state20_1.png"
+}
+SpriteType = {
+    name = "GFX_state20_2"
+    texturefile = "gfx/MAOYUANXIN/state20_2.png"
+}
+SpriteType = {
+    name = "GFX_state20_3"
+    texturefile = "gfx/MAOYUANXIN/state20_3.png"
+}
+SpriteType = {
+    name = "GFX_state20_4"
+    texturefile = "gfx/MAOYUANXIN/state20_4.png"
+}
+SpriteType = {
+    name = "GFX_state21_1"
+    texturefile = "gfx/MAOYUANXIN/state21_1.png"
+}
+SpriteType = {
+    name = "GFX_state21_2"
+    texturefile = "gfx/MAOYUANXIN/state21_2.png"
+}
+SpriteType = {
+    name = "GFX_state21_3"
+    texturefile = "gfx/MAOYUANXIN/state21_3.png"
+}
+SpriteType = {
+    name = "GFX_state21_4"
+    texturefile = "gfx/MAOYUANXIN/state21_4.png"
+}
+SpriteType = {
+    name = "GFX_state22_1"
+    texturefile = "gfx/MAOYUANXIN/state22_1.png"
+}
+SpriteType = {
+    name = "GFX_state22_2"
+    texturefile = "gfx/MAOYUANXIN/state22_2.png"
+}
+SpriteType = {
+    name = "GFX_state22_3"
+    texturefile = "gfx/MAOYUANXIN/state22_3.png"
+}
+SpriteType = {
+    name = "GFX_state22_4"
+    texturefile = "gfx/MAOYUANXIN/state22_4.png"
+}
+SpriteType = {
+    name = "GFX_state23_1"
+    texturefile = "gfx/MAOYUANXIN/state23_1.png"
+}
+SpriteType = {
+    name = "GFX_state23_2"
+    texturefile = "gfx/MAOYUANXIN/state23_2.png"
+}
+SpriteType = {
+    name = "GFX_state23_3"
+    texturefile = "gfx/MAOYUANXIN/state23_3.png"
+}
+SpriteType = {
+    name = "GFX_state23_4"
+    texturefile = "gfx/MAOYUANXIN/state23_4.png"
+}
+SpriteType = {
+    name = "GFX_state24_1"
+    texturefile = "gfx/MAOYUANXIN/state24_1.png"
+}
+SpriteType = {
+    name = "GFX_state24_2"
+    texturefile = "gfx/MAOYUANXIN/state24_2.png"
+}
+SpriteType = {
+    name = "GFX_state24_3"
+    texturefile = "gfx/MAOYUANXIN/state24_3.png"
+}
+SpriteType = {
+    name = "GFX_state24_4"
+    texturefile = "gfx/MAOYUANXIN/state24_4.png"
+}
+SpriteType = {
+    name = "GFX_state25_1"
+    texturefile = "gfx/MAOYUANXIN/state25_1.png"
+}
+SpriteType = {
+    name = "GFX_state25_2"
+    texturefile = "gfx/MAOYUANXIN/state25_2.png"
+}
+SpriteType = {
+    name = "GFX_state25_3"
+    texturefile = "gfx/MAOYUANXIN/state25_3.png"
+}
+SpriteType = {
+    name = "GFX_state25_4"
+    texturefile = "gfx/MAOYUANXIN/state25_4.png"
+}
+SpriteType = {
+    name = "GFX_state26_1"
+    texturefile = "gfx/MAOYUANXIN/state26_1.png"
+}
+SpriteType = {
+    name = "GFX_state26_2"
+    texturefile = "gfx/MAOYUANXIN/state26_2.png"
+}
+SpriteType = {
+    name = "GFX_state26_3"
+    texturefile = "gfx/MAOYUANXIN/state26_3.png"
+}
+SpriteType = {
+    name = "GFX_state26_4"
+    texturefile = "gfx/MAOYUANXIN/state26_4.png"
+}
+SpriteType = {
+    name = "GFX_state27_1"
+    texturefile = "gfx/MAOYUANXIN/state27_1.png"
+}
+SpriteType = {
+    name = "GFX_state27_2"
+    texturefile = "gfx/MAOYUANXIN/state27_2.png"
+}
+SpriteType = {
+    name = "GFX_state27_3"
+    texturefile = "gfx/MAOYUANXIN/state27_3.png"
+}
+SpriteType = {
+    name = "GFX_state27_4"
+    texturefile = "gfx/MAOYUANXIN/state27_4.png"
+}
+SpriteType = {
+    name = "GFX_state28_1"
+    texturefile = "gfx/MAOYUANXIN/state28_1.png"
+}
+SpriteType = {
+    name = "GFX_state28_2"
+    texturefile = "gfx/MAOYUANXIN/state28_2.png"
+}
+SpriteType = {
+    name = "GFX_state28_3"
+    texturefile = "gfx/MAOYUANXIN/state28_3.png"
+}
+SpriteType = {
+    name = "GFX_state28_4"
+    texturefile = "gfx/MAOYUANXIN/state28_4.png"
+}
+SpriteType = {
+    name = "GFX_state29_1"
+    texturefile = "gfx/MAOYUANXIN/state29_1.png"
+}
+SpriteType = {
+    name = "GFX_state29_2"
+    texturefile = "gfx/MAOYUANXIN/state29_2.png"
+}
+SpriteType = {
+    name = "GFX_state29_3"
+    texturefile = "gfx/MAOYUANXIN/state29_3.png"
+}
+SpriteType = {
+    name = "GFX_state29_4"
+    texturefile = "gfx/MAOYUANXIN/state29_4.png"
+}
+SpriteType = {
+    name = "GFX_state30_1"
+    texturefile = "gfx/MAOYUANXIN/state30_1.png"
+}
+SpriteType = {
+    name = "GFX_state30_2"
+    texturefile = "gfx/MAOYUANXIN/state30_2.png"
+}
+SpriteType = {
+    name = "GFX_state30_3"
+    texturefile = "gfx/MAOYUANXIN/state30_3.png"
+}
+SpriteType = {
+    name = "GFX_state30_4"
+    texturefile = "gfx/MAOYUANXIN/state30_4.png"
+}
+SpriteType = {
+    name = "GFX_state31_1"
+    texturefile = "gfx/MAOYUANXIN/state31_1.png"
+}
+SpriteType = {
+    name = "GFX_state31_2"
+    texturefile = "gfx/MAOYUANXIN/state31_2.png"
+}
+SpriteType = {
+    name = "GFX_state31_3"
+    texturefile = "gfx/MAOYUANXIN/state31_3.png"
+}
+SpriteType = {
+    name = "GFX_state31_4"
+    texturefile = "gfx/MAOYUANXIN/state31_4.png"
+}
+SpriteType = {
+    name = "GFX_state32_1"
+    texturefile = "gfx/MAOYUANXIN/state32_1.png"
+}
+SpriteType = {
+    name = "GFX_state32_2"
+    texturefile = "gfx/MAOYUANXIN/state32_2.png"
+}
+SpriteType = {
+    name = "GFX_state32_3"
+    texturefile = "gfx/MAOYUANXIN/state32_3.png"
+}
+SpriteType = {
+    name = "GFX_state32_4"
+    texturefile = "gfx/MAOYUANXIN/state32_4.png"
+}
+SpriteType = {
+    name = "GFX_state33_1"
+    texturefile = "gfx/MAOYUANXIN/state33_1.png"
+}
+SpriteType = {
+    name = "GFX_state33_2"
+    texturefile = "gfx/MAOYUANXIN/state33_2.png"
+}
+SpriteType = {
+    name = "GFX_state33_3"
+    texturefile = "gfx/MAOYUANXIN/state33_3.png"
+}
+SpriteType = {
+    name = "GFX_state33_4"
+    texturefile = "gfx/MAOYUANXIN/state33_4.png"
+}
+SpriteType = {
+    name = "GFX_state34_1"
+    texturefile = "gfx/MAOYUANXIN/state34_1.png"
+}
+SpriteType = {
+    name = "GFX_state34_2"
+    texturefile = "gfx/MAOYUANXIN/state34_2.png"
+}
+SpriteType = {
+    name = "GFX_state34_3"
+    texturefile = "gfx/MAOYUANXIN/state34_3.png"
+}
+SpriteType = {
+    name = "GFX_state34_4"
+    texturefile = "gfx/MAOYUANXIN/state34_4.png"
+}
+SpriteType = {
+    name = "GFX_state35_1"
+    texturefile = "gfx/MAOYUANXIN/state35_1.png"
+}
+SpriteType = {
+    name = "GFX_state35_2"
+    texturefile = "gfx/MAOYUANXIN/state35_2.png"
+}
+SpriteType = {
+    name = "GFX_state35_3"
+    texturefile = "gfx/MAOYUANXIN/state35_3.png"
+}
+SpriteType = {
+    name = "GFX_state35_4"
+    texturefile = "gfx/MAOYUANXIN/state35_4.png"
+}
+SpriteType = {
+    name = "GFX_state36_1"
+    texturefile = "gfx/MAOYUANXIN/state36_1.png"
+}
+SpriteType = {
+    name = "GFX_state36_2"
+    texturefile = "gfx/MAOYUANXIN/state36_2.png"
+}
+SpriteType = {
+    name = "GFX_state36_3"
+    texturefile = "gfx/MAOYUANXIN/state36_3.png"
+}
+SpriteType = {
+    name = "GFX_state36_4"
+    texturefile = "gfx/MAOYUANXIN/state36_4.png"
+}
+SpriteType = {
+    name = "GFX_state37_1"
+    texturefile = "gfx/MAOYUANXIN/state37_1.png"
+}
+SpriteType = {
+    name = "GFX_state37_2"
+    texturefile = "gfx/MAOYUANXIN/state37_2.png"
+}
+SpriteType = {
+    name = "GFX_state37_3"
+    texturefile = "gfx/MAOYUANXIN/state37_3.png"
+}
+SpriteType = {
+    name = "GFX_state37_4"
+    texturefile = "gfx/MAOYUANXIN/state37_4.png"
+}
+SpriteType = {
+    name = "GFX_state38_1"
+    texturefile = "gfx/MAOYUANXIN/state38_1.png"
+}
+SpriteType = {
+    name = "GFX_state38_2"
+    texturefile = "gfx/MAOYUANXIN/state38_2.png"
+}
+SpriteType = {
+    name = "GFX_state38_3"
+    texturefile = "gfx/MAOYUANXIN/state38_3.png"
+}
+SpriteType = {
+    name = "GFX_state38_4"
+    texturefile = "gfx/MAOYUANXIN/state38_4.png"
+}
+SpriteType = {
+    name = "GFX_state39_1"
+    texturefile = "gfx/MAOYUANXIN/state39_1.png"
+}
+SpriteType = {
+    name = "GFX_state39_2"
+    texturefile = "gfx/MAOYUANXIN/state39_2.png"
+}
+SpriteType = {
+    name = "GFX_state39_3"
+    texturefile = "gfx/MAOYUANXIN/state39_3.png"
+}
+SpriteType = {
+    name = "GFX_state39_4"
+    texturefile = "gfx/MAOYUANXIN/state39_4.png"
+}
+SpriteType = {
+    name = "GFX_state40_1"
+    texturefile = "gfx/MAOYUANXIN/state40_1.png"
+}
+SpriteType = {
+    name = "GFX_state40_2"
+    texturefile = "gfx/MAOYUANXIN/state40_2.png"
+}
+SpriteType = {
+    name = "GFX_state40_3"
+    texturefile = "gfx/MAOYUANXIN/state40_3.png"
+}
+SpriteType = {
+    name = "GFX_state40_4"
+    texturefile = "gfx/MAOYUANXIN/state40_4.png"
+}
+SpriteType = {
+    name = "GFX_state41_1"
+    texturefile = "gfx/MAOYUANXIN/state41_1.png"
+}
+SpriteType = {
+    name = "GFX_state41_2"
+    texturefile = "gfx/MAOYUANXIN/state41_2.png"
+}
+SpriteType = {
+    name = "GFX_state41_3"
+    texturefile = "gfx/MAOYUANXIN/state41_3.png"
+}
+SpriteType = {
+    name = "GFX_state41_4"
+    texturefile = "gfx/MAOYUANXIN/state41_4.png"
+}
+SpriteType = {
+    name = "GFX_state42_1"
+    texturefile = "gfx/MAOYUANXIN/state42_1.png"
+}
+SpriteType = {
+    name = "GFX_state42_2"
+    texturefile = "gfx/MAOYUANXIN/state42_2.png"
+}
+SpriteType = {
+    name = "GFX_state42_3"
+    texturefile = "gfx/MAOYUANXIN/state42_3.png"
+}
+SpriteType = {
+    name = "GFX_state42_4"
+    texturefile = "gfx/MAOYUANXIN/state42_4.png"
+}
+SpriteType = {
+    name = "GFX_state43_1"
+    texturefile = "gfx/MAOYUANXIN/state43_1.png"
+}
+SpriteType = {
+    name = "GFX_state43_2"
+    texturefile = "gfx/MAOYUANXIN/state43_2.png"
+}
+SpriteType = {
+    name = "GFX_state43_3"
+    texturefile = "gfx/MAOYUANXIN/state43_3.png"
+}
+SpriteType = {
+    name = "GFX_state43_4"
+    texturefile = "gfx/MAOYUANXIN/state43_4.png"
+}
+SpriteType = {
+    name = "GFX_state44_1"
+    texturefile = "gfx/MAOYUANXIN/state44_1.png"
+}
+SpriteType = {
+    name = "GFX_state44_2"
+    texturefile = "gfx/MAOYUANXIN/state44_2.png"
+}
+SpriteType = {
+    name = "GFX_state44_3"
+    texturefile = "gfx/MAOYUANXIN/state44_3.png"
+}
+SpriteType = {
+    name = "GFX_state44_4"
+    texturefile = "gfx/MAOYUANXIN/state44_4.png"
+}
+SpriteType = {
+    name = "GFX_state45_1"
+    texturefile = "gfx/MAOYUANXIN/state45_1.png"
+}
+SpriteType = {
+    name = "GFX_state45_2"
+    texturefile = "gfx/MAOYUANXIN/state45_2.png"
+}
+SpriteType = {
+    name = "GFX_state45_3"
+    texturefile = "gfx/MAOYUANXIN/state45_3.png"
+}
+SpriteType = {
+    name = "GFX_state45_4"
+    texturefile = "gfx/MAOYUANXIN/state45_4.png"
+}
+SpriteType = {
+    name = "GFX_state46_1"
+    texturefile = "gfx/MAOYUANXIN/state46_1.png"
+}
+SpriteType = {
+    name = "GFX_state46_2"
+    texturefile = "gfx/MAOYUANXIN/state46_2.png"
+}
+SpriteType = {
+    name = "GFX_state46_3"
+    texturefile = "gfx/MAOYUANXIN/state46_3.png"
+}
+SpriteType = {
+    name = "GFX_state46_4"
+    texturefile = "gfx/MAOYUANXIN/state46_4.png"
+}
+SpriteType = {
+    name = "GFX_state47_1"
+    texturefile = "gfx/MAOYUANXIN/state47_1.png"
+}
+SpriteType = {
+    name = "GFX_state47_2"
+    texturefile = "gfx/MAOYUANXIN/state47_2.png"
+}
+SpriteType = {
+    name = "GFX_state47_3"
+    texturefile = "gfx/MAOYUANXIN/state47_3.png"
+}
+SpriteType = {
+    name = "GFX_state47_4"
+    texturefile = "gfx/MAOYUANXIN/state47_4.png"
+}
+SpriteType = {
+    name = "GFX_state48_1"
+    texturefile = "gfx/MAOYUANXIN/state48_1.png"
+}
+SpriteType = {
+    name = "GFX_state48_2"
+    texturefile = "gfx/MAOYUANXIN/state48_2.png"
+}
+SpriteType = {
+    name = "GFX_state48_3"
+    texturefile = "gfx/MAOYUANXIN/state48_3.png"
+}
+SpriteType = {
+    name = "GFX_state48_4"
+    texturefile = "gfx/MAOYUANXIN/state48_4.png"
+}
+SpriteType = {
+    name = "GFX_state49_1"
+    texturefile = "gfx/MAOYUANXIN/state49_1.png"
+}
+SpriteType = {
+    name = "GFX_state49_2"
+    texturefile = "gfx/MAOYUANXIN/state49_2.png"
+}
+SpriteType = {
+    name = "GFX_state49_3"
+    texturefile = "gfx/MAOYUANXIN/state49_3.png"
+}
+SpriteType = {
+    name = "GFX_state49_4"
+    texturefile = "gfx/MAOYUANXIN/state49_4.png"
+}
+SpriteType = {
+    name = "GFX_state50_1"
+    texturefile = "gfx/MAOYUANXIN/state50_1.png"
+}
+SpriteType = {
+    name = "GFX_state50_2"
+    texturefile = "gfx/MAOYUANXIN/state50_2.png"
+}
+SpriteType = {
+    name = "GFX_state50_3"
+    texturefile = "gfx/MAOYUANXIN/state50_3.png"
+}
+SpriteType = {
+    name = "GFX_state50_4"
+    texturefile = "gfx/MAOYUANXIN/state50_4.png"
+}
+SpriteType = {
+    name = "GFX_state51_1"
+    texturefile = "gfx/MAOYUANXIN/state51_1.png"
+}
+SpriteType = {
+    name = "GFX_state51_2"
+    texturefile = "gfx/MAOYUANXIN/state51_2.png"
+}
+SpriteType = {
+    name = "GFX_state51_3"
+    texturefile = "gfx/MAOYUANXIN/state51_3.png"
+}
+SpriteType = {
+    name = "GFX_state51_4"
+    texturefile = "gfx/MAOYUANXIN/state51_4.png"
+}
+SpriteType = {
+    name = "GFX_state52_1"
+    texturefile = "gfx/MAOYUANXIN/state52_1.png"
+}
+SpriteType = {
+    name = "GFX_state52_2"
+    texturefile = "gfx/MAOYUANXIN/state52_2.png"
+}
+SpriteType = {
+    name = "GFX_state52_3"
+    texturefile = "gfx/MAOYUANXIN/state52_3.png"
+}
+SpriteType = {
+    name = "GFX_state52_4"
+    texturefile = "gfx/MAOYUANXIN/state52_4.png"
+}
+SpriteType = {
+    name = "GFX_state53_1"
+    texturefile = "gfx/MAOYUANXIN/state53_1.png"
+}
+SpriteType = {
+    name = "GFX_state53_2"
+    texturefile = "gfx/MAOYUANXIN/state53_2.png"
+}
+SpriteType = {
+    name = "GFX_state53_3"
+    texturefile = "gfx/MAOYUANXIN/state53_3.png"
+}
+SpriteType = {
+    name = "GFX_state53_4"
+    texturefile = "gfx/MAOYUANXIN/state53_4.png"
+}
+SpriteType = {
+    name = "GFX_state54_1"
+    texturefile = "gfx/MAOYUANXIN/state54_1.png"
+}
+SpriteType = {
+    name = "GFX_state54_2"
+    texturefile = "gfx/MAOYUANXIN/state54_2.png"
+}
+SpriteType = {
+    name = "GFX_state54_3"
+    texturefile = "gfx/MAOYUANXIN/state54_3.png"
+}
+SpriteType = {
+    name = "GFX_state54_4"
+    texturefile = "gfx/MAOYUANXIN/state54_4.png"
+}
+SpriteType = {
+    name = "GFX_state55_1"
+    texturefile = "gfx/MAOYUANXIN/state55_1.png"
+}
+SpriteType = {
+    name = "GFX_state55_2"
+    texturefile = "gfx/MAOYUANXIN/state55_2.png"
+}
+SpriteType = {
+    name = "GFX_state55_3"
+    texturefile = "gfx/MAOYUANXIN/state55_3.png"
+}
+SpriteType = {
+    name = "GFX_state55_4"
+    texturefile = "gfx/MAOYUANXIN/state55_4.png"
+}
+SpriteType = {
+    name = "GFX_state56_1"
+    texturefile = "gfx/MAOYUANXIN/state56_1.png"
+}
+SpriteType = {
+    name = "GFX_state56_2"
+    texturefile = "gfx/MAOYUANXIN/state56_2.png"
+}
+SpriteType = {
+    name = "GFX_state56_3"
+    texturefile = "gfx/MAOYUANXIN/state56_3.png"
+}
+SpriteType = {
+    name = "GFX_state56_4"
+    texturefile = "gfx/MAOYUANXIN/state56_4.png"
+}
+SpriteType = {
+    name = "GFX_state57_1"
+    texturefile = "gfx/MAOYUANXIN/state57_1.png"
+}
+SpriteType = {
+    name = "GFX_state57_2"
+    texturefile = "gfx/MAOYUANXIN/state57_2.png"
+}
+SpriteType = {
+    name = "GFX_state57_3"
+    texturefile = "gfx/MAOYUANXIN/state57_3.png"
+}
+SpriteType = {
+    name = "GFX_state57_4"
+    texturefile = "gfx/MAOYUANXIN/state57_4.png"
+}
+SpriteType = {
+    name = "GFX_state58_1"
+    texturefile = "gfx/MAOYUANXIN/state58_1.png"
+}
+SpriteType = {
+    name = "GFX_state58_2"
+    texturefile = "gfx/MAOYUANXIN/state58_2.png"
+}
+SpriteType = {
+    name = "GFX_state58_3"
+    texturefile = "gfx/MAOYUANXIN/state58_3.png"
+}
+SpriteType = {
+    name = "GFX_state58_4"
+    texturefile = "gfx/MAOYUANXIN/state58_4.png"
+}
+SpriteType = {
+    name = "GFX_state59_1"
+    texturefile = "gfx/MAOYUANXIN/state59_1.png"
+}
+SpriteType = {
+    name = "GFX_state59_2"
+    texturefile = "gfx/MAOYUANXIN/state59_2.png"
+}
+SpriteType = {
+    name = "GFX_state59_3"
+    texturefile = "gfx/MAOYUANXIN/state59_3.png"
+}
+SpriteType = {
+    name = "GFX_state59_4"
+    texturefile = "gfx/MAOYUANXIN/state59_4.png"
+}
+SpriteType = {
+    name = "GFX_state60_1"
+    texturefile = "gfx/MAOYUANXIN/state60_1.png"
+}
+SpriteType = {
+    name = "GFX_state60_2"
+    texturefile = "gfx/MAOYUANXIN/state60_2.png"
+}
+SpriteType = {
+    name = "GFX_state60_3"
+    texturefile = "gfx/MAOYUANXIN/state60_3.png"
+}
+SpriteType = {
+    name = "GFX_state60_4"
+    texturefile = "gfx/MAOYUANXIN/state60_4.png"
+}
+SpriteType = {
+    name = "GFX_state61_1"
+    texturefile = "gfx/MAOYUANXIN/state61_1.png"
+}
+SpriteType = {
+    name = "GFX_state61_2"
+    texturefile = "gfx/MAOYUANXIN/state61_2.png"
+}
+SpriteType = {
+    name = "GFX_state61_3"
+    texturefile = "gfx/MAOYUANXIN/state61_3.png"
+}
+SpriteType = {
+    name = "GFX_state61_4"
+    texturefile = "gfx/MAOYUANXIN/state61_4.png"
+}
+
+}

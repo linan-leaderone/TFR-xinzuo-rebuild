@@ -16,7 +16,41 @@ spriteTypes = {
             looping = yes
             play_on_show = yes
 		}		
-								
+				
+	SpriteType = {
+		name = "GFX_TZL_JJFZ_HJH_banner"
+		texturefile = "gfx/MAOYUANXIN/TZL_JJFZ_HJH1.png"
+		legacy_lazy_load = no
+	}							
+	SpriteType = {
+		name = "GFX_TZL_WJLX_DT"
+		texturefile = "gfx/MAOYUANXIN/TZL_WJLX_DT.png"
+	}							
+	SpriteType = {
+		name = "GFX_TJZ_Member3"
+		texturefile = "gfx/MAOYUANXIN/TJZ_Member3.png"
+	}								
+	SpriteType = {
+		name = "GFX_idea_TJZ_Member4"
+		texturefile = "gfx/MAOYUANXIN/TJZ_Member4.png"
+	}							
+	SpriteType = {
+		name = "GFX_TZL_WJLX_DT1"
+		texturefile = "gfx/MAOYUANXIN/TZL_WJLX_DT1.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_JJFZ_DT1"
+		texturefile = "gfx/MAOYUANXIN/TZL_JJFZ_DT1.png"
+	}				
+	SpriteType = {
+		name = "GFX_TZL_JJFZ_DT"
+		texturefile = "gfx/MAOYUANXIN/TZL_JJFZ_DT.png"
+	}						
+	SpriteType = {
+		name = "GFX_kangmijiaobiao_banner"
+		texturefile = "gfx/MAOYUANXIN/kangmijiaobiao.png"
+		legacy_lazy_load = no
+	}						
 	SpriteType = {
 		name = "GFX_Ideology_national_anarchist_banner"
 		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_national_anarchist_banner.png"

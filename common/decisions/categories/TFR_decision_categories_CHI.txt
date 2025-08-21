@@ -16,3 +16,32 @@
 			date < 2025.1.1
 		}
 	}
+	
+	TZL_JJFZ_category = {
+		icon = GFX_TZL_JJFZ_DT
+		#picture = GFX_CHI_test_of_will_banner_animated
+		priority = 4
+		#visible_when_empty = yes
+
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+    	has_completed_focus = TZL_TWW_FOCUS_16
+
+		}
+	}	
+	TZL_WJLX_category = {
+		icon = GFX_TZL_WJLX_DT
+		#picture = GFX_CHI_test_of_will_banner_animated
+		priority = 4
+		#visible_when_empty = yes
+
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+    	has_completed_focus = TZL_TWW_FOCUS_17
+
+		}
+	}

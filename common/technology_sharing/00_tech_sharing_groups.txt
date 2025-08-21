@@ -12,6 +12,22 @@ technology_sharing_group = {
     }
 
 }
+technology_sharing_group = {
+
+	id = TJZ_research
+	name = TJZ_research_name
+	desc = TJZ_research_desc
+	picture = GFX_TJZ_Member3
+    
+	research_sharing_per_country_bonus = 0.8
+
+    OR = {
+        is_in_faction_with = TSU
+        is_in_faction_with = NPA
+        is_in_faction_with = TZL
+    }
+
+}
 
 technology_sharing_group = {
 

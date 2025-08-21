@@ -4863,12 +4863,6 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	offset = {
-		x = -26
-		trigger = {
-			has_country_flag = PRC_nationalist_win
-		}
-	}
 	prerequisite = {
 	}
 	available = {

@@ -1,0 +1,376 @@
+TZL_WJLX_category = {
+
+	TZL_WJLX_mal = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	MAL = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+	TZL_WJLX_ins = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	INS = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+	TZL_WJLX_sig = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	SIG = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+
+	TZL_WJLX_raj = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	RAJ = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+
+	TZL_WJLX_png = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	PNG = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+
+	TZL_WJLX_prc = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_21
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	PRC = {
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.03
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+	TZL_WJLX_hkn = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	HKN = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+	TZL_WJLX_ben = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	BAN = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+	TZL_WJLX_srl = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	SRL = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.07
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+
+	TZL_WJLX_ast = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	AST = {
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+
+
+	TZL_WJLX_nzl = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+
+		}
+		days_remove = 35
+		fire_only_once = no
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	NZL = {
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.05
+			}
+			}		
+
+		}
+		cost = 100
+	}
+
+
+
+
+
+	}

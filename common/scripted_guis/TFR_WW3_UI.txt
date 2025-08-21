@@ -1,0 +1,37 @@
+	scripted_gui = {
+		TFR_WW3_GUI = {
+		context_type = player_context
+		parent_window_token = top_bar
+			window_name = "TFR_WW3_GUI_container"
+
+		visible = {
+		OR = {
+	original_tag = TZL
+	original_tag = TSU
+		}
+		}
+
+			triggers = {
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}

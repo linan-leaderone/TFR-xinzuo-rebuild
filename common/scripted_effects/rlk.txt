@@ -110,12 +110,121 @@ RED_JAP_REV_ARMY = yes
 
 					transfer_units_fraction = {
 						target = TJJ
-						army_ratio = 0.3       
+						army_ratio = 0.1       
 					keep_unit_leaders_trigger = {
 						always = no 
 					}	
+					}
+
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.1}
 					}	
-					}					
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.2}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.3}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.4}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.5}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.6}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.7}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.8}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}	
+			if = {
+				limit = {
+	AST = {libertarian_socialist > 0.9}
+					}	
+					transfer_units_fraction = {
+						target = TJJ
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+				}
 			NZL = {
 		declare_war_on = {
 			target = TJJ
@@ -232,12 +341,120 @@ set_popularities = {
 	TSU = {RED_JAP_REV_ARMY = yes}
 					transfer_units_fraction = {
 						target = KMT
-						army_ratio = 0.3       
+						army_ratio = 0.1       
 					keep_unit_leaders_trigger = {
 						always = no 
 					}	
 					}
 
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.1}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.2}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.2       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.3}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.4}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.4      
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.5}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.6}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.7}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.8}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	MAL = {totalitarian_socialist > 0.9}
+					}	
+					transfer_units_fraction = {
+						target = KMT
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
 	TSU = {RED_JAP_REV_ARMY = yes}
 
 					}	

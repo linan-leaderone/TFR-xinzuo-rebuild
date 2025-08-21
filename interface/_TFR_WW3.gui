@@ -1,0 +1,30 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_WW3_GUI_container"
+		position = { x=0 y=0 }	
+		size = { width=1200 height= 815 }
+		Orientation = center
+		Origo = center
+		clipping = no	
+		moveable = no
+
+		background = {
+			name = "Background"           
+			quadTextureSprite ="GFX_WWW_back"
+		}
+
+		buttonType = {
+			name = "WWW_guanbi"
+			position = { x = 1140 y = 0 }
+			spriteType = "GFX_WWW_guanbi"
+			pdx_tooltip = "WWW_guanbi_tt"
+		}
+						
+		iconType = {
+			name = "WWW_tishi"            
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_WWW_tishi"
+			pdx_tooltip = "WWW_tishi_tt"
+		}	
+		}
+		}

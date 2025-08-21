@@ -130,28 +130,53 @@ TSU = {
 				add_dynamic_modifier = {
 					modifier = red_unity_army_dynamic
 				}
+
+				add_dynamic_modifier = {
+					modifier = red_TJZ_dynamic
+				}
 				add_to_variable = {
-					var = red_unity_army_army_org_factor_dynamic_var
+					var = TSU.red_TJZ_political_power_gain_dynamic_var
+					value = 0.5
+				}
+				add_to_variable = {
+					var = TSU.red_TJZ_research_speed_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = TSU.red_TJZ_production_speed_buildings_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = TSU.red_TJZ_business_value_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = TSU.red_TJZ_income_growth_factor_dynamic_var
+					value = 0.05
+				}
+
+				add_to_variable = {
+					var = TSU.red_unity_army_army_org_factor_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = red_unity_army_army_defence_factor_dynamic_var
+					var = TSU.red_unity_army_army_defence_factor_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = red_unity_army_army_attack_factor_dynamic_var
+					var = TSU.red_unity_army_army_attack_factor_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = red_unity_army_army_core_attack_factor_dynamic_var
+					var = TSU.red_unity_army_army_core_attack_factor_dynamic_var
 					value = 0.3
 				}
 				add_to_variable = {
-					var = red_unity_army_army_core_defence_factor_dynamic_var
+					var = TSU.red_unity_army_army_core_defence_factor_dynamic_var
 					value = 0.3
 				}
 				add_to_variable = {
-					var = red_unity_army_surrender_limit_dynamic_var
+					var = TSU.red_unity_army_surrender_limit_dynamic_var
 					value = 0.20
 				}
 			every_state = {
