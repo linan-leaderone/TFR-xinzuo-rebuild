@@ -235,7 +235,9 @@ set_popularities = {
 
 					transfer_units_fraction = {
 						target = TSU
-						army_ratio = 0.7       
+    army_ratio = 0.7
+    navy_ratio = 1
+    air_ratio = 0.7 
 					keep_unit_leaders_trigger = {
 						always = no 
 					}	
@@ -375,7 +377,9 @@ RED_JAP_REV_ARMY = yes
 
 					transfer_units_fraction = {
 						target = MKL
-						army_ratio = 0.4       
+    army_ratio = 0.4
+    navy_ratio = 0.4
+    air_ratio = 0.4  
 					keep_unit_leaders_trigger = {
 						always = no 
 					}	
