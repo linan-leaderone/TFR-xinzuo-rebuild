@@ -2093,6 +2093,27 @@
 				add_state_core = 326
 				set_cosmetic_tag = HKN_revolution
 				load_oob = HKN_revolt
+
+			set_party_name = {
+				ideology = communist
+				long_name = MSJCIK
+				name = MSJCIK
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = MSJCIK1
+				name = MSJCIK1
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = MSJCIK2
+				name = MSJCIK2
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = MSJCIK3
+				name = MSJCIK3
+			}
 					}
 			326 = {
 				remove_dynamic_modifier = {

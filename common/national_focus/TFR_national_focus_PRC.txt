@@ -2527,19 +2527,8 @@ shared_focus = {
 	}
 	prerequisite = { focus = PRC_establish_eadi }
 	completion_reward = {
-	    hidden_effect = {
-						SOV = {
-			remove_ideas = duliyuanjing_2
-	}
-	}
-		if = {
-			limit = {
-				PAK = {
-					has_country_flag = PAK_lost_indo_pakistan_war
-				}					
-			}
-			unlock_decision_tooltip = PRC_revolution_in_pakistan
-		}
+	
+		
 	}
 }
 

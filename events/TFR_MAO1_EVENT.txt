@@ -2462,7 +2462,8 @@ IMA= {
         desc = PRC_MAO1.71.d
         picture = GFX_PRC_MAO1_event_71
         is_triggered_only = yes
-        fire_only_once = yes
+
+	major = yes
         option = {
             name = PRC_MAO1.71.a
 		trigger = {
@@ -2557,7 +2558,8 @@ set_politics = {
         desc = PRC_MAO1.73.d
         picture = GFX_PRC_MAO1_event_73
         is_triggered_only = yes
-        fire_only_once = yes
+
+	major = yes
         option = {
             name = PRC_MAO1.73.a
 		trigger = {
@@ -2655,7 +2657,8 @@ set_politics = {
         desc = PRC_MAO1.76.d
         picture = GFX_PRC_MAO1_event_76
         is_triggered_only = yes
-        fire_only_once = yes
+
+	major = yes
         option = {
             name = PRC_MAO1.76.a
         }

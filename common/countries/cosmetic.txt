@@ -2,6 +2,10 @@ MAL_NYG = {
 	color = rgb { 	205 20 20 }
 	color_ui = rgb { 205 20 20 }
 }
+NDLB = {
+	color = rgb { 	205 20 20 }
+	color_ui = rgb { 205 20 20 }
+}
 AST_NZL = {
 	color = rgb { 	205 20 20 }
 	color_ui = rgb { 205 20 20 }

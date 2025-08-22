@@ -21,6 +21,7 @@ TJJ = {
 				transfer_state = 734
 				transfer_state = 635
 				transfer_state = 641
+				transfer_state = 270
 				set_capital = {
 					state = 868
 				}
@@ -53,7 +54,8 @@ set_popularities = {
 
 
 	TSU = {add_to_faction = TJJ}
-
+	
+CHI_UZEDONG_SHANGTAI_8 = yes
 RED_JAP_REV_ARMY = yes
 				set_politics = {
 				ruling_party = libertarian_socialist

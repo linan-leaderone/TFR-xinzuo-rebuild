@@ -450,6 +450,7 @@ RED_JAP_REV_ARMY = yes
 			unlock_decision_tooltip = TZL_WJLX_nzl
 			unlock_decision_tooltip = TZL_WJLX_ben
 			unlock_decision_tooltip = TZL_WJLX_hkn
+			unlock_decision_tooltip = TZL_WJLX_hkn1
 			unlock_decision_tooltip = TZL_WJLX_raj
 			unlock_decision_tooltip = TZL_WJLX_srl
 		}
@@ -478,7 +479,21 @@ RED_JAP_REV_ARMY = yes
 	SRL = {communist > 0.5}
 		}
 		completion_reward = {
+				custom_effect_tooltip = CHI_TZL_TWW_FOCUS_20_tooltip
+						hidden_effect = {
+								country_event = {
+									id = PRC_MAO3.92
+								}	
+								TSU = {	
 			
+		SRL = {	country_event = {id = SRL.4}}
+	
+RED_JAP_REV_ARMY_1 = yes
+RED_JAP_REV_ARMY = yes
+RED_JAP_REV_ARMY = yes						
+}
+
+		}
 		}
 	} 
    focus = {
@@ -781,8 +796,12 @@ RED_JAP_REV_ARMY_1 = yes
 RED_JAP_REV_ARMY = yes
 RED_JAP_REV_ARMY = yes						
 }
-
-		NPA = {
+SIG = {
+transfer_navy = {
+    target = KMT
+}
+}
+		KMT = {
 			annex_country = {
     			target = SIG
     			transfer_troops = yes
@@ -792,7 +811,7 @@ RED_JAP_REV_ARMY = yes
 				limit = {
 					is_core_of = SIG
 				}
-			    add_core_of = NPA
+			    add_core_of = KMT
 		    }
 			every_state = {
 				limit = {

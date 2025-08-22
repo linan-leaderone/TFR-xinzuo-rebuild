@@ -15441,7 +15441,7 @@ ELN = {annex_country = {
 		}
 		
 		visible = {
-			has_completed_focus = PRC_masters_of_asia
+			always = no
 		}
 		
 		days_remove = 100

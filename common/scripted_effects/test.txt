@@ -2,6 +2,9 @@
 CHI_UZEDONG_SHANGTAI_6 = {
 HKN = {
 
+								country_event = {
+									id = PRC_MAO3.97
+								}	
 RED_JAP_REV_ARMY = yes
 
 			set_party_name = {

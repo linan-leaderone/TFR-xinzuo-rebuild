@@ -5644,7 +5644,8 @@ news_event = {
         desc = PRC_MAO.171.d
         picture = GFX_PRC_MAO_event_171
         is_triggered_only = yes
-        fire_only_once = yes
+
+	major = yes
 	option = {
 		name = PRC_MAO.171.a
 			hidden_effect = {
@@ -6770,7 +6771,7 @@ news_event = {
         desc = PRC_MAO.193.d
         picture = GFX_PRC_MAO_event_193
         is_triggered_only = yes
-        fire_only_once = yes
+	major = yes
 	option = {
 		name = PRC_MAO.193.a
 			hidden_effect = {
@@ -6793,7 +6794,7 @@ news_event = {
         desc = PRC_MAO.194.d
         picture = GFX_PRC_MAO_event_194
         is_triggered_only = yes
-        fire_only_once = yes
+	major = yes
         option = {
                 name = PRC_MAO.194.a
         }
@@ -6805,7 +6806,8 @@ news_event = {
         desc = PRC_MAO.195.d
         picture = GFX_PRC_MAO_event_195
         is_triggered_only = yes
-        fire_only_once = yes
+
+	major = yes
         option = {
                 name = PRC_MAO.195.a
         }
@@ -6978,7 +6980,8 @@ news_event = {
         desc = PRC_MAO.197.d
         picture = GFX_PRC_MAO_event_197
         is_triggered_only = yes
-        fire_only_once = yes
+
+	major = yes
         option = {
                 name = PRC_MAO.197.a
 

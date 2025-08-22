@@ -97,6 +97,8 @@ country_event = {
 	}
 	option = {
 		name = SRL.4.a
+CHI_UZEDONG_SHANGTAI_8 = yes
+	TSU = {add_to_faction = SRL}
 		set_politics = {
 			ruling_party = communist
 			last_election = "2024.9.21"

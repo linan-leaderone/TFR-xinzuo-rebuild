@@ -1,4 +1,24 @@
 characters={
+
+	NPA_luis_jalandoni_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Luis_Jalandoni.png" 
+			}
+		}
+		country_leader = {
+			ideology = maoism
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+	}
 		Himari_char = { 
 			portraits={
 				civilian={

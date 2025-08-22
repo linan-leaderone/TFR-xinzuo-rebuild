@@ -214,7 +214,27 @@ transfer_navy = {
 						}
 						}
 					}
+			if = {
+					limit = {
+						ROOT = {
+							original_tag = PNG
+						}
+					}
+					TSU = {	
 
+			country_event = {
+				id = PRC_MAO3.94
+				days = 30
+			}
+
+			country_event = {
+				id = PRC_MAO3.95
+				days = 20
+			}
+
+			}
+		
+}
 				KMT = {	
 CHI_UZEDONG_SHANGTAI_8 = yes
 	
