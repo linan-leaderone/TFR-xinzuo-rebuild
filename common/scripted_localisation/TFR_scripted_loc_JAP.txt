@@ -1,0 +1,1159 @@
+defined_text = {
+	name = JAP_get_covid_status_jap
+	
+	text = { 
+		trigger = {
+			NOT = {
+		        OR = {
+		            has_idea = JAP_covid_idea_1
+			    }
+			    AND = {
+			        has_idea = JAP_covid_idea_2
+			    }
+			    AND = {
+			        has_idea = JAP_covid_idea_3
+			    }
+			    AND = {
+			        has_idea = JAP_covid_idea_4
+			    }
+			    AND = {
+			        has_idea = JAP_covid_idea_5
+			    }
+		    }
+		}
+		localization_key = "no_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = JAP_covid_idea_1
+		}
+		localization_key = "low_covid"
+	}		
+	text = { 
+		trigger = {
+			has_idea = JAP_covid_idea_2
+		}
+		localization_key = "mild_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = JAP_covid_idea_3
+		}
+		localization_key = "concerning_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = JAP_covid_idea_4
+		}
+		localization_key = "crippling_covid"
+	}
+	text = { 
+		trigger = {
+			has_idea = JAP_covid_idea_5
+		}
+		localization_key = "catastrophic_covid"
+	}
+}
+defined_text = {
+	name = JAP_get_election_choice
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = SOV_sided_with_anti_ldp
+			}
+		}
+		localization_key = "supporting_anti_ldp"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = SOV_sided_with_ldp
+			}
+		}
+		localization_key = "supporting_ldp"
+	}
+}
+defined_text = {
+	name = JAP_election_category_desc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				NOT = { 
+					OR = {
+						has_country_flag = JAP_civil_coalition_formed
+						has_country_flag = JAP_civil_coalition_formed_liberal
+						has_country_flag = JAP_civil_coalition_formed_socialist
+						has_country_flag = JAP_restored_jsp_flag
+					}
+				}
+			}
+		}
+		localization_key = "JAP_election_category_desc_no_cc"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_civil_coalition_formed
+			}
+		}
+		localization_key = "JAP_election_category_desc_cc"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_civil_coalition_formed_liberal
+			}
+		}
+		localization_key = "JAP_election_category_desc_cc_liberal"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_civil_coalition_formed_socialist
+			}
+		}
+		localization_key = "JAP_election_category_desc_cc_socialist"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_restored_jsp_flag
+			}
+		}
+		localization_key = "JAP_election_category_desc_jsp"
+	}
+}
+defined_text = {
+	name = JAP_bop_side_liberal_loc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				OR = {
+					has_country_flag = JAP_civil_coalition_formed
+					has_country_flag = JAP_civil_coalition_formed_liberal
+				}
+			}
+		}
+		localization_key = "JAP_bop_side_liberal_loc_standart"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_civil_coalition_formed_socialist
+			}
+		}
+		localization_key = "JAP_bop_side_loc_centrist"
+	}
+}
+defined_text = {
+	name = JAP_ldp_reelection_loc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_global_flag = JAP_ldp_won
+			}
+		}
+		localization_key = "JAP_ldp_reelection_standart"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_global_flag = JAP_cc_won
+			}
+		}
+		localization_key = "JAP_liberal_downfall"
+	}
+}
+defined_text = {
+	name = JAP_bop_side_socialist_loc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				OR = {
+					has_country_flag = JAP_civil_coalition_formed
+					has_country_flag = JAP_civil_coalition_formed_socialist
+				}
+			}
+		}
+		localization_key = "JAP_bop_side_socialist_loc_standart"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_civil_coalition_formed_liberal
+			}
+		}
+		localization_key = "JAP_bop_side_loc_centrist"
+	}
+}
+defined_text = {
+	name = JAP_covid_populism_scripted_loc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_sided_with_anti_ldp
+			}
+		}
+		localization_key = "JAP_covid_populism_cc"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_sided_with_ldp
+			}
+		}
+		localization_key = "JAP_covid_populism_ldp"
+	}
+}
+defined_text = {
+	name = JAP_leap_prosperity_loc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_global_flag = JAP_japan_lost
+			}
+		}
+		localization_key = "JAP_leap_lost_taiwan"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_global_flag = JAP_japan_victory
+			}
+		}
+		localization_key = "JAP_leap_victory_taiwan"
+	}
+}
+defined_text = {
+	name = JAP_civil_war_peoples_diet
+	
+	text = { 
+		trigger = {
+			NOT = { has_global_flag = JAP_civil_war_ended }
+		}
+		localization_key = "JAP_civil_war_peoples_diet_yes"
+	}
+	text = { 
+		trigger = {
+			has_global_flag = JAP_civil_war_ended
+		}
+		localization_key = "JAP_civil_war_peoples_diet_no"
+	}
+}
+defined_text = {
+	name = JAP_main_factions_peoples_diet
+	
+	text = { 
+		trigger = {
+			every_country = {
+				limit = {
+					original_tag = JAP
+				}
+				NOT = { has_country_flag = JAP_partization }
+			}
+		}
+		localization_key = "JAP_main_factions_peoples_diet_usual"
+	}
+	text = { 
+		trigger = {
+			every_country = {
+				limit = {
+					original_tag = JAP
+				}
+				has_country_flag = JAP_partization
+			}
+		}
+		localization_key = "JAP_main_factions_peoples_diet_partisan"
+	}
+}
+defined_text = {
+	name = JAP_democrat_factions_peoples_diet
+	
+	text = { 
+		trigger = {
+			every_country = {
+				limit = {
+					has_country_flag = JAP_udf_flag
+				}
+				NOT = { has_completed_focus = JPR_address_to_the_parties }
+			}
+		}
+		localization_key = "JAP_democrat_factions_peoples_diet_no"
+	}
+	text = { 
+		trigger = {
+			every_country = {
+				limit = {
+					has_country_flag = JAP_udf_flag
+				}
+				has_completed_focus = JPR_address_to_the_parties
+			}
+		}
+		localization_key = "JAP_democrat_factions_peoples_diet_yes"
+	}
+}
+
+defined_text = {
+	name = JAP_election_when
+	
+	text = { 
+		trigger = {
+			JAP = {
+				NOT = {
+					has_country_flag = JAP_general_election_is_over
+				}
+			}
+		}
+		localization_key = "JAP_election_soon"
+	}
+}
+
+defined_text = {
+	name = JAP_collective_capitalism_bonus
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_idea = ZZZ_collective_capitalism
+			}
+		}
+		localization_key = "ZZZ_collective_capitalism_bonus1"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_idea = ZZZ_collective_capitalism2
+			}
+		}
+		localization_key = "ZZZ_collective_capitalism_bonus2"
+	}
+}
+
+defined_text = {
+	name = JAP_supported_country_in_uscw2
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_support_us_unlock_dec_usb
+			}
+		}
+		localization_key = "JAP_supported_country_in_uscw2_usb"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_support_us_unlock_dec_usc
+			}
+		}
+		localization_key = "JAP_supported_country_in_uscw2_usc"
+	}
+}
+
+defined_text = {
+	name = TFR_ldp_conservatives_info_tooltip_sc
+	
+	text = { 
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_nationalists_ldp_enabled
+			}
+		}
+		localization_key = "TFR_ldp_conservatives_info_tooltip_nationalists"
+	}
+	text = { 
+		trigger = {
+			NOT = {
+				JAP = {
+					has_country_flag = JAP_nationalists_ldp_enabled
+				}
+			}
+		}
+		localization_key = "TFR_ldp_conservatives_info_tooltip_usual"
+	}
+}
+
+
+
+defined_text = {
+	name = get_tokyo_status_jap
+	
+	text = { 
+		trigger = {
+	
+				1332 = {controller = {is_in_faction_with = PRC}}	
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+
+				1332 = {controller = {is_in_faction_with = TSU}}		
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_delhi_status_jap
+	
+	text = { 
+		trigger = {
+
+				1379 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+				1379 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			PAK = {
+				controls_state = 1379
+			}
+			RAJ = {
+				controls_state = 1379
+				is_ally_with = JAP
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			RAJ = {
+				controls_state = 1379
+				NOT = {
+					has_war_with = PRC
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_seoul_status_jap
+	
+	text = { 
+		trigger = {
+
+				1041 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1041
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+
+				1041 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_singapore_status_jap
+	
+	text = { 
+		trigger = {
+
+				336 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 336
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+
+				336 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			SIG = {
+				controls_state = 336
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_jakarta_status_jap
+	
+	text = { 
+		trigger = {
+			OR = {
+				MAL = {
+					controls_state = 1387
+					is_ally_with = PRC
+				}
+				INS = {
+					controls_state = 1387
+					is_ally_with = PRC
+				}
+				PRC = {
+					controls_state = 1387
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1387
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				1387 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			INS = {
+				controls_state = 1387
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_sydney_status_jap
+	
+	text = { 
+		trigger = {
+
+				285 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 285
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+
+				285 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_manila_status_jap
+	
+	text = { 
+		trigger = {
+				1274 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1274
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				1274 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			PHI = {
+				controls_state = 1274
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_hochiminh_status_jap
+	
+	text = { 
+		trigger = {
+
+				783 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 783
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+
+				783 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			VIN = {
+				controls_state = 783
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_bangkok_status_jap
+	
+	text = { 
+		trigger = {
+			OR = {
+				PRC = {
+					controls_state = 289
+				}
+				SIA = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+				MAL = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+				BRM = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+				CAM = {
+					controls_state = 289
+					is_ally_with = PRC
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 289
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				289 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			SIA = {
+				controls_state = 289
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_naypyidaw_status_jap
+	
+	text = { 
+		trigger = {
+			OR = {
+				BRM = {
+					controls_state = 640
+					is_ally_with = PRC
+				}
+				SIA = {
+					controls_state = 640
+					is_ally_with = PRC
+				}
+				PRC = {
+					controls_state = 640
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 640
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				640 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			BRM = {
+				controls_state = 640
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_dhaka_status_jap
+	
+	text = { 
+		trigger = {
+
+				430 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 430
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				430 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			BAN = {
+				controls_state = 430
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_kualalumpur_status_jap
+	
+	text = { 
+		trigger = {
+			OR = {
+				MAL = {
+					controls_state = 1386
+					is_ally_with = PRC
+				}
+				SIA = {
+					controls_state = 1386
+					is_ally_with = PRC
+				}
+				SIG = {
+					controls_state = 1386
+					is_ally_with = PRC
+				}
+				PRC = {
+					controls_state = 1386
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1386
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				1386 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			MAL = {
+				controls_state = 1386
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+
+defined_text = {
+	name = get_taipei_status_jap
+	
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 1148
+					is_ally_with = PRC
+				}
+				PRC = {
+					controls_state = 1148
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1148
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				1148 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_beijing_status_jap
+	
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 608
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 608
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				608 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_shanghai_status_jap
+	
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1215
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1215
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				1215 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_nanjing_status_jap
+	
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 1222
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1222
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+				1222 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_guangzhou_status_jap
+	
+	text = { 
+		trigger = {
+			PRC = {
+				controls_state = 592
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 592
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+					592 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_hong_kong_status_jap
+
+	text = { 
+		trigger = {
+			OR = {
+				CHI = {
+					controls_state = 326
+					is_ally_with = PRC
+				}
+				PRC = {
+					controls_state = 326
+				}
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 326
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+						326 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_pyongyang_status_jap
+	
+	text = { 
+		trigger = {
+
+				1043 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 1043
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+
+						1043 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_islamabad_status_jap
+	
+	text = { 
+		trigger = {
+	
+				440 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 440
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+						440 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_kathmandu_status_jap
+	
+	text = { 
+		trigger = {
+
+				323 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+			JAP = {
+				controls_state = 323
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = { 
+		trigger = {
+						323= {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			NEP = {
+				controls_state = 323
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = JAP
+						is_ally_with = RAJ
+						is_ally_with = AST
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}

@@ -87,7 +87,8 @@ TZL_JJFZ_category = {
 		}
 		remove_effect = {
 			
-
+		
+			set_country_flag = TZL_TZL_JJFZ_nuke_3
 
 
 
@@ -104,6 +105,7 @@ TZL_JJFZ_category = {
 			has_completed_focus = TZL_TWW_FOCUS_39
 		}
 		available = {
+				has_country_flag = TZL_TZL_JJFZ_nuke_3
 	
 
 		}
@@ -119,9 +121,10 @@ TZL_JJFZ_category = {
 		remove_effect = {
 			
 
+				set_country_flag = TZL_TZL_JJFZ_nuke_4
+set_technology = {nukes = 1}
 
-
-
+RED_JAP_REV_ARMY = yes
 		}
 		cost = 100
 	}

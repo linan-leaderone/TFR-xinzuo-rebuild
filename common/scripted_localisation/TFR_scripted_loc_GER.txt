@@ -1,0 +1,2241 @@
+defined_text = {
+	#Die Linke Text
+	name = GER_bundestag_faction_die_linke_text
+	text = {
+		trigger = {
+			original_tag = GER
+			has_country_flag = GER_die_linke_enable_flag
+		}
+		localization_key = GER_bundestag_faction_die_linke_loc
+	}
+}
+
+defined_text = {
+	#Greens Text
+	name = GER_bundestag_faction_greens_text
+	text = {
+		trigger = {
+			original_tag = GER
+			has_country_flag = GER_greens_enable_flag
+		}
+		localization_key = GER_bundestag_faction_greens_loc
+	}
+}
+
+defined_text = {
+	#SPD Text
+	name = GER_bundestag_faction_spd_text
+	text = {
+		trigger = {
+			original_tag = GER
+			has_country_flag = GER_spd_enable_flag
+		}
+		localization_key = GER_bundestag_faction_spd_loc
+	}
+}
+
+defined_text = {
+	#FDP Text
+	name = GER_bundestag_faction_fdp_text
+	text = {
+		trigger = {
+			original_tag = GER
+			has_country_flag = GER_fdp_enable_flag
+		}
+		localization_key = GER_bundestag_faction_fdp_loc
+	}
+}
+
+defined_text = {
+	#CDU Text
+	name = GER_bundestag_faction_cdu_text
+	text = {
+		trigger = {
+			original_tag = GER
+			has_country_flag = GER_cdu_enable_flag
+		}
+		localization_key = GER_bundestag_faction_cdu_loc
+	}
+}
+
+defined_text = {
+	#AfD Text
+	name = GER_bundestag_faction_afd_text
+	text = {
+		trigger = {
+			original_tag = GER
+			has_country_flag = GER_afd_enable_flag
+		}
+		localization_key = GER_bundestag_faction_afd_loc
+	}
+}
+
+defined_text = {
+	#Very Supportive Text
+	name = GER_faction_allignment_very_supportive_text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GER_faction_allignment_very_supportive_name
+	}
+}
+
+defined_text = {
+	#Supportive Text
+	name = GER_faction_allignment_supportive_text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GER_faction_allignment_supportive_name
+	}
+}
+
+defined_text = {
+	#Indifferent Text
+	name = GER_faction_allignment_indifferent_text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GER_faction_allignment_indifferent_name
+	}
+}
+
+defined_text = {
+	#Adversive Text
+	name = GER_faction_allignment_adversive_text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GER_faction_allignment_adversive_name
+	}
+}
+
+defined_text = {
+	#Very Supportive Text
+	name =GER_faction_allignment_very_adversive_text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = GER_faction_allignment_very_adversive_name
+	}
+}
+
+defined_text = {
+	#Die Linke Allignment
+	name = GER_bundestag_faction_die_linke_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_die_linke_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Die Linke Allignment
+	name = GER_bundestag_faction_greens_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_greens_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Die Linke Allignment
+	name = GER_bundestag_faction_spd_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_spd_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Die Linke Allignment
+	name = GER_bundestag_faction_fdp_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_fdp_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Die Linke Allignment
+	name = GER_bundestag_faction_cdu_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_cdu_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_faction_allignment_very_supportive_loc
+	}
+}
+
+defined_text = {
+	#Die Linke Allignment
+	name = GER_bundestag_faction_afd_allignment_text
+	text = {
+		#Very Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.2
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_very_adversive_loc
+	}
+	text = {
+		#Adversive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_adversive_loc
+	}
+	text = {
+		#Indifferent
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_indifferent_loc
+	}
+	text = {
+		#Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = GER_faction_allignment_supportive_loc
+	}
+	text = {
+		#Very Supportive
+		trigger = {
+			original_tag = GER
+			check_variable = {
+				var = GER_support_afd_var
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_faction_allignment_very_supportive_loc
+	}
+}
+
+#Government Agenda
+
+defined_text = {
+	#Anti-Extremism
+	name = GER_anti_extremism_agenda_text
+	text = {
+		trigger = {
+			is_relavent_tag = yes
+			has_country_flag = GER_anti_extremism_agenda_flag
+		}
+		localization_key = GER_anti_extremism_agenda_loc
+	}
+}
+
+defined_text = {
+	#Bundeswehr Revitalization
+	name = GER_bundeswehr_revitalization_agenda_text
+	text = {
+		trigger = {
+			is_relavent_tag = yes
+			has_country_flag = GER_bundeswehr_revitalization_agenda_flag
+		}
+		localization_key = GER_bundeswehr_revitalization_agenda_loc
+	}
+}
+
+#Other
+defined_text = {
+	name = get_ideology_status
+	text = {
+		trigger = {
+			GER = {
+				OR = {
+					has_government = fascist
+					has_government = nationalist
+					has_government = national_socialist
+				}
+			}
+		}
+		localization_key = "GER_fascist_tt"
+	}
+	text = {
+		trigger = {
+			GER = {
+				OR = {
+					has_government = communist
+					has_government = libertarian_socialist
+				}
+			}
+		}
+		localization_key = "GER_communist_tt"
+	}
+	text = {
+		trigger = {
+			GER = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = conservative
+					has_government = social_democrat
+					has_government = authoritarian_democrat
+				}
+			}
+		}
+		localization_key = "GER_status_quo"
+	}
+}
+
+defined_text = {
+	name = get_favoritism
+	text = {
+		trigger = {
+			GER = {
+				has_completed_focus = GER_nato_war_recovery
+			}
+		}
+		localization_key = "army_favoritism"
+	}
+}
+
+defined_text = {
+	name = get_moscow_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag =PRC
+					is_ally_with = PRC
+				}
+				controls_state = 1339
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 1339
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 1339
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_warsaw_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 855
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 855
+			}
+		}
+		localization_key = "our_control"
+	}	
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 855
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_kiev_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 1285
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 1285
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 1285
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_leningrad_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 195
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 195
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 195
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_volgograd_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 217
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 217
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 217
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_lviv_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					is_ally_with = PRC
+				}
+				controls_state = 91
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 91
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 91
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_odessa_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					is_ally_with = PRC
+				}
+				controls_state = 192
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 192
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 192
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_sofia_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					is_ally_with = PRC
+				}
+				controls_state = 48
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 48
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 48
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_prague_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					is_ally_with = PRC
+				}
+				controls_state = 9
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 9
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 9
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_budapest_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					is_ally_with = PRC
+				}
+				controls_state = 854
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 854
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 854
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_kaliningrad_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 741
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 741
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			GER = {
+				controls_state = 741
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_belgorod_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 1283
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 1283
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			GER = {
+				controls_state = 1283
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_novgorod_status_fascist
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 263
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 263
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			GER = {
+				controls_state = 263
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_donetsk_status_fascist
+	text = {
+		trigger = {
+					227 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				MLD = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				UKR = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				ROM = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				HUN = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				FRA = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				ITA = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				ENG = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				TTS = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				BUL = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+				CZE = {
+					is_in_faction_with = GER
+					controls_state = 227
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			GER = {
+				controls_state = 227
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_luhansk_status_fascist
+	text = {
+		trigger = {
+				228 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				MLD = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				UKR = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				ROM = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				HUN = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				FRA = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				ITA = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				ENG = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				TTS = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				BUL = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+				CZE = {
+					is_in_faction_with = GER
+					controls_state = 228
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			GER = {
+				controls_state = 228
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_moscow_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 219
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 219
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 219
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_stpetersburg_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 195
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 195
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 195
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_volgograd_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 217
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 217
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 217
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_tula_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 223
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 223
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 223
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_saratov_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 239
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 239
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 239
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_novgorod_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 263
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 263
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 263
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_grozny_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 828
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_in_faction_with = GER
+				controls_state = 828
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				controls_state = 828
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_astrakhan_status_nato
+	text = {
+		trigger = {
+			SOV = {
+				NOT = {
+					is_puppet = yes
+				}
+				controls_state = 236
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				if = {
+					limit = {
+						is_ai = yes #No such thing as "is_player"
+						is_in_faction_with = GER
+						controls_state = 236
+					}
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				if = {
+					limit = {
+						is_ai = no
+					}
+				}
+				controls_state = 236
+			}
+		}
+		localization_key = "our_control"
+	}
+}
+
+defined_text = {
+	name = get_paris_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 16
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 16
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+					}
+					controls_state = 16
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_berlin_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 1378
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 1378
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 1378
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_munich_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 52
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 52
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 52
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_strasbourg_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 800
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 800
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 800
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_bordeaux_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 19
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 19
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 19
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_venice_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 160
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 160
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 160
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_venice_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 160
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 160
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 160
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_rome_status_fascist
+	text = {
+		trigger = {
+			FROM = {
+				controls_state = 2
+			}
+		}
+		localization_key = "our_control"
+	}
+	text = {
+		trigger = {
+			any_country = {
+				OR = {
+					original_tag = PRC
+					is_ally_with = PRC
+				}
+				controls_state = 2
+			}
+		}
+		localization_key = "enemy_control"
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_country = {
+					NOT = {
+						is_ally_with = PRC
+						original_tag = FROM
+					}
+					controls_state = 2
+				}
+			}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = GER_coalition_scripted_loc
+	text = {
+		trigger = {
+			check_variable = {
+				GER_coalition = 1
+			}
+		}
+		localization_key = GER_coalition_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				GER_coalition = 2
+			}
+		}
+		localization_key = GER_coalition_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				GER_coalition = 3
+			}
+		}
+		localization_key = GER_coalition_3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				GER_coalition = 4
+			}
+		}
+		localization_key = GER_coalition_4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				GER_coalition = 3
+			}
+		}
+		localization_key = GER_coalition_5
+	}
+}
+
+defined_text = {
+	name = get_poland_status
+	text = {
+		trigger = {
+			PLD = {
+				surrender_progress > 0.3
+			}
+		}
+		localization_key = GER_blucher
+	}
+	text = {
+		trigger = {
+			PLD = {
+				surrender_progress < 0.3
+			}
+		}
+		localization_key = GER_khol
+	}
+}
+
+defined_text = {
+	name = get_operation_status
+	text = {
+		trigger = {
+			PLD = {
+				surrender_progress > 0.3
+			}
+		}
+		localization_key = GER_oper_1
+	}
+	text = {
+		trigger = {
+			PLD = {
+				surrender_progress < 0.3
+			}
+		}
+		localization_key = GER_oper_2
+	}
+}
+
+defined_text = {
+	name = get_ufa_status
+	text = {
+		trigger = {
+			country_exists = UFA
+		}
+		localization_key = "ongoing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = ufa_preperation
+			}
+		}
+		localization_key = "preparing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				country_exists = UFA
+			}
+		}
+		localization_key = "inactive_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			UFA = {
+				AND = {
+					controls_state = 1285
+					has_war = no
+				}
+			}
+		}
+		localization_key = "successful_insurgency_lk"
+	}
+}
+
+defined_text = {
+	name = get_bdm_status
+	text = {
+		trigger = {
+			country_exists = BDM
+		}
+		localization_key = "ongoing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = bdm_preperation
+			}
+		}
+		localization_key = "preparing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				country_exists = BDM
+			}
+		}
+		localization_key = "inactive_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			BDM = {
+				AND = {
+					controls_state = 206
+					has_war = no
+				}
+			}
+		}
+		localization_key = "successful_insurgency_lk"
+	}
+}
+
+defined_text = {
+	name = get_bfw_status
+	text = {
+		trigger = {
+			country_exists = BFW
+		}
+		localization_key = "ongoing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = bfw_preperation
+			}
+		}
+		localization_key = "preparing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				country_exists = BFW
+			}
+		}
+		localization_key = "inactive_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			BFW = {
+				AND = {
+					controls_state = 13
+					controls_state = 12
+					controls_state = 96
+					has_war = no
+				}
+			}
+		}
+		localization_key = "successful_insurgency_lk"
+	}
+}
+
+defined_text = {
+	name = get_pra_status
+	text = {
+		trigger = {
+			country_exists = PRA
+		}
+		localization_key = "ongoing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = pra_preperation
+			}
+		}
+		localization_key = "preparing_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				country_exists = PRA
+			}
+		}
+		localization_key = "inactive_insurgency_lk"
+	}
+	text = {
+		trigger = {
+			PRA = {
+				AND = {
+					controls_state = 855
+					controls_state = 88
+					has_war = no
+				}
+			}
+		}
+		localization_key = "successful_insurgency_lk"
+	}
+}
+
+defined_text = {
+	name = GER_anti_consumerism_text
+	text = {
+		trigger = {
+			has_idea = GER_anti_consumerism
+		}
+		localization_key = GER_anti_consumerism_loc
+	}
+}
+
+defined_text = {
+	name = GER_green_new_deal_text
+	text = {
+		trigger = {
+			has_idea = GER_green_new_deal
+		}
+		localization_key = GER_green_new_deal_loc
+	}
+}
+
+defined_text = {
+	name = GER_spd_welfare_text
+	text = {
+		trigger = {
+			has_idea = GER_spd_welfare
+		}
+		localization_key = GER_spd_welfare_loc
+	}
+	text = {
+		trigger = {
+			has_idea = GER_spd_welfare1
+		}
+		localization_key = GER_spd_welfare1_loc
+	}
+	text = {
+		trigger = {
+			has_idea = GER_spd_welfare2
+		}
+		localization_key = GER_spd_welfare2_loc
+	}
+	text = {
+		trigger = {
+			has_idea = GER_spd_welfare3
+		}
+		localization_key = GER_spd_welfare3_loc
+	}
+}
+
+defined_text = {
+	name = GER_invisible_hand_text
+	text = {
+		trigger = {
+			has_idea = GER_invisible_hand
+		}
+		localization_key = GER_invisible_hand_loc
+	}
+	text = {
+		trigger = {
+			has_idea = GER_invisible_hand1
+		}
+		localization_key = GER_invisible_hand1_loc
+	}
+	text = {
+		trigger = {
+			has_idea = GER_invisible_hand2
+		}
+		localization_key = GER_invisible_hand2_loc
+	}
+	text = {
+		trigger = {
+			has_idea = GER_invisible_hand3
+		}
+		localization_key = GER_invisible_hand3_loc
+	}
+}
+
+defined_text = {
+	name = GER_digitalization_text
+	text = {
+		trigger = {
+			has_idea = GER_digitalization
+		}
+		localization_key = GER_digitalization_loc
+	}
+}
+
+defined_text = {
+	name = GER_nwp_text
+	text = {
+		trigger = {
+			has_idea = GER_nwp
+		}
+		localization_key = GER_nwp_loc
+	}
+}
+
+defined_text = {
+	name = GER_gunthers_twitter_followers_count_text
+	text = {
+		trigger = {
+			check_variable = {
+				var = GER_gunthers_followers_var
+				value = 1000
+				compare = less_than
+			}
+		}
+		localization_key = GER_gunther_followers_less_than_1M
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GER_gunthers_followers_var
+				value = 1000
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_gunther_followers_more_than_1M
+	}
+}
+
+defined_text = {
+	name = GER_gunthers_twitter_following_count_text
+	text = {
+		trigger = {
+			check_variable = {
+				var = GER_gunthers_followers_var
+				value = 1000
+				compare = less_than
+			}
+		}
+		localization_key = GER_gunther_following_less_than_1M
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GER_gunthers_followers_var
+				value = 1000
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = GER_gunther_following_more_than_1M
+	}
+}

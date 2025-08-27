@@ -185,9 +185,18 @@ WWW_state61_1_tt: "§Y斯里兰卡地区§!\n该地区处在§R新共产国际§
 WWW_state61_2_tt: "§Y斯里兰卡地区§!\n该地区处在§.上海合作组织§!的控制下"
 WWW_state61_3_tt: "§Y斯里兰卡地区§!\n该地区处在§Y争夺状态§!"
 
-
-
-
+WWW_WWWANNIU11_tt: "§L需要§Y俄罗斯帝国§!的§Y投降倾向§!高于§Y10%§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU21_tt: "§L需要§Y俄罗斯帝国§!的§Y投降倾向§!高于§Y30%§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU31_tt: "§L需要§Y天竺净化区§!的§Y投降倾向§!高于§Y20%§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU41_tt: "§L需要§Y土耳其§!或§Y叙利亚§!或§Y伊朗§!或§Y伊拉克§!的§Y投降倾向§!高于§Y20%§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU51_tt: "§L需要§Y中国伪共政府§!的§Y投降倾向§!高于§Y20%§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU61_tt: "§L需要§Y波兰伪政府§!的§Y投降倾向§!高于§Y40%§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU71_tt: "§L需要与§Y阿富汗§!的边境§Y接壤§!\n§R注意：此行动只能使用一次§!§!"
+WWW_WWWANNIU81_tt: "§L需要与§Y伊朗§!的边境§Y接壤§!\n§R注意：此行动只能使用一次§!§!"
+CUBCCC_party: "古巴共产党（改组）"
+HRLCCC_party: "阿拉伯革命共产主义者联盟"
+AFGCCCC_party_long: "阿富汗革命左翼联盟"
+VOLCCC_party: "西非革命左翼联盟"
 SHLLB: "萨赫勒联邦"
 SHLLB_DEF: "萨赫勒联邦"
 SHLLB_ADJ: "萨赫勒联邦"
@@ -275,4 +284,13 @@ PRC_MAO4.36.t: "全球红色阵营形成"
 PRC_MAO4.36.d:0 "在西欧革命全面胜利之后，新的政治格局正在成形。革命的旗帜在西欧各地高高飘扬，欧洲共产国际的力量得以彻底巩固。此刻，东京与柏林之间的高层会谈引发全球瞩目。\n\n经过多日磋商，双方正式宣布：欧洲共产国际将整体并入在东京重建的新共产国际。自此，跨越亚欧大陆的红色组织第一次实现了真正意义上的统一。分裂与孤立的格局被打破，一条贯通东西的革命纽带牢牢系在一起。\n\n会议还明确了战略方向。吸取一百年的教训，新共产国际决议集中力量整合资源，为下一阶段的世界决战做准备。无论是工业体系还是军事部署，都将纳入统一协调。共同的目标已经写在宣言上：面对资本主义的最后堡垒，中俄两国已经成为未来总决战的对象。\n\n这一消息的公布在全球引起剧烈反响。红色的版图正在迅速扩展，亚欧大陆在无产阶级的凝视下连成整体。战争的脚步愈发清晰，世界的天平正在倾向另一端。"
 PRC_MAO4.36.a:0 "共产主义势力再度联合"
 
+PRC_MAO4.38.t: "突袭厦门"   
+PRC_MAO4.38.d:0 "夜色压得很低，海面黑得像墨，只有浪头在月光下闪着一丝冷白。引擎的轰鸣被压得极低，突击艇一艘接一艘，从金门暗影中滑出。风打在脸上，带着咸腥味和火药残留的味道。士兵们缩着肩，手指紧紧扣着枪，目光死死盯着远方那一片比夜色还要沉重的厦门海岸。\n\n有人忍不住咽口水，盔甲轻轻碰撞发出细微的声响。谁都清楚今晚意味着什么：这是点燃战火的一瞬，是一场彻底的豪赌。没有人多话，只有浪声拍打船体，像催促的鼓点。队伍里有人闭着眼默念，有人嘴角死死咬着布条，肩膀微微发抖，却没人退缩。\n\n靠岸的那一刻，所有声音都像突然被放大。铁制舱门砸下的金属声，溅起的浪花，还有士兵们的吼声，一下子撕裂了夜色。冲锋的脚步急促，海水拍打在小腿，湿冷的盐渍灌进靴子，刺得人心里发紧。\n\n厦门的岸线并没有想象中的防御火力。零星的哨塔发出几声迟疑的枪响，随即被爆炸的火光吞没。解放军显然没有料到会有这样一次突袭，他们的阵地还在昏沉中，灯火散乱，指令迟迟没有传开。有人慌忙跑出来，手里甚至还没完全握稳枪，就被海岸上的猛烈火力压制回去。\n\n沙滩上的空气瞬间混乱，火光与烟雾混杂，喊杀声和爆炸声交织成一片。台湾突击队员们一股脑冲上去，黑夜里只有子弹划过的光点闪动。脚下的沙不断下陷，湿滑的触感让人踉跄，但每个人都拼命往前推，生怕一停下就被浪潮反扑吞没。\n\n远处的城市灯光开始闪烁，防空警报姗姗拉起，尖锐得像要撕碎人的耳膜。厦门彻底惊醒了，整个华南的天空似乎都在这一刻亮起了血色的火焰。"
+PRC_MAO4.38.a:0 "战场在燃烧，而新的时代即将到来"
 
+PRC_MAO4.39.t: "共产国际突袭厦门"   
+PRC_MAO4.39.d:0 "今日凌晨，全球进入了新的临界点。共产国际部队在黑暗中突然行动，大规模突袭厦门港口与周边阵地，打破了最后的僵局。这一进攻被明确宣布为对上海合作组织的全面战争宣告。至此，世界再无回头路。\n\n随着战火的点燃，上合组织的各成员国立刻发布动员令。庞大的军队与后备力量在数小时内进入全面戒备，战略网络全部切换至战时状态。联合指挥系统与快速反应部队同时启动，整个欧亚大陆的战车开始轰鸣。\n\n这场战争的烈度远超以往。海上舰队已经进入交火区，天空的防空火力划破夜色，大规模部队正在沿着边境线集结。世界的两大阵营终于走向了正面碰撞。\n\n从东京到柏林，从莫斯科到北京，信号与命令在瞬息之间传递。第三次世界大战在此刻正式拉开帷幕，人类历史最为沉重的一页已经翻开。"
+PRC_MAO4.39.a:0 "决战之日"
+
+TZL_ww3_category:0 "第二次世界反法西斯战争"
+TZL_ww3_category_desc: "我们会粉碎法西斯分子。\n\n§R主要目标§!：\n\n§Y莫斯科§!：[GLOBAL.get_moscow_status_fascist]\n§Y华沙§!：[GLOBAL.get_warsaw_nato_status]\n§Y基辅§!：[GLOBAL.get_kiev_status_fascist]\n§Y圣彼得堡§!：[GLOBAL.get_leningrad_status_fascist]\n§Y伏尔加格勒§!：[GLOBAL.get_volgograd_status_fascist]\n§Y符拉迪沃斯托克§!：[GLOBAL.get_408_status]\n§Y北京§!：[GLOBAL.get_beijing_status_jap]\n§Y上海§!：[GLOBAL.get_shanghai_status_jap]\n§Y南京§!：[GLOBAL.get_nanjing_status_jap]\n§Y广州§!：[GLOBAL.get_guangzhou_status_jap]\n§Y瓦加杜古§!：[GLOBAL.get_751_status]\n§Y的黎波里§!：[GLOBAL.get_448_status]\n§Y平壤§!：[GLOBAL.get_pyongyang_status_jap]\n\n§t次要目标§!\n\n§Y利沃夫§!：[GLOBAL.get_lviv_status_fascist]\n§Y敖德萨§!：[GLOBAL.get_odessa_nato_status]\n§Y耶路撒冷§!：[GLOBAL.get_454_status]\n§Y喀布尔§!：[GLOBAL.get_1355_status]\n§Y德黑兰§!：[GLOBAL.get_266_status]\n§Y大马士革§!：[GLOBAL.get_1032_status]\n§Y安卡拉§!：[GLOBAL.get_49_status]\n§Y贝尔格莱德§!：[GLOBAL.get_107_status]\n§Y卡萨布兰卡§!：[GLOBAL.get_461_status]\n§Y阿尔及尔§!：[GLOBAL.get_459_status]\n§Y突尼斯§!：[GLOBAL.get_458_status]\n§Y开罗§!：[GLOBAL.get_446_status]\n§Y伊斯坦布尔§!：[GLOBAL.get_341_status]\n§Y索菲亚§!：[GLOBAL.get_sofia_status_fascist]\n§Y布拉格§!：[GLOBAL.get_prague_status_fascist]\n§Y布达佩斯§!：[GLOBAL.get_budapest_status_fascist]\n§Y加里宁格勒§!：[GLOBAL.get_kaliningrad_status_fascist]\n§Y别尔哥罗德§!：[GLOBAL.get_belgorod_status_fascist]\n§Y诺夫哥罗德§!：[GLOBAL.get_novgorod_status_fascist]\n§Y顿涅茨克§!：[GLOBAL.get_donetsk_nato_status]\n§Y卢甘斯克§!：[GLOBAL.get_luhansk_nato_status]\n§Y马尼拉§!：[GLOBAL.get_manila_status_jap]\n§Y胡志明市§!：[GLOBAL.get_hochiminh_status_jap]\n§Y曼谷§!：[GLOBAL.get_bangkok_status_jap]\n§Y内比都§!：[GLOBAL.get_naypyidaw_status_jap]\n§Y吉隆坡§!：[GLOBAL.get_kualalumpur_status_jap]\n§Y伊斯兰堡§!：[GLOBAL.get_islamabad_status_jap]\n§Y加德满都§!：[GLOBAL.get_kathmandu_status_jap]\n\n§G盟军城市§!\n\n§Y东京§!：[GLOBAL.get_tokyo_status_jap]\n§Y首尔§!：[GLOBAL.get_seoul_status_jap]\n§Y悉尼§!：[GLOBAL.get_sydney_status_jap]\n§Y台北§!：[GLOBAL.get_taipei_status_jap]\n§Y德里§!：[GLOBAL.get_delhi_status_jap]\n§Y雅加达§!：[GLOBAL.get_jakarta_status_jap]\n§Y香港§!：[GLOBAL.get_hong_kong_status_jap]\n§Y新加坡§!：[GLOBAL.get_singapore_status_jap]\n§Y达卡§!：[GLOBAL.get_dhaka_status_jap]\n§Y柏林§!：[GLOBAL.get_berlin_status_fascist]\n§Y慕尼黑§!：[GLOBAL.get_munich_status_fascist]\n§Y斯特拉斯堡§!：[GLOBAL.get_strasbourg_status_fascist]\n§Y巴黎§!：[GLOBAL.get_paris_status_fascist]\n§Y波尔多§!：[GLOBAL.get_bordeaux_status_fascist]\n§Y威尼斯§!：[GLOBAL.get_venice_status_fascist]\n§Y罗马§!：[GLOBAL.get_rome_status_fascist]\n§Y雅典§!：[GLOBAL.get_47_status]\n§Y德班§!：[GLOBAL.get_719_status]\n§Y吉布提§!：[GLOBAL.get_268_status]\n§Y利马§!：[GLOBAL.get_303_status]\n§Y波哥大§!：[GLOBAL.get_306_status]\n§Y巴拿马城§!：[GLOBAL.get_304_status]\n§Y马那瓜§!：[GLOBAL.get_317_status]\n§Y墨西哥城§!：[GLOBAL.get_1137_status]\n§Y萨克拉门托§!：[GLOBAL.get_941_status]\n§Y纽约§!：[GLOBAL.get_918_status]\n§Y渥太华§!：[GLOBAL.get_276_status]\n§Y火奴鲁鲁§!：[GLOBAL.get_629_status]"

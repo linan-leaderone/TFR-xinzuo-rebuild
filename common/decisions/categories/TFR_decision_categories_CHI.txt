@@ -44,4 +44,23 @@
     	has_completed_focus = TZL_TWW_FOCUS_17
 
 		}
+	}	
+	TZL_ww3_category = {
+		icon = GFX_TZL_WJLX_DT
+		#picture = GFX_CHI_test_of_will_banner_animated
+		priority = 4
+		visible_when_empty = yes
+
+		allowed = {
+		OR = {
+			original_tag = GER
+			original_tag = TZL
+			original_tag = TSU
+			original_tag = TRG
+		}
+		}
+		visible = {
+    has_global_flag = third_great_war_flag
+
+		}
 	}

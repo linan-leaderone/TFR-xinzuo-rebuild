@@ -1,5 +1,98 @@
 second_nato_war_decisions = {
-	
+			
+	third_great_war_mission1 = {
+		priority = 1
+		icon = GFX_SOV_decision_nato_war_deadline
+		available = {
+
+	NOT = { country_exists = TRG }
+	NOT = { country_exists = TZL }
+	NOT = { country_exists = GER }
+	NOT = { country_exists = TRG }
+		}
+		days_mission_timeout = 999
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = no
+		is_good = no
+		cancel_trigger = {
+		OR = {
+			SOV = {
+				surrender_progress > 0.5
+			}
+			PRC = {
+				surrender_progress > 0.5
+			}
+		}
+		}
+		cancel_effect = { #薄熙来政变
+
+					PRC_UZEDONG_SHANGTAI_1146 =  yes
+
+
+			}
+		timeout_effect = {
+			activate_mission = third_great_war_mission1
+		}
+		complete_effect = { #上合组织获胜
+		
+		}		
+		}	
+	third_great_war_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_nato_war_deadline
+		available = {
+
+	NOT = { country_exists = TRG }
+	NOT = { country_exists = TZL }
+	NOT = { country_exists = GER }
+	NOT = { country_exists = TRG }
+		}
+		days_mission_timeout = 999
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = no
+		is_good = no
+		cancel_trigger = {
+	NOT = { country_exists = SOV }
+
+			PRC = {
+				surrender_progress > 0.9
+			}
+		}
+		cancel_effect = { #共产国际获胜
+
+
+
+NLM = {annex_country = {
+								target = PRC
+								transfer_troops = no
+							}
+release = UFA
+UFA = {annex_country = {
+								target = KAZ
+								transfer_troops = yes
+							}
+							}
+							}
+
+
+			}
+		timeout_effect = {
+			activate_mission = third_great_war_mission
+		}
+		complete_effect = { #上合组织获胜
+		
+		}		
+		}
 	second_nato_war_mission = {
 		priority = 1
 		icon = GFX_SOV_decision_nato_war_deadline
@@ -99,6 +192,7 @@ second_nato_war_decisions = {
 		is_good = no
 		cancel_trigger = {
 			OR = {
+TZL = { is_in_faction_with = TSU }
 				SOV = {
 					NOT = {
 						owns_state = 195
@@ -139,6 +233,10 @@ second_nato_war_decisions = {
 			}
 		}
 		cancel_effect = { #NATO Kill SOV
+			if = {
+				limit = {
+		NOT = {TZL = { is_in_faction_with = TSU }}
+			}
 			SOV = {
 				load_focus_tree = generic_focus
 			}
@@ -205,6 +303,7 @@ second_nato_war_decisions = {
 				}
 			}
 		}
+			}
 		timeout_effect = {
 			activate_mission = second_nato_war_mission
 		}
@@ -397,11 +496,18 @@ great_asian_war_decisions = {
 		cancel_if_not_visible = no
 		is_good = no
 		cancel_trigger = {
+			OR= {
+TZL = { is_in_faction_with = TSU }
 			PRC = {
 				surrender_progress > 0.6
 			}
+			}
 		}
 		cancel_effect = { # PDTO victory
+			if = {
+				limit = {
+		NOT = {TZL = { is_in_faction_with = TSU }}
+			}
 			PRC = {
 				remove_mission = PRC_GAW_war_exhaustion
 				load_focus_tree = generic_focus
@@ -418,6 +524,7 @@ great_asian_war_decisions = {
 			}
 			PRC_japans_victory_in_the_gaw = yes
 		}
+			}
 		timeout_effect = {
 			activate_mission = great_asian_war_mission
 		}

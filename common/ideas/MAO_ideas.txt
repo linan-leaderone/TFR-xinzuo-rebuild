@@ -571,7 +571,28 @@ society_development_monthly =  0.01
 academic_development_monthly =  0.01
 
     }
-}													
+}														
+red_TJZ_83_idea = {
+    picture = TJZ_Member4
+    name = red_TJZ_dynamic
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+industry_repair_factor = 2
+industry_air_damage_factor = -0.4
+consumer_goods_factor = -0.15
+
+    }
+}															
 red_TJZ_0_idea = {
     picture = TJZ_Member4
     name = red_TJZ_dynamic

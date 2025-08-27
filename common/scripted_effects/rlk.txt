@@ -377,8 +377,44 @@ TSU = {RED_JAP_REV_ARMY = yes}
 				name = AST_XETH_party2
 			}
 
+	
+			SHB = {
+		declare_war_on = {
+			target = DJI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
 
-					
+					transfer_units_fraction = {
+						target = DJI
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}
+			
+			SML = {
+		declare_war_on = {
+			target = DJI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = DJI
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}			
 	
 			TDF = {
 		declare_war_on = {

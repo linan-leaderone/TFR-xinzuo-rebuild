@@ -5,6 +5,8 @@
 		window_name = "TFR_WW3_GUI_anniu_gui"
 
 		visible = {
+
+		has_global_flag = third_great_war_flag
 		OR = {
 	original_tag = TZL
 	original_tag = TSU
@@ -88,15 +90,25 @@ country_exists = MLD
 				MLD = {surrender_progress > 0}
 			}
 			WWW_state1_1_visible = { 
-				HRL = {is_in_faction_with = TSU} 
-				NOT = {HRL = {surrender_progress > 0}} 
+				HRL = {all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+} 
 			}
 			WWW_state1_2_visible = { 
-				NOT = { HRL = {is_in_faction_with = TSU}} 
-				NOT = {HRL = {surrender_progress > 0}} 
+				HRL = {all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}}
 			}
 			WWW_state1_4_visible = { 
-				HRL = {surrender_progress > 0}
+					NOT = {HRL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = HRL
+			}
 			}
 			WWW_state2_1_visible = { 
 				PRP = { all_core_state = {
@@ -2791,42 +2803,79 @@ country_exists = NOR
 			}
 
 			WWWANNIU1_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqiwkl = 1 }
-			}
-			WWWANNIU11_visible = { 
 				check_variable = { TFR_WW3_yuanzhuwuqiwkl = 0 }
+ 				SOV = { surrender_progress > 0.1}
+			}
+			WWWANNIU11_visible = {   
+			OR = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiwkl = 1 }
+ 				NOT = {SOV = { surrender_progress > 0.1}}
+			}
 			}
 			WWWANNIU2_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqizy = 1 }
-			}
-			WWWANNIU21_visible = { 
 				check_variable = { TFR_WW3_yuanzhuwuqizy = 0 }
+ 				SOV = { surrender_progress > 0.3}
+			}
+			WWWANNIU21_visible = {   
+			OR = { 
+				check_variable = { TFR_WW3_yuanzhuwuqizy = 1 }
+ 				NOT = {SOV = { surrender_progress > 0.3}}
+
+			}
 			}
 			WWWANNIU3_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqiblz = 1 }
-			}
-			WWWANNIU31_visible = { 
 				check_variable = { TFR_WW3_yuanzhuwuqiblz = 0 }
+ 				PRJ = { surrender_progress > 0.2}
 			}
-			WWWANNIU4_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqiroj = 1 }
+			WWWANNIU31_visible = {   
+			OR = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiblz = 1 }
+ 				NOT = {PRJ = { surrender_progress > 0.2}}
 			}
-			WWWANNIU41_visible = { 
+			}
+			WWWANNIU4_visible = {  
+			OR = { 
+ 				TUR = { surrender_progress > 0.2}
+ 				SYR = { surrender_progress > 0.2}
+ 				PER = { surrender_progress > 0.2}
+ 				IRQ = { surrender_progress > 0.2}
+			}
 				check_variable = { TFR_WW3_yuanzhuwuqiroj = 0 }
 			}
+			WWWANNIU41_visible = {  
+			OR = { 
+				check_variable = { TFR_WW3_yuanzhuwuqiroj = 1 } 
+			AND = { 
+			NOT = { 
+ 				TUR = { surrender_progress > 0.2}
+ 				SYR = { surrender_progress > 0.2}
+ 				PER = { surrender_progress > 0.2}
+ 				IRQ = { surrender_progress > 0.2}
+			}
+			}
+			}
+			}
 			WWWANNIU5_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqichf = 1 }
+				check_variable = { TFR_WW3_yuanzhuwuqichf = 0 }
+ 				PRC = { surrender_progress > 0.2}
+ 				TZL = {has_completed_focus = TZL_TWW_FOCUS_21}
 			}
 			WWWANNIU51_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqichf = 0 }
+			OR = { 
+				check_variable = { TFR_WW3_yuanzhuwuqichf = 1 }
+			NOT = { PRC = { surrender_progress > 0.2}}
+			}
 			}
 			WWWANNIU6_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqipol = 1 }
+				check_variable = { TFR_WW3_yuanzhuwuqipol = 0 }
+ 				MLD = { surrender_progress > 0.4}
 			}
 			WWWANNIU61_visible = { 
-				check_variable = { TFR_WW3_yuanzhuwuqipol = 0 }
+				check_variable = { TFR_WW3_yuanzhuwuqipol = 1 }
+			NOT = { MLD = { surrender_progress > 0.4}}
 			}
-			WWWANNIU7_visible = { 
+			WWWANNIU7_visible = { 		 
+				check_variable = { TFR_WW3_WWWANNIU71 = 0 }
 			OR = { 
 
 TAL = {any_neighbor_country = {is_ally_with = TSU}}
@@ -2835,12 +2884,17 @@ TAL = {any_neighbor_country = {original_tag = TSU}}
 			}	
 			}
 			WWWANNIU71_visible = { 
-		
+		  
+			OR = { 
+				check_variable = { TFR_WW3_WWWANNIU71 = 1 }		  
+			AND = { 
 				NOT = {TAL = {any_neighbor_country = {is_ally_with = TSU}}}		
 				NOT = {TAL = {any_neighbor_country = {original_tag = TSU}}}
-		
+					}		
 			}
-			WWWANNIU8_visible = { 
+			}
+			WWWANNIU8_visible = { 	 
+				check_variable = { TFR_WW3_WWWANNIU81 = 0 }	  
 			OR = { 
 
 PER = {any_neighbor_country = {is_ally_with = TSU}}
@@ -2848,9 +2902,14 @@ PER = {any_neighbor_country = {original_tag = TSU}}
 			
 			}	
 			}
-			WWWANNIU81_visible = { 
+			WWWANNIU81_visible = { 			  
+			OR = { 	 
+				check_variable = { TFR_WW3_WWWANNIU81 = 1 }	  
+			AND = { 
 				NOT = {PER = {any_neighbor_country = {is_ally_with = TSU}}}		
 				NOT = {PER = {any_neighbor_country = {original_tag = TSU}}}
+			}
+					}		
 			}
 
 				}
@@ -2859,7 +2918,228 @@ PER = {any_neighbor_country = {original_tag = TSU}}
 		effects = {
 WWW_guanbi_click = {
 				set_variable = { TFR_WW3_GUI_START = 0 }
-				set_country_flag = santifa_flag
+				}
+WWWANNIU1_click = {	
+				
+			every_state = {
+				limit = {
+					is_core_of = UKR
+				}
+			    add_core_of = UFA
+		    }
+SOV = {release = UFA}
+				
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+			    add_core_of = UFA
+		    }
+
+UFA = {
+
+set_cosmetic_tag = SOV_SovietUnion
+		create_country_leader = {
+			name = SOV_rcpm
+			picture = "gfx/MAOYUANXIN/SEY_GWH.png"
+			ideology = Tsuguism
+		}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+
+				load_oob = UKR_REV
+				load_oob = UKR_REV
+				load_oob = UKR_REV
+				load_oob = UKR_REV
+declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+}
+TSU = {add_to_faction = UFA}
+RED_JAP_REV_ARMY = yes
+				set_variable = { TFR_WW3_yuanzhuwuqwkl = 1 }
+				}
+WWWANNIU2_click = {	
+	
+			every_state = {
+				limit = {
+					is_core_of = TMS
+				}
+			    add_core_of = KAZ
+		    }
+SOV = {release = KAZ}
+			
+			every_state = {
+				limit = {
+					is_core_of = KYR
+				}
+			    add_core_of = KAZ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TAJ
+				}
+			    add_core_of = KAZ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = UZB
+				}
+			    add_core_of = KAZ
+		    }
+KAZ = {
+set_cosmetic_tag = AFG_TJG_XIN
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+set_country_leader_ideology = Tsuguism
+load_oob = KAZ_conscripts
+load_oob = KAZ_conscripts
+load_oob = KAZ_conscripts
+load_oob = KAZ_conscripts
+declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+}
+TSU = {add_to_faction = KAZ}
+RED_JAP_REV_ARMY = yes
+				set_variable = { TFR_WW3_yuanzhuwuqzy = 1 }
+				}
+WWWANNIU3_click = {	
+
+
+BAL = {
+								add_state_core = 1322
+								transfer_state = 1322
+								add_state_core = 444
+								add_state_core = 1054
+								add_state_core = 1055
+								add_state_core = 410
+								transfer_state = 444
+set_country_leader_ideology = marxism_lenin_maoism
+load_oob = BAL_civil_war
+load_oob = BAL_civil_war
+declare_war_on = {
+			target = PRJ
+			type = annex_everything
+		}
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+}
+TSU = {add_to_faction = BAL}
+RED_JAP_REV_ARMY = yes
+				set_variable = { TFR_WW3_yuanzhuwuqiblz = 1 }
+				}
+WWWANNIU6_click = {	
+
+PLD = {
+
+annex_country = {
+								target =MLD
+								transfer_troops = yes
+							}
+				set_party_name = { ideology = totalitarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "波兰革命委员会"
+	                desc = "POLITICS_PLDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+}
+PLD = {load_oob = PLD_communist
+load_oob = PLD_communist
+declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+}
+TSU = {add_to_faction = PLD}
+RED_JAP_REV_ARMY = yes
+				set_variable = { TFR_WW3_yuanzhuwuqipol = 1 }
+				}
+WWWANNIU4_click = {	
+			every_state = {
+				limit = {
+					is_core_of = KUR
+				}
+			    add_core_of = ROJ
+		    }
+IRQ = {release = ROJ}
+TUR = {release = ROJ}
+SYR = {release = ROJ}
+ROJ = {
+set_country_leader_ideology = Tsuguism
+load_oob = ROJ_20200
+load_oob = ROJ_20200
+load_oob = ROJ_20200
+load_oob = ROJ_20200
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+annex_country = {
+								target =KUR
+								transfer_troops = yes
+							}}
+TSU = {add_to_faction = ROJ}
+RED_JAP_REV_ARMY = yes
+				set_variable = { TFR_WW3_yuanzhuwuqiroj = 1 }
+				}
+WWWANNIU5_click = {
+				CHI_UZEDONG_SHANGTAI_12 = yes
+				set_variable = { TFR_WW3_yuanzhuwuqichf = 1 }
+				}
+WWWANNIU7_click = {	
+PRC = {add_to_faction = TAL}
+declare_war_on = {
+			target = TAL
+			type = annex_everything
+		}
+				set_variable = { TFR_WW3_WWWANNIU71 = 1 }
+				}
+WWWANNIU8_click = {	
+PRC = {add_to_faction = PER}
+declare_war_on = {
+			target = PER
+			type = annex_everything
+		}
+				set_variable = { TFR_WW3_WWWANNIU81 = 1 }
 				}
 				}
 

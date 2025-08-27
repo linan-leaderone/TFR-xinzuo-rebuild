@@ -197,6 +197,11 @@ ideologies = {
 			eco_socialism = {
 			}
 			Tsuguism = {
+				color = {
+					255
+					0
+					0
+				}
 				can_be_randomly_selected = no
 			}
 

@@ -29,6 +29,14 @@ NOT = {has_idea = PRC_future_of_cyber_communism_idea_1}
 				}
 			if = {
 				limit = {
+					TZL = {has_country_flag = TZL_TZL_JJFZ_nuke_4}
+NOT = {has_country_flag = TZL_TZL_JJFZ_nuke_4}
+				}
+			set_country_flag = TZL_TZL_JJFZ_nuke_4
+set_technology = {nukes = 1}
+				}
+			if = {
+				limit = {
 					TZL = {has_completed_focus = TZL_TWW_FOCUS_75}
 				}
 			add_to_tech_sharing_group = TJZ_research

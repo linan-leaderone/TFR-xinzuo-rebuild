@@ -122,6 +122,9 @@ EFF = {annex_country = {
 						NOT = {
 								PRC = {is_ally_with = ROJ}
 						}
+						NOT = {
+								TZL = {is_ally_with = ROJ}
+						}
 						FROM = {
 						OR = {
 							original_tag = ROJ

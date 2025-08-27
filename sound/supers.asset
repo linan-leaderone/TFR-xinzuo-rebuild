@@ -14,7 +14,7 @@ sound = {
 sound = {
 	name = "santifa"
 	file = "menu/santifa.wav"
-	volume = 1
+	volume = 2.5
 	always_load = yes
 }
 

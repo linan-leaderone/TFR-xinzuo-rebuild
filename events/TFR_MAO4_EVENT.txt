@@ -21,6 +21,10 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.2.a
+								country_event = {
+									id = PRC_MAO4.40
+									days = 30
+								}
 		declare_war_on = {
 			target = USN
 			type = annex_everything
@@ -1463,6 +1467,8 @@ PRP = {annex_country = {
 								target =RSR
 								transfer_troops = yes
 							}}
+TZL = { set_country_flag = TZL_start_of_war }
+			TZL = {mark_focus_tree_layout_dirty = yes }
 			every_state = {
 				limit = {
 					is_core_of = RSR
@@ -1482,18 +1488,58 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.38.a
+		set_global_flag = third_great_war_flag
+		set_global_flag = second_nato_war_flag
+		set_global_flag = pan_asian_war_ongoing
+								country_event = {
+									id = PRC_MAO4.39
+								}
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+	    		add_timed_idea = {
+	    	   		idea = PRK_surprise_offensive
+	    	   		days = 50
+	    	   	}
+			hidden_effect = {
+				set_variable = { TFR_WW3_GUI_START = 1 }
+
+			NIC = {	set_country_leader_ideology = marxism_lenin_maoism}
+TZL = {load_oob = TZL_marines_1 }
+			PRC = {mark_focus_tree_layout_dirty = yes }
+			TZL = {mark_focus_tree_layout_dirty = yes }
+			TSU = {mark_focus_tree_layout_dirty = yes }
+			GER = {mark_focus_tree_layout_dirty = yes }
+			SOV = {mark_focus_tree_layout_dirty = yes }
+
+			CUB = {activate_mission = third_great_war_mission1}
+			CUB = {activate_mission = third_great_war_mission}
+	}
+
 	}
 }
 
-country_event = {
+news_event = {
 	id = PRC_MAO4.39
 	title = PRC_MAO4.39.t
 	desc = PRC_MAO4.39.d
 	picture = GFX_PRC_MAO4_event_39
 	is_triggered_only = yes
 	fire_only_once = no
+	major = yes
 	option = {
 		name = PRC_MAO4.39.a
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = santifa_flag	
+				scoped_sound_effect = santifa
+				scoped_play_song = "one_minute_of_silence"
+	}
+	}
 	}
 }
 
@@ -1506,6 +1552,7 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.40.a
+				TSU = {load_oob = TSU_marines_1 }
 	}
 }
 

@@ -121,6 +121,50 @@ on_actions = {
 				limit = {
 					FROM.FROM = { 
 						OR = {
+							state = 315
+						} 
+					}
+						FROM = { tag = CUB}
+
+						ROOT = {
+							OR = {
+								original_tag =TZL
+								is_ally_with = TZL
+							}
+}
+
+}
+						TZL = {white_peace = CUB}
+						TSU = {white_peace = CUB}
+					
+CUB = {
+				set_party_name = { ideology = totalitarian_socialist long_name = CUBCCC_party name = CUBCCC_party }
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+				create_country_leader = {
+	                name = "古巴革命委员会"
+	                desc = "POLITICS_GREGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+				}  
+TSU = {add_to_faction = CUB}
+RED_JAP_REV_ARMY = yes
+
+
+}
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
 							state = 731
 						} 
 					}
@@ -249,6 +293,37 @@ on_actions = {
 
 
 						FROM = {
+						NOT = {
+							original_tag = TSU
+						}
+						}
+						ROOT = {
+							OR = {
+							original_tag = TSU
+								is_ally_with = TSU
+							}
+						}
+					}
+
+				TSU = {	
+			
+		
+		
+RED_JAP_REV_ARMY_1 = yes
+RED_JAP_REV_ARMY_1 = yes
+RED_JAP_REV_ARMY = yes
+RED_JAP_REV_ARMY = yes						
+}
+
+
+					}
+
+
+			if = {
+					limit = {
+
+
+						FROM = {
 							OR = {
 							original_tag = TSU
 								is_ally_with = TSU
@@ -276,7 +351,843 @@ RED_JAP_REV_ARMY = yes
 
 
 					}
+		
+
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = PER
+						}
+					}
+
+					ROOT = {
+						dismantle_faction = yes
+					}
+						TZL = {white_peace = PER}	
+			every_state = {
+				limit = {
+					is_core_of = ETL
+				}
+			    remove_core_of = ETL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PER
+				}
+			    add_core_of = ETL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PER
+				}
+			    remove_core_of = PER
+		    }
+ETL = {annex_country = {
+								target = PER
+								transfer_troops = no
+							}
+							}
+					FROM = {
+
+						white_peace = ROOT
+
+						ETL = {
+
+		remove_ideas = PER_glory_of_islamic_revolution
+		remove_ideas = PER_islamic_revolutionary_guard_corps
+		remove_ideas = PER_widespread_corruption
+		remove_ideas = PER_anti_government_sentiment
+		remove_ideas = PER_limited_nuclear_program
+		remove_ideas = medium_covid_cases
+				remove_ideas = PRC_unwilling_ally
+				clr_country_flag = AOR_Member
+							
+				set_cosmetic_tag = PER_XIN
+				set_party_name = { ideology = libertarian_socialist long_name = PERCCC_party_long name = PERCCC_party }
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			} 
+TSU = {add_to_faction = ETL}
+RED_JAP_REV_ARMY = yes
+				create_country_leader = {
+	                name = "伊朗革命委员会"
+	                desc = "POLITICS_PERGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}			
+
+
+				if = {
+					limit = {
+	
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = TAL
+						}
+					}
+					FROM = {
+							AFG = {	
+							annex_country = {
+								target = TAL
+								transfer_troops = no
+							}}
+		
+						AFG = {			
+			transfer_state = 1355			
+			transfer_state = 267			
+			transfer_state = 824			
+			transfer_state = 837		
+			transfer_state = 415			
+			transfer_state = 1051			
+			transfer_state = 1052			
+			transfer_state = 1053			
+			transfer_state = 1054			
+			transfer_state = 1055			
+			transfer_state = 1056			
+			transfer_state = 1057			
+			transfer_state = 1058
+	remove_ideas = AFG_corrupt_military_staff
+remove_ideas = AFG_unified_afghanistan
+remove_ideas = AFG_diarchy
+remove_ideas = AFG_crushing_taliban		
+								BAL = {	
+			transfer_state = 1054			
+			transfer_state = 1055
+				}
+				set_cosmetic_tag = AFG_XIN
+				set_party_name = { ideology = libertarian_socialist long_name = AFGCCCC_party_long name = AFGCCCC_party_long }
+
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			} 
+TSU = {add_to_faction = AFG}
+RED_JAP_REV_ARMY = yes
+				create_country_leader = {
+	                name = "阿富汗革命委员会"
+	                desc = "POLITICS_AFGGW_DESC"
+	                picture = "gfx/MAOYUANXIN/AFG_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+
+
+		
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+						OR = {
+							original_tag = ROM
+							original_tag = BUL
+							original_tag = SLO
+							original_tag = SER
+							original_tag = HUN
+						}
+
+						}
+					}
+
+
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = SLV
+		    }
+SLV = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+				if = {
+					limit = {
+SLV = {NOT = {has_country_flag=beglbg_slv} } 
+				}  
+TSU = {add_to_faction = SLV}
+RED_JAP_REV_ARMY = yes
+				set_cosmetic_tag = BUL_balkan_federation
+set_country_flag=beglbg_slv
+				set_party_name = { ideology = libertarian_socialist long_name = BULCCC_party name = BULCCC_party }
+
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 1
+			}
+				create_country_leader = {
+	                name = "巴尔干革命委员会"
+	                desc = "POLITICS_BULGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+				}  
+							}
+					set_global_flag = skip_default_capitulation
+				}				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = VEN
+
+						}
+					}
+
+
+
+ELN = {annex_country = {
+								target = VEN
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
+				}	
+
+
+
+
+			if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = VOL
+						}
+					}
+
+
+						TSU = {white_peace = VOL}
 			
+TSU = {add_to_faction = VOL}
+RED_JAP_REV_ARMY = yes
+
+
+						VOL = {
+				set_party_name = { ideology = libertarian_socialist long_name = VOLCCC_party name = VOLCCC_party }
+  				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+				create_country_leader = {
+	                name = "西非革命委员会"
+	                desc = "POLITICS_FINGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+
+
+			if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = HRL
+						}
+					}
+
+
+						TSU = {white_peace = HRL}
+			
+TSU = {add_to_faction = HRL}
+RED_JAP_REV_ARMY = yes
+			every_state = {
+				limit = {
+					is_core_of = WES
+				}
+			    add_core_of = HRL
+		    }
+HRL = {annex_country = {
+								target = WES
+								transfer_troops = yes
+							}
+
+							}
+						HRL = {
+				set_party_name = { ideology = libertarian_socialist long_name = HRLCCC_party name = HRLCCC_party }
+  				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+				create_country_leader = {
+	                name = "阿拉伯革命委员会"
+	                desc = "POLITICS_FINGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+
+
+			if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = FIN
+						}
+					}
+
+
+						TSU = {white_peace = FIN}
+			
+TSU = {add_to_faction = TUR}
+RED_JAP_REV_ARMY = yes
+						FIN = {
+				set_party_name = { ideology = totalitarian_socialist long_name = FINCCC_party name = FINCCC_party }
+                inherit_technology = PRC
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "芬兰革命委员会"
+	                desc = "POLITICS_FINGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+
+
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = TUR
+						}
+					}
+
+
+						TSU = {white_peace = TUR}
+	
+TSU = {add_to_faction = TUR}
+RED_JAP_REV_ARMY = yes
+			SYR = {transfer_state = 827}
+			ROJ = {transfer_state = 350	
+			transfer_state = 352	
+			transfer_state = 353	
+			transfer_state = 348				
+			transfer_state = 1030			
+			transfer_state = 1031			
+			transfer_state = 1035}
+						TUR = {
+				set_cosmetic_tag = TUR_Rev_Repub_of_Turkey
+				set_party_name = { ideology = libertarian_socialist long_name = TURCCC_party name = TURCCC_party }
+			set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.4
+			}
+				create_country_leader = {
+	                name = "土耳其革命委员会"
+	                desc = "POLITICS_TURGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}
+
+
+				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = SIA
+
+						}
+					}
+
+	
+
+NPA = {annex_country = {
+								target = SIA
+								transfer_troops = no
+							}
+
+							}
+
+
+NPA = {release = ETI}
+NPA = {release = BRM}
+NPA = {release = VIN}
+NPA = {release = LAO}
+NPA = {release = CAM}
+
+TSU = {add_to_faction = BRM}
+TSU = {add_to_faction = LAO}
+TSU = {add_to_faction = VIN}
+TSU = {add_to_faction = CAM}
+RED_JAP_REV_ARMY = yes
+
+	SIA = {annex_country = {
+								target = ETI
+								transfer_troops = no
+							}
+
+							}
+TSU = {add_to_faction = SIA}
+			every_state = {
+				limit = {
+					is_core_of = ETI
+				}
+			    add_core_of = SIA
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ETI
+				}
+			    remove_core_of = ETI
+		    }
+
+						CAM = {
+				remove_ideas = PRC_unwilling_ally	
+				load_oob = CAM_2000
+							
+				set_cosmetic_tag = CAM_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = CAMCCC_party_long name = CAMCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "柬埔寨革命委员会"
+	                desc = "POLITICS_JPZGW_DESC"
+	                picture = "gfx/MAOYUANXIN/JPZ_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+						LAO = {
+				remove_ideas = PRC_unwilling_ally	
+				load_oob = LAO_2020
+							
+				set_cosmetic_tag = LAO_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = LAOCCC_party_long name = LAOCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "老挝革命委员会"
+	                desc = "POLITICS_LWGW_DESC"
+	                picture = "gfx/MAOYUANXIN/LW_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+						VIN = {
+				remove_ideas = PRC_unwilling_ally	
+				load_oob = VIN_reserves
+							
+				set_cosmetic_tag = VIN_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = VINCCC_party_long name = VINCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "越南革命委员会"
+	                desc = "POLITICS_YNGW_DESC"
+	                picture = "gfx/MAOYUANXIN/YN_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+						BRM = {
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = BRM_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = BRMCCC_party_long name = BRMCCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "缅甸革命委员会"
+	                desc = "POLITICS_MDGW_DESC"
+	                picture = "gfx/MAOYUANXIN/BRM_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+						SIA = {
+
+annex_country = {
+								target = ETI
+								transfer_troops = yes
+							}
+annex_country = {
+								target = BRU
+								transfer_troops = yes
+							}
+				load_oob = SIA_reserves
+				remove_ideas = PRC_unwilling_ally	
+							
+				set_cosmetic_tag = SIA_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = SIACCC_party_long name = SIACCC_party }
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "暹罗革命委员会"
+	                desc = "POLITICS_XLGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = maoism
+				}  
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}		
+
+
+
+
+
+
+	
+
+				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = SYR
+
+						}
+					}
+
+
+			TSU = {white_peace = SYR}
+TSU = {add_to_faction = SYR}
+RED_JAP_REV_ARMY = yes
+
+				SYR = {set_party_name = { ideology = libertarian_socialist long_name = SYRCCCCCC_party_long name = SYRCCCCCC_party } }
+				SYR = {
+						remove_ideas = SYR_devistated_economy
+						remove_ideas = SYR_war_exhaustion
+						remove_ideas = SYR_alawite_dominated_army
+						remove_ideas = SYR_inexperienced_generals
+						remove_ideas = SYR_russian_trained_officers
+						remove_ideas = SYR_russian_support
+						remove_ideas = SYR_army_of_lions_idea
+						remove_ideas = SYR_alawite_dominated_army_2
+						remove_ideas = SYR_devistated_economy_2
+						remove_ideas = SYR_devistated_economy_3
+						remove_ideas = SYR_devistated_economy_4
+						remove_ideas = SYR_devistated_economy_5
+						remove_ideas = SYR_syrian_economic_renewal
+						remove_ideas = SYR_failing_curency
+						remove_ideas = SYR_assadism_idea
+						remove_ideas = SYR_cult_of_saddeh_idea
+						remove_ideas = SYR_greater_syria_1
+						remove_ideas = SYR_greater_syria_2
+						remove_ideas = SYR_greater_syria_3
+						remove_ideas = SYR_greater_syria_4
+create_country_leader = {
+	                name = "叙利亚临时革命政府"
+	                desc = "POLITICS_SYRRGW_DESC"
+	                picture = "gfx/MAOYUANXIN/gjzyy.png"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  }
+
+
+					set_global_flag = skip_default_capitulation
+				}		
+
+				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = ISR
+
+						}
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = ISR
+				}
+			    add_core_of = HRL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = JOR
+				}
+			    add_core_of = HRL
+		    }
+
+
+
+HRL = {annex_country = {
+								target = ISR
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
+				}	
+
+						
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = LEB
+
+						}
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = LEB
+				}
+			    add_core_of = SYR
+		    }
+
+SYR = {annex_country = {
+								target = LEB
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
+				}			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = PRJ
+
+						}
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = PAK
+				}
+			    add_core_of = NAX
+		    }
+
+NAX = {annex_country = {
+								target = PRJ
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
+				}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = HRL
+								is_ally_with = HRL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+						OR = {
+							original_tag = SUD
+							original_tag = SSD
+						}
+
+						}
+					}
+
+
+
+HRL = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
+				}
+	
 				if = {
 					limit = {
 

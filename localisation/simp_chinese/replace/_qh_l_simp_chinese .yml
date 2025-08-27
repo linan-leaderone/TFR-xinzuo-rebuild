@@ -680,6 +680,7 @@ PRC_MAO3.87.a:0 "拭目以待"
 TZL_WJLX_category:0 "大亚洲革命"
 TZL_TZL_JJFZ_nuke_1:0 "§Y已完成§R美丽岛曙光计划§!£GFX_TZL_JJFZ_HJH_banner 第一阶段§!"
 TZL_TZL_JJFZ_nuke_2:0 "§Y已完成§R美丽岛曙光计划§!£GFX_TZL_JJFZ_HJH_banner 第二阶段§!"
+TZL_TZL_JJFZ_nuke_3:0 "§Y已完成§R美丽岛曙光计划§!£GFX_TZL_JJFZ_HJH_banner 第三阶段§!"
 TZL_WJLX_mal:0 "§Y援助壮大§R马来西亚左派势力§!£GFX_kangmijiaobiao_banner §!"
 TZL_WJLX_prc:0 "§Y援助壮大§R中国大陆左派势力§!£GFX_kangmijiaobiao_banner §!"
 TZL_WJLX_ast:0 "§Y援助壮大§R澳大利亚左派势力§!£GFX_kangmijiaobiao_banner §!"
@@ -1151,7 +1152,7 @@ TZL_TWW_FOCUS_281_tooltip:0 "§Y§R经济自由斗士§!赢得南非内战§!"
  TZL_TWW_FOCUS_85_desc:0 " "
  TZL_TWW_FOCUS_86:0 "§R阶级总决战§!"
  TZL_TWW_FOCUS_86_desc:0 " 
-
+third_great_war_flag:0 "§Y第三次世界大战§!"
 
 
 

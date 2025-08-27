@@ -92,6 +92,8 @@ red_TJZ_dynamic = {
 	enable = {
 		always = yes
 	}
+	industry_repair_factor = TSU.red_TJZ_industry_repair_factor_dynamic_var
+	industry_air_damage_factor = TSU.red_TJZ_industry_air_damage_factor_dynamic_var
 	weekly_manpower = TSU.red_TJZ_weekly_manpower_dynamic_var
 	decryption = TSU.red_TJZ_decryption_dynamic_var #解密
 	production_lack_of_resource_penalty_factor = TSU.red_TJZ_production_lack_of_resource_penalty_factor_dynamic_var #缺乏资源惩罚

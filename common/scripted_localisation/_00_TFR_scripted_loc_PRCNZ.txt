@@ -1,3 +1,546 @@
+
+defined_text = {
+	name = get_1355_status
+	
+	text = { 
+		trigger = {
+	
+				1355 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						1355 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			TAL = {
+				controls_state = 1355
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = TSU
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_266_status
+	
+	text = { 
+		trigger = {
+	
+				266 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						266 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+	text = { 
+		trigger = {
+			PER = {
+				controls_state = 266
+				NOT = {
+					OR = {
+						is_ally_with = PRC
+						is_ally_with = TSU
+					}
+				}
+			}
+		}
+		localization_key = "neutral_control"
+	}
+}
+defined_text = {
+	name = get_341_status
+	
+	text = { 
+		trigger = {
+	
+				341 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						341 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_49_status
+	
+	text = { 
+		trigger = {
+	
+				49 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						49 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_1137_status
+	
+	text = { 
+		trigger = {
+	
+				1137 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						1137 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_719_status
+	
+	text = { 
+		trigger = {
+	
+				719= {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						719 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_268_status
+	
+	text = { 
+		trigger = {
+	
+				268= {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						268 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_276_status
+	
+	text = { 
+		trigger = {
+	
+				276= {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						276 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_918_status
+	
+	text = { 
+		trigger = {
+	
+				918= {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						918 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_317_status
+	
+	text = { 
+		trigger = {
+	
+				317 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						317 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_303_status
+	
+	text = { 
+		trigger = {
+	
+				303 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						303 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_306_status
+	
+	text = { 
+		trigger = {
+	
+				306 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						306 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+
+defined_text = {
+	name = get_304_status
+	
+	text = { 
+		trigger = {
+	
+				304 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						304 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_307_status
+	
+	text = { 
+		trigger = {
+	
+				307 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						307 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_1032_status
+	
+	text = { 
+		trigger = {
+	
+				1032 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						1032 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_317_status
+	
+	text = { 
+		trigger = {
+	
+				317 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						317 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_315_status
+	
+	text = { 
+		trigger = {
+	
+				315 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						315 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_629_status
+	
+	text = { 
+		trigger = {
+	
+				629 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						629 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_941_status
+	
+	text = { 
+		trigger = {
+	
+				941 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						941 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_1391_status
+	
+	text = { 
+		trigger = {
+	
+				1391 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						1391 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_408_status
+	
+	text = { 
+		trigger = {
+	
+				408 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						408 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_448_status
+	
+	text = { 
+		trigger = {
+	
+				448 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						448 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_751_status
+	
+	text = { 
+		trigger = {
+	
+				751 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						751 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_461_status
+	
+	text = { 
+		trigger = {
+	
+				461 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						461 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_459_status
+	
+	text = { 
+		trigger = {
+	
+				459 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						459 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_458_status
+	
+	text = { 
+		trigger = {
+	
+				458 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						458 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_446_status
+	
+	text = { 
+		trigger = {
+	
+				446 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						446 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_454_status
+	
+	text = { 
+		trigger = {
+	
+				454 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						454 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_47_status
+	
+	text = { 
+		trigger = {
+	
+				47 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						47 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
+defined_text = {
+	name = get_107_status
+	
+	text = { 
+		trigger = {
+	
+				107 = {controller = {is_in_faction_with = PRC}}
+		}
+		localization_key = "enemy_control"
+	}
+	text = { 
+		trigger = {
+						107 = {controller = {is_in_faction_with = ROOT}}
+		}
+		localization_key = "friendly_control"
+	}
+}
 defined_text = {
 	name = TFR_ PRC_coronavirus_tiaojiao_btn_Text
 text = {
