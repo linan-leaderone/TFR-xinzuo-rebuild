@@ -543,6 +543,10 @@ SLV = {annex_country = {
 								target = ROOT
 								transfer_troops = no
 							}
+annex_country = {
+								target = CZE
+								transfer_troops = no
+							}
 				if = {
 					limit = {
 SLV = {NOT = {has_country_flag=beglbg_slv} } 

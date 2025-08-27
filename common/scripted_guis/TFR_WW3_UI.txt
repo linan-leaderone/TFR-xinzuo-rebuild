@@ -78,16 +78,26 @@ country_exists = FIN
 				FIN = {surrender_progress > 0}
 			}
 			WWW_state7_1_visible = { 
-				MLD = {is_in_faction_with = TSU} 
-				NOT = {MLD = {surrender_progress > 0}} 
+			MLD = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
 			}
 			WWW_state7_2_visible = { 
-				NOT = { MLD = {is_in_faction_with = TSU}} 
-				NOT = {MLD = {surrender_progress > 0}} 
+			MLD = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
 			}
 			WWW_state7_4_visible = { 
-country_exists = MLD
-				MLD = {surrender_progress > 0}
+				NOT = {MLD = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = MLD
+			}
 			}
 			WWW_state1_1_visible = { 
 				HRL = {all_core_state = {
@@ -2871,8 +2881,10 @@ country_exists = NOR
  				MLD = { surrender_progress > 0.4}
 			}
 			WWWANNIU61_visible = { 
+			OR = { 
 				check_variable = { TFR_WW3_yuanzhuwuqipol = 1 }
 			NOT = { MLD = { surrender_progress > 0.4}}
+			}
 			}
 			WWWANNIU7_visible = { 		 
 				check_variable = { TFR_WW3_WWWANNIU71 = 0 }
@@ -2969,7 +2981,7 @@ declare_war_on = {
 }
 TSU = {add_to_faction = UFA}
 RED_JAP_REV_ARMY = yes
-				set_variable = { TFR_WW3_yuanzhuwuqwkl = 1 }
+				set_variable = { TFR_WW3_yuanzhuwuqiwkl = 1 }
 				}
 WWWANNIU2_click = {	
 	
