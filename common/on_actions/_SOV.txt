@@ -609,6 +609,7 @@ ETL = {annex_country = {
 		}
 		}
 						PRC = {has_completed_focus =PRC_rejuvinate_cpc_cadres}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						FROM = {
 
 						OR = {
@@ -809,6 +810,7 @@ XIN = {annex_country = {
 				if = {
 					limit = {
 						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 										PRC = {
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
@@ -949,6 +951,7 @@ XIN = {annex_country = {
 				if = {
 					limit = {
 						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -979,6 +982,7 @@ XIN = {annex_country = {
 				if = {
 					limit = {
 						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -1058,6 +1062,7 @@ JOR = {annex_country = {
 				if = {
 					limit = {
 						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -1125,6 +1130,7 @@ JOR = {annex_country = {
 				if = {
 					limit = {
 						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -1193,6 +1199,7 @@ JOR = {annex_country = {
 				if = {
 					limit = {
 						NOT = {PRC= {has_completed_focus = PRC_niaolong_66}}
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						FROM = {
 						OR = {
 							original_tag = PRC
@@ -1224,6 +1231,7 @@ SYR = {annex_country = {
 				if = {
 					limit = {
 						FROM = {
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						OR = {
 							original_tag = PRC
 								is_ally_with = PRC
@@ -1255,6 +1263,7 @@ AOV = {annex_country = {
 				if = {
 					limit = {
 						FROM = {
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						OR = {
 							original_tag = PRC
 								is_ally_with = PRC
@@ -1286,6 +1295,7 @@ SOV = {annex_country = {
 				if = {
 					limit = {
 						FROM = {
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						OR = {
 							original_tag = PRC
 								is_ally_with = PRC
@@ -1315,6 +1325,7 @@ SOV = {annex_country = {
 				if = {
 					limit = {
 						FROM = {
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						OR = {
 							original_tag = PRC
 								is_ally_with = PRC
@@ -1345,6 +1356,7 @@ SOV = {annex_country = {
 				if = {
 					limit = {
 						FROM = {
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						OR = {
 							original_tag = PRC
 								is_ally_with = PRC
@@ -1378,6 +1390,7 @@ SOV = {annex_country = {
 					limit = {
 PRC = {has_country_flag = RUS_EUO_PRC}
 						FROM = {
+						NOT = {PRC= {has_completed_focus = PRC_chinas_most_dire_hour}}
 						OR = {
 							original_tag = PRC
 								is_ally_with = PRC

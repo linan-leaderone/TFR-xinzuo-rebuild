@@ -1,12 +1,122 @@
 
+	PRC_UZEDONG_SHANGTAI_1146 = {
+	PRC = {
+			every_country = {
+				limit = {
+						is_ally_with = PRC
+						NOT = {tag = PRC}
+				}
+								country_event = {
+									id = PRC_MAO4.24
+								}
+}
+								country_event = {
+									id = PRC_MAO4.25
+								}
+		add_country_leader_role = {
+			character = PRC_bo_xilai
+			promote_leader = yes
+			country_leader = {
+				ideology = jucheism
+				expire = "2099.1.1.1"
+				traits = {
+				}
+			}
+		}
+remove_ideas = PRC_the_separatist_problem
+remove_ideas = PRC_the_separatist_problem_2
+remove_ideas = PRC_the_separatist_problem_3
+remove_ideas = PRC_the_separatist_problem_4
+remove_ideas = PRC_the_separatist_problem_nat
+remove_ideas = PRC_yangyongxin_idea
+remove_ideas = PRC_corrupt_bureaucracy_idea
+remove_ideas = PRC_corrupt_bureaucracy_negative1_idea
+remove_ideas = PRC_corrupt_bureaucracy_negative2_idea
+remove_ideas = PRC_corrupt_bureaucracy2_idea
+remove_ideas = PRC_corrupt_bureaucracy3_idea
+remove_ideas = PRC_corrupt_bureaucracy4_idea
+remove_ideas = PRC_corrupt_bureaucracy5_idea
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+			PRC_decrease_corrupt_bureaucracy = yes
+remove_ideas = PRC_xuefawenti_idea
+remove_ideas = PRC_Chinese_Exam_Oriented_Education
+remove_ideas = red_noble_idea_1
+remove_ideas = red_noble_idea_2
+remove_ideas = red_noble_idea_3
+remove_ideas = red_noble_idea_4
+remove_ideas = red_noble_idea_5
+		promote_character = {
+			character = PRC_bo_xilai
+			ideology = jucheism
+		}
+set_popularities = {
+	national_socialist = 100
+}
+			set_party_name = {
+				ideology = national_socialist
+				long_name = PRC_EUO_empire_party2
+				name = PRC_EUO_empire_party2
+			}
+set_country_leader_portrait = {
+	ideology = national_socialist
+	portrait = GFX_PRC_bohetang
+}
+			set_cosmetic_tag = PRC_EUO_empire
+								}
+								}
+	PRC_UZEDONG_SHANGTAI_1145 = {
+
+		add_country_leader_role = {
+			character = PRC_cheng_wenqing
+			promote_leader = yes
+			country_leader = {
+				ideology = jucheism
+				expire = "2099.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_cheng_wenqing
+			ideology = jucheism
+		}
+								}	
 CHI_UZEDONG_SHANGTAI_6 = {
 HKN = {
 
 								country_event = {
 									id = PRC_MAO3.97
 								}	
+TZL = {
+								country_event = {
+									id = PRC_MAO4.13
+				days = 30
+								}
+								}	
+TSU = {
+								country_event = {
+									id = PRC_MAO4.13
+				days = 30
+								}
+								}	
+TZL = {
+								country_event = {
+									id = PRC_MAO4.14
+				days = 100
+								}
+								}	
+TSU = {
+								country_event = {
+									id = PRC_MAO4.14
+				days = 100
+								}
+								}
+	TSU = {add_to_faction = HKN}
 RED_JAP_REV_ARMY = yes
-
+RED_JAP_REV_ARMY_1 = yes
 			set_party_name = {
 				ideology = communist
 				long_name = MSJCIK
@@ -44,7 +154,6 @@ set_popularities = {
 	libertarian_socialist = 25
 	social_democrat = 20
 }
-	TSU = {add_to_faction = HKN}
 				set_politics = {
 				ruling_party = communist
 				last_election = "2023.1.1"

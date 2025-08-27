@@ -1,0 +1,1165 @@
+﻿add_namespace = syria
+#Daraa Uprising
+#country_event = {
+#id = syria.3
+#title = syria.3.t
+#desc = syria.3.d
+#picture = GFX_report_event_political_deal
+#fire_only_once = yes
+#is_triggered_only = yes
+#trigger = {
+#	original_tag = SYR
+#	date > 2020.1.10
+#}
+#option = {
+#	name = syria.3.a
+#	add_stability = -0.03
+#	FSA = { add_state_core = 1033 }
+#	FSA = { transfer_state = 1033 }
+#	FSA = {
+#		load_oob = "FSA_2020"
+#	}
+#	FSA = {
+#		declare_war_on= { 
+#			target = SYR
+#			type = civil_war 
+#		}
+#	}
+#}
+#}
+#Join Syria
+country_event = {
+	id = syria.4
+	title = syria.4.t
+	desc = syria.4.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = HEZ
+	}
+	option = {
+		name = syria.4.a
+		declare_war_on = {
+			target = ISR
+			type = annex_everything
+		}
+	}
+	option = {
+		name = syria.4.b
+	}
+}
+
+#Commandos Attack
+country_event = {
+	id = syria.5
+	title = syria.5.t
+	desc = syria.5.d
+	picture = GFX_report_event_political_deal
+	fire_only_once = yes
+	trigger = {
+		tag = SYR
+		has_country_flag = syrian_israeli_war
+		has_country_flag = spec_ops_trained
+	}
+	option = {
+		name = syria.5.a
+		load_oob = "SYR_spec_ops"
+	}
+}
+
+#Metting with Hezbollah
+country_event = {
+	id = syria.6
+	title = syria.6.t
+	desc = syria.6.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.6.a
+		set_country_flag = hez_join_offensive
+	}
+}
+
+#Civil War Over
+country_event = {
+	id = syria.7
+	title = syria.7.t
+	desc = syria.7.d
+	picture = GFX_report_event_political_deal
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.7.a
+		add_stability = 0.1
+		news_event = {
+			id = news.116
+		}
+	} 
+}
+
+#Assad Killed in Carbomb
+country_event = {
+	id = syria.8
+	title = syria.8.t
+	desc = syria.8.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.8.a
+		kill_country_leader = yes
+		remove_ideas = SYR_war_exhaustion
+		hidden_effect = {
+			country_lock_all_division_template = no
+			country_event = {
+				id = syria.10
+				days = 30
+			}
+			country_event = {
+				id = syria.9
+				days = 40
+			}
+		}
+	}
+}
+
+#Isis re-emerges
+country_event = {
+	id = syria.9
+	title = syria.9.t
+	desc = syria.9.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.9.a
+		delete_unit_template_and_units = {
+			division_template = "Liwa Almilishia"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Katibat Almilishia"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Shuebat Almilishiat"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Sharikat Easkariat Khasa"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Katibat Milishia Alnukh"
+		}
+		delete_unit_template_and_units = {
+			division_template = "Shuebat Aljysh Alsuwrii"
+		}
+		hidden_effect = {
+			change_tag_from = ISS
+			ISS = {
+				change_tag_from = SYR
+			}
+			ISS = {
+				add_state_core = 680
+				add_state_core = 554
+				add_state_core = 1033
+				add_state_core = 1032
+				add_state_core = 1032
+				add_state_core = 1109
+				add_state_core = 1108
+				add_state_core = 677
+				add_state_core = 1027
+				add_state_core = 1034
+				add_state_core = 1030
+				add_state_core = 1031
+				add_state_core = 1035
+				add_state_core = 1029
+				add_state_core = 1028
+				add_state_core = 814
+				transfer_state = 680
+				load_oob = "ISS_2020"
+				declare_war_on = {
+					target = SYR
+					type = annex_everything
+				}
+				delete_unit_template_and_units = {
+					division_template = "Sharikat Easkariat Khasa"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Katibat Milishia Alnukhba"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Katibat Amilishia"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Liwa Almilishia"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Shuebat Almilishiat"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Shuebat Aljysh Alsuwrii"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Liwa Alharas Aljumhurri"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Quwwat Almuhimat Alkhasa"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Sharikat Easkariat Khasa"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Katibat Milishia Alnukh"
+				}
+			}
+		}
+	}
+}
+
+#FSA Back in the south/latakia
+country_event = {
+	id = syria.10
+	title = syria.10.t
+	desc = syria.10.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.10.a
+		FSA = {
+			add_state_core = 680
+			add_state_core = 554
+			add_state_core = 1033
+			add_state_core = 1032
+			add_state_core = 1109
+			add_state_core = 1108
+			add_state_core = 667
+			add_state_core = 1027
+			add_state_core = 1034
+			add_state_core = 1030
+			add_state_core = 1031
+			add_state_core = 1035
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 814
+			transfer_state = 1108
+			transfer_state = 1030
+			transfer_state = 1033
+			load_oob = "FSA_Uprising"
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROJ
+				type = annex_everything
+			}
+		}
+	}
+}
+
+#Syria Demands return of Land
+country_event = {
+	id = syria.11
+	title = syria.11.t
+	desc = syria.11.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROJ
+	}
+	option = {
+		name = syria.11.a
+		SYR = {
+			annex_country = {
+				target = ROJ
+			}
+		}
+	}
+	option = {
+		name = syria.11.b
+		SYR = {
+			country_event = {
+				id = syria.12
+				days = 2
+			}
+		}
+	}
+}
+
+#Rojava Refuses
+country_event = {
+	id = syria.12
+	title = syria.12.t
+	desc = syria.12.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.12.a
+		create_wargoal = {
+			type = annex_everything
+			target = ROJ
+		}
+		if = {
+			limit = {
+				has_government = nationalist
+			}
+			country_event = {
+				id = syria.28
+				days = 350
+			}
+		}
+	}
+}
+
+#Protests over Failing Economy
+country_event = {
+	id = syria.13
+	title = syria.13.t
+	desc = syria.13.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.13.a
+		add_stability = -0.03
+		country_event = {
+			id = syria.18
+			days = 200
+		}
+	}
+}
+
+#SSNP Coup
+country_event = {
+	id = syria.14
+	title = syria.14.t
+	desc = syria.14.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.14.a
+		add_stability = -0.05
+		set_politics = {
+			ruling_party = nationalist
+			elections_allowed = no
+			last_election = "1999.12.17"
+			election_frequency = 48
+		}
+		country_event = {
+			id = syria.12
+			days = 120
+		}
+	}
+}
+
+#Covid cases drop
+country_event = {
+	id = syria.15
+	title = syria.15.t
+	desc = syria.15.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.15.a
+		add_stability = 0.05
+		remove_ideas = low_covid_cases
+	}
+}
+
+#Soviet Volunteers
+country_event = {
+	id = syria.16
+	title = syria.16.t
+	desc = syria.16.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.16.a
+		load_oob = "SYR_spetsnaz"
+	}
+}
+
+#Soviet Economic Aid
+country_event = {
+	id = syria.17
+	title = syria.17.t
+	desc = syria.17.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.17.a
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 300
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 1000
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment_1
+			amount = 300
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment_1
+			amount = 300
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = modern_tank_chassis
+			amount = 150
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 150
+			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment_2
+			amount = 150
+			producer = SOV
+		}
+	}
+}
+
+#Currency Stabilizes
+country_event = {
+	id = syria.18
+	title = syria.18.t
+	desc = syria.18.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.18.a
+		remove_ideas = SYR_failing_curency
+		country_event = {
+			id = syria.12
+			days = 160
+		}
+	}
+}
+
+#Fuck Jordan
+country_event = {
+	id = syria.19
+	title = syria.19.t
+	desc = syria.19.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.19.a
+		declare_war_on = {
+			target = JOR
+			type = annex_everything
+		}
+		country_event = {
+			id = syria.20
+			days = 450
+		}
+	}
+}
+
+#Fuck Israel
+country_event = {
+	id = syria.20
+	title = syria.20.t
+	desc = syria.20.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.20.a
+
+	
+	}
+}
+
+#Palestin Joins
+country_event = {
+	id = syria.21
+	title = syria.21.t
+	desc = syria.21.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.21.a
+		PAL = {
+			declare_war_on = {
+				target = ISR
+				type = annex_everything
+			}
+		}
+	}
+}
+
+#Invitation to COMECON
+country_event = {
+	id = syria.22
+	title = syria.22.t
+	desc = syria.22.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		#Accept
+		name = syria.22.a
+		SOV = {
+			country_event = {
+				id = syria.23
+				days = 5
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				add = 15
+				has_country_flag = SOV_sent_economic_assistance
+			}
+			modifier = {
+				add = 10
+				has_country_flag = SOV_sent_volunteers
+			}
+		}
+	}
+	option = {
+		#Deny
+		name = syria.22.b
+		SOV = {
+			country_event = {
+				id = syria.24
+				days = 5
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Accept
+country_event = {
+	id = syria.23
+	title = syria.23.t
+	desc = syria.23.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = syria.23.a
+		SYR = {
+			add_ideas = SOV_comecon_member
+		}
+	}
+}
+
+#Refuse
+country_event = {
+	id = syria.24
+	title = syria.24.t
+	desc = syria.24.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = syria.24.a
+		add_political_power = -50
+	}
+}
+
+#Retake Ras al-Ayn
+country_event = {
+	id = syria.25
+	title = syria.25.t
+	desc = syria.25.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.25.a
+		transfer_state = 1035
+		news_event = {
+			id = news.207
+		}
+		SYR = {
+			create_wargoal = {
+				type = civil_war
+				target = FSA
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = syria.26
+				days = 10
+			}
+		}
+	}
+}
+
+#Retake Al-bab
+country_event = {
+	id = syria.26
+	title = syria.26.t
+	desc = syria.26.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.26.a
+		transfer_state = 1031
+		hidden_effect = {
+			country_event = {
+				id = syria.27
+				days = 10
+			}
+		}
+	}
+}
+
+#Retake Afrin and Idlib
+country_event = {
+	id = syria.27
+	title = syria.27.t
+	desc = syria.27.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.27.a
+		transfer_state = 1030
+		SYR = {
+			create_wargoal = {
+				type = annex_everything
+				target = HTS
+			}
+			annex_country = {
+				target = FSA
+				transfer_troops = no
+			}
+		}
+	}
+}
+
+#Fuck it, lets go kill iraq
+country_event = {
+	id = syria.28
+	title = syria.28.t
+	desc = syria.28.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.28.a
+		if = {
+			limit = {
+				ABK = {
+					country_exists = yes
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ABK
+			}
+		}
+		if = {
+			limit = {
+				ISS = {
+					country_exists = yes
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ISS
+			}
+		}
+		if = {
+			limit = {
+				BUK = {
+					country_exists = yes
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BUK
+			}
+		}
+		if = {
+			limit = {
+				IRQ = {
+					country_exists = yes
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = IRQ
+			}
+		}
+	}
+}
+
+#Remnants of SAA reorganize
+country_event = {
+	id = syria.29
+	title = syria.29.t
+	desc = syria.29.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.29.a
+		1032 = {
+			create_unit = {
+				division = "name = \"101 Liwa al-Assad\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"103 Liwa Medina\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+		}
+	}
+}
+
+#Europe is killing eachother LETS KILL OURSELVES TO
+country_event = {
+	id = syria.30
+	title = syria.30.t
+	desc = syria.30.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.30.a
+		declare_war_on = {
+			target = FSA
+			type = civil_war
+		}
+		drop_cosmetic_tag = yes
+		create_country_leader = {
+			name = SYR_maher_al_assad_char
+			picture = "Portrait_Maher_Al_Assad.dds"
+			ideology = military_democracy
+			traits = {
+			}
+		}
+		1032 = {
+			create_unit = {
+				division = "name = \"101 Liwa al-Assad\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"23 Liwa Medina\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"241 Liwa Medina\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"44 Liwa Medina\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"301 Liwa Medina\" division_template = \"Liwa Alharas Aljumhurii\"  start_experience_factor = 0.4"
+				allow_spawning_on_enemy_provs = yes
+				owner = ROOT
+			}
+		}
+	}
+}
+
+#Fuck Israel pt. 2
+country_event = {
+	id = syria.31
+	title = syria.31.t
+	desc = syria.31.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.31.a
+		if = {
+			limit = {
+				ISR = {
+					has_war = yes
+				}
+			}
+			SYR = {
+				add_to_faction = JOR
+			}
+			JOR = {
+				declare_war_on = {
+					target = ISR
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+#Fuck Israel pt. 3
+country_event = {
+	id = syria.32
+	title = syria.32.t
+	desc = syria.32.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.32.a
+		if = {
+			limit = {
+				ISR = {
+					has_war = yes
+				}
+			}
+			if = {
+				limit = {
+					EGY = {
+						NOT = {
+							is_in_faction_with = SUD
+						}
+					}
+				}
+				SYR = {
+					add_to_faction = EGY
+				}
+			}
+			EGY = {
+				declare_war_on = {
+					target = ISR
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+#Hezbollah Takes Lebanon	
+country_event = {
+	id = syria.33
+	title = syria.33.t
+	desc = syria.33.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.33.a
+		HEZ = {
+			annex_country = {
+				target = LEB
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = HEZ_Allah
+			every_state = {
+				limit = {
+					is_core_of = LEB
+				}
+				add_core_of = HEZ
+				remove_core_of = LEB
+			}
+			add_ideas = PER_islamic_republic_stronghold_idea
+			set_capital = {
+				state = 553
+				remember_old_capital = no
+			}
+			set_country_flag = AOR_Member
+		}
+		PER = {
+			add_to_faction = HEZ
+		}
+	}
+}
+
+#Syria Collapses After Losing to Israel	
+country_event = {
+	id = syria.34
+	title = syria.34.t
+	desc = syria.34.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = SYR
+	}
+	option = {
+		name = syria.34.a
+		ROJ = {
+			transfer_state = 1029
+			transfer_state = 814
+			transfer_state = 1035
+			set_cosmetic_tag = PKK_Workers_Republic
+			if = {
+			   limit = {
+			        KUR = { owns_state = 815 }
+				}
+			country_event = { id = syria.35 days = 7 }
+			}
+		}
+		FSA = {
+			transfer_state = 1028
+			transfer_state = 680
+			transfer_state = 1031
+			set_cosmetic_tag = FSA_republic
+			load_oob = "FSA_uprising"
+		}
+		HTS = {
+			transfer_state = 1027
+			transfer_state = 1108
+			transfer_state = 677
+			transfer_state = 1034
+			transfer_state = 1030
+			transfer_state = 1109
+			load_oob = "HTS_2020"
+			set_cosmetic_tag = FSA_Civ
+		}
+		SYR = {
+			remove_ideas = {
+				SYR_syrian_economic_renewal
+				SYR_army_of_lions_idea
+			}
+			declare_war_on = {
+				target = HTS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FSA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ROJ
+				type = annex_everything
+			}
+		}
+		HTS = {
+			declare_war_on = {
+				target = FSA
+				type = annex_everything
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = SYR
+			}
+			add_core_of = HTS
+			add_core_of = FSA
+		}
+	}
+}
+
+#Kurdistan Unites
+country_event = {
+	id = syria.35
+	title = syria.35.t
+	desc = syria.35.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = ROJ
+	}
+	option = {
+		name = syria.35.a
+		KUR = {
+			annex_country = {
+				target = ROJ
+				transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = ROJ
+				}
+				add_core_of = KUR
+				remove_core_of = ROJ
+			}
+			set_cosmetic_tag = KUR_republic
+		}
+	}
+}
+
+country_event = {
+	id = syria.36
+	title = syria.36.t
+	desc = syria.36.d
+	picture = GFX_Generic_ISIS
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		HTS = {
+		owns_state = 1032
+		}
+	}
+	option = {
+		name = syria.36.a
+		set_portraits = {
+			character = HTS_abu_mohammad_aljulani
+			civilian = { large ="gfx/leaders/HTS/Abu_Mohammad_al-Julani_2.png" }
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.6
+		}
+		set_capital = {
+			state = 1032
+		}
+		set_cosmetic_tag = HTS_unified_moderate
+		ai_chance = {
+			factor = 6
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = HTS_Salvation_Government_Direction
+					option = HTS_Salvation_Government_jihadist
+					}
+			}
+		}
+	}
+	option = {
+		name = syria.36.b
+		set_portraits = {
+			character = HTS_abu_mohammad_aljulani
+			civilian = { large ="gfx/leaders/HTS/Abu_Mohammad_al-Julani_1.png" }
+		}
+		set_capital = {
+			state = 1032
+		}
+		set_cosmetic_tag = HTS_unified_jihadist
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = HTS_Salvation_Government_Direction
+					option = HTS_Salvation_Government_moderate
+					}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = syria.37
+	title = syria.37.t
+	desc = syria.37.d
+	picture = GFX_Generic_ISIS
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		ROJ = {
+		owns_state = 1032
+		}
+	}
+	option = {
+		name = syria.37.a
+		ROJ = {
+			set_cosmetic_tag = SDF_unified
+			set_capital = {
+				state = 1032
+			}
+		}
+	}
+}

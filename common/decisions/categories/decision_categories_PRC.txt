@@ -1,0 +1,14 @@
+
+PRC_loji_category = {
+    icon = GFX_decision_cat_PRC_loji_category_icon
+    visible_when_empty = yes
+    priority = 15
+
+    allowed = {
+        original_tag = PRC
+    }
+    
+    visible = {
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
+    }
+}

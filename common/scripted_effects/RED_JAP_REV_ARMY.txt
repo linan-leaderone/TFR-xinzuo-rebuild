@@ -20,6 +20,15 @@ TSU = {
 				}
 			if = {
 				limit = {
+					TZL = {has_completed_focus = TZL_TWW_FOCUS_82}
+NOT = {has_idea = PRC_future_of_cyber_communism_idea_1}
+				}
+	add_research_slot = 1
+			add_ideas = PRC_future_of_cyber_communism_idea_1
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+				}
+			if = {
+				limit = {
 					TZL = {has_completed_focus = TZL_TWW_FOCUS_75}
 				}
 			add_to_tech_sharing_group = TJZ_research
@@ -66,7 +75,7 @@ TSU = {
 				}
 				add_to_variable = {
 					var = TSU.red_TJZ_research_speed_factor_dynamic_var
-					value = 0.05
+					value = 0.02
 				}
 				add_to_variable = {
 					var = TSU.red_TJZ_income_growth_factor_dynamic_var

@@ -33,8 +33,1128 @@ guiTypes = {
 			position = { x = 1140 y = 0 }
 			spriteType = "GFX_WWW_guanbi"
 			pdx_tooltip = "WWW_guanbi_tt"
+		}	
+															
+		iconType = {
+			name = "WWW_state36_1"            
+			position = { x = 607 y = 101 }
+			spriteType = "GFX_state36_1"
+			pdx_tooltip = "WWW_state36_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state36_2"            
+			position = { x = 607 y = 101 }
+			spriteType = "GFX_state36_2"
+			pdx_tooltip = "WWW_state36_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state36_4"            
+			position = { x = 607 y = 101 }
+			spriteType = "GFX_state36_4"
+			pdx_tooltip = "WWW_state36_4_tt"
+		}															
+		iconType = {
+			name = "WWW_state35_1"            
+			position = { x = 701 y = 111 }
+			spriteType = "GFX_state35_1"
+			pdx_tooltip = "WWW_state35_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state35_2"            
+			position = { x = 701 y = 111 }
+			spriteType = "GFX_state35_2"
+			pdx_tooltip = "WWW_state35_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state35_4"            
+			position = { x = 701 y = 111 }
+			spriteType = "GFX_state35_4"
+			pdx_tooltip = "WWW_state35_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state33_1"            
+			position = { x = 472 y = 105 }
+			spriteType = "GFX_state33_1"
+			pdx_tooltip = "WWW_state33_1_tt"
+		}															
+		iconType = {
+			name = "WWW_state33_2"            
+			position = { x = 472 y = 105 }
+			spriteType = "GFX_state33_2"
+			pdx_tooltip = "WWW_state33_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state33_4"            
+			position = { x = 472 y = 105 }
+			spriteType = "GFX_state33_4"
+			pdx_tooltip = "WWW_state33_4_tt"
 		}
-						
+									
+		iconType = {
+			name = "WWW_state51_1"            
+			position = { x = 505 y = 210 }
+			spriteType = "GFX_state51_1"
+			pdx_tooltip = "WWW_state51_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state51_2"            
+			position = { x = 505 y = 210 }
+			spriteType = "GFX_state51_2"
+			pdx_tooltip = "WWW_state51_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state51_3"            
+			position = { x = 505 y = 210 }
+			spriteType = "GFX_state51_3"
+			pdx_tooltip = "WWW_state51_3_tt"
+		}	
+##日本													
+		iconType = {
+			name = "WWW_state58_2"            
+			position = { x = 705 y = 162 }
+			spriteType = "GFX_state58_2"
+			pdx_tooltip = "WWW_state58_2_tt"
+		}										
+		iconType = {
+			name = "WWW_state58_3"            
+			position = { x = 705 y = 162 }
+			spriteType = "GFX_state58_3"
+			pdx_tooltip = "WWW_state58_3_tt"
+		}							
+		iconType = {
+			name = "WWW_state58_1"            
+			position = { x = 705 y = 162 }
+			spriteType = "GFX_state58_1"
+			pdx_tooltip = "WWW_state58_1_tt"
+		}	
+##东协												
+		iconType = {
+			name = "WWW_state25_2"            
+			position = { x = 575 y = 126 }
+			spriteType = "GFX_state25_2"
+			pdx_tooltip = "WWW_state25_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state25_4"            
+			position = { x = 575 y = 126 }
+			spriteType = "GFX_state25_4"
+			pdx_tooltip = "WWW_state25_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state25_1"            
+			position = { x = 575 y = 126 }
+			spriteType = "GFX_state25_1"
+			pdx_tooltip = "WWW_state25_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state26_2"            
+			position = { x = 523 y = 141 }
+			spriteType = "GFX_state26_2"
+			pdx_tooltip = "WWW_state26_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state26_4"            
+			position = { x = 523 y = 141 }
+			spriteType = "GFX_state26_4"
+			pdx_tooltip = "WWW_state26_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state26_1"            
+			position = { x = 523 y = 141 }
+			spriteType = "GFX_state26_1"
+			pdx_tooltip = "WWW_state26_1_tt"
+		}														
+		iconType = {
+			name = "WWW_state27_2"            
+			position = { x = 541 y = 206 }
+			spriteType = "GFX_state27_2"
+			pdx_tooltip = "WWW_state27_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state27_4"            
+			position = { x = 541 y = 206 }
+			spriteType = "GFX_state27_4"
+			pdx_tooltip = "WWW_state27_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state27_1"            
+			position = { x = 541 y = 206 }
+			spriteType = "GFX_state27_1"
+			pdx_tooltip = "WWW_state27_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state28_2"            
+			position = { x = 609 y = 217 }
+			spriteType = "GFX_state28_2"
+			pdx_tooltip = "WWW_state28_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state28_4"            
+			position = { x = 609 y = 217 }
+			spriteType = "GFX_state28_4"
+			pdx_tooltip = "WWW_state28_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state28_1"            
+			position = { x = 609 y = 217 }
+			spriteType = "GFX_state28_1"
+			pdx_tooltip = "WWW_state28_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state29_1"            
+			position = { x = 645 y = 218 }
+			spriteType = "GFX_state29_1"
+			pdx_tooltip = "WWW_state29_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state29_2"            
+			position = { x = 645 y = 218 }
+			spriteType = "GFX_state29_2"
+			pdx_tooltip = "WWW_state29_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state29_4"            
+			position = { x = 645 y = 218 }
+			spriteType = "GFX_state29_4"
+			pdx_tooltip = "WWW_state29_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state30_1"            
+			position = { x = 652 y = 176 }
+			spriteType = "GFX_state30_1"
+			pdx_tooltip = "WWW_state30_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state30_2"            
+			position = { x = 652 y = 176 }
+			spriteType = "GFX_state30_2"
+			pdx_tooltip = "WWW_state30_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state30_4"            
+			position = { x = 652 y = 176 }
+			spriteType = "GFX_state30_4"
+			pdx_tooltip = "WWW_state30_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state31_1"            
+			position = { x = 664 y = 118 }
+			spriteType = "GFX_state31_1"
+			pdx_tooltip = "WWW_state31_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state31_2"            
+			position = { x = 664 y = 118 }
+			spriteType = "GFX_state31_2"
+			pdx_tooltip = "WWW_state31_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state31_4"            
+			position = { x = 664 y = 118 }
+			spriteType = "GFX_state31_4"
+			pdx_tooltip = "WWW_state31_4_tt"
+		}													
+		iconType = {
+			name = "WWW_state32_1"            
+			position = { x = 583 y = 174 }
+			spriteType = "GFX_state32_1"
+			pdx_tooltip = "WWW_state32_1_tt"
+		}														
+		iconType = {
+			name = "WWW_state32_2"            
+			position = { x = 583 y = 174 }
+			spriteType = "GFX_state32_2"
+			pdx_tooltip = "WWW_state32_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state32_4"            
+			position = { x = 583 y = 174 }
+			spriteType = "GFX_state32_4"
+			pdx_tooltip = "WWW_state32_4_tt"
+		}															
+		iconType = {
+			name = "WWW_state34_1"            
+			position = { x = 799 y = 101 }
+			spriteType = "GFX_state34_1"
+			pdx_tooltip = "WWW_state34_1_tt"
+		}														
+		iconType = {
+			name = "WWW_state34_2"            
+			position = { x = 799 y = 101 }
+			spriteType = "GFX_state34_2"
+			pdx_tooltip = "WWW_state34_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state34_4"            
+			position = { x = 799 y = 101 }
+			spriteType = "GFX_state34_4"
+			pdx_tooltip = "WWW_state34_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state37_1"            
+			position = { x = 472 y = 101 }
+			spriteType = "GFX_state37_1"
+			pdx_tooltip = "WWW_state37_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state37_2"            
+			position = { x = 472 y = 101 }
+			spriteType = "GFX_state37_2"
+			pdx_tooltip = "WWW_state37_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state37_4"            
+			position = { x = 472 y = 101 }
+			spriteType = "GFX_state37_4"
+			pdx_tooltip = "WWW_state37_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state38_1"            
+			position = { x = 710 y = 176 }
+			spriteType = "GFX_state38_1"
+			pdx_tooltip = "WWW_state38_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state38_2"            
+			position = { x = 710 y = 176 }
+			spriteType = "GFX_state38_2"
+			pdx_tooltip = "WWW_state38_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state38_4"            
+			position = { x = 710 y = 176 }
+			spriteType = "GFX_state38_4"
+			pdx_tooltip = "WWW_state38_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state39_1"            
+			position = { x = 476 y = 202 }
+			spriteType = "GFX_state39_1"
+			pdx_tooltip = "WWW_state39_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state39_2"            
+			position = { x = 476 y = 202 }
+			spriteType = "GFX_state39_2"
+			pdx_tooltip = "WWW_state39_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state39_4"            
+			position = { x = 476 y = 202 }
+			spriteType = "GFX_state39_4"
+			pdx_tooltip = "WWW_state39_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state40_1"            
+			position = { x = 547 y = 232 }
+			spriteType = "GFX_state40_1"
+			pdx_tooltip = "WWW_state40_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state40_2"            
+			position = { x = 547 y = 232 }
+			spriteType = "GFX_state40_2"
+			pdx_tooltip = "WWW_state40_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state40_4"            
+			position = { x = 547 y = 232 }
+			spriteType = "GFX_state40_4"
+			pdx_tooltip = "WWW_state40_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state42_1"            
+			position = { x = 582 y = 241 }
+			spriteType = "GFX_state42_1"
+			pdx_tooltip = "WWW_state42_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state42_2"            
+			position = { x = 582 y = 241 }
+			spriteType = "GFX_state42_2"
+			pdx_tooltip = "WWW_state42_2_tt"
+		}										
+		iconType = {
+			name = "WWW_state42_4"            
+			position = { x = 582 y = 241 }
+			spriteType = "GFX_state42_4"
+			pdx_tooltip = "WWW_state42_4_tt"
+		}													
+		iconType = {
+			name = "WWW_state41_1"            
+			position = { x = 578 y = 242 }
+			spriteType = "GFX_state41_1"
+			pdx_tooltip = "WWW_state41_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state41_2"            
+			position = { x = 578 y = 242 }
+			spriteType = "GFX_state41_2"
+			pdx_tooltip = "WWW_state41_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state41_4"            
+			position = { x = 578 y = 242 }
+			spriteType = "GFX_state41_4"
+			pdx_tooltip = "WWW_state41_4_tt"
+		}								
+		iconType = {
+			name = "WWW_state43_1"            
+			position = { x = 592 y = 241 }
+			spriteType = "GFX_state43_1"
+			pdx_tooltip = "WWW_state43_1_tt"
+		}								
+		iconType = {
+			name = "WWW_state43_2"            
+			position = { x = 592 y = 241 }
+			spriteType = "GFX_state43_2"
+			pdx_tooltip = "WWW_state43_2_tt"
+		}								
+		iconType = {
+			name = "WWW_state43_4"            
+			position = { x = 592 y = 241 }
+			spriteType = "GFX_state43_4"
+			pdx_tooltip = "WWW_state43_4_tt"
+		}														
+		iconType = {
+			name = "WWW_state44_1"            
+			position = { x = 610 y = 273 }
+			spriteType = "GFX_state44_1"
+			pdx_tooltip = "WWW_state44_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state44_2"            
+			position = { x = 610 y = 273 }
+			spriteType = "GFX_state44_2"
+			pdx_tooltip = "WWW_state44_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state44_4"            
+			position = { x = 610 y = 273 }
+			spriteType = "GFX_state44_4"
+			pdx_tooltip = "WWW_state44_4_tt"
+		}													
+		iconType = {
+			name = "WWW_state45_1"            
+			position = { x = 621 y = 266 }
+			spriteType = "GFX_state45_1"
+			pdx_tooltip = "WWW_state45_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state45_2"            
+			position = { x = 621 y = 266 }
+			spriteType = "GFX_state45_2"
+			pdx_tooltip = "WWW_state45_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state45_4"            
+			position = { x = 621 y = 266 }
+			spriteType = "GFX_state45_4"
+			pdx_tooltip = "WWW_state45_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state46_1"            
+			position = { x = 628 y = 261 }
+			spriteType = "GFX_state46_1"
+			pdx_tooltip = "WWW_state46_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state46_2"            
+			position = { x = 628 y = 261 }
+			spriteType = "GFX_state46_2"
+			pdx_tooltip = "WWW_state46_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state46_4"            
+			position = { x = 628 y = 261 }
+			spriteType = "GFX_state46_4"
+			pdx_tooltip = "WWW_state46_4_tt"
+		}												
+		iconType = {
+			name = "WWW_state47_1"            
+			position = { x = 628 y = 299 }
+			spriteType = "GFX_state47_1"
+			pdx_tooltip = "WWW_state47_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state47_4"            
+			position = { x = 628 y = 299 }
+			spriteType = "GFX_state47_4"
+			pdx_tooltip = "WWW_state47_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state47_4"            
+			position = { x = 628 y = 299 }
+			spriteType = "GFX_state47_4"
+			pdx_tooltip = "WWW_state47_4_tt"
+		}
+##美洲											
+		iconType = {
+			name = "WWW_state16_1"            
+			position = { x = 331 y = 336 }
+			spriteType = "GFX_state16_1"
+			pdx_tooltip = "WWW_state16_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state16_2"            
+			position = { x = 331 y = 336 }
+			spriteType = "GFX_state16_2"
+			pdx_tooltip = "WWW_state16_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state16_3"            
+			position = { x = 331 y = 336 }
+			spriteType = "GFX_state16_3"
+			pdx_tooltip = "WWW_state16_3_tt"
+		}									
+		iconType = {
+			name = "WWW_state17_1"            
+			position = { x = 280 y = 352 }
+			spriteType = "GFX_state17_1"
+			pdx_tooltip = "WWW_state17_1_tt"
+		}									
+		iconType = {
+			name = "WWW_state17_2"            
+			position = { x = 280 y = 352 }
+			spriteType = "GFX_state17_2"
+			pdx_tooltip = "WWW_state17_2_tt"
+		}									
+		iconType = {
+			name = "WWW_state17_3"            
+			position = { x = 280 y = 352 }
+			spriteType = "GFX_state17_3"
+			pdx_tooltip = "WWW_state17_3_tt"
+		}									
+		iconType = {
+			name = "WWW_state18_1"            
+			position = { x = 363 y = 429 }
+			spriteType = "GFX_state18_1"
+			pdx_tooltip = "WWW_state18_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state18_2"            
+			position = { x = 363 y = 429 }
+			spriteType = "GFX_state18_2"
+			pdx_tooltip = "WWW_state18_2_tt"
+		}										
+		iconType = {
+			name = "WWW_state18_3"            
+			position = { x = 363 y = 429 }
+			spriteType = "GFX_state18_3"
+			pdx_tooltip = "WWW_state18_3_tt"
+		}										
+		iconType = {
+			name = "WWW_state19_1"            
+			position = { x = 378 y = 471 }
+			spriteType = "GFX_state19_1"
+			pdx_tooltip = "WWW_state19_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state19_2"            
+			position = { x = 378 y = 471 }
+			spriteType = "GFX_state19_2"
+			pdx_tooltip = "WWW_state19_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state19_3"            
+			position = { x = 378 y = 471 }
+			spriteType = "GFX_state19_3"
+			pdx_tooltip = "WWW_state19_3_tt"
+		}										
+		iconType = {
+			name = "WWW_state20_1"            
+			position = { x = 426 y = 501 }
+			spriteType = "GFX_state20_1"
+			pdx_tooltip = "WWW_state20_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state20_2"            
+			position = { x = 426 y = 501 }
+			spriteType = "GFX_state20_2"
+			pdx_tooltip = "WWW_state20_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state20_3"            
+			position = { x = 426 y = 501 }
+			spriteType = "GFX_state20_3"
+			pdx_tooltip = "WWW_state20_3_tt"
+		}										
+		iconType = {
+			name = "WWW_state21_1"            
+			position = { x = 446 y = 539 }
+			spriteType = "GFX_state21_1"
+			pdx_tooltip = "WWW_state21_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state21_2"            
+			position = { x = 446 y = 539 }
+			spriteType = "GFX_state21_2"
+			pdx_tooltip = "WWW_state21_2_tt"
+		}										
+		iconType = {
+			name = "WWW_state21_3"            
+			position = { x = 446 y = 539 }
+			spriteType = "GFX_state21_3"
+			pdx_tooltip = "WWW_state21_3_tt"
+		}									
+		iconType = {
+			name = "WWW_state22_1"            
+			position = { x = 449 y = 513 }
+			spriteType = "GFX_state22_1"
+			pdx_tooltip = "WWW_state22_1_tt"
+		}								
+		iconType = {
+			name = "WWW_state22_2"            
+			position = { x = 449 y = 513 }
+			spriteType = "GFX_state22_2"
+			pdx_tooltip = "WWW_state22_2_tt"
+		}								
+		iconType = {
+			name = "WWW_state22_3"            
+			position = { x = 449 y = 513 }
+			spriteType = "GFX_state22_3"
+			pdx_tooltip = "WWW_state22_3_tt"
+		}								
+		iconType = {
+			name = "WWW_state23_1"            
+			position = { x = 440 y = 490 }
+			spriteType = "GFX_state23_1"
+			pdx_tooltip = "WWW_state23_1_tt"
+		}							
+		iconType = {
+			name = "WWW_state23_2"            
+			position = { x = 440 y = 490 }
+			spriteType = "GFX_state23_2"
+			pdx_tooltip = "WWW_state23_2_tt"
+		}							
+		iconType = {
+			name = "WWW_state23_4"            
+			position = { x = 440 y = 490 }
+			spriteType = "GFX_state23_4"
+			pdx_tooltip = "WWW_state23_4_tt"
+		}							
+		iconType = {
+			name = "WWW_state24_1"            
+			position = { x = 465 y = 515 }
+			spriteType = "GFX_state24_1"
+			pdx_tooltip = "WWW_state24_1_tt"
+		}							
+		iconType = {
+			name = "WWW_state24_2"            
+			position = { x = 465 y = 515 }
+			spriteType = "GFX_state24_2"
+			pdx_tooltip = "WWW_state24_2_tt"
+		}							
+		iconType = {
+			name = "WWW_state24_4"            
+			position = { x = 465 y = 515 }
+			spriteType = "GFX_state24_4"
+			pdx_tooltip = "WWW_state24_4_tt"
+		}
+##非洲												
+		iconType = {
+			name = "WWW_state15_1"            
+			position = { x = 551 y = 495 }
+			spriteType = "GFX_state15_1"
+			pdx_tooltip = "WWW_state15_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state15_2"            
+			position = { x = 551 y = 495 }
+			spriteType = "GFX_state15_2"
+			pdx_tooltip = "WWW_state15_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state15_3"            
+			position = { x = 551 y = 495 }
+			spriteType = "GFX_state15_3"
+			pdx_tooltip = "WWW_state15_3_tt"
+		}											
+		iconType = {
+			name = "WWW_state14_1"            
+			position = { x = 502 y = 397 }
+			spriteType = "GFX_state14_1"
+			pdx_tooltip = "WWW_state14_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state14_2"            
+			position = { x = 502 y = 397 }
+			spriteType = "GFX_state14_2"
+			pdx_tooltip = "WWW_state14_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state14_3"            
+			position = { x = 502 y = 397 }
+			spriteType = "GFX_state14_3"
+			pdx_tooltip = "WWW_state14_3_tt"
+		}	
+					
+##欧洲												
+		iconType = {
+			name = "WWW_state3_1"            
+			position = { x = 288 y = 134 }
+			spriteType = "GFX_state3_1"
+			pdx_tooltip = "WWW_state3_1_tt"
+		}								
+		iconType = {
+			name = "WWW_state3_2"            
+			position = { x = 288 y = 134 }
+			spriteType = "GFX_state3_2"
+			pdx_tooltip = "WWW_state3_2_tt"
+		}								
+		iconType = {
+			name = "WWW_state3_3"            
+			position = { x = 288 y = 134 }
+			spriteType = "GFX_state3_3"
+			pdx_tooltip = "WWW_state3_3_tt"
+		}						
+		iconType = {
+			name = "WWW_state1_1"            
+			position = { x = 276 y = 276 }
+			spriteType = "GFX_state1_1"
+			pdx_tooltip = "WWW_state1_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state1_2"            
+			position = { x = 276 y = 276 }
+			spriteType = "GFX_state1_2"
+			pdx_tooltip = "WWW_state1_2_tt"
+		}										
+		iconType = {
+			name = "WWW_state1_4"            
+			position = { x = 276 y = 276 }
+			spriteType = "GFX_state1_4"
+			pdx_tooltip = "WWW_state1_4_tt"
+		}								
+		iconType = {
+			name = "WWW_state2_1"            
+			position = { x = 291 y = 242 }
+			spriteType = "GFX_state2_1"
+			pdx_tooltip = "WWW_state2_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state2_2"            
+			position = { x = 291 y = 242 }
+			spriteType = "GFX_state2_2"
+			pdx_tooltip = "WWW_state2_2_tt"
+		}									
+		iconType = {
+			name = "WWW_state2_3"            
+			position = { x = 291 y = 242 }
+			spriteType = "GFX_state2_3"
+			pdx_tooltip = "WWW_state2_3_tt"
+		}											
+		iconType = {
+			name = "WWW_state8_1"            
+			position = { x = 411 y = 101 }
+			spriteType = "GFX_state8_1"
+			pdx_tooltip = "WWW_state8_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state8_2"            
+			position = { x = 411 y = 101 }
+			spriteType = "GFX_state8_2"
+			pdx_tooltip = "WWW_state8_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state8_4"            
+			position = { x = 411 y = 101 }
+			spriteType = "GFX_state8_4"
+			pdx_tooltip = "WWW_state8_4_tt"
+		}										
+		iconType = {
+			name = "WWW_state9_1"            
+			position = { x = 417 y = 142 }
+			spriteType = "GFX_state9_1"
+			pdx_tooltip = "WWW_state9_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state9_2"            
+			position = { x = 417 y = 142 }
+			spriteType = "GFX_state9_2"
+			pdx_tooltip = "WWW_state9_2_tt"
+		}										
+		iconType = {
+			name = "WWW_state9_4"            
+			position = { x = 417 y = 142 }
+			spriteType = "GFX_state9_4"
+			pdx_tooltip = "WWW_state9_4_tt"
+		}										
+		iconType = {
+			name = "WWW_state11_1"            
+			position = { x = 423 y = 193 }
+			spriteType = "GFX_state11_1"
+			pdx_tooltip = "WWW_state11_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state11_2"            
+			position = { x = 423 y = 193 }
+			spriteType = "GFX_state11_2"
+			pdx_tooltip = "WWW_state11_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state11_4"            
+			position = { x = 423 y = 193 }
+			spriteType = "GFX_state11_4"
+			pdx_tooltip = "WWW_state11_4_tt"
+		}										
+		iconType = {
+			name = "WWW_state13_1"            
+			position = { x = 439 y = 251 }
+			spriteType = "GFX_state13_1"
+			pdx_tooltip = "WWW_state13_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state13_2"            
+			position = { x = 439 y = 251 }
+			spriteType = "GFX_state13_2"
+			pdx_tooltip = "WWW_state13_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state13_4"            
+			position = { x = 439 y = 251 }
+			spriteType = "GFX_state13_4"
+			pdx_tooltip = "WWW_state13_4_tt"
+		}						
+		iconType = {
+			name = "WWW_state12_1"            
+			position = { x = 444 y = 101 }
+			spriteType = "GFX_state12_1"
+			pdx_tooltip = "WWW_state12_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state12_2"            
+			position = { x = 444 y = 101 }
+			spriteType = "GFX_state12_2"
+			pdx_tooltip = "WWW_state12_2_tt"
+		}									
+		iconType = {
+			name = "WWW_state12_4"            
+			position = { x = 444 y = 101 }
+			spriteType = "GFX_state12_4"
+			pdx_tooltip = "WWW_state12_4_tt"
+		}							
+		iconType = {
+			name = "WWW_state10_1"            
+			position = { x = 427 y = 167 }
+			spriteType = "GFX_state10_1"
+			pdx_tooltip = "WWW_state10_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state10_2"            
+			position = { x = 427 y = 167 }
+			spriteType = "GFX_state10_2"
+			pdx_tooltip = "WWW_state10_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state10_4"            
+			position = { x = 427 y = 167 }
+			spriteType = "GFX_state10_4"
+			pdx_tooltip = "WWW_state10_4_tt"
+		}				
+		iconType = {
+			name = "WWW_state7_1"            
+			position = { x = 400 y = 171 }
+			spriteType = "GFX_state7_1"
+			pdx_tooltip = "WWW_state7_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state7_2"            
+			position = { x = 400 y = 171 }
+			spriteType = "GFX_state7_2"
+			pdx_tooltip = "WWW_state7_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state7_4"            
+			position = { x = 400 y = 171 }
+			spriteType = "GFX_state7_4"
+			pdx_tooltip = "WWW_state7_4_tt"
+		}					
+		iconType = {
+			name = "WWW_state6_1"            
+			position = { x = 350 y = 101 }
+			spriteType = "GFX_state6_1"
+			pdx_tooltip = "WWW_state6_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state6_2"            
+			position = { x = 350 y = 101 }
+			spriteType = "GFX_state6_2"
+			pdx_tooltip = "WWW_state6_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state6_3"            
+			position = { x = 350 y = 101 }
+			spriteType = "GFX_state6_3"
+			pdx_tooltip = "WWW_state6_3_tt"
+		}						
+		iconType = {
+			name = "WWW_state5_1"            
+			position = { x = 387 y = 210 }
+			spriteType = "GFX_state5_1"
+			pdx_tooltip = "WWW_state5_1_tt"
+		}									
+		iconType = {
+			name = "WWW_state5_2"            
+			position = { x = 387 y = 210 }
+			spriteType = "GFX_state5_2"
+			pdx_tooltip = "WWW_state5_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state5_4"            
+			position = { x = 387 y = 210 }
+			spriteType = "GFX_state5_4"
+			pdx_tooltip = "WWW_state5_4_tt"
+		}	
+		iconType = {
+			name = "WWW_state4_1"            
+			position = { x = 410 y = 254 }
+			spriteType = "GFX_state4_1"
+			pdx_tooltip = "WWW_state4_1_tt"
+		}								
+		iconType = {
+			name = "WWW_state4_2"            
+			position = { x = 410 y = 254 }
+			spriteType = "GFX_state4_2"
+			pdx_tooltip = "WWW_state4_2_tt"
+		}								
+		iconType = {
+			name = "WWW_state4_3"            
+			position = { x = 410 y = 254 }
+			spriteType = "GFX_state4_3"
+			pdx_tooltip = "WWW_state4_3_tt"
+		}	
+##中立											
+		iconType = {
+			name = "WWW_state48_1"            
+			position = { x = 472 y = 203 }
+			spriteType = "GFX_state48_1"
+			pdx_tooltip = "WWW_state48_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state48_2"            
+			position = { x = 472 y = 203 }
+			spriteType = "GFX_state48_2"
+			pdx_tooltip = "WWW_state48_2_tt"
+		}															
+		iconType = {
+			name = "WWW_state48_4"            
+			position = { x = 472 y = 203 }
+			spriteType = "GFX_state48_4"
+			pdx_tooltip = "WWW_state48_4_tt"
+		}																
+		iconType = {
+			name = "WWW_state48_5"            
+			position = { x = 472 y = 203 }
+			spriteType = "GFX_state48_5"
+			pdx_tooltip = "WWW_state48_5_tt"
+		}					
+		iconType = {
+			name = "WWW_state49_1"            
+			position = { x = 476 y = 196 }
+			spriteType = "GFX_state49_1"
+			pdx_tooltip = "WWW_state49_1_tt"
+		}											
+		iconType = {
+			name = "WWW_state49_2"            
+			position = { x = 476 y = 196 }
+			spriteType = "GFX_state49_2"
+			pdx_tooltip = "WWW_state49_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state49_4"            
+			position = { x = 476 y = 196 }
+			spriteType = "GFX_state49_4"
+			pdx_tooltip = "WWW_state49_4_tt"
+		}											
+		iconType = {
+			name = "WWW_state49_5"            
+			position = { x = 476 y = 196 }
+			spriteType = "GFX_state49_5"
+			pdx_tooltip = "WWW_state49_5_tt"
+		}		
+##太解阵												
+		iconType = {
+			name = "WWW_state50_1"            
+			position = { x = 521 y = 272 }
+			spriteType = "GFX_state50_1"
+			pdx_tooltip = "WWW_state50_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state50_2"            
+			position = { x = 521 y = 272 }
+			spriteType = "GFX_state50_2"
+			pdx_tooltip = "WWW_state50_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state50_3"            
+			position = { x = 521 y = 272 }
+			spriteType = "GFX_state50_3"
+			pdx_tooltip = "WWW_state50_3_tt"
+		}													
+		iconType = {
+			name = "WWW_state52_1"            
+			position = { x = 667 y = 397 }
+			spriteType = "GFX_state52_1"
+			pdx_tooltip = "WWW_state52_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state52_2"            
+			position = { x = 667 y = 397 }
+			spriteType = "GFX_state52_2"
+			pdx_tooltip = "WWW_state52_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state52_3"            
+			position = { x = 667 y = 397 }
+			spriteType = "GFX_state52_3"
+			pdx_tooltip = "WWW_state52_3_tt"
+		}												
+		iconType = {
+			name = "WWW_state53_1"            
+			position = { x = 860 y = 501 }
+			spriteType = "GFX_state53_1"
+			pdx_tooltip = "WWW_state53_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state53_2"            
+			position = { x = 860 y = 501 }
+			spriteType = "GFX_state53_2"
+			pdx_tooltip = "WWW_state53_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state53_3"            
+			position = { x = 860 y = 501 }
+			spriteType = "GFX_state53_3"
+			pdx_tooltip = "WWW_state53_3_tt"
+		}													
+		iconType = {
+			name = "WWW_state54_1"            
+			position = { x = 602 y = 330 }
+			spriteType = "GFX_state54_1"
+			pdx_tooltip = "WWW_state54_1_tt"
+		}														
+		iconType = {
+			name = "WWW_state54_2"            
+			position = { x = 602 y = 330 }
+			spriteType = "GFX_state54_2"
+			pdx_tooltip = "WWW_state54_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state54_3"            
+			position = { x = 602 y = 330 }
+			spriteType = "GFX_state54_3"
+			pdx_tooltip = "WWW_state54_3_tt"
+		}														
+		iconType = {
+			name = "WWW_state55_1"            
+			position = { x = 639 y = 327 }
+			spriteType = "GFX_state55_1"
+			pdx_tooltip = "WWW_state55_1_tt"
+		}														
+		iconType = {
+			name = "WWW_state55_2"            
+			position = { x = 639 y = 327 }
+			spriteType = "GFX_state55_2"
+			pdx_tooltip = "WWW_state55_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state55_3"            
+			position = { x = 639 y = 327 }
+			spriteType = "GFX_state55_3"
+			pdx_tooltip = "WWW_state55_3_tt"
+		}														
+		iconType = {
+			name = "WWW_state56_1"            
+			position = { x = 683 y = 281 }
+			spriteType = "GFX_state56_1"
+			pdx_tooltip = "WWW_state56_1_tt"
+		}															
+		iconType = {
+			name = "WWW_state56_2"            
+			position = { x = 683 y = 281 }
+			spriteType = "GFX_state56_2"
+			pdx_tooltip = "WWW_state56_2_tt"
+		}														
+		iconType = {
+			name = "WWW_state56_3"            
+			position = { x = 683 y = 281 }
+			spriteType = "GFX_state56_3"
+			pdx_tooltip = "WWW_state56_3_tt"
+		}														
+		iconType = {
+			name = "WWW_state57_1"            
+			position = { x = 713 y = 345 }
+			spriteType = "GFX_state57_1"
+			pdx_tooltip = "WWW_state57_1_tt"
+		}													
+		iconType = {
+			name = "WWW_state57_2"            
+			position = { x = 713 y = 345 }
+			spriteType = "GFX_state57_2"
+			pdx_tooltip = "WWW_state57_2_tt"
+		}													
+		iconType = {
+			name = "WWW_state57_3"            
+			position = { x = 713 y = 345 }
+			spriteType = "GFX_state57_3"
+			pdx_tooltip = "WWW_state57_3_tt"
+		}												
+		iconType = {
+			name = "WWW_state59_1"            
+			position = { x = 715 y = 197 }
+			spriteType = "GFX_state59_1"
+			pdx_tooltip = "WWW_state59_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state59_2"            
+			position = { x = 715 y = 197 }
+			spriteType = "GFX_state59_2"
+			pdx_tooltip = "WWW_state59_2_tt"
+		}												
+		iconType = {
+			name = "WWW_state59_3"            
+			position = { x = 715 y = 197 }
+			spriteType = "GFX_state59_3"
+			pdx_tooltip = "WWW_state59_3_tt"
+		}												
+		iconType = {
+			name = "WWW_state60_1"            
+			position = { x = 692 y = 254 }
+			spriteType = "GFX_state60_1"
+			pdx_tooltip = "WWW_state60_1_tt"
+		}												
+		iconType = {
+			name = "WWW_state60_2"            
+			position = { x = 692 y = 254 }
+			spriteType = "GFX_state60_2"
+			pdx_tooltip = "WWW_state60_2_tt"
+		}											
+		iconType = {
+			name = "WWW_state60_3"            
+			position = { x = 692 y = 254 }
+			spriteType = "GFX_state60_3"
+			pdx_tooltip = "WWW_state60_3_tt"
+		}											
+		iconType = {
+			name = "WWW_state61_1"            
+			position = { x = 546 y = 317 }
+			spriteType = "GFX_state61_1"
+			pdx_tooltip = "WWW_state61_1_tt"
+		}										
+		iconType = {
+			name = "WWW_state61_2"            
+			position = { x = 546 y = 317 }
+			spriteType = "GFX_state61_2"
+			pdx_tooltip = "WWW_state61_2_tt"
+		}									
+		iconType = {
+			name = "WWW_state61_3"            
+			position = { x = 546 y = 317 }
+			spriteType = "GFX_state61_3"
+			pdx_tooltip = "WWW_state61_3_tt"
+		}	
+	
 		iconType = {
 			name = "WWW_tishi"            
 			position = { x = 0 y = 0 }
@@ -141,5 +1261,12 @@ guiTypes = {
 			spriteType = "GFX_WWWANNIU11"
 			pdx_tooltip = "WWW_WWWANNIU11_tt"
 		}	
+						
+		iconType = {            
+			position = { x = 0 y = 0 }
+			name = "GFX_WWWBackground1"           
+			quadTextureSprite ="GFX_WWW_back1"
+			alwaystransparent = yes
+		}
 		}
 		}

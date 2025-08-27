@@ -5,6 +5,20 @@ sound = {
 	always_load = yes
 }
 sound = {
+	name = "mgtytjz"
+	file = "menu/mgtytjz.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound = {
+	name = "santifa"
+	file = "menu/santifa.wav"
+	volume = 1
+	always_load = yes
+}
+
+sound = {
 	name = "changzhengpanluan"
 	file = "menu/changzhengpanluan.wav"
 	volume = 1

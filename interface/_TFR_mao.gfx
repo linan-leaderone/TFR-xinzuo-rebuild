@@ -18,6 +18,16 @@ spriteTypes = {
 		}		
 						
 	SpriteType = {
+		name = "GFX_PRC_bohetang1"
+		texturefile = "gfx/MAOYUANXIN/bohe.png"
+
+	}							
+	SpriteType = {
+		name = "GFX_PRC_bohetang"
+		texturefile = "gfx/MAOYUANXIN/bohe.png"
+
+	}							
+	SpriteType = {
 		name = "GFX_dongxiejiaobiao"
 		texturefile = "gfx/MAOYUANXIN/dongxiejiaobiao.png"
 		legacy_lazy_load = no
@@ -41,7 +51,15 @@ spriteTypes = {
 		name = "GFX_TZL_JJFZ_HJH_banner"
 		texturefile = "gfx/MAOYUANXIN/TZL_JJFZ_HJH1.png"
 		legacy_lazy_load = no
-	}							
+	}
+		spriteType = {
+			name = "GFX_ideology_MST_jucheism"
+			texturefile = "gfx/interface/ideologies/totalism_PRC.png"
+		}					
+		spriteType = {
+			name = "GFX_ideology_PRC_jucheism"
+			texturefile = "gfx/interface/ideologies/totalism_PRC.png"
+		}								
 	SpriteType = {
 		name = "GFX_TZL_WJLX_DT"
 		texturefile = "gfx/MAOYUANXIN/TZL_WJLX_DT.png"

@@ -40,7 +40,10 @@ spriteTypes = {
 		name = "GFX_WWWANNIU8"
 		texturefile = "gfx/MAOYUANXIN/WWWANNIU8.png"
 	}
-
+	SpriteType = {
+		name = "GFX_WWWANNIU311D23"
+		texturefile = "gfx/MAOYUANXIN/super_santifa.png"
+	}
 
 	SpriteType = {
 		name = "GFX_WWWANNIU3123"
@@ -79,6 +82,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_WWW_back"
 		texturefile = "gfx/MAOYUANXIN/ww3uibackground.png"
+	}
+	SpriteType = {
+		name = "GFX_WWW_back1"
+		texturefile = "gfx/MAOYUANXIN/ww3uibackground1.png"
 	}
 	SpriteType = {
 		name = "GFX_WWW_guanbi"
@@ -854,6 +861,10 @@ SpriteType = {
     texturefile = "gfx/MAOYUANXIN/state48_2.png"
 }
 SpriteType = {
+    name = "GFX_state48_5"
+    texturefile = "gfx/MAOYUANXIN/state48_5.png"
+}
+SpriteType = {
     name = "GFX_state48_3"
     texturefile = "gfx/MAOYUANXIN/state48_3.png"
 }
@@ -870,8 +881,8 @@ SpriteType = {
     texturefile = "gfx/MAOYUANXIN/state49_2.png"
 }
 SpriteType = {
-    name = "GFX_state49_3"
-    texturefile = "gfx/MAOYUANXIN/state49_3.png"
+    name = "GFX_state49_5"
+    texturefile = "gfx/MAOYUANXIN/state49_5.png"
 }
 SpriteType = {
     name = "GFX_state49_4"

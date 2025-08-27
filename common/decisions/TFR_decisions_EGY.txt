@@ -1,0 +1,431 @@
+	EGY_ethiopia_war = {
+	
+		EGY_ethiopia_war_countdown = {
+
+			icon = generic_political_discourse
+
+			allowed = {
+				tag = EGY
+			}
+
+			available = {
+				SSD = {
+					exists = no
+				}
+				ERI = {
+					exists = no
+				}
+				SOM = {
+					is_puppet_of = ETH
+				}
+			}
+
+			priority = 10
+			fire_only_once = yes
+			days_mission_timeout = 380
+			is_good = no
+			cancel_if_not_visible = yes
+
+			activation = {
+				original_tag = EGY
+				has_country_flag = EGY_water_war
+			}
+
+			visible = {
+				tag = EGY
+			}
+			cancel_trigger = {
+				ETH = {
+					OR = {
+						NOT = {
+							controls_state = 271
+							controls_state = 1297
+						}
+						NOT = {
+							controls_state = 867
+							controls_state = 1140
+							controls_state = 1141
+							controls_state = 1295
+							controls_state = 1297
+						}
+					}
+				}
+			}
+			cancel_effect = { #NRC Victory
+				SUD = {
+					annex_country = {
+						target = RSF
+						transfer_troops = no
+					}
+					add_ideas = Generic_victor_of_african_war
+				}
+				TDF = {
+					transfer_state = 867
+					transfer_state = 268
+					transfer_state = 1140
+					transfer_state = 1297
+					transfer_state = 1141
+					add_state_core = 1141
+					add_state_core = 268
+					add_state_core = 269
+					add_state_core = 807
+					set_cosmetic_tag = TDF_ETH
+				}
+				SOM = {
+					annex_country = {
+						target = SML
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SHB
+						transfer_troops = no
+					}
+					transfer_state = 955
+				}
+				EGY = {
+					white_peace = ETH
+					white_peace = TZN
+					add_to_faction = TDF
+					add_ideas = Generic_victor_of_african_war
+					set_country_flag = EGY_won_water_war
+					remove_ideas = EGY_mass_riots
+					remove_ideas = EGY_severe_water_shortage
+				}
+				TDF = {
+					set_politics = {
+						ruling_party = nationalist
+						elections_allowed = no
+						last_election = "2020.04.17"
+					}
+					add_popularity = {
+						ideology = nationalist
+						popularity = 1
+					}
+				}
+				TZN = {
+					add_ideas = Generic_loser_of_african_war
+				}
+				ETH = {
+					add_ideas = Generic_loser_of_african_war
+					dismantle_faction = yes
+					674 = {
+						set_demilitarized_zone = yes
+					}
+				}
+				KEN = {
+					add_ideas = Generic_loser_of_african_war
+					add_popularity = {
+						ideology = social_liberal
+						popularity = 0.2
+					}
+				}
+				UGA = {
+					add_ideas = Generic_loser_of_african_war
+					add_popularity = {
+						ideology = nationalist
+						popularity = 0.07
+					}
+					random_list = {
+						60 = {
+							set_politics = {
+								ruling_party = nationalist
+								elections_allowed = no
+							}
+							add_popularity = {
+								ideology = nationalist
+								popularity = 0.4
+							}
+						}
+						40 = {
+							add_popularity = {
+								ideology = authoritarian_democrat
+								popularity = -0.12
+							}
+						}
+					}
+				}
+				RWA = {
+					add_ideas = Generic_loser_of_african_war
+				}
+				BRD = {
+					add_ideas = Generic_loser_of_african_war
+					add_popularity = {
+						ideology = social_democrat
+						popularity = -0.15
+					}
+				}
+				news_event = {
+					id = news.174
+				}
+			}
+			complete_effect = { #EAP Victory
+				white_peace = ETH
+				white_peace = SUD
+				dismantle_faction = yes
+				news_event = {
+					id = news.175
+				}
+				TZN = {
+					annex_country = {
+						target = SSD
+						transfer_troops = yes
+					}
+					add_state_core = 1345
+					add_state_core = 1348
+					add_state_core = 762
+					add_state_core = 1351
+					add_state_core = 1344
+					add_state_core = 1350
+					add_state_core = 1351
+				}
+				ETH = {
+					add_state_core = 1350
+					add_state_core = 550
+					add_state_core = 268
+					annex_country = {
+						target = DJI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TDF
+						transfer_troops = yes
+					}
+					puppet = SOM
+					add_ideas = Generic_victor_of_african_war
+					set_country_flag = ETH_won_water_war
+				}
+				RSF = {
+					annex_country = {
+						target = SUD
+						transfer_troops = no
+					}
+					transfer_state = 761
+					transfer_state = 1346
+					transfer_state = 549
+					transfer_state = 551
+					transfer_state = 1349
+					transfer_state = 763
+					transfer_state = 798
+					transfer_state = 1294
+					transfer_state = 1347
+					transfer_state = 1350
+					set_cosmetic_tag = RSF_united
+				}
+				ETH = {
+					add_to_faction = RSF
+				}
+				SOM = {
+					annex_country = {
+						target = SHB
+						transfer_troops = no
+					}
+					transfer_state = 955
+				}
+			}
+			timeout_effect = { #Stalemate/NRC Failure
+				news_event = { id = news.184 }
+				white_peace = ETH
+				white_peace = SUD
+				set_country_flag = EGY_failed_water_war
+				swap_ideas = {
+					remove_idea = EGY_severe_water_shortage
+					add_idea = EGY_severe_water_shortage_2
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							SUD = {
+								is_puppet_of = EGY
+							}
+						}
+						end_puppet = SUD
+						SUD = {
+							set_cosmetic_tag = SUD_survived
+						}
+					}
+				}
+				country_event = { id = egypt.15 }
+				country_event = { id = egypt.16 days = 20 }
+				clr_country_flag = EGY_water_war
+				TZN = {
+					remove_from_faction = EGY
+				}
+				ETH = {
+					transfer_state = 1295
+					transfer_state = 1297
+				}
+				SOM = {
+					annex_country = {
+						target = SHB
+						transfer_troops = no
+					}
+					transfer_state = 955
+				}
+				if = {
+					limit = {
+						country_exists = TDF
+					}
+					TDF = {
+						set_cosmetic_tag = TDF_republic
+					}
+				}
+				if = {
+					limit = {
+						SUD = {
+							exists = yes
+						}
+					}
+					SUD = {
+						annex_country = {
+							target = RSF
+							transfer_troops = no
+						}
+					}
+				}
+			}
+		}
+		
+		EGY_send_military_into_cairo = {
+		
+			icon = generic_ignite_civil_war
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			visible = {
+
+			}
+
+			available = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			days_remove = 15
+			fire_only_once = yes
+			
+			modifier = {
+				political_power_gain = -0.1
+			}
+			
+			complete_effect = {
+				
+			}
+
+			remove_effect = {
+				add_stability = 0.05
+			}
+		}
+		
+		EGY_enforce_conscription = {
+		
+			icon = generic_ignite_civil_war
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			visible = {
+
+			}
+
+			available = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			days_remove = 15
+			fire_only_once = no
+			
+			modifier = {
+				political_power_gain = -0.1
+			}
+			
+			complete_effect = {
+				
+			}
+
+			remove_effect = {
+				add_manpower = 5000
+			}
+		}
+		
+		EGY_crack_down_on_brotherhood = {
+		
+			icon = generic_ignite_civil_war
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			visible = {
+
+			}
+
+			available = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			days_remove = 30
+			fire_only_once = no
+			
+			modifier = {
+				max_planning_factor = 0.1
+			}
+			
+			complete_effect = {
+				
+			}
+
+			remove_effect = {
+				
+			}
+		}
+		
+		EGY_distribute_propaganda = {
+		
+			icon = generic_ignite_civil_war
+
+			allowed = {
+				original_tag = EGY
+			}
+			
+			visible = {
+
+			}
+
+			available = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 5
+			}
+
+			days_remove = 30
+			fire_only_once = no
+			
+			modifier = {
+				army_attack_factor = 0.1
+			}
+			
+			complete_effect = {
+				
+			}
+
+			remove_effect = {
+				
+			}
+		}
+	}

@@ -16129,7 +16129,7 @@ remove_ideas = militia_looting
 						is_ally_with = PRC
 						NOT = {has_idea = PRC_socialist_dream_idea}
 				}
-			add_ideas = PRC_future_of_cyber_communism_idea_1
+			add_ideas = PRC_socialist_dream_idea
 			}
 			set_temp_variable = {
 				var = poverty_development_var_temp

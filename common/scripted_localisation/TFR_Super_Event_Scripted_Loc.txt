@@ -21,6 +21,12 @@
 		}																			
 		text = { 
 			trigger = {
+				has_country_flag = mgtytjz_flag
+			}
+			localization_key = "mgtytjz"
+		}																				
+		text = { 
+			trigger = {
 				has_country_flag = santifa_flag
 			}
 			localization_key = "santifa"
@@ -499,6 +505,12 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = mgtytjz_flag
+			}
+			localization_key = "mgtytjz_text"
+		}
+		text = { 
+			trigger = {
 				has_country_flag = santifa_flag
 			}
 			localization_key = "santifa_text"
@@ -970,7 +982,13 @@
 				has_country_flag = santifa2_flag
 			}
 			localization_key = "santifa2_button"
-		}				
+		}					
+		text = { 
+			trigger = {
+				has_country_flag = mgtytjz_flag
+			}
+			localization_key = "mgtytjz_button"
+		}			
 		text = { 
 			trigger = {
 				has_country_flag = santifa_flag

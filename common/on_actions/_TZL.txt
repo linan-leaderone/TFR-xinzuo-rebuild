@@ -1,6 +1,249 @@
 on_actions = {
+
+	on_state_control_changed = {
+		effect = {
+
+			if = { 
+				limit = {
+						USN = {has_war_with = TSU} 	
+					FROM.FROM = { 
+						OR = {
+							state = 629
+						} 
+					}
+						FROM = { tag = USN}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+					TSU = {
+
+			country_event = {
+				id = PRC_MAO4.4
+			}
+			country_event = {
+				id = PRC_MAO4.5
+			}
+			country_event = {
+				id = PRC_MAO4.6
+				days = 30
+			}
+
+			country_event = {
+				id = PRC_MAO4.7
+				days = 30
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 608
+						} 
+					}
+						FROM = { tag = PRC}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.8
+			}
+			country_event = {
+				id = PRC_MAO4.10
+				days = 7
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.8
+			}
+			country_event = {
+				id = PRC_MAO4.10
+				days = 7
+			}
+					}
+
+
+
+}
+
+
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 1043
+						} 
+					}
+						FROM = { tag = PRK}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.9
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.9
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 731
+						} 
+					}
+						FROM = { tag = GRE}
+
+						ROOT = {
+							OR = {
+								original_tag =GRK
+								is_ally_with = GRK
+							}
+}
+
+}
+						GRK = {white_peace = GRE}
+							GRK = {annex_country = {
+								target = GRE
+								transfer_troops = no
+							}}
+
+
+
+
+}
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 1222
+						} 
+					}
+						FROM = { tag = PRC}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.11
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.11
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 1395
+						} 
+					}
+						FROM = { tag = PRC}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.12
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.12
+			}
+					}
+
+
+
+}
+
+
+}
+}
+
+
 	on_capitulation = {
 		effect = {
+
+						if = {
+							limit = {
+						FROM = {
+							OR = {
+								original_tag = ETH
+								is_ally_with = ETH
+							}
+						}
+								ROOT = {
+									original_tag = ERI
+								}
+							}
+							ETH = {
+			release_autonomy = {
+			target = ERI
+			autonomy_state = autonomy_puppet
+			}
+			ERI = {	set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = no
+				}}
+							}
+						}
+
+
+
+
 			if = {
 					limit = {
 
@@ -33,6 +276,49 @@ RED_JAP_REV_ARMY = yes
 
 
 					}
+			
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = RSR
+								is_ally_with = RSR
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+						OR = {
+							original_tag = SNS
+							original_tag = GAL
+							original_tag = LCA
+							original_tag = BSQ
+							original_tag = SPR
+							original_tag = CAT
+							original_tag = BAR
+							original_tag = POR
+							original_tag = GOD
+						}
+
+						}
+					}
+
+
+
+RSR = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+					set_global_flag = skip_default_capitulation
+				}
 
 			if = {
 					limit = {
@@ -50,6 +336,8 @@ RED_JAP_REV_ARMY = yes
 					}
 
 				TZL = {	
+						white_peace = TJJ
+
 
 			country_event = {
 				id = PRC_MAO3.73
@@ -90,6 +378,8 @@ RED_JAP_REV_ARMY = yes
 					}
 
 				TZL = {	
+						white_peace = KMT
+
 
 			country_event = {
 				id = PRC_MAO3.72
@@ -112,6 +402,435 @@ RED_JAP_REV_ARMY = yes
 
 					}
 
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = ECU
+						}
+					}
+
+				ELN = {	
+						white_peace = ROOT
+
+ROOT = {
+transfer_navy = {
+    target = ELN
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = ELN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }	
+
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+}
+
+
+					}
+
+
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+						OR = {
+							original_tag = COL
+							original_tag = CLS
+							original_tag = FPC
+						}
+
+
+
+						}
+					}
+
+
+						ELN = {white_peace = ROOT}
+ELN = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }
+							}
+					FROM = {
+						white_peace = ROOT
+						clr_country_flag = PRC_spread_chinese_influence
+					}
+					set_global_flag = skip_default_capitulation
+				}
+
+
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+						OR = {
+							original_tag = CAS
+							original_tag = SIN
+							original_tag = CDJ
+							original_tag = GUC
+							original_tag = MEX
+						}
+						}
+					}
+
+				ZAP = {	
+						white_peace = ROOT
+
+ROOT = {
+transfer_navy = {
+    target = ZAP
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = ZAP
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }	
+
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+}
+
+
+					}
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+						OR = {
+							original_tag = ETH
+							original_tag = SOM
+							original_tag = ERI
+							original_tag = TDF
+						}
+						}
+					}
+
+				DJI = {	
+						white_peace = ROOT
+
+ROOT = {
+transfer_navy = {
+    target = DJI
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = DJI
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    remove_core_of = ROOT
+		    }	
+
+							annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+}
+
+
+					}
+
+
+
+						
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+						ROOT = {
+							original_tag = PRU
+						}
+					}
+
+
+						TZL = {white_peace = PRU}
+							ELN = {
+annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}
+release = PRU
+}
+
+			TSU = {
+				add_to_faction = PRU
+			}
+
+						PRU = {
+
+                inherit_technology = TSU	
+set_party_name = { ideology = communist long_name = PRUCCCC_party name = PRUCCCC_party }
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+				create_country_leader = {
+	                name = "秘鲁革命中央委员会"
+	                desc = "POLITICS_PRUGW_DESC"
+	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+
+						}
+
+
+					set_global_flag = skip_default_capitulation
+				}	
+
+
+
+
+
+
+
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = CAN
+						}
+					}
+
+				TRG = {	
+						white_peace = CAN
+
+CAN = {
+transfer_navy = {
+    target = TRG
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+			    add_core_of = TRG
+		    }
+
+					TRG = {	
+			country_event = {
+				id = PRC_MAO4.18
+				days = 14
+			}
+			}
+							annex_country = {
+								target = CAN
+								transfer_troops = no
+							}
+}
+
+
+					}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = NZL
+						}
+					}
+
+				TJJ = {	
+						white_peace = NZL
+
+NZL = {
+transfer_navy = {
+    target = TJJ
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+			    add_core_of = TJJ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = NZL
+				}
+			    remove_core_of = NZL
+		    }
+					TSU = {	
+
+			country_event = {
+				id = PRC_MAO4.2
+				days = 30
+			}
+
+			country_event = {
+				id = PRC_MAO4.3
+				days = 30
+			}
+
+			}
+
+							annex_country = {
+								target = NZL
+								transfer_troops = no
+							}
+}
+
+
+					}
+
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+							}
+						}
+						ROOT = {
+							original_tag = AST
+						}
+					}
+
+				TJJ = {	
+						white_peace = AST
+
+AST = {
+transfer_navy = {
+    target = TJJ
+}
+}
+
+CHI_UZEDONG_SHANGTAI_8 = yes
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+			    add_core_of = TJJ
+		    }
+			every_state = {
+				limit = {
+					is_core_of = AST
+				}
+			    remove_core_of = AST
+		    }
+							annex_country = {
+								target = AST
+								transfer_troops = no
+							}
+				set_capital = {
+					state = 868
+				}
+}
+
+
+					}
 
 
 			if = {
@@ -201,25 +920,35 @@ transfer_navy = {
 
 						FROM = {
 							OR = {
-							original_tag = TSU
-								is_ally_with = TSU
+							original_tag = TZL
+								is_ally_with = TZL
 							}
 						}
 						ROOT = {
-						OR = {
-							original_tag = PNG
-							original_tag = SIG
-							original_tag = MAL
-							original_tag = INS
-						}
-						}
-					}
-			if = {
-					limit = {
-						ROOT = {
 							original_tag = PNG
 						}
 					}
+
+				KMT = {	
+PNG = {
+transfer_navy = {
+    target = KMT
+}
+}
+
+			every_state = {
+				limit = {
+					is_core_of = PNG
+				}
+			    add_core_of = KMT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PNG
+				}
+			    remove_core_of = PNG
+		    }
+
 					TSU = {	
 
 			country_event = {
@@ -233,8 +962,33 @@ transfer_navy = {
 			}
 
 			}
-		
+							annex_country = {
+								target = PNG
+								transfer_troops = no
+							}
 }
+
+
+					}
+			if = {
+					limit = {
+
+
+						FROM = {
+							OR = {
+							original_tag = TSU
+								is_ally_with = TSU
+							}
+						}
+						ROOT = {
+						OR = {
+							original_tag = SIG
+							original_tag = MAL
+							original_tag = INS
+						}
+						}
+					}
+
 				KMT = {	
 CHI_UZEDONG_SHANGTAI_8 = yes
 	

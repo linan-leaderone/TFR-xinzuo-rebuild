@@ -2315,6 +2315,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = NPA
+		NPA = { is_in_faction_with = TSU }
 		NOT = { country_exists = PNG }
 		NOT = { country_exists = INS }
 		NOT = { country_exists = SIG }
@@ -2462,24 +2463,26 @@ news_event = {
 		name = PRC_MAO3.98.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.99
 	title = PRC_MAO3.99.t
 	desc = PRC_MAO3.99.d
 	picture = GFX_PRC_MAO3_event_99
 	is_triggered_only = yes
-	fire_only_once = yes
+	fire_only_once = no
+	major = yes
 	option = {
 		name = PRC_MAO3.99.a
 	}
 }
-country_event = {
+news_event = {
 	id = PRC_MAO3.100
 	title = PRC_MAO3.100.t
 	desc = PRC_MAO3.100.d
 	picture = GFX_PRC_MAO3_event_100
 	is_triggered_only = yes
-	fire_only_once = yes
+	fire_only_once = no
+	major = yes
 	option = {
 		name = PRC_MAO3.100.a
 	}

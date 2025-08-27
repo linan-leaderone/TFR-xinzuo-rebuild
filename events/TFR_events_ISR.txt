@@ -1,0 +1,429 @@
+﻿add_namespace = israel
+country_event = { #Trump Peace Plan proposal
+	id = israel.1
+	title = israel.1.t
+	desc = israel.1.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #Move into the West Bank
+		name = israel.1.a
+		country_event = { id = israel.8 }
+		add_war_support = 0.10
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.01
+		}
+		set_temp_variable = {
+			var = income_var_temp
+			value = 250
+		}
+		add_income = yes
+		random_list = {
+			80 = { #Raid unsuccessful - Trump Angered
+				add_political_power = -75
+			}
+			20 = { #Raid successful - Trump Quiet
+				add_political_power = 75
+			}
+		}
+	}
+	option = { #A Israeli Marshall Plan!
+		name = israel.1.b
+		add_stability = 0.10
+		country_event = { id = israel.7 }
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.04
+		}
+		set_temp_variable = {
+			var = income_var_temp
+			value = 500
+		}
+		add_income = yes
+	}
+}
+country_event = { #Lehava Marches
+	id = israel.2
+	title = israel.2.t
+	desc = israel.2.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #They are getting in the way of peace!
+		name = israel.2.a
+		add_war_support = -0.08
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.02
+		}
+		random_list = {
+			90 = {
+				country_event = { id = israel.7 }
+			}
+			10 = {
+				country_event = { id = israel.8 }
+			}
+		}
+	}
+	option = { #ONE STATE ONE STATE ONE STATE
+		name = israel.2.a
+		add_stability = -0.08
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.08
+		}
+		random_list = {
+			50 = {
+				country_event = { id = israel.7 }
+			}
+			50 = {
+				country_event = { id = israel.8 }
+			}
+		}
+	}
+}
+country_event = { #Netanyahu declares national emergency
+	id = israel.3
+	title = israel.3.t
+	desc = israel.3.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.3.a
+		promote_character = ISR_benjamin_netanyahu_char
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.01
+		}	
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.02
+		}
+		news_event = { id = news.354 hours = 2 }
+		clr_country_flag = head_of_gov_ui_enabled
+	}
+}
+country_event = { #2020 Unity Government proclaimed
+	id = israel.4
+	title = israel.4.t
+	desc = israel.4.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.4.a
+		add_popularity = {
+			ideology = conservative
+			popularity = 0.06
+		}
+		add_stability = 0.08
+	}
+}
+country_event = { #Unity Government collapses
+	id = israel.5
+	title = israel.5.t
+	desc = israel.5.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.5.a
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.08
+		}
+		add_political_power = 25
+		add_stability = -0.12
+	}
+}
+country_event = { #New president
+	id = israel.10
+	title = israel.10.t
+	desc = israel.10.d
+	picture = GFX_generic_elections
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.10.a
+		promote_character = {
+			character = ISR_isaac_herzog_char
+			ideology = right_populism
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.04
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.02
+		}
+	}
+}
+country_event = { #Operation Fallen Goliath Initialized - Destabilize Iran, Secure Syria and Iraq, Destroy Islamic Terrorism worldwide
+	id = israel.6
+	title = israel.6.t
+	desc = israel.6.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #We must secure the region to ensure the safety of the Jewish people
+		name = israel.6.a
+		add_war_support = 0.10
+		#add mechanic here later
+	}
+}
+
+#Palestinians Protest Action
+country_event = {
+	id = israel.7
+	title = israel.7.t
+	desc = israel.7.d
+	picture = GFX_Palestinian_Riot
+	is_triggered_only = yes
+	option = {
+		name = israel.7.a
+		add_stability = -0.025
+		add_political_power = -25
+		PAL = {
+			add_manpower = 1250
+		}
+	}
+}
+
+#Palestinians Riot against action
+country_event = {
+	id = israel.8
+	title = israel.8.t
+	desc = israel.8.d
+	picture = GFX_Palestinian_Riot
+	is_triggered_only = yes
+	option = {
+		name = israel.8.a
+		add_stability = -0.05
+		add_political_power = -50
+		PAL = {
+			add_manpower = 2500
+			811 = {
+				create_unit = {
+					division = "name = \"Liwa Milishia\" division_template = \"Liwa Milishia\" start_experience_factor = 0.0 start_equipment_factor = 0.2" 
+					owner = PAL	
+				}
+			}
+		}
+	}
+}
+
+#Hikmat Tamimi Killed
+country_event = {
+	id = israel.9
+	title = israel.9.t
+	desc = israel.9.d
+	picture = GFX_Tamimi_Killed
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = ISR
+	}
+	
+	option = {
+		name = israel.9.a
+		add_stability = -0.05
+		country_event = { id = israel.11 days = 5 }
+		hidden_effect = {
+			country_event = { id = israel.12 days = 37 }
+		}
+	}
+}
+
+#Hamas Mobilizes
+country_event = {
+	id = israel.11
+	title = israel.11.t
+	desc = israel.11.d
+	#picture = GFX_Hamas_Mobilizes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = israel.11.a
+		PAL = {
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.25
+			}
+			country_event = { id = israel.12 days = 35 }
+			add_ideas = PAL_final_intifada
+		}
+		news_event = { id = news.338 hours = 5 }
+	}
+}
+
+#4th Intifada
+country_event = {
+	id = israel.12
+	title = israel.12.t
+	desc = israel.12.d
+	picture = GFX_report_event_political_deal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	
+	option = {
+		name = israel.12.a
+
+	}
+}
+
+#Israeli Mass Mobilization
+country_event = {
+	id = israel.13
+	title = israel.13.t
+	desc = israel.13.d
+	picture = GFX_Zhirinovsky_Youth 
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			load_oob = "ISR_Total_Mob"
+		}
+	}
+	
+	option = {
+		name = israel.13.a
+	}
+}
+#########################################
+############	NEWS	#################
+#########################################
+
+
+###BLOOMBERG_JNWO######
+country_event = {
+	id = israel.14
+	title = israel.14.t
+	desc = israel.14.d
+	picture = GFX_Zhirinovsky_Youth 
+	trigger = {
+		always = no
+		tag = USB
+		has_government = authoritarian_democrat
+		owns_state = 1137
+		controls_state = 1137
+		controls_state = 276
+		owns_state = 276
+		has_cosmetic_tag = USB_Corpo					
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_cosmetic_tag = USB_Corpo_NAU
+		}
+	}
+	
+	option = {
+		name = israel.14.a
+	}
+}
+
+#Arab-Israeli War - Two-State Solution
+country_event = {
+	id = israel.15
+	title = israel.15.t
+	desc = israel.15.d
+	picture = GFX_event_taiwanwarlose
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	trigger = {
+		tag = ISR
+	}
+	immediate = {
+		hidden_effect = {
+			PAL = {
+				transfer_state = 810
+				transfer_state = 811
+				transfer_state = 914
+				transfer_state = 915
+				set_capital = {
+					state = 914
+					remember_old_capital = no
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ISR
+					NOT = {
+						is_controlled_by = ISR
+					}
+				}
+				transfer_state_to = PAL
+			}
+			ISR = {
+				white_peace = SYR
+				white_peace = EGY
+				white_peace = PAL
+			}
+			news_event = {
+				id = news.376
+				hours = 5
+			}
+			SYR = {
+				dismantle_faction = yes					
+				transfer_state = 881
+				country_event = { id = syria.33 days = 30 }
+				if = {
+					limit = {
+						has_country_flag = SOV_sent_economic_assistance
+					}
+					SOV = {
+						country_event = {
+							id = russia.78
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = israel.15.a
+		add_war_support = -0.25
+		add_stability = -0.25
+	}
+}

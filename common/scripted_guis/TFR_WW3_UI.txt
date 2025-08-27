@@ -38,6 +38,2758 @@
 		}
 
 			triggers = {
+			WWW_state13_1_visible = { 
+				TUR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+			}
+			WWW_state13_2_visible = {
+				TUR = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state13_4_visible = { 
+				NOT = {TUR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = TUR
+			}
+
+			}
+
+
+			WWW_state8_1_visible = { 
+				FIN = {is_in_faction_with = TSU} 
+				NOT = {FIN = {surrender_progress > 0}} 
+			}
+			WWW_state8_2_visible = { 
+				NOT = {FIN = {is_in_faction_with = TSU}} 
+				NOT = {FIN = {surrender_progress > 0}} 
+			}
+			WWW_state8_4_visible = { 
+country_exists = FIN
+				FIN = {surrender_progress > 0}
+			}
+			WWW_state7_1_visible = { 
+				MLD = {is_in_faction_with = TSU} 
+				NOT = {MLD = {surrender_progress > 0}} 
+			}
+			WWW_state7_2_visible = { 
+				NOT = { MLD = {is_in_faction_with = TSU}} 
+				NOT = {MLD = {surrender_progress > 0}} 
+			}
+			WWW_state7_4_visible = { 
+country_exists = MLD
+				MLD = {surrender_progress > 0}
+			}
+			WWW_state1_1_visible = { 
+				HRL = {is_in_faction_with = TSU} 
+				NOT = {HRL = {surrender_progress > 0}} 
+			}
+			WWW_state1_2_visible = { 
+				NOT = { HRL = {is_in_faction_with = TSU}} 
+				NOT = {HRL = {surrender_progress > 0}} 
+			}
+			WWW_state1_4_visible = { 
+				HRL = {surrender_progress > 0}
+			}
+			WWW_state2_1_visible = { 
+				PRP = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+			}
+			WWW_state2_2_visible = {
+ 
+				PRP = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state2_3_visible = { 
+				NOT = {PRP = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = PRP
+			}
+			}
+
+
+
+			WWW_state3_1_visible = { 
+				GER = {is_in_faction_with = TSU}
+				NOT = {GER = {surrender_progress > 0}} 
+			}
+			WWW_state3_2_visible = {
+			OR = {
+	NOT = { country_exists = GER }
+			AND = {
+				GER = {is_in_faction_with = PRC} 
+				NOT = {GER = {surrender_progress > 0}}    
+			}
+			}
+			}
+			WWW_state3_3_visible = { 
+			country_exists = GER
+				GER = {surrender_progress > 0}
+			}
+
+
+			WWW_state10_1_visible = { 
+
+
+				BLR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state10_2_visible = {
+				BLR = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+
+			}
+			WWW_state10_4_visible = { 
+				NOT = {BLR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = BLR
+			}
+			}
+
+
+			WWW_state16_1_visible = { 
+				CAN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state16_2_visible = {
+				CAN = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state16_3_visible = { 
+			NOT = {CAN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = CAN
+			}
+			}
+
+			WWW_state15_1_visible = { 
+				DJI = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state15_2_visible = {
+				DJI = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state15_3_visible = { 
+			NOT = {DJI = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = DJI
+			}
+			}
+
+
+			WWW_state21_1_visible = { 
+				PRU = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state21_2_visible = {
+				PRU = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state21_3_visible = { 
+			NOT = {PRU = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = PRU
+			}
+			}
+
+
+
+
+			WWW_state24_1_visible = { 
+				VEN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state24_2_visible = {
+				VEN = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state24_4_visible = { 
+			NOT = {VEN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = VEN
+			}
+			}
+
+
+			WWW_state27_1_visible = { 
+				TIB = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state27_2_visible = {
+				TIB = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state27_4_visible = { 
+			NOT = {TIB = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = TIB
+			}
+			}
+
+
+			WWW_state26_1_visible = { 
+				XIN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state26_2_visible = {
+				XIN = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state26_4_visible = { 
+			NOT = {XIN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = SIK
+			}
+			}
+
+
+
+			WWW_state25_1_visible = { 
+				MON = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state25_2_visible = {
+				MON = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state25_4_visible = { 
+			NOT = {MON = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = MON
+			}
+			}
+			WWW_state22_1_visible = { 
+				ELN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state22_2_visible = {
+				ELN = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state22_3_visible = { 
+			NOT = {ELN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = ELN
+			}
+			}
+
+
+
+			WWW_state23_1_visible = { 
+				CUB = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state23_2_visible = {
+				CUB = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state23_4_visible = { 
+			NOT = {CUB = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = CUB
+			}
+			}
+
+
+
+			WWW_state20_1_visible = { 
+				NIC = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state20_2_visible = {
+				NIC = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state20_3_visible = { 
+			NOT = {NIC = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = NIC
+			}
+			}
+			WWW_state19_1_visible = { 
+				ZAP = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state19_2_visible = {
+				ZAP = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state19_3_visible = { 
+			NOT = {ZAP = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = ZAP
+			}
+			}
+			WWW_state18_1_visible = { 
+				TRG = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state18_2_visible = {
+				TRG = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state18_3_visible = { 
+			NOT = {TRG = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = TRG
+			}
+			}
+
+
+
+
+			WWW_state33_1_visible = { 
+				KYR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				KAZ = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				UZB = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				TAJ = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				TMS = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state33_2_visible = {
+				KYR = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+				KAZ = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+				UZB = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+				TAJ = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+				TMS = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state33_4_visible = { 
+			NOT = {
+				KYR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				KAZ = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				UZB = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				TAJ = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+				TMS = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+			OR = {
+is_core_of = TMS
+is_core_of = TAJ
+is_core_of = UZB
+is_core_of = KAZ
+is_core_of = KYR
+			}
+			}
+			}
+
+
+
+
+
+
+			WWW_state14_1_visible = { 
+				EFF = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state14_2_visible = {
+				EFF = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state14_3_visible = { 
+			NOT = {EFF = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = EFF
+			}
+			}
+
+
+			WWW_state41_1_visible = { 
+				BHU = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state41_2_visible = {
+				BHU = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state41_4_visible = { 
+			NOT = {BHU = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = BHU
+			}
+			}
+
+
+			WWW_state40_1_visible = { 
+				NEP = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state40_2_visible = {
+				NEP = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state40_4_visible = { 
+			NOT = {NEP = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = NEP
+			}
+			}
+
+			WWW_state39_1_visible = { 
+				PAK = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state39_2_visible = {
+				PAK = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state39_4_visible = { 
+			NOT = {PAK = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = PAK
+			}
+			}
+
+			WWW_state49_1_visible = { 
+				TAL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state49_2_visible = {
+				TAL = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state49_5_visible = {
+				TAL = { NOT = { is_in_faction_with = PRC }}
+				TAL = { NOT = { is_in_faction_with = TSU }}
+			}
+			WWW_state49_4_visible = { 
+			NOT = {TAL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = TAL
+			}
+			}
+			WWW_state48_1_visible = { 
+				PER = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state48_2_visible = {
+				PER = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state48_5_visible = {
+				PER = { NOT = { is_in_faction_with = PRC }}
+				PER = { NOT = { is_in_faction_with = TSU }}
+			}
+			WWW_state48_4_visible = { 
+			NOT = {PER = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = PER
+			}
+			}
+
+			WWW_state47_1_visible = { 
+				CAM = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state47_2_visible = {
+				CAM = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state47_4_visible = { 
+			NOT = {CAM = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = CAM
+			}
+			}
+
+			WWW_state61_1_visible = { 
+				SRL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state61_2_visible = {
+				SRL = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state61_3_visible = { 
+			NOT = {SRL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = SRL
+			}
+			}
+
+			WWW_state60_1_visible = { 
+				TZL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state60_2_visible = {
+				TZL = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state60_3_visible = { 
+			NOT = {TZL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = TZL
+			}
+			}
+
+			WWW_state59_1_visible = { 
+				MKL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state59_2_visible = {
+				MKL = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state59_3_visible = { 
+			NOT = {MKL = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = MKL
+			}
+			}
+
+			WWW_state58_1_visible = { 
+				TSU = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state58_2_visible = {
+				TSU = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state58_3_visible = { 
+			NOT = {TSU = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = TSU
+			}
+			}
+
+			WWW_state46_1_visible = { 
+				VIN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state46_2_visible = {
+				VIN = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state46_4_visible = { 
+			NOT = {VIN = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = VIN
+			}
+			}
+
+			WWW_state45_1_visible = { 
+				LAO = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state45_2_visible = {
+				LAO = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state45_4_visible = { 
+			NOT = {LAO = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = LAO
+			}
+			}
+
+			WWW_state44_1_visible = { 
+				SIA = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state44_2_visible = {
+				SIA = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state44_4_visible = { 
+			NOT = {SIA = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = SIA
+			}
+			}
+
+
+			WWW_state43_1_visible = { 
+				BRM = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state43_2_visible = {
+				BRM = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state43_4_visible = { 
+			NOT = {BRM = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = BRM
+			}
+			}
+
+			WWW_state38_1_visible = { 
+				PRK = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state38_2_visible = {
+				PRK = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state38_4_visible = { 
+			NOT = {PRK = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = PRK
+			}
+			}
+
+
+
+
+			WWW_state11_1_visible = { 
+				UKR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}
+
+			}
+			WWW_state11_2_visible = {
+				UKR = { all_core_state = {
+						controller = { is_in_faction_with = PRC }
+					}
+				}
+			}
+			WWW_state11_4_visible = { 
+			NOT = {UKR = { all_core_state = {
+						controller = { is_in_faction_with = TSU }
+					}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+is_core_of = UKR
+			}
+			}
+
+
+			WWW_state17_1_visible = { 
+				463 = {controller = {is_in_faction_with = TSU}}
+
+
+			}
+			WWW_state17_2_visible = {
+			 				463 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state17_3_visible = {
+			 				always=no
+			}
+
+			WWW_state12_1_visible = { 
+				722 = {controller = {is_in_faction_with = TSU}}
+				213 = {controller = {is_in_faction_with = TSU}}
+				215 = {controller = {is_in_faction_with = TSU}}
+				214 = {controller = {is_in_faction_with = TSU}}
+				262 = {controller = {is_in_faction_with = TSU}}
+				397 = {controller = {is_in_faction_with = TSU}}
+				216 = {controller = {is_in_faction_with = TSU}}
+				147 = {controller = {is_in_faction_with = TSU}}
+				146 = {controller = {is_in_faction_with = TSU}}
+				208 = {controller = {is_in_faction_with = TSU}}
+				195 = {controller = {is_in_faction_with = TSU}}
+				247 = {controller = {is_in_faction_with = TSU}}
+				248 = {controller = {is_in_faction_with = TSU}}
+				236 = {controller = {is_in_faction_with = TSU}}
+				217 = {controller = {is_in_faction_with = TSU}}
+				401 = {controller = {is_in_faction_with = TSU}}
+				652 = {controller = {is_in_faction_with = TSU}}
+				651 = {controller = {is_in_faction_with = TSU}}
+				398 = {controller = {is_in_faction_with = TSU}}
+				399 = {controller = {is_in_faction_with = TSU}}
+				400 = {controller = {is_in_faction_with = TSU}}
+				250 = {controller = {is_in_faction_with = TSU}}
+				251 = {controller = {is_in_faction_with = TSU}}
+				1392 = {controller = {is_in_faction_with = TSU}}
+				249 = {controller = {is_in_faction_with = TSU}}
+				255 = {controller = {is_in_faction_with = TSU}}
+				257 = {controller = {is_in_faction_with = TSU}}
+				258 = {controller = {is_in_faction_with = TSU}}
+				219 = {controller = {is_in_faction_with = TSU}}
+				220 = {controller = {is_in_faction_with = TSU}}
+				222 = {controller = {is_in_faction_with = TSU}}
+				223 = {controller = {is_in_faction_with = TSU}}
+				224 = {controller = {is_in_faction_with = TSU}}
+				205 = {controller = {is_in_faction_with = TSU}}
+				242 = {controller = {is_in_faction_with = TSU}}
+				243 = {controller = {is_in_faction_with = TSU}}
+				1339 = {controller = {is_in_faction_with = TSU}}
+				853 = {controller = {is_in_faction_with = TSU}}
+				1396 = {controller = {is_in_faction_with = TSU}}
+				252 = {controller = {is_in_faction_with = TSU}}
+				253 = {controller = {is_in_faction_with = TSU}}
+				254 = {controller = {is_in_faction_with = TSU}}
+				256 = {controller = {is_in_faction_with = TSU}}
+				244 = {controller = {is_in_faction_with = TSU}}
+				351 = {controller = {is_in_faction_with = TSU}}
+				1283 = {controller = {is_in_faction_with = TSU}}
+				240 = {controller = {is_in_faction_with = TSU}}
+				209 = {controller = {is_in_faction_with = TSU}}
+				210 = {controller = {is_in_faction_with = TSU}}
+				263 = {controller = {is_in_faction_with = TSU}}
+				246 = {controller = {is_in_faction_with = TSU}}
+				237 = {controller = {is_in_faction_with = TSU}}
+				238 = {controller = {is_in_faction_with = TSU}}
+				232 = {controller = {is_in_faction_with = TSU}}
+				231 = {controller = {is_in_faction_with = TSU}}
+				233 = {controller = {is_in_faction_with = TSU}}
+				234 = {controller = {is_in_faction_with = TSU}}
+				235 = {controller = {is_in_faction_with = TSU}}
+				581 = {controller = {is_in_faction_with = TSU}}
+				573 = {controller = {is_in_faction_with = TSU}}
+				264 = {controller = {is_in_faction_with = TSU}}
+				245 = {controller = {is_in_faction_with = TSU}}
+				218 = {controller = {is_in_faction_with = TSU}}
+				239 = {controller = {is_in_faction_with = TSU}}
+				260 = {controller = {is_in_faction_with = TSU}}
+				265 = {controller = {is_in_faction_with = TSU}}
+				796 = {controller = {is_in_faction_with = TSU}}
+				1330 = {controller = {is_in_faction_with = TSU}}
+				797 = {controller = {is_in_faction_with = TSU}}
+				230 = {controller = {is_in_faction_with = TSU}}
+				832 = {controller = {is_in_faction_with = TSU}}
+				790 = {controller = {is_in_faction_with = TSU}}
+				877 = {controller = {is_in_faction_with = TSU}}
+				828 = {controller = {is_in_faction_with = TSU}}
+				1284 = {controller = {is_in_faction_with = TSU}}
+				229 = {controller = {is_in_faction_with = TSU}}
+				878 = {controller = {is_in_faction_with = TSU}}
+				1282 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state12_2_visible = {
+			 
+				722 = {controller = {is_in_faction_with = PRC}}
+				213 = {controller = {is_in_faction_with = PRC}}
+				215 = {controller = {is_in_faction_with = PRC}}
+				214 = {controller = {is_in_faction_with = PRC}}
+				262 = {controller = {is_in_faction_with = PRC}}
+				397 = {controller = {is_in_faction_with = PRC}}
+				216 = {controller = {is_in_faction_with = PRC}}
+				147 = {controller = {is_in_faction_with = PRC}}
+				146 = {controller = {is_in_faction_with = PRC}}
+				208 = {controller = {is_in_faction_with = PRC}}
+				195 = {controller = {is_in_faction_with = PRC}}
+				247 = {controller = {is_in_faction_with = PRC}}
+				248 = {controller = {is_in_faction_with = PRC}}
+				236 = {controller = {is_in_faction_with = PRC}}
+				217 = {controller = {is_in_faction_with = PRC}}
+				401 = {controller = {is_in_faction_with = PRC}}
+				652 = {controller = {is_in_faction_with = PRC}}
+				651 = {controller = {is_in_faction_with = PRC}}
+				398 = {controller = {is_in_faction_with = PRC}}
+				399 = {controller = {is_in_faction_with = PRC}}
+				400 = {controller = {is_in_faction_with = PRC}}
+				250 = {controller = {is_in_faction_with = PRC}}
+				251 = {controller = {is_in_faction_with = PRC}}
+				1392 = {controller = {is_in_faction_with = PRC}}
+				249 = {controller = {is_in_faction_with = PRC}}
+				255 = {controller = {is_in_faction_with = PRC}}
+				257 = {controller = {is_in_faction_with = PRC}}
+				258 = {controller = {is_in_faction_with = PRC}}
+				219 = {controller = {is_in_faction_with = PRC}}
+				220 = {controller = {is_in_faction_with = PRC}}
+				222 = {controller = {is_in_faction_with = PRC}}
+				223 = {controller = {is_in_faction_with = PRC}}
+				224 = {controller = {is_in_faction_with = PRC}}
+				205 = {controller = {is_in_faction_with = PRC}}
+				242 = {controller = {is_in_faction_with = PRC}}
+				243 = {controller = {is_in_faction_with = PRC}}
+				1339 = {controller = {is_in_faction_with = PRC}}
+				853 = {controller = {is_in_faction_with = PRC}}
+				1396 = {controller = {is_in_faction_with = PRC}}
+				252 = {controller = {is_in_faction_with = PRC}}
+				253 = {controller = {is_in_faction_with = PRC}}
+				254 = {controller = {is_in_faction_with = PRC}}
+				256 = {controller = {is_in_faction_with = PRC}}
+				244 = {controller = {is_in_faction_with = PRC}}
+				351 = {controller = {is_in_faction_with = PRC}}
+				1283 = {controller = {is_in_faction_with = PRC}}
+				240 = {controller = {is_in_faction_with = PRC}}
+				209 = {controller = {is_in_faction_with = PRC}}
+				210 = {controller = {is_in_faction_with = PRC}}
+				263 = {controller = {is_in_faction_with = PRC}}
+				246 = {controller = {is_in_faction_with = PRC}}
+				237 = {controller = {is_in_faction_with = PRC}}
+				238 = {controller = {is_in_faction_with = PRC}}
+				232 = {controller = {is_in_faction_with = PRC}}
+				231 = {controller = {is_in_faction_with = PRC}}
+				233 = {controller = {is_in_faction_with = PRC}}
+				234 = {controller = {is_in_faction_with = PRC}}
+				235 = {controller = {is_in_faction_with = PRC}}
+				581 = {controller = {is_in_faction_with = PRC}}
+				573 = {controller = {is_in_faction_with = PRC}}
+				264 = {controller = {is_in_faction_with = PRC}}
+				245 = {controller = {is_in_faction_with = PRC}}
+				218 = {controller = {is_in_faction_with = PRC}}
+				239 = {controller = {is_in_faction_with = PRC}}
+				260 = {controller = {is_in_faction_with = PRC}}
+				265 = {controller = {is_in_faction_with = PRC}}
+				796 = {controller = {is_in_faction_with = PRC}}
+				1330 = {controller = {is_in_faction_with = PRC}}
+				797 = {controller = {is_in_faction_with = PRC}}
+				230 = {controller = {is_in_faction_with = PRC}}
+				832 = {controller = {is_in_faction_with = PRC}}
+				790 = {controller = {is_in_faction_with = PRC}}
+				877 = {controller = {is_in_faction_with = PRC}}
+				828 = {controller = {is_in_faction_with = PRC}}
+				1284 = {controller = {is_in_faction_with = PRC}}
+				229 = {controller = {is_in_faction_with = PRC}}
+				878 = {controller = {is_in_faction_with = PRC}}
+				1282 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state12_4_visible = { 
+			NOT = {AND = { 
+
+				722 = {controller = {is_in_faction_with = TSU}}
+				213 = {controller = {is_in_faction_with = TSU}}
+				215 = {controller = {is_in_faction_with = TSU}}
+				214 = {controller = {is_in_faction_with = TSU}}
+				262 = {controller = {is_in_faction_with = TSU}}
+				397 = {controller = {is_in_faction_with = TSU}}
+				216 = {controller = {is_in_faction_with = TSU}}
+				147 = {controller = {is_in_faction_with = TSU}}
+				146 = {controller = {is_in_faction_with = TSU}}
+				208 = {controller = {is_in_faction_with = TSU}}
+				195 = {controller = {is_in_faction_with = TSU}}
+				247 = {controller = {is_in_faction_with = TSU}}
+				248 = {controller = {is_in_faction_with = TSU}}
+				236 = {controller = {is_in_faction_with = TSU}}
+				217 = {controller = {is_in_faction_with = TSU}}
+				401 = {controller = {is_in_faction_with = TSU}}
+				652 = {controller = {is_in_faction_with = TSU}}
+				651 = {controller = {is_in_faction_with = TSU}}
+				398 = {controller = {is_in_faction_with = TSU}}
+				399 = {controller = {is_in_faction_with = TSU}}
+				400 = {controller = {is_in_faction_with = TSU}}
+				250 = {controller = {is_in_faction_with = TSU}}
+				251 = {controller = {is_in_faction_with = TSU}}
+				1392 = {controller = {is_in_faction_with = TSU}}
+				249 = {controller = {is_in_faction_with = TSU}}
+				255 = {controller = {is_in_faction_with = TSU}}
+				257 = {controller = {is_in_faction_with = TSU}}
+				258 = {controller = {is_in_faction_with = TSU}}
+				219 = {controller = {is_in_faction_with = TSU}}
+				220 = {controller = {is_in_faction_with = TSU}}
+				222 = {controller = {is_in_faction_with = TSU}}
+				223 = {controller = {is_in_faction_with = TSU}}
+				224 = {controller = {is_in_faction_with = TSU}}
+				205 = {controller = {is_in_faction_with = TSU}}
+				242 = {controller = {is_in_faction_with = TSU}}
+				243 = {controller = {is_in_faction_with = TSU}}
+				1339 = {controller = {is_in_faction_with = TSU}}
+				853 = {controller = {is_in_faction_with = TSU}}
+				1396 = {controller = {is_in_faction_with = TSU}}
+				252 = {controller = {is_in_faction_with = TSU}}
+				253 = {controller = {is_in_faction_with = TSU}}
+				254 = {controller = {is_in_faction_with = TSU}}
+				256 = {controller = {is_in_faction_with = TSU}}
+				244 = {controller = {is_in_faction_with = TSU}}
+				351 = {controller = {is_in_faction_with = TSU}}
+				1283 = {controller = {is_in_faction_with = TSU}}
+				240 = {controller = {is_in_faction_with = TSU}}
+				209 = {controller = {is_in_faction_with = TSU}}
+				210 = {controller = {is_in_faction_with = TSU}}
+				263 = {controller = {is_in_faction_with = TSU}}
+				246 = {controller = {is_in_faction_with = TSU}}
+				237 = {controller = {is_in_faction_with = TSU}}
+				238 = {controller = {is_in_faction_with = TSU}}
+				232 = {controller = {is_in_faction_with = TSU}}
+				231 = {controller = {is_in_faction_with = TSU}}
+				233 = {controller = {is_in_faction_with = TSU}}
+				234 = {controller = {is_in_faction_with = TSU}}
+				235 = {controller = {is_in_faction_with = TSU}}
+				581 = {controller = {is_in_faction_with = TSU}}
+				573 = {controller = {is_in_faction_with = TSU}}
+				264 = {controller = {is_in_faction_with = TSU}}
+				245 = {controller = {is_in_faction_with = TSU}}
+				218 = {controller = {is_in_faction_with = TSU}}
+				239 = {controller = {is_in_faction_with = TSU}}
+				260 = {controller = {is_in_faction_with = TSU}}
+				265 = {controller = {is_in_faction_with = TSU}}
+				796 = {controller = {is_in_faction_with = TSU}}
+				1330 = {controller = {is_in_faction_with = TSU}}
+				797 = {controller = {is_in_faction_with = TSU}}
+				230 = {controller = {is_in_faction_with = TSU}}
+				832 = {controller = {is_in_faction_with = TSU}}
+				790 = {controller = {is_in_faction_with = TSU}}
+				877 = {controller = {is_in_faction_with = TSU}}
+				828 = {controller = {is_in_faction_with = TSU}}
+				1284 = {controller = {is_in_faction_with = TSU}}
+				229 = {controller = {is_in_faction_with = TSU}}
+				878 = {controller = {is_in_faction_with = TSU}}
+				1282 = {controller = {is_in_faction_with = TSU}}
+				}}
+			any_state = {
+controller = {is_in_faction_with = TSU}
+				is_on_continent = europe
+				NOT = {is_core_of = UKR}
+				NOT = {is_core_of = EST}
+				NOT = {is_core_of = LAT}
+				NOT = {is_core_of = LIT}
+				NOT = {is_core_of = BLR}
+is_core_of = SOV
+			}
+			}
+
+
+
+
+
+
+
+
+
+
+			WWW_state30_1_visible = { 
+1212 = {controller = {is_in_faction_with = TSU}}
+620 = {controller = {is_in_faction_with = TSU}}
+1211 = {controller = {is_in_faction_with = TSU}}
+1225 = {controller = {is_in_faction_with = TSU}}
+1224 = {controller = {is_in_faction_with = TSU}}
+1223 = {controller = {is_in_faction_with = TSU}}
+1226 = {controller = {is_in_faction_with = TSU}}
+606 = {controller = {is_in_faction_with = TSU}}
+597 = {controller = {is_in_faction_with = TSU}}
+1230 = {controller = {is_in_faction_with = TSU}}
+598 = {controller = {is_in_faction_with = TSU}}
+1228 = {controller = {is_in_faction_with = TSU}}
+1229 = {controller = {is_in_faction_with = TSU}}
+1393 = {controller = {is_in_faction_with = TSU}}
+1420 = {controller = {is_in_faction_with = TSU}}
+1427 = {controller = {is_in_faction_with = TSU}}
+1429 = {controller = {is_in_faction_with = TSU}}
+609 = {controller = {is_in_faction_with = TSU}}
+610 = {controller = {is_in_faction_with = TSU}}
+611 = {controller = {is_in_faction_with = TSU}}
+607 = {controller = {is_in_faction_with = TSU}}
+614 = {controller = {is_in_faction_with = TSU}}
+1231 = {controller = {is_in_faction_with = TSU}}
+1426 = {controller = {is_in_faction_with = TSU}}
+615 = {controller = {is_in_faction_with = TSU}}
+1233 = {controller = {is_in_faction_with = TSU}}
+1194 = {controller = {is_in_faction_with = TSU}}
+1157 = {controller = {is_in_faction_with = TSU}}
+608 = {controller = {is_in_faction_with = TSU}}
+1421 = {controller = {is_in_faction_with = TSU}}
+1232 = {controller = {is_in_faction_with = TSU}}
+1154 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state30_2_visible = {
+1212 = {controller = {is_in_faction_with = PRC}}
+620 = {controller = {is_in_faction_with = PRC}}
+1211 = {controller = {is_in_faction_with = PRC}}
+1225 = {controller = {is_in_faction_with = PRC}}
+1224 = {controller = {is_in_faction_with = PRC}}
+1223 = {controller = {is_in_faction_with = PRC}}
+1226 = {controller = {is_in_faction_with = PRC}}
+606 = {controller = {is_in_faction_with = PRC}}
+597 = {controller = {is_in_faction_with = PRC}}
+1230 = {controller = {is_in_faction_with = PRC}}
+598 = {controller = {is_in_faction_with = PRC}}
+1228 = {controller = {is_in_faction_with = PRC}}
+1229 = {controller = {is_in_faction_with = PRC}}
+1393 = {controller = {is_in_faction_with = PRC}}
+1420 = {controller = {is_in_faction_with = PRC}}
+1427 = {controller = {is_in_faction_with = PRC}}
+1429 = {controller = {is_in_faction_with = PRC}}
+609 = {controller = {is_in_faction_with = PRC}}
+610 = {controller = {is_in_faction_with = PRC}}
+611 = {controller = {is_in_faction_with = PRC}}
+607 = {controller = {is_in_faction_with = PRC}}
+614 = {controller = {is_in_faction_with = PRC}}
+1231 = {controller = {is_in_faction_with = PRC}}
+1426 = {controller = {is_in_faction_with = PRC}}
+615 = {controller = {is_in_faction_with = PRC}}
+1233 = {controller = {is_in_faction_with = PRC}}
+1194 = {controller = {is_in_faction_with = PRC}}
+1157 = {controller = {is_in_faction_with = PRC}}
+608 = {controller = {is_in_faction_with = PRC}}
+1421 = {controller = {is_in_faction_with = PRC}}
+1232 = {controller = {is_in_faction_with = PRC}}
+1154 = {controller = {is_in_faction_with = PRC}}
+
+			}
+			WWW_state30_4_visible = { 
+			NOT = {  
+			AND = {  
+1212 = {controller = {is_in_faction_with = PRC}}
+620 = {controller = {is_in_faction_with = PRC}}
+1211 = {controller = {is_in_faction_with = PRC}}
+1225 = {controller = {is_in_faction_with = PRC}}
+1224 = {controller = {is_in_faction_with = PRC}}
+1223 = {controller = {is_in_faction_with = PRC}}
+1226 = {controller = {is_in_faction_with = PRC}}
+606 = {controller = {is_in_faction_with = PRC}}
+597 = {controller = {is_in_faction_with = PRC}}
+1230 = {controller = {is_in_faction_with = PRC}}
+598 = {controller = {is_in_faction_with = PRC}}
+1228 = {controller = {is_in_faction_with = PRC}}
+1229 = {controller = {is_in_faction_with = PRC}}
+1393 = {controller = {is_in_faction_with = PRC}}
+1420 = {controller = {is_in_faction_with = PRC}}
+1427 = {controller = {is_in_faction_with = PRC}}
+1429 = {controller = {is_in_faction_with = PRC}}
+609 = {controller = {is_in_faction_with = PRC}}
+610 = {controller = {is_in_faction_with = PRC}}
+611 = {controller = {is_in_faction_with = PRC}}
+607 = {controller = {is_in_faction_with = PRC}}
+614 = {controller = {is_in_faction_with = PRC}}
+1231 = {controller = {is_in_faction_with = PRC}}
+1426 = {controller = {is_in_faction_with = PRC}}
+615 = {controller = {is_in_faction_with = PRC}}
+1233 = {controller = {is_in_faction_with = PRC}}
+1194 = {controller = {is_in_faction_with = PRC}}
+1157 = {controller = {is_in_faction_with = PRC}}
+608 = {controller = {is_in_faction_with = PRC}}
+1421 = {controller = {is_in_faction_with = PRC}}
+1232 = {controller = {is_in_faction_with = PRC}}
+1154 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+1212 = {controller = {is_in_faction_with = PRC}}
+620 = {controller = {is_in_faction_with = PRC}}
+1211 = {controller = {is_in_faction_with = PRC}}
+1225 = {controller = {is_in_faction_with = PRC}}
+1224 = {controller = {is_in_faction_with = PRC}}
+1223 = {controller = {is_in_faction_with = PRC}}
+1226 = {controller = {is_in_faction_with = PRC}}
+606 = {controller = {is_in_faction_with = PRC}}
+597 = {controller = {is_in_faction_with = PRC}}
+1230 = {controller = {is_in_faction_with = PRC}}
+598 = {controller = {is_in_faction_with = PRC}}
+1228 = {controller = {is_in_faction_with = PRC}}
+1229 = {controller = {is_in_faction_with = PRC}}
+1393 = {controller = {is_in_faction_with = PRC}}
+1420 = {controller = {is_in_faction_with = PRC}}
+1427 = {controller = {is_in_faction_with = PRC}}
+1429 = {controller = {is_in_faction_with = PRC}}
+609 = {controller = {is_in_faction_with = PRC}}
+610 = {controller = {is_in_faction_with = PRC}}
+611 = {controller = {is_in_faction_with = PRC}}
+607 = {controller = {is_in_faction_with = PRC}}
+614 = {controller = {is_in_faction_with = PRC}}
+1231 = {controller = {is_in_faction_with = PRC}}
+1426 = {controller = {is_in_faction_with = PRC}}
+615 = {controller = {is_in_faction_with = PRC}}
+1233 = {controller = {is_in_faction_with = PRC}}
+1194 = {controller = {is_in_faction_with = PRC}}
+1157 = {controller = {is_in_faction_with = PRC}}
+608 = {controller = {is_in_faction_with = PRC}}
+1421 = {controller = {is_in_faction_with = PRC}}
+1232 = {controller = {is_in_faction_with = PRC}}
+1154 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+
+
+
+
+			WWW_state31_1_visible = { 
+717 = {controller = {is_in_faction_with = TSU}}
+1424 = {controller = {is_in_faction_with = TSU}}
+
+1167 = {controller = {is_in_faction_with = TSU}}
+714 = {controller = {is_in_faction_with = TSU}}
+
+1416 = {controller = {is_in_faction_with = TSU}}
+1425 = {controller = {is_in_faction_with = TSU}}
+328 = {controller = {is_in_faction_with = TSU}}
+715 = {controller = {is_in_faction_with = TSU}}
+
+1414 = {controller = {is_in_faction_with = TSU}}
+1415 = {controller = {is_in_faction_with = TSU}}
+716 = {controller = {is_in_faction_with = TSU}}
+
+1394 = {controller = {is_in_faction_with = TSU}}
+1413 = {controller = {is_in_faction_with = TSU}}
+1417 = {controller = {is_in_faction_with = TSU}}
+612 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state31_2_visible = {
+717 = {controller = {is_in_faction_with = PRC}}
+1424 = {controller = {is_in_faction_with = PRC}}
+
+1167 = {controller = {is_in_faction_with = PRC}}
+714 = {controller = {is_in_faction_with = PRC}}
+
+1416 = {controller = {is_in_faction_with = PRC}}
+1425 = {controller = {is_in_faction_with = PRC}}
+328 = {controller = {is_in_faction_with = PRC}}
+715 = {controller = {is_in_faction_with = PRC}}
+
+1414 = {controller = {is_in_faction_with = PRC}}
+1415 = {controller = {is_in_faction_with = PRC}}
+716 = {controller = {is_in_faction_with = PRC}}
+
+1394 = {controller = {is_in_faction_with = PRC}}
+1413 = {controller = {is_in_faction_with = PRC}}
+1417 = {controller = {is_in_faction_with = PRC}}
+612 = {controller = {is_in_faction_with = PRC}}
+
+			}
+			WWW_state31_4_visible = { 
+			NOT = {  
+			AND = {  
+717 = {controller = {is_in_faction_with = PRC}}
+1424 = {controller = {is_in_faction_with = PRC}}
+
+1167 = {controller = {is_in_faction_with = PRC}}
+714 = {controller = {is_in_faction_with = PRC}}
+
+1416 = {controller = {is_in_faction_with = PRC}}
+1425 = {controller = {is_in_faction_with = PRC}}
+328 = {controller = {is_in_faction_with = PRC}}
+715 = {controller = {is_in_faction_with = PRC}}
+
+1414 = {controller = {is_in_faction_with = PRC}}
+1415 = {controller = {is_in_faction_with = PRC}}
+716 = {controller = {is_in_faction_with = PRC}}
+
+1394 = {controller = {is_in_faction_with = PRC}}
+1413 = {controller = {is_in_faction_with = PRC}}
+1417 = {controller = {is_in_faction_with = PRC}}
+612 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+717 = {controller = {is_in_faction_with = PRC}}
+1424 = {controller = {is_in_faction_with = PRC}}
+
+1167 = {controller = {is_in_faction_with = PRC}}
+714 = {controller = {is_in_faction_with = PRC}}
+
+1416 = {controller = {is_in_faction_with = PRC}}
+1425 = {controller = {is_in_faction_with = PRC}}
+328 = {controller = {is_in_faction_with = PRC}}
+715 = {controller = {is_in_faction_with = PRC}}
+
+1414 = {controller = {is_in_faction_with = PRC}}
+1415 = {controller = {is_in_faction_with = PRC}}
+716 = {controller = {is_in_faction_with = PRC}}
+
+1394 = {controller = {is_in_faction_with = PRC}}
+1413 = {controller = {is_in_faction_with = PRC}}
+1417 = {controller = {is_in_faction_with = PRC}}
+612 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state32_1_visible = { 
+1186 = {controller = {is_in_faction_with = TSU}}
+1187 = {controller = {is_in_faction_with = TSU}}
+616 = {controller = {is_in_faction_with = TSU}}
+283 = {controller = {is_in_faction_with = TSU}}
+1198 = {controller = {is_in_faction_with = TSU}}
+604 = {controller = {is_in_faction_with = TSU}}
+1201 = {controller = {is_in_faction_with = TSU}}
+622 = {controller = {is_in_faction_with = TSU}}
+1200 = {controller = {is_in_faction_with = TSU}}
+1199 = {controller = {is_in_faction_with = TSU}}
+1193 = {controller = {is_in_faction_with = TSU}}
+621 = {controller = {is_in_faction_with = TSU}}
+1202 = {controller = {is_in_faction_with = TSU}}
+1166 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state32_2_visible = {
+1186 = {controller = {is_in_faction_with = PRC}}
+1187 = {controller = {is_in_faction_with = PRC}}
+616 = {controller = {is_in_faction_with = PRC}}
+283 = {controller = {is_in_faction_with = PRC}}
+1198 = {controller = {is_in_faction_with = PRC}}
+604 = {controller = {is_in_faction_with = PRC}}
+1201 = {controller = {is_in_faction_with = PRC}}
+622 = {controller = {is_in_faction_with = PRC}}
+1200 = {controller = {is_in_faction_with = PRC}}
+1199 = {controller = {is_in_faction_with = PRC}}
+1193 = {controller = {is_in_faction_with = PRC}}
+621 = {controller = {is_in_faction_with = PRC}}
+1202 = {controller = {is_in_faction_with = PRC}}
+1166 = {controller = {is_in_faction_with = PRC}}
+
+			}
+			WWW_state32_4_visible = { 
+			NOT = {  
+			AND = {  
+1186 = {controller = {is_in_faction_with = PRC}}
+1187 = {controller = {is_in_faction_with = PRC}}
+616 = {controller = {is_in_faction_with = PRC}}
+283 = {controller = {is_in_faction_with = PRC}}
+1198 = {controller = {is_in_faction_with = PRC}}
+604 = {controller = {is_in_faction_with = PRC}}
+1201 = {controller = {is_in_faction_with = PRC}}
+622 = {controller = {is_in_faction_with = PRC}}
+1200 = {controller = {is_in_faction_with = PRC}}
+1199 = {controller = {is_in_faction_with = PRC}}
+1193 = {controller = {is_in_faction_with = PRC}}
+621 = {controller = {is_in_faction_with = PRC}}
+1202 = {controller = {is_in_faction_with = PRC}}
+1166 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+1186 = {controller = {is_in_faction_with = PRC}}
+1187 = {controller = {is_in_faction_with = PRC}}
+616 = {controller = {is_in_faction_with = PRC}}
+283 = {controller = {is_in_faction_with = PRC}}
+1198 = {controller = {is_in_faction_with = PRC}}
+604 = {controller = {is_in_faction_with = PRC}}
+1201 = {controller = {is_in_faction_with = PRC}}
+622 = {controller = {is_in_faction_with = PRC}}
+1200 = {controller = {is_in_faction_with = PRC}}
+1199 = {controller = {is_in_faction_with = PRC}}
+1193 = {controller = {is_in_faction_with = PRC}}
+621 = {controller = {is_in_faction_with = PRC}}
+1202 = {controller = {is_in_faction_with = PRC}}
+1166 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state51_1_visible = { 
+				426 = {controller = {is_in_faction_with = TSU}}
+				431 = {controller = {is_in_faction_with = TSU}}
+				430 = {controller = {is_in_faction_with = TSU}}
+				1369 = {controller = {is_in_faction_with = TSU}}
+				1370 = {controller = {is_in_faction_with = TSU}}
+				789 = {controller = {is_in_faction_with = TSU}}
+				1372 = {controller = {is_in_faction_with = TSU}}
+				428 = {controller = {is_in_faction_with = TSU}}
+				436 = {controller = {is_in_faction_with = TSU}}
+				435 = {controller = {is_in_faction_with = TSU}}
+				433 = {controller = {is_in_faction_with = TSU}}
+				1400 = {controller = {is_in_faction_with = TSU}}
+				1373 = {controller = {is_in_faction_with = TSU}}
+				439 = {controller = {is_in_faction_with = TSU}}
+				437 = {controller = {is_in_faction_with = TSU}}
+				1381 = {controller = {is_in_faction_with = TSU}}
+				1371 = {controller = {is_in_faction_with = TSU}}
+				1398 = {controller = {is_in_faction_with = TSU}}
+				1397 = {controller = {is_in_faction_with = TSU}}
+				1399 = {controller = {is_in_faction_with = TSU}}
+				438 = {controller = {is_in_faction_with = TSU}}
+				1379 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state51_2_visible = {
+				426 = {controller = {is_in_faction_with = PRC}}
+				431 = {controller = {is_in_faction_with = PRC}}
+				430 = {controller = {is_in_faction_with = PRC}}
+				1369 = {controller = {is_in_faction_with = PRC}}
+				1370 = {controller = {is_in_faction_with = PRC}}
+				789 = {controller = {is_in_faction_with = PRC}}
+				1372 = {controller = {is_in_faction_with = PRC}}
+				428 = {controller = {is_in_faction_with = PRC}}
+				436 = {controller = {is_in_faction_with = PRC}}
+				435 = {controller = {is_in_faction_with = PRC}}
+				433 = {controller = {is_in_faction_with = PRC}}
+				1400 = {controller = {is_in_faction_with = PRC}}
+				1373 = {controller = {is_in_faction_with = PRC}}
+				439 = {controller = {is_in_faction_with = PRC}}
+				437 = {controller = {is_in_faction_with = PRC}}
+				1381 = {controller = {is_in_faction_with = PRC}}
+				1371 = {controller = {is_in_faction_with = PRC}}
+				1398 = {controller = {is_in_faction_with = PRC}}
+				1397 = {controller = {is_in_faction_with = PRC}}
+				1399 = {controller = {is_in_faction_with = PRC}}
+				438 = {controller = {is_in_faction_with = PRC}}
+				1379 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state51_3_visible = { 
+			NOT = {  
+			AND = {  
+				426 = {controller = {is_in_faction_with = PRC}}
+				431 = {controller = {is_in_faction_with = PRC}}
+				430 = {controller = {is_in_faction_with = PRC}}
+				1369 = {controller = {is_in_faction_with = PRC}}
+				1370 = {controller = {is_in_faction_with = PRC}}
+				789 = {controller = {is_in_faction_with = PRC}}
+				1372 = {controller = {is_in_faction_with = PRC}}
+				428 = {controller = {is_in_faction_with = PRC}}
+				436 = {controller = {is_in_faction_with = PRC}}
+				435 = {controller = {is_in_faction_with = PRC}}
+				433 = {controller = {is_in_faction_with = PRC}}
+				1400 = {controller = {is_in_faction_with = PRC}}
+				1373 = {controller = {is_in_faction_with = PRC}}
+				439 = {controller = {is_in_faction_with = PRC}}
+				437 = {controller = {is_in_faction_with = PRC}}
+				1381 = {controller = {is_in_faction_with = PRC}}
+				1371 = {controller = {is_in_faction_with = PRC}}
+				1398 = {controller = {is_in_faction_with = PRC}}
+				1397 = {controller = {is_in_faction_with = PRC}}
+				1399 = {controller = {is_in_faction_with = PRC}}
+				438 = {controller = {is_in_faction_with = PRC}}
+				1379 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				426 = {controller = {is_in_faction_with = PRC}}
+				431 = {controller = {is_in_faction_with = PRC}}
+				430 = {controller = {is_in_faction_with = PRC}}
+				1369 = {controller = {is_in_faction_with = PRC}}
+				1370 = {controller = {is_in_faction_with = PRC}}
+				789 = {controller = {is_in_faction_with = PRC}}
+				1372 = {controller = {is_in_faction_with = PRC}}
+				428 = {controller = {is_in_faction_with = PRC}}
+				436 = {controller = {is_in_faction_with = PRC}}
+				435 = {controller = {is_in_faction_with = PRC}}
+				433 = {controller = {is_in_faction_with = PRC}}
+				1400 = {controller = {is_in_faction_with = PRC}}
+				1373 = {controller = {is_in_faction_with = PRC}}
+				439 = {controller = {is_in_faction_with = PRC}}
+				437 = {controller = {is_in_faction_with = PRC}}
+				1381 = {controller = {is_in_faction_with = PRC}}
+				1371 = {controller = {is_in_faction_with = PRC}}
+				1398 = {controller = {is_in_faction_with = PRC}}
+				1397 = {controller = {is_in_faction_with = PRC}}
+				1399 = {controller = {is_in_faction_with = PRC}}
+				438 = {controller = {is_in_faction_with = PRC}}
+				1379 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+			WWW_state56_1_visible = { 
+				626 = {controller = {is_in_faction_with = TSU}}
+				623 = {controller = {is_in_faction_with = TSU}}
+				624` = {controller = {is_in_faction_with = TSU}}
+				627` = {controller = {is_in_faction_with = TSU}}
+				628` = {controller = {is_in_faction_with = TSU}}
+				625` = {controller = {is_in_faction_with = TSU}}
+				1272` = {controller = {is_in_faction_with = TSU}}
+				1273` = {controller = {is_in_faction_with = TSU}}
+				1274` = {controller = {is_in_faction_with = TSU}}
+				1275` = {controller = {is_in_faction_with = TSU}}
+				1276` = {controller = {is_in_faction_with = TSU}}
+				1277` = {controller = {is_in_faction_with = TSU}}
+				1278` = {controller = {is_in_faction_with = TSU}}
+				1279` = {controller = {is_in_faction_with = TSU}}
+				1280` = {controller = {is_in_faction_with = TSU}}
+				1281` = {controller = {is_in_faction_with = TSU}}
+				327` = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state56_2_visible = {
+				626 = {controller = {is_in_faction_with = PRC}}
+				623 = {controller = {is_in_faction_with = PRC}}
+				624` = {controller = {is_in_faction_with = PRC}}
+				627` = {controller = {is_in_faction_with = PRC}}
+				628` = {controller = {is_in_faction_with = PRC}}
+				625` = {controller = {is_in_faction_with = PRC}}
+				1272` = {controller = {is_in_faction_with = PRC}}
+				1273` = {controller = {is_in_faction_with = PRC}}
+				1274` = {controller = {is_in_faction_with = PRC}}
+				1275` = {controller = {is_in_faction_with = PRC}}
+				1276` = {controller = {is_in_faction_with = PRC}}
+				1277` = {controller = {is_in_faction_with = PRC}}
+				1278` = {controller = {is_in_faction_with = PRC}}
+				1279` = {controller = {is_in_faction_with = PRC}}
+				1280` = {controller = {is_in_faction_with = PRC}}
+				1281` = {controller = {is_in_faction_with = PRC}}
+				327` = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state56_3_visible = { 
+			NOT = {  
+			AND = {  
+				626 = {controller = {is_in_faction_with = PRC}}
+				623 = {controller = {is_in_faction_with = PRC}}
+				624` = {controller = {is_in_faction_with = PRC}}
+				627` = {controller = {is_in_faction_with = PRC}}
+				628` = {controller = {is_in_faction_with = PRC}}
+				625` = {controller = {is_in_faction_with = PRC}}
+				1272` = {controller = {is_in_faction_with = PRC}}
+				1273` = {controller = {is_in_faction_with = PRC}}
+				1274` = {controller = {is_in_faction_with = PRC}}
+				1275` = {controller = {is_in_faction_with = PRC}}
+				1276` = {controller = {is_in_faction_with = PRC}}
+				1277` = {controller = {is_in_faction_with = PRC}}
+				1278` = {controller = {is_in_faction_with = PRC}}
+				1279` = {controller = {is_in_faction_with = PRC}}
+				1280` = {controller = {is_in_faction_with = PRC}}
+				1281` = {controller = {is_in_faction_with = PRC}}
+				327` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				626 = {controller = {is_in_faction_with = PRC}}
+				623 = {controller = {is_in_faction_with = PRC}}
+				624` = {controller = {is_in_faction_with = PRC}}
+				627` = {controller = {is_in_faction_with = PRC}}
+				628` = {controller = {is_in_faction_with = PRC}}
+				625` = {controller = {is_in_faction_with = PRC}}
+				1272` = {controller = {is_in_faction_with = PRC}}
+				1273` = {controller = {is_in_faction_with = PRC}}
+				1274` = {controller = {is_in_faction_with = PRC}}
+				1275` = {controller = {is_in_faction_with = PRC}}
+				1276` = {controller = {is_in_faction_with = PRC}}
+				1277` = {controller = {is_in_faction_with = PRC}}
+				1278` = {controller = {is_in_faction_with = PRC}}
+				1279` = {controller = {is_in_faction_with = PRC}}
+				1280` = {controller = {is_in_faction_with = PRC}}
+				1281` = {controller = {is_in_faction_with = PRC}}
+				327` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+			WWW_state57_1_visible = { 
+				668 = {controller = {is_in_faction_with = TSU}}
+				738 = {controller = {is_in_faction_with = TSU}}
+				669` = {controller = {is_in_faction_with = TSU}}
+				523` = {controller = {is_in_faction_with = TSU}}
+				737` = {controller = {is_in_faction_with = TSU}}
+			}
+			WWW_state57_2_visible = {
+					668 = {controller = {is_in_faction_with = PRC}}
+				738 = {controller = {is_in_faction_with = PRC}}
+				669` = {controller = {is_in_faction_with = PRC}}
+				523` = {controller = {is_in_faction_with = PRC}}
+				737` = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state57_3_visible = { 
+			NOT = {  
+			AND = {  
+					668 = {controller = {is_in_faction_with = PRC}}
+				738 = {controller = {is_in_faction_with = PRC}}
+				669` = {controller = {is_in_faction_with = PRC}}
+				523` = {controller = {is_in_faction_with = PRC}}
+				737` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+					668 = {controller = {is_in_faction_with = PRC}}
+				738 = {controller = {is_in_faction_with = PRC}}
+				669` = {controller = {is_in_faction_with = PRC}}
+				523` = {controller = {is_in_faction_with = PRC}}
+				737` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+			WWW_state55_1_visible = { 
+				333 = {controller = {is_in_faction_with = TSU}}
+				334 = {controller = {is_in_faction_with = TSU}}
+				673` = {controller = {is_in_faction_with = TSU}}
+				335` = {controller = {is_in_faction_with = TSU}}
+				667` = {controller = {is_in_faction_with = TSU}}
+				721` = {controller = {is_in_faction_with = TSU}}
+				834` = {controller = {is_in_faction_with = TSU}}
+			}
+			WWW_state55_2_visible = {
+				333 = {controller = {is_in_faction_with = PRC}}
+				334 = {controller = {is_in_faction_with = PRC}}
+				673` = {controller = {is_in_faction_with = PRC}}
+				335` = {controller = {is_in_faction_with = PRC}}
+				667` = {controller = {is_in_faction_with = PRC}}
+				721` = {controller = {is_in_faction_with = PRC}}
+				834` = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state55_3_visible = { 
+			NOT = {  
+			AND = {  
+				333 = {controller = {is_in_faction_with = PRC}}
+				334 = {controller = {is_in_faction_with = PRC}}
+				673` = {controller = {is_in_faction_with = PRC}}
+				335` = {controller = {is_in_faction_with = PRC}}
+				667` = {controller = {is_in_faction_with = PRC}}
+				721` = {controller = {is_in_faction_with = PRC}}
+				834` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				333 = {controller = {is_in_faction_with = PRC}}
+				334 = {controller = {is_in_faction_with = PRC}}
+				673` = {controller = {is_in_faction_with = PRC}}
+				335` = {controller = {is_in_faction_with = PRC}}
+				667` = {controller = {is_in_faction_with = PRC}}
+				721` = {controller = {is_in_faction_with = PRC}}
+				834` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state54_1_visible = { 
+				817 = {controller = {is_in_faction_with = TSU}}
+				816 = {controller = {is_in_faction_with = TSU}}
+				1386` = {controller = {is_in_faction_with = TSU}}
+				336` = {controller = {is_in_faction_with = TSU}}
+				672` = {controller = {is_in_faction_with = TSU}}
+
+
+			}
+			WWW_state54_2_visible = {
+				817 = {controller = {is_in_faction_with = PRC}}
+				816 = {controller = {is_in_faction_with = PRC}}
+				1386` = {controller = {is_in_faction_with = PRC}}
+				336` = {controller = {is_in_faction_with = PRC}}
+				672` = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state54_3_visible = { 
+			NOT = {  
+			AND = {  
+				817 = {controller = {is_in_faction_with = PRC}}
+				816 = {controller = {is_in_faction_with = PRC}}
+				1386` = {controller = {is_in_faction_with = PRC}}
+				336` = {controller = {is_in_faction_with = PRC}}
+				672` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				817 = {controller = {is_in_faction_with = PRC}}
+				816 = {controller = {is_in_faction_with = PRC}}
+				1386` = {controller = {is_in_faction_with = PRC}}
+				336` = {controller = {is_in_faction_with = PRC}}
+				672` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state53_1_visible = { 
+				723 = {controller = {is_in_faction_with = TSU}}
+				284 = {controller = {is_in_faction_with = TSU}}
+				1419` = {controller = {is_in_faction_with = TSU}}
+
+
+			}
+			WWW_state53_2_visible = {
+					723 = {controller = {is_in_faction_with = PRC}}
+				284 = {controller = {is_in_faction_with = PRC}}
+				1419` = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state53_3_visible = { 
+			NOT = {  
+			AND = {  
+				723 = {controller = {is_in_faction_with = PRC}}
+				284 = {controller = {is_in_faction_with = PRC}}
+				1419` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+			723 = {controller = {is_in_faction_with = PRC}}
+				284 = {controller = {is_in_faction_with = PRC}}
+				1419` = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+			WWW_state52_1_visible = { 
+				520 = {controller = {is_in_faction_with = TSU}}
+				521 = {controller = {is_in_faction_with = TSU}}
+				285` = {controller = {is_in_faction_with = TSU}}
+				517 = {controller = {is_in_faction_with = TSU}}
+				868 = {controller = {is_in_faction_with = TSU}}
+				518 = {controller = {is_in_faction_with = TSU}}
+				519 = {controller = {is_in_faction_with = TSU}}
+				522 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state52_2_visible = {
+				520 = {controller = {is_in_faction_with = PRC}}
+				521 = {controller = {is_in_faction_with = PRC}}
+				285` = {controller = {is_in_faction_with = PRC}}
+				517 = {controller = {is_in_faction_with = PRC}}
+				868 = {controller = {is_in_faction_with = PRC}}
+				518 = {controller = {is_in_faction_with = PRC}}
+				519 = {controller = {is_in_faction_with = PRC}}
+				522 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state52_3_visible = { 
+			NOT = {  
+			AND = {  
+				520 = {controller = {is_in_faction_with = PRC}}
+				521 = {controller = {is_in_faction_with = PRC}}
+				285` = {controller = {is_in_faction_with = PRC}}
+				517 = {controller = {is_in_faction_with = PRC}}
+				868 = {controller = {is_in_faction_with = PRC}}
+				518 = {controller = {is_in_faction_with = PRC}}
+				519 = {controller = {is_in_faction_with = PRC}}
+				522 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				520 = {controller = {is_in_faction_with = PRC}}
+				521 = {controller = {is_in_faction_with = PRC}}
+				285` = {controller = {is_in_faction_with = PRC}}
+				517 = {controller = {is_in_faction_with = PRC}}
+				868 = {controller = {is_in_faction_with = PRC}}
+				518 = {controller = {is_in_faction_with = PRC}}
+				519 = {controller = {is_in_faction_with = PRC}}
+				522 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+
+			WWW_state50_1_visible = { 
+				423 = {controller = {is_in_faction_with = TSU}}
+				320 = {controller = {is_in_faction_with = TSU}}
+				1418 = {controller = {is_in_faction_with = TSU}}
+				425 = {controller = {is_in_faction_with = TSU}}
+				427 = {controller = {is_in_faction_with = TSU}}
+				424 = {controller = {is_in_faction_with = TSU}}
+				429 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state50_2_visible = {
+				423 = {controller = {is_in_faction_with = PRC}}
+				320 = {controller = {is_in_faction_with = PRC}}
+				1418 = {controller = {is_in_faction_with = PRC}}
+				425 = {controller = {is_in_faction_with = PRC}}
+				427 = {controller = {is_in_faction_with = PRC}}
+				424 = {controller = {is_in_faction_with = PRC}}
+				429 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state50_3_visible = { 
+			NOT = {  
+			AND = {  
+				423 = {controller = {is_in_faction_with = PRC}}
+				320 = {controller = {is_in_faction_with = PRC}}
+				1418 = {controller = {is_in_faction_with = PRC}}
+				425 = {controller = {is_in_faction_with = PRC}}
+				427 = {controller = {is_in_faction_with = PRC}}
+				424 = {controller = {is_in_faction_with = PRC}}
+				429 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				423 = {controller = {is_in_faction_with = PRC}}
+				320 = {controller = {is_in_faction_with = PRC}}
+				1418 = {controller = {is_in_faction_with = PRC}}
+				425 = {controller = {is_in_faction_with = PRC}}
+				427 = {controller = {is_in_faction_with = PRC}}
+				424 = {controller = {is_in_faction_with = PRC}}
+				429 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state42_1_visible = { 
+				432 = {controller = {is_in_faction_with = TSU}}
+				1367 = {controller = {is_in_faction_with = TSU}}
+				1366 = {controller = {is_in_faction_with = TSU}}
+				1368 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state42_2_visible = {
+				432 = {controller = {is_in_faction_with = PRC}}
+				1367 = {controller = {is_in_faction_with = PRC}}
+				1366 = {controller = {is_in_faction_with = PRC}}
+				1368 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state42_4_visible = { 
+			NOT = {  
+			AND = {  
+					432 = {controller = {is_in_faction_with = PRC}}
+				1367 = {controller = {is_in_faction_with = PRC}}
+				1366 = {controller = {is_in_faction_with = PRC}}
+				1368 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+					432 = {controller = {is_in_faction_with = PRC}}
+				1367 = {controller = {is_in_faction_with = PRC}}
+				1366 = {controller = {is_in_faction_with = PRC}}
+				1368 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+			WWW_state34_1_visible = { 
+				555 = {controller = {is_in_faction_with = TSU}}
+				637 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state34_2_visible = {
+ 
+				555 = {controller = {is_in_faction_with = PRC}}
+				637 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state34_4_visible = { 
+			NOT = {  
+			AND = {  
+				555 = {controller = {is_in_faction_with = PRC}}
+				637 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				555 = {controller = {is_in_faction_with = PRC}}
+				637 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state37_1_visible = { 
+				654 = {controller = {is_in_faction_with = TSU}}
+				40 = {controller = {is_in_faction_with = TSU}}
+				570 = {controller = {is_in_faction_with = TSU}}
+				571 = {controller = {is_in_faction_with = TSU}}
+				403 = {controller = {is_in_faction_with = TSU}}
+				582 = {controller = {is_in_faction_with = TSU}}
+				572 = {controller = {is_in_faction_with = TSU}}
+				329 = {controller = {is_in_faction_with = TSU}}
+				576 = {controller = {is_in_faction_with = TSU}}
+				579 = {controller = {is_in_faction_with = TSU}}
+				653 = {controller = {is_in_faction_with = TSU}}
+				580 = {controller = {is_in_faction_with = TSU}}
+				577 = {controller = {is_in_faction_with = TSU}}
+				578 = {controller = {is_in_faction_with = TSU}}
+				569 = {controller = {is_in_faction_with = TSU}}
+				568 = {controller = {is_in_faction_with = TSU}}
+				575 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state37_2_visible = {
+ 					654 = {controller = {is_in_faction_with = PRC}}
+				40 = {controller = {is_in_faction_with = PRC}}
+				570 = {controller = {is_in_faction_with = PRC}}
+				571 = {controller = {is_in_faction_with = PRC}}
+				403 = {controller = {is_in_faction_with = PRC}}
+				582 = {controller = {is_in_faction_with = PRC}}
+				572 = {controller = {is_in_faction_with = PRC}}
+				329 = {controller = {is_in_faction_with = PRC}}
+				576 = {controller = {is_in_faction_with = PRC}}
+				579 = {controller = {is_in_faction_with = PRC}}
+				653 = {controller = {is_in_faction_with = PRC}}
+				580 = {controller = {is_in_faction_with = PRC}}
+				577 = {controller = {is_in_faction_with = PRC}}
+				578 = {controller = {is_in_faction_with = PRC}}
+				569 = {controller = {is_in_faction_with = PRC}}
+				568 = {controller = {is_in_faction_with = PRC}}
+				575 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state37_4_visible = { 
+			NOT = {  
+			AND = {  
+					654 = {controller = {is_in_faction_with = PRC}}
+				40 = {controller = {is_in_faction_with = PRC}}
+				570 = {controller = {is_in_faction_with = PRC}}
+				571 = {controller = {is_in_faction_with = PRC}}
+				403 = {controller = {is_in_faction_with = PRC}}
+				582 = {controller = {is_in_faction_with = PRC}}
+				572 = {controller = {is_in_faction_with = PRC}}
+				329 = {controller = {is_in_faction_with = PRC}}
+				576 = {controller = {is_in_faction_with = PRC}}
+				579 = {controller = {is_in_faction_with = PRC}}
+				653 = {controller = {is_in_faction_with = PRC}}
+				580 = {controller = {is_in_faction_with = PRC}}
+				577 = {controller = {is_in_faction_with = PRC}}
+				578 = {controller = {is_in_faction_with = PRC}}
+				569 = {controller = {is_in_faction_with = PRC}}
+				568 = {controller = {is_in_faction_with = PRC}}
+				575 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+					654 = {controller = {is_in_faction_with = PRC}}
+				40 = {controller = {is_in_faction_with = PRC}}
+				570 = {controller = {is_in_faction_with = PRC}}
+				571 = {controller = {is_in_faction_with = PRC}}
+				403 = {controller = {is_in_faction_with = PRC}}
+				582 = {controller = {is_in_faction_with = PRC}}
+				572 = {controller = {is_in_faction_with = PRC}}
+				329 = {controller = {is_in_faction_with = PRC}}
+				576 = {controller = {is_in_faction_with = PRC}}
+				579 = {controller = {is_in_faction_with = PRC}}
+				653 = {controller = {is_in_faction_with = PRC}}
+				580 = {controller = {is_in_faction_with = PRC}}
+				577 = {controller = {is_in_faction_with = PRC}}
+				578 = {controller = {is_in_faction_with = PRC}}
+				569 = {controller = {is_in_faction_with = PRC}}
+				568 = {controller = {is_in_faction_with = PRC}}
+				575 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state36_1_visible = { 
+				564 = {controller = {is_in_faction_with = TSU}}
+				566 = {controller = {is_in_faction_with = TSU}}
+				567 = {controller = {is_in_faction_with = TSU}}
+				560 = {controller = {is_in_faction_with = TSU}}
+				565 = {controller = {is_in_faction_with = TSU}}
+				574 = {controller = {is_in_faction_with = TSU}}
+				563 = {controller = {is_in_faction_with = TSU}}
+				561 = {controller = {is_in_faction_with = TSU}}
+				562 = {controller = {is_in_faction_with = TSU}}
+				655 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state36_2_visible = {
+ 				537 = {controller = {is_in_faction_with = PRC}}
+				408 = {controller = {is_in_faction_with = PRC}}
+				409 = {controller = {is_in_faction_with = PRC}}
+				560 = {controller = {is_in_faction_with = PRC}}
+				1328 = {controller = {is_in_faction_with = PRC}}
+				1293 = {controller = {is_in_faction_with = PRC}}
+				657 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state36_4_visible = { 
+			NOT = {  
+			AND = {  
+ 				537 = {controller = {is_in_faction_with = PRC}}
+				408 = {controller = {is_in_faction_with = PRC}}
+				409 = {controller = {is_in_faction_with = PRC}}
+				560 = {controller = {is_in_faction_with = PRC}}
+				1328 = {controller = {is_in_faction_with = PRC}}
+				1293 = {controller = {is_in_faction_with = PRC}}
+				657 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+ 				537 = {controller = {is_in_faction_with = PRC}}
+				408 = {controller = {is_in_faction_with = PRC}}
+				409 = {controller = {is_in_faction_with = PRC}}
+				560 = {controller = {is_in_faction_with = PRC}}
+				1328 = {controller = {is_in_faction_with = PRC}}
+				1293 = {controller = {is_in_faction_with = PRC}}
+				657 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+			WWW_state35_1_visible = { 
+				537 = {controller = {is_in_faction_with = TSU}}
+				408 = {controller = {is_in_faction_with = TSU}}
+				409 = {controller = {is_in_faction_with = TSU}}
+				560 = {controller = {is_in_faction_with = TSU}}
+				1328 = {controller = {is_in_faction_with = TSU}}
+				1293 = {controller = {is_in_faction_with = TSU}}
+				657 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state35_2_visible = {
+ 				537 = {controller = {is_in_faction_with = PRC}}
+				408 = {controller = {is_in_faction_with = PRC}}
+				409 = {controller = {is_in_faction_with = PRC}}
+				560 = {controller = {is_in_faction_with = PRC}}
+				1328 = {controller = {is_in_faction_with = PRC}}
+				1293 = {controller = {is_in_faction_with = PRC}}
+				657 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state35_4_visible = { 
+			NOT = {  
+			AND = {  
+ 				537 = {controller = {is_in_faction_with = PRC}}
+				408 = {controller = {is_in_faction_with = PRC}}
+				409 = {controller = {is_in_faction_with = PRC}}
+				560 = {controller = {is_in_faction_with = PRC}}
+				1328 = {controller = {is_in_faction_with = PRC}}
+				1293 = {controller = {is_in_faction_with = PRC}}
+				657 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+ 				537 = {controller = {is_in_faction_with = PRC}}
+				408 = {controller = {is_in_faction_with = PRC}}
+				409 = {controller = {is_in_faction_with = PRC}}
+				560 = {controller = {is_in_faction_with = PRC}}
+				1328 = {controller = {is_in_faction_with = PRC}}
+				1293 = {controller = {is_in_faction_with = PRC}}
+				657 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+			WWW_state9_1_visible = { 
+				96 = {controller = {is_in_faction_with = TSU}}
+				11 = {controller = {is_in_faction_with = TSU}}
+				189 = {controller = {is_in_faction_with = TSU}}
+				188 = {controller = {is_in_faction_with = TSU}}
+				12 = {controller = {is_in_faction_with = TSU}}
+				190 = {controller = {is_in_faction_with = TSU}}
+				1182 = {controller = {is_in_faction_with = TSU}}
+				13 = {controller = {is_in_faction_with = TSU}}
+				191 = {controller = {is_in_faction_with = TSU}}
+				840 = {controller = {is_in_faction_with = TSU}}
+				1329 = {controller = {is_in_faction_with = TSU}}
+			}
+			WWW_state9_2_visible = {
+				96 = {controller = {is_in_faction_with = PRC}}
+				11 = {controller = {is_in_faction_with = PRC}}
+				189 = {controller = {is_in_faction_with = PRC}}
+				188 = {controller = {is_in_faction_with = PRC}}
+				12 = {controller = {is_in_faction_with = PRC}}
+				190 = {controller = {is_in_faction_with = PRC}}
+				1182 = {controller = {is_in_faction_with = PRC}}
+				13 = {controller = {is_in_faction_with = PRC}}
+				191 = {controller = {is_in_faction_with = PRC}}
+				840 = {controller = {is_in_faction_with = PRC}}
+				1329 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state9_4_visible = { 
+			NOT = {  
+			AND = {  
+				96 = {controller = {is_in_faction_with = PRC}}
+				11 = {controller = {is_in_faction_with = PRC}}
+				189 = {controller = {is_in_faction_with = PRC}}
+				188 = {controller = {is_in_faction_with = PRC}}
+				12 = {controller = {is_in_faction_with = PRC}}
+				190 = {controller = {is_in_faction_with = PRC}}
+				1182 = {controller = {is_in_faction_with = PRC}}
+				13 = {controller = {is_in_faction_with = PRC}}
+				191 = {controller = {is_in_faction_with = PRC}}
+				840 = {controller = {is_in_faction_with = PRC}}
+				1329 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				96 = {controller = {is_in_faction_with = PRC}}
+				11 = {controller = {is_in_faction_with = PRC}}
+				189 = {controller = {is_in_faction_with = PRC}}
+				188 = {controller = {is_in_faction_with = PRC}}
+				12 = {controller = {is_in_faction_with = PRC}}
+				190 = {controller = {is_in_faction_with = PRC}}
+				1182 = {controller = {is_in_faction_with = PRC}}
+				13 = {controller = {is_in_faction_with = PRC}}
+				191 = {controller = {is_in_faction_with = PRC}}
+				840 = {controller = {is_in_faction_with = PRC}}
+				1329 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+			WWW_state29_1_visible = { 
+1159 = {controller = {is_in_faction_with = TSU}}
+600 = {controller = {is_in_faction_with = TSU}}
+1214 = {controller = {is_in_faction_with = TSU}}
+1207 = {controller = {is_in_faction_with = TSU}}
+1213 = {controller = {is_in_faction_with = TSU}}
+1430 = {controller = {is_in_faction_with = TSU}}
+1431 = {controller = {is_in_faction_with = TSU}}
+1221 = {controller = {is_in_faction_with = TSU}}
+1222 = {controller = {is_in_faction_with = TSU}}
+1227 = {controller = {is_in_faction_with = TSU}}
+1220 = {controller = {is_in_faction_with = TSU}}
+596 = {controller = {is_in_faction_with = TSU}}
+728 = {controller = {is_in_faction_with = TSU}}
+729 = {controller = {is_in_faction_with = TSU}}
+1208 = {controller = {is_in_faction_with = TSU}}
+1209 = {controller = {is_in_faction_with = TSU}}
+602 = {controller = {is_in_faction_with = TSU}}
+592 = {controller = {is_in_faction_with = TSU}}
+1206 = {controller = {is_in_faction_with = TSU}}
+1216 = {controller = {is_in_faction_with = TSU}}
+1217 = {controller = {is_in_faction_with = TSU}}
+1218 = {controller = {is_in_faction_with = TSU}}
+1428 = {controller = {is_in_faction_with = TSU}}
+613 = {controller = {is_in_faction_with = TSU}}
+591 = {controller = {is_in_faction_with = TSU}}
+595 = {controller = {is_in_faction_with = TSU}}
+1219 = {controller = {is_in_faction_with = TSU}}
+1215 = {controller = {is_in_faction_with = TSU}}
+1395 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state29_2_visible = {
+1159 = {controller = {is_in_faction_with = PRC}}
+600 = {controller = {is_in_faction_with = PRC}}
+1214 = {controller = {is_in_faction_with = PRC}}
+1207 = {controller = {is_in_faction_with = PRC}}
+1213 = {controller = {is_in_faction_with = PRC}}
+1430 = {controller = {is_in_faction_with = PRC}}
+1431 = {controller = {is_in_faction_with = PRC}}
+1221 = {controller = {is_in_faction_with = PRC}}
+1222 = {controller = {is_in_faction_with = PRC}}
+1227 = {controller = {is_in_faction_with = PRC}}
+1220 = {controller = {is_in_faction_with = PRC}}
+596 = {controller = {is_in_faction_with = PRC}}
+728 = {controller = {is_in_faction_with = PRC}}
+729 = {controller = {is_in_faction_with = PRC}}
+1208 = {controller = {is_in_faction_with = PRC}}
+1209 = {controller = {is_in_faction_with = PRC}}
+602 = {controller = {is_in_faction_with = PRC}}
+592 = {controller = {is_in_faction_with = PRC}}
+1206 = {controller = {is_in_faction_with = PRC}}
+1216 = {controller = {is_in_faction_with = PRC}}
+1217 = {controller = {is_in_faction_with = PRC}}
+1218 = {controller = {is_in_faction_with = PRC}}
+1428 = {controller = {is_in_faction_with = PRC}}
+613 = {controller = {is_in_faction_with = PRC}}
+591 = {controller = {is_in_faction_with = PRC}}
+595 = {controller = {is_in_faction_with = PRC}}
+1219 = {controller = {is_in_faction_with = PRC}}
+1215 = {controller = {is_in_faction_with = PRC}}
+1395 = {controller = {is_in_faction_with = PRC}}
+
+			}
+			WWW_state29_4_visible = { 
+			NOT = {  
+			AND = {  
+1159 = {controller = {is_in_faction_with = PRC}}
+600 = {controller = {is_in_faction_with = PRC}}
+1214 = {controller = {is_in_faction_with = PRC}}
+1207 = {controller = {is_in_faction_with = PRC}}
+1213 = {controller = {is_in_faction_with = PRC}}
+1430 = {controller = {is_in_faction_with = PRC}}
+1431 = {controller = {is_in_faction_with = PRC}}
+1221 = {controller = {is_in_faction_with = PRC}}
+1222 = {controller = {is_in_faction_with = PRC}}
+1227 = {controller = {is_in_faction_with = PRC}}
+1220 = {controller = {is_in_faction_with = PRC}}
+596 = {controller = {is_in_faction_with = PRC}}
+728 = {controller = {is_in_faction_with = PRC}}
+729 = {controller = {is_in_faction_with = PRC}}
+1208 = {controller = {is_in_faction_with = PRC}}
+1209 = {controller = {is_in_faction_with = PRC}}
+602 = {controller = {is_in_faction_with = PRC}}
+592 = {controller = {is_in_faction_with = PRC}}
+1206 = {controller = {is_in_faction_with = PRC}}
+1216 = {controller = {is_in_faction_with = PRC}}
+1217 = {controller = {is_in_faction_with = PRC}}
+1218 = {controller = {is_in_faction_with = PRC}}
+1428 = {controller = {is_in_faction_with = PRC}}
+613 = {controller = {is_in_faction_with = PRC}}
+591 = {controller = {is_in_faction_with = PRC}}
+595 = {controller = {is_in_faction_with = PRC}}
+1219 = {controller = {is_in_faction_with = PRC}}
+1215 = {controller = {is_in_faction_with = PRC}}
+1395 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+1159 = {controller = {is_in_faction_with = PRC}}
+600 = {controller = {is_in_faction_with = PRC}}
+1214 = {controller = {is_in_faction_with = PRC}}
+1207 = {controller = {is_in_faction_with = PRC}}
+1213 = {controller = {is_in_faction_with = PRC}}
+1430 = {controller = {is_in_faction_with = PRC}}
+1431 = {controller = {is_in_faction_with = PRC}}
+1221 = {controller = {is_in_faction_with = PRC}}
+1222 = {controller = {is_in_faction_with = PRC}}
+1227 = {controller = {is_in_faction_with = PRC}}
+1220 = {controller = {is_in_faction_with = PRC}}
+596 = {controller = {is_in_faction_with = PRC}}
+728 = {controller = {is_in_faction_with = PRC}}
+729 = {controller = {is_in_faction_with = PRC}}
+1208 = {controller = {is_in_faction_with = PRC}}
+
+1209 = {controller = {is_in_faction_with = PRC}}
+602 = {controller = {is_in_faction_with = PRC}}
+592 = {controller = {is_in_faction_with = PRC}}
+1206 = {controller = {is_in_faction_with = PRC}}
+1216 = {controller = {is_in_faction_with = PRC}}
+1217 = {controller = {is_in_faction_with = PRC}}
+1218 = {controller = {is_in_faction_with = PRC}}
+1428 = {controller = {is_in_faction_with = PRC}}
+613 = {controller = {is_in_faction_with = PRC}}
+591 = {controller = {is_in_faction_with = PRC}}
+595 = {controller = {is_in_faction_with = PRC}}
+1219 = {controller = {is_in_faction_with = PRC}}
+1215 = {controller = {is_in_faction_with = PRC}}
+1395 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+			WWW_state28_1_visible = { 
+1196 = {controller = {is_in_faction_with = TSU}}
+1195 = {controller = {is_in_faction_with = TSU}}
+1192 = {controller = {is_in_faction_with = TSU}}
+325 = {controller = {is_in_faction_with = TSU}}
+1197 = {controller = {is_in_faction_with = TSU}}
+603 = {controller = {is_in_faction_with = TSU}}
+1210 = {controller = {is_in_faction_with = TSU}}
+601 = {controller = {is_in_faction_with = TSU}}
+605 = {controller = {is_in_faction_with = TSU}}
+1168 = {controller = {is_in_faction_with = TSU}}
+1188 = {controller = {is_in_faction_with = TSU}}
+1189 = {controller = {is_in_faction_with = TSU}}
+1190 = {controller = {is_in_faction_with = TSU}}
+599 = {controller = {is_in_faction_with = TSU}}
+1205 = {controller = {is_in_faction_with = TSU}}
+594 = {controller = {is_in_faction_with = TSU}}
+593 = {controller = {is_in_faction_with = TSU}}
+1204 = {controller = {is_in_faction_with = TSU}}
+1203 = {controller = {is_in_faction_with = TSU}}
+1191 = {controller = {is_in_faction_with = TSU}}
+
+			}
+			WWW_state28_2_visible = {
+1196 = {controller = {is_in_faction_with = PRC}}
+1195 = {controller = {is_in_faction_with = PRC}}
+1192 = {controller = {is_in_faction_with = PRC}}
+325 = {controller = {is_in_faction_with = PRC}}
+1197 = {controller = {is_in_faction_with = PRC}}
+603 = {controller = {is_in_faction_with = PRC}}
+1210 = {controller = {is_in_faction_with = PRC}}
+601 = {controller = {is_in_faction_with = PRC}}
+605 = {controller = {is_in_faction_with = PRC}}
+1168 = {controller = {is_in_faction_with = PRC}}
+1188 = {controller = {is_in_faction_with = PRC}}
+1189 = {controller = {is_in_faction_with = PRC}}
+1190 = {controller = {is_in_faction_with = PRC}}
+599 = {controller = {is_in_faction_with = PRC}}
+1205 = {controller = {is_in_faction_with = PRC}}
+594 = {controller = {is_in_faction_with = PRC}}
+593 = {controller = {is_in_faction_with = PRC}}
+1204 = {controller = {is_in_faction_with = PRC}}
+1203 = {controller = {is_in_faction_with = PRC}}
+1191 = {controller = {is_in_faction_with = PRC}}
+
+			}
+			WWW_state28_4_visible = { 
+			NOT = {  
+			AND = {  
+1196 = {controller = {is_in_faction_with = PRC}}
+1195 = {controller = {is_in_faction_with = PRC}}
+1192 = {controller = {is_in_faction_with = PRC}}
+325 = {controller = {is_in_faction_with = PRC}}
+1197 = {controller = {is_in_faction_with = PRC}}
+603 = {controller = {is_in_faction_with = PRC}}
+1210 = {controller = {is_in_faction_with = PRC}}
+601 = {controller = {is_in_faction_with = PRC}}
+605 = {controller = {is_in_faction_with = PRC}}
+1168 = {controller = {is_in_faction_with = PRC}}
+1188 = {controller = {is_in_faction_with = PRC}}
+1189 = {controller = {is_in_faction_with = PRC}}
+1190 = {controller = {is_in_faction_with = PRC}}
+599 = {controller = {is_in_faction_with = PRC}}
+1205 = {controller = {is_in_faction_with = PRC}}
+594 = {controller = {is_in_faction_with = PRC}}
+593 = {controller = {is_in_faction_with = PRC}}
+1204 = {controller = {is_in_faction_with = PRC}}
+1203 = {controller = {is_in_faction_with = PRC}}
+1191 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+1196 = {controller = {is_in_faction_with = PRC}}
+1195 = {controller = {is_in_faction_with = PRC}}
+1192 = {controller = {is_in_faction_with = PRC}}
+325 = {controller = {is_in_faction_with = PRC}}
+1197 = {controller = {is_in_faction_with = PRC}}
+603 = {controller = {is_in_faction_with = PRC}}
+1210 = {controller = {is_in_faction_with = PRC}}
+601 = {controller = {is_in_faction_with = PRC}}
+605 = {controller = {is_in_faction_with = PRC}}
+1168 = {controller = {is_in_faction_with = PRC}}
+1188 = {controller = {is_in_faction_with = PRC}}
+1189 = {controller = {is_in_faction_with = PRC}}
+1190 = {controller = {is_in_faction_with = PRC}}
+599 = {controller = {is_in_faction_with = PRC}}
+1205 = {controller = {is_in_faction_with = PRC}}
+594 = {controller = {is_in_faction_with = PRC}}
+593 = {controller = {is_in_faction_with = PRC}}
+1204 = {controller = {is_in_faction_with = PRC}}
+1203 = {controller = {is_in_faction_with = PRC}}
+1191 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+
+
+
+
+
+
+
+
+
+			WWW_state4_1_visible = { 
+				184 = {controller = {is_in_faction_with = TSU}}
+				731 = {controller = {is_in_faction_with = TSU}}
+				185 = {controller = {is_in_faction_with = TSU}}
+				47 = {controller = {is_in_faction_with = TSU}}
+				186 = {controller = {is_in_faction_with = TSU}}
+				187 = {controller = {is_in_faction_with = TSU}}
+				164 = {controller = {is_in_faction_with = TSU}}
+				182 = {controller = {is_in_faction_with = TSU}}
+			}
+			WWW_state4_2_visible = {
+				184 = { controller = {is_in_faction_with = PRC}}
+				731 = { controller = {is_in_faction_with = PRC}}
+				185 = { controller = {is_in_faction_with = PRC}}
+				47 = { controller = {is_in_faction_with = PRC}}
+				186 = { controller = {is_in_faction_with = PRC}}
+				187 = { controller = {is_in_faction_with = PRC}}
+				164 = { controller = {is_in_faction_with = PRC}}
+				182 = { controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state4_3_visible = { 
+			NOT = {  
+			AND = {  
+				184 = { controller = {is_in_faction_with = PRC}}
+				731 = { controller = {is_in_faction_with = PRC}}
+				185 = { controller = {is_in_faction_with = PRC}}
+				47 = { controller = {is_in_faction_with = PRC}}
+				186 = { controller = {is_in_faction_with = PRC}}
+				187 = { controller = {is_in_faction_with = PRC}}
+				164 = { controller = {is_in_faction_with = PRC}}
+				182 = { controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = { 
+				184 = { controller = {is_in_faction_with = PRC}}
+				731 = { controller = {is_in_faction_with = PRC}}
+				185 = { controller = {is_in_faction_with = PRC}}
+				47 = { controller = {is_in_faction_with = PRC}}
+				186 = { controller = {is_in_faction_with = PRC}}
+				187 = { controller = {is_in_faction_with = PRC}}
+				164 = { controller = {is_in_faction_with = PRC}}
+				182 = { controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+			WWW_state5_1_visible = { 
+				155 = {controller = {is_in_faction_with = TSU}}
+				154 = {controller = {is_in_faction_with = TSU}}
+				43 = {controller = {is_in_faction_with = TSU}}
+				854 = {controller = {is_in_faction_with = TSU}}
+				664 = {controller = {is_in_faction_with = TSU}}
+				70 = {controller = {is_in_faction_with = TSU}}
+				71 = {controller = {is_in_faction_with = TSU}}
+				102 = {controller = {is_in_faction_with = TSU}}
+				900 = {controller = {is_in_faction_with = TSU}}
+				736 = {controller = {is_in_faction_with = TSU}}
+				163 = {controller = {is_in_faction_with = TSU}}
+				103 = {controller = {is_in_faction_with = TSU}}
+				109 = {controller = {is_in_faction_with = TSU}}
+				1306 = {controller = {is_in_faction_with = TSU}}
+				848 = {controller = {is_in_faction_with = TSU}}
+				104 = {controller = {is_in_faction_with = TSU}}
+				850 = {controller = {is_in_faction_with = TSU}}
+				851 = {controller = {is_in_faction_with = TSU}}
+				849 = {controller = {is_in_faction_with = TSU}}
+
+				105 = {controller = {is_in_faction_with = TSU}}
+				44 = {controller = {is_in_faction_with = TSU}}
+				886 = {controller = {is_in_faction_with = TSU}}
+				106 = {controller = {is_in_faction_with = TSU}}
+				1305 = {controller = {is_in_faction_with = TSU}}
+				785 = {controller = {is_in_faction_with = TSU}}
+				45 = {controller = {is_in_faction_with = TSU}}
+				107 = {controller = {is_in_faction_with = TSU}}
+				1296 = {controller = {is_in_faction_with = TSU}}
+				108 = {controller = {is_in_faction_with = TSU}}
+				48 = {controller = {is_in_faction_with = TSU}}
+				212 = {controller = {is_in_faction_with = TSU}}
+				211 = {controller = {is_in_faction_with = TSU}}
+				77 = {controller = {is_in_faction_with = TSU}}
+				899 = {controller = {is_in_faction_with = TSU}}
+				46 = {controller = {is_in_faction_with = TSU}}
+				835 = {controller = {is_in_faction_with = TSU}}
+				79 = {controller = {is_in_faction_with = TSU}}
+				81 = {controller = {is_in_faction_with = TSU}}
+				84 = {controller = {is_in_faction_with = TSU}}
+				1434 = {controller = {is_in_faction_with = TSU}}
+				82 = {controller = {is_in_faction_with = TSU}}
+				83 = {controller = {is_in_faction_with = TSU}}
+				76 = {controller = {is_in_faction_with = TSU}}
+			}
+			WWW_state5_2_visible = {
+
+				155 = {controller = {is_in_faction_with = PRC}}
+				154 = {controller = {is_in_faction_with = PRC}}
+				43 = {controller = {is_in_faction_with = PRC}}
+				854 = {controller = {is_in_faction_with = PRC}}
+				664 = {controller = {is_in_faction_with = PRC}}
+				70 = {controller = {is_in_faction_with = PRC}}
+				71 = {controller = {is_in_faction_with = PRC}}
+				102 = {controller = {is_in_faction_with = PRC}}
+				900 = {controller = {is_in_faction_with = PRC}}
+				736 = {controller = {is_in_faction_with = PRC}}
+				163 = {controller = {is_in_faction_with = PRC}}
+				103 = {controller = {is_in_faction_with = PRC}}
+				109 = {controller = {is_in_faction_with = PRC}}
+				1306 = {controller = {is_in_faction_with = PRC}}
+				848 = {controller = {is_in_faction_with = PRC}}
+				104 = {controller = {is_in_faction_with = PRC}}
+				850 = {controller = {is_in_faction_with = PRC}}
+				851 = {controller = {is_in_faction_with = PRC}}
+				849 = {controller = {is_in_faction_with = PRC}}
+
+				105 = {controller = {is_in_faction_with = PRC}}
+				44 = {controller = {is_in_faction_with = PRC}}
+				886 = {controller = {is_in_faction_with = PRC}}
+				106 = {controller = {is_in_faction_with = PRC}}
+				1305 = {controller = {is_in_faction_with = PRC}}
+				785 = {controller = {is_in_faction_with = PRC}}
+				45 = {controller = {is_in_faction_with = PRC}}
+				107 = {controller = {is_in_faction_with = PRC}}
+				1296 = {controller = {is_in_faction_with = PRC}}
+				108 = {controller = {is_in_faction_with = PRC}}
+				48 = {controller = {is_in_faction_with = PRC}}
+				212 = {controller = {is_in_faction_with = PRC}}
+				211 = {controller = {is_in_faction_with = PRC}}
+				77 = {controller = {is_in_faction_with = PRC}}
+				899 = {controller = {is_in_faction_with = PRC}}
+				46 = {controller = {is_in_faction_with = PRC}}
+				835 = {controller = {is_in_faction_with = PRC}}
+				79 = {controller = {is_in_faction_with = PRC}}
+				81 = {controller = {is_in_faction_with = PRC}}
+				84 = {controller = {is_in_faction_with = PRC}}
+				1434 = {controller = {is_in_faction_with = PRC}}
+				82 = {controller = {is_in_faction_with = PRC}}
+				83 = {controller = {is_in_faction_with = PRC}}
+				76 = {controller = {is_in_faction_with = PRC}}
+			}
+			WWW_state5_4_visible = { 
+			NOT = {   
+			AND = {  
+						155 = {controller = {is_in_faction_with = PRC}}
+				154 = {controller = {is_in_faction_with = PRC}}
+				43 = {controller = {is_in_faction_with = PRC}}
+				854 = {controller = {is_in_faction_with = PRC}}
+				664 = {controller = {is_in_faction_with = PRC}}
+				70 = {controller = {is_in_faction_with = PRC}}
+				71 = {controller = {is_in_faction_with = PRC}}
+				102 = {controller = {is_in_faction_with = PRC}}
+				900 = {controller = {is_in_faction_with = PRC}}
+				736 = {controller = {is_in_faction_with = PRC}}
+				163 = {controller = {is_in_faction_with = PRC}}
+				103 = {controller = {is_in_faction_with = PRC}}
+				109 = {controller = {is_in_faction_with = PRC}}
+				1306 = {controller = {is_in_faction_with = PRC}}
+				848 = {controller = {is_in_faction_with = PRC}}
+				104 = {controller = {is_in_faction_with = PRC}}
+				850 = {controller = {is_in_faction_with = PRC}}
+				851 = {controller = {is_in_faction_with = PRC}}
+				849 = {controller = {is_in_faction_with = PRC}}
+
+				105 = {controller = {is_in_faction_with = PRC}}
+				44 = {controller = {is_in_faction_with = PRC}}
+				886 = {controller = {is_in_faction_with = PRC}}
+				106 = {controller = {is_in_faction_with = PRC}}
+				1305 = {controller = {is_in_faction_with = PRC}}
+				785 = {controller = {is_in_faction_with = PRC}}
+				45 = {controller = {is_in_faction_with = PRC}}
+				107 = {controller = {is_in_faction_with = PRC}}
+				1296 = {controller = {is_in_faction_with = PRC}}
+				108 = {controller = {is_in_faction_with = PRC}}
+				48 = {controller = {is_in_faction_with = PRC}}
+				212 = {controller = {is_in_faction_with = PRC}}
+				211 = {controller = {is_in_faction_with = PRC}}
+				77 = {controller = {is_in_faction_with = PRC}}
+				899 = {controller = {is_in_faction_with = PRC}}
+				46 = {controller = {is_in_faction_with = PRC}}
+				835 = {controller = {is_in_faction_with = PRC}}
+				79 = {controller = {is_in_faction_with = PRC}}
+				81 = {controller = {is_in_faction_with = PRC}}
+				84 = {controller = {is_in_faction_with = PRC}}
+				1434 = {controller = {is_in_faction_with = PRC}}
+				82 = {controller = {is_in_faction_with = PRC}}
+				83 = {controller = {is_in_faction_with = PRC}}
+				76 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+ 			OR = {
+					155 = {controller = {is_in_faction_with = PRC}}
+				154 = {controller = {is_in_faction_with = PRC}}
+				43 = {controller = {is_in_faction_with = PRC}}
+				854 = {controller = {is_in_faction_with = PRC}}
+				664 = {controller = {is_in_faction_with = PRC}}
+				70 = {controller = {is_in_faction_with = PRC}}
+				71 = {controller = {is_in_faction_with = PRC}}
+				102 = {controller = {is_in_faction_with = PRC}}
+				900 = {controller = {is_in_faction_with = PRC}}
+				736 = {controller = {is_in_faction_with = PRC}}
+				163 = {controller = {is_in_faction_with = PRC}}
+				103 = {controller = {is_in_faction_with = PRC}}
+				109 = {controller = {is_in_faction_with = PRC}}
+				1306 = {controller = {is_in_faction_with = PRC}}
+				848 = {controller = {is_in_faction_with = PRC}}
+				104 = {controller = {is_in_faction_with = PRC}}
+				850 = {controller = {is_in_faction_with = PRC}}
+				851 = {controller = {is_in_faction_with = PRC}}
+				849 = {controller = {is_in_faction_with = PRC}}
+
+				105 = {controller = {is_in_faction_with = PRC}}
+				44 = {controller = {is_in_faction_with = PRC}}
+				886 = {controller = {is_in_faction_with = PRC}}
+				106 = {controller = {is_in_faction_with = PRC}}
+				1305 = {controller = {is_in_faction_with = PRC}}
+				785 = {controller = {is_in_faction_with = PRC}}
+				45 = {controller = {is_in_faction_with = PRC}}
+				107 = {controller = {is_in_faction_with = PRC}}
+				1296 = {controller = {is_in_faction_with = PRC}}
+				108 = {controller = {is_in_faction_with = PRC}}
+				48 = {controller = {is_in_faction_with = PRC}}
+				212 = {controller = {is_in_faction_with = PRC}}
+				211 = {controller = {is_in_faction_with = PRC}}
+				77 = {controller = {is_in_faction_with = PRC}}
+				899 = {controller = {is_in_faction_with = PRC}}
+				46 = {controller = {is_in_faction_with = PRC}}
+				835 = {controller = {is_in_faction_with = PRC}}
+				79 = {controller = {is_in_faction_with = PRC}}
+				81 = {controller = {is_in_faction_with = PRC}}
+				84 = {controller = {is_in_faction_with = PRC}}
+				1434 = {controller = {is_in_faction_with = PRC}}
+				82 = {controller = {is_in_faction_with = PRC}}
+				83 = {controller = {is_in_faction_with = PRC}}
+				76 = {controller = {is_in_faction_with = PRC}}
+			}
+			}
+
+			WWW_state6_1_visible = { 
+				SWE = {is_in_faction_with = TSU} 
+				NOR = {is_in_faction_with = TSU}
+				NOT = {NOR = {surrender_progress > 0}} 
+				NOT = {SWE = {surrender_progress > 0}} 
+			}
+			WWW_state6_2_visible = {
+			OR = {
+			AND = {
+	NOT = { country_exists = SWE }
+	NOT = { country_exists = NOR }  
+			}
+			AND = {
+
+				SWE = {is_in_faction_with = PRC} 
+				NOR = {is_in_faction_with = PRC}
+				NOT = {NOR = {surrender_progress > 0}} 
+				NOT = {SWE = {surrender_progress > 0}} 
+			}
+			}
+			}
+			WWW_state6_3_visible = { 
+country_exists = SWE
+country_exists = NOR
+				SWE = {surrender_progress > 0}
+				NOR = {surrender_progress > 0}
+			}
+
 			WWWANNIU1_visible = { 
 				check_variable = { TFR_WW3_yuanzhuwuqiwkl = 1 }
 			}

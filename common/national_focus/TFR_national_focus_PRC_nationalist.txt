@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = PRC_chinas_most_dire_hour
 		icon = GFX_focus_PRC_chinas_most_dire_hour
-		x = 33
+		x = 30
 		y = 0
 		cost = 1.5
 		available_if_capitulated = yes
@@ -41,6 +41,10 @@ focus_tree = {
 			set_country_flag = PRC_initial_bop_removed_flag
 			add_political_power = 20
 			hidden_effect = {
+			country_event = {
+				id = PRC_MAO2.77
+				days = 2
+			}
 				scoped_play_song = "hanpeople"
 				country_event = {
 					id = china.394
@@ -61,89 +65,24 @@ focus_tree = {
 		}
 	}
 	#RED MILITARY JUNTA
-	focus = {
-		id = PRC_suppress_dissent
-		icon = GFX_focus_PRC_suppress_dissent
-		x = 12
-		y = 1
-		offset = {
-			x = -12
-			trigger = {
-				has_completed_focus = PRC_suppress_dissent
-			}
-		}
-		cost = 4.3
-		available_if_capitulated = yes
-		relative_position_id = PRC_chinas_most_dire_hour
-		ai_will_do = {
-			factor = 50
-			
-		}
-		prerequisite = {
-			focus = PRC_chinas_most_dire_hour
-		}
-		mutually_exclusive = {
-			focus = PRC_hold_snap_party_congress
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRC_hold_snap_party_congress
-			}
-		}
-		available = {
-		}
-		select_effect = {
-			country_event = {
-				id = china.108
-				days = 3
-			}
-		}
-		completion_reward = {
-			country_event = {
-				id = china.374
-				hours = 6
-			}
-			set_temp_variable = {
-				coalition_partner_var_temp = token:nationalist
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				value = 1
-				var = campaign_slot_total_var_temp
-			}
-			add_total_campaign_slot = yes
-			#unlock_decision_tooltip = PRC_nationalist_propaganda_campaign
-			custom_effect_tooltip = tooltip_white_line
-			unlock_decision_category_tooltip = PRC_the_red_dragon_cat
-			unlock_decision_tooltip = PRC_never_despair_prop
-			unlock_decision_tooltip = PRC_destroy_china_enemies_prop
-			hidden_effect = {
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-	}
+	
 	focus = {
 		id = PRC_reorganize_the_party
 		icon = GFX_focus_PRC_reorganize_the_party
-		x = 0
+		x = 13
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_suppress_dissent
+		relative_position_id = PRC_hold_snap_party_congress
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_suppress_dissent
+			focus = PRC_hold_snap_party_congress
 		}
 		available = {
 		}
 		completion_reward = {
-			set_power_balance = {
-				id = PRC_new_military_junta_bop
-				left_side = PRC_CPC_loyalists_side
-				right_side = PRC_PLA_side
-			}
 			custom_effect_tooltip = tooltip_white_line
 			add_political_power = 150
 			effect_tooltip = {
@@ -155,7 +94,6 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_glory_the_party_nat_prop
 			unlock_decision_tooltip = PRC_curtail_party_corruption
 			custom_effect_tooltip = tooltip_white_line
-			change_government_type_military_dictatorship = yes
 			hidden_effect = {
 				random_list = {
 					34 = {
@@ -221,70 +159,18 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRC_increase_pla_representation_in_the_npc
-		icon = GFX_focus_PRC_increase_pla_representation_in_the_npc
-		x = 2
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		relative_position_id = PRC_reorganize_the_party
-		ai_will_do = {
-			factor = 50
-		}
-		prerequisite = {
-			focus = PRC_reorganize_the_party
-		}
-		mutually_exclusive = {
-			focus = PRC_strengthen_the_chairman
-		}
-		available = {
-		}
-		completion_reward = {
-			country_event = {
-				id = china.376
-				hours = 6
-			}
-			add_popularity = {
-				ideology = nationalist
-				popularity = 0.1
-			}
-			custom_effect_tooltip = tooltip_white_line
-			add_power_balance_value = {
-				id = PRC_new_military_junta_bop
-				value = 0.1
-			}
-			set_party_name = {
-				ideology = national_socialist
-				long_name = PRC_totalitarian_socialist_pla_long
-				name = PRC_totalitarian_socialist_pla_short
-			}
-			set_party_name = {
-				ideology = nationalist
-				long_name = PRC_totalitarian_socialist_pla_long
-				name = PRC_totalitarian_socialist_pla_short
-			}
-			custom_effect_tooltip = tooltip_white_line
-			swap_ideas = {
-				remove_idea = PRC_party_commands_the_guns
-				add_idea = PRC_guns_command_the_party
-			}
-			custom_effect_tooltip = tooltip_white_line
-			unlock_decision_tooltip = PRC_promote_independent_general
-		}
-	}
-	focus = {
 		id = PRC_increase_the_power_of_officers
 		icon = GFX_focus_PRC_increase_the_power_of_officers
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_increase_pla_representation_in_the_npc
+			focus = PRC_strengthen_the_chairman
 		}
 		available = {
 		}
@@ -348,14 +234,14 @@ focus_tree = {
 		icon = GFX_focus_PRC_eternal_union_of_army_and_state
 		x = 4
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_increase_pla_representation_in_the_npc
+			focus = PRC_strengthen_the_chairman
 		}
 		available = {
 		}
@@ -416,20 +302,19 @@ focus_tree = {
 	focus = {
 		id = PRC_empower_theater_commands
 		icon = GFX_focus_PRC_empower_theater_commands
-		x = 1
+		x = 3
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_increase_pla_representation_in_the_npc
-			focus = PRC_strengthen_the_chairman
+			focus = PRC_increase_the_power_of_officers
 		}
-		mutually_exclusive = {
-			focus = PRC_new_production_and_construction_corps
+		prerequisite = {
+			focus = PRC_eternal_union_of_army_and_state
 		}
 		available = {
 		}
@@ -569,11 +454,11 @@ focus_tree = {
 	focus = {
 		id = PRC_citizen_militarization
 		icon = GFX_focus_PRC_citizen_militarization
-		x = 2
+		x = 3
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
@@ -640,72 +525,20 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = PRC_party_controlled_by_the_pla
-		icon = GFX_focus_PRC_party_controlled_by_the_pla
-		x = 1
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
-		ai_will_do = {
-			factor = 50
-		}
-		prerequisite = {
-			focus = PRC_citizen_militarization
-			focus = PRC_civic_military_cooperation
-		}
-		available = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				has_country_flag = PRC_pla_authority_fully_consolidated_flag
-				power_balance_value = {
-					id = PRC_new_military_junta_bop
-					value > 0.9
-				}
-			}
-		}
-		completion_reward = {
-			add_country_leader_trait = hos_the_great_warlord_PRC
-			custom_effect_tooltip = PRC_party_controlled_by_the_pla_tt
-			custom_effect_tooltip = tooltip_white_line
-			set_country_leader_ideology = left_wing_junta
-			set_politics = {
-				ruling_party = national_socialist
-				elections_allowed = no
-			}
-			add_popularity = {
-				ideology = national_socialist
-				popularity = 0.075
-			}
-			hidden_effect = {
-				#set_cosmetic_tag = PRC_party_controlled_by_the_pla_cosmetic
-				promote_character = PRC_li_zuocheng
-				if = {
-					limit = {
-						is_ai = yes
-					}
-					country_event = china.382
-				}
-			}
-		}
-	}
+
 	focus = {
 		id = PRC_the_hero_state
 		icon = GFX_focus_PRC_the_hero_state
 		x = 3
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
 			focus = PRC_citizen_militarization
-			focus = PRC_civic_military_cooperation
 		}
 		available = {
 		}
@@ -784,99 +617,20 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = PRC_new_production_and_construction_corps
-		icon = GFX_focus_PRC_new_production_and_construction_corps
-		x = 3
-		y = 2
-		cost = 5
-		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
-		ai_will_do = {
-			factor = 50
-		}
-		prerequisite = {
-			focus = PRC_increase_the_power_of_officers
-		}
-		prerequisite = {
-			focus = PRC_eternal_union_of_army_and_state
-		}
-		mutually_exclusive = {
-			focus = PRC_empower_theater_commands
-		}
-		available = {
-		}
-		completion_reward = {
-			add_power_balance_value = {
-				id = PRC_new_military_junta_bop
-				value = 0.1
-			}
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = PRC_communist_party_of_china_dummy
-					add_idea = PRC_new_production_and_construction_corps_idea
-				}
-			}
-			every_state = {
-				limit = {
-					region = 145
-					NOT = {
-						state = 732
-						state = 822
-						state = 586
-					}
-				}
-				add_manpower = 10000
-				add_dynamic_modifier = {
-					modifier = PRC_strengthened_production_and_construction_corps
-				}
-			}
-			hidden_effect = {
-				add_to_variable = {
-					var = PRC_cpc_production_speed_buildings_factor_dynamic_var
-					value = 0.08
-				}
-				add_to_variable = {
-					var = PRC_cpc_industrial_capacity_factory_dynamic_var
-					value = 0.05
-				}
-				add_to_variable = {
-					var = PRC_cpc_industrial_capacity_dockyard_dynamic_var
-					value = 0.05
-				}
-				add_to_variable = {
-					var = PRC_cpc_production_factory_max_efficiency_factor_dynamic_var
-					value = 0.06
-				}
-				add_to_variable = {
-					var = PRC_cpc_personal_value_factor_dynamic_var
-					value = 0.04
-				}
-				add_to_variable = {
-					var = PRC_cpc_expense_growth_factor_dynamic_var
-					value = 0.06
-				}
-			}
-			unlock_decision_tooltip = PRC_we_build_for_china_prop
-			unlock_decision_tooltip = PRC_recreate_tibetan_production_and_construction_corps
-			unlock_decision_tooltip = PRC_recreate_inner_mongolian_production_and_construction_corps
-			unlock_decision_tooltip = PRC_recreate_heilongjiang_production_and_construction_corps
-			unlock_decision_tooltip = PRC_recreate_yunnan_production_and_construction_corps
-		}
-	}
+
 	focus = {
 		id = PRC_civic_military_cooperation
 		icon = GFX_focus_PRC_civic_military_cooperation
-		x = 4
-		y = 3
-		cost = 5
+		x = 5
+		y = 2
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_new_production_and_construction_corps
+			focus = PRC_eternal_union_of_army_and_state
 		}
 		available = {
 		}
@@ -922,9 +676,9 @@ focus_tree = {
 	focus = {
 		id = PRC_strengthen_the_chairman
 		icon = GFX_focus_PRC_strengthen_the_chairman
-		x = -2
+		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorganize_the_party
 		ai_will_do = {
@@ -971,9 +725,9 @@ focus_tree = {
 	focus = {
 		id = PRC_stop_the_factionalism
 		icon = GFX_focus_PRC_stop_the_factionalism
-		x = 0
+		x = -2
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
@@ -1091,9 +845,9 @@ focus_tree = {
 	focus = {
 		id = PRC_party_under_control_of_the_guiding_hand
 		icon = GFX_focus_PRC_party_under_control_of_the_guiding_hand
-		x = -1
+		x = -3
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
@@ -1148,9 +902,9 @@ focus_tree = {
 	focus = {
 		id = PRC_the_organic_history
 		icon = GFX_focus_PRC_the_organic_history
-		x = -2
+		x = -4
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
@@ -1184,9 +938,9 @@ focus_tree = {
 	focus = {
 		id = PRC_li_zuocheng_thought_focus
 		icon = GFX_focus_PRC_li_zuocheng_thought
-		x = -2
+		x = -4
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
@@ -1204,7 +958,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			custom_effect_tooltip = PRC_li_zuocheng_thought_tt
-			set_country_leader_ideology = li_zuocheng_thought
 			custom_effect_tooltip = tooltip_white_line
 			add_power_balance_value = {
 				id = PRC_new_military_junta_bop
@@ -1218,9 +971,9 @@ focus_tree = {
 	focus = {
 		id = PRC_project_the_eternal_capital
 		icon = GFX_focus_PRC_project_the_eternal_capital
-		x = -3
+		x = -5
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
@@ -1245,9 +998,9 @@ focus_tree = {
 	focus = {
 		id = PRC_new_great_leader
 		icon = GFX_focus_PRC_new_great_leader
-		x = -1
+		x = -3
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
@@ -1293,16 +1046,15 @@ focus_tree = {
 	focus = {
 		id = PRC_question_of_the_chinese_interventionism
 		icon = GFX_focus_PRC_question_of_the_chinese_interventionism
-		x = -1
+		x = 0
 		y = 1
 		cost = 2.2
 		available_if_capitulated = yes
-		relative_position_id = PRC_increase_pla_representation_in_the_npc
+		relative_position_id = PRC_strengthen_the_chairman
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_increase_pla_representation_in_the_npc
 			focus = PRC_strengthen_the_chairman
 		}
 		available = {
@@ -1407,8 +1159,7 @@ focus_tree = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_increase_pla_representation_in_the_npc
-			focus = PRC_strengthen_the_chairman
+			focus = PRC_question_of_the_chinese_interventionism
 		}
 		available = {
 		}
@@ -1491,7 +1242,7 @@ focus_tree = {
 	focus = {
 		id = PRC_purge_the_liberal_reformers
 		icon = GFX_focus_PRC_purge_the_liberal_reformers
-		x = -2
+		x = -1
 		y = 1
 		cost = 3.6
 		available_if_capitulated = yes
@@ -1522,7 +1273,7 @@ focus_tree = {
 	focus = {
 		id = PRC_sinicization_of_marxism_nat
 		icon = GFX_focus_PRC_sinicization_of_marxism_nat
-		x = 0
+		x = 1
 		y = 1
 		cost = 3.6
 		available_if_capitulated = yes
@@ -1560,36 +1311,7 @@ focus_tree = {
 			add_poverty_development = yes
 		}
 	}
-	focus = {
-		id = PRC_purge_the_communist_hardliners
-		icon = GFX_focus_PRC_purge_the_communist_hardliners
-		x = 2
-		y = 1
-		cost = 3.6
-		available_if_capitulated = yes
-		relative_position_id = PRC_redefine_the_will_of_the_party
-		ai_will_do = {
-			factor = 50
-		}
-		prerequisite = {
-			focus = PRC_redefine_the_will_of_the_party
-		}
-		available = {
-		}
-		completion_reward = {
-			country_event = {
-				id = china.160
-				hours = 6
-			}
-			add_political_power = 25
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = PRC_purge_the_communist_hardliners_tt
-			custom_effect_tooltip = tooltip_white_line
-			unlock_decision_tooltip = PRC_condemn_the_hardliners
-			unlock_decision_tooltip = PRC_intensify_the_party_struggle
-			unlock_decision_tooltip = PRC_end_the_tuanpai_faction
-		}
-	}
+
 	focus = {
 		id = PRC_party_of_the_chinese_patriots
 		icon = GFX_focus_PRC_party_of_the_chinese_patriots
@@ -1606,7 +1328,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_purge_the_liberal_reformers
-			focus = PRC_purge_the_communist_hardliners
 		}
 		available = {
 		}
@@ -1667,8 +1388,10 @@ focus_tree = {
 			focus = PRC_party_of_the_chinese_patriots
 		}
 		prerequisite = {
-			focus = PRC_party_controlled_by_the_pla
 			focus = PRC_new_great_leader
+		}
+		prerequisite = {
+			focus = PRC_the_hero_state
 		}
 		available = {
 		}
@@ -1734,7 +1457,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_obey_the_party
 		x = -4
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorganize_the_party
 		ai_will_do = {
@@ -1770,24 +1493,9 @@ focus_tree = {
 	focus = {
 		id = PRC_state_of_permanent_mobilization
 		icon = GFX_focus_PRC_state_of_permanent_mobilization
-		x = -7
+		x = -6
 		y = 1
-		offset = {
-			x = 11
-			trigger = {
-				has_completed_focus = PRC_hold_snap_party_congress
-				NOT = {
-					has_completed_focus = PRC_protectors_of_the_chinese_nation
-				}
-			}
-		}
-		offset = {
-			x = 2
-			trigger = {
-				has_completed_focus = PRC_protectors_of_the_chinese_nation
-			}
-		}
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorganize_the_party
 		ai_will_do = {
@@ -1796,11 +1504,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_reorganize_the_party
 			focus = PRC_protectors_of_the_chinese_nation
-		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRC_stability_and_security
-			}
 		}
 		available = {
 			has_completed_focus = PRC_reorient_the_economy
@@ -1829,7 +1532,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_youth_military_brigades
 		x = 1
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_state_of_permanent_mobilization
 		ai_will_do = {
@@ -1837,9 +1540,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_state_of_permanent_mobilization
-		}
-		mutually_exclusive = {
-			focus = PRC_youth_construction_brigades
 		}
 		available = {
 		}
@@ -1885,7 +1585,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_women_in_the_workforce
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_state_of_permanent_mobilization
 		ai_will_do = {
@@ -1907,9 +1607,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_state_of_permanent_mobilization
 		}
-		mutually_exclusive = {
-			focus = PRC_traditional_gender_roles
-		}
 		available = {
 		}
 		completion_reward = {
@@ -1922,7 +1619,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_youth_construction_brigades
 		x = -2
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_state_of_permanent_mobilization
 		ai_will_do = {
@@ -1930,9 +1627,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_women_in_the_workforce
-		}
-		mutually_exclusive = {
-			focus = PRC_youth_military_brigades
 		}
 		available = {
 		}
@@ -1964,7 +1658,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_wave_of_patriotism
 		x = -1
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_state_of_permanent_mobilization
 		ai_will_do = {
@@ -2033,15 +1727,9 @@ focus_tree = {
 	focus = {
 		id = PRC_hold_snap_party_congress
 		icon = GFX_focus_PRC_hold_snap_party_congress
-		x = -11
+		x = 0
 		y = 1
-		offset = {
-			x = 11
-			trigger = {
-				has_completed_focus = PRC_hold_snap_party_congress
-			}
-		}
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_chinas_most_dire_hour
 		ai_will_do = {
@@ -2054,15 +1742,11 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = PRC_suppress_dissent
 		}
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRC_suppress_dissent
-			}
-		}
 		available = {
 		}
 		completion_reward = {
 			country_event = china.107
+			change_government_type_nazi_dictatorship = yes
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -2070,15 +1754,10 @@ focus_tree = {
 	focus = {
 		id = PRC_protectors_of_the_chinese_nation
 		icon = GFX_focus_PRC_protectors_of_the_chinese_nation
-		x = 9
+		x = 0
 		y = 1
-		offset = {
-			x = -9
-			trigger = {
-				has_completed_focus = PRC_protectors_of_the_chinese_nation
-			}
-		}
-		cost = 4.3
+	
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_hold_snap_party_congress
 		ai_will_do = {
@@ -2086,20 +1765,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_hold_snap_party_congress
-		}
-		mutually_exclusive = {
-			focus = PRC_stability_and_security
-		}
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = PRC_stability_and_security
-					has_completed_focus = PRC_suppress_dissent
-				}
-			}
-		}
-		available = {
-			has_country_flag = PRC_party_congress_nationalists_won_flag
 		}
 		select_effect = {
 			country_event = {
@@ -2113,12 +1778,8 @@ focus_tree = {
 			#	hours = 6
 			#}
 			#custom_effect_tooltip = tooltip_white_line
-			set_power_balance = {
-				id = PRC_new_nationalists_bop
-				left_side = PRC_han_nationalists_side
-				right_side = PRC_chinese_confucianists_side
-			}
 			custom_effect_tooltip = tooltip_white_line
+		
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_chinese_communist_party_idea
@@ -2137,21 +1798,6 @@ focus_tree = {
 			set_country_flag = PRC_Nationalists_win
 			custom_effect_tooltip = appoint_head_minister_tooltip
 			show_ideas_tooltip = PRC_chen_quanguo_hog
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_foreign_minister_tooltip
-			show_ideas_tooltip = PRC_qing_gang_for
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_economic_minister_tooltip
-			show_ideas_tooltip = PRC_han_wenxiu_eco
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_interior_minister_tooltip
-			show_ideas_tooltip = PRC_liu_jinguo_sec
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_int_minister_tooltip
-			show_ideas_tooltip = PRC_yuan_peng_int
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_theorist_minister_tooltip
-			show_ideas_tooltip = PRC_chang_dingqiu_def
 			hidden_effect = {
 				country_event = {
 					id = china.625
@@ -2164,41 +1810,32 @@ focus_tree = {
 					random_days = 100
 				}
 				add_ideas = PRC_chen_quanguo_hog
-				add_ideas = PRC_qing_gang_for
-				add_ideas = PRC_han_wenxiu_eco
-				add_ideas = PRC_liu_jinguo_sec
-				add_ideas = PRC_yuan_peng_int
-				add_ideas = PRC_chang_dingqiu_def
-				remove_ideas = PRC_chinese_communist_party_idea
-				add_dynamic_modifier = {
-					modifier = PRC_chinese_revival_dynamic
-				}
 				add_to_variable = {
-					var = PRC_chinese_revival_war_support_factor_dynamic_var
+					var = PRC_cpc_war_support_factor_dynamic_var
 					value = 0.025
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_drift_defence_factor_dynamic_var
+					var = PRC_cpc_drift_defence_factor_dynamic_var
 					value = -0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_surrender_limit_dynamic_var
+					var = PRC_cpc_surrender_limit_dynamic_var
 					value = 0.25
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_army_core_attack_factor_dynamic_var
+					var = PRC_cpc_army_core_attack_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_army_defence_factor_dynamic_var
+					var = PRC_cpc_army_defence_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_consumer_goods_factor_dynamic_var
+					var = PRC_cpc_consumer_goods_factor_dynamic_var
 					value = -0.1
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_crypto_strength_dynamic_var
+					var = PRC_cpc_crypto_strength_dynamic_var
 					value = 1
 				}
 				mark_focus_tree_layout_dirty = yes
@@ -2210,7 +1847,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_Secure_Sinosphere
 		x = -4
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_protectors_of_the_chinese_nation
 		ai_will_do = {
@@ -2401,9 +2038,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_the_issue_of_religions
 		}
-		mutually_exclusive = {
-			focus = PRC_state_atheism
-		}
 		available = {
 		}
 		completion_reward = {
@@ -2450,9 +2084,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_the_issue_of_religions
-		}
-		mutually_exclusive = {
-			focus = PRC_reconciliation_with_folk_sects
 		}
 		available = {
 		}
@@ -2557,15 +2188,7 @@ focus_tree = {
 		relative_position_id = PRC_the_issue_of_religions
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = The_PRC_Quanguo_Path
-						option = The_PRC_Quanguo_Path_Exceptionalism
-					}
-				}
-			}
+		
 		}
 		prerequisite = {
 			focus = PRC_state_atheism
@@ -2573,9 +2196,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_expel_foreign_forces
-		}
-		mutually_exclusive = {
-			focus = PRC_smash_islamism
 		}
 		available = {
 		}
@@ -2609,7 +2229,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_expel_foreign_forces
 		x = 3
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_the_issue_of_religions
 		ai_will_do = {
@@ -2689,15 +2309,7 @@ focus_tree = {
 		relative_position_id = PRC_the_issue_of_religions
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = The_PRC_Quanguo_Path
-						option = The_PRC_Quanguo_Path_Communism
-					}
-				}
-			}
+		
 		}
 		prerequisite = {
 			focus = PRC_state_atheism
@@ -2705,9 +2317,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_expel_foreign_forces
-		}
-		mutually_exclusive = {
-			focus = PRC_speed_up_sinicization
 		}
 		available = {
 		}
@@ -2821,7 +2430,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_new_chinese_revolution
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_secure_the_sinosphere
 		ai_will_do = {
@@ -2883,7 +2492,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_spiritual_renaissance
 		x = 1
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_secure_the_sinosphere
 		ai_will_do = {
@@ -2936,7 +2545,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_chinese_defeners_from_grassroots
 		x = 3
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_secure_the_sinosphere
 		ai_will_do = {
@@ -3103,11 +2712,11 @@ focus_tree = {
 					}
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_war_support_factor_dynamic_var
+					var = PRC_cpc_war_support_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_army_speed_factor_dynamic_var
+					var = PRC_cpc_army_speed_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
@@ -3115,59 +2724,59 @@ focus_tree = {
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_capacity_factory_dynamic_var
+					var = PRC_cpc_industrial_capacity_factory_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_capacity_dockyard_dynamic_var
+					var = PRC_cpc_industrial_capacity_dockyard_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_production_factory_max_efficiency_factor_dynamic_var
+					var = PRC_cpc_production_factory_max_efficiency_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_experience_loss_factor_dynamic_var
+					var = PRC_cpc_experience_loss_factor_dynamic_var
 					value = -0.1
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_experience_gain_army_factor_dynamic_var
+					var = PRC_cpc_experience_gain_army_factor_dynamic_var
 					value = -0.15
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_poverty_development_monthly_dynamic_var
+					var = PRC_cpc_poverty_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_national_socialist_drift_dynamic_var
+					var = PRC_cpc_national_socialist_drift_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_fascist_drift_dynamic_var
+					var = PRC_cpc_fascist_drift_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_academic_development_monthly_dynamic_var
+					var = PRC_cpc_academic_development_monthly_dynamic_var
 					value = -0.02
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = -0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_farming_development_monthly_dynamic_var
+					var = PRC_cpc_farming_development_monthly_dynamic_var
 					value = -0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_military_development_monthly_dynamic_var
+					var = PRC_cpc_military_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_development_monthly_dynamic_var
+					var = PRC_cpc_industrial_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_conscription_factor_dynamic_var
+					var = PRC_cpc_conscription_factor_dynamic_var
 					value = 0.02
 				}
 			}
@@ -3178,30 +2787,15 @@ focus_tree = {
 		icon = GFX_focus_PRC_revolutionary_troch_renewed
 		x = 1
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_secure_the_sinosphere
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = The_PRC_Quanguo_Path
-						option = The_PRC_Quanguo_Path_Exceptionalism
-					}
-					has_game_rule = {
-						rule = The_PRC_Quanguo_Path
-						option = The_PRC_Quanguo_Path_Confucian
-					}
-				}
-			}
+			
 		}
 		prerequisite = {
 			focus = PRC_spiritual_renaissance
-		}
-		mutually_exclusive = {
-			focus = PRC_revolt_against_the_modern
 		}
 		available = {
 			if = {
@@ -3216,15 +2810,12 @@ focus_tree = {
 			has_completed_focus = PRC_speed_up_sinicization
 		}
 		completion_reward = {
-			set_cosmetic_tag = PRC_national_communist
-			set_country_leader_ideology = social_fascism
 			custom_effect_tooltip = tooltip_white_line
 			swap_ideas = {
 				remove_idea = PRC_chinese_national_communism_idea2
 				add_idea = PRC_chinese_national_communism_idea3
 			}
 			add_country_leader_trait = hos_the_great_revolutionary_PRC
-			change_government_type_revolutionary_front = yes
 			set_portraits = {
 				character = PRC_chen_quanguo
 				civilian = {
@@ -3238,7 +2829,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_great_chinese_nation
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_revolutionary_troch_renewed
 		ai_will_do = {
@@ -3301,7 +2892,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_will_of_the_chinese_people
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_speed_up_sinicization
 		ai_will_do = {
@@ -3419,7 +3010,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_seize_back_the_chinese_century
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_protectors_of_the_chinese_nation
 		ai_will_do = {
@@ -3445,11 +3036,11 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_chinese_revival_political_power_gain_dynamic_var
+					var = PRC_cpc_political_power_gain_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = 0.005
 				}
 				add_to_variable = {
@@ -3471,7 +3062,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_embrace_the_imperial_administrative_system
 		x = -1
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_protectors_of_the_chinese_nation
 		ai_will_do = {
@@ -3525,7 +3116,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_instill_confucious_values
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_protectors_of_the_chinese_nation
 		ai_will_do = {
@@ -3580,7 +3171,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_rites_of_zhou
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_instill_confucian_values
 		ai_will_do = {
@@ -3625,7 +3216,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_new_ban_from_hundred_philosophers_campaign
 		x = 0
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_instill_confucian_values
 		ai_will_do = {
@@ -3664,23 +3255,23 @@ focus_tree = {
 					days = 5
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_stability_factor_dynamic_var
+					var = PRC_cpc_stability_factor_dynamic_var
 					value = 0.06
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_political_power_gain_dynamic_var
+					var = PRC_cpc_political_power_gain_dynamic_var
 					value = -0.08
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_capacity_factory_dynamic_var
+					var = PRC_cpc_industrial_capacity_factory_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_capacity_dockyard_dynamic_var
+					var = PRC_cpc_industrial_capacity_dockyard_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_production_speed_buildings_factor_dynamic_var
+					var = PRC_cpc_production_speed_buildings_factor_dynamic_var
 					value = 0.075
 				}
 			}
@@ -3695,29 +3286,18 @@ focus_tree = {
 		icon = GFX_focus_PRC_revolt_against_the_modern
 		x = -1
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_instill_confucian_values
 		ai_will_do = {
 			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = The_PRC_Quanguo_Path
-						option = The_PRC_Quanguo_Path_Communism
-					}
-				}
-			}
+	
 		}
 		prerequisite = {
 			focus = PRC_rites_of_zhou
 		}
 		prerequisite = {
 			focus = PRC_revive_traditional_culture
-		}
-		mutually_exclusive = {
-			focus = PRC_revolutionary_troch_renewed
 		}
 		available = {
 			if = {
@@ -3737,10 +3317,7 @@ focus_tree = {
 			add_stability = -0.15
 			PRC_remove_special_regional_modifiers = yes
 			custom_effect_tooltip = tooltip_white_line
-			set_politics = {
-				ruling_party = fascist
-				elections_allowed = no
-			}
+	
 			country_event = {
 				id = china.171
 				hours = 6
@@ -3755,7 +3332,6 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_revolution_of_thought_prop
 			unlock_decision_tooltip = PRC_vengeance_against_imperialists_prop
 			custom_effect_tooltip = tooltip_white_line
-			change_government_type_ultranationalist_dictatorship = yes
 			set_portraits = {
 				character = PRC_chen_quanguo
 				civilian = {
@@ -3819,7 +3395,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_dragon_who_devoured_the_sun
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_revolt_against_the_modern
 		ai_will_do = {
@@ -3848,7 +3424,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_great_history_continues
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_revive_traditional_culture
 		ai_will_do = {
@@ -3931,7 +3507,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_good_old_china
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_great_history_continues
 		ai_will_do = {
@@ -3979,7 +3555,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_empire_under_facade_of_the_republic
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_great_history_continues
 		ai_will_do = {
@@ -4014,9 +3590,6 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_instill_confucian_values
 		}
-		mutually_exclusive = {
-			focus = PRC_women_in_the_workforce
-		}
 		available = {
 		}
 		completion_reward = {
@@ -4041,47 +3614,47 @@ focus_tree = {
 			add_society_development = yes
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_chinese_revival_conscription_factor_dynamic_var
+					var = PRC_cpc_conscription_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_conscription_dynamic_var
+					var = PRC_cpc_conscription_dynamic_var
 					value = 0.005
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_production_factory_max_efficiency_factor_dynamic_var
+					var = PRC_cpc_production_factory_max_efficiency_factor_dynamic_var
 					value = -0.075
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_capacity_factory_dynamic_var
+					var = PRC_cpc_industrial_capacity_factory_dynamic_var
 					value = -0.035
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_industrial_capacity_dockyard_dynamic_var
+					var = PRC_cpc_industrial_capacity_dockyard_dynamic_var
 					value = -0.035
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_production_speed_buildings_factor_dynamic_var
+					var = PRC_cpc_production_speed_buildings_factor_dynamic_var
 					value = -0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_academic_development_monthly_dynamic_var
+					var = PRC_cpc_academic_development_monthly_dynamic_var
 					value = -0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = 0.015
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_research_speed_factor_dynamic_var
+					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = -0.05
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_monthly_population_dynamic_var
+					var = PRC_cpc_monthly_population_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_personal_expense_factor_dynamic_var
+					var = PRC_cpc_personal_expense_factor_dynamic_var
 					value = -0.08
 				}
 			}
@@ -4137,15 +3710,15 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_establish_dragon_radiance_expo
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_chinese_revival_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_monthly_population_dynamic_var
+					var = PRC_cpc_monthly_population_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_chinese_revival_fascist_drift_dynamic_var
+					var = PRC_cpc_fascist_drift_dynamic_var
 					value = 0.01
 				}
 			}
@@ -4155,15 +3728,10 @@ focus_tree = {
 	focus = {
 		id = PRC_stability_and_security
 		icon = GFX_focus_PRC_stability_and_security
-		x = -8
+		x = -16
 		y = 1
-		offset = {
-			x = 8
-			trigger = {
-				has_completed_focus = PRC_stability_and_security
-			}
-		}
-		cost = 4.3
+
+		cost = 2
 		available_if_capitulated = yes
 		cancelable = no
 		relative_position_id = PRC_hold_snap_party_congress
@@ -4172,20 +3740,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_hold_snap_party_congress
-		}
-		mutually_exclusive = {
-			focus = PRC_protectors_of_the_chinese_nation
-		}
-		allow_branch = {
-			NOT = {
-				OR = {
-					has_completed_focus = PRC_protectors_of_the_chinese_nation
-					has_completed_focus = PRC_suppress_dissent
-				}
-			}
-		}
-		available = {
-			has_country_flag = PRC_party_congress_digital_leninsts_won_flag
 		}
 		select_effect = {
 			country_event = {
@@ -4227,27 +3781,24 @@ focus_tree = {
 				remove_ideas = PRC_chinese_communist_party_idea
 				activate_mission = PRC_science_MSS_dynamic_opinion
 				activate_mission = PRC_science_scientist_faction_dynamic_opinion
-				add_dynamic_modifier = {
-					modifier = PRC_science_technocratic_state_dynamic
-				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_political_power_factor_dynamic_var
+					var = PRC_cpc_political_power_factor_dynamic_var
 					value = -0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_stability_factor_dynamic_var
+					var = PRC_cpc_stability_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_drift_defence_factor_dynamic_var
+					var = PRC_cpc_drift_defence_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_crypto_strength_dynamic_var
+					var = PRC_cpc_crypto_strength_dynamic_var
 					value = 2
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_personal_expense_factor_dynamic_var
+					var = PRC_cpc_personal_expense_factor_dynamic_var
 					value = 0.035
 				}
 				country_event = {
@@ -4271,7 +3822,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_conquer_the_corporations
 		x = 2
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_stability_and_security
 		ai_will_do = {
@@ -4296,19 +3847,19 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_political_power_gain_dynamic_var
+					var = PRC_cpc_political_power_gain_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_consumer_goods_factor_dynamic_var
+					var = PRC_cpc_consumer_goods_factor_dynamic_var
 					value = -0.075
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_income_growth_factor_dynamic_var
+					var = PRC_cpc_income_growth_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_production_factory_max_efficiency_factor_dynamic_var
+					var = PRC_cpc_production_factory_max_efficiency_factor_dynamic_var
 					value = 0.05
 				}
 			}
@@ -4327,7 +3878,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_absorb_technical_blood
 		x = 1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4351,11 +3902,11 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_expense_growth_factor_dynamic_var
+					var = PRC_cpc_expense_growth_factor_dynamic_var
 					value = 0.03
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_research_speed_factor_dynamic_var
+					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = 0.1
 				}
 				country_event = {
@@ -4373,7 +3924,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_pursuit_of_full_automation
 		x = 1
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4419,7 +3970,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_science_exclusively_for_the_state_interests
 		x = 0
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4465,31 +4016,31 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_political_power_gain_dynamic_var
+					var = PRC_cpc_political_power_gain_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_war_support_factor_dynamic_var
+					var = PRC_cpc_war_support_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_research_speed_factor_dynamic_var
+					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = -0.125
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_academic_development_monthly_dynamic_var
+					var = PRC_cpc_academic_development_monthly_dynamic_var
 					value = -0.015
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_industrial_development_monthly_dynamic_var
+					var = PRC_cpc_industrial_development_monthly_dynamic_var
 					value = 0.005
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_farming_development_monthly_dynamic_var
+					var = PRC_cpc_farming_development_monthly_dynamic_var
 					value = 0.005
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_military_development_monthly_dynamic_var
+					var = PRC_cpc_military_development_monthly_dynamic_var
 					value = 0.005
 				}
 			}
@@ -4500,7 +4051,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_general_pursuit_of_discovery
 		x = 2
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4539,23 +4090,23 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_stability_factor_dynamic_var
+					var = PRC_cpc_stability_factor_dynamic_var
 					value = 0.075
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_research_speed_factor_dynamic_var
+					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_personal_value_factor_dynamic_var
+					var = PRC_cpc_personal_value_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_academic_development_monthly_dynamic_var
+					var = PRC_cpc_academic_development_monthly_dynamic_var
 					value = 0.015
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = 0.01
 				}
 			}
@@ -4571,7 +4122,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_authority_of_the_best_minds
 		x = 3
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4613,7 +4164,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_moving_toward_a_digital_state
 		x = 4
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4660,7 +4211,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_going_beyond_ethics
 		x = 5
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4707,7 +4258,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_sinofuturism
 		x = 3
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4738,27 +4289,27 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_brave_new_world_prop
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_production_speed_buildings_factor_dynamic_var
+					var = PRC_cpc_production_speed_buildings_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_industrial_capacity_factory_dynamic_var
+					var = PRC_cpc_industrial_capacity_factory_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_industrial_capacity_dockyard_dynamic_var
+					var = PRC_cpc_industrial_capacity_dockyard_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_academic_development_monthly_dynamic_var
+					var = PRC_cpc_academic_development_monthly_dynamic_var
 					value = 0.02
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_research_speed_factor_dynamic_var
+					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = 0.05
 				}
 				country_event = {
@@ -4777,7 +4328,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_perfectly_calculated_freedom_for_all
 		x = -1
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4866,23 +4417,23 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_nuclear_investement_south_china_mss
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_coordination_bonus_dynamic_var
+					var = PRC_cpc_coordination_bonus_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_production_speed_nuclear_reactor_factor_dynamic_var
+					var = PRC_cpc_production_speed_nuclear_reactor_factor_dynamic_var
 					value = 0.075
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_academic_development_monthly_dynamic_var
+					var = PRC_cpc_academic_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_industrial_development_monthly_dynamic_var
+					var = PRC_cpc_industrial_development_monthly_dynamic_var
 					value = 0.01
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_farming_development_monthly_dynamic_var
+					var = PRC_cpc_farming_development_monthly_dynamic_var
 					value = 0.01
 				}
 			}
@@ -4893,7 +4444,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_great_changes_unseen_in_a_century
 		x = 0
 		y = 5
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_conquer_the_corporations
 		ai_will_do = {
@@ -4927,7 +4478,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_empower_the_mss
 		x = -2
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_stability_and_security
 		ai_will_do = {
@@ -4965,19 +4516,19 @@ focus_tree = {
 					random_days = 50
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_root_out_resistance_effectiveness_factor_dynamic_var
+					var = PRC_cpc_root_out_resistance_effectiveness_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_drift_defence_factor_dynamic_var
+					var = PRC_cpc_drift_defence_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_crypto_strength_dynamic_var
+					var = PRC_cpc_crypto_strength_dynamic_var
 					value = 1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_agency_upgrade_time_dynamic_var
+					var = PRC_cpc_agency_upgrade_time_dynamic_var
 					value = -0.2
 				}
 			}
@@ -4988,7 +4539,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_all_society_political_investigation
 		x = -1
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5024,27 +4575,27 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_crush_anti_technocratic_movement
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_political_power_gain_dynamic_var
+					var = PRC_cpc_political_power_gain_dynamic_var
 					value = 0.08
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_stability_factor_dynamic_var
+					var = PRC_cpc_stability_factor_dynamic_var
 					value = 0.06
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_root_out_resistance_effectiveness_factor_dynamic_var
+					var = PRC_cpc_root_out_resistance_effectiveness_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_drift_defence_factor_dynamic_var
+					var = PRC_cpc_drift_defence_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_crypto_strength_dynamic_var
+					var = PRC_cpc_crypto_strength_dynamic_var
 					value = 1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_operative_slot_dynamic_var
+					var = PRC_cpc_operative_slot_dynamic_var
 					value = 1
 				}
 				country_event = {
@@ -5065,7 +4616,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_generation_of_patriots
 		x = -3
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5105,7 +4656,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_officials_on_social_media
 		x = -1
 		y = 2
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5134,23 +4685,23 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_the_internet_is_not_anonymous_prop
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_personal_expense_factor_dynamic_var
+					var = PRC_cpc_personal_expense_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_party_popularity_stability_factor_dynamic_var
+					var = PRC_cpc_party_popularity_stability_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intel_from_operatives_factor_dynamic_var
+					var = PRC_cpc_intel_from_operatives_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_civilian_intel_to_others_dynamic_var
+					var = PRC_cpc_civilian_intel_to_others_dynamic_var
 					value = -15
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_root_out_resistance_effectiveness_factor_dynamic_var
+					var = PRC_cpc_root_out_resistance_effectiveness_factor_dynamic_var
 					value = 0.15
 				}
 			}
@@ -5161,7 +4712,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_party_under_mss_control
 		x = 0
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5186,27 +4737,27 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_review_the_party_decision
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_political_power_factor_dynamic_var
+					var = PRC_cpc_political_power_factor_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_foreign_minister_cost_factor_dynamic_var
+					var = PRC_cpc_foreign_minister_cost_factor_dynamic_var
 					value = -0.25
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_economic_minister_cost_factor_dynamic_var
+					var = PRC_cpc_economic_minister_cost_factor_dynamic_var
 					value = -0.25
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_interior_minister_cost_factor_dynamic_var
+					var = PRC_cpc_interior_minister_cost_factor_dynamic_var
 					value = -0.25
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intelligence_minister_cost_factor_dynamic_var
+					var = PRC_cpc_intelligence_minister_cost_factor_dynamic_var
 					value = -0.25
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_theorist_minister_cost_factor_dynamic_var
+					var = PRC_cpc_theorist_minister_cost_factor_dynamic_var
 					value = -0.25
 				}
 			}
@@ -5217,7 +4768,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_expand_the_surveillance_state
 		x = -2
 		y = 3
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5242,19 +4793,19 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_drift_defence_factor_dynamic_var
+					var = PRC_cpc_drift_defence_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intelligence_agency_defense_dynamic_var
+					var = PRC_cpc_intelligence_agency_defense_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_crypto_strength_dynamic_var
+					var = PRC_cpc_crypto_strength_dynamic_var
 					value = 1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intel_network_gain_factor_dynamic_var
+					var = PRC_cpc_intel_network_gain_factor_dynamic_var
 					value = 0.5
 				}
 			}
@@ -5286,7 +4837,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_agents_elite_of_the_nation
 		x = -3
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5320,27 +4871,27 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intel_network_gain_factor_dynamic_var
+					var = PRC_cpc_intel_network_gain_factor_dynamic_var
 					value = 0.35
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intel_from_operatives_factor_dynamic_var
+					var = PRC_cpc_intel_from_operatives_factor_dynamic_var
 					value = 0.2
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_enemy_operative_recruitment_chance_dynamic_var
+					var = PRC_cpc_enemy_operative_recruitment_chance_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_expense_growth_factor_dynamic_var
+					var = PRC_cpc_expense_growth_factor_dynamic_var
 					value = 0.035
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_poverty_development_monthly_dynamic_var
+					var = PRC_cpc_poverty_development_monthly_dynamic_var
 					value = 0.005
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_military_development_monthly_dynamic_var
+					var = PRC_cpc_military_development_monthly_dynamic_var
 					value = 0.005
 				}
 			}
@@ -5382,19 +4933,19 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_political_power_gain_dynamic_var
+					var = PRC_cpc_political_power_gain_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_stability_factor_dynamic_var
+					var = PRC_cpc_stability_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_intelligence_agency_defense_dynamic_var
+					var = PRC_cpc_intelligence_agency_defense_dynamic_var
 					value = 1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_resistance_decay_dynamic_var
+					var = PRC_cpc_resistance_decay_dynamic_var
 					value = 0.1
 				}
 			}
@@ -5405,7 +4956,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_keepers_of_the_chinese_idea
 		x = 0
 		y = 5
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5428,23 +4979,23 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_destroy_china_enemies_mss_prop
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_army_morale_factor_dynamic_var
+					var = PRC_cpc_army_morale_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_breakthrough_factor_dynamic_var
+					var = PRC_cpc_breakthrough_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_production_factory_efficiency_gain_factor_dynamic_var
+					var = PRC_cpc_production_factory_efficiency_gain_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_surrender_limit_dynamic_var
+					var = PRC_cpc_surrender_limit_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_battalion_upkeep_factor_dynamic_var
+					var = PRC_cpc_battalion_upkeep_factor_dynamic_var
 					value = -0.1
 				}
 			}
@@ -5455,7 +5006,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_the_ministry_that_controls_everything
 		x = 1
 		y = 4
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5492,19 +5043,19 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_expense_growth_factor_dynamic_var
+					var = PRC_cpc_expense_growth_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_business_value_factor_dynamic_var
+					var = PRC_cpc_business_value_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_army_morale_factor_dynamic_var
+					var = PRC_cpc_army_morale_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_pocket_penalty_dynamic_var
+					var = PRC_cpc_pocket_penalty_dynamic_var
 					value = -0.2
 				}
 				add_to_variable = {
@@ -5520,11 +5071,11 @@ focus_tree = {
 					value = 0.25
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_max_planning_factor_dynamic_var
+					var = PRC_cpc_max_planning_factor_dynamic_var
 					value = 0.15
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_planning_speed_dynamic_var
+					var = PRC_cpc_planning_speed_dynamic_var
 					value = 0.15
 				}
 				if = {
@@ -5553,7 +5104,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_military_and_party_in_one_mind
 		x = -3
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_empower_the_mss
 		ai_will_do = {
@@ -5583,27 +5134,27 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_national_socialist_drift_dynamic_var
+					var = PRC_cpc_national_socialist_drift_dynamic_var
 					value = 0.02
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_weekly_bombing_war_support_dynamic_var
+					var = PRC_cpc_weekly_bombing_war_support_dynamic_var
 					value = 0.002
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_weekly_casualties_war_support_dynamic_var
+					var = PRC_cpc_weekly_casualties_war_support_dynamic_var
 					value = 0.002
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_weekly_convoys_war_support_dynamic_var
+					var = PRC_cpc_weekly_convoys_war_support_dynamic_var
 					value = 0.002
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_army_core_defence_factor_dynamic_var
+					var = PRC_cpc_army_core_defence_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_initiative_factor_dynamic_var
+					var = PRC_cpc_initiative_factor_dynamic_var
 					value = -0.1
 				}
 			}
@@ -5690,10 +5241,8 @@ focus_tree = {
 				id = PRC_new_digital_leninists_bop
 				value = -0.1
 			}
-			custom_effect_tooltip = tooltip_white_line
 			set_country_flag = PRC_digital_leninists_win
-			custom_effect_tooltip = appoint_head_minister_tooltip
-			show_ideas_tooltip = PRC_cai_qi_hog
+
 			custom_effect_tooltip = tooltip_white_line
 			custom_effect_tooltip = appoint_foreign_minister_tooltip
 			show_ideas_tooltip = PRC_xie_feng_for
@@ -5706,16 +5255,11 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_white_line
 			custom_effect_tooltip = appoint_int_minister_tooltip
 			show_ideas_tooltip = PRC_chen_wenqing_int
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_theorist_minister_tooltip
-			show_ideas_tooltip = PRC_yang_xuejun_def
 			hidden_effect = {
-				add_ideas = PRC_cai_qi_hog
 				add_ideas = PRC_xie_feng_for
 				add_ideas = PRC_zhang_guoqing_eco
 				add_ideas = PRC_qin_yizhi_sec
 				add_ideas = PRC_chen_wenqing_int
-				add_ideas = PRC_yang_xuejun_def
 			}
 		}
 	}
@@ -5758,15 +5302,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			set_country_flag = PRC_scientist_win
-			custom_effect_tooltip = appoint_head_minister_tooltip
-			show_ideas_tooltip = PRC_wu_zhaohui_hog
-			custom_effect_tooltip = tooltip_white_line
 			custom_effect_tooltip = appoint_foreign_minister_tooltip
 			show_ideas_tooltip = PRC_xiaoliang_sunney_xie_for
 			#show_ideas_tooltip = PRC_he_jiankui_for
-			custom_effect_tooltip = tooltip_white_line
-			custom_effect_tooltip = appoint_economic_minister_tooltip
-			show_ideas_tooltip = PRC_wu_xiaojun_eco
 			custom_effect_tooltip = tooltip_white_line
 			if = {
 				limit = {
@@ -5781,9 +5319,6 @@ focus_tree = {
 			custom_effect_tooltip = appoint_int_minister_tooltip
 			show_ideas_tooltip = PRC_tan_tieniu_int
 			hidden_effect = {
-				add_ideas = PRC_wu_zhaohui_hog
-				#add_ideas = PRC_he_jiankui_for
-				add_ideas = PRC_wu_xiaojun_eco
 				if = {
 					limit = {
 						NOT = {
@@ -5846,27 +5381,27 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_strengthen_crackdowns_decision
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_society_development_monthly_dynamic_var
+					var = PRC_cpc_society_development_monthly_dynamic_var
 					value = -0.015
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_military_development_monthly_dynamic_var
+					var = PRC_cpc_military_development_monthly_dynamic_var
 					value = 0.015
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_crypto_strength_dynamic_var
+					var = PRC_cpc_crypto_strength_dynamic_var
 					value = 1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_drift_defence_factor_dynamic_var
+					var = PRC_cpc_drift_defence_factor_dynamic_var
 					value = 0.2
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_personal_expense_factor_dynamic_var
+					var = PRC_cpc_personal_expense_factor_dynamic_var
 					value = 0.1
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_mobilization_speed_dynamic_var
+					var = PRC_cpc_mobilization_speed_dynamic_var
 					value = 0.15
 				}
 			}
@@ -5907,15 +5442,15 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = {
-					var = PRC_science_technocratic_state_research_speed_factor_dynamic_var
+					var = PRC_cpc_research_speed_factor_dynamic_var
 					value = 0.05
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_personal_value_factor_dynamic_var
+					var = PRC_cpc_personal_value_factor_dynamic_var
 					value = 0.075
 				}
 				add_to_variable = {
-					var = PRC_science_technocratic_state_income_growth_factor_dynamic_var
+					var = PRC_cpc_income_growth_factor_dynamic_var
 					value = 0.05
 				}
 			}
@@ -5961,7 +5496,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_key_to_omniscience_and_omnipotence
 		x = 0
 		y = 6
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_stability_and_security
 		ai_will_do = {
@@ -6048,44 +5583,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_operation_wu_qi
-		icon = {
-			trigger = {
-				has_completed_focus = PRC_stability_and_security
-			}
-			value = GFX_focus_PRC_operation_tiangong
-		}
-		icon = {
-			trigger = {
-				has_completed_focus = PRC_protectors_of_the_chinese_nation
-			}
-			value = GFX_focus_PRC_operation_xuanyuan
-		}
-		icon = {
-			trigger = {
-				has_completed_focus = PRC_suppress_dissent
-			}
-			value = GFX_focus_PRC_operation_huguo
-		}
-		x = -7
+		icon = GFX_focus_PRC_operation_xuanyuan
+		x = -3
 		y = 9
-		offset = {
-			x = 7
-			trigger = {
-				has_completed_focus = PRC_stability_and_security
-			}
-		}
-		offset = {
-			x = 4
-			trigger = {
-				has_completed_focus = PRC_protectors_of_the_chinese_nation
-			}
-		}
-		offset = {
-			x = 7
-			trigger = {
-				has_completed_focus = PRC_suppress_dissent
-			}
-		}
+	
 		cost = 7.2
 		available_if_capitulated = yes
 		relative_position_id = PRC_chinas_most_dire_hour
@@ -6100,13 +5601,6 @@ focus_tree = {
 			focus = PRC_pillar_of_crimson_sovereignty
 			focus = PRC_the_fortress_of_blood_and_flesh
 			focus = PRC_key_to_omniscience_and_omnipotence
-		}
-		allow_branch = {
-			OR = {
-				has_completed_focus = PRC_stability_and_security
-				has_completed_focus = PRC_protectors_of_the_chinese_nation
-				has_completed_focus = PRC_suppress_dissent
-			}
 		}
 		available = {
 			has_completed_focus = PRC_coordinate_eadi_militaries
@@ -6200,7 +5694,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_reorient_the_economy
 		x = 24
 		y = 0
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_chinas_most_dire_hour
 		ai_will_do = {
@@ -6247,7 +5741,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_tackle_youth_unemployment_nat
 		x = -4
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorient_the_economy
 		ai_will_do = {
@@ -6296,7 +5790,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_military_industries_renewal
 		x = 3
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorient_the_economy
 		ai_will_do = {
@@ -6397,7 +5891,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_tackle_the_demographic_collapse
 		x = 5
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorient_the_economy
 		ai_will_do = {
@@ -6437,7 +5931,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_spur_domestic_production
 		x = 0
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_tackle_youth_unemployment
 		ai_will_do = {
@@ -6492,7 +5986,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_public_works_campaign
 		x = -2
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_tackle_youth_unemployment
 		ai_will_do = {
@@ -6538,11 +6032,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRC_state_syndicalism
-		icon = GFX_focus_PRC_state_syndicalism
-		x = -1
+		id = PRC_national_corporatism
+		icon = GFX_focus_PRC_national_corporatism
+		x = 0
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reorient_the_economy
 		ai_will_do = {
@@ -6552,13 +6046,13 @@ focus_tree = {
 			focus = PRC_reorient_the_economy
 		}
 		mutually_exclusive = {
-			focus = PRC_national_corporatism
+			focus = PRC_state_syndicalism
 		}
 		available = {
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus PRC_state_syndicalism completion_reward"
-			effect_tooltip = {
+			log = "[GetDateText]: [Root.GetName]: focus PRC_national_corporatism completion_reward"
+					effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_made_in_china_dummy_idea
 					add_idea = PRC_state_syndicalism_idea
@@ -6588,29 +6082,6 @@ focus_tree = {
 				}
 				add_industrial_development = yes
 			}
-		}
-	}
-	focus = {
-		id = PRC_national_corporatism
-		icon = GFX_focus_PRC_national_corporatism
-		x = 1
-		y = 1
-		cost = 4.3
-		available_if_capitulated = yes
-		relative_position_id = PRC_reorient_the_economy
-		ai_will_do = {
-			factor = 50
-		}
-		prerequisite = {
-			focus = PRC_reorient_the_economy
-		}
-		mutually_exclusive = {
-			focus = PRC_state_syndicalism
-		}
-		available = {
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus PRC_national_corporatism completion_reward"
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -6680,7 +6151,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_subsidize_child_raising
 		x = 1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_tackle_the_demographic_collapse
 		ai_will_do = {
@@ -6722,16 +6193,16 @@ focus_tree = {
 	focus = {
 		id = PRC_reconstruct_the_iron_rice_bowl_nat
 		icon = GFX_focus_PRC_reconstruct_the_iron_rice_bowl
-		x = -1
+		x = -2
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_state_syndicalism
+		relative_position_id = PRC_national_corporatism
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_state_syndicalism
+			focus = PRC_national_corporatism
 		}
 		prerequisite = {
 			focus = PRC_tackle_youth_unemployment
@@ -6764,7 +6235,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_synthesis_of_state_and_labor
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reconstruct_the_iron_rice_bowl_nat
 		ai_will_do = {
@@ -6824,7 +6295,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_absorb_western_enterprise
 		x = -2
 		y = 2
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reconstruct_the_iron_rice_bowl_nat
 		ai_will_do = {
@@ -6835,9 +6306,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_synthesis_of_state_and_labor
-		}
-		mutually_exclusive = {
-			focus = PRC_decommodification_nat
 		}
 		available = {
 		}
@@ -6853,7 +6321,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_decommodification_nat
 		x = 0
 		y = 2
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reconstruct_the_iron_rice_bowl_nat
 		ai_will_do = {
@@ -6861,9 +6329,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_synthesis_of_state_and_labor
-		}
-		mutually_exclusive = {
-			focus = PRC_absorb_western_enterprise
 		}
 		available = {
 		}
@@ -6914,7 +6379,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_promote_common_prosperity
 		x = 0
 		y = 2
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_all_under_the_soe
 		ai_will_do = {
@@ -6936,7 +6401,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_To_Struggle_Is_To_Live
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_decommodification_nat
 		ai_will_do = {
@@ -6989,7 +6454,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_To_Prosper_Is_To_Live
 		x = 0
 		y = 2
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_tackle_the_demographic_collapse
 		ai_will_do = {
@@ -7029,7 +6494,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_definancialization
 		x = -3
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reconstruct_the_iron_rice_bowl_nat
 		ai_will_do = {
@@ -7073,16 +6538,15 @@ focus_tree = {
 	focus = {
 		id = PRC_reinvigorate_the_cadres_nat
 		icon = GFX_focus_PRC_reinvigorate_the_cadres_nat
-		x = 1
+		x = 0
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
-		relative_position_id = PRC_state_syndicalism
+		relative_position_id = PRC_national_corporatism
 		ai_will_do = {
 			factor = 50
 		}
 		prerequisite = {
-			focus = PRC_state_syndicalism
 			focus = PRC_national_corporatism
 		}
 		available = {
@@ -7102,7 +6566,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_revitalize_the_chinese_village
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reinvigorate_the_cadres_nat
 		ai_will_do = {
@@ -7160,7 +6624,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_pragmatic_economy
 		x = 0
 		y = 2
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_reinvigorate_the_cadres_nat
 		ai_will_do = {
@@ -7203,9 +6667,9 @@ focus_tree = {
 	focus = {
 		id = PRC_productivism_over_distributionism
 		icon = GFX_focus_PRC_productivism_over_distributionism
-		x = 1
+		x = 2
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_national_corporatism
 		ai_will_do = {
@@ -7253,7 +6717,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_all_under_the_soe
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_tackle_the_demographic_collapse
 		ai_will_do = {
@@ -7275,97 +6739,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: focus PRC_all_under_the_soe completion_reward"
 		}
 	}
-	focus = {
-		id = PRC_joint_eadi_development_nat
-		icon = GFX_focus_PRC_joint_eadi_development
-		x = 0
-		y = 2
-		cost = 4.3
-		available_if_capitulated = yes
-		relative_position_id = PRC_national_corporatism
-		ai_will_do = {
-			factor = 50
-		}
-		prerequisite = {
-			focus = PRC_productivism_over_distributionism
-		}
-		mutually_exclusive = {
-			focus = PRC_extraction_from_the_periphery
-		}
-		available = {
-			has_completed_focus = PRC_masters_of_asia
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: focus PRC_joint_eadi_development_nat completion_reward"
-			random_state = {
-				limit = {
-					owner = {
-						tag = PRK
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				owner = {
-					add_popularity = {
-						ideology = communist
-						popularity = 0.05
-					}
-				}
-			}
-			random_state = {
-				limit = {
-					owner = {
-						is_ally_with = PRC
-						NOT = {
-							tag = PRC
-							tag = PRK
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				owner = {
-					add_popularity = {
-						ideology = communist
-						popularity = 0.05
-					}
-				}
-			}
-			every_country = {
-				limit = {
-					OR = {
-						original_tag = PRC
-						is_ally_with = PRC
-					}
-				}
-				add_ideas = PRC_eadi_economic_program
-			}
-		}
-	}
+
 	focus = {
 		id = PRC_extraction_from_the_periphery
 		icon = GFX_focus_PRC_extraction_from_the_periphery
 		x = 2
 		y = 2
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_national_corporatism
 		ai_will_do = {
@@ -7373,9 +6753,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_productivism_over_distributionism
-		}
-		mutually_exclusive = {
-			focus = PRC_joint_eadi_development_nat
 		}
 		available = {
 			has_completed_focus = PRC_masters_of_asia
@@ -7460,7 +6837,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_endorse_the_megaprojects
 		x = 1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_a_pragmatic_economy
 		ai_will_do = {
@@ -7482,7 +6859,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_national_economic_revolution
 		x = -1
 		y = 1
-		cost = 4.3
+		cost = 2
 		available_if_capitulated = yes
 		relative_position_id = PRC_a_pragmatic_economy
 		ai_will_do = {
@@ -7547,7 +6924,7 @@ shared_focus = {
 			has_completed_focus = PRC_protectors_of_the_chinese_nation
 		}
 	}
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_chinas_most_dire_hour
 	ai_will_do = {
@@ -7603,7 +6980,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_chinese_emergency_state
 	x = -1
 	y = 1
-	cost = 4.3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_new_asian_liberation_war
 	ai_will_do = {
@@ -8250,7 +7627,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_conduct_ultra_war_to_enemies
 	x = 1
 	y = 1
-	cost = 4.3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_new_asian_liberation_war
 	ai_will_do = {
@@ -8437,7 +7814,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_abandon_the_rules_of_warfare
 	x = 0
 	y = 2
-	cost = 4.3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_new_asian_liberation_war
 	ai_will_do = {
@@ -8521,27 +7898,18 @@ shared_focus = {
 	icon = GFX_focus_PRC_new_asian_order
 	x = 0
 	y = 2
-	offset = {
-		y = -3
-		trigger = {
-			has_country_flag = PRC_revanchists_united_asia
-		}
-	}
+	
 	cost = 0.8
 	available_if_capitulated = yes
-	relative_position_id = PRC_abandon_the_rules_of_warfare
+	relative_position_id = PRC_revolt_against_the_modern
 	ai_will_do = {
 		factor = 200
 	}
+		prerequisite = {
+			focus = PRC_revolt_against_the_modern
+		}
 	#prerequisite = { focus = PRC_abandon_the_rules_of_warfare }
 	available = {
-		has_country_flag = PRC_revanchists_united_asia
-	}
-	allow_branch = {
-		OR = {
-			has_global_flag = pan_asian_war_ongoing
-			has_country_flag = PRC_revanchists_united_asia
-		}
 	}
 	completion_reward = {
 		country_event = china.1030
@@ -8636,7 +8004,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_revenge_for_nanking_nat
 	x = 0
 	y = 1
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_operation_majestic_nat
 	ai_will_do = {
@@ -8834,7 +8202,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_kashmir_road_nat
 	x = -6
 	y = 1
-	cost = 4.3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_abandon_the_rules_of_warfare
 	ai_will_do = {
@@ -8975,7 +8343,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_operation_southern_fury_nat
 	x = 5
 	y = 1
-	cost = 4.3
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_abandon_the_rules_of_warfare
 	ai_will_do = {
@@ -9113,7 +8481,7 @@ shared_focus = {
 	icon = GFX_focus_PRC_operation_coronet_nat
 	x = 1
 	y = 3
-	cost = 5
+	cost = 2
 	available_if_capitulated = yes
 	relative_position_id = PRC_operation_southern_fury_nat
 	ai_will_do = {

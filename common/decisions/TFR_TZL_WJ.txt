@@ -7,6 +7,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = MAL
 		}
 		available = {
 	
@@ -40,6 +41,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = INS
 		}
 		available = {
 	
@@ -73,6 +75,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = SIG
 		}
 		available = {
 	
@@ -107,6 +110,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = RAJ
 		}
 		available = {
 	
@@ -141,6 +145,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = PNG
 		}
 		available = {
 	
@@ -175,6 +180,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_21
+		NOT = {is_ally_with = NLM}
 		}
 		available = {
 	
@@ -208,6 +214,8 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+		NOT = {is_ally_with = NLM}
+		NOT = {is_ally_with = HKN}
 		}
 		available = {
 	
@@ -264,6 +272,70 @@ TZL_WJLX_category = {
 		cost = 100
 	}
 
+	TZL_WJLX_ben1 = {
+		icon = GFX_TZL_WJLX_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_17
+		}
+		available = {
+	
+	BAN = {communist > 0.5}
+
+		}
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+				custom_effect_tooltip = TZL_WJLX_ban1_tooltip
+						hidden_effect = {
+		NAX = {
+			transfer_state = 733	
+CHI_UZEDONG_SHANGTAI_8 = yes
+					}
+	BAN = {
+transfer_navy = {
+    target = NAX
+}
+			}	
+			every_state = {
+				limit = {
+					is_core_of = BAN
+				}
+			    add_core_of = NAX
+		    }
+			every_state = {
+				limit = {
+					is_core_of = BAN
+				}
+			    remove_core_of = BAN
+		    }		
+		TSU = {add_to_faction = NAX}
+							NAX = {annex_country = {
+								target = BAN
+								transfer_troops = yes
+							}
+							
+		TSU = {RED_JAP_REV_ARMY = yes}
+ inherit_technology = TSU
+
+RED_JAP_REV_ARMY_1 = yes
+}
+		RAJ = {
+			transfer_state = 733	
+					}
+		}
+		}
+		cost = 25
+	}
 	TZL_WJLX_ben = {
 		icon = GFX_TZL_WJLX_DT1
 		allowed = {
@@ -271,6 +343,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = BAN
 		}
 		available = {
 	
@@ -304,6 +377,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+		NOT = {is_ally_with = SRL}
 		}
 		available = {
 	
@@ -338,6 +412,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = AST
 		}
 		available = {
 	
@@ -373,6 +448,7 @@ TZL_WJLX_category = {
 		}
 		visible = {
 			has_completed_focus = TZL_TWW_FOCUS_17
+country_exists = NZL
 		}
 		available = {
 	

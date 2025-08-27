@@ -13,3 +13,4 @@ has_content_tag = {
 		tag = CHI
 	}
 }
+

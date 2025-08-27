@@ -1,0 +1,2231 @@
+add_namespace = PRC_MAO4
+news_event = {
+	id = PRC_MAO4.1
+	title = PRC_MAO4.1.t
+	desc = PRC_MAO4.1.d
+	picture = GFX_PRC_MAO4_event_1
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.1.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.2
+	title = PRC_MAO4.2.t
+	desc = PRC_MAO4.2.d
+	picture = GFX_PRC_MAO4_event_2
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.2.a
+		declare_war_on = {
+			target = USN
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.3
+	title = PRC_MAO4.3.t
+	desc = PRC_MAO4.3.d
+	picture = GFX_PRC_MAO4_event_3
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.3.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.4
+	title = PRC_MAO4.4.t
+	desc = PRC_MAO4.4.d
+	picture = GFX_PRC_MAO4_event_4
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.4.a	
+						white_peace = USN
+
+		APA = {
+			transfer_state = 463	
+					}
+
+					USN = {
+					transfer_units_fraction = {
+						target = APA
+    						army_ratio = 1
+    						navy_ratio = 0.5
+    						air_ratio = 1
+						keep_unit_leaders_trigger = {
+						always = no 
+						}	
+					}
+					transfer_units_fraction = {
+						target = TSU
+    						army_ratio = 0
+    						navy_ratio = 1
+    						air_ratio = 0
+						keep_unit_leaders_trigger = {
+						always = no 
+						}	
+					}	
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = USN
+				}
+			    add_core_of = TSU
+		    }
+			every_state = {
+				limit = {
+					is_core_of = USN
+				}
+			    remove_core_of = USN
+		    }
+
+				TSU = {remove_state_core = 463}
+		TSU = {
+			annex_country = {
+			    target = USN
+			    transfer_troops = no
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.5
+	title = PRC_MAO4.5.t
+	desc = PRC_MAO4.5.d
+	picture = GFX_PRC_MAO4_event_5
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.5.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.6
+	title = PRC_MAO4.6.t
+	desc = PRC_MAO4.6.d
+	picture = GFX_PRC_MAO4_event_6
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.6.a
+			every_state = {
+				limit = {
+					is_core_of = USA
+				}
+			    add_core_of = TRG
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TSU
+				}
+			    remove_core_of = TRG
+		    }
+	
+			TRG = {
+set_cosmetic_tag = MAA_Peoples_Republic_of_America
+
+set_popularities = {
+	totalitarian_socialist = 15
+	communist = 25
+	libertarian_socialist = 40
+	social_democrat = 20
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_party_name = {
+				ideology = communist
+				long_name = APAA2_party
+				name = APAA2_party
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = APAA3_party
+				name = APAA3_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = APAA4_party
+				name = APAA4_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = APAA1_party
+				name = APAA1_party
+			}
+				create_country_leader = {
+	                name = "LGXSCSCXXXX"
+	                desc = "POLITICS_LGX_DESC"
+	                picture = "gfx/MAOYUANXIN/TRG.png"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+					APA = {transfer_units_fraction = {
+						target = TRG
+    						army_ratio = 1
+    						navy_ratio = 1
+    						air_ratio = 1
+						keep_unit_leaders_trigger = {
+						always = yes
+						}	
+					}}	
+		TRG = {
+			annex_country = {
+			    target = APA
+			    transfer_troops = yes
+			}
+		}
+				set_capital = {
+					state = 941
+				}
+}
+				every_country = { 
+					
+				limit = {
+					has_idea = USA_battle_for_america_idea
+					NOT = {original_tag = TRG}
+				}
+						dismantle_faction = yes
+		declare_war_on = {
+			target = TRG
+			type = annex_everything
+		}	
+		TSU = {add_to_faction = TRG}
+
+		TSU = {RED_JAP_REV_ARMY = yes}
+
+				 }
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.7
+	title = PRC_MAO4.7.t
+	desc = PRC_MAO4.7.d
+	picture = GFX_PRC_MAO4_event_7
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.7.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.8
+	title = PRC_MAO4.8.t
+	desc = PRC_MAO4.8.d
+	picture = GFX_PRC_MAO4_event_8
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.8.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.9
+	title = PRC_MAO4.9.t
+	desc = PRC_MAO4.9.d
+	picture = GFX_PRC_MAO4_event_9
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.9.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.10
+	title = PRC_MAO4.10.t
+	desc = PRC_MAO4.10.d
+	picture = GFX_PRC_you_are_not_a_hero
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.10.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.11
+	title = PRC_MAO4.11.t
+	desc = PRC_MAO4.11.d
+	picture = GFX_PRC_MAO4_event_11
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.11.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.12
+	title = PRC_MAO4.12.t
+	desc = PRC_MAO4.12.d
+	picture = GFX_PRC_MAO4_event_12
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.12.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.13
+	title = PRC_MAO4.13.t
+	desc = PRC_MAO4.13.d
+	picture = GFX_PRC_MAO4_event_13
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.13.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.14
+	title = PRC_MAO4.14.t
+	desc = PRC_MAO4.14.d
+	picture = GFX_PRC_MAO4_event_14
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.14.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.15
+	title = PRC_MAO4.15.t
+	desc = PRC_MAO4.15.d
+	picture = GFX_PRC_MAO4_event_15
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = TRG
+		TRG = { is_in_faction_with = TSU }
+		NOT = { country_exists = USA }
+		NOT = { country_exists = USN }
+		NOT = { country_exists = NSM }
+		NOT = { country_exists = USB }
+		NOT = { country_exists = USC }
+		NOT = { country_exists = APA }
+		NOT = { country_exists = ATW }
+		NOT = { country_exists = PTF }
+	}
+	option = {
+		name = PRC_MAO4.15.a
+
+								country_event = {
+									id = PRC_MAO4.16
+								}
+								country_event = {
+									id = PRC_MAO4.17
+									days = 14
+								}
+	}
+}
+
+news_event = {
+	id = PRC_MAO4.16
+	title = PRC_MAO4.16.t
+	desc = PRC_MAO4.16.d
+	picture = GFX_PRC_MAO4_event_16
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.16.a
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = mgtytjz_flag	
+				scoped_sound_effect = mgtytjz
+				scoped_play_song = "one_minute_of_silence"
+	}
+	}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.17
+	title = PRC_MAO4.17.t
+	desc = PRC_MAO4.17.d
+	picture = GFX_PRC_MAO4_event_17
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.17.a
+		declare_war_on = {
+			target = CAN
+			type = annex_everything
+		}	
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.18
+	title = PRC_MAO4.18.t
+	desc = PRC_MAO4.18.d
+	picture = GFX_PRC_MAO4_event_18
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.18.a
+		TSU = {add_to_faction = ZAP}
+		TSU = {add_to_faction = NIC}
+		TSU = {add_to_faction = ELN}
+		ECU = {declare_war_on = {
+			target = ELN
+			type = annex_everything
+		}}
+		PRU = {declare_war_on = {
+			target = ELN
+			type = annex_everything
+		}}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.19
+	title = PRC_MAO4.19.t
+	desc = PRC_MAO4.19.d
+	picture = GFX_PRC_MAO4_event_19
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = TSU
+		TRG = { is_in_faction_with = TSU }
+		TRG = { is_in_faction_with = PRU }
+		TRG = { is_in_faction_with = NAX }
+		NOT = { country_exists = RAJ }
+	}
+	option = {
+		name = PRC_MAO4.19.a
+
+			set_faction_name = KMGJ_NEW_NEW_NEW
+TSU = {set_country_flag = KMGJ_REBULID_YES }
+								country_event = {
+									id = PRC_MAO4.20
+								}
+	}
+}
+
+news_event = {
+	id = PRC_MAO4.20
+	title = PRC_MAO4.20.t
+	desc = PRC_MAO4.20.d
+	picture = GFX_PRC_MAO4_event_20
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.20.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.21
+	title = PRC_MAO4.21.t
+	desc = PRC_MAO4.21.d
+	picture = GFX_PRC_MAO4_event_21
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.21.a	
+		PRC = {add_to_faction = ROOT}
+	}
+}
+
+news_event = {
+	id = PRC_MAO4.22
+	title = PRC_MAO4.22.t
+	desc = PRC_MAO4.22.d
+	picture = GFX_PRC_MAO4_event_22
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.22.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.23
+	title = PRC_MAO4.23.t
+	desc = PRC_MAO4.23.d
+	picture = GFX_PRC_MAO4_event_23
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.23.a
+			set_faction_name = PRC_SHANGHEZUZ	
+		PRC = {add_to_faction = VEN}	
+		PRC = {add_to_faction = CUB}	
+		PRC = {add_to_faction = HRL}	
+		PRC = {add_to_faction = SYR}
+		PRC = {add_to_faction = ISR}
+		PRC = {add_to_faction = LEB}
+SYR = {white_peace = ISR}
+			every_state = {
+				limit = {
+					is_core_of = EGY
+				}
+			    add_core_of = HRL
+		    }
+HRL = {declare_war_on = {
+			target = EGY
+			type = annex_everything
+		}}
+ISR = {declare_war_on = {
+			target = PAL
+			type = annex_everything
+		}}
+ISR = {declare_war_on = {
+			target = JOR
+			type = annex_everything
+		}}
+								country_event = {
+									id = PRC_MAO4.22
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.27
+									days = 1
+								}
+				every_country = {
+				limit = {
+						is_ally_with = VOL
+						NOT = {tag = VOL}
+				}
+								country_event = {
+									id = PRC_MAO4.26
+								}
+}
+		PRC = {add_to_faction = VOL}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.24
+	title = PRC_MAO4.24.t
+	desc = PRC_MAO4.24.d
+	picture = GFX_PRC_MAO4_event_24
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.24.a
+					transfer_units_fraction = {
+						target = PRC
+    army_ratio = 1
+    navy_ratio = 1
+    air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = PRC
+		    }
+PRC = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}}
+	}
+}
+
+news_event = {
+	id = PRC_MAO4.25
+	title = PRC_MAO4.25.t
+	desc = PRC_MAO4.25.d
+	picture = GFX_PRC_MAO4_event_25
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.25.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.26
+	title = PRC_MAO4.26.t
+	desc = PRC_MAO4.26.d
+	picture = GFX_PRC_MAO4_event_26
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.26.a
+					transfer_units_fraction = {
+						target = VOL
+    army_ratio = 1
+    navy_ratio = 1
+    air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+			    add_core_of = VOL
+		    }
+VOL = {annex_country = {
+								target = ROOT
+								transfer_troops = no
+							}}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.27
+	title = PRC_MAO4.27.t
+	desc = PRC_MAO4.27.d
+	picture = GFX_PRC_MAO4_event_27
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.27.a	
+		PRC = {add_to_faction = VOL}
+VOL = {set_cosmetic_tag = SHLLB}	
+		PRC = {add_to_faction = SER}
+SER = {set_cosmetic_tag = SER_yugo_euro}
+SER = {declare_war_on = {
+			target = KOS
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = SLV
+				}
+			    add_core_of = SER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = CRO
+				}
+			    add_core_of = SER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = KOS
+				}
+			    add_core_of = SER
+		    }
+SER = {declare_war_on = {
+			target = ALB
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = ALB
+				}
+			    add_core_of = SER
+		    }
+SER = {declare_war_on = {
+			target = MAC
+			type = annex_everything
+		}}
+SER = {declare_war_on = {
+			target = MNT
+			type = annex_everything
+		}}
+SER = {declare_war_on = {
+			target = BOS
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = MAC
+				}
+			    add_core_of = SER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = MNT
+				}
+			    add_core_of = SER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = BOS
+				}
+			    add_core_of = SER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = LIB
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = LIB
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = SIE
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = SIE
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = GNA
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = GNA
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = GNB
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = GNB
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = GHA
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = GHA
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = GAM
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = GAM
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = SEN
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = SEN
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = MRT
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = MRT
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = TOG
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = TOG
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = DAH
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = DAH
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = NGA
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target =NGA
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = IVO
+				}
+			    add_core_of = VOL
+		    }
+VOL = {declare_war_on = {
+			target = IVO
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = MLI
+				}
+			    add_core_of = VOL
+		    }
+VOL = {annex_country = {
+								target = MLI
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = NGR
+				}
+			    add_core_of = VOL
+		    }
+SER = {annex_country = {
+								target = SLV
+								transfer_troops = yes
+							}}
+SER = {annex_country = {
+								target = CRO
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = NGR
+								transfer_troops = yes
+							}}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.28
+	title = PRC_MAO4.28.t
+	desc = PRC_MAO4.28.d
+	picture = GFX_PRC_MAO4_event_28
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		TZL = { is_in_faction_with = TSU }
+		GER = { has_completed_focus = GER_a_new_october }
+	}
+	option = {
+		name = PRC_MAO4.28.a
+				GER = {load_oob = GER_communist_veterans_brigades }
+				GER = {load_oob = GER_2020_nsb }
+				GER = {load_oob = GER_2020 }
+				GER = {load_oob = GER_communist_veterans_brigades }
+				GER = {load_oob = GER_communist_veterans_brigades }
+				GER = {load_oob = GER_communist_veterans_brigades }
+				GER = {load_oob = GER_communist_veterans_brigades }
+GER = {declare_war_on = {
+			target = AUS
+			type = annex_everything
+		}}
+		GER = { complete_national_focus = GER_provisional_revolutionary_popular_front }
+		GER = { complete_national_focus = GER_warriors_revolution }
+		GER = { complete_national_focus = GER_revanchist_propaganda }
+		GER = { complete_national_focus = GER_progress_cult }
+		GER = { complete_national_focus = GER_new_vanguard_of_revolution}
+		GER = { complete_national_focus = GER_form_european_internationale }
+		GER = { complete_national_focus = GER_revolutionary_german_history }
+		GER = { complete_national_focus = GER_cause_greater_than_life }
+		GER = { complete_national_focus = GER_new_german_man }
+		GER = { complete_national_focus = GER_anti_fascist_bastion }
+		GER = { complete_national_focus = GER_revolutionary_justice_for_traitors }
+		GER = { complete_national_focus = GER_detox_from_nostalgia }
+		GER = { complete_national_focus = GER_redefine_marxist_ideals }
+		GER = { complete_national_focus = GER_centralized_planning }
+		GER = { complete_national_focus = GER_revitalize_german_industry }
+		GER = { complete_national_focus = GER_construct_working_class_unity }
+		GER = { complete_national_focus = GER_protect_german_workers }
+		GER = { complete_national_focus = GER_reindustrialize_the_ruhr }
+		GER = { complete_national_focus = GER_connecting_the_country }
+		GER = { complete_national_focus = GER_socialist_anti_consumerism }
+		GER = { complete_national_focus = GER_turn_ploughshares_into_swords }
+		GER = { complete_national_focus = GER_rebuild_the_bundeswehr }
+		GER = { complete_national_focus = GER_trial_of_treasonous_politicians }
+		GER = { complete_national_focus = GER_pick_up_sword_of_damocles }
+		GER = { complete_national_focus = GER_reform_kampfgruppen_arbeiterklasse }
+		GER = { complete_national_focus = GER_steel_torrent }
+		GER = { complete_national_focus = GER_study_new_mobile_doctrines }
+		GER = { complete_national_focus = GER_war_for_the_proletariat }
+		GER = { complete_national_focus = GER_the_whisper_from_all_continents }
+		GER = { complete_national_focus = GER_localize_tank_production }
+		GER = { complete_national_focus = GER_control_the_skies }
+		GER = { complete_national_focus = GER_modernize_the_eurotyphoon }
+		GER = { complete_national_focus = GER_new_aerial_academy }
+		GER = { complete_national_focus = GER_streamline_aircraft_production }
+		GER = { complete_national_focus = GER_moscow_shall_know_fear }
+		GER = { complete_national_focus = GER_communists_forward }
+		GER = { complete_national_focus = GER_immer_bereit }
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.29
+	title = PRC_MAO4.29.t
+	desc = PRC_MAO4.29.d
+	picture = GFX_PRC_MAO4_event_29
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = VOL
+		TZL = { is_in_faction_with = TSU }
+				VOL = { all_core_state = {
+						controller = { is_in_faction_with = VOL }
+					}
+				}
+	}
+	option = {
+		name = PRC_MAO4.29.a
+VOL = {annex_country = {
+								target = NGR
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = MLI
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = IVO
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = NGA
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = DAH
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = TOG
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = SEN
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = MRT
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = GAM
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target = GHA
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target =GNB
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target =GNA
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target =SIE
+								transfer_troops = yes
+							}}
+VOL = {annex_country = {
+								target =LIB
+								transfer_troops = yes
+							}}
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.30
+	title = PRC_MAO4.30.t
+	desc = PRC_MAO4.30.d
+	picture = GFX_PRC_MAO4_event_30
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		TZL = { is_in_faction_with = TSU }
+				AUS = { all_core_state = {
+						controller = { is_in_faction_with = GER }
+					}
+				}
+				CZE = { all_core_state = {
+						controller = { is_in_faction_with = GER }
+					}
+				}
+				BEL = { all_core_state = {
+						controller = { is_in_faction_with = GER }
+					}
+				}
+	}
+	option = {
+		name = PRC_MAO4.30.a
+
+				LUX = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				AUS = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				CZE = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				BEL = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				HOL = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				AUS = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+
+GER = {
+				set_politics = {
+				ruling_party = communist
+				last_election = "2028.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+}
+GER = {set_country_flag = GER_HONGOU }
+GER = {set_cosmetic_tag = FRA_Federated_Republic_of_Europe }
+GER = {declare_war_on = {
+			target = SWE
+			type = annex_everything
+		}}
+GER = {declare_war_on = {
+			target = NOR
+			type = annex_everything
+		}}
+			every_state = {
+				limit = {
+					is_core_of = DEN
+				}
+			    add_core_of = GER
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+			    add_core_of = GER
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = CZE
+				}
+			    add_core_of = GER
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = LUX
+				}
+			    add_core_of = GER
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+			    add_core_of = GER
+		    }
+
+			every_state = {
+				limit = {
+					is_core_of = BEL
+				}
+			    add_core_of = GER
+		    }
+GER = {annex_country = {
+								target =DEN
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =BEL
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =HOL
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =LUX
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =CZE
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =AUS
+								transfer_troops = yes
+							}}
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.31
+	title = PRC_MAO4.31.t
+	desc = PRC_MAO4.31.d
+	picture = GFX_PRC_MAO4_event_31
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		TZL = { is_in_faction_with = TSU }
+GER = {has_country_flag = GER_HONGOU }
+	OR = {
+				ITA = { has_government = totalitarian_socialist}
+				ITA = { has_government = communist}
+				ITA = { has_government = libertarian_socialist}
+				ITA = { has_government = social_democrat}
+	}
+	}
+	option = {
+		name = PRC_MAO4.31.a
+
+				ITA = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+				}
+			    add_core_of = GER
+		    }
+GER = {annex_country = {
+								target =ITA
+								transfer_troops = yes
+							}}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.32
+	title = PRC_MAO4.32.t
+	desc = PRC_MAO4.32.d
+	picture = GFX_PRC_MAO4_event_32
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		TZL = { is_in_faction_with = TSU }
+GER = {has_country_flag = GER_HONGOU }
+	FPR = {has_war = no}
+	}
+	option = {
+		name = PRC_MAO4.32.a
+
+				ADU = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				FPR = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+			every_state = {
+				limit = {
+					is_core_of = FPR
+				}
+			    add_core_of = GER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = FRA
+				}
+			    add_core_of = GER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = FAF
+				}
+			    add_core_of = GER
+		    }
+
+GER = {add_to_faction = RSR}
+			every_state = {
+				limit = {
+					is_core_of = POR
+				}
+			    add_core_of = RSR
+		    }
+GER= {annex_country = {
+								target =EFA
+								transfer_troops = yes
+							}}
+TSU= {annex_country = {
+								target =EPI
+								transfer_troops = yes
+							}}
+GER= {annex_country = {
+								target =ADU
+								transfer_troops = yes
+							}}
+RSR= {annex_country = {
+								target =PRP
+								transfer_troops = yes
+							}}
+RSR= {annex_country = {
+								target =BAR
+								transfer_troops = yes
+							}}
+RSR= {annex_country = {
+								target =BSQ
+								transfer_troops = yes
+							}}
+RSR= {annex_country = {
+								target =GAL
+								transfer_troops = yes
+							}}
+RSR = {set_cosmetic_tag = SPR_iberia }
+GER = {annex_country = {
+								target =FPR
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =SWI
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = SWI
+				}
+			    add_core_of = GER
+		    }
+RSR = {declare_war_on = {
+			target = GOD
+			type = annex_everything
+		}}
+RSR = {declare_war_on = {
+			target = POR
+			type = annex_everything
+		}}
+RSR = {declare_war_on = {
+			target = SNS
+			type = annex_everything
+		}}
+RSR = {declare_war_on = {
+			target = SPR
+			type = annex_everything
+		}}
+RSR = {declare_war_on = {
+			target = CAT
+			type = annex_everything
+		}}
+RSR = {declare_war_on = {
+			target = LCA
+			type = annex_everything
+		}}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.33
+	title = PRC_MAO4.33.t
+	desc = PRC_MAO4.33.d
+	picture = GFX_PRC_MAO4_event_33
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		TZL = { is_in_faction_with = TSU }
+GER = {has_country_flag = GER_HONGOU }
+	UK2 = {has_war = no}
+	}
+	option = {
+		name = PRC_MAO4.33.a
+
+				UK2 = {transfer_units_fraction = {
+						target = GER
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+			every_state = {
+				limit = {
+					is_core_of = UK2
+				}
+			    add_core_of = GER
+		    }
+			every_state = {
+				limit = {
+					is_core_of = IRE
+				}
+			    add_core_of = GER
+		    }
+GER = {annex_country = {
+								target =UK2
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =IRA
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =NIR
+								transfer_troops = yes
+							}}
+GER = {annex_country = {
+								target =IRE
+								transfer_troops = yes
+							}}
+
+
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.34
+	title = PRC_MAO4.34.t
+	desc = PRC_MAO4.34.d
+	picture = GFX_PRC_MAO4_event_34
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		TZL = { is_in_faction_with = TSU }
+GER = {has_country_flag = GER_HONGOU }
+	UK2 = {has_war = no}
+	RSR = {has_war = no}
+	GRK = {has_war = no}
+	GER = {has_war = no}
+TSU = {has_country_flag = KMGJ_REBULID_YES }
+	}
+	option = {
+		name = PRC_MAO4.34.a
+			GER = {
+					country_event = {
+									id = PRC_MAO4.35
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.36
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.37
+									days = 1
+								}
+				every_country = {
+				limit = {
+						is_ally_with = GER
+						NOT = {tag = GER}
+				}
+								country_event = {
+									id = PRC_MAO4.35
+								}
+}
+}
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.35
+	title = PRC_MAO4.35.t
+	desc = PRC_MAO4.35.d
+	picture = GFX_PRC_MAO4_event_35
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.35.a	
+TSU = {add_to_faction = ROOT}
+
+RED_JAP_REV_ARMY_1 = yes
+RED_JAP_REV_ARMY = yes
+RED_JAP_REV_ARMY = yes		
+	}
+}
+
+news_event = {
+	id = PRC_MAO4.36
+	title = PRC_MAO4.36.t
+	desc = PRC_MAO4.36.d
+	picture = GFX_PRC_MAO4_event_36
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	option = {
+		name = PRC_MAO4.36.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.37
+	title = PRC_MAO4.37.t
+	desc = PRC_MAO4.37.d
+	picture = GFX_PRC_MAO4_event_37
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.37.a
+
+GRK = {annex_country = {
+								target =GRE
+								transfer_troops = yes
+							}}
+PRP = {annex_country = {
+								target =RSR
+								transfer_troops = yes
+							}}
+			every_state = {
+				limit = {
+					is_core_of = RSR
+				}
+			    add_core_of = PRP
+		    }
+PRP = {set_cosmetic_tag = SPR_iberia }
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.38
+	title = PRC_MAO4.38.t
+	desc = PRC_MAO4.38.d
+	picture = GFX_PRC_MAO4_event_38
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.38.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.39
+	title = PRC_MAO4.39.t
+	desc = PRC_MAO4.39.d
+	picture = GFX_PRC_MAO4_event_39
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.39.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.40
+	title = PRC_MAO4.40.t
+	desc = PRC_MAO4.40.d
+	picture = GFX_PRC_MAO4_event_40
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.40.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.41
+	title = PRC_MAO4.41.t
+	desc = PRC_MAO4.41.d
+	picture = GFX_PRC_MAO4_event_41
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.41.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.42
+	title = PRC_MAO4.42.t
+	desc = PRC_MAO4.42.d
+	picture = GFX_PRC_MAO4_event_42
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.42.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.43
+	title = PRC_MAO4.43.t
+	desc = PRC_MAO4.43.d
+	picture = GFX_PRC_MAO4_event_43
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.43.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.44
+	title = PRC_MAO4.44.t
+	desc = PRC_MAO4.44.d
+	picture = GFX_PRC_MAO4_event_44
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.44.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.45
+	title = PRC_MAO4.45.t
+	desc = PRC_MAO4.45.d
+	picture = GFX_PRC_MAO4_event_45
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.45.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.46
+	title = PRC_MAO4.46.t
+	desc = PRC_MAO4.46.d
+	picture = GFX_PRC_MAO4_event_46
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.46.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.47
+	title = PRC_MAO4.47.t
+	desc = PRC_MAO4.47.d
+	picture = GFX_PRC_MAO4_event_47
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.47.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.48
+	title = PRC_MAO4.48.t
+	desc = PRC_MAO4.48.d
+	picture = GFX_PRC_MAO4_event_48
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.48.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.49
+	title = PRC_MAO4.49.t
+	desc = PRC_MAO4.49.d
+	picture = GFX_PRC_MAO4_event_49
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.49.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.50
+	title = PRC_MAO4.50.t
+	desc = PRC_MAO4.50.d
+	picture = GFX_PRC_MAO4_event_50
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.50.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.51
+	title = PRC_MAO4.51.t
+	desc = PRC_MAO4.51.d
+	picture = GFX_PRC_MAO4_event_51
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.51.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.52
+	title = PRC_MAO4.52.t
+	desc = PRC_MAO4.52.d
+	picture = GFX_PRC_MAO4_event_52
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.52.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.53
+	title = PRC_MAO4.53.t
+	desc = PRC_MAO4.53.d
+	picture = GFX_PRC_MAO4_event_53
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.53.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.54
+	title = PRC_MAO4.54.t
+	desc = PRC_MAO4.54.d
+	picture = GFX_PRC_MAO4_event_54
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.54.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.55
+	title = PRC_MAO4.55.t
+	desc = PRC_MAO4.55.d
+	picture = GFX_PRC_MAO4_event_55
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.55.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.56
+	title = PRC_MAO4.56.t
+	desc = PRC_MAO4.56.d
+	picture = GFX_PRC_MAO4_event_56
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.56.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.57
+	title = PRC_MAO4.57.t
+	desc = PRC_MAO4.57.d
+	picture = GFX_PRC_MAO4_event_57
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.57.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.58
+	title = PRC_MAO4.58.t
+	desc = PRC_MAO4.58.d
+	picture = GFX_PRC_MAO4_event_58
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.58.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.59
+	title = PRC_MAO4.59.t
+	desc = PRC_MAO4.59.d
+	picture = GFX_PRC_MAO4_event_59
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.59.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.60
+	title = PRC_MAO4.60.t
+	desc = PRC_MAO4.60.d
+	picture = GFX_PRC_MAO4_event_60
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.60.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.61
+	title = PRC_MAO4.61.t
+	desc = PRC_MAO4.61.d
+	picture = GFX_PRC_MAO4_event_61
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.61.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.62
+	title = PRC_MAO4.62.t
+	desc = PRC_MAO4.62.d
+	picture = GFX_PRC_MAO4_event_62
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.62.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.63
+	title = PRC_MAO4.63.t
+	desc = PRC_MAO4.63.d
+	picture = GFX_PRC_MAO4_event_63
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.63.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.64
+	title = PRC_MAO4.64.t
+	desc = PRC_MAO4.64.d
+	picture = GFX_PRC_MAO4_event_64
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.64.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.65
+	title = PRC_MAO4.65.t
+	desc = PRC_MAO4.65.d
+	picture = GFX_PRC_MAO4_event_65
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.65.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.66
+	title = PRC_MAO4.66.t
+	desc = PRC_MAO4.66.d
+	picture = GFX_PRC_MAO4_event_66
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.66.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.67
+	title = PRC_MAO4.67.t
+	desc = PRC_MAO4.67.d
+	picture = GFX_PRC_MAO4_event_67
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.67.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.68
+	title = PRC_MAO4.68.t
+	desc = PRC_MAO4.68.d
+	picture = GFX_PRC_MAO4_event_68
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.68.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.69
+	title = PRC_MAO4.69.t
+	desc = PRC_MAO4.69.d
+	picture = GFX_PRC_MAO4_event_69
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.69.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.70
+	title = PRC_MAO4.70.t
+	desc = PRC_MAO4.70.d
+	picture = GFX_PRC_MAO4_event_70
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.70.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.71
+	title = PRC_MAO4.71.t
+	desc = PRC_MAO4.71.d
+	picture = GFX_PRC_MAO4_event_71
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.71.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.72
+	title = PRC_MAO4.72.t
+	desc = PRC_MAO4.72.d
+	picture = GFX_PRC_MAO4_event_72
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.72.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.73
+	title = PRC_MAO4.73.t
+	desc = PRC_MAO4.73.d
+	picture = GFX_PRC_MAO4_event_73
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.73.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.74
+	title = PRC_MAO4.74.t
+	desc = PRC_MAO4.74.d
+	picture = GFX_PRC_MAO4_event_74
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.74.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.75
+	title = PRC_MAO4.75.t
+	desc = PRC_MAO4.75.d
+	picture = GFX_PRC_MAO4_event_75
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.75.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.76
+	title = PRC_MAO4.76.t
+	desc = PRC_MAO4.76.d
+	picture = GFX_PRC_MAO4_event_76
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.76.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.77
+	title = PRC_MAO4.77.t
+	desc = PRC_MAO4.77.d
+	picture = GFX_PRC_MAO4_event_77
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.77.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.78
+	title = PRC_MAO4.78.t
+	desc = PRC_MAO4.78.d
+	picture = GFX_PRC_MAO4_event_78
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.78.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.79
+	title = PRC_MAO4.79.t
+	desc = PRC_MAO4.79.d
+	picture = GFX_PRC_MAO4_event_79
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.79.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.80
+	title = PRC_MAO4.80.t
+	desc = PRC_MAO4.80.d
+	picture = GFX_PRC_MAO4_event_80
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.80.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.81
+	title = PRC_MAO4.81.t
+	desc = PRC_MAO4.81.d
+	picture = GFX_PRC_MAO4_event_81
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.81.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.82
+	title = PRC_MAO4.82.t
+	desc = PRC_MAO4.82.d
+	picture = GFX_PRC_MAO4_event_82
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.82.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.83
+	title = PRC_MAO4.83.t
+	desc = PRC_MAO4.83.d
+	picture = GFX_PRC_MAO4_event_83
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.83.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.84
+	title = PRC_MAO4.84.t
+	desc = PRC_MAO4.84.d
+	picture = GFX_PRC_MAO4_event_84
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.84.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.85
+	title = PRC_MAO4.85.t
+	desc = PRC_MAO4.85.d
+	picture = GFX_PRC_MAO4_event_85
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.85.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.86
+	title = PRC_MAO4.86.t
+	desc = PRC_MAO4.86.d
+	picture = GFX_PRC_MAO4_event_86
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.86.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.87
+	title = PRC_MAO4.87.t
+	desc = PRC_MAO4.87.d
+	picture = GFX_PRC_MAO4_event_87
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.87.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.88
+	title = PRC_MAO4.88.t
+	desc = PRC_MAO4.88.d
+	picture = GFX_PRC_MAO4_event_88
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.88.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.89
+	title = PRC_MAO4.89.t
+	desc = PRC_MAO4.89.d
+	picture = GFX_PRC_MAO4_event_89
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.89.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.90
+	title = PRC_MAO4.90.t
+	desc = PRC_MAO4.90.d
+	picture = GFX_PRC_MAO4_event_90
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.90.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.91
+	title = PRC_MAO4.91.t
+	desc = PRC_MAO4.91.d
+	picture = GFX_PRC_MAO4_event_91
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.91.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.92
+	title = PRC_MAO4.92.t
+	desc = PRC_MAO4.92.d
+	picture = GFX_PRC_MAO4_event_92
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.92.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.93
+	title = PRC_MAO4.93.t
+	desc = PRC_MAO4.93.d
+	picture = GFX_PRC_MAO4_event_93
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.93.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.94
+	title = PRC_MAO4.94.t
+	desc = PRC_MAO4.94.d
+	picture = GFX_PRC_MAO4_event_94
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.94.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.95
+	title = PRC_MAO4.95.t
+	desc = PRC_MAO4.95.d
+	picture = GFX_PRC_MAO4_event_95
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.95.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.96
+	title = PRC_MAO4.96.t
+	desc = PRC_MAO4.96.d
+	picture = GFX_PRC_MAO4_event_96
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.96.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.97
+	title = PRC_MAO4.97.t
+	desc = PRC_MAO4.97.d
+	picture = GFX_PRC_MAO4_event_97
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.97.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.98
+	title = PRC_MAO4.98.t
+	desc = PRC_MAO4.98.d
+	picture = GFX_PRC_MAO4_event_98
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.98.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.99
+	title = PRC_MAO4.99.t
+	desc = PRC_MAO4.99.d
+	picture = GFX_PRC_MAO4_event_99
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.99.a
+	}
+}
+
+country_event = {
+	id = PRC_MAO4.100
+	title = PRC_MAO4.100.t
+	desc = PRC_MAO4.100.d
+	picture = GFX_PRC_MAO4_event_100
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = PRC_MAO4.100.a
+	}
+}
+

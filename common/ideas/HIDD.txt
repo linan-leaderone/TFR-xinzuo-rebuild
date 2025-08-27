@@ -126,11 +126,10 @@ academic_development_monthly = 0.015
 				removal_cost = -1
 				
 				modifier = {
-        war_support_factor = 0.5
-       army_defence_factor = 0.5
-	army_attack_factor = 0.5
-				army_core_attack_factor = 0.5
-				army_core_defence_factor = 0.5
+  supply_consumption_factor = -0.99
+        war_support_factor =1
+       army_defence_factor = 1.5
+	army_attack_factor = 1.5
 				}
 			}
 			duliyuanjing_1 = {
@@ -146,8 +145,10 @@ academic_development_monthly = 0.015
 				removal_cost = -1
 				
 				modifier = {
-        war_support_factor = 1
+  supply_consumption_factor = -0.99
+        war_support_factor =1
        army_defence_factor = 1
+	army_attack_factor = 1
 				army_core_attack_factor = 1
 				army_core_defence_factor = 1
 				}

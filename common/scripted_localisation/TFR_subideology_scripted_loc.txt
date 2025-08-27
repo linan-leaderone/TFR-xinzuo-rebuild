@@ -2509,6 +2509,26 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+				tag = PRC
+				has_country_leader = {
+					character = PRC_bo_xilai
+					ruling_only = yes
+				}	
+			has_country_leader_ideology = jucheism
+		}
+		localization_key = PRC_soviet_jucheism	
+	}
+	text = {
+		trigger = {
+					NOT = {
+					AND = {
+				tag = PRC
+has_country_leader = {
+					character = PRC_bo_xilai
+					ruling_only = yes
+				}
+	}
+	}
 			has_country_leader_ideology = jucheism
 		}
 		localization_key = jucheism

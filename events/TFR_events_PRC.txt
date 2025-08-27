@@ -3611,41 +3611,12 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 	}
-	option = {
-		name = china.107.a
-		ai_chance = {
-			base = 1
-			modifier = {
-			    factor = 0
-			    OR = {
-			        has_game_rule = {
-			            rule = The_PRC_Revanchists_Path
-			            option = The_PRC_Revanchists_Path_Nationalists
-		            }
-		        }
-		    }
-		}
-		country_event = {
-			id = china.109
-			days = 1
-		}
-	}
+
 	option = {
 		name = china.107.b
-		ai_chance = {
-			base = 1
-			modifier = {
-			    factor = 0
-			    OR = {
-			        has_game_rule = {
-			            rule = The_PRC_Revanchists_Path
-			            option = The_PRC_Revanchists_Path_Digital_Leninists
-		            }
-		        }
-		    }
-		}
+	
 		country_event = {
-			id = china.110
+			id = china.109
 			days = 1
 		}
 	}

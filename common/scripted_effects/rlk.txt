@@ -1,5 +1,459 @@
 
 
+CHI_UZEDONG_SHANGTAI_12 = {
+		every_state = {
+				limit = {
+					is_core_of = PRC
+				}
+			    add_core_of = NLM
+		    }
+NLM = {
+			
+ inherit_technology = TSU
+
+				transfer_state = 1167
+				transfer_state = 714
+				transfer_state = 717
+					transfer_state = 1424
+
+					add_state_core = 1424
+					transfer_state = 1416
+					add_state_core = 1416
+				add_state_core = 1167
+					transfer_state = 1425
+					add_state_core = 1425
+				add_state_core = 714
+				add_state_core = 717
+				transfer_state = 328
+				transfer_state = 715
+				add_state_core = 328
+				add_state_core = 715
+					transfer_state = 1414
+					add_state_core = 1414
+					transfer_state = 1415
+					add_state_core = 1415
+				transfer_state = 716
+				add_state_core = 716
+					transfer_state = 1394
+					add_state_core = 1394
+					transfer_state = 1413
+					add_state_core = 1413
+					transfer_state = 1417
+					add_state_core = 1417
+		every_state = {
+				limit = {
+					is_core_of = PRC
+				}
+			    add_core_of = NLM
+		    }
+
+				set_capital = {
+					state = 716	
+				}
+			
+	TSU = {add_to_faction = NLM}
+	
+CHI_UZEDONG_SHANGTAI_8 = yes
+TSU = {RED_JAP_REV_ARMY = yes}
+TSU = {RED_JAP_REV_ARMY = yes}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc1
+				name = PRC_cpc_rad1_maoist_tot_soc1_short
+			}
+PRC = {set_nationality = {
+    target_country = NLM
+    character =PRC_mao_yuanxin
+}}	
+
+PRC = {set_nationality = {
+    target_country = NLM
+    character = PRC_ren_chonghao
+}}
+PRC = {set_nationality = {
+    target_country = NLM
+    character = PRC_han_dongfang
+}}
+PRC = {set_nationality = {
+    target_country = NLM
+    character = PRC_qin_hui
+}}
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = Geometridaeism
+		}
+set_cosmetic_tag = PRC_GHGLS
+					PRC = {
+					transfer_units_fraction = {
+						target = NLM
+						army_ratio = 0.15       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}
+
+				}
+declare_war_on = {
+			target = NLM
+			type = annex_everything
+		}
+		}
+			add_ideas = PRC_li_jinjin_hog
+			add_ideas = PRC_yang_heping_hog
+			add_ideas = PRC_qiu_hog
+			add_ideas = PRC_ma_houzhi_hog_1
+			add_ideas = PRC_ren_chonghao_hog
+			add_ideas = PRC_mao_yuanxin_hog_3
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = Geometridaeism
+		}
+		add_country_leader_role = {
+			character = PRC_ren_chonghao
+			promote_leader = yes
+			country_leader = {
+				ideology = left_accelerationist_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_qin_hui
+			promote_leader = yes
+			country_leader = {
+				ideology = Geometridaeism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			promote_character = {
+			character = PRC_han_dongfang
+			ideology = gzl_socialism
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = gzl_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = sm_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = totalitarian_socialist
+			elections_allowed = no
+		}	
+			promote_character = {
+			character = PRC_mao_yuanxin
+			ideology = maoism
+		}
+	set_popularities = {
+		social_democrat = 15
+		totalitarian_socialist = 40
+		communist = 15
+		libertarian_socialist = 20
+		social_liberal = 10
+	}
+	change_government_type_revolutionary_front = yes
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+			remove_ideas = CHF_pdto_peacekeepers_idea
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_communist1_social_democrat_party_long
+				name = PRC_communist1_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_social_democrat1_party_long
+				name = PRC_cpc_social_democrat1_party
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_cpc_social_liberal1_party_long
+				name = PRC_cpc_social_liberal1_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc1
+				name = PRC_cpc_rad1_maoist_tot_soc1_short
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialist_libsoc1
+				name = PRC_cpc_libertarian_socialist_libsoc1_short
+			}
+		}
+		}
+CHI_UZEDONG_SHANGTAI_11 = {
+EFF = {
+			dismantle_faction = yes
+
+remove_ideas = EFF_revolutionary_chaos
+
+
+			every_state = {
+				limit = {
+					is_core_of = MZB
+				}
+			    add_core_of = EFF
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ZIM
+				}
+			    add_core_of = EFF
+		    }
+MZB = {
+transfer_navy = {
+    target = EFF
+}
+}
+ZIM = {
+transfer_navy = {
+    target = EFF
+}
+}
+			every_state = {
+				limit = {
+					is_core_of = MZB
+				}
+			    remove_core_of = MZB
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ZIM
+				}
+			    remove_core_of = ZIM
+		    }
+
+
+				create_country_leader = {
+	                name = "XEFF"
+	                desc = "POLITICS_EFF_DESC"
+	                picture = "gfx/MAOYUANXIN/EFF.png"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+
+					annex_country = {
+						target = MZB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ZIM
+						transfer_troops = yes
+					}
+	
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = TSU
+
+set_popularities = {
+	libertarian_socialist = 50
+	totalitarian_socialist = 50
+	communist = 25
+}
+
+
+	TSU = {add_to_faction = EFF}
+	
+CHI_UZEDONG_SHANGTAI_8 = yes
+TSU = {RED_JAP_REV_ARMY = yes}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = AST_XEFF_party2
+				name = AST_XEFF_party2
+			}
+
+
+					
+
+
+
+	
+		}
+		}
+CHI_UZEDONG_SHANGTAI_10 = {
+DJI = {
+			set_cosmetic_tag = DFJ_DJI
+
+				EGY = {dismantle_faction = yes}
+				ETH = {dismantle_faction = yes}
+				SOM = {dismantle_faction = yes}
+				TZN = {dismantle_faction = yes}
+			every_state = {
+				limit = {
+					is_core_of = EHT
+				}
+			    add_core_of = DJI
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ERI
+				}
+			    add_core_of = DJI
+		    }
+			every_state = {
+				limit = {
+					is_core_of = SOM
+				}
+			    add_core_of = DJI
+		    }
+				transfer_state = 268
+
+
+				create_country_leader = {
+	                name = "XETH"
+	                desc = "POLITICS_ETH_DESC"
+	                picture = "gfx/MAOYUANXIN/ETH.png"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}  
+
+	
+change_economy_type_planned_economy = yes
+change_government_type_socialist_republic = yes	
+ inherit_technology = TSU
+
+set_popularities = {
+	libertarian_socialist = 100
+}
+
+
+	TSU = {add_to_faction = DJI}
+	
+CHI_UZEDONG_SHANGTAI_8 = yes
+TSU = {RED_JAP_REV_ARMY = yes}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2023.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			promote_character = {
+			character = Ran_char
+			ideology = Tsuguism
+		}
+
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = AST_XETH_party2
+				name = AST_XETH_party2
+			}
+
+
+					
+	
+			TDF = {
+		declare_war_on = {
+			target = DJI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = DJI
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}
+			ERI = {
+		declare_war_on = {
+			target = DJI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = DJI
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}
+			SOM = {
+		declare_war_on = {
+			target = DJI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = DJI
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}
+			ETH = {
+		declare_war_on = {
+			target = DJI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+
+					transfer_units_fraction = {
+						target = DJI
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}	
+					}	
+		}
+		}
 CHI_UZEDONG_SHANGTAI_9 = {
 TJJ = {
 			set_cosmetic_tag = AST_NZL
@@ -16,8 +470,11 @@ TJJ = {
 				}
 			    add_core_of = TJJ
 		    }
-
-				
+				transfer_state = 706
+				transfer_state = 707
+				transfer_state = 709
+				transfer_state = 710
+				transfer_state = 713
 				transfer_state = 734
 				transfer_state = 635
 				transfer_state = 641
@@ -56,7 +513,7 @@ set_popularities = {
 	TSU = {add_to_faction = TJJ}
 	
 CHI_UZEDONG_SHANGTAI_8 = yes
-RED_JAP_REV_ARMY = yes
+TSU = {RED_JAP_REV_ARMY = yes}
 				set_politics = {
 				ruling_party = libertarian_socialist
 				last_election = "2023.1.1"

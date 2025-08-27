@@ -353,6 +353,9 @@ focus_tree = {
 
 		available = {
 		is_ally_with = TSU
+		
+		
+
 		}
 		select_effect = {
 			hidden_effect = {
@@ -374,6 +377,7 @@ focus_tree = {
 		custom_effect_tooltip = CHI_TZL_TWW_FOCUS_16_tooltip
 	    hidden_effect = {
 
+			PRC = {transfer_state = 1384}
 										NPA = {
 			transfer_state = 1275
 			transfer_state = 625
@@ -439,6 +443,7 @@ RED_JAP_REV_ARMY = yes
 
 		
 		available = {
+			has_completed_focus = TZL_TWW_FOCUS_43
 		}
 		completion_reward = {
 			
@@ -449,6 +454,7 @@ RED_JAP_REV_ARMY = yes
 			unlock_decision_tooltip = TZL_WJLX_ast
 			unlock_decision_tooltip = TZL_WJLX_nzl
 			unlock_decision_tooltip = TZL_WJLX_ben
+			unlock_decision_tooltip = TZL_WJLX_ben1
 			unlock_decision_tooltip = TZL_WJLX_hkn
 			unlock_decision_tooltip = TZL_WJLX_hkn1
 			unlock_decision_tooltip = TZL_WJLX_raj
@@ -517,9 +523,31 @@ RED_JAP_REV_ARMY = yes
 		tooltip = TZL_TWW_FOCUS_27_tooltip
 		is_ally_with = SRL
 	}
+	
+		custom_trigger_tooltip = {
+		tooltip = TZL_TWW_FOCUS_271_tooltip
+		OR = {
+									EGY = {
+										has_country_flag = EGY_failed_water_war
+									}
+									EGY = {
+										has_country_flag = EGY_won_water_war
+									}
+
+		}
+		}
 		}
 		completion_reward = {
 			
+			custom_effect_tooltip = CHI_TZL_TWW_FOCUS_27_tooltip
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+						hidden_effect = {
+			CHI_UZEDONG_SHANGTAI_10 = yes
+		}
 		}
 	} 
    focus = {
@@ -543,9 +571,23 @@ RED_JAP_REV_ARMY = yes
 		tooltip = TZL_TWW_FOCUS_27_tooltip
 		is_ally_with = SRL
 	}
+		custom_trigger_tooltip = {
+		tooltip = TZL_TWW_FOCUS_281_tooltip
+		EFF = {has_war = no}
+		country_exists = EFF
+	}
 		}
 		completion_reward = {
 			
+				custom_effect_tooltip = CHI_TZL_TWW_FOCUS_28_tooltip
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+						hidden_effect = {
+			CHI_UZEDONG_SHANGTAI_11 = yes
+		}
 		}
 	} 
    focus = {
@@ -1010,9 +1052,163 @@ transfer_navy = {
 		NOT = { country_exists = AST }
 		NOT = { country_exists = NZL }
 	}
+				custom_trigger_tooltip = {
+		tooltip = TZL_TWW_FOCUS_261_tooltip
+		is_ally_with = NAX
+	}
+		custom_trigger_tooltip = {
+		tooltip = TZL_TWW_FOCUS_27_tooltip
+		is_ally_with = SRL
+	}
+	
 		}
 		completion_reward = {
+			custom_effect_tooltip = CHI_TZL_TWW_FOCUS_26_tooltip
+			    hidden_effect = {
+		RAJ = {declare_war_on = {
+			target = TZL
+			type = annex_everything
+		}
+	    }	
+					NAX = {
+			transfer_state = 435
+			transfer_state = 1372
+			transfer_state = 1371
+				add_ideas = VIN_determined_defenders
+							load_oob = NAX_civil_war
 			
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+				}
+			    add_core_of = NAX
+		    }
+		}
+		
+				RAJ = {	transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.1}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.1       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.2}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.2       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.3}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.4}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.4      
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.5}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.6}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.7}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.8}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+			if = {
+				limit = {
+	RAJ = {totalitarian_socialist > 0.9}
+					}	
+					transfer_units_fraction = {
+						target = NAX
+						army_ratio = 0.3       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}	
+					}
+				}
+				}
+
+		RAJ = {declare_war_on = {
+			target = NAX
+			type = annex_everything
+		}
+	    }	
+		}
 		}
 	} 
    focus = {
@@ -1055,18 +1251,15 @@ transfer_navy = {
 		prerequisite = {
 			focus = TZL_TWW_FOCUS_19
 		}
-	bypass = {
-		has_idea = ZZZ_parliamentary_republic
-	}
 		
 		mutually_exclusive = {
 			focus = TZL_TWW_FOCUS_43
 		}
 		available = {
-			always = no
+		has_idea = ZZZ_parliamentary_republic
 		}
 		completion_reward = {
-			
+			add_ideas = PRC_united_front_of_new_democracy_idea
 		}
 	} 
    focus = {
@@ -1084,6 +1277,9 @@ transfer_navy = {
 			focus = TZL_TWW_FOCUS_42
 		}
 
+	bypass = {
+		always = yes
+	}
 		
 		available = {
 		}
@@ -1103,10 +1299,6 @@ transfer_navy = {
 		}
 
 	bypass = {
-		OR = {
-			has_idea = ZZZ_socialist_republic
-			has_idea = ZZZ_communist_party_state
-		}
 	}
 		mutually_exclusive = {
 			focus = TZL_TWW_FOCUS_42
@@ -1117,10 +1309,14 @@ transfer_navy = {
 
 		
 		available = {
-		always = no
+		OR = {
+			has_idea = ZZZ_socialist_republic
+			has_idea = ZZZ_communist_party_state
+		}
 		}
 		completion_reward = {
 			
+					add_ideas = PRC_asian_bulwark_of_revolution_idea
 		}
 	} 
    focus = {
@@ -1143,6 +1339,7 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			add_ideas = PRC_neomaoism_idea
 		}
 	} 
    focus = {
@@ -1165,6 +1362,7 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			add_ideas = PRC_revival_of_neomaoism_idea
 		}
 	} 
    focus = {
@@ -1186,7 +1384,7 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
-			
+				add_ideas = PRC_doctrine_of_the_mass_line_idea
 		}
 	} 
    focus = {
@@ -1209,6 +1407,11 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			every_controlled_state = {
+				add_dynamic_modifier = {
+					modifier = PRC_peoples_commune
+				}
+			}
 		}
 	} 
    focus = {
@@ -1230,7 +1433,40 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
+				effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_60_idea
+				}
+			}
 			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 65
+			}
+			add_debt = yes
+			hidden_effect = {
+				add_to_variable = {
+					var = CHI_zylm_political_power_gain_dynamic_var
+					value = -0.085
+				}		
+				add_to_variable = {
+					var = CHI_zylm_misc_income_dynamic_var
+					value = 25
+				}			
+				add_to_variable = {
+					var = CHI_zylm_stability_factor_dynamic_var
+					value = -0.05
+				}		
+				add_to_variable = {
+					var = CHI_zylm_production_cost_industrial_complex_factor_dynamic_var
+					value = -0.1
+				}	
+				add_to_variable = {
+					var = CHI_zylm_poverty_development_monthly_dynamic_var
+					value = 0.005
+				}
+			}
 		}
 	} 
    focus = {
@@ -1238,7 +1474,7 @@ transfer_navy = {
 		icon = GFX_focus_PRC_advanced_economic_planning_8
 		x = 33
 		y = 6
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -1253,9 +1489,17 @@ transfer_navy = {
 
 		
 		available = {
+			
+			has_completed_focus = TZL_TWW_FOCUS_82
 		}
 		completion_reward = {
 			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+			change_government_type_shuzihuaminzhu1 = yes
 		}
 	} 
    focus = {
@@ -1281,7 +1525,9 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
-			
+			remove_ideas = PRC_revival_of_neomaoism_idea
+			remove_ideas = PRC_neomaoism_idea
+			add_ideas = PRC_neomaoism111_idea
 		}
 	}  
    focus = {
@@ -1307,6 +1553,33 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_65_idea
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = CHI_zylm_income_growth_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = CHI_zylm_poverty_development_monthly_dynamic_var
+				value = 0.01
+			}	
+			add_to_variable = {
+				var = CHI_zylm_society_development_monthly_dynamic_var
+				value = 0.01
+			}	
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.1
+			}	
 		}
 	} 
    focus = {
@@ -1332,6 +1605,51 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_69_idea
+				}
+			}
+
+			hidden_effect = {
+				add_to_variable = {
+					var = CHI_zylm_command_power_gain_dynamic_var
+					value = 0.5
+				}
+				add_to_variable = {
+					var = CHI_zylm_war_support_factor_dynamic_var
+					value = 0.2
+				}
+				add_to_variable = {
+					var = CHI_zylm_industrial_capacity_factory_dynamic_var
+					value = 0.5
+				}
+				add_to_variable = {
+					var = CHI_zylm_expense_growth_factor_dynamic_var
+					value = 0.6
+				}
+				add_to_variable = {
+					var = CHI_zylm_production_lack_of_resource_penalty_factor_dynamic_var
+					value = -0.5
+				}
+				add_to_variable = {
+					var = CHI_zylm_mobilization_speed_dynamic_var
+					value = 0.25
+				}
+				add_to_variable = {
+					var = CHI_zylm_training_time_army_factor_dynamic_var
+					value = -0.3
+				}
+				add_to_variable = {
+					var = CHI_zylm_conscription_dynamic_var
+					value = -0.1
+				}
+				add_to_variable = {
+					var = CHI_zylm_military_development_monthly_dynamic_var
+					value = 0.01
+				}
+		}
 		}
 	} 
    focus = {
@@ -1354,6 +1672,33 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_64_idea
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = CHI_zylm_business_value_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_production_factory_start_efficiency_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = CHI_zylm_production_speed_buildings_factor_dynamic_var
+				value = 0.1
+			}	
 		}
 	} 
    focus = {
@@ -1377,6 +1722,36 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+				effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_60_idea
+				}
+			}
+			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 65
+			}
+			add_debt = yes
+			hidden_effect = {
+				add_to_variable = {
+					var = CHI_zylm_political_power_gain_dynamic_var
+					value = -0.05
+				}		
+				add_to_variable = {
+					var = CHI_zylm_misc_income_dynamic_var
+					value = 25
+				}			
+				add_to_variable = {
+					var = CHI_zylm_stability_factor_dynamic_var
+					value = -0.05
+				}		
+				add_to_variable = {
+					var = CHI_zylm_poverty_development_monthly_dynamic_var
+					value = 0.005
+				}
+			}
 		}
 	} 
    focus = {
@@ -1402,6 +1777,38 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_67_idea
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = CHI_zylm_society_development_monthly_dynamic_var
+				value = 0.001
+			}		
+			add_to_variable = {
+				var = CHI_zylm_expense_growth_factor_dynamic_var
+				value = -0.1
+			}		
+			add_to_variable = {
+				var = CHI_zylm_political_power_gain_dynamic_var
+				value = 0.5
+			}		
+			add_to_variable = {
+				var = CHI_zylm_stability_factor_dynamic_var
+				value = 0.1
+			}		
+			add_to_variable = {
+				var = CHI_zylm_war_support_factor_dynamic_var
+				value = 0.1
+			}
 		}
 	} 
    focus = {
@@ -1424,6 +1831,25 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_70_idea
+				}
+			}
+			add_to_variable = {
+				var = CHI_zylm_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_business_value_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.05
+			}	
+
 		}
 	} 
    focus = {
@@ -1449,6 +1875,7 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+				add_ideas = PRC_neomaoism111111_idea
 		}
 	} 
    focus = {
@@ -1474,6 +1901,24 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_70_idea
+				}
+			}
+			add_to_variable = {
+				var = CHI_zylm_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_business_value_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.05
+			}	
 		}
 	} 
    focus = {
@@ -1496,6 +1941,24 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_70_idea
+				}
+			}
+			add_to_variable = {
+				var = CHI_zylm_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_business_value_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.05
+			}	
 		}
 	} 
    focus = {
@@ -1521,6 +1984,17 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_68_idea
+				}
+			}
+		
+				add_to_variable = {
+					var = CHI_zylm_political_power_factor_dynamic_var
+					value = 0.2
+				}	
 		}
 	} 
    focus = {
@@ -1543,6 +2017,11 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			every_controlled_state = {
+				add_dynamic_modifier = {
+					modifier = PRC_peoples_commune
+				}
+			}
 		}
 	} 
    focus = {
@@ -1566,6 +2045,49 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_45_idea
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+			add_to_variable = {
+				var = CHI_zylm_production_factory_efficiency_gain_factor_dynamic_var
+				value = 0.1
+			}		
+			add_to_variable = {
+				var = CHI_zylm_production_lack_of_resource_penalty_factor_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = CHI_zylm_personal_expense_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = CHI_zylm_consumer_goods_factor_dynamic_var
+				value = -0.05
+			}	
+			add_to_variable = {
+				var = CHI_zylm_income_growth_factor_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_industrial_capacity_factory_dynamic_var
+				value = 0.025
+			}		
+			add_to_variable = {
+				var = CHI_zylm_production_cost_industrial_complex_factor_dynamic_var
+				value = -0.075
+			}
 		}
 	} 
    focus = {
@@ -1587,7 +2109,40 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
-			
+						effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_49_idea
+				}
+			}
+			add_to_variable = {
+				var = CHI_zylm_consumer_goods_factor_dynamic_var
+				value = -0.052
+			}
+			add_to_variable = {
+				var = CHI_zylm_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = CHI_zylm_industrial_capacity_dockyard_dynamic_var
+				value = 0.05
+			}		
+			add_to_variable = {
+				var = CHI_zylm_poverty_development_monthly_dynamic_var
+				value = 0.005
+			}			
+			add_to_variable = {
+				var = CHI_zylm_society_development_monthly_dynamic_var
+				value = 0.005
+			}			
+			add_to_variable = {
+				var = CHI_zylm_business_value_factor_dynamic_var
+				value = -0.15
+			}		
+			add_to_variable = {
+				var = CHI_zylm_personal_expense_factor_dynamic_var
+				value = -0.05
+			}	
 		}
 	} 
    focus = {
@@ -1609,7 +2164,41 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
+			effect_tooltip {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_50_idea
+				}
+			}
 			 
+			add_to_variable = {
+				var = CHI_zylm_income_growth_factor_dynamic_var
+				value = -0.05
+			}
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.05
+			}	
+			add_to_variable = {
+				var = CHI_zylm_business_value_factor_dynamic_var
+				value = 0.05
+			}		
+				add_to_variable = {
+					var = CHI_zylm_local_resources_factor_dynamic_var
+					value = 0.1
+				}	
+			add_to_variable = {
+				var = CHI_zylm_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = CHI_zylm_poverty_development_monthly_dynamic_var
+				value = 0.005
+			}			
+			add_to_variable = {
+				var = CHI_zylm_society_development_monthly_dynamic_var
+				value = 0.005
+			}		
 		}
 	} 
    focus = {
@@ -1631,7 +2220,56 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
-			
+					effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_55_idea
+				}
+			}
+			add_to_variable = {
+				var = CHI_zylm_personal_value_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = CHI_zylm_personal_expense_factor_dynamic_var
+				value = 0.1
+			}	
+			add_to_variable = {
+				var = CHI_zylm_society_development_monthly_dynamic_var
+				value = 0.02
+			}	
+			add_to_variable = {
+				var = CHI_zylm_stability_factor_dynamic_var
+				value = -0.05
+			}
+			add_to_variable = {
+				var = CHI_zylm_production_speed_industrial_complex_factor_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = CHI_zylm_industrial_capacity_factory_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = CHI_zylm_monthly_population_dynamic_var
+				value = 0.15
+			}	
+			add_to_variable = {
+				var = CHI_zylm_production_factory_efficiency_gain_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = CHI_zylm_production_factory_start_efficiency_factor_dynamic_var
+				value = 0.15
+			}		
+			add_to_variable = {
+				var = CHI_zylm_poverty_development_monthly_dynamic_var
+				value = 0.03
+			}		
+			add_to_variable = {
+				var = CHI_zylm_income_growth_factor_dynamic_var
+				value = -0.05
+			}
 		}
 	} 
    focus = {
@@ -1654,6 +2292,32 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+					effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_53_idea
+				}
+			}
+					add_to_variable = {
+						var = CHI_zylm_monthly_population_dynamic_var
+						value = 0.15
+					}
+					add_to_variable = {
+						var = CHI_zylm_poverty_development_monthly_dynamic_var
+						value = 0.005
+					}
+					add_to_variable = {
+						var = CHI_zylm_production_speed_infrastructure_factor_dynamic_var
+						value = 0.035
+					}
+					add_to_variable = {
+						var = CHI_zylm_production_lack_of_resource_penalty_factor_dynamic_var
+						value = -0.02
+					}
+					add_to_variable = {
+						var = CHI_zylm_personal_value_factor_dynamic_var
+						value = 0.05
+					}
 		}
 	} 
    focus = {
@@ -1675,7 +2339,131 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
+		
+			effect_tooltip {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_52_idea
+				}
+			}
+
+	set_temp_variable = {
+		var = military_development_var_temp
+		value = -0.5
+	}
+	add_military_development = yes
+			hidden_effect = {
+				add_to_variable = {
+					var = CHI_zylm_training_time_army_factor_dynamic_var
+					value = -0.25
+				}
+				add_to_variable = {
+					var = CHI_zylm_conscription_dynamic_var
+					value = -0.1
+				}
+				add_to_variable = {
+					var = CHI_zylm_military_development_monthly_dynamic_var
+					value = 0.01
+				}
+		}
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_83
+		icon = GFX_focus_TZL_TWW_FOCUS_83
+		x = 29
+		y = 9
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+		
 			
+		
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_84
+		icon = GFX_focus_TZL_TWW_FOCUS_84
+		x = 28
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_83
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+		
+			
+		
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_86
+		icon = GFX_focus_TZL_TWW_FOCUS_86
+		x = 29
+		y = 12
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_84
+		}
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_85
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+		
+			
+		
+		}
+	} 
+   focus = {
+		id = TZL_TWW_FOCUS_85
+		icon = GFX_focus_TZL_TWW_FOCUS_85
+		x = 30
+		y = 10
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		prerequisite = {
+			focus = TZL_TWW_FOCUS_83
+		}
+
+		
+		available = {
+		}
+		completion_reward = {
+		
+			
+		
 		}
 	} 
    focus = {
@@ -1697,7 +2485,52 @@ transfer_navy = {
 		available = {
 		}
 		completion_reward = {
-			
+			effect_tooltip {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_54_idea
+				}
+			}
+			every_controlled_state = {
+				add_manpower = 1000
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				var = farming_development_var_temp
+				value = 0.1
+			}
+			add_farming_development = yes
+			hidden_effect = {
+				add_to_variable = {
+					var = CHI_zylm_stability_factor_dynamic_var
+					value = -0.05
+				}	
+				add_to_variable = {
+					var = CHI_zylm_monthly_population_dynamic_var
+					value = 0.15
+				}	
+				add_to_variable = {
+					var = CHI_zylm_production_speed_infrastructure_factor_dynamic_var
+					value = 0.1
+				}	
+				add_to_variable = {
+					var = CHI_zylm_local_resources_factor_dynamic_var
+					value = 0.1
+				}	
+				add_to_variable = {
+					var = CHI_zylm_conscription_factor_dynamic_var
+					value = 0.025
+				}	
+				add_to_variable = {
+					var = CHI_zylm_farming_development_monthly_dynamic_var
+					value = 0.005
+				}
+			}
 		}
 	} 
    focus = {
@@ -1720,6 +2553,24 @@ transfer_navy = {
 		}
 		completion_reward = {
 			
+				effect_tooltip = {
+				swap_ideas = {
+					remove_idea = CHI_zylm_0_idea
+					add_idea = CHI_zylm_51_idea
+				}
+			}
+			add_to_variable = {
+				var = CHI_zylm_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+				add_to_variable = {
+					var =  CHI_zylm_industrial_development_monthly_dynamic_var
+					value = 0.01
+				}
+				add_to_variable = {
+					var =  CHI_zylm_research_speed_factor_dynamic_var
+					value = 0.05
+				}
 		}
 	} 
    focus = {
@@ -1732,6 +2583,13 @@ transfer_navy = {
 		ai_will_do = {
 			factor = 100
 		}
+	bypass = {
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = less_than
+}
+	}
 
 		mutually_exclusive = {
 			focus = TZL_TWW_FOCUS_44
@@ -1742,11 +2600,6 @@ transfer_navy = {
 
 		
 		available = {
-check_variable = {
-    var = CHI_hongdupai
-    value = 0
-    compare = less_than
-}
 		}
 		completion_reward = {
 			
@@ -1763,6 +2616,13 @@ check_variable = {
 			factor = 100
 		}
 
+	bypass = {
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = greater_than_or_equals
+}
+	}
 		mutually_exclusive = {
 			focus = TZL_TWW_FOCUS_46
 		}
@@ -1772,11 +2632,6 @@ check_variable = {
 
 		
 		available = {
-check_variable = {
-    var = CHI_hongdupai
-    value = 0
-    compare = greater_than_or_equals
-}
 		}
 		completion_reward = {
 			
@@ -1861,7 +2716,44 @@ check_variable = {
 		available = {
 		}
 		completion_reward = {
-			
+							effect_tooltip = {
+				swap_ideas = {
+					remove_idea = red_TJZ_0_idea
+					add_idea = red_TJZ_77_idea
+				}
+			}	
+			hidden_effect = {
+
+				add_to_variable = {
+					var =  TSU.red_TJZ_research_speed_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_business_value_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_industrial_capacity_factory_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_production_speed_buildings_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_society_development_monthly_dynamic_var
+					value = 0.01
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_industrial_development_monthly_dynamic_var
+					value = 0.01
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_academic_development_monthly_dynamic_var
+					value = 0.01
+				}
+
+		}
 		}
 	} 
    focus = {
@@ -1888,6 +2780,32 @@ check_variable = {
 		}
 		completion_reward = {
 			
+				effect_tooltip = {
+				swap_ideas = {
+					remove_idea = red_TJZ_0_idea
+					add_idea = red_TJZ_78_idea
+				}
+			}	
+			hidden_effect = {
+
+				add_to_variable = {
+					var =  TSU.red_TJZ_expense_growth_factor_dynamic_var
+					value = -0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_business_value_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_society_development_monthly_dynamic_var
+					value = 0.02
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_academic_development_monthly_dynamic_var
+					value = 0.02
+				}
+
+		}
 		}
 	} 
    focus = {
@@ -1910,7 +2828,44 @@ check_variable = {
 		available = {
 		}
 		completion_reward = {
-			
+				effect_tooltip = {
+				swap_ideas = {
+					remove_idea = red_TJZ_0_idea
+					add_idea = red_TJZ_74_idea
+				}
+			}	
+			hidden_effect = {
+
+				add_to_variable = {
+					var =  TSU.red_TJZ_expense_growth_factor_dynamic_var
+					value = -0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_research_speed_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_business_value_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_industrial_capacity_factory_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_production_speed_buildings_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_society_development_monthly_dynamic_var
+					value = 0.01
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_industrial_development_monthly_dynamic_var
+					value = 0.01
+				}
+
+		}
 		}
 	} 
    focus = {
@@ -2092,6 +3047,36 @@ check_variable = {
 		}
 		completion_reward = {
 			
+		effect_tooltip = {
+				swap_ideas = {
+					remove_idea = red_TJZ_0_idea
+					add_idea = red_TJZ_81_idea
+				}
+			}	
+			hidden_effect = {
+
+				add_to_variable = {
+					var =  TSU.red_TJZ_business_value_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_expense_growth_factor_dynamic_var
+					value = -0.2
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_production_cost_industrial_complex_factor_dynamic_var
+					value = -0.2
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_poverty_development_monthly_dynamic_var
+					value = 0.02
+				}
+				add_to_variable = {
+					var =  TSU.red_TJZ_industrial_development_monthly_dynamic_var
+					value = 0.01
+				}
+
+		}
 		}
 	} 
    focus = {
@@ -2099,7 +3084,7 @@ check_variable = {
 		icon = GFX_focus_PRC_towards_a_digital_communism
 		x = 40
 		y = 5
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100

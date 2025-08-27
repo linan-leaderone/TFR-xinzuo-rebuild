@@ -1,5 +1,107 @@
 PRC_loji_category = {
 
+	PRC_project_the_long_march_phase_1 = {
+		visible = {
+			hidden_trigger = {
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
+			}
+		}
+		icon = GFX_PRC_decision_industrial_expension
+		available = {
+		}
+		modifier = {
+			civilian_factory_use = 5
+			misc_expense = 25
+		}
+		fire_only_once = yes
+		days_remove = 100
+		cost = 100
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			add_ideas = PRC_the_long_march_idea
+			set_country_flag = PRC_long_march_1_stage_flag
+		}
+	}
+	PRC_project_the_long_march_phase_2 = {
+		visible = {
+			hidden_trigger = {
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
+			}
+		}
+		icon = GFX_PRC_decision_industrial_expension
+		available = {
+			has_country_flag = PRC_long_march_1_stage_flag
+		}
+		modifier = {
+			civilian_factory_use = 5
+			misc_expense = 35
+		}
+		fire_only_once = yes
+		days_remove = 100
+		cost = 200
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = PRC_the_long_march_idea
+				add_idea = PRC_the_long_march_1_idea
+			}
+			set_country_flag = PRC_long_march_2_stage_flag
+			hidden_effect = {
+				country_event = {
+					id = china.667 
+					days = 5 
+				}
+			}
+		}
+	}
+	PRC_project_the_long_march_phase_3 = {
+		visible = {
+			hidden_trigger = {
+        has_country_flag = PRC_ai_assisted_governance_sanxingdui
+			}
+		}
+		icon = GFX_PRC_decision_industrial_expension
+		available = {
+			has_country_flag = PRC_long_march_2_stage_flag
+		}
+		modifier = {
+			civilian_factory_use = 5
+			misc_expense = 50
+		}
+		fire_only_once = yes
+		days_remove = 100
+		cost = 300
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = PRC_the_long_march_1_idea
+				add_idea = PRC_the_long_march_2_idea
+			}
+								if = {
+						limit = {
+NOT = {has_country_flag = PRC_handeqiang_hog}
+NOT = {has_country_flag = PRC_kongqingdong_hog}
+				has_country_flag = PRC_new_left_win
+		}
+			country_event = { 
+				id = china.668
+				days = 5
+			}
+		}
+		}
+	}
 	PRC_loji_manyidu_change_1 = {
 		icon = GFX_decision_changzhengbianhua
 		allowed = { 

@@ -33,6 +33,23 @@
 				}
 			}
 		}
+		mgtytjz_super_event = {
+			context_type = player_context
+			window_name = "mgtytjz_super_event"
+
+			visible = {
+				has_country_flag = mgtytjz_flag
+				NOT = {
+					has_global_flag = super_events_off_flag
+				}
+			}
+			
+			effects = {
+				Super_Event_Close_click = {
+					clr_country_flag = mgtytjz_flag
+				}
+			}
+		}
 		santifa_super_event = {
 			context_type = player_context
 			window_name = "santifa_super_event"

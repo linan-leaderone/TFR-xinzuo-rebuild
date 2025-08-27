@@ -97,6 +97,8 @@ CHI_zylm_dynamic = {
 	enable = {
 		always = yes
 	}
+	misc_income = CHI_zylm_misc_income_dynamic_var
+	training_time_army_factor = CHI_zylm_training_time_army_factor_dynamic_var
 	decryption = CHI_zylm_decryption_dynamic_var #解密
 	production_lack_of_resource_penalty_factor = CHI_zylm_production_lack_of_resource_penalty_factor_dynamic_var #缺乏资源惩罚
 	encryption = CHI_zylm_encryption_dynamic_var #加密
@@ -182,6 +184,7 @@ surrender_limit = CHI_zylm_surrender_limit_dynamic_var
     interior_minister_cost_factor = CHI_zylm_interior_minister_cost_factor_dynamic_var
     intelligence_minister_cost_factor = CHI_zylm_intelligence_minister_cost_factor_dynamic_var	
     theorist_minister_cost_factor = CHI_zylm_theorist_minister_cost_factor_dynamic_var
+	military_development_monthly = CHI_zylm_military_development_monthly_dynamic_var
 }
 CHI_zylm_army_dynamic = {
 	icon = GFX_idea_CHI_zylm_army_idea

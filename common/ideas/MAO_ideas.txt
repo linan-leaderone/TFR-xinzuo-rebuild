@@ -388,7 +388,99 @@ CHI_zylm_army_1_idea = {
 
 
     }
-}												
+}													
+red_TJZ_78_idea = {
+    picture = TJZ_Member4
+    name = red_TJZ_dynamic
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+
+society_development_monthly = 0.02
+business_value_factor = 0.05
+expense_growth_factor = -0.05
+academic_development_monthly = 0.02
+    }
+}															
+red_TJZ_77_idea = {
+    picture = TJZ_Member4
+    name = red_TJZ_dynamic
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+industrial_capacity_factory = 0.05
+production_speed_buildings_factor = 0.05
+industrial_development_monthly = 0.01
+society_development_monthly = 0.01
+business_value_factor = 0.05
+research_speed_factor = 0.05
+academic_development_monthly = 0.01
+    }
+}													
+red_TJZ_74_idea = {
+    picture = TJZ_Member4
+    name = red_TJZ_dynamic
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+industrial_capacity_factory = 0.05
+expense_growth_factor = -0.05
+production_speed_buildings_factor = 0.05
+industrial_development_monthly = 0.01
+society_development_monthly = 0.01
+business_value_factor = 0.05
+research_speed_factor = 0.05
+    }
+}													
+red_TJZ_81_idea = {
+    picture = TJZ_Member4
+    name = red_TJZ_dynamic
+
+    allowed = {
+        always = no
+    }
+
+    allowed_civil_war = {
+        always = yes
+    }
+    
+    removal_cost = -1
+    
+    modifier = {
+production_cost_industrial_complex_factor = -0.2
+expense_growth_factor = -0.2
+poverty_development_monthly =  0.02
+industrial_development_monthly =  0.01
+business_value_factor = 0.1
+    }
+}													
 red_TJZ_80_idea = {
     picture = TJZ_Member4
     name = red_TJZ_dynamic
@@ -3347,7 +3439,399 @@ army_defence_factor = 1
 	business_value_factor = 0.2
 	income_growth_factor = 0.2
 			}
+		}			
+		CHI_zylm_51_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+				industrial_development_monthly = 0.01
+			}
+		}				
+		CHI_zylm_60_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.085
+				misc_income = 25
+				stability_factor = -0.05
+				production_cost_industrial_complex_factor = -0.1
+				poverty_development_monthly = 0.005
+			}
+		}				
+		CHI_zylm_70_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				business_value_factor = 0.05
+				personal_value_factor = 0.05
+
+			}
+		}					
+		CHI_zylm_68_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.2
+
+			}
+		}			
+		CHI_zylm_64_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				business_value_factor = 0.05
+				production_factory_start_efficiency_factor= 0.1
+				production_speed_buildings_factor = 0.1
+				personal_value_factor = 0.05
+			}
+		}				
+		CHI_zylm_65_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = 0.05
+				poverty_development_monthly = 0.01
+				personal_value_factor = 0.1
+				society_development_monthly = 0.01
+			}
+		}			
+		CHI_zylm_67_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.5
+				expense_growth_factor = -0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.5
+				society_development_monthly = 0.01
+			}
 		}		
+		CHI_zylm_69_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.25
+				production_lack_of_resource_penalty_factor = -0.5
+				expense_growth_factor = 0.6
+				industrial_capacity_factory = 0.5
+				war_support_factor = 0.2
+				command_power_gain = 0.5
+				conscription = 0.1
+				training_time_army_factor = -0.3
+				military_development_monthly = 0.01
+			}
+		}	
+		CHI_zylm_52_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.1
+				training_time_army_factor = -0.1
+				military_development_monthly = 0.01
+			}
+		}	
+		CHI_zylm_50_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				income_growth_factor = -0.05
+				personal_value_factor = 0.05
+				business_value_factor = 0.05
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.05
+				poverty_development_monthly = 0.005
+				society_development_monthly = 0.005
+			}
+		}	
+		CHI_zylm_54_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = 0.15
+				production_speed_infrastructure_factor = 0.1
+				local_resources_factor = 0.1
+				conscription_factor = 0.025
+				farming_development_monthly = 0.005
+			}
+		}
+		CHI_zylm_45_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_lack_of_resource_penalty_factor = 0.05
+				personal_value_factor = 0.1
+				personal_expense_factor = 0.1
+				consumer_goods_factor = -0.05
+				income_growth_factor = 0.05
+				industrial_capacity_factory = 0.025
+				production_cost_industrial_complex_factor = -0.075
+			}
+		}		
+		CHI_zylm_49_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.052
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+				poverty_development_monthly = 0.005
+				society_development_monthly  = 0.005
+				business_value_factor = -0.15
+				personal_expense_factor = -0.05
+			}
+		}		
+		CHI_zylm_53_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.15
+				poverty_development_monthly = 0.005
+				production_speed_infrastructure_factor = 0.035
+				production_lack_of_resource_penalty_factor = -0.02
+				personal_value_factor = 0.05
+
+			}
+		}				
+		CHI_zylm_55_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+			name = CHI_zylm_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				personal_value_factor = 0.1
+				personal_expense_factor = 0.1
+				society_development_monthly = 0.02
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				monthly_population = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				poverty_development_monthly = 0.03
+				income_growth_factor = -0.05
+			}
+		}						
 		PRC_made_in_china_PRC_revive_iron_rice_bowl_1 = { 
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
@@ -3577,6 +4061,7 @@ has_country_leader = {
 			OR = {
  original_tag = PRC
  original_tag = CHF
+ original_tag = NLM
 }
 }
 			allowed_to_remove = {
@@ -3589,6 +4074,9 @@ has_country_leader = {
 }
 has_country_leader = {
 	character = PRC_renda
+}
+has_country_leader = {
+	character = PRC_mao_yuanxin
 }
 			}
 			}
@@ -3749,11 +4237,17 @@ has_country_leader = {
 			picture = PRC_ren_chonghao_hog
 			name = PRC_ren_chonghao_hog
 			allowed = {
+			OR = {
 				original_tag = CHF
+ original_tag = NLM
+			}
 			}
 			
 			visible = {
+			OR = {
 				original_tag = CHF
+ original_tag = NLM
+			}
 			}
 			
 			allowed_to_remove = {
@@ -3822,6 +4316,7 @@ has_country_leader = {
 			OR = {
  original_tag = PRC
  original_tag = CHF
+ original_tag = NLM
 }
 }
 			
@@ -3829,6 +4324,7 @@ has_country_leader = {
 			OR = {
 				has_country_flag = PRC_new_left_win
  				original_tag = CHF
+ original_tag = NLM
 }
 			}
 
@@ -3894,11 +4390,19 @@ has_country_leader = {
 			picture = PRC_qiu_hog
 			name = PRC_qiu_hog
 			allowed = {
+
+			OR = {
 				original_tag = CHF
+ original_tag = NLM
+			}
 			}
 			
 			visible = {
+
+			OR = {
 				original_tag = CHF
+ original_tag = NLM
+			}
 			}
 			
 			traits = {
@@ -3995,11 +4499,19 @@ has_country_leader = {
 			picture = PRC_ma_houzhi_hog_1
 			name = PRC_ma_houzhi_hog
 			allowed = {
+
+			OR = {
 				original_tag = CHF
+ original_tag = NLM
+			}
 			}
 			
 			visible = {
+
+			OR = {
 				original_tag = CHF
+ original_tag = NLM
+			}
 			}
 
 			#allowed_to_remove = {
@@ -4081,12 +4593,20 @@ has_country_leader = {
 		PRC_mao_yuanxin_hog_3 = {
 			picture = PRC_mao_yuanxin_hog_3
 			name = PRC_mao_yuanxin_hog
-			allowed = { original_tag = CHF}
+			allowed = { 
+			OR = { 
+original_tag = CHF
+ original_tag = NLM
+}
+}
 
-			visible = {
+			visible = { 
+			OR = { 
 				original_tag = CHF
+ original_tag = NLM
 			}
 
+			}
 			allowed_to_remove = {
 				always = no
 				 

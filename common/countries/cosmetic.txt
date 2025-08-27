@@ -2,6 +2,11 @@ MAL_NYG = {
 	color = rgb { 	205 20 20 }
 	color_ui = rgb { 205 20 20 }
 }
+PRC_EUO_empire = {
+	color = rgb { 139 90 43 }
+	color_ui = rgb { 139 90 43 }
+}
+
 NDLB = {
 	color = rgb { 	205 20 20 }
 	color_ui = rgb { 205 20 20 }
