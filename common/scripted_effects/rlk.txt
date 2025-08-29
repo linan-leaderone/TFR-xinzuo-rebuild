@@ -1,12 +1,259 @@
 
 
-CHI_UZEDONG_SHANGTAI_12 = {
-		every_state = {
+CHI_UZEDONG_SHANGTAI_15 = {
+
+CHF = {
+			
+ inherit_technology = TSU
+			
+
+			every_state = {
 				limit = {
-					is_core_of = PRC
+					is_core_of = NLM
 				}
-			    add_core_of = NLM
+			    add_core_of = CHF
 		    }
+				transfer_state = 592
+				transfer_state = 1395
+				transfer_state = 1206
+					transfer_state = 1430
+					transfer_state = 1207
+					transfer_state = 729
+				transfer_state = 728
+				transfer_state = 591
+					transfer_state = 593
+					transfer_state = 594
+				transfer_state = 599
+					transfer_state = 1205
+					transfer_state = 1191
+					transfer_state = 1204
+					transfer_state = 1203
+
+
+				set_capital = {
+					state = 592	
+				}
+			
+	TSU = {add_to_faction = CHF}
+	set_cosmetic_tag = PRC_GHGLS  
+CHI_UZEDONG_SHANGTAI_8 = yes
+TSU = {RED_JAP_REV_ARMY = yes}
+TSU = {RED_JAP_REV_ARMY = yes}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc1
+				name = PRC_cpc_rad1_maoist_tot_soc1_short
+			}
+
+NLM = {set_nationality = {
+    target_country = CHF
+    character = PRC_han_dongfang
+}}
+NLM = {set_nationality = {
+    target_country = CHF
+    character = PRC_qin_hui
+}}
+PRC = {set_nationality = {
+    target_country = CHF
+    character = PRC_han_dongfang
+}}
+PRC = {set_nationality = {
+    target_country = CHF
+    character = PRC_qin_hui
+}}
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = Geometridaeism
+		}
+					PRC = {
+					transfer_units_fraction = {
+						target = CHF
+						army_ratio = 0.05       
+					keep_unit_leaders_trigger = {
+						always = no 
+					}
+
+				}
+declare_war_on = {
+			target = CHF
+			type = annex_everything
+		}
+		}
+			add_ideas = PRC_li_jinjin_hog
+			add_ideas = PRC_yang_heping_hog
+			add_ideas = PRC_qiu_hog
+			add_ideas = PRC_ma_houzhi_hog_1
+			add_ideas = PRC_ren_chonghao_hog
+			add_ideas = PRC_mao_yuanxin_hog_3
+		promote_character = {
+			character = PRC_qin_hui
+			ideology = Geometridaeism
+		}
+		add_country_leader_role = {
+			character = PRC_ren_chonghao
+			promote_leader = yes
+			country_leader = {
+				ideology = left_accelerationist_2
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_qin_hui
+			promote_leader = yes
+			country_leader = {
+				ideology = Geometridaeism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			promote_character = {
+			character = PRC_han_dongfang
+			ideology = gzl_socialism
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = gzl_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = sm_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = libertarian_socialist
+			elections_allowed = no
+		}	
+
+	set_popularities = {
+		social_democrat = 25
+		totalitarian_socialist = 20
+		communist = 15
+		libertarian_socialist = 30
+		social_liberal = 10
+	}
+	change_government_type_revolutionary_front = yes
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+			remove_ideas = CHF_pdto_peacekeepers_idea
+		end_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_communist1_social_democrat_party_long
+				name = PRC_communist1_social_democrat_party
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = PRC_cpc_social_democrat1_party_long
+				name = PRC_cpc_social_democrat1_party
+			}
+			set_party_name = {
+				ideology = social_liberal
+				long_name = PRC_cpc_social_liberal1_party_long
+				name = PRC_cpc_social_liberal1_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_cpc1_rad_maoist_tot_soc1
+				name = PRC_cpc_rad1_maoist_tot_soc1_short
+			}	
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_libertarian_socialist_libsoc1
+				name = PRC_cpc_libertarian_socialist_libsoc1_short
+			}
+		}
+		}
+
+CHI_UZEDONG_SHANGTAI_14 = {
+
+SHA = {
+								transfer_state = 607
+								transfer_state = 1226
+								transfer_state = 1225
+								transfer_state = 1224
+ 	
+		add_country_leader_role = {
+			character = SHA_zhang_yunfan_char
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+			every_state = {
+				limit = {
+					is_core_of = NLM
+				}
+			    add_core_of = SHA
+		    }
+	set_party_name = { ideology = libertarian_socialist long_name = SHA_PPPCCC_party1 name = SHA_PPPCCC_party1 }
+	set_party_name = { ideology = totalitarian_socialist long_name = SHA_PPPCCC_party2 name = SHA_PPPCCC_party2 }
+	set_party_name = { ideology = communist long_name = SHA_PPPCCC_party3 name = SHA_PPPCCC_party3 }
+	set_party_name = { ideology =social_democrat long_name = SHA_PPPCCC_party4 name = SHA_PPPCCC_party4 }
+ 			add_popularity = {
+ 				ideology = communist
+ 				popularity = 0.4
+ 			}
+ 			add_popularity = {
+ 				ideology = social_democrat
+ 				popularity = 0.2
+ 			}
+ 				set_politics = {
+ 				ruling_party = communist
+ 				election_frequency = 60
+ 				elections_allowed = no
+ 				}
+	
+set_cosmetic_tag = PRC_AM
+
+
+ inherit_technology = TSU
+				load_oob = TSU_marines_3
+
+
+TSU = {add_to_faction = SHA}
+RED_JAP_REV_ARMY = yes
+
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+
+}
+		}
+CHI_UZEDONG_SHANGTAI_12 = {
+
 NLM = {
 			
  inherit_technology = TSU
@@ -40,12 +287,6 @@ NLM = {
 					add_state_core = 1413
 					transfer_state = 1417
 					add_state_core = 1417
-		every_state = {
-				limit = {
-					is_core_of = PRC
-				}
-			    add_core_of = NLM
-		    }
 
 				set_capital = {
 					state = 716	
@@ -82,11 +323,10 @@ PRC = {set_nationality = {
 			character = PRC_qin_hui
 			ideology = Geometridaeism
 		}
-set_cosmetic_tag = PRC_GHGLS
 					PRC = {
 					transfer_units_fraction = {
 						target = NLM
-						army_ratio = 0.15       
+						army_ratio = 0.1       
 					keep_unit_leaders_trigger = {
 						always = no 
 					}

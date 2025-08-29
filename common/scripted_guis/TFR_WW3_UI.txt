@@ -2932,7 +2932,13 @@ WWW_guanbi_click = {
 				set_variable = { TFR_WW3_GUI_START = 0 }
 				}
 WWWANNIU1_click = {	
-				
+							
+			every_state = {
+				limit = {
+					is_core_of = BLR
+				}
+			    add_core_of = UFA
+		    }	
 			every_state = {
 				limit = {
 					is_core_of = UKR
@@ -2940,7 +2946,13 @@ WWWANNIU1_click = {
 			    add_core_of = UFA
 		    }
 SOV = {release = UFA}
-				
+					
+			every_state = {
+				limit = {
+					is_core_of = EST
+				}
+			    add_core_of = UFA
+		    }			
 			every_state = {
 				limit = {
 					is_core_of = SOV
@@ -2966,7 +2978,14 @@ set_cosmetic_tag = SOV_SovietUnion
 				popularity = 0.4
 			}
 
-				load_oob = UKR_REV
+annex_country = {
+								target =LAT
+								transfer_troops = yes
+							}
+annex_country = {
+								target =BDM
+								transfer_troops = yes
+							}
 				load_oob = UKR_REV
 				load_oob = UKR_REV
 				load_oob = UKR_REV
@@ -3038,7 +3057,7 @@ declare_war_on = {
 }
 TSU = {add_to_faction = KAZ}
 RED_JAP_REV_ARMY = yes
-				set_variable = { TFR_WW3_yuanzhuwuqzy = 1 }
+				set_variable = { TFR_WW3_yuanzhuwuqizy = 1 }
 				}
 WWWANNIU3_click = {	
 
@@ -3069,14 +3088,14 @@ RED_JAP_REV_ARMY = yes
 				}
 WWWANNIU6_click = {	
 
-PLD = {
+MLD = {
 
 annex_country = {
 								target =MLD
 								transfer_troops = yes
 							}
 				set_party_name = { ideology = totalitarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
-                inherit_technology = PRC
+                inherit_technology = TSU
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
@@ -3090,14 +3109,14 @@ annex_country = {
 	                ideology = maoism
 				}  
 }
-PLD = {load_oob = PLD_communist
+MLD = {load_oob = PLD_communist
 load_oob = PLD_communist
 declare_war_on = {
 			target = SOV
 			type = annex_everything
 		}
 }
-TSU = {add_to_faction = PLD}
+TSU = {add_to_faction = MLD}
 RED_JAP_REV_ARMY = yes
 				set_variable = { TFR_WW3_yuanzhuwuqipol = 1 }
 				}

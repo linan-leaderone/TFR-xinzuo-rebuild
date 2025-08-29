@@ -1459,6 +1459,10 @@ country_event = {
 	option = {
 		name = PRC_MAO4.37.a
 
+GER = {annex_country = {
+								target =EAF
+								transfer_troops = yes
+							}}
 GRK = {annex_country = {
 								target =GRE
 								transfer_troops = yes
@@ -1494,6 +1498,9 @@ country_event = {
 								country_event = {
 									id = PRC_MAO4.39
 								}
+			hidden_effect = {
+set_province_controller = 10010
+	}
 declare_war_on = {
 			target = PRC
 			type = annex_everything
@@ -1504,9 +1511,15 @@ declare_war_on = {
 	    	   	}
 			hidden_effect = {
 				set_variable = { TFR_WW3_GUI_START = 1 }
-
+		every_state = {
+				limit = {
+					is_core_of = PRC
+				}
+			    add_core_of = NLM
+		    }
+NLM = {set_cosmetic_tag = PRC_GHGLS  }
 			NIC = {	set_country_leader_ideology = marxism_lenin_maoism}
-TZL = {load_oob = TZL_marines_1 }
+TZL = {load_oob = TSU_marines_2 }
 			PRC = {mark_focus_tree_layout_dirty = yes }
 			TZL = {mark_focus_tree_layout_dirty = yes }
 			TSU = {mark_focus_tree_layout_dirty = yes }
@@ -1573,10 +1586,21 @@ country_event = {
 	title = PRC_MAO4.42.t
 	desc = PRC_MAO4.42.d
 	picture = GFX_PRC_MAO4_event_42
-	is_triggered_only = yes
-	fire_only_once = no
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = UFA
+		TZL = { is_in_faction_with = TSU }
+country_exists = BDM
+country_exists = UFA
+	}
 	option = {
 		name = PRC_MAO4.42.a
+
+UFA = {annex_country = {
+								target =BDM
+								transfer_troops = yes
+							}}
 	}
 }
 
@@ -1613,6 +1637,10 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.45.a
+			hidden_effect = {
+CHF = {set_cosmetic_tag = PRC_GHGLS  }
+
+	}
 	}
 }
 

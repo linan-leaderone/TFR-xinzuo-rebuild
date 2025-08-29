@@ -106,7 +106,3 @@ set_popularities = {
     totalitarian_socialist = 80
     libertarian_socialist = 20
 }
-
-add_ideas = {
-	SHA_legacy_of_mao_idea
-}

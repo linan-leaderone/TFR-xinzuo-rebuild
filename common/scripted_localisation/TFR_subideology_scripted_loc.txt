@@ -59,6 +59,20 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = SHA
+			has_country_leader_ideology = maoism
+		}
+		localization_key = marxism_lenin_maoism
+	}
+	text = {
+		trigger = {
+			tag = MIA
+			has_country_leader_ideology = maoism
+		}
+		localization_key = MIA_maoism
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = maoism
 		}
 		localization_key = maoism

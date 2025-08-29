@@ -22,7 +22,7 @@ second_nato_war_decisions = {
 		cancel_trigger = {
 		OR = {
 			SOV = {
-				surrender_progress > 0.5
+				surrender_progress > 0.7
 			}
 			PRC = {
 				surrender_progress > 0.5
@@ -77,6 +77,8 @@ NLM = {annex_country = {
 								transfer_troops = no
 							}
 release = UFA
+release = KAZ
+					PRC_UZEDONG_SHANGTAI_1147 =  yes
 UFA = {annex_country = {
 								target = KAZ
 								transfer_troops = yes

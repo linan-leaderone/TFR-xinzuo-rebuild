@@ -6,6 +6,10 @@ PRC_EUO_empire = {
 	color = rgb { 139 90 43 }
 	color_ui = rgb { 139 90 43 }
 }
+MIA_ZHOUQUN = {
+	color = rgb { 227 30 60 }
+	color_ui = rgb { 227 30 60 }
+}
 
 NDLB = {
 	color = rgb { 	205 20 20 }

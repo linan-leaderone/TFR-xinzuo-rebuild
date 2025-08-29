@@ -84,6 +84,378 @@ on_actions = {
 
 }
 
+			if = { 
+				limit = {
+	NOT = { country_exists = TIB }
+					FROM.FROM = { 
+						OR = {
+							state = 434
+							state = 1152
+							state = 601
+							state = 1186
+							state = 322
+							state = 1155
+							state = 1153
+						} 
+					}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+								NAX = {transfer_state = 434}
+TIB = {
+
+PRC = {release = TIB}
+	set_party_name = { ideology = libertarian_socialist long_name = TIBPPPCCC_party name = TIBPPPCCC_party }
+
+	
+set_cosmetic_tag = TIB_revolt_R
+								transfer_state = 1186
+								transfer_state = 601
+								add_state_core = 1186
+								add_state_core = 601
+
+
+ inherit_technology = TSU
+				load_oob = TIB_revolt
+				load_oob = TIB_revolt
+				load_oob = TIB_revolt
+				load_oob = TIB_revolt
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = no
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 1
+			}
+		create_country_leader = {
+			name = dzzz_tib
+			picture = "gfx/MAOYUANXIN/DZZZ.png"
+			ideology = eco_socialism
+		}
+TSU = {add_to_faction = TIB}
+RED_JAP_REV_ARMY = yes
+
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.44
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.44
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+	NOT = { country_exists = SHF }
+					FROM.FROM = { 
+						OR = {
+							state = 592
+							state = 1206
+							state = 1430
+							state = 1207
+							state = 1203
+							state = 728
+							state = 599
+						} 
+					}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+PRC = {
+
+CHI_UZEDONG_SHANGTAI_15 = yes
+
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.45
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.45
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+	NOT = { country_exists = MON }
+					FROM.FROM = { 
+						OR = {
+							state = 1390
+							state = 612
+							state = 564
+							state = 329
+							state = 1388
+							state = 1166
+							state = 1202
+							state = 621
+						} 
+					}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+MON = {
+
+PRC = {release = MON}
+	set_party_name = { ideology = libertarian_socialist long_name = MONPPPCCC_party name = MONPPPCCC_party }
+
+	
+set_cosmetic_tag = MON_revolt
+								transfer_state = 329
+								transfer_state = 612
+								transfer_state = 621
+								transfer_state = 1202
+								transfer_state = 1166
+								add_state_core = 329
+								add_state_core = 612
+								add_state_core = 621
+								add_state_core = 1202
+								add_state_core = 1166
+
+ inherit_technology = TSU
+				load_oob = MON_20000
+				load_oob = MON_20000
+				load_oob = MON_20000
+				load_oob = MON_20000
+				set_politics = {
+				ruling_party = libertarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 1
+			}
+		create_country_leader = {
+			name = MON_ZQ
+			picture = "gfx/MAOYUANXIN/XL_GWH.dds"
+			ideology = Tsuguism
+		}
+TSU = {add_to_faction = MON}
+RED_JAP_REV_ARMY = yes
+
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.43
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.43
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+
+	NOT = { country_exists = SHA }
+					FROM.FROM = { 
+						OR = {
+							state = 614
+							state = 1231
+							state = 597
+							state = 1230
+							state = 1223
+							state = 606
+							state = 1211
+							state = 1212
+							state = 1200
+							state = 622
+							state = 615
+							state = 1194
+						} 
+					}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+
+					TSU = {
+CHI_UZEDONG_SHANGTAI_14 = YES
+			country_event = {
+				id = PRC_MAO4.46
+			}
+SHA = {
+
+ 				set_politics = {
+ 				ruling_party = communist
+ 				election_frequency = 60
+ 				elections_allowed = no
+ 				}
+		}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.46
+			}
+					}
+
+
+
+}
+
+			if = { 
+				limit = {
+					FROM.FROM = { 
+	NOT = { country_exists = MIA }
+						OR = {
+							state = 613
+							state = 1215
+							state = 1429
+							state = 1220
+							state = 1228
+							state = 1222
+							state = 1221
+							state = 1159
+							state = 596
+						} 
+					}
+						FROM = { tag = PRC}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+MIA = {
+
+
+			every_state = {
+				limit = {
+					is_core_of = NLM
+				}
+			    add_core_of = MIA
+		    }
+set_cosmetic_tag = MIA_ZHOUQUN
+								transfer_state = 613
+								transfer_state = 1215
+								transfer_state = 1220
+								transfer_state = 1429
+ inherit_technology = TSU
+				load_oob = MIA_REV
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 1
+			}
+		create_country_leader = {
+			name = MIA_ZQ
+			picture = "gfx/MAOYUANXIN/ZQ.png"
+			ideology = maoism
+		}
+TSU = {add_to_faction = MIA}
+RED_JAP_REV_ARMY = yes
+
+declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+
+}
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.41
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.41
+			}
+					}
+
+
+
+}
+
+
+
+
+
+
 
 			if = { 
 				limit = {
@@ -92,7 +464,12 @@ on_actions = {
 							state = 1043
 						} 
 					}
-						FROM = { tag = PRK}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
 
 						ROOT = {
 							OR = {
@@ -136,6 +513,7 @@ on_actions = {
 }
 						TZL = {white_peace = CUB}
 						TSU = {white_peace = CUB}
+						TRG = {puppet = CUB}
 					
 CUB = {
 				set_party_name = { ideology = totalitarian_socialist long_name = CUBCCC_party name = CUBCCC_party }
@@ -576,6 +954,32 @@ set_country_flag=beglbg_slv
 				}  
 							}
 					set_global_flag = skip_default_capitulation
+				}					
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = LAT
+
+						}
+					}
+
+
+
+SOV = {annex_country = {
+								target = LAT
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
 				}				
 				if = {
 					limit = {
@@ -726,7 +1130,7 @@ HRL = {annex_country = {
 
 						TSU = {white_peace = FIN}
 			
-TSU = {add_to_faction = TUR}
+TSU = {add_to_faction = FIN}
 RED_JAP_REV_ARMY = yes
 						FIN = {
 				set_party_name = { ideology = totalitarian_socialist long_name = FINCCC_party name = FINCCC_party }
@@ -770,9 +1174,9 @@ RED_JAP_REV_ARMY = yes
 	
 TSU = {add_to_faction = TUR}
 RED_JAP_REV_ARMY = yes
-			SYR = {transfer_state = 827}
 			ROJ = {transfer_state = 350	
 			transfer_state = 352	
+			transfer_state = 827		
 			transfer_state = 353	
 			transfer_state = 348				
 			transfer_state = 1030			
@@ -980,7 +1384,43 @@ annex_country = {
 
 
 
-	
+		
+
+				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = PRK
+
+						}
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = PRK
+				}
+			    add_core_of = MKL
+		    }
+MKL = {annex_country = {
+								target = PRK
+								transfer_troops = yes
+							}
+
+							}
+
+
+
+
+					set_global_flag = skip_default_capitulation
+				}		
 
 				
 				if = {
@@ -999,46 +1439,55 @@ annex_country = {
 						}
 					}
 
+HRL = {annex_country = {
+								target = SYR
+								transfer_troops = yes
+							}
 
-			TSU = {white_peace = SYR}
-TSU = {add_to_faction = SYR}
-RED_JAP_REV_ARMY = yes
+							}
 
-				SYR = {set_party_name = { ideology = libertarian_socialist long_name = SYRCCCCCC_party_long name = SYRCCCCCC_party } }
-				SYR = {
-						remove_ideas = SYR_devistated_economy
-						remove_ideas = SYR_war_exhaustion
-						remove_ideas = SYR_alawite_dominated_army
-						remove_ideas = SYR_inexperienced_generals
-						remove_ideas = SYR_russian_trained_officers
-						remove_ideas = SYR_russian_support
-						remove_ideas = SYR_army_of_lions_idea
-						remove_ideas = SYR_alawite_dominated_army_2
-						remove_ideas = SYR_devistated_economy_2
-						remove_ideas = SYR_devistated_economy_3
-						remove_ideas = SYR_devistated_economy_4
-						remove_ideas = SYR_devistated_economy_5
-						remove_ideas = SYR_syrian_economic_renewal
-						remove_ideas = SYR_failing_curency
-						remove_ideas = SYR_assadism_idea
-						remove_ideas = SYR_cult_of_saddeh_idea
-						remove_ideas = SYR_greater_syria_1
-						remove_ideas = SYR_greater_syria_2
-						remove_ideas = SYR_greater_syria_3
-						remove_ideas = SYR_greater_syria_4
-create_country_leader = {
-	                name = "叙利亚临时革命政府"
-	                desc = "POLITICS_SYRRGW_DESC"
-	                picture = "gfx/MAOYUANXIN/gjzyy.png"
-	                expire = "1999.1.1"
-	                ideology = Tsuguism
-				}  }
+
 
 
 					set_global_flag = skip_default_capitulation
 				}		
 
+		
 				
+				if = {
+					limit = {
+
+						FROM = {
+						OR = {
+							original_tag = TZL
+								is_ally_with = TZL
+						}
+						}
+		TZL = { is_in_faction_with = TSU }
+						ROOT = {
+							original_tag = IRQ
+
+						}
+					}
+
+			every_state = {
+				limit = {
+					is_core_of = IRQ
+				}
+			    add_core_of = HRL
+		    }
+
+
+
+
+HRL = {annex_country = {
+								target = IRQ
+								transfer_troops = no
+							}
+
+							}
+					set_global_flag = skip_default_capitulation
+				}			
 				if = {
 					limit = {
 
