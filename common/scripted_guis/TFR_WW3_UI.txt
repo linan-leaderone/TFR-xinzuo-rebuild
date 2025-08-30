@@ -1701,82 +1701,82 @@ is_core_of = SOV
 			WWW_state56_1_visible = { 
 				626 = {controller = {is_in_faction_with = TSU}}
 				623 = {controller = {is_in_faction_with = TSU}}
-				624` = {controller = {is_in_faction_with = TSU}}
-				627` = {controller = {is_in_faction_with = TSU}}
-				628` = {controller = {is_in_faction_with = TSU}}
-				625` = {controller = {is_in_faction_with = TSU}}
-				1272` = {controller = {is_in_faction_with = TSU}}
-				1273` = {controller = {is_in_faction_with = TSU}}
-				1274` = {controller = {is_in_faction_with = TSU}}
-				1275` = {controller = {is_in_faction_with = TSU}}
-				1276` = {controller = {is_in_faction_with = TSU}}
-				1277` = {controller = {is_in_faction_with = TSU}}
-				1278` = {controller = {is_in_faction_with = TSU}}
-				1279` = {controller = {is_in_faction_with = TSU}}
-				1280` = {controller = {is_in_faction_with = TSU}}
-				1281` = {controller = {is_in_faction_with = TSU}}
-				327` = {controller = {is_in_faction_with = TSU}}
+				624 = {controller = {is_in_faction_with = TSU}}
+				627 = {controller = {is_in_faction_with = TSU}}
+				628 = {controller = {is_in_faction_with = TSU}}
+				625 = {controller = {is_in_faction_with = TSU}}
+				1272 = {controller = {is_in_faction_with = TSU}}
+				1273 = {controller = {is_in_faction_with = TSU}}
+				1274 = {controller = {is_in_faction_with = TSU}}
+				1275 = {controller = {is_in_faction_with = TSU}}
+				1276 = {controller = {is_in_faction_with = TSU}}
+				1277 = {controller = {is_in_faction_with = TSU}}
+				1278 = {controller = {is_in_faction_with = TSU}}
+				1279 = {controller = {is_in_faction_with = TSU}}
+				1280 = {controller = {is_in_faction_with = TSU}}
+				1281 = {controller = {is_in_faction_with = TSU}}
+				327 = {controller = {is_in_faction_with = TSU}}
 
 			}
 			WWW_state56_2_visible = {
 				626 = {controller = {is_in_faction_with = PRC}}
 				623 = {controller = {is_in_faction_with = PRC}}
-				624` = {controller = {is_in_faction_with = PRC}}
-				627` = {controller = {is_in_faction_with = PRC}}
-				628` = {controller = {is_in_faction_with = PRC}}
-				625` = {controller = {is_in_faction_with = PRC}}
-				1272` = {controller = {is_in_faction_with = PRC}}
-				1273` = {controller = {is_in_faction_with = PRC}}
-				1274` = {controller = {is_in_faction_with = PRC}}
-				1275` = {controller = {is_in_faction_with = PRC}}
-				1276` = {controller = {is_in_faction_with = PRC}}
-				1277` = {controller = {is_in_faction_with = PRC}}
-				1278` = {controller = {is_in_faction_with = PRC}}
-				1279` = {controller = {is_in_faction_with = PRC}}
-				1280` = {controller = {is_in_faction_with = PRC}}
-				1281` = {controller = {is_in_faction_with = PRC}}
-				327` = {controller = {is_in_faction_with = PRC}}
+				624 = {controller = {is_in_faction_with = PRC}}
+				627 = {controller = {is_in_faction_with = PRC}}
+				628 = {controller = {is_in_faction_with = PRC}}
+				625 = {controller = {is_in_faction_with = PRC}}
+				1272 = {controller = {is_in_faction_with = PRC}}
+				1273 = {controller = {is_in_faction_with = PRC}}
+				1274 = {controller = {is_in_faction_with = PRC}}
+				1275 = {controller = {is_in_faction_with = PRC}}
+				1276 = {controller = {is_in_faction_with = PRC}}
+				1277 = {controller = {is_in_faction_with = PRC}}
+				1278 = {controller = {is_in_faction_with = PRC}}
+				1279 = {controller = {is_in_faction_with = PRC}}
+				1280 = {controller = {is_in_faction_with = PRC}}
+				1281 = {controller = {is_in_faction_with = PRC}}
+				327 = {controller = {is_in_faction_with = PRC}}
 			}
 			WWW_state56_3_visible = { 
 			NOT = {  
 			AND = {  
 				626 = {controller = {is_in_faction_with = PRC}}
 				623 = {controller = {is_in_faction_with = PRC}}
-				624` = {controller = {is_in_faction_with = PRC}}
-				627` = {controller = {is_in_faction_with = PRC}}
-				628` = {controller = {is_in_faction_with = PRC}}
-				625` = {controller = {is_in_faction_with = PRC}}
-				1272` = {controller = {is_in_faction_with = PRC}}
-				1273` = {controller = {is_in_faction_with = PRC}}
-				1274` = {controller = {is_in_faction_with = PRC}}
-				1275` = {controller = {is_in_faction_with = PRC}}
-				1276` = {controller = {is_in_faction_with = PRC}}
-				1277` = {controller = {is_in_faction_with = PRC}}
-				1278` = {controller = {is_in_faction_with = PRC}}
-				1279` = {controller = {is_in_faction_with = PRC}}
-				1280` = {controller = {is_in_faction_with = PRC}}
-				1281` = {controller = {is_in_faction_with = PRC}}
-				327` = {controller = {is_in_faction_with = PRC}}
+				624 = {controller = {is_in_faction_with = PRC}}
+				627 = {controller = {is_in_faction_with = PRC}}
+				628 = {controller = {is_in_faction_with = PRC}}
+				625 = {controller = {is_in_faction_with = PRC}}
+				1272 = {controller = {is_in_faction_with = PRC}}
+				1273 = {controller = {is_in_faction_with = PRC}}
+				1274 = {controller = {is_in_faction_with = PRC}}
+				1275 = {controller = {is_in_faction_with = PRC}}
+				1276 = {controller = {is_in_faction_with = PRC}}
+				1277 = {controller = {is_in_faction_with = PRC}}
+				1278 = {controller = {is_in_faction_with = PRC}}
+				1279 = {controller = {is_in_faction_with = PRC}}
+				1280 = {controller = {is_in_faction_with = PRC}}
+				1281 = {controller = {is_in_faction_with = PRC}}
+				327 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
  			OR = { 
 				626 = {controller = {is_in_faction_with = PRC}}
 				623 = {controller = {is_in_faction_with = PRC}}
-				624` = {controller = {is_in_faction_with = PRC}}
-				627` = {controller = {is_in_faction_with = PRC}}
-				628` = {controller = {is_in_faction_with = PRC}}
-				625` = {controller = {is_in_faction_with = PRC}}
-				1272` = {controller = {is_in_faction_with = PRC}}
-				1273` = {controller = {is_in_faction_with = PRC}}
-				1274` = {controller = {is_in_faction_with = PRC}}
-				1275` = {controller = {is_in_faction_with = PRC}}
-				1276` = {controller = {is_in_faction_with = PRC}}
-				1277` = {controller = {is_in_faction_with = PRC}}
-				1278` = {controller = {is_in_faction_with = PRC}}
-				1279` = {controller = {is_in_faction_with = PRC}}
-				1280` = {controller = {is_in_faction_with = PRC}}
-				1281` = {controller = {is_in_faction_with = PRC}}
-				327` = {controller = {is_in_faction_with = PRC}}
+				624 = {controller = {is_in_faction_with = PRC}}
+				627 = {controller = {is_in_faction_with = PRC}}
+				628 = {controller = {is_in_faction_with = PRC}}
+				625 = {controller = {is_in_faction_with = PRC}}
+				1272 = {controller = {is_in_faction_with = PRC}}
+				1273 = {controller = {is_in_faction_with = PRC}}
+				1274 = {controller = {is_in_faction_with = PRC}}
+				1275 = {controller = {is_in_faction_with = PRC}}
+				1276 = {controller = {is_in_faction_with = PRC}}
+				1277 = {controller = {is_in_faction_with = PRC}}
+				1278 = {controller = {is_in_faction_with = PRC}}
+				1279 = {controller = {is_in_faction_with = PRC}}
+				1280 = {controller = {is_in_faction_with = PRC}}
+				1281 = {controller = {is_in_faction_with = PRC}}
+				327 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
 
@@ -1786,33 +1786,33 @@ is_core_of = SOV
 			WWW_state57_1_visible = { 
 				668 = {controller = {is_in_faction_with = TSU}}
 				738 = {controller = {is_in_faction_with = TSU}}
-				669` = {controller = {is_in_faction_with = TSU}}
-				523` = {controller = {is_in_faction_with = TSU}}
-				737` = {controller = {is_in_faction_with = TSU}}
+				669 = {controller = {is_in_faction_with = TSU}}
+				523 = {controller = {is_in_faction_with = TSU}}
+				737 = {controller = {is_in_faction_with = TSU}}
 			}
 			WWW_state57_2_visible = {
 					668 = {controller = {is_in_faction_with = PRC}}
 				738 = {controller = {is_in_faction_with = PRC}}
-				669` = {controller = {is_in_faction_with = PRC}}
-				523` = {controller = {is_in_faction_with = PRC}}
-				737` = {controller = {is_in_faction_with = PRC}}
+				669 = {controller = {is_in_faction_with = PRC}}
+				523 = {controller = {is_in_faction_with = PRC}}
+				737 = {controller = {is_in_faction_with = PRC}}
 			}
 			WWW_state57_3_visible = { 
 			NOT = {  
 			AND = {  
 					668 = {controller = {is_in_faction_with = PRC}}
 				738 = {controller = {is_in_faction_with = PRC}}
-				669` = {controller = {is_in_faction_with = PRC}}
-				523` = {controller = {is_in_faction_with = PRC}}
-				737` = {controller = {is_in_faction_with = PRC}}
+				669 = {controller = {is_in_faction_with = PRC}}
+				523 = {controller = {is_in_faction_with = PRC}}
+				737 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
  			OR = { 
 					668 = {controller = {is_in_faction_with = PRC}}
 				738 = {controller = {is_in_faction_with = PRC}}
-				669` = {controller = {is_in_faction_with = PRC}}
-				523` = {controller = {is_in_faction_with = PRC}}
-				737` = {controller = {is_in_faction_with = PRC}}
+				669 = {controller = {is_in_faction_with = PRC}}
+				523 = {controller = {is_in_faction_with = PRC}}
+				737 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
 
@@ -1822,41 +1822,41 @@ is_core_of = SOV
 			WWW_state55_1_visible = { 
 				333 = {controller = {is_in_faction_with = TSU}}
 				334 = {controller = {is_in_faction_with = TSU}}
-				673` = {controller = {is_in_faction_with = TSU}}
-				335` = {controller = {is_in_faction_with = TSU}}
-				667` = {controller = {is_in_faction_with = TSU}}
-				721` = {controller = {is_in_faction_with = TSU}}
-				834` = {controller = {is_in_faction_with = TSU}}
+				673 = {controller = {is_in_faction_with = TSU}}
+				335 = {controller = {is_in_faction_with = TSU}}
+				667 = {controller = {is_in_faction_with = TSU}}
+				721 = {controller = {is_in_faction_with = TSU}}
+				834 = {controller = {is_in_faction_with = TSU}}
 			}
 			WWW_state55_2_visible = {
 				333 = {controller = {is_in_faction_with = PRC}}
 				334 = {controller = {is_in_faction_with = PRC}}
-				673` = {controller = {is_in_faction_with = PRC}}
-				335` = {controller = {is_in_faction_with = PRC}}
-				667` = {controller = {is_in_faction_with = PRC}}
-				721` = {controller = {is_in_faction_with = PRC}}
-				834` = {controller = {is_in_faction_with = PRC}}
+				673 = {controller = {is_in_faction_with = PRC}}
+				335 = {controller = {is_in_faction_with = PRC}}
+				667 = {controller = {is_in_faction_with = PRC}}
+				721 = {controller = {is_in_faction_with = PRC}}
+				834 = {controller = {is_in_faction_with = PRC}}
 			}
 			WWW_state55_3_visible = { 
 			NOT = {  
 			AND = {  
 				333 = {controller = {is_in_faction_with = PRC}}
 				334 = {controller = {is_in_faction_with = PRC}}
-				673` = {controller = {is_in_faction_with = PRC}}
-				335` = {controller = {is_in_faction_with = PRC}}
-				667` = {controller = {is_in_faction_with = PRC}}
-				721` = {controller = {is_in_faction_with = PRC}}
-				834` = {controller = {is_in_faction_with = PRC}}
+				673 = {controller = {is_in_faction_with = PRC}}
+				335 = {controller = {is_in_faction_with = PRC}}
+				667 = {controller = {is_in_faction_with = PRC}}
+				721 = {controller = {is_in_faction_with = PRC}}
+				834 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
  			OR = { 
 				333 = {controller = {is_in_faction_with = PRC}}
 				334 = {controller = {is_in_faction_with = PRC}}
-				673` = {controller = {is_in_faction_with = PRC}}
-				335` = {controller = {is_in_faction_with = PRC}}
-				667` = {controller = {is_in_faction_with = PRC}}
-				721` = {controller = {is_in_faction_with = PRC}}
-				834` = {controller = {is_in_faction_with = PRC}}
+				673 = {controller = {is_in_faction_with = PRC}}
+				335 = {controller = {is_in_faction_with = PRC}}
+				667 = {controller = {is_in_faction_with = PRC}}
+				721 = {controller = {is_in_faction_with = PRC}}
+				834 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
 
@@ -1865,35 +1865,35 @@ is_core_of = SOV
 			WWW_state54_1_visible = { 
 				817 = {controller = {is_in_faction_with = TSU}}
 				816 = {controller = {is_in_faction_with = TSU}}
-				1386` = {controller = {is_in_faction_with = TSU}}
-				336` = {controller = {is_in_faction_with = TSU}}
-				672` = {controller = {is_in_faction_with = TSU}}
+				1386 = {controller = {is_in_faction_with = TSU}}
+				336 = {controller = {is_in_faction_with = TSU}}
+				672 = {controller = {is_in_faction_with = TSU}}
 
 
 			}
 			WWW_state54_2_visible = {
 				817 = {controller = {is_in_faction_with = PRC}}
 				816 = {controller = {is_in_faction_with = PRC}}
-				1386` = {controller = {is_in_faction_with = PRC}}
-				336` = {controller = {is_in_faction_with = PRC}}
-				672` = {controller = {is_in_faction_with = PRC}}
+				1386 = {controller = {is_in_faction_with = PRC}}
+				336 = {controller = {is_in_faction_with = PRC}}
+				672 = {controller = {is_in_faction_with = PRC}}
 			}
 			WWW_state54_3_visible = { 
 			NOT = {  
 			AND = {  
 				817 = {controller = {is_in_faction_with = PRC}}
 				816 = {controller = {is_in_faction_with = PRC}}
-				1386` = {controller = {is_in_faction_with = PRC}}
-				336` = {controller = {is_in_faction_with = PRC}}
-				672` = {controller = {is_in_faction_with = PRC}}
+				1386 = {controller = {is_in_faction_with = PRC}}
+				336 = {controller = {is_in_faction_with = PRC}}
+				672 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
  			OR = { 
 				817 = {controller = {is_in_faction_with = PRC}}
 				816 = {controller = {is_in_faction_with = PRC}}
-				1386` = {controller = {is_in_faction_with = PRC}}
-				336` = {controller = {is_in_faction_with = PRC}}
-				672` = {controller = {is_in_faction_with = PRC}}
+				1386 = {controller = {is_in_faction_with = PRC}}
+				336 = {controller = {is_in_faction_with = PRC}}
+				672 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
 
@@ -1902,27 +1902,27 @@ is_core_of = SOV
 			WWW_state53_1_visible = { 
 				723 = {controller = {is_in_faction_with = TSU}}
 				284 = {controller = {is_in_faction_with = TSU}}
-				1419` = {controller = {is_in_faction_with = TSU}}
+				1419 = {controller = {is_in_faction_with = TSU}}
 
 
 			}
 			WWW_state53_2_visible = {
 					723 = {controller = {is_in_faction_with = PRC}}
 				284 = {controller = {is_in_faction_with = PRC}}
-				1419` = {controller = {is_in_faction_with = PRC}}
+				1419 = {controller = {is_in_faction_with = PRC}}
 			}
 			WWW_state53_3_visible = { 
 			NOT = {  
 			AND = {  
 				723 = {controller = {is_in_faction_with = PRC}}
 				284 = {controller = {is_in_faction_with = PRC}}
-				1419` = {controller = {is_in_faction_with = PRC}}
+				1419 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
  			OR = { 
 			723 = {controller = {is_in_faction_with = PRC}}
 				284 = {controller = {is_in_faction_with = PRC}}
-				1419` = {controller = {is_in_faction_with = PRC}}
+				1419 = {controller = {is_in_faction_with = PRC}}
 			}
 			}
 
@@ -1930,7 +1930,7 @@ is_core_of = SOV
 			WWW_state52_1_visible = { 
 				520 = {controller = {is_in_faction_with = TSU}}
 				521 = {controller = {is_in_faction_with = TSU}}
-				285` = {controller = {is_in_faction_with = TSU}}
+				285 = {controller = {is_in_faction_with = TSU}}
 				517 = {controller = {is_in_faction_with = TSU}}
 				868 = {controller = {is_in_faction_with = TSU}}
 				518 = {controller = {is_in_faction_with = TSU}}
@@ -1941,7 +1941,7 @@ is_core_of = SOV
 			WWW_state52_2_visible = {
 				520 = {controller = {is_in_faction_with = PRC}}
 				521 = {controller = {is_in_faction_with = PRC}}
-				285` = {controller = {is_in_faction_with = PRC}}
+				285 = {controller = {is_in_faction_with = PRC}}
 				517 = {controller = {is_in_faction_with = PRC}}
 				868 = {controller = {is_in_faction_with = PRC}}
 				518 = {controller = {is_in_faction_with = PRC}}
@@ -1953,7 +1953,7 @@ is_core_of = SOV
 			AND = {  
 				520 = {controller = {is_in_faction_with = PRC}}
 				521 = {controller = {is_in_faction_with = PRC}}
-				285` = {controller = {is_in_faction_with = PRC}}
+				285 = {controller = {is_in_faction_with = PRC}}
 				517 = {controller = {is_in_faction_with = PRC}}
 				868 = {controller = {is_in_faction_with = PRC}}
 				518 = {controller = {is_in_faction_with = PRC}}
@@ -1964,7 +1964,7 @@ is_core_of = SOV
  			OR = { 
 				520 = {controller = {is_in_faction_with = PRC}}
 				521 = {controller = {is_in_faction_with = PRC}}
-				285` = {controller = {is_in_faction_with = PRC}}
+				285 = {controller = {is_in_faction_with = PRC}}
 				517 = {controller = {is_in_faction_with = PRC}}
 				868 = {controller = {is_in_faction_with = PRC}}
 				518 = {controller = {is_in_faction_with = PRC}}
@@ -3089,7 +3089,9 @@ RED_JAP_REV_ARMY = yes
 WWWANNIU6_click = {	
 
 MLD = {
-
+	SOV = {end_puppet = MLD}
+	leave_faction = yes
+		
 annex_country = {
 								target =MLD
 								transfer_troops = yes

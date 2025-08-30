@@ -662,8 +662,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
 
         }

@@ -534,3 +534,4 @@ long_march_buff_love_change = yes
 }
 }
 }
+}

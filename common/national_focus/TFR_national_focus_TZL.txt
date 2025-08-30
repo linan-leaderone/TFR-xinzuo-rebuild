@@ -2473,7 +2473,7 @@ transfer_navy = {
 		icon = GFX_focus_TZL_TWW_FOCUS_86
 		x = 29
 		y = 12
-		cost = 5
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
@@ -3338,7 +3338,8 @@ check_variable = {
 		available = {
 		}
 		completion_reward = {
-					
+			
+			unlock_decision_tooltip = TZL_left_power_xuanchuan6		
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = red_TJZ_0_idea

@@ -126,7 +126,7 @@ set_cosmetic_tag = TIB_revolt_R
 								add_state_core = 601
 
 
- inherit_technology = TSU
+inherit_technology = TSU
 				load_oob = TIB_revolt
 				load_oob = TIB_revolt
 				load_oob = TIB_revolt
@@ -345,7 +345,7 @@ set_cosmetic_tag = MON_revolt
 								add_state_core = 1202
 								add_state_core = 1166
 
- inherit_technology = TSU
+inherit_technology = TSU
 				load_oob = MON_20000
 				load_oob = MON_20000
 				load_oob = MON_20000
@@ -432,11 +432,11 @@ CHI_UZEDONG_SHANGTAI_14 = YES
 			}
 SHA = {
 
- 				set_politics = {
- 				ruling_party = communist
- 				election_frequency = 60
- 				elections_allowed = no
- 				}
+				set_politics = {
+				ruling_party = communist
+				election_frequency = 60
+				elections_allowed = no
+				}
 		}
 					}
 					TZL = {
@@ -488,7 +488,7 @@ set_cosmetic_tag = MIA_ZHOUQUN
 								transfer_state = 1215
 								transfer_state = 1220
 								transfer_state = 1429
- inherit_technology = TSU
+inherit_technology = TSU
 				load_oob = MIA_REV
 				set_politics = {
 				ruling_party = totalitarian_socialist

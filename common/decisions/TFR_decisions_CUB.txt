@@ -71,19 +71,19 @@ second_nato_war_decisions = {
 		cancel_effect = { #共产国际获胜
 
 
-
-NLM = {annex_country = {
-								target = PRC
-								transfer_troops = no
-							}
-release = UFA
-release = KAZ
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.52
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.52
+			}
+					}
+NLM = {
 					PRC_UZEDONG_SHANGTAI_1147 =  yes
-UFA = {annex_country = {
-								target = KAZ
-								transfer_troops = yes
-							}
-							}
+
 							}
 
 

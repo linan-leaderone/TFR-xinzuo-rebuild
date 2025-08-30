@@ -528,7 +528,6 @@ ISR = {declare_war_on = {
 		PRC = {add_to_faction = VOL}
 	}
 }
-
 country_event = {
 	id = PRC_MAO4.24
 	title = PRC_MAO4.24.t
@@ -1662,7 +1661,7 @@ news_event = {
 	desc = PRC_MAO4.47.d
 	picture = GFX_PRC_MAO4_event_47
 	is_triggered_only = no
-	fire_only_once = no
+	fire_only_once = YES
 	major = yes
 	trigger = {
 		TZL = { is_in_faction_with = TSU }
@@ -1672,6 +1671,7 @@ country_exists = NLM
 country_exists = SHA
 country_exists = CHF
 country_exists = TIB
+					is_ai = no
 	}
 	option = {
 		name = PRC_MAO4.47.a
@@ -1681,6 +1681,7 @@ country_exists = TIB
 					is_ai = no
 				}
 				set_country_flag = santifa2_flag	
+				set_country_flag = santifa1145_flag	
 				scoped_sound_effect = tlibwar
 				scoped_play_song = "one_minute_of_silence"
 	}

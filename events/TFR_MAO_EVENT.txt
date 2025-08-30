@@ -355,8 +355,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
 								if = {
 						limit = {
@@ -912,8 +911,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 		
 
 
@@ -1823,8 +1821,8 @@ dismantle_faction = yes
 
 
 
-}	
-}
+
+
 
 
 
@@ -3675,8 +3673,6 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
 } 
 			create_country_leader = {
 	                name = "未知"
@@ -3722,8 +3718,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
 
         }
@@ -5096,8 +5091,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
 
         }
@@ -5236,8 +5230,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
 			create_country_leader = {
 	                name = "未知"
@@ -5283,8 +5276,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
 
         }
@@ -6301,8 +6293,7 @@ attack_skill = 9
 defense_skill = 9
 planning_skill = 9
 logistics_skill = 9
-traits = { 
-}
+
 } 
         }
 }

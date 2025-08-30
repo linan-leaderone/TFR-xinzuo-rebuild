@@ -1,3 +1,21 @@
+
+	PRC_UZEDONG_SHANGTAI_1145 = {
+		add_country_leader_role = {
+			character = PRC_cheng_wenqing
+			promote_leader = yes
+			country_leader = {
+				ideology = jucheism
+				expire = "2099.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_cheng_wenqing
+			ideology = jucheism
+		}
+								}
+
 PRC_fushengjihua_action_effects_state_2_20 = {
 subtract_from_variable = {
     var = HANDEQIANG_yuzhongrenkou_2

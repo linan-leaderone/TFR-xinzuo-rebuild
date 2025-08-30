@@ -1509,5 +1509,6 @@ if = {
 
     clr_country_flag = HANDEQIANG_action_STATE_12_66
 }
-
+}
+}
 }

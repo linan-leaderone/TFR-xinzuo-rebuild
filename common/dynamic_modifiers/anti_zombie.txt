@@ -103,6 +103,6 @@ surrender_limit = AZOM_surrender_limit_dynamic_var
     intelligence_minister_cost_factor = AZOM_intelligence_minister_cost_factor_dynamic_var	
     theorist_minister_cost_factor = AZOM_theorist_minister_cost_factor_dynamic_var	
 }
-}
+
 
 

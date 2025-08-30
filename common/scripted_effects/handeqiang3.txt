@@ -4049,7 +4049,7 @@ subtract_from_variable = {
         10 = { 1219 = { add_manpower = -10000 } }
     }
     }
-}
+
 PRC_fushengjihua_action_effects_state_8 = {
 subtract_from_variable = {
     var = HANDEQIANG_yuzhongrenkou_8

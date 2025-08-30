@@ -230,7 +230,7 @@ SHA = {
 set_cosmetic_tag = PRC_AM
 
 
- inherit_technology = TSU
+inherit_technology = TSU
 				load_oob = TSU_marines_3
 
 
