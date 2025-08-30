@@ -3092,10 +3092,11 @@ MLD = {
 	SOV = {end_puppet = MLD}
 	leave_faction = yes
 		
-annex_country = {
-								target =MLD
-								transfer_troops = yes
-							}
+set_cosmetic_tag = PLD
+						TZL = {white_peace = MLD}
+						TSU = {white_peace = MLD}
+						GER = {puppet = MLD}
+
 				set_party_name = { ideology = totalitarian_socialist long_name = POLPPPCCC_party name = POLPPPCCC_party }
                 inherit_technology = TSU
 				set_politics = {
