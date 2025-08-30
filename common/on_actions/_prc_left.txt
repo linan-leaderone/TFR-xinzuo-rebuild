@@ -122,7 +122,7 @@ PRC = {annex_country = {
 				limit = {
 
 				PRC = {
-
+	NOT = {TZL = { is_in_faction_with = TSU }}
 				NOT = {has_completed_focus = PRC_the_Flower_of_Freedom_4}
 				NOT = {has_completed_focus = PRC_masters_of_asia_8}
 		OR = {
