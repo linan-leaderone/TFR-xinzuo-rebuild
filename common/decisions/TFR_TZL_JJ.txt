@@ -1,5 +1,78 @@
 TZL_JJFZ_category = {
 
+	TZL_left_power_xuanchuan7 = {
+		icon = GFX_TZL_JJFZ_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_38
+			has_completed_focus = TZL_TWW_FOCUS_81
+		}
+		available = {
+NOT = {has_country_flag = nuke_action_tzl2}
+	
+
+		}
+		days_remove = 100
+		fire_only_once = yes
+		complete_effect = {
+set_country_flag = nuke_action_tzl2
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 100
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	clr_country_flag = nuke_action_tzl2		
+1148 = {
+							add_building_construction = {
+									type = landmark_National_Smart_Governance_Center_Tower1
+									province = 7186
+									level = 1
+									instant_build = yes
+								}}
+
+
+
+		}
+		cost = 100
+	}
+	TZL_left_power_xuanchuan6 = {
+		icon = GFX_TZL_JJFZ_DT1
+		allowed = {
+			original_tag = TZL
+		}
+		visible = {
+			has_completed_focus = TZL_TWW_FOCUS_76
+		}
+		available = {
+NOT = {has_country_flag = nuke_action_tzl2}
+	
+
+		}
+		days_remove = 28
+		fire_only_once = yes
+		complete_effect = {
+set_country_flag = nuke_action_tzl2
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+	clr_country_flag = nuke_action_tzl2		
+		add_offsite_building = { type = industrial_complex level = 2 }		
+		add_offsite_building = { type = arms_factory level = 2 }
+
+
+
+		}
+		cost = 100
+	}
+
 	TZL_JJFZ_nuke1 = {
 		icon = GFX_TZL_JJFZ_DT1
 		allowed = {

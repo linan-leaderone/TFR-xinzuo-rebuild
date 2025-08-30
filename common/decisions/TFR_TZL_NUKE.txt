@@ -1,0 +1,481 @@
+TZL_ww3_category = {
+                TZL_left_power_xuanchuan14 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+		PRC = {   add_ideas = CHI_bohe_wangluogongji6_idea     }
+			country_event = {
+									id = PRC_MAO4.48
+								}
+		}
+	}
+                TZL_left_power_xuanchuan8 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+		 add_ideas = CHI_bohe_wangluogongji8_idea     
+			country_event = {
+									id = PRC_MAO4.49
+								}
+					every_country = {
+				limit = {
+						is_ally_with = TZL
+						NOT = {tag = TZL}
+				}
+		 add_ideas = CHI_bohe_wangluogongji8_idea     
+			}
+		}
+	}
+
+
+                TZL_left_power_xuanchuan13 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+has_country_flag = nuke_action_tzl6
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+
+		PRC = {   has_country_flag = boxilaishangtai     }
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+
+		PRC = {   add_ideas = CHI_bohe_wangluogongji7_idea     }
+
+		
+		}
+	}
+                TZL_left_power_xuanchuan12 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+has_country_flag = nuke_action_tzl5
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		PRC = {   has_country_flag = boxilaishangtai     }
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+set_country_flag = nuke_action_tzl6
+		
+		}
+	}
+                TZL_left_power_xuanchuan11 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+has_country_flag = nuke_action_tzl4
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		PRC = {   has_country_flag = boxilaishangtai     }
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+set_country_flag = nuke_action_tzl5
+		
+		}
+	}
+                TZL_left_power_xuanchuan10 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+
+				custom_trigger_tooltip = {
+		tooltip = TZL_TWW_TZL_left_power_xuanchuan9_tooltip
+		NOT = { has_idea = CHI_bohe_wangluogongji1_idea }
+		NOT = { has_idea = CHI_bohe_wangluogongji2_idea }
+		NOT = { has_idea = CHI_bohe_wangluogongji3_idea }
+		NOT = { has_idea = CHI_bohe_wangluogongji4_idea }
+		NOT = { has_idea = CHI_bohe_wangluogongji5_idea }
+	}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		PRC = {   has_country_flag = boxilaishangtai     }
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+set_country_flag = nuke_action_tzl4
+		
+		}
+	}
+                TZL_left_power_xuanchuan9 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = { has_country_flag = nuke_action_tzl3 }
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 28
+		visible = {
+			tag = TZL
+		OR = {
+		has_idea = CHI_bohe_wangluogongji1_idea
+		has_idea = CHI_bohe_wangluogongji2_idea
+		has_idea = CHI_bohe_wangluogongji3_idea
+		has_idea = CHI_bohe_wangluogongji4_idea
+		has_idea = CHI_bohe_wangluogongji5_idea
+		}
+
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl3
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl3
+		bohe_wangluogongji_idea_remove = yes
+		}
+	}
+
+                TZL_WJLX_FKJZH = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_decision_generic_make_nukes
+		available = {
+NOT = { has_country_flag = nuke_action_tzl }
+		}
+		state_target = yes
+		on_map_mode = map_only
+		cost = 0
+		fire_only_once = no
+		days_remove = 14
+		visible = {
+			has_tech = nukes
+
+PRC = {NOT = {has_country_flag = boxilaishangtai}}
+			tag = TZL
+			FROM.CONTROLLER = {
+				has_war_with = TZL
+			}
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl
+                                                           
+launch_nuke = {
+    state = FROM
+    use_nuke = yes
+}	
+		}
+	}
+
+
+
+
+
+
+
+
+
+	}
+
+TZL_balance_of_left_power_category = {
+
+                TZL_left_power_xuanchuan4 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_JJFZ_DT1
+		available = {
+NOT = {has_country_flag = nuke_action_tzl1}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl1
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl1
+		add_power_balance_value = {
+			id = TZL_left_power_balance
+			value = 0.05
+		}
+
+			transfer_state = 876	
+		}
+	}
+
+                TZL_left_power_xuanchuan5 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_JJFZ_DT1
+		available = {
+NOT = {has_country_flag = nuke_action_tzl1}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl1
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl1
+		add_power_balance_value = {
+			id = TZL_left_power_balance
+			value = 0.05
+		}
+random_owned_controlled_state = {
+							add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+								}}
+random_owned_controlled_state = {
+
+							add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+								}
+								}
+		}
+	}
+                TZL_left_power_xuanchuan2 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_JJFZ_DT1
+		available = {
+NOT = {has_country_flag = nuke_action_tzl1}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl1
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl1
+		add_power_balance_value = {
+			id = TZL_left_power_balance
+			value = 0.05
+		}
+random_owned_controlled_state = {
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}}
+random_owned_controlled_state = {
+
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+								}
+		}
+	}
+
+
+                TZL_left_power_xuanchuan1 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = {has_country_flag = nuke_action_tzl1}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl1
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl1
+		add_power_balance_value = {
+			id = TZL_left_power_balance
+			value = -0.05
+		}
+army_experience = 10
+		}
+	}
+
+
+
+                TZL_left_power_xuanchuan3 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_TZL_WJLX_DT1
+		available = {
+NOT = {has_country_flag = nuke_action_tzl1}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 28
+		visible = {
+			tag = TZL
+	
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl1
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl1
+		add_power_balance_value = {
+			id = TZL_left_power_balance
+			value = -0.05
+		}
+		custom_effect_tooltip = CHI_TZL_TZL_left_power_xuanchuan3_tooltip
+	    hidden_effect = {
+load_oob = TZL_marines_4
+
+		}
+		}
+	}
+
+
+
+
+
+
+	}
+	}

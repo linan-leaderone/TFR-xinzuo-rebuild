@@ -1,3 +1,6 @@
+
+
+
 red_noble_idea_add = {
 
 if = {
@@ -54,6 +57,54 @@ if = {
 
 }
 
+}
+
+bohe_wangluogongji_idea_remove = {
+
+if = {
+    limit = {
+        has_idea = CHI_bohe_wangluogongji5_idea
+    }
+        remove_ideas = CHI_bohe_wangluogongji5_idea
+
+}
+if = {
+    limit = {
+        has_idea = CHI_bohe_wangluogongji4_idea
+    }
+    swap_ideas = {
+        remove_idea = CHI_bohe_wangluogongji4_idea
+        add_idea = CHI_bohe_wangluogongji5_idea
+    }
+}
+if = {
+    limit = {
+        has_idea = CHI_bohe_wangluogongji3_idea
+    }
+    swap_ideas = {
+        remove_idea = CHI_bohe_wangluogongji3_idea
+        add_idea = CHI_bohe_wangluogongji4_idea
+    }
+}
+if = {
+    limit = {
+        has_idea = CHI_bohe_wangluogongji2_idea
+    }
+    swap_ideas = {
+        remove_idea = CHI_bohe_wangluogongji2_idea
+        add_idea = CHI_bohe_wangluogongji3_idea
+    }
+}
+
+if = {
+    limit = {
+        has_idea = CHI_bohe_wangluogongji1_idea
+    }
+    swap_ideas = {
+        remove_idea = CHI_bohe_wangluogongji1_idea
+        add_idea = CHI_bohe_wangluogongji2_idea
+    }
+}
 }
 
 red_noble_idea_remove = {

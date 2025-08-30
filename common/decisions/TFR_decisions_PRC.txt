@@ -14513,7 +14513,48 @@ GER = {
 		ai_will_do = {
 			base = 100
 		}
-	}							
+	}		
+
+                TZL_WJLX_FKJZH1234 = {
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_decision_generic_make_nukes
+		available = {
+NOT = { has_country_flag = nuke_action_tzl }
+		}
+		state_target = yes
+		on_map_mode = map_only
+		cost = 0
+		fire_only_once = no
+		days_remove = 5
+		visible = {
+		TZL = { is_in_faction_with = TSU }
+		TRG = { is_in_faction_with = TSU }
+			tag = PRC
+				FROM = {NOT = { has_dynamic_modifier = {
+					modifier = fallout_thermonuclear
+				}}}
+			FROM.CONTROLLER = {
+				has_war_with = PRC
+			}
+		}
+
+		complete_effect = {
+set_country_flag = nuke_action_tzl
+                                                     
+		}
+
+		remove_effect = {
+clr_country_flag = nuke_action_tzl
+                                                           
+launch_nuke = {
+    state = FROM
+    use_nuke = yes
+}	
+		}
+	}
+					
 	PRC_military_intervention_zap_2 = {
 		icon = GFX_PRC_new_left_decision
 		

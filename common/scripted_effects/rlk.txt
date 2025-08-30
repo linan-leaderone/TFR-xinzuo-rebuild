@@ -1,5 +1,9 @@
 
 
+CHI_UZEDONG_SHANGTAI_1999 = {
+	
+set_technology = {nukes = 1}
+				}
 CHI_UZEDONG_SHANGTAI_15 = {
 
 CHF = {
@@ -221,19 +225,7 @@ SHA = {
 	set_party_name = { ideology = totalitarian_socialist long_name = SHA_PPPCCC_party2 name = SHA_PPPCCC_party2 }
 	set_party_name = { ideology = communist long_name = SHA_PPPCCC_party3 name = SHA_PPPCCC_party3 }
 	set_party_name = { ideology =social_democrat long_name = SHA_PPPCCC_party4 name = SHA_PPPCCC_party4 }
- 			add_popularity = {
- 				ideology = communist
- 				popularity = 0.4
- 			}
- 			add_popularity = {
- 				ideology = social_democrat
- 				popularity = 0.2
- 			}
- 				set_politics = {
- 				ruling_party = communist
- 				election_frequency = 60
- 				elections_allowed = no
- 				}
+
 	
 set_cosmetic_tag = PRC_AM
 

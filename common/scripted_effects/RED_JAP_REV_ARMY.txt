@@ -41,6 +41,13 @@ set_technology = {nukes = 1}
 				}
 			add_to_tech_sharing_group = TJZ_research
 				}
+			if = {
+				limit = {
+					TZL = {has_idea = CHI_bohe_wangluogongji8_idea}
+				}
+			 add_ideas = CHI_bohe_wangluogongji8_idea     
+				}
+
 
 
 

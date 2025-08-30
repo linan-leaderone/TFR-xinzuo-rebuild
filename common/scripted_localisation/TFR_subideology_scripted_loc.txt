@@ -1934,6 +1934,12 @@ defined_text = {
 
 	text = {
 		trigger = {
+			has_country_leader_ideology = xjp_thought
+		}
+		localization_key = xjp_thought
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Geometridaeism1
 		}
 		localization_key = Geometridaeism1
@@ -2200,12 +2206,6 @@ defined_text = {
 			has_country_leader_ideology = taiwan_fuchou
 		}
 		localization_key = taiwan_fuchou
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = xjp_thought
-		}
-		localization_key = xjp_thought
 	}
 
 	text = {

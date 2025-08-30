@@ -1656,15 +1656,35 @@ country_event = {
 	}
 }
 
-country_event = {
+news_event = {
 	id = PRC_MAO4.47
 	title = PRC_MAO4.47.t
 	desc = PRC_MAO4.47.d
 	picture = GFX_PRC_MAO4_event_47
-	is_triggered_only = yes
+	is_triggered_only = no
 	fire_only_once = no
+	major = yes
+	trigger = {
+		TZL = { is_in_faction_with = TSU }
+country_exists = MIA
+country_exists = MON
+country_exists = NLM
+country_exists = SHA
+country_exists = CHF
+country_exists = TIB
+	}
 	option = {
 		name = PRC_MAO4.47.a
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = santifa2_flag	
+				scoped_sound_effect = tlibwar
+				scoped_play_song = "one_minute_of_silence"
+	}
+	}
 	}
 }
 
@@ -1674,7 +1694,7 @@ country_event = {
 	desc = PRC_MAO4.48.d
 	picture = GFX_PRC_MAO4_event_48
 	is_triggered_only = yes
-	fire_only_once = no
+	fire_only_once = yes
 	option = {
 		name = PRC_MAO4.48.a
 	}

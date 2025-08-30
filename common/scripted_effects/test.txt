@@ -512,6 +512,7 @@ remove_ideas = red_noble_idea_2
 remove_ideas = red_noble_idea_3
 remove_ideas = red_noble_idea_4
 remove_ideas = red_noble_idea_5
+set_country_flag = boxilaishangtai
  		promote_character = {
  			character = PRC_bo_xilai
  			ideology = jucheism

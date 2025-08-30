@@ -835,6 +835,15 @@ ideologies = {
 	nationalist = {
 		types = {
 
+			xjp_thought= {
+				can_be_randomly_selected = no
+				color = {
+					139
+					71
+					38
+				}
+
+			}
 			Geometridaeism1 = {
 				can_be_randomly_selected = no
 				color = {
@@ -961,15 +970,6 @@ ideologies = {
 	fascist = {
 		types = {
 			taiwan_fuchou= {
-				can_be_randomly_selected = no
-				color = {
-					139
-					71
-					38
-				}
-
-			}
-			xjp_thought= {
 				can_be_randomly_selected = no
 				color = {
 					139

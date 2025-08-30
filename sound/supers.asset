@@ -88,7 +88,7 @@ sound = {
 sound = {
 	name = "tlibwar"
 	file = "menu/tlibwar.wav"
-	volume = 1
+	volume = 2
 	always_load = yes
 }
 sound = {

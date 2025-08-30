@@ -172,6 +172,84 @@ declare_war_on = {
 
 			if = { 
 				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 605
+
+						} 
+					}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.51
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.51
+			}
+					}
+
+
+
+}
+			if = { 
+				limit = {
+					FROM.FROM = { 
+						OR = {
+							state = 1189
+
+						} 
+					}
+						FROM = {
+							OR = {
+								original_tag = PRC
+								is_ally_with = PRC
+							}
+}
+
+						ROOT = {
+							OR = {
+								original_tag = TSU
+								is_ally_with = TSU
+							}
+}
+}
+
+
+
+					TSU = {
+			country_event = {
+				id = PRC_MAO4.50
+			}
+					}
+					TZL = {
+			country_event = {
+				id = PRC_MAO4.50
+			}
+					}
+
+
+
+}
+			if = { 
+				limit = {
 	NOT = { country_exists = SHF }
 					FROM.FROM = { 
 						OR = {

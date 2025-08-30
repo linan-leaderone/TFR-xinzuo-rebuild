@@ -402,6 +402,22 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_CHI_HDB_hog"
 		texturefile = "gfx/MAOYUANXIN/CHI_HDB_xiao.png"
+	}					
+	SpriteType = {
+		name = "GFX_idea_CHI_bohe_wangluogongji8_idea"
+		texturefile = "gfx/MAOYUANXIN/APA_international_volunteers.png"
+	}						
+	SpriteType = {
+		name = "GFX_idea_CHI_bohe_wangluogongji7_idea"
+		texturefile = "gfx/MAOYUANXIN/PRC_expanding_supercomuter_stations_idea.png"
+	}							
+	SpriteType = {
+		name = "GFX_idea_CHI_bohe_wangluogongji6_idea"
+		texturefile = "gfx/MAOYUANXIN/PRC_unrestricted_aerial_bombardment_idea.png"
+	}						
+	SpriteType = {
+		name = "GFX_idea_CHI_bohe_wangluogongji_idea"
+		texturefile = "gfx/MAOYUANXIN/bohe_wangluogongji.png"
 	}				
 	SpriteType = {
 		name = "GFX_idea_generic_wushenlun_idea"

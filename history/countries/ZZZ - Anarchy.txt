@@ -290,7 +290,19 @@ PRC = {set_nationality = {
 		}
 		}
 	PRC = {
-
+  
+		add_country_leader_role = {
+			character = PRC_xi_jinping
+			promote_leader = yes
+			country_leader = {
+				ideology = xjp_thought
+			desc = PRC_XI_JINPING_DESC
+				expire = "1.1.1.1"
+				traits = {
+hos_red_dragon_rider
+				}
+			}
+		}
 				country_event = {
 					id = PRC_MAO2.35
 					days = 46
@@ -316,16 +328,16 @@ add_ideas = PRC_yangyongxin_idea
 add_ideas = PRC_xuefawenti_idea
 add_ideas = PRC_Chinese_Exam_Oriented_Education
 add_ideas = red_noble_idea_1
-	add_research_slot = 1
+	add_research_slot = 2
 	set_politics = {
-		ruling_party = fascist
+		ruling_party = nationalist
 		last_election = "2018.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
 	set_popularities = {
-		fascist = 60
+		nationalist = 60
 		social_democrat = 5
 		social_liberal = 5
 		market_liberal = 3
@@ -347,7 +359,7 @@ add_ideas = red_noble_idea_1
 				long_name = PRC_status_banned
 				name = PRC_status_banned
 			}
-set_party_name = { ideology = fascist long_name = PRC_communist11122_party_long name = PRC_communist11122_party }
+set_party_name = { ideology = nationalist long_name = PRC_communist11122_party_long name = PRC_communist11122_party }
 set_party_name = { ideology = authoritarian_democrat long_name = PRC_communist11133_party_long name = PRC_communist11133_party }
 set_party_name = { ideology = national_socialist long_name = PRC_communist11144_party_long name = PRC_communist11144_party }
 
