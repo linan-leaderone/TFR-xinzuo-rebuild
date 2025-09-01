@@ -11,6 +11,8 @@ ideologies = {
 			}
 			maoism = {
 			}
+			MIAA_maoism = {
+			}
 			jacobinism = {
 				can_be_randomly_selected = no
 				color = {

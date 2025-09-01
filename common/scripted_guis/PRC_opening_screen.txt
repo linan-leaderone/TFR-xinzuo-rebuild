@@ -1,5 +1,160 @@
 scripted_gui = {
 
+	PRC_END_XINZUORE_TZL_2 = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TFR_TZL_ENDWID"
+
+		visible = {
+			has_country_flag = PRC_TFR_TZL_ENDWID
+		}
+
+		effects = {
+			TFR_tzl_end_button_click = {
+				add_to_variable = { PRC_PAGE = 1 }
+				if = { 
+					
+				limit = {
+				check_variable = { PRC_PAGE = 12 }
+			}
+
+				clr_country_flag = PRC_TFR_TZL_ENDWID
+			}
+			}
+
+		}
+
+		triggers = {
+			TFR_tzl_end_1_visible = {
+				check_variable = { PRC_PAGE = 0 }
+			}
+			TFR_tzl_end_2_visible = {
+				check_variable = { PRC_PAGE = 1 }
+			}
+			TFR_tzl_end_3_visible = {
+				check_variable = { PRC_PAGE = 2 }
+			}
+			TFR_tzl_end_4_visible = {
+				check_variable = { PRC_PAGE = 3 }
+			}
+			TFR_tzl_end_5_visible = {
+				check_variable = { PRC_PAGE = 4 }
+			}
+			TFR_tzl_end_6_visible = {
+				check_variable = { PRC_PAGE = 5 }
+			}
+			TFR_tzl_end_7_visible = {
+				check_variable = { PRC_PAGE = 6 }
+			}
+			TFR_tzl_end_81_visible = {
+				check_variable = { PRC_PAGE = 7 }
+				TZL = { has_country_flag = TZL_CN_teach }
+			}
+			TFR_tzl_end_82_visible = {
+				check_variable = { PRC_PAGE = 7 }
+				TZL = { has_country_flag = TZL_JP_teach }
+			}
+			TFR_tzl_end_83_visible = {
+				check_variable = { PRC_PAGE = 7 }
+				TZL = { has_country_flag = TZL_EN_teach }
+			}
+			TFR_tzl_end_84_visible = {
+				check_variable = { PRC_PAGE = 7 }
+				TZL = { has_country_flag = TZL_LM_teach }
+			}
+			TFR_tzl_end_91_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_cxx_flag }
+			}
+			TFR_tzl_end_92_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_wry_flag }
+			}
+			TFR_tzl_end_93_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_zcq_flag }
+			}
+			TFR_tzl_end_94_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_ybc_flag }
+			}
+			TFR_tzl_end_95_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_myx_flag }
+			}
+			TFR_tzl_end_96_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_zyf_flag }
+			}
+			TFR_tzl_end_97_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_yhp_flag }
+			}
+			TFR_tzl_end_98_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_lgx_flag }
+			}
+			TFR_tzl_end_99_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_dz_flag }
+			}
+			TFR_tzl_end_910_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_hdf_flag }
+			}
+			TFR_tzl_end_911_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_cjm_flag }
+			}
+			TFR_tzl_end_912_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_la_flag }
+			}
+			TFR_tzl_end_913_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_yzd_flag }
+			}
+			TFR_tzl_end_914_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_moka_flag }
+			}
+			TFR_tzl_end_915_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_lan_flag }
+			}
+			TFR_tzl_end_916_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_nina_flag }
+			}
+			TFR_tzl_end_917_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_xyzq_flag }
+			}
+			TFR_tzl_end_918_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_fz_flag }
+			}
+			TFR_tzl_end_919_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_changzheng_flag }
+			}
+			TFR_tzl_end_920_visible = {
+				check_variable = { PRC_PAGE = 8 }
+				TZL = { has_country_flag = asun_renda_flag }
+			}
+			TFR_tzl_end_10_visible = {
+				check_variable = { PRC_PAGE = 9 }
+			}
+			TFR_tzl_end_11_visible = {
+				check_variable = { PRC_PAGE = 10 }
+			}
+			TFR_tzl_end_12_visible = {
+				check_variable = { PRC_PAGE = 11 }
+			}
+		
+		}
+
+	}
 	PRC_END_XINZUORE_qinhui_2 = {
 		context_type = player_context
 		parent_window_token = top_bar

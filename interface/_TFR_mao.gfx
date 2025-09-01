@@ -59,13 +59,21 @@ spriteTypes = {
 		spriteType = {
 			name = "GFX_ideology_MST_jucheism"
 			texturefile = "gfx/interface/ideologies/totalism_PRC.png"
-		}						
+		}		
+		spriteType = {
+			name = "GFX_XUEYUANZHIQING"
+			texturefile = "gfx/MAOYUANXIN/HCLN.png"
+		}					
 		
 	
 	spriteType = {
 		name = "GFX_ideology_SHA_maoism"
 		texturefile = "gfx/MAOYUANXIN/marxism_lenin_maoism.png"
 	}	
+		spriteType = {
+			name = "GFX_ideology_MIAA_maoism"
+			texturefile = "gfx/MAOYUANXIN/zhouqun.png"
+		}			
 		spriteType = {
 			name = "GFX_ideology_MIA_maoism"
 			texturefile = "gfx/MAOYUANXIN/zhouqun.png"

@@ -2960,6 +2960,18 @@ SOV = {release = UFA}
 			    add_core_of = UFA
 		    }
 
+TZL = {
+								country_event = {
+									id = PRC_MAO4.84
+									days = 5
+								}
+		}
+TSU = {
+								country_event = {
+									id = PRC_MAO4.84
+									days = 5
+								}
+		}
 UFA = {
 
 set_cosmetic_tag = SOV_SovietUnion

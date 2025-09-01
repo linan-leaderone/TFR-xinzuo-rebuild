@@ -2528,6 +2528,68 @@ shared_focus = {
 	prerequisite = { focus = PRC_establish_eadi }
 	completion_reward = {
 	
+			hidden_effect = {
+				MND = {
+					
+			annex_country = {
+				target = WAT
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = KLA
+				transfer_troops = yes
+			}
+			set_cosmetic_tag = MND_unifier
+		every_state = {
+			limit = {
+				is_core_of = BRM
+			}
+			add_core_of = MND
+		}
+				}
+			}
+			add_to_faction = MND
+
+			MND = {
+		
+				set_country_flag = eadi_member
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = KNU
+						tag = CNF
+						tag = PDF
+						tag = SSA
+						tag = MOA
+						tag = BRM
+					}
+				}
+				MND = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+				PRC = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = BRM
+					}
+					remove_dynamic_modifier = { modifier = BRM_peoples_war }
+				}
+			}
+			news_event = {
+				id = china.233
+				hours = 7
+			}
 		
 	}
 }

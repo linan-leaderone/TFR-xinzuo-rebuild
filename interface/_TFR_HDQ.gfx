@@ -1,4 +1,192 @@
-spriteTypes = {
+spriteTypes = {						
+	SpriteType = {
+		name = "GFX_TZL_END_back"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_back.png"
+	}							
+	SpriteType = {
+		name = "GFX_TZL_END_back1"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_back1.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_back2"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_back2.png"
+	}							
+	SpriteType = {
+		name = "GFX_TZL_END_1"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_1.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_2"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_2.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_3"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_3.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_4"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_4.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_5"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_5.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_6"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_6.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_7"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_7.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_81"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_81.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_82"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_82.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_83"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_83.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_84"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_84.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_91"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_91.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_92"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_92.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_93"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_93.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_94"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_94.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_95"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_95.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_96"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_96.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_97"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_97.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_98"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_98.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_99"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_99.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_910"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_910.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_911"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_911.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_912"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_912.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_913"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_913.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_914"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_914.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_915"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_915.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_916"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_916.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_917"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_917.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_918"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_918.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_919"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_919.png"
+	}					
+	SpriteType = {
+		name = "GFX_TZL_END_920"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_920.png"
+	}						
+	SpriteType = {
+		name = "GFX_TZL_END_10"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_10.png"
+	}				
+	SpriteType = {
+		name = "GFX_TZL_END_11"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_11.png"
+	}		
+	SpriteType = {
+		name = "GFX_TZL_END_12"
+		texturefile = "gfx/MAOYUANXIN/tzl_end_12.png"
+	}	
+				frameAnimatedSpriteType = {
+			name = "GFX_santifa4_1_1"
+			texturefile = "gfx/MAOYUANXIN/santifa4_1_1.png"
+			noOfFrames = 50
+			animation_rate_fps = 24
+			looping = yes
+			play_on_show = yes  
+		}
+				frameAnimatedSpriteType = {
+			name = "GFX_santifa4_1_5"
+			texturefile = "gfx/MAOYUANXIN/santifa4_1_5.png"
+			noOfFrames = 50
+			animation_rate_fps = 24
+			looping = yes
+			play_on_show = yes  
+		}
+				frameAnimatedSpriteType = {
+			name = "GFX_santifa4_1_4"
+			texturefile = "gfx/MAOYUANXIN/santifa4_1_4.png"
+			noOfFrames = 50
+			animation_rate_fps = 24
+			looping = yes
+			play_on_show = yes  
+		}
+				frameAnimatedSpriteType = {
+			name = "GFX_santifa4_1_3"
+			texturefile = "gfx/MAOYUANXIN/santifa4_1_3.png"
+			noOfFrames = 50
+			animation_rate_fps = 24
+			looping = yes
+			play_on_show = yes  
+		}
+				frameAnimatedSpriteType = {
+			name = "GFX_santifa4_1_2"
+			texturefile = "gfx/MAOYUANXIN/santifa4_1_2.png"
+			noOfFrames = 50
+			animation_rate_fps = 24
+			looping = yes
+			play_on_show = yes  
+		}
 			frameAnimatedSpriteType = {
 			name = "GFX_Portrait_PRC_The_Long_March1"
 			texturefile = "gfx/MAOYUANXIN/zheng_chang1.dds"

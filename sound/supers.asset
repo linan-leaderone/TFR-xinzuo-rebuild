@@ -12,6 +12,12 @@ sound = {
 }
 
 sound = {
+	name = "santifa4"
+	file = "menu/santifa4.wav"
+	volume = 2
+	always_load = yes
+}
+sound = {
 	name = "santifa3"
 	file = "menu/santifa3.wav"
 	volume = 2.5

@@ -171,16 +171,16 @@ set_party_name = { ideology = fascist long_name = MND1_party_long name =MND1_par
 set_party_name = { ideology = authoritarian_democrat long_name = MND1_party_long name = MND1_party_long }
 set_party_name = { ideology = nationalist long_name = MND1_party_long name = MND1_party_long }
 	set_politics = {
-		ruling_party = fascist
+		ruling_party = nationalist
 		last_election = "2018.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
 	set_popularities = {
-		fascist = 50
+		nationalist = 50
 		authoritarian_democrat = 30
-		nationalist = 20
+		fascist = 20
 	}
 		add_country_leader_role = {
 			character = MND_peng_daxun
@@ -199,16 +199,16 @@ set_party_name = { ideology = nationalist long_name = MND1_party_long name = MND
 
 set_party_name = { ideology = fascist long_name = WAT1_party_long name = WAT1_party_long }
 	set_politics = {
-		ruling_party = fascist
+		ruling_party = nationalist
 		last_election = "2018.1.1"
 		election_frequency = 48
 		elections_allowed = no
 	}
 
 	set_popularities = {
-		fascist = 50
+		fascist = 20
 		authoritarian_democrat = 30
-		nationalist = 20
+		nationalist = 50
 	}
 		add_country_leader_role = {
 			character = WAT_bao_youxiang

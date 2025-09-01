@@ -1,0 +1,266 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_TZL_ENDWID"
+		position = { x=0 y=0 }	
+		size = { width=100%% height=100%% }
+
+		iconType = {
+			name = "TZL_END_back"
+			quadTextureSprite = "GFX_TZL_END_back"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "santifa4_1_1"
+			quadTextureSprite = "GFX_santifa4_1_1"
+			position = { x=-930 y=-522}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "santifa4_1_2"
+			quadTextureSprite = "GFX_santifa4_1_2"
+			position = { x=-632 y=-520}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "santifa4_1_3"
+			quadTextureSprite = "GFX_santifa4_1_3"
+			position = { x=-335 y=-522}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "santifa4_1_4"
+			quadTextureSprite = "GFX_santifa4_1_4"
+			position = { x=-37 y=-522}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "santifa4_1_5"
+			quadTextureSprite = "GFX_santifa4_1_5"
+			position = { x=261 y=-522}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TZL_END_back1"
+			quadTextureSprite = "GFX_TZL_END_back1"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TZL_END_back2"
+			quadTextureSprite = "GFX_TZL_END_back2"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_1"
+			quadTextureSprite = "GFX_TZL_END_1"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_2"
+			quadTextureSprite = "GFX_TZL_END_2"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_3"
+			quadTextureSprite = "GFX_TZL_END_3"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_4"
+			quadTextureSprite = "GFX_TZL_END_4"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_5"
+			quadTextureSprite = "GFX_TZL_END_5"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_6"
+			quadTextureSprite = "GFX_TZL_END_6"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_7"
+			quadTextureSprite = "GFX_TZL_END_7"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_81"
+			quadTextureSprite = "GFX_TZL_END_81"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_82"
+			quadTextureSprite = "GFX_TZL_END_82"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_83"
+			quadTextureSprite = "GFX_TZL_END_83"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_84"
+			quadTextureSprite = "GFX_TZL_END_84"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_91"
+			quadTextureSprite = "GFX_TZL_END_91"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_92"
+			quadTextureSprite = "GFX_TZL_END_92"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_93"
+			quadTextureSprite = "GFX_TZL_END_93"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_94"
+			quadTextureSprite = "GFX_TZL_END_94"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_95"
+			quadTextureSprite = "GFX_TZL_END_95"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_96"
+			quadTextureSprite = "GFX_TZL_END_96"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_97"
+			quadTextureSprite = "GFX_TZL_END_97"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_98"
+			quadTextureSprite = "GFX_TZL_END_98"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_99"
+			quadTextureSprite = "GFX_TZL_END_99"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_910"
+			quadTextureSprite = "GFX_TZL_END_910"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_911"
+			quadTextureSprite = "GFX_TZL_END_911"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_912"
+			quadTextureSprite = "GFX_TZL_END_912"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_913"
+			quadTextureSprite = "GFX_TZL_END_913"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_914"
+			quadTextureSprite = "GFX_TZL_END_914"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_915"
+			quadTextureSprite = "GFX_TZL_END_915"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_916"
+			quadTextureSprite = "GFX_TZL_END_916"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_917"
+			quadTextureSprite = "GFX_TZL_END_917"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_918"
+			quadTextureSprite = "GFX_TZL_END_918"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_919"
+			quadTextureSprite = "GFX_TZL_END_919"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_920"
+			quadTextureSprite = "GFX_TZL_END_920"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_10"
+			quadTextureSprite = "GFX_TZL_END_10"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_11"
+			quadTextureSprite = "GFX_TZL_END_11"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		iconType = {
+			name = "TFR_tzl_end_12"
+			quadTextureSprite = "GFX_TZL_END_12"
+			position = { x=-960 y=-540}
+			Orientation = "CENTER"
+		} 
+		buttonType = {
+			name = "TFR_tzl_end_button"
+			spriteType = "GFX_left_end_button"
+			position = { x=707 y=-35}
+			Orientation = "CENTER"
+		}
+		}
+		}

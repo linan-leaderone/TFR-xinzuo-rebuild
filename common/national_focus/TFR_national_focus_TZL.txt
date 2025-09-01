@@ -1877,7 +1877,10 @@ transfer_navy = {
 		completion_reward = {
 			
 				add_ideas = PRC_neomaoism111111_idea
+							    hidden_effect = {
+					country_event = { id = PRC_MAO4.83 days = 1 }
 		}
+			}
 	} 
    focus = {
 		id = TZL_TWW_FOCUS_72
@@ -3461,6 +3464,7 @@ check_variable = {
 
 		
 		available = {
+			has_country_flag = TZL_TZL_JJFZ_nuke_3
 		}
 		completion_reward = {
 			unlock_decision_tooltip = TZL_JJFZ_nuke4
