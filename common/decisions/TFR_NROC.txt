@@ -552,7 +552,7 @@ nihong_neizhan_11451919 = yes
 					}
 
 				declare_war_on = { 
-					target = EG
+					target = EGY
 					type = annex_everything 
 				}
 					}

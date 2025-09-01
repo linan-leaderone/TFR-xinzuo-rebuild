@@ -10513,9 +10513,17 @@ ideas = {
 		}
 		PRC_ai_economic_core = {
 			picture = PRC_ai_core
-			allowed = { original_tag = PRC }
+			allowed = {
+			OR = {
+			has_country_flag = dyxysco
+				 original_tag = PRC 
+				 }
+				 }
 			visible = {
+			OR = {
+			has_country_flag = dyxysco
 				has_completed_focus = PRC_ai_assisted_governance
+			}
 			}
 			allowed_to_remove = {
 				always = no
@@ -10773,12 +10781,20 @@ ideas = {
 		}	
 		PRC_ai_security_core = {
 			picture = PRC_ai_core
-			allowed = { original_tag = PRC }
+			allowed = {
+			OR = {
+			has_country_flag = dyxysco
+				 original_tag = PRC 
+				 }
+				 }
 			allowed_to_remove = {
 				always = no
 			}
 			visible = {
+			OR = {
+			has_country_flag = dyxysco
 				has_completed_focus = PRC_anti_corruption_technology
+				 }
 			}
 			traits = {
 				sec_ai_anti_corruption

@@ -18,6 +18,10 @@ spriteTypes = {
 		}		
 						
 	SpriteType = {
+		name = "GFX_santifa3"
+		texturefile = "gfx/MAOYUANXIN/super_santifa3.png"
+	}				
+	SpriteType = {
 		name = "GFX_PRC_bohetang1"
 		texturefile = "gfx/MAOYUANXIN/bohe.png"
 
@@ -662,9 +666,22 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/twfczy.png"
 	}					
 	spriteType = {
+		name = "GFX_ideology_langmaoism_1"
+		texturefile = "gfx/MAOYUANXIN/langmaoism.png"
+	}						
+	spriteType = {
+		name = "GFX_ideology_langmaoism_2"
+		texturefile = "gfx/MAOYUANXIN/langmaoism.png"
+	}			
+	spriteType = {
 		name = "GFX_ideology_market_socialism_4"
 		texturefile = "gfx/MAOYUANXIN/market_socialism_PRC_4.png"
 	}	
+	spriteType = {
+		name = "GFX_Ideology_langmaoism"
+		texturefile = "gfx/MAOYUANXIN/langmaoism_ban.png"
+		legacy_lazy_load = no
+	}		
 	spriteType = {
 		name = "GFX_Ideology_kasitekuoism"
 		texturefile = "gfx/MAOYUANXIN/GFX_Ideology_kasitekuoism.png"

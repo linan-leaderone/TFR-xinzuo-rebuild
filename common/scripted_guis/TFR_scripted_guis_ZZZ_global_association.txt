@@ -274,6 +274,10 @@ scripted_gui = {
 					has_completed_focus = PRC_niaolong_61
 				is_ally_with = PRC
 				is_ally_with = TSU
+				AND = {
+				is_ally_with = TRG	
+TRG = {has_government = libertarian_socialist}
+				}
 				}
 			}
 			TFR_no_faction_politics_icon_visible = {
@@ -289,6 +293,10 @@ scripted_gui = {
 			OR = {
 				is_ally_with = TSU
 				has_country_flag = RTY_member
+				AND = {
+				is_ally_with = TRG	
+TRG = {has_government = libertarian_socialist}
+				}
 		}
 			}
 			TFR_pdto_politics_icon_visible = {
@@ -392,6 +400,10 @@ PRC = {has_completed_focus = PRC_the_red_phoenix}
 			OR = {
 				is_ally_with = TSU
 				has_country_flag = RTY_member
+				AND = {
+				is_ally_with = TRG	
+TRG = {has_government = libertarian_socialist}
+				}
 		}
 			}
 			TFR_eadi_diplo_icon_visible = {

@@ -80,6 +80,7 @@ second_nato_war_decisions = {
 			country_event = {
 				id = PRC_MAO4.52
 			}
+			country_event = { id = PRC_MAO4.54 days = 1 }
 					}
 NLM = {
 					PRC_UZEDONG_SHANGTAI_1147 =  yes

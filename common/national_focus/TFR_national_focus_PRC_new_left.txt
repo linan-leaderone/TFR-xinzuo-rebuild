@@ -6365,6 +6365,10 @@ has_country_flag = roc_lxmzd
 			factor = 100
 		}
 		available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
@@ -6375,6 +6379,7 @@ has_country_flag = roc_lxmzd
     id = PRC_maoism_power_balance
     value < -0.4
 }
+		}
 		}
 		completion_reward = {
 			
@@ -6495,9 +6500,14 @@ has_country_flag = roc_lxmzd
 			factor = 100
 		}
 		available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
+		}
 		}
 		}
 		completion_reward = {
@@ -6538,9 +6548,14 @@ has_country_flag = roc_lxmzd
 			factor = 100
 		}
 		available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 						PRC_renda = {is_country_leader = yes}
 			has_completed_focus = PRC_the_Flower_of_Freedom_1
+		}
 		}
 		}
 		completion_reward = {
@@ -7306,12 +7321,17 @@ create_navy_leader = {
 		}
 		available = {
 
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
+		}
 		}
 		completion_reward = {
 			effect_tooltip = {
@@ -7450,6 +7470,10 @@ create_navy_leader = {
 		}
 		available = {
 		
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
@@ -7457,6 +7481,7 @@ create_navy_leader = {
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
+			}
 		completion_reward = {
 			custom_effect_tooltip = PRC_communist_vanguard_restored_tt_1
 			effect_tooltip = {
@@ -8877,7 +8902,12 @@ PRC = {annex_country = {
 			factor = 15
 		}
 		available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 						PRC_bo_xilai = {is_country_leader = yes}
+		}
 		}
 		completion_reward = {
 				every_country = { 
@@ -9135,7 +9165,12 @@ PRC = {annex_country = {
 			factor = 15
 		}
 		available = {
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 						PRC_long_march = {is_country_leader = yes}
+		}
 		}
 		completion_reward = {
 
@@ -12213,6 +12248,10 @@ custom_effect_tooltip = AI_JINDU_50
 			factor = 25
 		}
 		available = {
+				  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 	has_war = no
 			has_completed_focus = PRC_revive_peoples_war_mindset_4
 		OR = {
@@ -12228,6 +12267,7 @@ custom_effect_tooltip = AI_JINDU_50
     id = PRC_maoism_power_balance
     value < -0.4
 }
+		}
 		}
 		completion_reward = {
 				
@@ -12364,6 +12404,10 @@ custom_effect_tooltip = AI_JINDU_50
 			factor = 25
 		}
 		available = {
+				  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
@@ -12374,6 +12418,7 @@ custom_effect_tooltip = AI_JINDU_50
     id = PRC_maoism_power_balance
     value < -0.4
 }
+		}
 		}
 		completion_reward = {
 			hidden_effect = {
@@ -12701,12 +12746,17 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		}
 		available = {
 	
+				  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
+		}
 		}
 		completion_reward = {
 			PRC_decrease_corrupt_bureaucracy = yes
@@ -12771,13 +12821,18 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 50
 		}
 		available = {
-
-					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
+	  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
+	NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
+				
+		}
 		}
 		completion_reward = {
 		add_power_balance_value = {
@@ -12838,12 +12893,17 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 		}
 		available = {
 		
+				  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
+		}
 		}
 		completion_reward = {
 		add_power_balance_value = {
@@ -12872,6 +12932,11 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 35
 		}
 		available = {
+			
+				  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
@@ -12879,6 +12944,7 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
+			}
 		completion_reward = {
 			PRC_decrease_corrupt_bureaucracy = yes
 			effect_tooltip = {
@@ -12957,6 +13023,10 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 35
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_19
 		and = {
@@ -12969,6 +13039,8 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 		}
+		}
+		
 		}
 		}
 		completion_reward = {
@@ -13061,10 +13133,15 @@ remove_ideas = PRC_Chinese_Exam_Oriented_Education
 			factor = 35
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
 						PRC_han_dongfang = {is_country_leader = yes}
+		}
 		}
 		}
 		completion_reward = {
@@ -15397,9 +15474,14 @@ remove_ideas = militia_looting
 			focus = PRC_niaolong_5
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 			has_completed_focus = PRC_niaolong_3
+		}
 		}
 		completion_reward = {
 			
@@ -15453,6 +15535,10 @@ remove_ideas = militia_looting
 			focus = PRC_niaolong_4
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
@@ -15460,6 +15546,7 @@ remove_ideas = militia_looting
 					NOT = {	PRC_hu_chunhua = {is_country_leader = yes}}
 					NOT = {	PRC_yao_xinzhong = {is_country_leader = yes}}
 			has_completed_focus = PRC_niaolong_3
+		}
 		}
 		completion_reward = {
 			
@@ -16423,6 +16510,10 @@ remove_ideas = militia_looting
 			factor = 50
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {	PRC_han_dongfang = {is_country_leader = yes}}
 					NOT = {	PRC_qin_hui = {is_country_leader = yes}}
 					NOT = {	PRC_ren_chonghao = {is_country_leader = yes}}
@@ -16430,6 +16521,7 @@ remove_ideas = militia_looting
 					NOT = {	PRC_zhang_hongliang = {is_country_leader = yes}}
 					NOT = {	PRC_hu_chunhua = {is_country_leader = yes}}
 		  
+		}
 		}
 		completion_reward = {
 			
@@ -16553,9 +16645,14 @@ remove_ideas = militia_looting
 		}
 		available = {
 		  
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					NOT = {PRC_han_deqiang = {is_country_leader = yes}}
 					NOT = {PRC_kong_qingdong = {is_country_leader = yes}}
 		}
+				}
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
@@ -16935,6 +17032,10 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 	has_war = no
 		OR = {
 						PRC_bo_xilai = {is_country_leader = yes}
@@ -16945,6 +17046,7 @@ has_country_leader = {
 						PRC_qin_hui = {is_country_leader = yes}
 						PRC_yao_xinzhong = {is_country_leader = yes}
 						PRC_kong_qingdong = {is_country_leader = yes}
+		}
 		}
 		}
 		completion_reward = {
@@ -17011,6 +17113,10 @@ has_country_leader = {
 			factor = 50
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 	has_war = no
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
@@ -17021,6 +17127,7 @@ has_country_leader = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_3
 		}
 		  
+		}
 		}
 		completion_reward = {
 			red_noble_idea_xueruo = yes
@@ -17707,6 +17814,10 @@ has_country_leader = {
 			factor = 45
 		}
 		available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 					if = {
 						limit = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_4
@@ -17725,6 +17836,7 @@ has_country_leader = {
 			has_completed_focus = PRC_the_Flower_of_Freedom_3
 		}
 		  
+		}
 		}
 		}
 		completion_reward = {	

@@ -13,6 +13,10 @@ spriteTypes = {
 		textureFile = "gfx/MAOYUANXIN/CHI_zylm_army.png"
 	}
 	spriteType = {
+		name = "GFX_HDQ112"
+		textureFile = "gfx/MAOYUANXIN/PRC_han_deqiang.png"
+	}
+	spriteType = {
 		name = "GFX_HDQ2"
 		textureFile = "gfx/MAOYUANXIN/PRC_han_deqiang.png"
 	}

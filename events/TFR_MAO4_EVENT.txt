@@ -1746,18 +1746,39 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.52.a
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+								country_event = {
+									id = PRC_MAO4.53
+								}
+	}
+	}
 	}
 }
 
-country_event = {
+news_event = {
 	id = PRC_MAO4.53
 	title = PRC_MAO4.53.t
 	desc = PRC_MAO4.53.d
 	picture = GFX_PRC_MAO4_event_53
 	is_triggered_only = yes
 	fire_only_once = no
+	major = yes
 	option = {
 		name = PRC_MAO4.53.a
+			hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = santifa3_flag	
+				scoped_sound_effect = santifa3
+				scoped_play_song = "one_minute_of_silence"
+	}
+	}
 	}
 }
 
@@ -1769,7 +1790,203 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = no
 	option = {
+		name = PRC_MAO4.54.c
+	trigger = {
+					is_ai = yes
+	}
+	}
+	option = {
+		name = PRC_MAO4.54.b
+	trigger = {
+					is_ai = no
+check_variable = {
+    var = CHI_hongdupai
+    value = 0
+    compare = greater_than_or_equals
+}
+	}
+			NLM = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+
+			HKN = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			hidden_effect = {
+								country_event = {
+									id = PRC_MAO4.56
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.58
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.70
+									days = 5
+								}
+								country_event = {
+									id = PRC_MAO4.81
+									days = 7
+								}
+				
+	}
+	}
+	option = {
 		name = PRC_MAO4.54.a
+	trigger = {
+					is_ai = no
+	}
+			hidden_effect = {
+								country_event = {
+									id = PRC_MAO4.56
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.57
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.58
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.59
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.60
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.61
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.62
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.63
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.64
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.65
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.66
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.67
+									days = 1
+								}
+								country_event = {
+									id = PRC_MAO4.68
+									days = 5
+								}
+								country_event = {
+									id = PRC_MAO4.69
+									days = 10
+								}
+								country_event = {
+									id = PRC_MAO4.70
+									days = 15
+								}
+								country_event = {
+									id = PRC_MAO4.71
+									days = 20
+								}
+								country_event = {
+									id = PRC_MAO4.72
+									days = 25
+								}
+								country_event = {
+									id = PRC_MAO4.73
+									days = 30
+								}
+								country_event = {
+									id = PRC_MAO4.74
+									days = 35
+								}
+								country_event = {
+									id = PRC_MAO4.75
+									days = 40
+								}
+								country_event = {
+									id = PRC_MAO4.76
+									days = 45
+								}
+								country_event = {
+									id = PRC_MAO4.77
+									days = 50
+								}
+
+	}
+			NLM = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			HKN = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			TSU = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			MKL = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			NPA = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			TJJ = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			NAX = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			SRL = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			VIN = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			SIA = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
+			BRM = {
+								country_event = {
+									id = PRC_MAO4.55
+								}
+	}
 	}
 }
 
@@ -1782,6 +1999,7 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.55.a
+
 	}
 }
 
@@ -1950,6 +2168,11 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.69.a
+				set_country_flag = asun_zhongyang_flag	
+	}
+	option = {
+		name = PRC_MAO4.69.b
+				set_country_flag = asun_difang_flag	
 	}
 }
 
@@ -1986,6 +2209,10 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.72.a
+				set_country_flag = asun_guojiawushenlun_flag	
+	}
+	option = {
+		name = PRC_MAO4.72.b
 	}
 }
 
@@ -1998,6 +2225,15 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.73.a
+	}
+	option = {
+		name = PRC_MAO4.73.b
+	}
+	option = {
+		name = PRC_MAO4.73.c
+	}
+	option = {
+		name = PRC_MAO4.73.e
 	}
 }
 
@@ -2022,6 +2258,43 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.75.a
+				set_country_flag = asun_608_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.b
+				set_country_flag = asun_1041_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.c
+				set_country_flag = asun_1332_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.e
+				set_country_flag = asun_336_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.f
+				set_country_flag = asun_1379_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.g
+				set_country_flag = asun_1215_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.h
+				set_country_flag = asun_1148_flag	
+
+	}
+	option = {
+		name = PRC_MAO4.75.i
+				set_country_flag = asun_601_flag	
+
 	}
 }
 
@@ -2034,6 +2307,35 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.76.a
+			hidden_effect = {
+								country_event = {
+									id = PRC_MAO4.78
+								}
+								}
+	}
+	option = {
+		name = PRC_MAO4.76.b
+			hidden_effect = {
+								country_event = {
+									id = PRC_MAO4.79
+								}
+								}
+	}
+	option = {
+		name = PRC_MAO4.76.c
+			hidden_effect = {
+								country_event = {
+									id = PRC_MAO4.80
+								}
+								}
+	}
+	option = {
+		name = PRC_MAO4.76.e
+				set_country_flag = asun_changzheng_flag	
+	}
+	option = {
+		name = PRC_MAO4.76.f
+				set_country_flag = asun_renda_flag	
 	}
 }
 
@@ -2046,7 +2348,51 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.77.a
+		
+			hidden_effect = {
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_lgx_flag	}
+				}
+HKN = {set_faction_leader = yes }   
+				HKN = { set_country_flag = dyxysco }
+				HKN = {TZL_ASIAN_UNION = yes}
+				HKN = { change_tag_from = TZL }
 	}
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_cjm_flag	}
+				}
+TRG = {set_faction_leader = yes }   
+				MIA = { set_country_flag = dyxysco }
+				MIA = {TZL_ASIAN_UNION = yes}
+				MIA = { change_tag_from = TZL }
+TRG = {add_to_faction = MIA}
+MIA = {set_faction_leader = yes }   
+	}
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_dz_flag	}
+				}
+TRG = {set_faction_leader = yes }   
+				TIB = { set_country_flag = dyxysco }
+				TIB = {TZL_ASIAN_UNION = yes}
+				TIB = { change_tag_from = TZL }
+TRG = {add_to_faction = TIB}
+TIB = {set_faction_leader = yes }   
+	}
+			if = {
+				limit = {
+					NOT = {TZL = {has_country_flag = asun_dz_flag	}}
+					NOT = {TZL = {has_country_flag = asun_cjm_flag	}}
+					NOT = {TZL = {has_country_flag = asun_lgx_flag	}}
+				}
+				TZL = { set_country_flag = dyxysco }
+TZL = {set_faction_leader = yes }   
+				TZL_ASIAN_UNION = yes
+	}
+	}
+}
 }
 
 country_event = {
@@ -2058,6 +2404,27 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.78.a
+				set_country_flag = asun_myx_flag	
+	}
+	option = {
+		name = PRC_MAO4.78.b
+				set_country_flag = asun_hdf_flag	
+	}
+	option = {
+		name = PRC_MAO4.78.c
+				set_country_flag = asun_cjm_flag	
+	}
+	option = {
+		name = PRC_MAO4.78.e
+				set_country_flag = asun_zyf_flag	
+	}
+	option = {
+		name = PRC_MAO4.78.f
+				set_country_flag = asun_yhp_flag	
+	}
+	option = {
+		name = PRC_MAO4.78.g
+				set_country_flag = asun_dz_flag	
 	}
 }
 
@@ -2070,6 +2437,23 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.79.a
+				set_country_flag = asun_cxx_flag	
+	}
+	option = {
+		name = PRC_MAO4.79.b
+				set_country_flag = asun_wry_flag	
+	}
+	option = {
+		name = PRC_MAO4.79.c
+				set_country_flag = asun_ybc_flag	
+	}
+	option = {
+		name = PRC_MAO4.79.e
+				set_country_flag = asun_zcq_flag	
+	}
+	option = {
+		name = PRC_MAO4.79.f
+				set_country_flag = asun_lgx_flag	
 	}
 }
 
@@ -2082,6 +2466,31 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.80.a
+				set_country_flag = asun_yzd_flag	
+	}
+	option = {
+		name = PRC_MAO4.80.b
+				set_country_flag = asun_moka_flag	
+	}
+	option = {
+		name = PRC_MAO4.80.c
+				set_country_flag = asun_lan_flag	
+	}
+	option = {
+		name = PRC_MAO4.80.e
+				set_country_flag = asun_xyzq_flag	
+	}
+	option = {
+		name = PRC_MAO4.80.f
+				set_country_flag = asun_fz_flag	
+	}
+	option = {
+		name = PRC_MAO4.80.g
+				set_country_flag = asun_nina_flag	
+	}
+	option = {
+		name = PRC_MAO4.80.i
+				set_country_flag = asun_la_flag	
 	}
 }
 
@@ -2094,6 +2503,738 @@ country_event = {
 	fire_only_once = no
 	option = {
 		name = PRC_MAO4.81.a
+			hidden_effect = {
+				TZL = { set_country_flag = dyxysco }
+			every_state = {
+				limit = {
+					is_core_of = NLM
+				}
+			    add_core_of = TZL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = HKN
+				}
+			    add_core_of = TZL
+		    }
+							add_ideas = PRC_ai_changzheng_core
+							add_ideas = PRC_ai_economic_core
+							add_ideas = PRC_yang_heping_hog
+							add_ideas = PRC_ai_security_core
+							add_ideas = PRC_ai_intelligence1_core
+							add_ideas = PRC_ai_security1_core
+				NLM = {transfer_units_fraction = {
+						target = TZL
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				HKN = {transfer_units_fraction = {
+						target = TZL
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = GFX_Portrait_PRC_The_Long_March1
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+
+} 
+							annex_country = {
+								target =NLM
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =HKN
+								transfer_troops = yes
+							}
+							
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		NLM = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_mao_yuanxin
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+
+		add_country_leader_role = {
+			character = PRC_mao_yuanxin
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_mao_yuanxin
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_capital = {
+					state = 608
+				}
+				set_cosmetic_tag = PRC_GHGLS
+set_country_flag = changzheng_start_end
+add_to_variable = { loji_manyidu_T = 100 }
+loji_manyidu_change = yes
+	set_party_name = { ideology = totalitarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = communist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = libertarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = social_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = social_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = market_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = conservative long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = authoritarian_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = nationalist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = fascist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = national_socialist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+change_government_type_shuzihuaminzhu = yes
+			load_focus_tree = china_new_left_focus
+
+
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_new_left_dynamic 
+				}
+				add_to_variable = {
+					var = PRC_mic_business_value_factor_dynamic_var
+					value = -0.20
+				}
+				add_to_variable = {
+					var = PRC_mic_consumer_goods_factor_dynamic_var
+					value = -0.05
+				}
+				add_to_variable = {
+					var = PRC_mic_poverty_development_monthly_dynamic_var
+					value = 0.01
+				}
+unlock_national_focus =PRC_the_red_phoenix
+unlock_national_focus =PRC_legacy_of_mao
+unlock_national_focus =PRC_rejuvinate_cpc_cadres
+unlock_national_focus =PRC_exonorate_neo_maoists
+unlock_national_focus =PRC_revise_cultural_revolution_verdict
+unlock_national_focus =PRC_denounce_xi_revisionism
+unlock_national_focus =PRC_revive_peoples_war_mindset_1
+unlock_national_focus =PRC_revive_peoples_war_mindset
+unlock_national_focus =PRC_revive_peoples_war_mindset_3
+unlock_national_focus =PRC_revive_peoples_war_mindset_4
+unlock_national_focus =PRC_new_red_culture_initiative
+unlock_national_focus =PRC_reverse_confucian_turn
+unlock_national_focus =PRC_baihuaqifang_1
+unlock_national_focus =PRC_baihuaqifang
+unlock_national_focus =PRC_baihuaqifang_5
+unlock_national_focus =PRC_baihuaqifang_4
+unlock_national_focus =PRC_crackdown_on_corruption
+unlock_national_focus =PRC_cutdown_party_bureaucracy
+unlock_national_focus =PRC_restore_party_authority
+unlock_national_focus =PRC_expand_provincial_autonomy
+unlock_national_focus =PRC_expand_provincial_autonomy_1
+unlock_national_focus =PRC_expand_provincial_autonomy_4
+unlock_national_focus =PRC_reform_the_cppcc
+unlock_national_focus =PRC_revitilize_peoples_democratic_dictatorship
+unlock_national_focus =PRC_stir_up_youth_patriotism
+unlock_national_focus =PRC_communist_vanguard_restored
+unlock_national_focus =PRC_denounce_deng_xiao_ping_thought
+unlock_national_focus =PRC_towards_automated_socialism
+unlock_national_focus =PRC_advanced_economic_planning_1
+unlock_national_focus =PRC_advanced_economic_planning_4
+unlock_national_focus =PRC_anti_corruption_technology
+unlock_national_focus =PRC_ai_assisted_governance
+unlock_national_focus =PRC_towards_a_digital_communism
+unlock_national_focus =PRC_advanced_economic_planning_8
+unlock_national_focus =PRC_end_landlordism
+unlock_national_focus =PRC_revive_iron_rice_bowl_1
+unlock_national_focus =PRC_establish_eadi
+unlock_national_focus =PRC_masters_of_asia_1
+unlock_national_focus =PRC_masters_of_asia_3
+unlock_national_focus =PRC_masters_of_asia_6
+unlock_national_focus =PRC_masters_of_asia_2
+unlock_national_focus =PRC_masters_of_asia_5
+unlock_national_focus =PRC_revolution_in_myanmar
+unlock_national_focus =PRC_coordinate_eadi_militaries
+unlock_national_focus =PRC_masters_of_asia_4
+unlock_national_focus =PRC_masters_of_asia_8
+unlock_national_focus =PRC_masters_of_asia_10
+unlock_national_focus =PRC_masters_of_asia_11
+unlock_national_focus =PRC_masters_of_asia_13
+unlock_national_focus =PRC_masters_of_asia_15
+unlock_national_focus =PRC_masters_of_asia_14
+unlock_national_focus =PRC_masters_of_asia_9
+unlock_national_focus =PRC_masters_of_asia_12
+unlock_national_focus =PRC_masters_of_asia_17
+unlock_national_focus =PRC_masters_of_asia_16
+unlock_national_focus =PRC_masters_of_asia_18
+unlock_national_focus =PRC_our_commitment_to_korea
+unlock_national_focus =PRC_push_for_thaw
+unlock_national_focus =PRC_finilize_korean_revolution_1
+unlock_national_focus =PRC_korean_economic_assistence
+unlock_national_focus =PRC_finilize_korean_revolution_2
+unlock_national_focus =PRC_counter_indian_aggression
+unlock_national_focus =PRC_build_up_fortifications
+unlock_national_focus =PRC_expand_border_training
+unlock_national_focus =PRC_support_pakistan
+unlock_national_focus =PRC_himalayan_frontier
+unlock_national_focus =PRC_anti_japanese_covert_operations
+unlock_national_focus =PRC_niaolong_6
+unlock_national_focus =PRC_niaolong_9
+	}
+	}
+	option = {
+		name = PRC_MAO4.81.b
+			hidden_effect = {
+				TZL = { set_country_flag = dyxysco }
+			every_state = {
+				limit = {
+					is_core_of = NLM
+				}
+			    add_core_of = TZL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = HKN
+				}
+			    add_core_of = TZL
+		    }
+			create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = GFX_Portrait_PRC_The_Long_March1
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+
+} 
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+				NLM = {transfer_units_fraction = {
+						target = TZL
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				HKN = {transfer_units_fraction = {
+						target = TZL
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+			if = {
+				limit = {
+					has_government = libertarian_socialist
+					CHI_wu_rong_yuan_char = {is_country_leader = yes}
+				}
+
+		add_country_leader_role = {
+			character = zheng_cunqi_char
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = zheng_cunqi_char
+			ideology = marxism_lenin_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+			if = {
+				limit = {
+					has_government = libertarian_socialist
+					CHI_wu_rong_yuan_char = {is_country_leader = yes}
+				}
+
+		add_country_leader_role = {
+			character = CHI_wu_rong_yuan_char
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = CHI_wu_rong_yuan_char
+			ideology = marxism_lenin_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+							annex_country = {
+								target =NLM
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =HKN
+								transfer_troops = yes
+							}
+			set_capital = {
+					state = 608
+				}
+				set_cosmetic_tag = PRC_GHGLS
+							add_ideas = PRC_ai_changzheng_core
+							add_ideas = PRC_ai_economic_core
+							add_ideas = PRC_yang_heping_hog
+							add_ideas = PRC_ai_security_core
+							add_ideas = PRC_ai_intelligence1_core
+							add_ideas = PRC_ai_security1_core
+set_country_flag = changzheng_start_end
+add_to_variable = { loji_manyidu_T = 100 }
+loji_manyidu_change = yes
+	set_party_name = { ideology = totalitarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = communist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = libertarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = social_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = social_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = market_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = conservative long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = authoritarian_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = nationalist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = fascist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = national_socialist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+change_government_type_shuzihuaminzhu = yes
+			load_focus_tree = china_new_left_focus
+
+
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_new_left_dynamic 
+				}
+				add_to_variable = {
+					var = PRC_mic_business_value_factor_dynamic_var
+					value = -0.20
+				}
+				add_to_variable = {
+					var = PRC_mic_consumer_goods_factor_dynamic_var
+					value = -0.05
+				}
+				add_to_variable = {
+					var = PRC_mic_poverty_development_monthly_dynamic_var
+					value = 0.01
+				}
+unlock_national_focus =PRC_the_red_phoenix
+unlock_national_focus =PRC_legacy_of_mao
+unlock_national_focus =PRC_rejuvinate_cpc_cadres
+unlock_national_focus =PRC_exonorate_neo_maoists
+unlock_national_focus =PRC_revise_cultural_revolution_verdict
+unlock_national_focus =PRC_denounce_xi_revisionism
+unlock_national_focus =PRC_revive_peoples_war_mindset_1
+unlock_national_focus =PRC_revive_peoples_war_mindset
+unlock_national_focus =PRC_revive_peoples_war_mindset_3
+unlock_national_focus =PRC_revive_peoples_war_mindset_4
+unlock_national_focus =PRC_new_red_culture_initiative
+unlock_national_focus =PRC_reverse_confucian_turn
+unlock_national_focus =PRC_baihuaqifang_1
+unlock_national_focus =PRC_baihuaqifang
+unlock_national_focus =PRC_baihuaqifang_5
+unlock_national_focus =PRC_baihuaqifang_4
+unlock_national_focus =PRC_crackdown_on_corruption
+unlock_national_focus =PRC_cutdown_party_bureaucracy
+unlock_national_focus =PRC_restore_party_authority
+unlock_national_focus =PRC_expand_provincial_autonomy
+unlock_national_focus =PRC_expand_provincial_autonomy_1
+unlock_national_focus =PRC_expand_provincial_autonomy_4
+unlock_national_focus =PRC_reform_the_cppcc
+unlock_national_focus =PRC_revitilize_peoples_democratic_dictatorship
+unlock_national_focus =PRC_stir_up_youth_patriotism
+unlock_national_focus =PRC_communist_vanguard_restored
+unlock_national_focus =PRC_denounce_deng_xiao_ping_thought
+unlock_national_focus =PRC_towards_automated_socialism
+unlock_national_focus =PRC_advanced_economic_planning_1
+unlock_national_focus =PRC_advanced_economic_planning_4
+unlock_national_focus =PRC_anti_corruption_technology
+unlock_national_focus =PRC_ai_assisted_governance
+unlock_national_focus =PRC_towards_a_digital_communism
+unlock_national_focus =PRC_advanced_economic_planning_8
+unlock_national_focus =PRC_end_landlordism
+unlock_national_focus =PRC_revive_iron_rice_bowl_1
+unlock_national_focus =PRC_establish_eadi
+unlock_national_focus =PRC_masters_of_asia_1
+unlock_national_focus =PRC_masters_of_asia_3
+unlock_national_focus =PRC_masters_of_asia_6
+unlock_national_focus =PRC_masters_of_asia_2
+unlock_national_focus =PRC_masters_of_asia_5
+unlock_national_focus =PRC_revolution_in_myanmar
+unlock_national_focus =PRC_coordinate_eadi_militaries
+unlock_national_focus =PRC_masters_of_asia_4
+unlock_national_focus =PRC_masters_of_asia_8
+unlock_national_focus =PRC_masters_of_asia_10
+unlock_national_focus =PRC_masters_of_asia_11
+unlock_national_focus =PRC_masters_of_asia_13
+unlock_national_focus =PRC_masters_of_asia_15
+unlock_national_focus =PRC_masters_of_asia_14
+unlock_national_focus =PRC_masters_of_asia_9
+unlock_national_focus =PRC_masters_of_asia_12
+unlock_national_focus =PRC_masters_of_asia_17
+unlock_national_focus =PRC_masters_of_asia_16
+unlock_national_focus =PRC_masters_of_asia_18
+unlock_national_focus =PRC_our_commitment_to_korea
+unlock_national_focus =PRC_push_for_thaw
+unlock_national_focus =PRC_finilize_korean_revolution_1
+unlock_national_focus =PRC_korean_economic_assistence
+unlock_national_focus =PRC_finilize_korean_revolution_2
+unlock_national_focus =PRC_counter_indian_aggression
+unlock_national_focus =PRC_build_up_fortifications
+unlock_national_focus =PRC_expand_border_training
+unlock_national_focus =PRC_support_pakistan
+unlock_national_focus =PRC_himalayan_frontier
+unlock_national_focus =PRC_anti_japanese_covert_operations
+unlock_national_focus =PRC_niaolong_6
+unlock_national_focus =PRC_niaolong_9
+	}
+	}
+	option = {
+		name = PRC_MAO4.81.c
+			hidden_effect = {
+				HKN = { change_tag_from = TZL }
+				HKN = { set_country_flag = dyxysco }
+			every_state = {
+				limit = {
+					is_core_of = NLM
+				}
+			    add_core_of = HKN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TZL
+				}
+			    add_core_of = HKN
+		    }
+				NLM = {transfer_units_fraction = {
+						target = HKN
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				TZL = {transfer_units_fraction = {
+						target = HKN
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				HKN = {create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = GFX_Portrait_PRC_The_Long_March1
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+
+} 
+
+							annex_country = {
+								target =NLM
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =TZL
+								transfer_troops = yes
+							}
+						PRC = {set_nationality = {
+ 		  target_country = HKN
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = HKN
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			
+			set_capital = {
+					state = 608
+				}
+				set_cosmetic_tag = PRC_GHGLS
+							add_ideas = PRC_ai_changzheng_core
+							add_ideas = PRC_ai_economic_core
+							add_ideas = PRC_yang_heping_hog
+							add_ideas = PRC_ai_security_core
+							add_ideas = PRC_ai_intelligence1_core
+							add_ideas = PRC_ai_security1_core
+set_country_flag = changzheng_start_end
+add_to_variable = { loji_manyidu_T = 100 }
+loji_manyidu_change = yes
+	set_party_name = { ideology = totalitarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = communist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = libertarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = social_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = social_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = market_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = conservative long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = authoritarian_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = nationalist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = fascist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = national_socialist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+change_government_type_shuzihuaminzhu = yes
+			load_focus_tree = china_new_left_focus
+
+
+				add_dynamic_modifier = {
+					modifier = PRC_made_in_china_new_left_dynamic 
+				}
+				add_to_variable = {
+					var = PRC_mic_business_value_factor_dynamic_var
+					value = -0.20
+				}
+				add_to_variable = {
+					var = PRC_mic_consumer_goods_factor_dynamic_var
+					value = -0.05
+				}
+				add_to_variable = {
+					var = PRC_mic_poverty_development_monthly_dynamic_var
+					value = 0.01
+				}
+unlock_national_focus =PRC_the_red_phoenix
+unlock_national_focus =PRC_legacy_of_mao
+unlock_national_focus =PRC_rejuvinate_cpc_cadres
+unlock_national_focus =PRC_exonorate_neo_maoists
+unlock_national_focus =PRC_revise_cultural_revolution_verdict
+unlock_national_focus =PRC_denounce_xi_revisionism
+unlock_national_focus =PRC_revive_peoples_war_mindset_1
+unlock_national_focus =PRC_revive_peoples_war_mindset
+unlock_national_focus =PRC_revive_peoples_war_mindset_3
+unlock_national_focus =PRC_revive_peoples_war_mindset_4
+unlock_national_focus =PRC_new_red_culture_initiative
+unlock_national_focus =PRC_reverse_confucian_turn
+unlock_national_focus =PRC_baihuaqifang_1
+unlock_national_focus =PRC_baihuaqifang
+unlock_national_focus =PRC_baihuaqifang_5
+unlock_national_focus =PRC_baihuaqifang_4
+unlock_national_focus =PRC_crackdown_on_corruption
+unlock_national_focus =PRC_cutdown_party_bureaucracy
+unlock_national_focus =PRC_restore_party_authority
+unlock_national_focus =PRC_expand_provincial_autonomy
+unlock_national_focus =PRC_expand_provincial_autonomy_1
+unlock_national_focus =PRC_expand_provincial_autonomy_4
+unlock_national_focus =PRC_reform_the_cppcc
+unlock_national_focus =PRC_revitilize_peoples_democratic_dictatorship
+unlock_national_focus =PRC_stir_up_youth_patriotism
+unlock_national_focus =PRC_communist_vanguard_restored
+unlock_national_focus =PRC_denounce_deng_xiao_ping_thought
+unlock_national_focus =PRC_towards_automated_socialism
+unlock_national_focus =PRC_advanced_economic_planning_1
+unlock_national_focus =PRC_advanced_economic_planning_4
+unlock_national_focus =PRC_anti_corruption_technology
+unlock_national_focus =PRC_ai_assisted_governance
+unlock_national_focus =PRC_towards_a_digital_communism
+unlock_national_focus =PRC_advanced_economic_planning_8
+unlock_national_focus =PRC_end_landlordism
+unlock_national_focus =PRC_revive_iron_rice_bowl_1
+unlock_national_focus =PRC_establish_eadi
+unlock_national_focus =PRC_masters_of_asia_1
+unlock_national_focus =PRC_masters_of_asia_3
+unlock_national_focus =PRC_masters_of_asia_6
+unlock_national_focus =PRC_masters_of_asia_2
+unlock_national_focus =PRC_masters_of_asia_5
+unlock_national_focus =PRC_revolution_in_myanmar
+unlock_national_focus =PRC_coordinate_eadi_militaries
+unlock_national_focus =PRC_masters_of_asia_4
+unlock_national_focus =PRC_masters_of_asia_8
+unlock_national_focus =PRC_masters_of_asia_10
+unlock_national_focus =PRC_masters_of_asia_11
+unlock_national_focus =PRC_masters_of_asia_13
+unlock_national_focus =PRC_masters_of_asia_15
+unlock_national_focus =PRC_masters_of_asia_14
+unlock_national_focus =PRC_masters_of_asia_9
+unlock_national_focus =PRC_masters_of_asia_12
+unlock_national_focus =PRC_masters_of_asia_17
+unlock_national_focus =PRC_masters_of_asia_16
+unlock_national_focus =PRC_masters_of_asia_18
+unlock_national_focus =PRC_our_commitment_to_korea
+unlock_national_focus =PRC_push_for_thaw
+unlock_national_focus =PRC_finilize_korean_revolution_1
+unlock_national_focus =PRC_korean_economic_assistence
+unlock_national_focus =PRC_finilize_korean_revolution_2
+unlock_national_focus =PRC_counter_indian_aggression
+unlock_national_focus =PRC_build_up_fortifications
+unlock_national_focus =PRC_expand_border_training
+unlock_national_focus =PRC_support_pakistan
+unlock_national_focus =PRC_himalayan_frontier
+unlock_national_focus =PRC_anti_japanese_covert_operations
+unlock_national_focus =PRC_niaolong_6
+unlock_national_focus =PRC_niaolong_9
+	}
+
+
+
+	}
 	}
 }
 

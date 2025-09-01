@@ -16,6 +16,7 @@ scripted_gui = {
 
 		visible = {
 			has_country_flag = changzheng_start_end
+				original_tag = PRC 
 		}
 
 		effects = {

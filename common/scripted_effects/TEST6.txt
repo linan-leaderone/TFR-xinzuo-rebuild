@@ -384,7 +384,7 @@ ETL = {annex_country = {
 				clr_country_flag = AOR_Member
 							
 				set_cosmetic_tag = PER_XIN
-				set_party_name = { ideology = libertarian_socialist long_name = PERCCC_party_long name = PERCCC_party }
+				set_party_name = { ideology = libertarian_socialist long_name = PERCCCA_party_long name = PERCCCA_party_long }
 				set_politics = {
 				ruling_party = libertarian_socialist
 				election_frequency = 60
@@ -397,7 +397,7 @@ ETL = {annex_country = {
 TSU = {add_to_faction = ETL}
 RED_JAP_REV_ARMY = yes
 				create_country_leader = {
-	                name = "伊朗革命委员会"
+	                name = "西亚革命委员会"
 	                desc = "POLITICS_PERGW_DESC"
 	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
 	                expire = "1999.1.1"
@@ -476,6 +476,24 @@ set_country_flag=beglbg_slv
 		    }
 			every_state = {
 				limit = {
+					is_core_of = AFG
+				}
+			    add_core_of = ETL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = BAL
+				}
+			    add_core_of = ETL
+		    }
+			every_state = {
+				limit = {
+					is_core_of = ROJ
+				}
+			    add_core_of = ETL
+		    }
+			every_state = {
+				limit = {
 					is_core_of = SSD
 				}
 			    add_core_of = HRL
@@ -518,6 +536,21 @@ set_country_flag=beglbg_slv
 		    }
 			UFA = {annex_country = {
 								target = KAZ
+								transfer_troops = yes
+							}
+							}
+			ETL = {annex_country = {
+								target = AFG
+								transfer_troops = yes
+							}
+							}
+			ETL = {annex_country = {
+								target = ROJ
+								transfer_troops = yes
+							}
+							}
+			ETL = {annex_country = {
+								target = BAL
 								transfer_troops = yes
 							}
 							}
@@ -635,23 +668,93 @@ NLM = {release = MKL}
 	                ideology = maoism
 				}
 						}	
+						
+			NLM = {	set_capital = {
+					state = 608
+				}}
+			UFA = {	set_capital = {
+					state = 1339
+				}}
+			SLV = {	set_capital = {
+					state = 107
+				}}
+			NAX = {
+					set_cosmetic_tag = NAX_XIN
+					set_capital = {
+					state = 1379
+				}
+				}
+			every_state = {
+				limit = {
+					is_core_of = MLD
+				}
+			    add_core_of = UFA
+		    }
+			every_state = {
+				limit = {
+					is_core_of = PLS
+				}
+			    add_core_of = UFA
+		    }
+			every_state = {
+				limit = {
+					is_core_of = CYP
+				}
+			    add_core_of = TUR
+		    }
+			every_state = {
+				limit = {
+					is_core_of = GRE
+				}
+			    add_core_of = TUR
+		    }
+			every_state = {
+				limit = {
+					is_core_of = GRK
+				}
+			    add_core_of = TUR
+		    }
+			every_state = {
+				limit = {
+					is_core_of = LAO
+				}
+			    add_core_of = VIN
+		    }
+			every_state = {
+				limit = {
+					is_core_of = CAM
+				}
+			    add_core_of = VIN
+		    }
+UFA = {annex_country = {
+								target = MLD
+								transfer_troops = no
+							}
+							}
 TSU = {add_to_faction = TUR}
 TSU = {add_to_faction = AFG}
+TSU = {add_to_faction = FIN}
 RED_JAP_REV_ARMY = yes		
+			SLV = {
+				transfer_state = 73
+					add_state_core = 73
+					}
+			TUR = {
+			transfer_state = 1030	
+			transfer_state = 827	
+					}
 			HRL = {transfer_state = 1030	}
 			ROJ = {transfer_state = 350	
-			transfer_state = 352	
-			transfer_state = 827		
+			transfer_state = 352		
 			transfer_state = 353	
 			transfer_state = 348		
 			transfer_state = 676		
 			transfer_state = 1176		
-			transfer_state = 1177	
-			transfer_state = 1030				
+			transfer_state = 1177				
 			transfer_state = 1035}
 						TUR = {
 				set_cosmetic_tag = TUR_Rev_Repub_of_Turkey
-				set_party_name = { ideology = libertarian_socialist long_name = TURCCC_party name = TURCCC_party }
+				set_party_name = { ideology = libertarian_socialist long_name = TURCCC_partyP name = TURCCC_partyP }
 			set_politics = {
 				ruling_party = libertarian_socialist
 				election_frequency = 60
@@ -662,7 +765,7 @@ RED_JAP_REV_ARMY = yes
 				popularity = 0.4
 			}
 				create_country_leader = {
-	                name = "土耳其革命委员会"
+	                name = "爱琴海革命委员会"
 	                desc = "POLITICS_TURGW_DESC"
 	                picture = "gfx/MAOYUANXIN/XL_GWH.dds"
 	                expire = "1999.1.1"
@@ -688,26 +791,60 @@ RED_JAP_REV_ARMY = yes
 	                ideology = maoism
 				}
 						}
+TUR = {annex_country = {
+								target = GRE
+								transfer_troops = yes
+							}
+							}
+TUR = {annex_country = {
+								target = GRK
+								transfer_troops = yes
+							}
+							}
+TUR = {annex_country = {
+								target = CYP
+								transfer_troops = yes
+							}
+							}
+VIN = {annex_country = {
+								target = LAO
+								transfer_troops = yes
+							}
+							}
+VIN = {annex_country = {
+								target = CAM
+								transfer_troops = yes
+							}
+							}
+			ETL = {annex_country = {
+								target = ROJ
+								transfer_troops = yes
+							}
+							}
 						VIN = {
 				remove_ideas = PRC_unwilling_ally
 				load_oob = VIN_reserves
 
-				set_cosmetic_tag = VIN_XIN
-				set_party_name = { ideology = totalitarian_socialist long_name = VINCCC_party_long name = VINCCC_party }
+									
+				set_cosmetic_tag = VIN_XIN_XIN
+				set_party_name = { ideology = totalitarian_socialist long_name = VINVIN_party_long name = VINVIN_party }
 				set_politics = {
 				ruling_party = totalitarian_socialist
 				election_frequency = 60
 				elections_allowed = yes
 				}
 				create_country_leader = {
-	                name = "越南革命委员会"
+	                name = "印度支那革命委员会"
 	                desc = "POLITICS_YNGW_DESC"
 	                picture = "gfx/MAOYUANXIN/YN_GWH.dds"
 	                expire = "1999.1.1"
 	                ideology = maoism
-				}
+				}  
 						}
 
+			TUR = {	set_capital = {
+					state = 341
+				}}
 						BRM = {
 				remove_ideas = PRC_unwilling_ally
 
@@ -748,7 +885,126 @@ release = ELN
 release = UFA
 release = SIA
 TSU = {add_to_faction = SIA}
+TSU = {add_to_faction = RCG}
+	RCG = {
+declare_war_on = {
+			target = ANG
+			type = annex_everything
+		}
+declare_war_on = {
+			target = EQG
+			type = annex_everything
+		}
+declare_war_on = {
+			target = ZAM
+			type = annex_everything
+		}
+declare_war_on = {
+			target = GAB
+			type = annex_everything
+		}
+declare_war_on = {
+			target = UGA
+			type = annex_everything
+		}
+declare_war_on = {
+			target = RWA
+			type = annex_everything
+		}
+declare_war_on = {
+			target = BRD
+			type = annex_everything
+		}
+declare_war_on = {
+			target = TZN
+			type = annex_everything
+		}
+		}
+	DJI = {
+declare_war_on = {
+			target = KEN
+			type = annex_everything
+		}
+		}
+	EFF = {
+declare_war_on = {
+			target = MLW
+			type = annex_everything
+		}
+declare_war_on = {
+			target = BOT
+			type = annex_everything
+		}
+declare_war_on = {
+			target = NMB
+			type = annex_everything
+		}
+declare_war_on = {
+			target = MAD
+			type = annex_everything
+		}
+		}
+	VOL = {
+declare_war_on = {
+			target = CHA
+			type = annex_everything
+		}
+declare_war_on = {
+			target = CMR
+			type = annex_everything
+		}
+		}
 	HRL = {
+		
+declare_war_on = {
+			target = SSD
+			type = annex_everything
+		}
+		
+declare_war_on = {
+			target = SUD
+			type = annex_everything
+		}
+declare_war_on = {
+			target = ROC
+			type = annex_everything
+		}
+declare_war_on = {
+			target = UAE
+			type = annex_everything
+		}
+declare_war_on = {
+			target = HOU
+			type = annex_everything
+		}
+declare_war_on = {
+			target = OMA
+			type = annex_everything
+		}
+declare_war_on = {
+			target = QAT
+			type = annex_everything
+		}
+declare_war_on = {
+			target = SAR
+			type = annex_everything
+		}
+declare_war_on = {
+			target = KUW
+			type = annex_everything
+		}
+declare_war_on = {
+			target = SAU
+			type = annex_everything
+		}
+declare_war_on = {
+			target = ARR
+			type = annex_everything
+		}
+declare_war_on = {
+			target = AAS
+			type = annex_everything
+		}
 					transfer_state = 1031
 							}
 	NLM = {

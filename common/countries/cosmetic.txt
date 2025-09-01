@@ -6,6 +6,10 @@ PRC_EUO_empire = {
 	color = rgb { 139 90 43 }
 	color_ui = rgb { 139 90 43 }
 }
+ASIA_UNION = {
+	color = rgb { 234 -141 -85 }
+	color_ui = rgb { 173 0 26 }
+}
 MIA_ZHOUQUN = {
 	color = rgb { 227 30 60 }
 	color_ui = rgb { 227 30 60 }

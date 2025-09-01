@@ -1,4 +1,2101 @@
 
+TZL_ASIAN_UNION = {
+			hidden_effect = {
+				
+				transfer_state = 1206
+				
+		TSU = {set_nationality = {
+ 		  target_country = ROOT
+  		  character = Tomoe_char
+		}}
+		TSU = {set_nationality = {
+ 		  target_country = ROOT
+  		  character = Himari_char
+		}}
+		TZL = {set_nationality = {
+ 		  target_country = ROOT
+  		  character = chen_xinxing_char
+		}}
+		TZL = {set_nationality = {
+ 		  target_country = ROOT
+  		  character = zheng_cunqi_char
+		}}
+
+create_corps_commander = {
+name = "“长征”" 
+desc = "POLITICS_PRC_long_march_DESC"
+portrait_path = GFX_Portrait_PRC_The_Long_March1
+skill = 9
+attack_skill = 9
+defense_skill = 9
+planning_skill = 9
+logistics_skill = 9
+
+} 
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_zhongyang_flag	}
+				}
+	change_economy_type_ZZZ_OGAS_socialism1 = yes
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_difang_flag	}
+				}
+	change_economy_type_ZZZ_OGAS_socialism2 = yes
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_guojiawushenlun_flag}
+				}
+
+			add_timed_idea = {
+				idea = wushenlun_idea1
+				days = 200
+			}
+		    }
+			every_state = {
+				limit = {
+					is_core_of = NLM
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = NAX
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = SRL
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = BRM
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = SIA
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = VIN
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = NPA
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TJJ
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = MKL
+				}
+			    add_core_of = ROOT
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TSU
+				}
+			    add_core_of = ROOT
+		    }
+				NLM = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				MKL = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				TSU = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				TZL = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				VIN = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				SIA = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				NPA = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				BRM = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				SIA = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				HKN = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				NAX = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				TJJ = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				SRL = {transfer_units_fraction = {
+						target = ROOT
+  						army_ratio = 1
+						navy_ratio = 1
+						 air_ratio = 1 
+					keep_unit_leaders_trigger = {
+						always = yes
+					}	
+				}}
+				annex_country = {
+								target =NLM
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =SRL
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =TZL
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =NAX
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =SIA
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =BRM
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =VIN
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =NPA
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =TJJ
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =MKL
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =HKN
+								transfer_troops = yes
+							}
+							annex_country = {
+								target =TSU
+								transfer_troops = yes
+							}
+							add_ideas = PRC_ai_changzheng_core
+							add_ideas = PRC_ai_economic_core
+							add_ideas = PRC_yang_heping_hog
+							add_ideas = PRC_ai_security_core
+							add_ideas = PRC_ai_intelligence1_core
+							add_ideas = PRC_ai_security1_core
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_myx_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		NLM = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_mao_yuanxin
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		add_country_leader_role = {
+			character = PRC_mao_yuanxin
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_mao_yuanxin
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_cjm_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = MIA
+  		  character = PRC_renda
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_dz_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TIB
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TIB
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+
+
+
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_lgx_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = HKN
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = HKN
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_cxx_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_yhp_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+				create_country_leader = {
+	                name = "XUYONGYHP"
+	                desc = "POLITICS_YHP_DESC"
+	                picture = "gfx/MAOYUANXIN/laoyang.png"
+	                expire = "1999.1.1"
+	                ideology = marxism_lenin_maoism
+				}  
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_la_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		NAX = {set_nationality = {
+ 		  target_country = TZL
+  		  character = NAX_Nambala_Keshava_Rao	
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = NAX_Nambala_Keshava_Rao
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = NAX_Nambala_Keshava_Rao
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_nina_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+				create_country_leader = {
+	                name = "JQRC"
+	                desc = "POLITICS_JQRC_DESC"
+	                picture = "gfx/MAOYUANXIN/JQRC.png"
+	                expire = "1999.1.1"
+	                ideology = Tsuguism
+				}   
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_fz_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+				create_country_leader = {
+	                name = "CXFZ"
+	                desc = "POLITICS_CXFZ_DESC"
+	                picture = "gfx/MAOYUANXIN/CXFZ.png"
+	                expire = "1999.1.1"
+	                ideology = trotskyism
+				}   
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_xyzq_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+				create_country_leader = {
+	                name = "XUEYUANZHIQING"
+	                desc = "POLITICS_XUEYUANZHIQING_DESC"
+	                picture = "gfx/MAOYUANXIN/HCLN.png"
+	                expire = "1999.1.1"
+	                ideology = left_accelerationist_3
+				}  
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_ybc_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+	
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+		
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_lan_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		TJJ = {set_nationality = {
+ 		  target_country = TZL
+  		  character = Ran_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = Ran_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = Ran_char
+			ideology = Tsuguism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_moka_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		MKL = {set_nationality = {
+ 		  target_country = TZL
+  		  character = Moka_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = Moka_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = Moka_char
+			ideology = Tsuguism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_yzd_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		TSU = {set_nationality = {
+ 		  target_country = TZL
+  		  character = Hazawa_Tsugumi_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = Hazawa_Tsugumi_char
+			promote_leader = yes
+			country_leader = {
+				ideology = Tsuguism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = Hazawa_Tsugumi_char
+			ideology = Tsuguism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+
+
+
+
+
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_zcq_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = zheng_cunqi_char
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = zheng_cunqi_char
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+			
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_wry_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = CHI_wu_rong_yuan_char
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = CHI_wu_rong_yuan_char
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+			
+
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_zyf_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		SHA = {set_nationality = {
+ 		  target_country = TZL
+  		  character = SHA_zhang_yunfan_char
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = SHA_zhang_yunfan_char
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = SHA_zhang_yunfan_char
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+			
+
+
+
+
+
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_hdf_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		CHF = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_han_dongfang
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_han_dongfang
+			promote_leader = yes
+			country_leader = {
+				ideology = gzl_socialism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_han_dongfang
+			ideology = gzl_socialism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = libertarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_myx_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		NLM = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_mao_yuanxin
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_mao_yuanxin
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_mao_yuanxin
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_renda_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_renda
+		}}
+		set_character_name = {
+	character = PRC_renda
+	name = RMDHHH
+}
+		
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_renda
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_renda
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = totalitarian_socialist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			add_to_coalition = yes
+		set_country_leader_description = {
+	desc = PRC_renda_ANQ_rendaa
+}
+set_country_leader_portrait = {
+	portrait = PRC_renda_QSJ_PR
+}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_changzheng_flag	}
+				}
+			
+		PRC = {set_nationality = {
+ 		  target_country = TZL
+  		  character = PRC_long_march
+		}}
+		
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_long_march
+			ideology = maoism
+		}
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_lenin_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_long_march
+			ideology = marxism_lenin_maoism
+		}
+		add_country_leader_role = {
+			character = PRC_long_march
+			promote_leader = yes
+			country_leader = {
+				ideology = anarchist_maoism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		promote_character = {
+			character = PRC_long_march
+			ideology = anarchist_maoism
+		}
+set_popularities = {
+	totalitarian_socialist = 33
+	communist = 34
+	libertarian_socialist = 33
+}
+				set_politics = {
+				ruling_party = communist
+				last_election = "2030.1.1"
+				election_frequency = 60
+				elections_allowed = yes
+				}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_608_flag}
+				}
+			set_capital = {
+					state = 608
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_1041_flag}
+				}
+			set_capital = {
+					state = 1041
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_1332_flag}
+				}
+			set_capital = {
+					state = 1332
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_336_flag}
+				}
+			set_capital = {
+					state = 336
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_1379_flag}
+				}
+			set_capital = {
+					state = 1379
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_1215_flag}
+				}
+			set_capital = {
+					state = 1215
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_1148_flag}
+				}
+			set_capital = {
+					state = 1148
+				}
+		    }
+			if = {
+				limit = {
+					TZL = {has_country_flag = asun_601_flag}
+				}
+set_victory_points = {
+    province = 12837
+    value = 1000 
+}
+set_province_name = { id = 12837 name = "LITANGGG" }
+			set_capital = {
+					state = 601
+				}
+		    }
+set_cosmetic_tag = ASIA_UNION
+add_idea = higher_welfare
+add_idea = higher_safety
+add_idea = higher_education
+add_idea = higher_immigration
+add_idea = low_police
+add_idea = PRC_the_long_march_2_idea
+set_country_flag = changzheng_start_end
+add_to_variable = { loji_manyidu_T = 100 }
+loji_manyidu_change = yes
+	set_party_name = { ideology = totalitarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = communist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = libertarian_socialist long_name = ASIA_UNION_party3 name = ASIA_UNION_party3 }
+	set_party_name = { ideology = social_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = social_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = market_liberal long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = conservative long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = authoritarian_democrat long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = nationalist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = fascist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+	set_party_name = { ideology = national_socialist long_name = ASIA_UNION_party4 name = ASIA_UNION_party4 }
+change_government_type_shuzihuaminzhu = yes
+				}
+	}
 PRC_lm_war_fight = {
 
 			hidden_effect = {

@@ -2688,6 +2688,16 @@ shared_focus = {
 	}
 	available = {
 	
+			  if = {
+			limit = {
+			NOT = {	has_country_flag = PRC_new_left_win}
+			}
+			always = no
+	}
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 		OR = {
 						PRC_mao_yuanxin = {is_country_leader = yes}
 						PRC_renda = {is_country_leader = yes}
@@ -2695,6 +2705,7 @@ shared_focus = {
 						PRC_ren_chonghao = {is_country_leader = yes}
 		}
 	
+	}
 	}
 	prerequisite = { focus = PRC_establish_eadi }
 	completion_reward = {
@@ -6790,6 +6801,10 @@ shared_focus = {
 	}		
 	prerequisite = { focus = PRC_operation_majestic }
 	available = {
+			  if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
 			PRC_kong_qingdong = {is_country_leader = yes}
 			
 		OR = {
@@ -6802,6 +6817,7 @@ shared_focus = {
 			JAP = {
 				is_ally_with = PRC
 			}
+		}
 		}
 	}
 	completion_reward = {

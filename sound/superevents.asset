@@ -16,6 +16,14 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "santifa3"
+	sounds = {
+		sound = "santifa3"
+	}
+	volume = 1
+}
+soundeffect =
+{
 	name = "santifa"
 	sounds = {
 		sound = "santifa"

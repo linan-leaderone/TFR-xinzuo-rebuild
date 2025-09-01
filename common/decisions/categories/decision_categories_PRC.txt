@@ -9,6 +9,9 @@ PRC_loji_category = {
     }
     
     visible = {
+    OR = {
         has_country_flag = PRC_ai_assisted_governance_sanxingdui
+        has_country_flag = changzheng_start_end
+    }
     }
 }

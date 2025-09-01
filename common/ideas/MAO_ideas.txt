@@ -1120,7 +1120,34 @@ duliyuanjing = {
 				attack_bonus_against = 2
 				defense_bonus_against = 2
 			}
-}							
+}			
+
+		wushenlun_idea1 = {
+			picture = generic_wushenlun_idea
+		    
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				conscription_factor = -0.05
+				income_growth_factor = 0.15
+				poverty_development_monthly = 0.01
+				personal_expense_factor = 0.1
+				personal_value_factor = 0.05
+			}
+			on_remove = {
+					add_ideas = wushenlun_idea
+			}
+		}					
 wushenlun_idea = {
     picture = generic_wushenlun_idea
     name = PRC_wushenlun_idea
@@ -4233,9 +4260,17 @@ army_defence_factor = 1
 		}	
 		PRC_ai_changzheng_core = {
 			picture = PRC_changzheng_core
-			allowed = { original_tag = PRC }
+			allowed = {
+			OR = {
+				 original_tag = PRC 
+			has_country_flag = dyxysco
+			}
+			}
 			visible = {
+			OR = {
+			has_country_flag = dyxysco
 			has_idea = PRC_the_long_march_2_idea
+			}
 			}
 			allowed_to_remove = {
 				always = no
@@ -4523,14 +4558,20 @@ has_country_leader = {
  original_tag = PRC
  original_tag = CHF
  original_tag = NLM
+ original_tag = MIA
+ original_tag = HKN
+ original_tag = TIB
 }
 }
 			
 			visible = {
 			OR = {
 				has_country_flag = PRC_new_left_win
- 				original_tag = CHF
+ original_tag = CHF
  original_tag = NLM
+ original_tag = MIA
+ original_tag = HKN
+ original_tag = TIB
 }
 			}
 
@@ -4730,9 +4771,17 @@ has_country_leader = {
 		}
 		PRC_ai_intelligence1_core = {
 			picture = PRC_ai_core
-			allowed = { original_tag = PRC }
+			allowed = {
+			OR = {
+			has_country_flag = dyxysco
+				 original_tag = PRC 
+				 }
+				 }
 			visible = {
+			OR = {
+			has_country_flag = dyxysco
 				has_completed_focus = PRC_revive_peoples_war_mindset_4
+				 }
 			}
 			allowed_to_remove = {
 				always = no
@@ -4823,9 +4872,17 @@ original_tag = CHF
 		}		
 		PRC_ai_security1_core = {
 			picture = PRC_ai_core
-			allowed = { original_tag = PRC }
+			allowed = { 
+			OR = {
+			has_country_flag = dyxysco
+				original_tag = PRC 
+				}
+				}
 			visible = {
+			OR = {
+			has_country_flag = dyxysco
 				has_completed_focus = PRC_revive_peoples_war_mindset_4
+			}
 			}
 			allowed_to_remove = {
 				always = no
