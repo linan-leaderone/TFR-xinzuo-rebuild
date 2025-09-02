@@ -351,6 +351,10 @@ focus_tree = {
 			factor = 100
 		}
 
+	allow_branch = {
+			has_completed_focus = TZL_TWW_FOCUS_15
+
+	}
 
 		available = {
 		is_ally_with = TSU
@@ -2386,6 +2390,10 @@ transfer_navy = {
 		prerequisite = {
 		}
 
+	allow_branch = {
+			has_country_flag = TZL_start_of_war
+
+	}
 		
 		available = {
 		}
