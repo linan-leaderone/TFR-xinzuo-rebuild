@@ -15882,7 +15882,6 @@ country_event = {
 		set_country_leader_portrait = {
 			portrait = GFX_portrait_PRC_Cheng_Wenqing_scientists
 		}
-		set_country_leader_ideology = technocracy_totsoc
 		remove_mission = PRC_science_MSS_dynamic_opinion
 		remove_mission = PRC_science_scientist_faction_dynamic_opinion
 		hidden_effect = {
@@ -15908,7 +15907,6 @@ country_event = {
 		set_country_leader_portrait = {
 			portrait = GFX_portrait_PRC_Cheng_Wenqing_MSS
 		}
-		set_country_leader_ideology = digital_leninism
 		remove_mission = PRC_science_MSS_dynamic_opinion
 		remove_mission = PRC_science_scientist_faction_dynamic_opinion
 		hidden_effect = {
