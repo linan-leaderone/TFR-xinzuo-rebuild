@@ -402,10 +402,23 @@ country_event = {
 			target = ELN
 			type = annex_everything
 		}}
-		PRU = {declare_war_on = {
+		ELN = {
+			remove_ideas = MEX_cartel_presence_minor
+			remove_ideas = MEX_cartel_presence_moderate
+			remove_ideas = MEX_cartel_presence_major
+			remove_ideas = MEX_cartel_presence_severe
+			}
+		PRU = {
+			
+			remove_ideas = MEX_cartel_presence_minor
+			remove_ideas = MEX_cartel_presence_moderate
+			remove_ideas = MEX_cartel_presence_major
+			remove_ideas = MEX_cartel_presence_severe
+			declare_war_on = {
 			target = ELN
 			type = annex_everything
-		}}
+		}
+		}
 	}
 }
 
@@ -1551,7 +1564,15 @@ declare_war_on = {
 			    add_core_of = NLM
 		    }
 NLM = {set_cosmetic_tag = PRC_GHGLS  }
-			NIC = {	set_country_leader_ideology = marxism_lenin_maoism}
+			NIC = {
+					set_country_leader_ideology = marxism_lenin_maoism
+					
+			remove_ideas = MEX_cartel_presence_minor
+			remove_ideas = MEX_cartel_presence_moderate
+			remove_ideas = MEX_cartel_presence_major
+			remove_ideas = MEX_cartel_presence_severe
+			remove_ideas = SOV_ADS_member
+			}
 TZL = {load_oob = TSU_marines_2 }
 			PRC = {mark_focus_tree_layout_dirty = yes }
 			TZL = {mark_focus_tree_layout_dirty = yes }
