@@ -9454,10 +9454,26 @@ PRC_foreign_policy_category = {
 							expire = "1.1.1.1"
 						}
 					}
+		promote_character = {
+			character = PRC_Zhao_Zongqi
+			ideology = ethno_nationalism
+		}
 				set_politics = {
 					ruling_party = fascist
 					elections_allowed = no
 				}
+					add_country_leader_role = {
+						character = PRC_Zhao_Zongqi
+						promote_leader = yes
+						country_leader = {
+							ideology = ethno_nationalism
+							expire = "1.1.1.1"
+						}
+					}
+		promote_character = {
+			character = PRC_Zhao_Zongqi
+			ideology = ethno_nationalism
+		}
 					add_popularity = {
 						ideology = fascist
 						popularity = 0.35
@@ -9500,6 +9516,18 @@ PRC_foreign_policy_category = {
 					remove_all_national_spirits = yes
 					add_ideas = PRC_ASIA_chinese_purification_zone_idea
 					set_cosmetic_tag = PRC_nationalist_military_administration_SIA
+					add_country_leader_role = {
+						character = PRC_Huang_Ming
+						promote_leader = yes
+						country_leader = {
+							ideology = ethno_nationalism
+							expire = "1.1.1.1"
+						}
+					}
+		promote_character = {
+			character = PRC_Huang_Ming
+			ideology = ethno_nationalism
+		}
 					set_politics = {
 						ruling_party = fascist
 						elections_allowed = no
@@ -9512,6 +9540,10 @@ PRC_foreign_policy_category = {
 							expire = "1.1.1.1"
 						}
 					}
+		promote_character = {
+			character = PRC_Huang_Ming
+			ideology = ethno_nationalism
+		}
 					add_popularity = {
 						ideology = fascist
 						popularity = 0.35
