@@ -1491,6 +1491,8 @@ PRP = {annex_country = {
 								target =RSR
 								transfer_troops = yes
 							}}
+							
+		TSU = {add_to_faction = PRP}
 TZL = { set_country_flag = TZL_start_of_war }
 			TZL = {mark_focus_tree_layout_dirty = yes }
 			every_state = {
