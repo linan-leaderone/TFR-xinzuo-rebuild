@@ -11702,10 +11702,7 @@ country_event = {
 		name = china.381.a
 		custom_effect_tooltip = PRC_li_zuocheng_authority_fully_consolidated_tt
 		set_country_flag = PRC_li_zuocheng_authority_fully_consolidated_flag
-		set_portraits = {
-		    character = PRC_li_zuocheng
-		    civilian = { large = "GFX_portrait_PRC_Li_Zuocheng_leader_3" }
-		}
+	
 	}
 }
 #Protecting China
@@ -11724,10 +11721,7 @@ country_event = {
 		custom_effect_tooltip = PRC_pla_authority_fully_consolidated_tt
 		set_country_flag = PRC_pla_authority_fully_consolidated_flag
 		add_country_leader_trait = hos_depressed
-		set_portraits = {
-		    character = PRC_li_zuocheng
-		    civilian = { large = "GFX_portrait_PRC_Li_Zuocheng_leader_2" }
-		}
+	
 	}
 }
 #Army High Command Requests Additional Funding
@@ -14492,19 +14486,7 @@ country_event = {
 			long_name = SIC_long_march_DEF
 			name = SIC_long_march
 		}
-		set_country_leader_ideology = transhumanism
-		set_country_leader_name = {
-			ideology = national_socialist
-			name = PRC_long_march
-		}
-		set_country_leader_description = {
-			ideology = national_socialist
-			desc = PRC_LONG_MARCH_DESC
-		}
-		set_country_leader_portrait = {
-			ideology = national_socialist
-			portrait = GFX_Portrait_PRC_The_Long_March
-		}
+
 	}
 }
 
@@ -15879,9 +15861,6 @@ country_event = {
 			long_name = PRC_cpc_technocrats_long
 			name = PRC_cpc_technocrats
 		}
-		set_country_leader_portrait = {
-			portrait = GFX_portrait_PRC_Cheng_Wenqing_scientists
-		}
 		remove_mission = PRC_science_MSS_dynamic_opinion
 		remove_mission = PRC_science_scientist_faction_dynamic_opinion
 		hidden_effect = {
@@ -15904,9 +15883,7 @@ country_event = {
 		name = china.543.a
 		custom_effect_tooltip = PRC_mss_path_win_tt
 		set_country_flag = PRC_mss_consolidated_power
-		set_country_leader_portrait = {
-			portrait = GFX_portrait_PRC_Cheng_Wenqing_MSS
-		}
+	
 		remove_mission = PRC_science_MSS_dynamic_opinion
 		remove_mission = PRC_science_scientist_faction_dynamic_opinion
 		hidden_effect = {
