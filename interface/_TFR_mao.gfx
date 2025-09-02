@@ -352,6 +352,10 @@ spriteTypes = {
 		texturefile = "gfx/MAOYUANXIN/revpro.png"
 	}									
 	SpriteType = {
+		name = "GFX_idea_PRC_united_front_of_new_democracy"
+		texturefile = "gfx/MAOYUANXIN/PRC_united_front_of_new_democracy.png"
+	}										
+	SpriteType = {
 		name = "GFX_idea_CHI_zylm_idea"
 		texturefile = "gfx/MAOYUANXIN/APA_popular_support5.png"
 	}						

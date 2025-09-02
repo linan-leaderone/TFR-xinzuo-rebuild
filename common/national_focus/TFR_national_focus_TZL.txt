@@ -1264,7 +1264,7 @@ transfer_navy = {
 		has_idea = ZZZ_parliamentary_republic
 		}
 		completion_reward = {
-			add_ideas = PRC_united_front_of_new_democracy_idea
+			add_ideas = PRC_united_front_of_new_democracy_idea1
 		}
 	} 
    focus = {

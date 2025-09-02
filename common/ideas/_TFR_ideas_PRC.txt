@@ -5020,9 +5020,13 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}	
-		
-		PRC_united_front_of_new_democracy_idea = {
-			picture = PRC_doctrine_of_the_mass_line_idea
+				
+		PRC_united_front_of_new_democracy_idea1 = {
+			name = PRC_united_front_of_new_democracy_idea
+			picture = PRC_united_front_of_new_democracy
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
 
 			allowed = {
 				always = no
