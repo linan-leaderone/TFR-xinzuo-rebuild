@@ -5022,7 +5022,7 @@ ideas = {
 		}	
 		
 		PRC_united_front_of_new_democracy_idea = {
-			picture = PRC_chinese_communist_party
+			picture = PRC_doctrine_of_the_mass_line_idea
 
 			allowed = {
 				always = no
