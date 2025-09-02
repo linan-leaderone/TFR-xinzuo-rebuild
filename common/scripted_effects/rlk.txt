@@ -551,13 +551,19 @@ DJI = {
 				TZN = {dismantle_faction = yes}
 			every_state = {
 				limit = {
-					is_core_of = EHT
+					is_core_of = ETH
 				}
 			    add_core_of = DJI
 		    }
 			every_state = {
 				limit = {
 					is_core_of = ERI
+				}
+			    add_core_of = DJI
+		    }
+			every_state = {
+				limit = {
+					is_core_of = TDF
 				}
 			    add_core_of = DJI
 		    }
