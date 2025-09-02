@@ -7280,7 +7280,6 @@ ideas = {
 				army_defence_factor = 1
 				army_org_factor = 1
 				coordination_bonus = 1
-				army_speed_factor = -0.99
 				ai_focus_defense_factor = 1
 				ai_focus_aggressive_factor = -1
 			}
