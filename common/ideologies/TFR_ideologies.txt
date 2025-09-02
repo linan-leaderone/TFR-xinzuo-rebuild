@@ -990,6 +990,7 @@ ideologies = {
 				}
 			}
 			national_anarchist = {
+				can_be_randomly_selected = no
 				color = {
 					140
 					35
@@ -999,10 +1000,13 @@ ideologies = {
 			ethno_nationalism = {
 			}
 			national_spartanism = {
+				can_be_randomly_selected = no
 			}
 			classical_fascism = {
+				can_be_randomly_selected = no
 			}
 			clerical_fascism = {
+				can_be_randomly_selected = no
 			}	
 			blackhundredism = {
 				can_be_randomly_selected = no
@@ -1024,6 +1028,7 @@ ideologies = {
 				}
 			}
 			national_syndicalism = {
+				can_be_randomly_selected = no
 			}
 			vladimir_zhirinovsky_thought = {
 				can_be_randomly_selected = no
