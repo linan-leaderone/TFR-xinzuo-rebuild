@@ -22,6 +22,9 @@ MEX_mexican_civil_war_category = {
 		}
 		}
 		complete_effect = {
+			
+			TSU= {release = ZAP}
+			TRG = {release = ZAP}
 			country_event = mexico.12
 		}
 		ai_will_do = {
