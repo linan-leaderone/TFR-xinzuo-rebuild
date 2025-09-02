@@ -16568,7 +16568,6 @@ ELN = {annex_country = {
 			PRC = {		
 		OR = {
 				has_completed_focus = PRC_revolution_in_myanmar
-				has_completed_focus = PRC_niaolong_16
 			}
 				NOT = {has_completed_focus = PRC_masters_of_asia_1}
 			}
