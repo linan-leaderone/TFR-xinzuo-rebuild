@@ -653,6 +653,10 @@ SER = {declare_war_on = {
 				}
 			    add_core_of = SER
 		    }
+			
+			ALB = {
+				leave_faction = yes
+			}
 SER = {declare_war_on = {
 			target = ALB
 			type = annex_everything
