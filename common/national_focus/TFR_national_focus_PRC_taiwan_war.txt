@@ -1500,7 +1500,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		
 	    cost = 2
 		ai_will_do = {
-	    	factor = 3
+	    	factor = 0
 	    }
 	    completion_reward = {
 			add_popularity = {
@@ -1823,7 +1823,7 @@ NOT = {has_country_flag = PRC_military_coup_flag_1}
 		
 	    cost = 2
 		ai_will_do = {
-	    	factor = 3
+	    	factor = 0
 	    }
 	    completion_reward = {
 		
