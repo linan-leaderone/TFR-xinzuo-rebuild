@@ -2604,7 +2604,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
-		factor = 1
+		factor = 100
 	}
 	available = {
 		
@@ -2626,7 +2626,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
-		factor = 1
+		factor = 100
 	}
 	available = {
 	OR = {
@@ -2652,7 +2652,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
-		factor = 1
+		factor = 100
 	}
 	available = {
 		
@@ -2674,7 +2674,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
-		factor = 1
+		factor = 100
 	}
 	available = {
 		
@@ -2696,7 +2696,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
-		factor = 1
+		factor = 100
 	}
 	available = {
 		
@@ -2720,7 +2720,7 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = PRC_establish_eadi
 	ai_will_do = {
-		factor = 1
+		factor = 100
 	}
 	available = {
 		
