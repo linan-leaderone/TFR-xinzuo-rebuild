@@ -777,6 +777,10 @@ VOL = {declare_war_on = {
 			    add_core_of = VOL
 		    }
 VOL = {declare_war_on = {
+			target = AQI
+			type = annex_everything
+		}}
+VOL = {declare_war_on = {
 			target = DAH
 			type = annex_everything
 		}}
