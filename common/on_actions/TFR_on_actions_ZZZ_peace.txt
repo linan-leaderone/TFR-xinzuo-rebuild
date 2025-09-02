@@ -2834,6 +2834,8 @@ on_actions = {
 				if = {
 					# NATO Kill PER
 					limit = {
+						
+		NOT = { TZL = { is_in_faction_with = TSU } }
 						GER = { NOT = { has_completed_focus = GER_democracy_now } }
 						FROM = {
 							OR = {
@@ -25418,6 +25420,8 @@ on_actions = {
 				if = {
 					# NATO Kill PER
 					limit = {
+						
+		NOT = { TZL = { is_in_faction_with = TSU } }
 						GER = { NOT = { has_completed_focus = GER_democracy_now } }
 						FROM = {
 							OR = {
