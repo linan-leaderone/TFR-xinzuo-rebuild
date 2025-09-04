@@ -1259,36 +1259,36 @@ declare_war_on = {
 	JAP = {has_country_flag = CHI_Afterglow}
 
 					}
-					JAP = {country_event = { id = PRC_MAO3.51 days = 365 }}
-					JAP = {country_event = { id = PRC_MAO3.63 days = 360 }}
+					JAP = {country_event = { id = PRC_MAO3.51 days = 185 }}
+					JAP = {country_event = { id = PRC_MAO3.63 days = 180 }}
 TZL = {
 			country_event = {
 				id = PRC_MAO3.56
-				days = 60
+				days = 30
 			}
 			country_event = {
 				id = PRC_MAO3.57
-				days = 120
+				days = 60
 			}
 			country_event = {
 				id = PRC_MAO3.58
-				days = 180
+				days = 90
 			}
 			country_event = {
 				id = PRC_MAO3.59
-				days = 240
+				days = 120
 			}
 			country_event = {
 				id = PRC_MAO3.60
-				days = 300
+				days = 150
 			}
 			country_event = {
 				id = PRC_MAO3.61
-				days = 360
+				days = 180
 			}
 			country_event = {
 				id = PRC_MAO3.62
-				days = 365
+				days = 185
 			}
 		
 					}
