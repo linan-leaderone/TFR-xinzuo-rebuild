@@ -21,6 +21,16 @@ PRC_UZEDONG_SHANGTAI_1146 = {
 PRC = {
 					every_country = {
 				limit = {
+						is_ally_with = TSU
+				}
+				add_ideas = CHI_bohe_wangluogongji1_idea
+								country_event = {
+									id = PRC_MAO4.87
+									days = 1
+								}
+}
+					every_country = {
+				limit = {
 						is_ally_with = PRC
 						NOT = {tag = PRC}
 						NOT = {tag = CUB}

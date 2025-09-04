@@ -162,7 +162,8 @@ stability_factor = -0.8
 	army_attack_factor = -0.8
 	army_defence_factor = -0.8
     }
-}															
+}									
+						
 CHI_bohe_wangluogongji1_idea = {
     picture = CHI_bohe_wangluogongji_idea
     name = CHI_bohe_wangluogongji_idea
