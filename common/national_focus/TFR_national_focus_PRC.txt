@@ -3718,11 +3718,11 @@ set_country_leader_portrait = {
 	portrait = PRC_renda_QSJ_PR
 }
 			every_state = {
-			    add_core_of = PRC
+			    add_core_of = ROOT
 		    }
 						every_country = { 
 				limit = {
-					NOT = {original_tag = PRC}
+					NOT = {original_tag = ROOT}
 				}
 					country_event = PRC_MAO.113
 
@@ -4919,7 +4919,6 @@ shared_focus = {
 	}
 	available = {
 		NOT = {
-			has_government = totalitarian_socialist
 			has_government = nationalist
 			has_government = fascist
 			has_government = national_socialist

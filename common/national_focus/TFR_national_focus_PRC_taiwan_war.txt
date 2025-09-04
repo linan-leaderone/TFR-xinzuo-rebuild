@@ -421,7 +421,16 @@ focus_tree = {
 			}
 			set_global_flag = PRC_ongoing_taiwan_war
 			unlock_decision_category_tooltip = PRC_taiwan_war_cat			
-			hidden_effect = {		
+			hidden_effect = {	
+
+				every_state = {
+				limit = {
+					is_core_of = USA
+				}
+			add_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+		    }		
 			CHI = {
 						
 			1148 = {

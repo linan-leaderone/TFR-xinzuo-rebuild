@@ -139,6 +139,14 @@ country_event = {
 			    remove_core_of = TRG
 		    }
 	
+				every_state = {
+				limit = {
+					is_core_of = USA
+				}
+			remove_dynamic_modifier = {
+				modifier = PRC_unplanned_offensive
+			}
+		    }	
 			TRG = {
 set_cosmetic_tag = MAA_Peoples_Republic_of_America
 

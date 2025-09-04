@@ -3881,10 +3881,35 @@ country_event = {
         option = {
                 name = PRC_MAO.113.a
 
+				if = {
+					limit = { 
+				country_exists = TZL
+        }
+			TZL = {annex_country = {
+								target = ROOT
+								transfer_troops = yes
+							} }
+        }
+				if = {
+					limit = { 
+				country_exists = HKN
+						
+        }
+			HKN = {annex_country = {
+								target = ROOT
+								transfer_troops = yes
+							} }
+        }
+				if = {
+					limit = { 
+				country_exists = PRC
+
+        }
 			PRC = {annex_country = {
 								target = ROOT
 								transfer_troops = yes
 							} }
+        }
         }
 }
 
@@ -6348,11 +6373,11 @@ set_country_leader_portrait = {
 	portrait = PRC_renda_QSJ_PR
 }
 			every_state = {
-			    add_core_of = PRC
+			    add_core_of = ROOT
 		    }
 						every_country = { 
 				limit = {
-					NOT = {original_tag = PRC}
+					NOT = {original_tag = ROOT}
 				}
 					country_event = PRC_MAO.113
 
@@ -6372,11 +6397,11 @@ set_cosmetic_tag = PRW_XIN
 				days = 1
 			}
 			every_state = {
-			    add_core_of = PRC
+			    add_core_of = ROOT
 		    }
 						every_country = { 
 				limit = {
-					NOT = {original_tag = PRC}
+					NOT = {original_tag = ROOT}
 				}
 					country_event = PRC_MAO.113
 
