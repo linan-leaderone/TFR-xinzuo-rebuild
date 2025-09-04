@@ -4086,10 +4086,17 @@ country_event = {
 	title = PRC_MAO4.100.t
 	desc = PRC_MAO4.100.d
 	picture = GFX_PRC_MAO4_event_100
-	is_triggered_only = yes
+	is_triggered_only = no
 	fire_only_once = no
+	trigger = {
+		tag = PRC
+country_exists = SOV
+country_exists = HRL
+		HRL = { is_in_faction_with = PRC }
+	}
 	option = {
 		name = PRC_MAO4.100.a
+		PRC = {add_to_faction = SOV}	
 	}
 }
 
